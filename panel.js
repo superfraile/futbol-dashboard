@@ -21,8 +21,15 @@ async function iniciar(){
  cards[2].querySelector(".numero").textContent=datos.partidos?.length||"—";
  cards[3].querySelector("p").textContent=datos.ultima_actualizacion?new Date(datos.ultima_actualizacion).toLocaleString("es-ES",{timeZone:"Europe/Madrid"}):"Sin datos verificados";
  liga();
- if(datos.equipos_top?.length)tabla(document.querySelector("#favoritos .aviso"),["Liga","Equipo","ELO"],datos.equipos_top.map(r=>[r.liga,r.equipo,r.elo]));
- if(datos.partidos?.length)tabla(document.querySelector("#partidos .aviso"),["Liga","Fecha","Local","Visitante"],datos.partidos.map(r=>[r.liga,r.fecha,r.local,r.visitante]));
+ const nombreLiga=id=>CONFIG.ligas.find(l=>l.id===id)?.pais||id;
+ if(datos.equipos_top?.length)tabla(document.querySelector("#favoritos .aviso"),["Liga","Equipo","ELO","Pts/PJ"],datos.equipos_top.map(r=>{const s=datos.ligas[r.liga]?.find(t=>t.equipo===r.equipo);return [nombreLiga(r.liga),r.equipo,r.elo,s?.ppp??null]}));
+ else document.querySelector("#favoritos .aviso").textContent="Sin equipos TOP calculados con datos verificados.";
+ const hoy=new Intl.DateTimeFormat("sv-SE",{timeZone:"Europe/Madrid",year:"numeric",month:"2-digit",day:"2-digit"}).format(new Date());
+ const proximos=(datos.partidos||[]).filter(r=>r.fecha.slice(0,10)>=hoy).sort((a,b)=>a.fecha.localeCompare(b.fecha));
+ cards[2].querySelector(".numero").textContent=datos.ultima_actualizacion?proximos.length:"—";
+ const partidosDest=document.querySelector("#partidos .aviso");
+ if(proximos.length)tabla(partidosDest,["Liga","Fecha","Local","Visitante"],proximos.map(r=>[nombreLiga(r.liga),r.fecha,r.local,r.visitante]));
+ else partidosDest.textContent="Sin próximos partidos verificados.";
  const dest=document.querySelector("#estadisticas .aviso");
  const filas=[];
  for(const l of CONFIG.ligas){
