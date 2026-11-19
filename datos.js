@@ -23,7 +23,7 @@ const CONFIG = {
 };
 
 async function cargarDatos() {
-    const respuesta = await fetch("./datos.json", {
+    const respuesta = await fetch("https://raw.githubusercontent.com/superfraile/futbol-dashboard/main/datos.json", {
         cache: "no-store"
     });
 
