@@ -32,3 +32,29 @@ def calcular(partidos):
         s["posicion"]=i
         s["ppp"]=round(s["puntos"]/s["pj"],2)
     return rows
+
+
+def desglosar(partidos):
+    """Estadísticas por equipo y condición, sin mezclar local y visitante."""
+    calcular(partidos)  # valida resultados y duplicados
+    output={}
+    for m in partidos:
+        if m.get("estado")!="finalizado":
+            continue
+        for condicion, equipo, gf, gc in [
+            ("local",m["local"],m["goles_local"],m["goles_visitante"]),
+            ("visitante",m["visitante"],m["goles_visitante"],m["goles_local"])]:
+            s=output.setdefault(equipo,{}).setdefault(condicion,
+                dict(pj=0,g=0,e=0,p=0,gf=0,gc=0,puntos=0))
+            s["pj"]+=1
+            s["g"]+=int(gf>gc)
+            s["e"]+=int(gf==gc)
+            s["p"]+=int(gf<gc)
+            s["gf"]+=gf
+            s["gc"]+=gc
+            s["puntos"]+=3 if gf>gc else int(gf==gc)
+    for condiciones in output.values():
+        for s in condiciones.values():
+            s["ppp"]=round(s["puntos"]/s["pj"],2)
+            s["victorias_pct"]=round(100*s["g"]/s["pj"],2)
+    return output
