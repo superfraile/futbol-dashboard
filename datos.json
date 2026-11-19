@@ -1,9 +1,226 @@
 {
-  "version": "1.0",
-  "ultima_actualizacion": null,
-  "fuente": null,
+  "version": "1.1",
+  "ultima_actualizacion": "2026-11-19T22:16:51.838461+00:00",
+  "fuente": "OpenLigaDB (https://www.openligadb.de), ODbL 1.0; cobertura GER",
   "ligas": {
-    "GER": [],
+    "GER": [
+      {
+        "equipo": "FC Bayern München",
+        "pj": 9,
+        "g": 6,
+        "e": 3,
+        "p": 0,
+        "gf": 29,
+        "gc": 9,
+        "puntos": 21,
+        "posicion": 1,
+        "ppp": 2.33
+      },
+      {
+        "equipo": "Borussia Dortmund",
+        "pj": 9,
+        "g": 6,
+        "e": 3,
+        "p": 0,
+        "gf": 16,
+        "gc": 7,
+        "puntos": 21,
+        "posicion": 2,
+        "ppp": 2.33
+      },
+      {
+        "equipo": "SC Freiburg",
+        "pj": 9,
+        "g": 6,
+        "e": 1,
+        "p": 2,
+        "gf": 20,
+        "gc": 10,
+        "puntos": 19,
+        "posicion": 3,
+        "ppp": 2.11
+      },
+      {
+        "equipo": "RB Leipzig",
+        "pj": 9,
+        "g": 6,
+        "e": 0,
+        "p": 3,
+        "gf": 27,
+        "gc": 13,
+        "puntos": 18,
+        "posicion": 4,
+        "ppp": 2.0
+      },
+      {
+        "equipo": "Bayer 04 Leverkusen",
+        "pj": 9,
+        "g": 5,
+        "e": 1,
+        "p": 3,
+        "gf": 20,
+        "gc": 17,
+        "puntos": 16,
+        "posicion": 5,
+        "ppp": 1.78
+      },
+      {
+        "equipo": "SV Werder Bremen",
+        "pj": 9,
+        "g": 4,
+        "e": 3,
+        "p": 2,
+        "gf": 17,
+        "gc": 15,
+        "puntos": 15,
+        "posicion": 6,
+        "ppp": 1.67
+      },
+      {
+        "equipo": "SV 07 Elversberg",
+        "pj": 9,
+        "g": 4,
+        "e": 1,
+        "p": 4,
+        "gf": 17,
+        "gc": 18,
+        "puntos": 13,
+        "posicion": 7,
+        "ppp": 1.44
+      },
+      {
+        "equipo": "VfB Stuttgart",
+        "pj": 9,
+        "g": 4,
+        "e": 0,
+        "p": 5,
+        "gf": 15,
+        "gc": 15,
+        "puntos": 12,
+        "posicion": 8,
+        "ppp": 1.33
+      },
+      {
+        "equipo": "TSG Hoffenheim",
+        "pj": 9,
+        "g": 4,
+        "e": 0,
+        "p": 5,
+        "gf": 16,
+        "gc": 17,
+        "puntos": 12,
+        "posicion": 9,
+        "ppp": 1.33
+      },
+      {
+        "equipo": "Eintracht Frankfurt",
+        "pj": 9,
+        "g": 3,
+        "e": 3,
+        "p": 3,
+        "gf": 15,
+        "gc": 20,
+        "puntos": 12,
+        "posicion": 10,
+        "ppp": 1.33
+      },
+      {
+        "equipo": "Hamburger SV",
+        "pj": 9,
+        "g": 4,
+        "e": 0,
+        "p": 5,
+        "gf": 10,
+        "gc": 20,
+        "puntos": 12,
+        "posicion": 11,
+        "ppp": 1.33
+      },
+      {
+        "equipo": "1. FSV Mainz 05",
+        "pj": 9,
+        "g": 3,
+        "e": 1,
+        "p": 5,
+        "gf": 18,
+        "gc": 19,
+        "puntos": 10,
+        "posicion": 12,
+        "ppp": 1.11
+      },
+      {
+        "equipo": "SC Paderborn 07",
+        "pj": 9,
+        "g": 2,
+        "e": 4,
+        "p": 3,
+        "gf": 8,
+        "gc": 11,
+        "puntos": 10,
+        "posicion": 13,
+        "ppp": 1.11
+      },
+      {
+        "equipo": "FC Augsburg",
+        "pj": 9,
+        "g": 2,
+        "e": 3,
+        "p": 4,
+        "gf": 20,
+        "gc": 20,
+        "puntos": 9,
+        "posicion": 14,
+        "ppp": 1.0
+      },
+      {
+        "equipo": "1. FC Köln",
+        "pj": 9,
+        "g": 2,
+        "e": 3,
+        "p": 4,
+        "gf": 10,
+        "gc": 14,
+        "puntos": 9,
+        "posicion": 15,
+        "ppp": 1.0
+      },
+      {
+        "equipo": "1. FC Union Berlin",
+        "pj": 9,
+        "g": 1,
+        "e": 4,
+        "p": 4,
+        "gf": 7,
+        "gc": 21,
+        "puntos": 7,
+        "posicion": 16,
+        "ppp": 0.78
+      },
+      {
+        "equipo": "FC Schalke 04",
+        "pj": 9,
+        "g": 1,
+        "e": 3,
+        "p": 5,
+        "gf": 5,
+        "gc": 11,
+        "puntos": 6,
+        "posicion": 17,
+        "ppp": 0.67
+      },
+      {
+        "equipo": "Borussia Mönchengladbach",
+        "pj": 9,
+        "g": 1,
+        "e": 1,
+        "p": 7,
+        "gf": 12,
+        "gc": 25,
+        "puntos": 4,
+        "posicion": 18,
+        "ppp": 0.44
+      }
+    ],
     "DEN": [],
     "SCO": [],
     "ESP": [],
@@ -18,7 +235,1832 @@
     "SUI": [],
     "TUR": []
   },
-  "equipos_top": [],
-  "partidos": [],
-  "estadisticas": {}
+  "equipos_top": [
+    {
+      "liga": "GER",
+      "equipo": "FC Bayern München",
+      "elo": 1557.0
+    },
+    {
+      "liga": "GER",
+      "equipo": "Borussia Dortmund",
+      "elo": 1551.9
+    },
+    {
+      "liga": "GER",
+      "equipo": "SC Freiburg",
+      "elo": 1533.7
+    },
+    {
+      "liga": "GER",
+      "equipo": "RB Leipzig",
+      "elo": 1526.5
+    },
+    {
+      "liga": "GER",
+      "equipo": "SV Werder Bremen",
+      "elo": 1520.2
+    }
+  ],
+  "partidos": [
+    {
+      "liga": "GER",
+      "fecha": "2026-11-20",
+      "local": "FC Bayern München",
+      "visitante": "1. FC Köln"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2026-11-21",
+      "local": "Bayer 04 Leverkusen",
+      "visitante": "SC Paderborn 07"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2026-11-21",
+      "local": "Eintracht Frankfurt",
+      "visitante": "TSG Hoffenheim"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2026-11-21",
+      "local": "1. FC Union Berlin",
+      "visitante": "RB Leipzig"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2026-11-21",
+      "local": "Borussia Mönchengladbach",
+      "visitante": "Borussia Dortmund"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2026-11-21",
+      "local": "SV 07 Elversberg",
+      "visitante": "SC Freiburg"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2026-11-21",
+      "local": "FC Schalke 04",
+      "visitante": "VfB Stuttgart"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2026-11-22",
+      "local": "FC Augsburg",
+      "visitante": "1. FSV Mainz 05"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2026-11-22",
+      "local": "SV Werder Bremen",
+      "visitante": "Hamburger SV"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2026-11-27",
+      "local": "SV Werder Bremen",
+      "visitante": "Borussia Mönchengladbach"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2026-11-28",
+      "local": "1. FSV Mainz 05",
+      "visitante": "1. FC Union Berlin"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2026-11-28",
+      "local": "Hamburger SV",
+      "visitante": "FC Bayern München"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2026-11-28",
+      "local": "1. FC Köln",
+      "visitante": "SV 07 Elversberg"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2026-11-28",
+      "local": "SC Paderborn 07",
+      "visitante": "FC Schalke 04"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2026-11-28",
+      "local": "VfB Stuttgart",
+      "visitante": "Eintracht Frankfurt"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2026-11-29",
+      "local": "SC Freiburg",
+      "visitante": "RB Leipzig"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2026-11-29",
+      "local": "TSG Hoffenheim",
+      "visitante": "FC Augsburg"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2026-11-29",
+      "local": "Borussia Dortmund",
+      "visitante": "Bayer 04 Leverkusen"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2026-12-04",
+      "local": "FC Bayern München",
+      "visitante": "SC Paderborn 07"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2026-12-05",
+      "local": "RB Leipzig",
+      "visitante": "1. FSV Mainz 05"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2026-12-05",
+      "local": "Bayer 04 Leverkusen",
+      "visitante": "Borussia Mönchengladbach"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2026-12-05",
+      "local": "SC Freiburg",
+      "visitante": "TSG Hoffenheim"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2026-12-05",
+      "local": "FC Augsburg",
+      "visitante": "1. FC Köln"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2026-12-05",
+      "local": "1. FC Union Berlin",
+      "visitante": "Hamburger SV"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2026-12-05",
+      "local": "Eintracht Frankfurt",
+      "visitante": "SV Werder Bremen"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2026-12-06",
+      "local": "FC Schalke 04",
+      "visitante": "Borussia Dortmund"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2026-12-06",
+      "local": "SV 07 Elversberg",
+      "visitante": "VfB Stuttgart"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2026-12-11",
+      "local": "Hamburger SV",
+      "visitante": "FC Schalke 04"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2026-12-12",
+      "local": "Borussia Dortmund",
+      "visitante": "FC Augsburg"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2026-12-12",
+      "local": "VfB Stuttgart",
+      "visitante": "1. FC Union Berlin"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2026-12-12",
+      "local": "1. FC Köln",
+      "visitante": "RB Leipzig"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2026-12-12",
+      "local": "SC Paderborn 07",
+      "visitante": "SV 07 Elversberg"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2026-12-12",
+      "local": "Borussia Mönchengladbach",
+      "visitante": "Eintracht Frankfurt"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2026-12-13",
+      "local": "1. FSV Mainz 05",
+      "visitante": "SC Freiburg"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2026-12-13",
+      "local": "TSG Hoffenheim",
+      "visitante": "FC Bayern München"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2026-12-13",
+      "local": "SV Werder Bremen",
+      "visitante": "Bayer 04 Leverkusen"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2026-12-18",
+      "local": "FC Bayern München",
+      "visitante": "SV Werder Bremen"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2026-12-19",
+      "local": "Bayer 04 Leverkusen",
+      "visitante": "Eintracht Frankfurt"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2026-12-19",
+      "local": "FC Augsburg",
+      "visitante": "SC Paderborn 07"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2026-12-19",
+      "local": "1. FSV Mainz 05",
+      "visitante": "1. FC Köln"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2026-12-19",
+      "local": "SV 07 Elversberg",
+      "visitante": "Hamburger SV"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2026-12-19",
+      "local": "RB Leipzig",
+      "visitante": "Borussia Dortmund"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2026-12-20",
+      "local": "SC Freiburg",
+      "visitante": "VfB Stuttgart"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2026-12-20",
+      "local": "1. FC Union Berlin",
+      "visitante": "TSG Hoffenheim"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2026-12-20",
+      "local": "FC Schalke 04",
+      "visitante": "Borussia Mönchengladbach"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-01-08",
+      "local": "Borussia Dortmund",
+      "visitante": "1. FSV Mainz 05"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-01-09",
+      "local": "VfB Stuttgart",
+      "visitante": "FC Augsburg"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-01-09",
+      "local": "TSG Hoffenheim",
+      "visitante": "SV 07 Elversberg"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-01-09",
+      "local": "Eintracht Frankfurt",
+      "visitante": "FC Schalke 04"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-01-09",
+      "local": "1. FC Köln",
+      "visitante": "SC Freiburg"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-01-09",
+      "local": "SC Paderborn 07",
+      "visitante": "RB Leipzig"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-01-09",
+      "local": "Borussia Mönchengladbach",
+      "visitante": "FC Bayern München"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-01-10",
+      "local": "SV Werder Bremen",
+      "visitante": "1. FC Union Berlin"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-01-10",
+      "local": "Hamburger SV",
+      "visitante": "Bayer 04 Leverkusen"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-01-12",
+      "local": "RB Leipzig",
+      "visitante": "VfB Stuttgart"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-01-12",
+      "local": "FC Augsburg",
+      "visitante": "Borussia Mönchengladbach"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-01-12",
+      "local": "1. FSV Mainz 05",
+      "visitante": "TSG Hoffenheim"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-01-12",
+      "local": "1. FC Köln",
+      "visitante": "Borussia Dortmund"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-01-13",
+      "local": "SV 07 Elversberg",
+      "visitante": "Eintracht Frankfurt"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-01-13",
+      "local": "FC Bayern München",
+      "visitante": "Bayer 04 Leverkusen"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-01-13",
+      "local": "SC Freiburg",
+      "visitante": "Hamburger SV"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-01-13",
+      "local": "1. FC Union Berlin",
+      "visitante": "SC Paderborn 07"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-01-13",
+      "local": "FC Schalke 04",
+      "visitante": "SV Werder Bremen"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-01-15",
+      "local": "VfB Stuttgart",
+      "visitante": "1. FSV Mainz 05"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-01-16",
+      "local": "Borussia Dortmund",
+      "visitante": "SC Freiburg"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-01-16",
+      "local": "TSG Hoffenheim",
+      "visitante": "RB Leipzig"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-01-16",
+      "local": "Borussia Mönchengladbach",
+      "visitante": "1. FC Union Berlin"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-01-16",
+      "local": "Hamburger SV",
+      "visitante": "FC Augsburg"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-01-16",
+      "local": "SC Paderborn 07",
+      "visitante": "1. FC Köln"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-01-16",
+      "local": "Eintracht Frankfurt",
+      "visitante": "FC Bayern München"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-01-17",
+      "local": "SV Werder Bremen",
+      "visitante": "SV 07 Elversberg"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-01-17",
+      "local": "Bayer 04 Leverkusen",
+      "visitante": "FC Schalke 04"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-01-22",
+      "local": "SV Werder Bremen",
+      "visitante": "SC Freiburg"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-01-23",
+      "local": "VfB Stuttgart",
+      "visitante": "FC Bayern München"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-01-23",
+      "local": "Borussia Mönchengladbach",
+      "visitante": "RB Leipzig"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-01-23",
+      "local": "FC Schalke 04",
+      "visitante": "FC Augsburg"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-01-23",
+      "local": "SC Paderborn 07",
+      "visitante": "1. FSV Mainz 05"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-01-23",
+      "local": "Hamburger SV",
+      "visitante": "Borussia Dortmund"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-01-24",
+      "local": "Eintracht Frankfurt",
+      "visitante": "1. FC Union Berlin"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-01-24",
+      "local": "Bayer 04 Leverkusen",
+      "visitante": "SV 07 Elversberg"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-01-24",
+      "local": "TSG Hoffenheim",
+      "visitante": "1. FC Köln"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-01-30",
+      "local": "FC Bayern München",
+      "visitante": "FC Schalke 04"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-01-30",
+      "local": "Borussia Dortmund",
+      "visitante": "TSG Hoffenheim"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-01-30",
+      "local": "RB Leipzig",
+      "visitante": "SV Werder Bremen"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-01-30",
+      "local": "SC Freiburg",
+      "visitante": "SC Paderborn 07"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-01-30",
+      "local": "FC Augsburg",
+      "visitante": "Eintracht Frankfurt"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-01-30",
+      "local": "1. FSV Mainz 05",
+      "visitante": "Hamburger SV"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-01-30",
+      "local": "1. FC Union Berlin",
+      "visitante": "Bayer 04 Leverkusen"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-01-30",
+      "local": "1. FC Köln",
+      "visitante": "VfB Stuttgart"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-01-30",
+      "local": "SV 07 Elversberg",
+      "visitante": "Borussia Mönchengladbach"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-02-06",
+      "local": "FC Bayern München",
+      "visitante": "SV 07 Elversberg"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-02-06",
+      "local": "VfB Stuttgart",
+      "visitante": "TSG Hoffenheim"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-02-06",
+      "local": "Bayer 04 Leverkusen",
+      "visitante": "FC Augsburg"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-02-06",
+      "local": "Eintracht Frankfurt",
+      "visitante": "1. FSV Mainz 05"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-02-06",
+      "local": "Borussia Mönchengladbach",
+      "visitante": "SC Freiburg"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-02-06",
+      "local": "Hamburger SV",
+      "visitante": "RB Leipzig"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-02-06",
+      "local": "SV Werder Bremen",
+      "visitante": "1. FC Köln"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-02-06",
+      "local": "FC Schalke 04",
+      "visitante": "1. FC Union Berlin"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-02-06",
+      "local": "SC Paderborn 07",
+      "visitante": "Borussia Dortmund"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-02-13",
+      "local": "Borussia Dortmund",
+      "visitante": "VfB Stuttgart"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-02-13",
+      "local": "RB Leipzig",
+      "visitante": "Bayer 04 Leverkusen"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-02-13",
+      "local": "TSG Hoffenheim",
+      "visitante": "SC Paderborn 07"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-02-13",
+      "local": "SC Freiburg",
+      "visitante": "Eintracht Frankfurt"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-02-13",
+      "local": "FC Augsburg",
+      "visitante": "SV Werder Bremen"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-02-13",
+      "local": "1. FSV Mainz 05",
+      "visitante": "Borussia Mönchengladbach"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-02-13",
+      "local": "1. FC Union Berlin",
+      "visitante": "FC Bayern München"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-02-13",
+      "local": "1. FC Köln",
+      "visitante": "Hamburger SV"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-02-13",
+      "local": "SV 07 Elversberg",
+      "visitante": "FC Schalke 04"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-02-20",
+      "local": "FC Bayern München",
+      "visitante": "FC Augsburg"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-02-20",
+      "local": "VfB Stuttgart",
+      "visitante": "SC Paderborn 07"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-02-20",
+      "local": "Bayer 04 Leverkusen",
+      "visitante": "1. FSV Mainz 05"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-02-20",
+      "local": "Eintracht Frankfurt",
+      "visitante": "RB Leipzig"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-02-20",
+      "local": "Borussia Mönchengladbach",
+      "visitante": "1. FC Köln"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-02-20",
+      "local": "Hamburger SV",
+      "visitante": "TSG Hoffenheim"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-02-20",
+      "local": "SV Werder Bremen",
+      "visitante": "Borussia Dortmund"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-02-20",
+      "local": "FC Schalke 04",
+      "visitante": "SC Freiburg"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-02-20",
+      "local": "SV 07 Elversberg",
+      "visitante": "1. FC Union Berlin"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-02-27",
+      "local": "Borussia Dortmund",
+      "visitante": "1. FC Union Berlin"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-02-27",
+      "local": "RB Leipzig",
+      "visitante": "FC Bayern München"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-02-27",
+      "local": "VfB Stuttgart",
+      "visitante": "Hamburger SV"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-02-27",
+      "local": "TSG Hoffenheim",
+      "visitante": "Borussia Mönchengladbach"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-02-27",
+      "local": "SC Freiburg",
+      "visitante": "Bayer 04 Leverkusen"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-02-27",
+      "local": "FC Augsburg",
+      "visitante": "SV 07 Elversberg"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-02-27",
+      "local": "1. FSV Mainz 05",
+      "visitante": "FC Schalke 04"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-02-27",
+      "local": "1. FC Köln",
+      "visitante": "Eintracht Frankfurt"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-02-27",
+      "local": "SC Paderborn 07",
+      "visitante": "SV Werder Bremen"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-03-02",
+      "local": "FC Bayern München",
+      "visitante": "SC Freiburg"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-03-02",
+      "local": "Bayer 04 Leverkusen",
+      "visitante": "TSG Hoffenheim"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-03-02",
+      "local": "Eintracht Frankfurt",
+      "visitante": "Borussia Dortmund"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-03-02",
+      "local": "1. FC Union Berlin",
+      "visitante": "FC Augsburg"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-03-02",
+      "local": "Borussia Mönchengladbach",
+      "visitante": "VfB Stuttgart"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-03-02",
+      "local": "Hamburger SV",
+      "visitante": "SC Paderborn 07"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-03-02",
+      "local": "SV Werder Bremen",
+      "visitante": "1. FSV Mainz 05"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-03-02",
+      "local": "FC Schalke 04",
+      "visitante": "1. FC Köln"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-03-02",
+      "local": "SV 07 Elversberg",
+      "visitante": "RB Leipzig"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-03-06",
+      "local": "Borussia Dortmund",
+      "visitante": "FC Bayern München"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-03-06",
+      "local": "RB Leipzig",
+      "visitante": "FC Schalke 04"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-03-06",
+      "local": "VfB Stuttgart",
+      "visitante": "Bayer 04 Leverkusen"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-03-06",
+      "local": "TSG Hoffenheim",
+      "visitante": "SV Werder Bremen"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-03-06",
+      "local": "SC Freiburg",
+      "visitante": "FC Augsburg"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-03-06",
+      "local": "1. FSV Mainz 05",
+      "visitante": "SV 07 Elversberg"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-03-06",
+      "local": "Hamburger SV",
+      "visitante": "Eintracht Frankfurt"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-03-06",
+      "local": "1. FC Köln",
+      "visitante": "1. FC Union Berlin"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-03-06",
+      "local": "SC Paderborn 07",
+      "visitante": "Borussia Mönchengladbach"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-03-13",
+      "local": "FC Bayern München",
+      "visitante": "1. FSV Mainz 05"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-03-13",
+      "local": "Bayer 04 Leverkusen",
+      "visitante": "1. FC Köln"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-03-13",
+      "local": "Eintracht Frankfurt",
+      "visitante": "SC Paderborn 07"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-03-13",
+      "local": "FC Augsburg",
+      "visitante": "RB Leipzig"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-03-13",
+      "local": "1. FC Union Berlin",
+      "visitante": "SC Freiburg"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-03-13",
+      "local": "Borussia Mönchengladbach",
+      "visitante": "Hamburger SV"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-03-13",
+      "local": "SV Werder Bremen",
+      "visitante": "VfB Stuttgart"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-03-13",
+      "local": "FC Schalke 04",
+      "visitante": "TSG Hoffenheim"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-03-13",
+      "local": "SV 07 Elversberg",
+      "visitante": "Borussia Dortmund"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-03-20",
+      "local": "Borussia Dortmund",
+      "visitante": "Borussia Mönchengladbach"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-03-20",
+      "local": "RB Leipzig",
+      "visitante": "1. FC Union Berlin"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-03-20",
+      "local": "VfB Stuttgart",
+      "visitante": "FC Schalke 04"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-03-20",
+      "local": "TSG Hoffenheim",
+      "visitante": "Eintracht Frankfurt"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-03-20",
+      "local": "SC Freiburg",
+      "visitante": "SV 07 Elversberg"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-03-20",
+      "local": "1. FSV Mainz 05",
+      "visitante": "FC Augsburg"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-03-20",
+      "local": "Hamburger SV",
+      "visitante": "SV Werder Bremen"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-03-20",
+      "local": "1. FC Köln",
+      "visitante": "FC Bayern München"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-03-20",
+      "local": "SC Paderborn 07",
+      "visitante": "Bayer 04 Leverkusen"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-04-03",
+      "local": "FC Bayern München",
+      "visitante": "Hamburger SV"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-04-03",
+      "local": "RB Leipzig",
+      "visitante": "SC Freiburg"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-04-03",
+      "local": "Bayer 04 Leverkusen",
+      "visitante": "Borussia Dortmund"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-04-03",
+      "local": "Eintracht Frankfurt",
+      "visitante": "VfB Stuttgart"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-04-03",
+      "local": "FC Augsburg",
+      "visitante": "TSG Hoffenheim"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-04-03",
+      "local": "1. FC Union Berlin",
+      "visitante": "1. FSV Mainz 05"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-04-03",
+      "local": "Borussia Mönchengladbach",
+      "visitante": "SV Werder Bremen"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-04-03",
+      "local": "FC Schalke 04",
+      "visitante": "SC Paderborn 07"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-04-03",
+      "local": "SV 07 Elversberg",
+      "visitante": "1. FC Köln"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-04-10",
+      "local": "Borussia Dortmund",
+      "visitante": "FC Schalke 04"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-04-10",
+      "local": "VfB Stuttgart",
+      "visitante": "SV 07 Elversberg"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-04-10",
+      "local": "TSG Hoffenheim",
+      "visitante": "SC Freiburg"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-04-10",
+      "local": "1. FSV Mainz 05",
+      "visitante": "RB Leipzig"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-04-10",
+      "local": "Borussia Mönchengladbach",
+      "visitante": "Bayer 04 Leverkusen"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-04-10",
+      "local": "Hamburger SV",
+      "visitante": "1. FC Union Berlin"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-04-10",
+      "local": "1. FC Köln",
+      "visitante": "FC Augsburg"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-04-10",
+      "local": "SV Werder Bremen",
+      "visitante": "Eintracht Frankfurt"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-04-10",
+      "local": "SC Paderborn 07",
+      "visitante": "FC Bayern München"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-04-17",
+      "local": "FC Bayern München",
+      "visitante": "TSG Hoffenheim"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-04-17",
+      "local": "RB Leipzig",
+      "visitante": "1. FC Köln"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-04-17",
+      "local": "Bayer 04 Leverkusen",
+      "visitante": "SV Werder Bremen"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-04-17",
+      "local": "SC Freiburg",
+      "visitante": "1. FSV Mainz 05"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-04-17",
+      "local": "Eintracht Frankfurt",
+      "visitante": "Borussia Mönchengladbach"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-04-17",
+      "local": "FC Augsburg",
+      "visitante": "Borussia Dortmund"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-04-17",
+      "local": "1. FC Union Berlin",
+      "visitante": "VfB Stuttgart"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-04-17",
+      "local": "FC Schalke 04",
+      "visitante": "Hamburger SV"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-04-17",
+      "local": "SV 07 Elversberg",
+      "visitante": "SC Paderborn 07"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-04-24",
+      "local": "Borussia Dortmund",
+      "visitante": "RB Leipzig"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-04-24",
+      "local": "VfB Stuttgart",
+      "visitante": "SC Freiburg"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-04-24",
+      "local": "TSG Hoffenheim",
+      "visitante": "1. FC Union Berlin"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-04-24",
+      "local": "Eintracht Frankfurt",
+      "visitante": "Bayer 04 Leverkusen"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-04-24",
+      "local": "Borussia Mönchengladbach",
+      "visitante": "FC Schalke 04"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-04-24",
+      "local": "Hamburger SV",
+      "visitante": "SV 07 Elversberg"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-04-24",
+      "local": "1. FC Köln",
+      "visitante": "1. FSV Mainz 05"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-04-24",
+      "local": "SV Werder Bremen",
+      "visitante": "FC Bayern München"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-04-24",
+      "local": "SC Paderborn 07",
+      "visitante": "FC Augsburg"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-05-08",
+      "local": "FC Bayern München",
+      "visitante": "Borussia Mönchengladbach"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-05-08",
+      "local": "RB Leipzig",
+      "visitante": "SC Paderborn 07"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-05-08",
+      "local": "Bayer 04 Leverkusen",
+      "visitante": "Hamburger SV"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-05-08",
+      "local": "SC Freiburg",
+      "visitante": "1. FC Köln"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-05-08",
+      "local": "FC Augsburg",
+      "visitante": "VfB Stuttgart"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-05-08",
+      "local": "1. FSV Mainz 05",
+      "visitante": "Borussia Dortmund"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-05-08",
+      "local": "1. FC Union Berlin",
+      "visitante": "SV Werder Bremen"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-05-08",
+      "local": "FC Schalke 04",
+      "visitante": "Eintracht Frankfurt"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-05-08",
+      "local": "SV 07 Elversberg",
+      "visitante": "TSG Hoffenheim"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-05-15",
+      "local": "Borussia Dortmund",
+      "visitante": "1. FC Köln"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-05-15",
+      "local": "VfB Stuttgart",
+      "visitante": "RB Leipzig"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-05-15",
+      "local": "TSG Hoffenheim",
+      "visitante": "1. FSV Mainz 05"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-05-15",
+      "local": "Bayer 04 Leverkusen",
+      "visitante": "FC Bayern München"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-05-15",
+      "local": "Eintracht Frankfurt",
+      "visitante": "SV 07 Elversberg"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-05-15",
+      "local": "Borussia Mönchengladbach",
+      "visitante": "FC Augsburg"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-05-15",
+      "local": "Hamburger SV",
+      "visitante": "SC Freiburg"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-05-15",
+      "local": "SV Werder Bremen",
+      "visitante": "FC Schalke 04"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-05-15",
+      "local": "SC Paderborn 07",
+      "visitante": "1. FC Union Berlin"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-05-22",
+      "local": "FC Bayern München",
+      "visitante": "Eintracht Frankfurt"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-05-22",
+      "local": "RB Leipzig",
+      "visitante": "TSG Hoffenheim"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-05-22",
+      "local": "SC Freiburg",
+      "visitante": "Borussia Dortmund"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-05-22",
+      "local": "FC Augsburg",
+      "visitante": "Hamburger SV"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-05-22",
+      "local": "1. FSV Mainz 05",
+      "visitante": "VfB Stuttgart"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-05-22",
+      "local": "1. FC Union Berlin",
+      "visitante": "Borussia Mönchengladbach"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-05-22",
+      "local": "1. FC Köln",
+      "visitante": "SC Paderborn 07"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-05-22",
+      "local": "FC Schalke 04",
+      "visitante": "Bayer 04 Leverkusen"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-05-22",
+      "local": "SV 07 Elversberg",
+      "visitante": "SV Werder Bremen"
+    }
+  ],
+  "estadisticas": {
+    "GER": {
+      "FC Bayern München": {
+        "local": {
+          "pj": 4,
+          "g": 3,
+          "e": 1,
+          "p": 0,
+          "gf": 20,
+          "gc": 4,
+          "puntos": 10,
+          "ppp": 2.5,
+          "victorias_pct": 75.0
+        },
+        "visitante": {
+          "pj": 5,
+          "g": 3,
+          "e": 2,
+          "p": 0,
+          "gf": 9,
+          "gc": 5,
+          "puntos": 11,
+          "ppp": 2.2,
+          "victorias_pct": 60.0
+        }
+      },
+      "VfB Stuttgart": {
+        "visitante": {
+          "pj": 5,
+          "g": 2,
+          "e": 0,
+          "p": 3,
+          "gf": 8,
+          "gc": 10,
+          "puntos": 6,
+          "ppp": 1.2,
+          "victorias_pct": 40.0
+        },
+        "local": {
+          "pj": 4,
+          "g": 2,
+          "e": 0,
+          "p": 2,
+          "gf": 7,
+          "gc": 5,
+          "puntos": 6,
+          "ppp": 1.5,
+          "victorias_pct": 50.0
+        }
+      },
+      "RB Leipzig": {
+        "local": {
+          "pj": 5,
+          "g": 5,
+          "e": 0,
+          "p": 0,
+          "gf": 23,
+          "gc": 2,
+          "puntos": 15,
+          "ppp": 3.0,
+          "victorias_pct": 100.0
+        },
+        "visitante": {
+          "pj": 4,
+          "g": 1,
+          "e": 0,
+          "p": 3,
+          "gf": 4,
+          "gc": 11,
+          "puntos": 3,
+          "ppp": 0.75,
+          "victorias_pct": 25.0
+        }
+      },
+      "Borussia Mönchengladbach": {
+        "visitante": {
+          "pj": 5,
+          "g": 1,
+          "e": 0,
+          "p": 4,
+          "gf": 5,
+          "gc": 15,
+          "puntos": 3,
+          "ppp": 0.6,
+          "victorias_pct": 20.0
+        },
+        "local": {
+          "pj": 4,
+          "g": 0,
+          "e": 1,
+          "p": 3,
+          "gf": 7,
+          "gc": 10,
+          "puntos": 1,
+          "ppp": 0.25,
+          "victorias_pct": 0.0
+        }
+      },
+      "1. FSV Mainz 05": {
+        "local": {
+          "pj": 5,
+          "g": 0,
+          "e": 1,
+          "p": 4,
+          "gf": 7,
+          "gc": 12,
+          "puntos": 1,
+          "ppp": 0.2,
+          "victorias_pct": 0.0
+        },
+        "visitante": {
+          "pj": 4,
+          "g": 3,
+          "e": 0,
+          "p": 1,
+          "gf": 11,
+          "gc": 7,
+          "puntos": 9,
+          "ppp": 2.25,
+          "victorias_pct": 75.0
+        }
+      },
+      "SC Paderborn 07": {
+        "visitante": {
+          "pj": 4,
+          "g": 0,
+          "e": 3,
+          "p": 1,
+          "gf": 2,
+          "gc": 5,
+          "puntos": 3,
+          "ppp": 0.75,
+          "victorias_pct": 0.0
+        },
+        "local": {
+          "pj": 5,
+          "g": 2,
+          "e": 1,
+          "p": 2,
+          "gf": 6,
+          "gc": 6,
+          "puntos": 7,
+          "ppp": 1.4,
+          "victorias_pct": 40.0
+        }
+      },
+      "1. FC Union Berlin": {
+        "local": {
+          "pj": 5,
+          "g": 1,
+          "e": 3,
+          "p": 1,
+          "gf": 6,
+          "gc": 7,
+          "puntos": 6,
+          "ppp": 1.2,
+          "victorias_pct": 20.0
+        },
+        "visitante": {
+          "pj": 4,
+          "g": 0,
+          "e": 1,
+          "p": 3,
+          "gf": 1,
+          "gc": 14,
+          "puntos": 1,
+          "ppp": 0.25,
+          "victorias_pct": 0.0
+        }
+      },
+      "Eintracht Frankfurt": {
+        "visitante": {
+          "pj": 5,
+          "g": 1,
+          "e": 2,
+          "p": 2,
+          "gf": 8,
+          "gc": 13,
+          "puntos": 5,
+          "ppp": 1.0,
+          "victorias_pct": 20.0
+        },
+        "local": {
+          "pj": 4,
+          "g": 2,
+          "e": 1,
+          "p": 1,
+          "gf": 7,
+          "gc": 7,
+          "puntos": 7,
+          "ppp": 1.75,
+          "victorias_pct": 50.0
+        }
+      },
+      "1. FC Köln": {
+        "local": {
+          "pj": 5,
+          "g": 2,
+          "e": 2,
+          "p": 1,
+          "gf": 7,
+          "gc": 6,
+          "puntos": 8,
+          "ppp": 1.6,
+          "victorias_pct": 40.0
+        },
+        "visitante": {
+          "pj": 4,
+          "g": 0,
+          "e": 1,
+          "p": 3,
+          "gf": 3,
+          "gc": 8,
+          "puntos": 1,
+          "ppp": 0.25,
+          "victorias_pct": 0.0
+        }
+      },
+      "TSG Hoffenheim": {
+        "visitante": {
+          "pj": 4,
+          "g": 1,
+          "e": 0,
+          "p": 3,
+          "gf": 5,
+          "gc": 9,
+          "puntos": 3,
+          "ppp": 0.75,
+          "victorias_pct": 25.0
+        },
+        "local": {
+          "pj": 5,
+          "g": 3,
+          "e": 0,
+          "p": 2,
+          "gf": 11,
+          "gc": 8,
+          "puntos": 9,
+          "ppp": 1.8,
+          "victorias_pct": 60.0
+        }
+      },
+      "SV 07 Elversberg": {
+        "local": {
+          "pj": 4,
+          "g": 3,
+          "e": 0,
+          "p": 1,
+          "gf": 12,
+          "gc": 8,
+          "puntos": 9,
+          "ppp": 2.25,
+          "victorias_pct": 75.0
+        },
+        "visitante": {
+          "pj": 5,
+          "g": 1,
+          "e": 1,
+          "p": 3,
+          "gf": 5,
+          "gc": 10,
+          "puntos": 4,
+          "ppp": 0.8,
+          "victorias_pct": 20.0
+        }
+      },
+      "Bayer 04 Leverkusen": {
+        "visitante": {
+          "pj": 5,
+          "g": 2,
+          "e": 1,
+          "p": 2,
+          "gf": 10,
+          "gc": 12,
+          "puntos": 7,
+          "ppp": 1.4,
+          "victorias_pct": 40.0
+        },
+        "local": {
+          "pj": 4,
+          "g": 3,
+          "e": 0,
+          "p": 1,
+          "gf": 10,
+          "gc": 5,
+          "puntos": 9,
+          "ppp": 2.25,
+          "victorias_pct": 75.0
+        }
+      },
+      "Borussia Dortmund": {
+        "local": {
+          "pj": 5,
+          "g": 4,
+          "e": 1,
+          "p": 0,
+          "gf": 10,
+          "gc": 3,
+          "puntos": 13,
+          "ppp": 2.6,
+          "victorias_pct": 80.0
+        },
+        "visitante": {
+          "pj": 4,
+          "g": 2,
+          "e": 2,
+          "p": 0,
+          "gf": 6,
+          "gc": 4,
+          "puntos": 8,
+          "ppp": 2.0,
+          "victorias_pct": 50.0
+        }
+      },
+      "Hamburger SV": {
+        "visitante": {
+          "pj": 5,
+          "g": 1,
+          "e": 0,
+          "p": 4,
+          "gf": 4,
+          "gc": 13,
+          "puntos": 3,
+          "ppp": 0.6,
+          "victorias_pct": 20.0
+        },
+        "local": {
+          "pj": 4,
+          "g": 3,
+          "e": 0,
+          "p": 1,
+          "gf": 6,
+          "gc": 7,
+          "puntos": 9,
+          "ppp": 2.25,
+          "victorias_pct": 75.0
+        }
+      },
+      "SC Freiburg": {
+        "local": {
+          "pj": 5,
+          "g": 4,
+          "e": 0,
+          "p": 1,
+          "gf": 14,
+          "gc": 5,
+          "puntos": 12,
+          "ppp": 2.4,
+          "victorias_pct": 80.0
+        },
+        "visitante": {
+          "pj": 4,
+          "g": 2,
+          "e": 1,
+          "p": 1,
+          "gf": 6,
+          "gc": 5,
+          "puntos": 7,
+          "ppp": 1.75,
+          "victorias_pct": 50.0
+        }
+      },
+      "SV Werder Bremen": {
+        "visitante": {
+          "pj": 5,
+          "g": 1,
+          "e": 2,
+          "p": 2,
+          "gf": 7,
+          "gc": 10,
+          "puntos": 5,
+          "ppp": 1.0,
+          "victorias_pct": 20.0
+        },
+        "local": {
+          "pj": 4,
+          "g": 3,
+          "e": 1,
+          "p": 0,
+          "gf": 10,
+          "gc": 5,
+          "puntos": 10,
+          "ppp": 2.5,
+          "victorias_pct": 75.0
+        }
+      },
+      "FC Augsburg": {
+        "local": {
+          "pj": 5,
+          "g": 1,
+          "e": 3,
+          "p": 1,
+          "gf": 9,
+          "gc": 7,
+          "puntos": 6,
+          "ppp": 1.2,
+          "victorias_pct": 20.0
+        },
+        "visitante": {
+          "pj": 4,
+          "g": 1,
+          "e": 0,
+          "p": 3,
+          "gf": 11,
+          "gc": 13,
+          "puntos": 3,
+          "ppp": 0.75,
+          "victorias_pct": 25.0
+        }
+      },
+      "FC Schalke 04": {
+        "visitante": {
+          "pj": 5,
+          "g": 1,
+          "e": 1,
+          "p": 3,
+          "gf": 5,
+          "gc": 8,
+          "puntos": 4,
+          "ppp": 0.8,
+          "victorias_pct": 20.0
+        },
+        "local": {
+          "pj": 4,
+          "g": 0,
+          "e": 2,
+          "p": 2,
+          "gf": 0,
+          "gc": 3,
+          "puntos": 2,
+          "ppp": 0.5,
+          "victorias_pct": 0.0
+        }
+      }
+    },
+    "DEN": {},
+    "SCO": {},
+    "ESP": {},
+    "FRA": {},
+    "GRE": {},
+    "ENG": {},
+    "ITA": {},
+    "NOR": {},
+    "NED": {},
+    "POR": {},
+    "SWE": {},
+    "SUI": {},
+    "TUR": {}
+  }
 }
