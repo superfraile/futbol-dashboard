@@ -1,0 +1,34 @@
+name: Actualizar datos deportivos
+on:
+  schedule:
+    - cron: '17 5 * * *'
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/actualizar-datos.yml'
+permissions:
+  contents: write
+concurrency:
+  group: datos-deportivos
+  cancel-in-progress: false
+jobs:
+  actualizar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m unittest discover -s tests -v
+      - run: python -m scripts.proveedores
+      - run: python -m scripts.construir_datos entrada.json datos.json
+      - run: |
+          python -c 'import json; d=json.load(open("datos.json")); assert len(d["ligas"]["GER"])==18'
+          mv entrada.json datos-origen.json
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add datos.json datos-origen.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Actualizar datos deportivos"
+            git push
+          fi
