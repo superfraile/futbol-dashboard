@@ -23,7 +23,19 @@ async function iniciar(){
  liga();
  if(datos.equipos_top?.length)tabla(document.querySelector("#favoritos .aviso"),["Liga","Equipo","ELO"],datos.equipos_top.map(r=>[r.liga,r.equipo,r.elo]));
  if(datos.partidos?.length)tabla(document.querySelector("#partidos .aviso"),["Liga","Fecha","Local","Visitante"],datos.partidos.map(r=>[r.liga,r.fecha,r.local,r.visitante]));
- document.querySelector("#estadisticas .aviso").textContent="Ligas con datos: "+Object.values(datos.ligas).filter(r=>Array.isArray(r)&&r.length).length+" de 14. Fuente: "+(datos.fuente||"pendiente de validación");
+ const dest=document.querySelector("#estadisticas .aviso");
+ const filas=[];
+ for(const l of CONFIG.ligas){
+   for(const [equipo,condiciones] of Object.entries(datos.estadisticas?.[l.id]||{})){
+     for(const [condicion,s] of Object.entries(condiciones)){
+       filas.push([l.pais,equipo,condicion,s.pj,s.g,s.e,s.p,s.gf,s.gc,s.puntos,s.ppp,s.victorias_pct]);
+     }
+   }
+ }
+ if(filas.length)tabla(dest,["Liga","Equipo","Condición","PJ","G","E","P","GF","GC","Pts","Pts/PJ","Victorias %"],filas);
+ else dest.textContent="Sin estadísticas verificadas. Fuente: "+(datos.fuente||"pendiente de validación");
+ const fuente=document.createElement("p");fuente.textContent="Fuente: "+(datos.fuente||"pendiente de validación");
+ document.querySelector("footer").append(fuente);
  }catch(e){document.getElementById("detalle-liga").textContent="No se pudieron cargar los datos. Recarga la página más tarde."}
 }
 iniciar();
