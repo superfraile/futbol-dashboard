@@ -1,0 +1,22 @@
+name: Validar proveedor deportivo
+on:
+  push:
+    paths:
+      - '.github/workflows/validar-proveedor.yml'
+      - 'scripts/proveedores.py'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  validar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m unittest discover -s tests -v
+      - run: python -m scripts.proveedores
+      - run: python -m scripts.construir_datos entrada.json /tmp/datos-validacion.json
+      - run: |
+          python -c 'import json; d=json.load(open("/tmp/datos-validacion.json")); assert len(d["ligas"]["GER"])==18; print("Equipos Bundesliga:",len(d["ligas"]["GER"])); print("Partidos pendientes:",len(d["partidos"])); print("Equipos TOP:",len(d["equipos_top"]))'
