@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fútbol Dashboard</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#0f172a;color:#f1f5f9;font-family:Arial,sans-serif}
+header{background:#111827;padding:28px;text-align:center;border-bottom:2px solid #22c55e}
+h1{margin:0;color:#4ade80;font-size:30px}
+header p{color:#94a3b8}
+main{max-width:1200px;margin:auto;padding:20px}
+.resumen{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:15px}
+.tarjeta{background:#1e293b;padding:20px;border-radius:12px;border:1px solid #334155}
+.numero{font-size:30px;color:#4ade80;font-weight:bold}
+.etiqueta{color:#94a3b8;font-size:14px}
+nav{display:flex;flex-wrap:wrap;gap:10px;margin:25px 0}
+button{background:#1e293b;color:white;border:1px solid #334155;padding:13px;border-radius:8px;cursor:pointer;font-size:15px}
+button:hover,button.activo{background:#15803d}
+.ligas{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+.liga{background:#1e293b;border:1px solid #334155;padding:18px;border-radius:10px;cursor:pointer;text-align:left}
+.liga:hover{border-color:#4ade80}
+.seccion{display:none}
+.visible{display:block}
+.aviso{padding:18px;background:#1e293b;border-left:4px solid #eab308;border-radius:6px;color:#cbd5e1;margin:20px 0}
+footer{text-align:center;color:#64748b;padding:25px;font-size:13px}
+</style>
+</head>
+<body>
+
+<header>
+<h1>⚽ FÚTBOL DASHBOARD</h1>
+<p>Clasificaciones · Estadísticas · Calendarios</p>
+</header>
+
+<main>
+
+<div class="resumen">
+<div class="tarjeta">
+<div class="etiqueta">Ligas seleccionadas</div>
+<div class="numero">14</div>
+</div>
+<div class="tarjeta">
+<div class="etiqueta">Equipos favoritos</div>
+<div class="numero">—</div>
+</div>
+<div class="tarjeta">
+<div class="etiqueta">Próximos partidos</div>
+<div class="numero">—</div>
+</div>
+<div class="tarjeta">
+<div class="etiqueta">Última actualización</div>
+<p>Pendiente de conexión</p>
+</div>
+</div>
+
+<nav>
+<button class="activo" onclick="mostrar('clasificaciones',this)">🏆 Clasificaciones</button>
+<button onclick="mostrar('favoritos',this)">⭐ Equipos TOP</button>
+<button onclick="mostrar('partidos',this)">📅 Próximos partidos</button>
+<button onclick="mostrar('estadisticas',this)">📊 Estadísticas</button>
+</nav>
+
+<section id="clasificaciones" class="seccion visible">
+<h2>Ligas europeas</h2>
+<div class="ligas" id="lista-ligas"></div>
+<div class="aviso" id="detalle-liga">Selecciona una liga.</div>
+</section>
+
+<section id="favoritos" class="seccion">
+<h2>Equipos TOP</h2>
+<div class="aviso">Pendiente de configurar los equipos favoritos de cada liga.</div>
+</section>
+
+<section id="partidos" class="seccion">
+<h2>Próximos partidos</h2>
+<div class="aviso">Pendiente de conectar los calendarios oficiales.</div>
+</section>
+
+<section id="estadisticas" class="seccion">
+<h2>Estadísticas</h2>
+<div class="aviso">Pendiente de incorporar los datos deportivos.</div>
+</section>
+
+</main>
+
+<footer>Fútbol Dashboard | Versión 1.0</footer>
+
+<script>
+const ligas=[
+"🇩🇪 Alemania - Bundesliga",
+"🇩🇰 Dinamarca - Superliga",
+"🏴󠁧󠁢󠁳󠁣󠁴󠁿 Escocia - Premiership",
+"🇪🇸 España - La Liga",
+"🇫🇷 Francia - Ligue 1",
+"🇬🇷 Grecia - Super League",
+"🏴󠁧󠁢󠁥󠁮󠁧󠁿 Inglaterra - Premier League",
+"🇮🇹 Italia - Serie A",
+"🇳🇴 Noruega - Eliteserien",
+"🇳🇱 Países Bajos - Eredivisie",
+"🇵🇹 Portugal - Primeira Liga",
+"🇸🇪 Suecia - Allsvenskan",
+"🇨🇭 Suiza - Super League",
+"🇹🇷 Turquía - Süper Lig"
+];
+
+const lista=document.getElementById("lista-ligas");
+
+ligas.forEach(liga=>{
+const boton=document.createElement("button");
+boton.className="liga";
+boton.textContent=liga;
+boton.onclick=()=>{
+document.getElementById("detalle-liga").textContent=
+liga+" | Clasificación pendiente de conexión.";
+};
+lista.appendChild(boton);
+});
+
+function mostrar(id,boton){
+document.querySelectorAll(".seccion").forEach(s=>s.classList.remove("visible"));
+document.querySelectorAll("nav button").forEach(b=>b.classList.remove("activo"));
+document.getElementById(id).classList.add("visible");
+boton.classList.add("activo");
+}
+</script>
+
+</body>
+</html>
