@@ -4,14 +4,38 @@ No descarga ni publica información por su cuenta.
 """
 import json
 import sys
-from datetime import datetime, timezone
+from datetime import datetime, timezone, date
 from pathlib import Path
 from scripts.estadisticas import calcular, desglosar
 from scripts.elo import elo
 
 LIGAS="GER DEN SCO ESP FRA GRE ENG ITA NOR NED POR SWE SUI TUR".split()
 
+def validar(entrada):
+    ligas=entrada["ligas"]
+    if not isinstance(ligas,dict) or set(ligas)-set(LIGAS):
+        raise ValueError("Ligas no reconocidas")
+    for partidos in ligas.values():
+        if not isinstance(partidos,list):
+            raise ValueError("Lista de partidos obligatoria")
+        vistos=set()
+        for m in partidos:
+            fecha=m["fecha"]
+            date.fromisoformat(fecha[:10])
+            if len(fecha)>10:
+                datetime.fromisoformat(fecha.replace("Z","+00:00"))
+            a,b=m["local"],m["visitante"]
+            if not all(isinstance(x,str) and x.strip() and x==x.strip() for x in (a,b)) or a==b:
+                raise ValueError("Equipos invalidos")
+            if m["estado"] not in ("finalizado","pendiente","aplazado","cancelado"):
+                raise ValueError("Estado desconocido")
+            clave=(fecha[:10],a,b)
+            if clave in vistos:
+                raise ValueError("Partido duplicado")
+            vistos.add(clave)
+
 def construir(entrada):
+    validar(entrada)
     fuente=entrada["fuente"]
     if not isinstance(fuente,str) or not fuente.strip():
         raise ValueError("Fuente obligatoria")
