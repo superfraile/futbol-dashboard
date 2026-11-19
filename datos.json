@@ -1,0 +1,24 @@
+{
+  "version": "1.0",
+  "ultima_actualizacion": null,
+  "fuente": null,
+  "ligas": {
+    "GER": [],
+    "DEN": [],
+    "SCO": [],
+    "ESP": [],
+    "FRA": [],
+    "GRE": [],
+    "ENG": [],
+    "ITA": [],
+    "NOR": [],
+    "NED": [],
+    "POR": [],
+    "SWE": [],
+    "SUI": [],
+    "TUR": []
+  },
+  "equipos_top": [],
+  "partidos": [],
+  "estadisticas": {}
+}
