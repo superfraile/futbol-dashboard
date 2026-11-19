@@ -1,0 +1,1 @@
+Los archivos datos.json y datos-origen.json, cuando contienen datos de OpenLigaDB, se ofrecen bajo ODbL 1.0 (https://opendatacommons.org/licenses/odbl/1-0/). Fuente: https://www.openligadb.de/. El archivo datos-origen.json contiene los partidos normalizados utilizados para producir las estadísticas. Esta licencia no se extiende automáticamente al código del panel.
