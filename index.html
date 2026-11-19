@@ -26,6 +26,7 @@ button:hover,button.activo{background:#15803d}
 .visible{display:block}
 .aviso{padding:18px;background:#1e293b;border-left:4px solid #eab308;border-radius:6px;color:#cbd5e1;margin:20px 0}
 footer{text-align:center;color:#64748b;padding:25px;font-size:13px}
+table{border-collapse:collapse;width:100%;font-size:14px}th,td{padding:9px;text-align:left;border-bottom:1px solid #334155}.aviso{overflow-x:auto}
 </style>
 </head>
 <body>
@@ -86,46 +87,10 @@ footer{text-align:center;color:#64748b;padding:25px;font-size:13px}
 
 </main>
 
-<footer>Fútbol Dashboard | Versión 1.0</footer>
+<footer>Fútbol Dashboard | Versión 1.1</footer>
 
-<script>
-const ligas=[
-"🇩🇪 Alemania - Bundesliga",
-"🇩🇰 Dinamarca - Superliga",
-"Escocia - Premiership",
-"🇪🇸 España - La Liga",
-"🇫🇷 Francia - Ligue 1",
-"🇬🇷 Grecia - Super League",
-"Inglaterra - Premier League",
-"🇮🇹 Italia - Serie A",
-"🇳🇴 Noruega - Eliteserien",
-"🇳🇱 Países Bajos - Eredivisie",
-"🇵🇹 Portugal - Primeira Liga",
-"🇸🇪 Suecia - Allsvenskan",
-"🇨🇭 Suiza - Super League",
-"🇹🇷 Turquía - Süper Lig"
-];
-
-const lista=document.getElementById("lista-ligas");
-
-ligas.forEach(liga=>{
-const boton=document.createElement("button");
-boton.className="liga";
-boton.textContent=liga;
-boton.onclick=()=>{
-document.getElementById("detalle-liga").textContent=
-liga+" | Clasificación pendiente de conexión.";
-};
-lista.appendChild(boton);
-});
-
-function mostrar(id,boton){
-document.querySelectorAll(".seccion").forEach(s=>s.classList.remove("visible"));
-document.querySelectorAll("nav button").forEach(b=>b.classList.remove("activo"));
-document.getElementById(id).classList.add("visible");
-boton.classList.add("activo");
-}
-</script>
+<script src="datos.js"></script>
+<script src="panel.js"></script>
 
 </body>
 </html>
