@@ -1,20 +1,20 @@
 {
   "version": "1.1",
-  "ultima_actualizacion": "2026-11-20T06:16:59.802128+00:00",
+  "ultima_actualizacion": "2026-11-21T06:05:24.490806+00:00",
   "fuente": "OpenLigaDB (https://www.openligadb.de), ODbL 1.0; cobertura GER",
   "ligas": {
     "GER": [
       {
         "equipo": "FC Bayern München",
-        "pj": 9,
+        "pj": 10,
         "g": 6,
-        "e": 3,
+        "e": 4,
         "p": 0,
-        "gf": 29,
-        "gc": 9,
-        "puntos": 21,
+        "gf": 30,
+        "gc": 10,
+        "puntos": 22,
         "posicion": 1,
-        "ppp": 2.33
+        "ppp": 2.2
       },
       {
         "equipo": "Borussia Dortmund",
@@ -161,6 +161,18 @@
         "ppp": 1.11
       },
       {
+        "equipo": "1. FC Köln",
+        "pj": 10,
+        "g": 2,
+        "e": 4,
+        "p": 4,
+        "gf": 11,
+        "gc": 15,
+        "puntos": 10,
+        "posicion": 14,
+        "ppp": 1.0
+      },
+      {
         "equipo": "FC Augsburg",
         "pj": 9,
         "g": 2,
@@ -168,18 +180,6 @@
         "p": 4,
         "gf": 20,
         "gc": 20,
-        "puntos": 9,
-        "posicion": 14,
-        "ppp": 1.0
-      },
-      {
-        "equipo": "1. FC Köln",
-        "pj": 9,
-        "g": 2,
-        "e": 3,
-        "p": 4,
-        "gf": 10,
-        "gc": 14,
         "puntos": 9,
         "posicion": 15,
         "ppp": 1.0
@@ -239,7 +239,7 @@
     {
       "liga": "GER",
       "equipo": "FC Bayern München",
-      "elo": 1557.0
+      "elo": 1553.2
     },
     {
       "liga": "GER",
@@ -263,12 +263,6 @@
     }
   ],
   "partidos": [
-    {
-      "liga": "GER",
-      "fecha": "2026-11-20",
-      "local": "FC Bayern München",
-      "visitante": "1. FC Köln"
-    },
     {
       "liga": "GER",
       "fecha": "2026-11-21",
@@ -1618,15 +1612,15 @@
     "GER": {
       "FC Bayern München": {
         "local": {
-          "pj": 4,
+          "pj": 5,
           "g": 3,
-          "e": 1,
+          "e": 2,
           "p": 0,
-          "gf": 20,
-          "gc": 4,
-          "puntos": 10,
-          "ppp": 2.5,
-          "victorias_pct": 75.0
+          "gf": 21,
+          "gc": 5,
+          "puntos": 11,
+          "ppp": 2.2,
+          "victorias_pct": 60.0
         },
         "visitante": {
           "pj": 5,
@@ -1821,14 +1815,14 @@
           "victorias_pct": 40.0
         },
         "visitante": {
-          "pj": 4,
+          "pj": 5,
           "g": 0,
-          "e": 1,
+          "e": 2,
           "p": 3,
-          "gf": 3,
-          "gc": 8,
-          "puntos": 1,
-          "ppp": 0.25,
+          "gf": 4,
+          "gc": 9,
+          "puntos": 2,
+          "ppp": 0.4,
           "victorias_pct": 0.0
         }
       },
