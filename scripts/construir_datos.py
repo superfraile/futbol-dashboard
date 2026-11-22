@@ -67,6 +67,7 @@ def generar_dobles(candidatos):
         if (a["liga"],a["fecha"],a["local"],a["visitante"]) == (b["liga"],b["fecha"],b["local"],b["visitante"]):
             continue
         dobles.append(dict(partidos=[a,b],cuota_combinada=round(a["cuota"]*b["cuota"],3)))
+    dobles.sort(key=lambda d:(d["partidos"][1]["fecha"][:10],d["partidos"][0]["fecha"][:10],d["partidos"][0]["liga"]))
     return dobles
 
 def validar(entrada):
