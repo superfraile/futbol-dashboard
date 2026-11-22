@@ -66,9 +66,11 @@ def emparejar_candidatos(candidatos, partidos, equivalencias=None, tolerancia_se
         raise ValueError("Equivalencias inválidas")
     def nombre(valor):
         return clave_equipo(equivalencias.get(valor,valor)) if isinstance(valor,str) else None
-    resultado=[]
-    usados=set()
-    for candidato in candidatos:
+    # Evaluar todas las relaciones antes de aceptar ninguna: el orden de entrada
+    # no debe decidir a qué candidato se asigna un mismo partido.
+    opciones_por_candidato={}
+    candidatos_por_partido={}
+    for indice_candidato,candidato in enumerate(candidatos):
         if not isinstance(candidato,dict):
             continue
         inicio=fecha_utc(candidato.get("fecha"))
@@ -79,17 +81,17 @@ def emparejar_candidatos(candidatos, partidos, equivalencias=None, tolerancia_se
         if not local or not visitante or local==visitante:
             continue
         opciones=[]
-        for indice,partido in enumerate(partidos):
+        for indice_partido,partido in enumerate(partidos):
             if not isinstance(partido,dict) or partido.get("in_play") is not False:
                 continue
             fecha=fecha_utc(partido.get("kickoff_utc"))
             if fecha is None or abs((fecha-inicio).total_seconds())>tolerancia_segundos:
                 continue
-            if clave_equipo(partido.get("home",""))==local and clave_equipo(partido.get("away",""))==visitante:
-                opciones.append((indice,partido))
-        if len(opciones)==1:
-            indice,partido=opciones[0]
-            if indice not in usados:
-                resultado.append((candidato,partido))
-                usados.add(indice)
-    return resultado
+            if (clave_equipo(partido.get("home",""))==local and
+                    clave_equipo(partido.get("away",""))==visitante):
+                opciones.append(indice_partido)
+                candidatos_por_partido.setdefault(indice_partido,set()).add(indice_candidato)
+        opciones_por_candidato[indice_candidato]=opciones
+    return [(candidatos[i],partidos[opciones[0]])
+            for i,opciones in opciones_por_candidato.items()
+            if len(opciones)==1 and len(candidatos_por_partido[opciones[0]])==1]
