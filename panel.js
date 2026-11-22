@@ -55,16 +55,25 @@ async function iniciar(){
  dibujarPartidos();
  const candidatos=(datos.candidatos||[]).filter(r=>r.fecha.slice(0,10)>=hoy);
  const candidatosDest=document.getElementById("lista-candidatos");
- if(datos.favoritos_validados!==true || datos.equipos_top?.length!==38){
-   candidatosDest.textContent="La lista de favoritos está pendiente de validación. No se generan selecciones.";
- }else if(candidatos.length){
-   tabla(candidatosDest,["Liga","Fecha","Local","Visitante","Favorito fijo","Pts/PJ","Cuota"],candidatos.slice(0,100).map(r=>[
+ const filtroCandidatos=document.getElementById("filtro-candidatos");
+ for(const l of CONFIG.ligas.filter(l=>candidatos.some(p=>p.liga===l.id))){
+   const opcion=document.createElement("option");opcion.value=l.id;opcion.textContent=l.pais+" - "+l.nombre;filtroCandidatos.append(opcion);
+ }
+ function dibujarCandidatos(){
+   if(datos.favoritos_validados!==true || datos.equipos_top?.length!==38){
+     candidatosDest.textContent="La lista publicada todavía no coincide con los 38 favoritos confirmados.";return;
+   }
+   const filtrados=candidatos.filter(r=>!filtroCandidatos.value||r.liga===filtroCandidatos.value);
+   if(!filtrados.length){candidatosDest.textContent="Sin partidos preseleccionados para esta liga.";return;}
+   tabla(candidatosDest,["Liga","Fecha","Local","Visitante","Favorito fijo","Pts/PJ","Cuota"],filtrados.slice(0,100).map(r=>[
      nombreLiga(r.liga),r.fecha,r.local,r.visitante,r.favorito,r.ppp,"Pendiente"
    ]));
    const aviso=document.createElement("p");
-   aviso.textContent=candidatos.length+" partidos preseleccionados. Ninguno es apuesta válida sin cuota comprobada.";
+   aviso.textContent="Mostrando "+Math.min(100,filtrados.length)+" de "+filtrados.length+" partidos preseleccionados. No son apuestas válidas sin cuotas verificadas.";
    candidatosDest.append(aviso);
- }else candidatosDest.textContent="No hay partidos preseleccionados con los filtros deportivos actuales.";
+ }
+ filtroCandidatos.addEventListener("change",dibujarCandidatos);
+ dibujarCandidatos();
  const doblesDest=document.getElementById("lista-dobles");
  const dobles=(datos.dobles||[]).filter(d=>Array.isArray(d.partidos)&&d.partidos.length===2&&d.partidos.every(p=>p.fecha.slice(0,10)>=hoy&&p.cuota_verificada===true&&typeof p.cuota==="number"&&p.cuota>=1.20&&p.cuota<=1.80));
  if(dobles.length){
