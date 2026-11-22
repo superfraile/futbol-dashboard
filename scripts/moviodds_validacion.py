@@ -29,6 +29,7 @@ def mercado_1x2(partido, ahora=None):
     if not isinstance(cuotas,list):
         return {}
     resultados={}
+    duplicados=set()
     for q in cuotas:
         if not isinstance(q,dict) or str(q.get("group_id"))!="40":
             continue
@@ -47,7 +48,7 @@ def mercado_1x2(partido, ahora=None):
             continue
         # Duplicados para una misma selección son ambiguos: no escoger arbitrariamente.
         if signo in resultados:
-            resultados[signo]=None
+            duplicados.add(signo)
         else:
             resultados[signo]={"cuota":valor,"consultada_en":instante.isoformat()}
-    return {k:v for k,v in resultados.items() if v is not None}
+    return {k:v for k,v in resultados.items() if k not in duplicados}
