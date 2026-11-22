@@ -69,29 +69,38 @@ def football_data(codigo, clave):
 def descargar():
     hoy = datetime.now(ZoneInfo("Europe/Madrid"))
     temporada = hoy.year if hoy.month >= 7 else hoy.year - 1
-    ligas = {"GER": openligadb(temporada)}
-    fuentes = ["OpenLigaDB (https://www.openligadb.de), ODbL 1.0; GER"]
+    anteriores = {}
+    try:
+        from pathlib import Path
+        anterior = Path("datos-origen.json")
+        if anterior.exists():
+            anteriores = json.loads(anterior.read_text(encoding="utf-8")).get("ligas", {})
+    except (OSError, ValueError, TypeError):
+        print("AVISO: no se pudo leer la copia anterior")
+    ligas = {}
+    fuentes = []
+    try:
+        ligas["GER"] = openligadb(temporada)
+        fuentes.append("OpenLigaDB (https://www.openligadb.de), ODbL 1.0; GER")
+    except Exception as error:
+        print(f"AVISO: GER no disponible: {type(error).__name__}: {error}")
+        if anteriores.get("GER"):
+            ligas["GER"] = anteriores["GER"]
+            fuentes.append("OpenLigaDB (https://www.openligadb.de), ODbL 1.0; GER; copia anterior")
     clave = os.environ.get("FOOTBALL_DATA_API_KEY", "").strip()
     if clave:
-        anteriores = {}
-        try:
-            from pathlib import Path
-            anterior = Path("datos-origen.json")
-            if anterior.exists():
-                anteriores = json.loads(anterior.read_text(encoding="utf-8")).get("ligas", {})
-        except (OSError, ValueError, TypeError):
-            print("AVISO: no se pudo leer la copia anterior")
         for liga, codigo in COMPETICIONES.items():
             try:
                 ligas[liga] = football_data(codigo, clave)
                 fuentes.append(f"football-data.org ({codigo}; {liga})")
                 print(f"{liga}: {len(ligas[liga])} partidos descargados")
             except Exception as error:
-                # No bloquear la Bundesliga ni publicar datos falsos.
                 print(f"AVISO: {liga} no disponible: {type(error).__name__}: {error}")
                 if anteriores.get(liga):
                     ligas[liga] = anteriores[liga]
                     fuentes.append(f"football-data.org ({codigo}; {liga}; copia anterior)")
+    if not ligas:
+        raise ValueError("Ninguna liga disponible; se conserva el JSON publicado")
     return {"fuente": "; ".join(fuentes), "ligas": ligas}
 
 if __name__ == "__main__":
