@@ -5,7 +5,7 @@ class TestConstruir(unittest.TestCase):
     def test_integracion(self):
         datos=construir({"fuente":"prueba ficticia","ligas":{"ESP":[
             dict(fecha="2026-01-01",local="A",visitante="B",goles_local=2,goles_visitante=0,estado="finalizado"),
-            dict(fecha="2026-01-08",local="B",visitante="A",estado="pendiente")]}})
+            dict(fecha="2099-01-08",local="B",visitante="A",estado="pendiente")]}})
         self.assertEqual(len(datos["ligas"]),14)
         self.assertEqual(datos["ligas"]["ESP"][0]["puntos"],3)
         self.assertEqual(len(datos["equipos_top"]),38)
