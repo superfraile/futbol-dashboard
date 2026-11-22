@@ -61,6 +61,7 @@ table{border-collapse:collapse;width:100%;font-size:14px}th,td{padding:9px;text-
 <button class="activo" onclick="mostrar('clasificaciones',this)">🏆 Clasificaciones</button>
 <button onclick="mostrar('favoritos',this)">⭐ Equipos TOP</button>
 <button onclick="mostrar('partidos',this)">📅 Próximos partidos</button>
+<button onclick="mostrar('candidatos',this)">🎯 Preselección</button>
 <button onclick="mostrar('estadisticas',this)">📊 Estadísticas</button>
 </nav>
 
@@ -80,6 +81,12 @@ table{border-collapse:collapse;width:100%;font-size:14px}th,td{padding:9px;text-
 <label for="filtro-partidos">Filtrar liga: </label>
 <select id="filtro-partidos" style="background:#1e293b;color:white;border:1px solid #64748b;padding:10px;border-radius:8px;margin-bottom:12px"><option value="">Todas las ligas</option></select>
 <div class="aviso">Pendiente de conectar los calendarios oficiales.</div>
+</section>
+
+<section id="candidatos" class="seccion">
+<h2>Preselección de partidos</h2>
+<p>Equipos favoritos fijos con al menos 2 puntos por partido. Se excluyen enfrentamientos entre favoritos. No son apuestas válidas hasta verificar cuotas entre 1,20 y 1,80.</p>
+<div class="aviso" id="lista-candidatos">Pendiente de datos.</div>
 </section>
 
 <section id="estadisticas" class="seccion">
