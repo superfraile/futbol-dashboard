@@ -1,7 +1,7 @@
 {
   "version": "1.2",
-  "ultima_actualizacion": "2026-11-22T21:18:09.878575+00:00",
-  "fuente": "OpenLigaDB (https://www.openligadb.de), ODbL 1.0; GER; football-data.org (PL; ENG); football-data.org (PD; ESP); football-data.org (SA; ITA); football-data.org (FL1; FRA); football-data.org (PPL; POR); football-data.org (DED; NED)",
+  "ultima_actualizacion": "2026-11-22T21:30:21.461Z",
+  "fuente": "OpenLigaDB (https://www.openligadb.de), ODbL 1.0; GER; football-data.org (PL; ENG); football-data.org (PD; ESP); football-data.org (SA; ITA); football-data.org (FL1; FRA); football-data.org (PPL; POR); football-data.org (DED; NED); selección reconstruida a partir de datos-origen.json",
   "ligas": {
     "GER": [
       {
@@ -158,7 +158,7 @@
         "gc": 22,
         "puntos": 10,
         "posicion": 13,
-        "ppp": 1.0
+        "ppp": 1
       },
       {
         "equipo": "1. FC Köln",
@@ -170,7 +170,7 @@
         "gc": 15,
         "puntos": 10,
         "posicion": 14,
-        "ppp": 1.0
+        "ppp": 1
       },
       {
         "equipo": "SC Paderborn 07",
@@ -182,7 +182,7 @@
         "gc": 15,
         "puntos": 10,
         "posicion": 15,
-        "ppp": 1.0
+        "ppp": 1
       },
       {
         "equipo": "FC Schalke 04",
@@ -390,7 +390,7 @@
         "gc": 12,
         "puntos": 13,
         "posicion": 14,
-        "ppp": 1.0
+        "ppp": 1
       },
       {
         "equipo": "Rayo Vallecano de Madrid",
@@ -402,7 +402,7 @@
         "gc": 22,
         "puntos": 12,
         "posicion": 15,
-        "ppp": 1.0
+        "ppp": 1
       },
       {
         "equipo": "Getafe CF",
@@ -414,7 +414,7 @@
         "gc": 18,
         "puntos": 12,
         "posicion": 16,
-        "ppp": 1.0
+        "ppp": 1
       },
       {
         "equipo": "Valencia CF",
@@ -500,7 +500,7 @@
         "gc": 10,
         "puntos": 20,
         "posicion": 3,
-        "ppp": 2.0
+        "ppp": 2
       },
       {
         "equipo": "Olympique Lyonnais",
@@ -620,7 +620,7 @@
         "gc": 18,
         "puntos": 11,
         "posicion": 13,
-        "ppp": 1.0
+        "ppp": 1
       },
       {
         "equipo": "AJ Auxerre",
@@ -632,7 +632,7 @@
         "gc": 25,
         "puntos": 11,
         "posicion": 14,
-        "ppp": 1.0
+        "ppp": 1
       },
       {
         "equipo": "RC Strasbourg Alsace",
@@ -707,7 +707,7 @@
         "gc": 9,
         "puntos": 22,
         "posicion": 2,
-        "ppp": 2.0
+        "ppp": 2
       },
       {
         "equipo": "Manchester City FC",
@@ -719,7 +719,7 @@
         "gc": 14,
         "puntos": 22,
         "posicion": 3,
-        "ppp": 2.0
+        "ppp": 2
       },
       {
         "equipo": "Liverpool FC",
@@ -863,7 +863,7 @@
         "gc": 13,
         "puntos": 11,
         "posicion": 15,
-        "ppp": 1.0
+        "ppp": 1
       },
       {
         "equipo": "Ipswich Town FC",
@@ -875,7 +875,7 @@
         "gc": 22,
         "puntos": 11,
         "posicion": 16,
-        "ppp": 1.0
+        "ppp": 1
       },
       {
         "equipo": "Nottingham Forest FC",
@@ -1216,7 +1216,7 @@
         "gc": 17,
         "puntos": 26,
         "posicion": 4,
-        "ppp": 2.0
+        "ppp": 2
       },
       {
         "equipo": "Feyenoord Rotterdam",
@@ -1398,7 +1398,7 @@
         "gc": 5,
         "puntos": 33,
         "posicion": 1,
-        "ppp": 3.0
+        "ppp": 3
       },
       {
         "equipo": "Sport Lisboa e Benfica",
@@ -1609,7 +1609,236 @@
     "SUI": [],
     "TUR": []
   },
-  "equipos_top": [],
+  "equipos_top": [
+    {
+      "liga": "GER",
+      "equipo": "Bayern Munich",
+      "elo": 1553.2,
+      "equipo_proveedor": "FC Bayern München"
+    },
+    {
+      "liga": "GER",
+      "equipo": "Dortmund",
+      "elo": 1560.7,
+      "equipo_proveedor": "Borussia Dortmund"
+    },
+    {
+      "liga": "GER",
+      "equipo": "RB Leipzig",
+      "elo": 1536.7,
+      "equipo_proveedor": "RB Leipzig"
+    },
+    {
+      "liga": "GER",
+      "equipo": "Bayer Leverkusen",
+      "elo": 1527,
+      "equipo_proveedor": "Bayer 04 Leverkusen"
+    },
+    {
+      "liga": "DEN",
+      "equipo": "Midtjylland",
+      "elo": null,
+      "equipo_proveedor": null
+    },
+    {
+      "liga": "DEN",
+      "equipo": "FC Copenhagen",
+      "elo": null,
+      "equipo_proveedor": null
+    },
+    {
+      "liga": "SCO",
+      "equipo": "Celtic",
+      "elo": null,
+      "equipo_proveedor": null
+    },
+    {
+      "liga": "SCO",
+      "equipo": "Rangers",
+      "elo": null,
+      "equipo_proveedor": null
+    },
+    {
+      "liga": "ESP",
+      "equipo": "Barcelona",
+      "elo": 1593.7,
+      "equipo_proveedor": "FC Barcelona"
+    },
+    {
+      "liga": "ESP",
+      "equipo": "Real Madrid",
+      "elo": 1580.1,
+      "equipo_proveedor": "Real Madrid CF"
+    },
+    {
+      "liga": "ESP",
+      "equipo": "Betis",
+      "elo": 1551.3,
+      "equipo_proveedor": "Real Betis Balompié"
+    },
+    {
+      "liga": "ESP",
+      "equipo": "Atl. Madrid",
+      "elo": 1562.2,
+      "equipo_proveedor": "Club Atlético de Madrid"
+    },
+    {
+      "liga": "FRA",
+      "equipo": "PSG",
+      "elo": 1568.2,
+      "equipo_proveedor": "Paris Saint-Germain FC"
+    },
+    {
+      "liga": "FRA",
+      "equipo": "Monaco",
+      "elo": 1514.3,
+      "equipo_proveedor": "AS Monaco FC"
+    },
+    {
+      "liga": "FRA",
+      "equipo": "Marseille",
+      "elo": 1521.1,
+      "equipo_proveedor": "Olympique de Marseille"
+    },
+    {
+      "liga": "GRE",
+      "equipo": "AEK Athens",
+      "elo": null,
+      "equipo_proveedor": null
+    },
+    {
+      "liga": "GRE",
+      "equipo": "Olympiacos Piraeus",
+      "elo": null,
+      "equipo_proveedor": null
+    },
+    {
+      "liga": "ENG",
+      "equipo": "Arsenal",
+      "elo": 1571.5,
+      "equipo_proveedor": "Arsenal FC"
+    },
+    {
+      "liga": "ENG",
+      "equipo": "Manchester City",
+      "elo": 1526.6,
+      "equipo_proveedor": "Manchester City FC"
+    },
+    {
+      "liga": "ENG",
+      "equipo": "Manchester Utd",
+      "elo": 1465.2,
+      "equipo_proveedor": "Manchester United FC"
+    },
+    {
+      "liga": "ENG",
+      "equipo": "Liverpool",
+      "elo": 1535.4,
+      "equipo_proveedor": "Liverpool FC"
+    },
+    {
+      "liga": "ITA",
+      "equipo": "Inter",
+      "elo": 1567.1,
+      "equipo_proveedor": "FC Internazionale Milano"
+    },
+    {
+      "liga": "ITA",
+      "equipo": "Napoli",
+      "elo": 1510.4,
+      "equipo_proveedor": "SSC Napoli"
+    },
+    {
+      "liga": "ITA",
+      "equipo": "AC Milan",
+      "elo": 1554.4,
+      "equipo_proveedor": "AC Milan"
+    },
+    {
+      "liga": "ITA",
+      "equipo": "Juventus",
+      "elo": 1518.1,
+      "equipo_proveedor": "Juventus FC"
+    },
+    {
+      "liga": "NOR",
+      "equipo": "Molde",
+      "elo": null,
+      "equipo_proveedor": null
+    },
+    {
+      "liga": "NOR",
+      "equipo": "Bodo/Glimt",
+      "elo": null,
+      "equipo_proveedor": null
+    },
+    {
+      "liga": "NED",
+      "equipo": "PSV",
+      "elo": 1560.8,
+      "equipo_proveedor": "PSV"
+    },
+    {
+      "liga": "NED",
+      "equipo": "Feyenoord",
+      "elo": 1538.7,
+      "equipo_proveedor": "Feyenoord Rotterdam"
+    },
+    {
+      "liga": "NED",
+      "equipo": "Ajax",
+      "elo": 1560.7,
+      "equipo_proveedor": "AFC Ajax"
+    },
+    {
+      "liga": "POR",
+      "equipo": "FC Porto",
+      "elo": 1596.1,
+      "equipo_proveedor": "FC Porto"
+    },
+    {
+      "liga": "POR",
+      "equipo": "Sporting CP",
+      "elo": 1549.5,
+      "equipo_proveedor": "Sporting Clube de Portugal"
+    },
+    {
+      "liga": "POR",
+      "equipo": "Benfica",
+      "elo": 1572.6,
+      "equipo_proveedor": "Sport Lisboa e Benfica"
+    },
+    {
+      "liga": "POR",
+      "equipo": "Braga",
+      "elo": 1507.5,
+      "equipo_proveedor": "Sporting Clube de Braga"
+    },
+    {
+      "liga": "SWE",
+      "equipo": "Malmo FF",
+      "elo": null,
+      "equipo_proveedor": null
+    },
+    {
+      "liga": "SUI",
+      "equipo": "Young Boys",
+      "elo": null,
+      "equipo_proveedor": null
+    },
+    {
+      "liga": "TUR",
+      "equipo": "Galatasaray",
+      "elo": null,
+      "equipo_proveedor": null
+    },
+    {
+      "liga": "TUR",
+      "equipo": "Fenerbahce",
+      "elo": null,
+      "equipo_proveedor": null
+    }
+  ],
   "partidos": [
     {
       "liga": "ITA",
@@ -11296,7 +11525,7 @@
           "gc": 5,
           "puntos": 11,
           "ppp": 2.2,
-          "victorias_pct": 60.0
+          "victorias_pct": 60
         },
         "visitante": {
           "pj": 5,
@@ -11307,7 +11536,7 @@
           "gc": 5,
           "puntos": 11,
           "ppp": 2.2,
-          "victorias_pct": 60.0
+          "victorias_pct": 60
         }
       },
       "VfB Stuttgart": {
@@ -11331,7 +11560,7 @@
           "gc": 5,
           "puntos": 6,
           "ppp": 1.5,
-          "victorias_pct": 50.0
+          "victorias_pct": 50
         }
       },
       "RB Leipzig": {
@@ -11343,8 +11572,8 @@
           "gf": 23,
           "gc": 2,
           "puntos": 15,
-          "ppp": 3.0,
-          "victorias_pct": 100.0
+          "ppp": 3,
+          "victorias_pct": 100
         },
         "visitante": {
           "pj": 5,
@@ -11355,7 +11584,7 @@
           "gc": 12,
           "puntos": 6,
           "ppp": 1.2,
-          "victorias_pct": 40.0
+          "victorias_pct": 40
         }
       },
       "Borussia Mönchengladbach": {
@@ -11368,7 +11597,7 @@
           "gc": 15,
           "puntos": 3,
           "ppp": 0.6,
-          "victorias_pct": 20.0
+          "victorias_pct": 20
         },
         "local": {
           "pj": 5,
@@ -11379,7 +11608,7 @@
           "gc": 11,
           "puntos": 1,
           "ppp": 0.2,
-          "victorias_pct": 0.0
+          "victorias_pct": 0
         }
       },
       "1. FSV Mainz 05": {
@@ -11392,7 +11621,7 @@
           "gc": 12,
           "puntos": 1,
           "ppp": 0.2,
-          "victorias_pct": 0.0
+          "victorias_pct": 0
         },
         "visitante": {
           "pj": 5,
@@ -11403,7 +11632,7 @@
           "gc": 10,
           "puntos": 9,
           "ppp": 1.8,
-          "victorias_pct": 60.0
+          "victorias_pct": 60
         }
       },
       "SC Paderborn 07": {
@@ -11416,7 +11645,7 @@
           "gc": 9,
           "puntos": 3,
           "ppp": 0.6,
-          "victorias_pct": 0.0
+          "victorias_pct": 0
         },
         "local": {
           "pj": 5,
@@ -11427,7 +11656,7 @@
           "gc": 6,
           "puntos": 7,
           "ppp": 1.4,
-          "victorias_pct": 40.0
+          "victorias_pct": 40
         }
       },
       "1. FC Union Berlin": {
@@ -11439,7 +11668,7 @@
           "gf": 7,
           "gc": 12,
           "puntos": 6,
-          "ppp": 1.0,
+          "ppp": 1,
           "victorias_pct": 16.67
         },
         "visitante": {
@@ -11451,7 +11680,7 @@
           "gc": 14,
           "puntos": 1,
           "ppp": 0.25,
-          "victorias_pct": 0.0
+          "victorias_pct": 0
         }
       },
       "Eintracht Frankfurt": {
@@ -11463,8 +11692,8 @@
           "gf": 8,
           "gc": 13,
           "puntos": 5,
-          "ppp": 1.0,
-          "victorias_pct": 20.0
+          "ppp": 1,
+          "victorias_pct": 20
         },
         "local": {
           "pj": 5,
@@ -11474,8 +11703,8 @@
           "gf": 8,
           "gc": 7,
           "puntos": 10,
-          "ppp": 2.0,
-          "victorias_pct": 60.0
+          "ppp": 2,
+          "victorias_pct": 60
         }
       },
       "1. FC Köln": {
@@ -11488,7 +11717,7 @@
           "gc": 6,
           "puntos": 8,
           "ppp": 1.6,
-          "victorias_pct": 40.0
+          "victorias_pct": 40
         },
         "visitante": {
           "pj": 5,
@@ -11499,7 +11728,7 @@
           "gc": 9,
           "puntos": 2,
           "ppp": 0.4,
-          "victorias_pct": 0.0
+          "victorias_pct": 0
         }
       },
       "TSG Hoffenheim": {
@@ -11512,7 +11741,7 @@
           "gc": 10,
           "puntos": 3,
           "ppp": 0.6,
-          "victorias_pct": 20.0
+          "victorias_pct": 20
         },
         "local": {
           "pj": 5,
@@ -11523,7 +11752,7 @@
           "gc": 8,
           "puntos": 9,
           "ppp": 1.8,
-          "victorias_pct": 60.0
+          "victorias_pct": 60
         }
       },
       "SV 07 Elversberg": {
@@ -11536,7 +11765,7 @@
           "gc": 9,
           "puntos": 9,
           "ppp": 1.8,
-          "victorias_pct": 60.0
+          "victorias_pct": 60
         },
         "visitante": {
           "pj": 5,
@@ -11547,7 +11776,7 @@
           "gc": 10,
           "puntos": 4,
           "ppp": 0.8,
-          "victorias_pct": 20.0
+          "victorias_pct": 20
         }
       },
       "Bayer 04 Leverkusen": {
@@ -11560,7 +11789,7 @@
           "gc": 12,
           "puntos": 7,
           "ppp": 1.4,
-          "victorias_pct": 40.0
+          "victorias_pct": 40
         },
         "local": {
           "pj": 5,
@@ -11571,7 +11800,7 @@
           "gc": 5,
           "puntos": 12,
           "ppp": 2.4,
-          "victorias_pct": 80.0
+          "victorias_pct": 80
         }
       },
       "Borussia Dortmund": {
@@ -11584,7 +11813,7 @@
           "gc": 3,
           "puntos": 13,
           "ppp": 2.6,
-          "victorias_pct": 80.0
+          "victorias_pct": 80
         },
         "visitante": {
           "pj": 5,
@@ -11595,7 +11824,7 @@
           "gc": 4,
           "puntos": 11,
           "ppp": 2.2,
-          "victorias_pct": 60.0
+          "victorias_pct": 60
         }
       },
       "Hamburger SV": {
@@ -11619,7 +11848,7 @@
           "gc": 7,
           "puntos": 9,
           "ppp": 2.25,
-          "victorias_pct": 75.0
+          "victorias_pct": 75
         }
       },
       "SC Freiburg": {
@@ -11632,7 +11861,7 @@
           "gc": 5,
           "puntos": 12,
           "ppp": 2.4,
-          "victorias_pct": 80.0
+          "victorias_pct": 80
         },
         "visitante": {
           "pj": 5,
@@ -11642,8 +11871,8 @@
           "gf": 7,
           "gc": 5,
           "puntos": 10,
-          "ppp": 2.0,
-          "victorias_pct": 60.0
+          "ppp": 2,
+          "victorias_pct": 60
         }
       },
       "SV Werder Bremen": {
@@ -11655,8 +11884,8 @@
           "gf": 7,
           "gc": 10,
           "puntos": 5,
-          "ppp": 1.0,
-          "victorias_pct": 20.0
+          "ppp": 1,
+          "victorias_pct": 20
         },
         "local": {
           "pj": 5,
@@ -11667,7 +11896,7 @@
           "gc": 5,
           "puntos": 13,
           "ppp": 2.6,
-          "victorias_pct": 80.0
+          "victorias_pct": 80
         }
       },
       "FC Augsburg": {
@@ -11691,7 +11920,7 @@
           "gc": 13,
           "puntos": 3,
           "ppp": 0.75,
-          "victorias_pct": 25.0
+          "victorias_pct": 25
         }
       },
       "FC Schalke 04": {
@@ -11704,7 +11933,7 @@
           "gc": 8,
           "puntos": 4,
           "ppp": 0.8,
-          "victorias_pct": 20.0
+          "victorias_pct": 20
         },
         "local": {
           "pj": 5,
@@ -11715,7 +11944,7 @@
           "gc": 3,
           "puntos": 3,
           "ppp": 0.6,
-          "victorias_pct": 0.0
+          "victorias_pct": 0
         }
       }
     },
@@ -11743,7 +11972,7 @@
           "gc": 11,
           "puntos": 3,
           "ppp": 0.5,
-          "victorias_pct": 0.0
+          "victorias_pct": 0
         }
       },
       "Getafe CF": {
@@ -11755,8 +11984,8 @@
           "gf": 0,
           "gc": 14,
           "puntos": 0,
-          "ppp": 0.0,
-          "victorias_pct": 0.0
+          "ppp": 0,
+          "victorias_pct": 0
         },
         "local": {
           "pj": 6,
@@ -11766,8 +11995,8 @@
           "gf": 8,
           "gc": 4,
           "puntos": 12,
-          "ppp": 2.0,
-          "victorias_pct": 50.0
+          "ppp": 2,
+          "victorias_pct": 50
         }
       },
       "Sevilla FC": {
@@ -11804,7 +12033,7 @@
           "gc": 14,
           "puntos": 2,
           "ppp": 0.33,
-          "victorias_pct": 0.0
+          "victorias_pct": 0
         },
         "local": {
           "pj": 6,
@@ -11815,7 +12044,7 @@
           "gc": 8,
           "puntos": 10,
           "ppp": 1.67,
-          "victorias_pct": 50.0
+          "victorias_pct": 50
         }
       },
       "Real Racing Club de Santander": {
@@ -11827,7 +12056,7 @@
           "gf": 14,
           "gc": 13,
           "puntos": 14,
-          "ppp": 2.0,
+          "ppp": 2,
           "victorias_pct": 57.14
         },
         "visitante": {
@@ -11900,7 +12129,7 @@
           "gc": 9,
           "puntos": 4,
           "ppp": 0.57,
-          "victorias_pct": 0.0
+          "victorias_pct": 0
         },
         "local": {
           "pj": 5,
@@ -11911,7 +12140,7 @@
           "gc": 12,
           "puntos": 7,
           "ppp": 1.4,
-          "victorias_pct": 40.0
+          "victorias_pct": 40
         }
       },
       "RC Deportivo La Coruña": {
@@ -11959,7 +12188,7 @@
           "gc": 14,
           "puntos": 1,
           "ppp": 0.17,
-          "victorias_pct": 0.0
+          "victorias_pct": 0
         }
       },
       "Club Atlético de Madrid": {
@@ -11996,7 +12225,7 @@
           "gc": 12,
           "puntos": 2,
           "ppp": 0.29,
-          "victorias_pct": 0.0
+          "victorias_pct": 0
         },
         "local": {
           "pj": 6,
@@ -12007,7 +12236,7 @@
           "gc": 12,
           "puntos": 3,
           "ppp": 0.5,
-          "victorias_pct": 0.0
+          "victorias_pct": 0
         }
       },
       "Real Betis Balompié": {
@@ -12078,8 +12307,8 @@
           "gf": 4,
           "gc": 6,
           "puntos": 5,
-          "ppp": 1.0,
-          "victorias_pct": 20.0
+          "ppp": 1,
+          "victorias_pct": 20
         }
       },
       "Valencia CF": {
@@ -12092,7 +12321,7 @@
           "gc": 14,
           "puntos": 2,
           "ppp": 0.29,
-          "victorias_pct": 0.0
+          "victorias_pct": 0
         },
         "visitante": {
           "pj": 6,
@@ -12103,7 +12332,7 @@
           "gc": 6,
           "puntos": 10,
           "ppp": 1.67,
-          "victorias_pct": 50.0
+          "victorias_pct": 50
         }
       },
       "RC Celta de Vigo": {
@@ -12116,7 +12345,7 @@
           "gc": 6,
           "puntos": 4,
           "ppp": 0.67,
-          "victorias_pct": 0.0
+          "victorias_pct": 0
         },
         "local": {
           "pj": 7,
@@ -12150,8 +12379,8 @@
           "gf": 19,
           "gc": 4,
           "puntos": 18,
-          "ppp": 3.0,
-          "victorias_pct": 100.0
+          "ppp": 3,
+          "victorias_pct": 100
         }
       },
       "FC Barcelona": {
@@ -12163,8 +12392,8 @@
           "gf": 24,
           "gc": 6,
           "puntos": 18,
-          "ppp": 3.0,
-          "victorias_pct": 100.0
+          "ppp": 3,
+          "victorias_pct": 100
         },
         "local": {
           "pj": 7,
@@ -12214,7 +12443,7 @@
           "gc": 8,
           "puntos": 9,
           "ppp": 1.8,
-          "victorias_pct": 60.0
+          "victorias_pct": 60
         },
         "visitante": {
           "pj": 5,
@@ -12225,7 +12454,7 @@
           "gc": 6,
           "puntos": 9,
           "ppp": 1.8,
-          "victorias_pct": 60.0
+          "victorias_pct": 60
         }
       },
       "RC Strasbourg Alsace": {
@@ -12249,7 +12478,7 @@
           "gc": 7,
           "puntos": 7,
           "ppp": 1.4,
-          "victorias_pct": 40.0
+          "victorias_pct": 40
         }
       },
       "Racing Club de Lens": {
@@ -12262,7 +12491,7 @@
           "gc": 8,
           "puntos": 10,
           "ppp": 1.67,
-          "victorias_pct": 50.0
+          "victorias_pct": 50
         },
         "visitante": {
           "pj": 5,
@@ -12273,7 +12502,7 @@
           "gc": 8,
           "puntos": 4,
           "ppp": 0.8,
-          "victorias_pct": 20.0
+          "victorias_pct": 20
         }
       },
       "AJ Auxerre": {
@@ -12297,7 +12526,7 @@
           "gc": 6,
           "puntos": 7,
           "ppp": 1.4,
-          "victorias_pct": 40.0
+          "victorias_pct": 40
         }
       },
       "Le Mans FC": {
@@ -12310,7 +12539,7 @@
           "gc": 9,
           "puntos": 6,
           "ppp": 1.2,
-          "victorias_pct": 20.0
+          "victorias_pct": 20
         },
         "visitante": {
           "pj": 5,
@@ -12321,7 +12550,7 @@
           "gc": 10,
           "puntos": 2,
           "ppp": 0.4,
-          "victorias_pct": 0.0
+          "victorias_pct": 0
         }
       },
       "Stade Brestois 29": {
@@ -12334,7 +12563,7 @@
           "gc": 6,
           "puntos": 11,
           "ppp": 1.83,
-          "victorias_pct": 50.0
+          "victorias_pct": 50
         },
         "local": {
           "pj": 5,
@@ -12345,7 +12574,7 @@
           "gc": 6,
           "puntos": 7,
           "ppp": 1.4,
-          "victorias_pct": 40.0
+          "victorias_pct": 40
         }
       },
       "ES Troyes AC": {
@@ -12369,7 +12598,7 @@
           "gc": 6,
           "puntos": 4,
           "ppp": 0.8,
-          "victorias_pct": 20.0
+          "victorias_pct": 20
         }
       },
       "Paris FC": {
@@ -12382,7 +12611,7 @@
           "gc": 5,
           "puntos": 7,
           "ppp": 1.4,
-          "victorias_pct": 40.0
+          "victorias_pct": 40
         },
         "local": {
           "pj": 5,
@@ -12393,7 +12622,7 @@
           "gc": 5,
           "puntos": 13,
           "ppp": 2.6,
-          "victorias_pct": 80.0
+          "victorias_pct": 80
         }
       },
       "OGC Nice": {
@@ -12406,7 +12635,7 @@
           "gc": 8,
           "puntos": 11,
           "ppp": 1.83,
-          "victorias_pct": 50.0
+          "victorias_pct": 50
         },
         "visitante": {
           "pj": 5,
@@ -12417,7 +12646,7 @@
           "gc": 7,
           "puntos": 6,
           "ppp": 1.2,
-          "victorias_pct": 40.0
+          "victorias_pct": 40
         }
       },
       "FC Lorient": {
@@ -12430,7 +12659,7 @@
           "gc": 2,
           "puntos": 8,
           "ppp": 1.6,
-          "victorias_pct": 40.0
+          "victorias_pct": 40
         },
         "local": {
           "pj": 5,
@@ -12441,7 +12670,7 @@
           "gc": 6,
           "puntos": 7,
           "ppp": 1.4,
-          "victorias_pct": 40.0
+          "victorias_pct": 40
         }
       },
       "Toulouse FC": {
@@ -12454,7 +12683,7 @@
           "gc": 6,
           "puntos": 7,
           "ppp": 1.4,
-          "victorias_pct": 40.0
+          "victorias_pct": 40
         },
         "visitante": {
           "pj": 6,
@@ -12489,7 +12718,7 @@
           "gc": 3,
           "puntos": 13,
           "ppp": 2.6,
-          "victorias_pct": 80.0
+          "victorias_pct": 80
         }
       },
       "Angers SCO": {
@@ -12512,8 +12741,8 @@
           "gf": 4,
           "gc": 8,
           "puntos": 4,
-          "ppp": 1.0,
-          "victorias_pct": 25.0
+          "ppp": 1,
+          "victorias_pct": 25
         }
       },
       "Lille OSC": {
@@ -12525,8 +12754,8 @@
           "gf": 7,
           "gc": 4,
           "puntos": 10,
-          "ppp": 2.0,
-          "victorias_pct": 60.0
+          "ppp": 2,
+          "victorias_pct": 60
         },
         "local": {
           "pj": 6,
@@ -12537,7 +12766,7 @@
           "gc": 4,
           "puntos": 11,
           "ppp": 1.83,
-          "victorias_pct": 50.0
+          "victorias_pct": 50
         }
       },
       "Le Havre AC": {
@@ -12550,7 +12779,7 @@
           "gc": 13,
           "puntos": 1,
           "ppp": 0.17,
-          "victorias_pct": 0.0
+          "victorias_pct": 0
         },
         "visitante": {
           "pj": 5,
@@ -12561,7 +12790,7 @@
           "gc": 12,
           "puntos": 1,
           "ppp": 0.2,
-          "victorias_pct": 0.0
+          "victorias_pct": 0
         }
       },
       "AS Monaco FC": {
@@ -12585,7 +12814,7 @@
           "gc": 5,
           "puntos": 9,
           "ppp": 1.8,
-          "victorias_pct": 40.0
+          "victorias_pct": 40
         }
       },
       "Stade Rennais FC 1901": {
@@ -12609,7 +12838,7 @@
           "gc": 14,
           "puntos": 3,
           "ppp": 0.75,
-          "victorias_pct": 25.0
+          "victorias_pct": 25
         }
       },
       "Paris Saint-Germain FC": {
@@ -12633,7 +12862,7 @@
           "gc": 3,
           "puntos": 9,
           "ppp": 2.25,
-          "victorias_pct": 75.0
+          "victorias_pct": 75
         }
       }
     },
@@ -12648,8 +12877,8 @@
           "gf": 10,
           "gc": 2,
           "puntos": 15,
-          "ppp": 3.0,
-          "victorias_pct": 100.0
+          "ppp": 3,
+          "victorias_pct": 100
         },
         "visitante": {
           "pj": 6,
@@ -12673,7 +12902,7 @@
           "gc": 10,
           "puntos": 3,
           "ppp": 0.6,
-          "victorias_pct": 20.0
+          "victorias_pct": 20
         },
         "local": {
           "pj": 6,
@@ -12684,7 +12913,7 @@
           "gc": 11,
           "puntos": 9,
           "ppp": 1.5,
-          "victorias_pct": 50.0
+          "victorias_pct": 50
         }
       },
       "Hull City AFC": {
@@ -12708,7 +12937,7 @@
           "gc": 6,
           "puntos": 4,
           "ppp": 0.8,
-          "victorias_pct": 20.0
+          "victorias_pct": 20
         }
       },
       "Manchester United FC": {
@@ -12721,7 +12950,7 @@
           "gc": 12,
           "puntos": 3,
           "ppp": 0.5,
-          "victorias_pct": 0.0
+          "victorias_pct": 0
         },
         "local": {
           "pj": 5,
@@ -12731,8 +12960,8 @@
           "gf": 10,
           "gc": 11,
           "puntos": 5,
-          "ppp": 1.0,
-          "victorias_pct": 20.0
+          "ppp": 1,
+          "victorias_pct": 20
         }
       },
       "Ipswich Town FC": {
@@ -12745,7 +12974,7 @@
           "gc": 7,
           "puntos": 7,
           "ppp": 1.4,
-          "victorias_pct": 40.0
+          "victorias_pct": 40
         },
         "visitante": {
           "pj": 6,
@@ -12769,7 +12998,7 @@
           "gc": 13,
           "puntos": 2,
           "ppp": 0.33,
-          "victorias_pct": 0.0
+          "victorias_pct": 0
         },
         "local": {
           "pj": 5,
@@ -12780,7 +13009,7 @@
           "gc": 4,
           "puntos": 7,
           "ppp": 1.4,
-          "victorias_pct": 40.0
+          "victorias_pct": 40
         }
       },
       "Nottingham Forest FC": {
@@ -12793,7 +13022,7 @@
           "gc": 4,
           "puntos": 4,
           "ppp": 0.8,
-          "victorias_pct": 20.0
+          "victorias_pct": 20
         },
         "visitante": {
           "pj": 6,
@@ -12828,7 +13057,7 @@
           "gc": 3,
           "puntos": 9,
           "ppp": 1.8,
-          "victorias_pct": 40.0
+          "victorias_pct": 40
         }
       },
       "Everton FC": {
@@ -12840,8 +13069,8 @@
           "gf": 8,
           "gc": 5,
           "puntos": 10,
-          "ppp": 2.0,
-          "victorias_pct": 60.0
+          "ppp": 2,
+          "victorias_pct": 60
         },
         "visitante": {
           "pj": 5,
@@ -12852,7 +13081,7 @@
           "gc": 5,
           "puntos": 6,
           "ppp": 1.2,
-          "victorias_pct": 20.0
+          "victorias_pct": 20
         }
       },
       "Crystal Palace FC": {
@@ -12876,7 +13105,7 @@
           "gc": 13,
           "puntos": 3,
           "ppp": 0.6,
-          "victorias_pct": 20.0
+          "victorias_pct": 20
         }
       },
       "Brentford FC": {
@@ -12888,8 +13117,8 @@
           "gf": 10,
           "gc": 3,
           "puntos": 10,
-          "ppp": 2.0,
-          "victorias_pct": 60.0
+          "ppp": 2,
+          "victorias_pct": 60
         },
         "visitante": {
           "pj": 5,
@@ -12900,7 +13129,7 @@
           "gc": 8,
           "puntos": 4,
           "ppp": 0.8,
-          "victorias_pct": 0.0
+          "victorias_pct": 0
         }
       },
       "Tottenham Hotspur FC": {
@@ -12912,8 +13141,8 @@
           "gf": 3,
           "gc": 5,
           "puntos": 5,
-          "ppp": 1.0,
-          "victorias_pct": 20.0
+          "ppp": 1,
+          "victorias_pct": 20
         },
         "local": {
           "pj": 6,
@@ -12924,7 +13153,7 @@
           "gc": 6,
           "puntos": 10,
           "ppp": 1.67,
-          "victorias_pct": 50.0
+          "victorias_pct": 50
         }
       },
       "Manchester City FC": {
@@ -12948,7 +13177,7 @@
           "gc": 6,
           "puntos": 9,
           "ppp": 1.8,
-          "victorias_pct": 60.0
+          "victorias_pct": 60
         }
       },
       "AFC Bournemouth": {
@@ -12961,7 +13190,7 @@
           "gc": 10,
           "puntos": 7,
           "ppp": 1.4,
-          "victorias_pct": 40.0
+          "victorias_pct": 40
         },
         "local": {
           "pj": 6,
@@ -12972,7 +13201,7 @@
           "gc": 4,
           "puntos": 11,
           "ppp": 1.83,
-          "victorias_pct": 50.0
+          "victorias_pct": 50
         }
       },
       "Brighton & Hove Albion FC": {
@@ -12985,7 +13214,7 @@
           "gc": 1,
           "puntos": 13,
           "ppp": 2.6,
-          "victorias_pct": 80.0
+          "victorias_pct": 80
         },
         "visitante": {
           "pj": 6,
@@ -12996,7 +13225,7 @@
           "gc": 8,
           "puntos": 9,
           "ppp": 1.5,
-          "victorias_pct": 50.0
+          "victorias_pct": 50
         }
       },
       "Aston Villa FC": {
@@ -13009,7 +13238,7 @@
           "gc": 10,
           "puntos": 8,
           "ppp": 1.6,
-          "victorias_pct": 40.0
+          "victorias_pct": 40
         },
         "local": {
           "pj": 6,
@@ -13019,7 +13248,7 @@
           "gf": 6,
           "gc": 7,
           "puntos": 6,
-          "ppp": 1.0,
+          "ppp": 1,
           "victorias_pct": 16.67
         }
       },
@@ -13032,7 +13261,7 @@
           "gf": 8,
           "gc": 9,
           "puntos": 6,
-          "ppp": 1.0,
+          "ppp": 1,
           "victorias_pct": 16.67
         },
         "visitante": {
@@ -13044,7 +13273,7 @@
           "gc": 9,
           "puntos": 7,
           "ppp": 1.4,
-          "victorias_pct": 40.0
+          "victorias_pct": 40
         }
       },
       "Liverpool FC": {
@@ -13057,7 +13286,7 @@
           "gc": 4,
           "puntos": 13,
           "ppp": 2.6,
-          "victorias_pct": 80.0
+          "victorias_pct": 80
         },
         "local": {
           "pj": 6,
@@ -13080,8 +13309,8 @@
           "gf": 7,
           "gc": 8,
           "puntos": 5,
-          "ppp": 1.0,
-          "victorias_pct": 20.0
+          "ppp": 1,
+          "victorias_pct": 20
         },
         "visitante": {
           "pj": 6,
@@ -13091,7 +13320,7 @@
           "gf": 4,
           "gc": 5,
           "puntos": 6,
-          "ppp": 1.0,
+          "ppp": 1,
           "victorias_pct": 16.67
         }
       },
@@ -13105,7 +13334,7 @@
           "gc": 8,
           "puntos": 6,
           "ppp": 1.2,
-          "victorias_pct": 40.0
+          "victorias_pct": 40
         },
         "local": {
           "pj": 6,
@@ -13116,7 +13345,7 @@
           "gc": 12,
           "puntos": 10,
           "ppp": 1.67,
-          "victorias_pct": 50.0
+          "victorias_pct": 50
         }
       }
     },
@@ -13131,7 +13360,7 @@
           "gc": 14,
           "puntos": 1,
           "ppp": 0.17,
-          "victorias_pct": 0.0
+          "victorias_pct": 0
         },
         "visitante": {
           "pj": 5,
@@ -13142,7 +13371,7 @@
           "gc": 11,
           "puntos": 4,
           "ppp": 0.8,
-          "victorias_pct": 20.0
+          "victorias_pct": 20
         }
       },
       "Como 1907": {
@@ -13166,7 +13395,7 @@
           "gc": 1,
           "puntos": 13,
           "ppp": 2.6,
-          "victorias_pct": 80.0
+          "victorias_pct": 80
         }
       },
       "FC Internazionale Milano": {
@@ -13178,8 +13407,8 @@
           "gf": 19,
           "gc": 7,
           "puntos": 18,
-          "ppp": 3.0,
-          "victorias_pct": 100.0
+          "ppp": 3,
+          "victorias_pct": 100
         },
         "visitante": {
           "pj": 5,
@@ -13189,8 +13418,8 @@
           "gf": 9,
           "gc": 6,
           "puntos": 10,
-          "ppp": 2.0,
-          "victorias_pct": 60.0
+          "ppp": 2,
+          "victorias_pct": 60
         }
       },
       "AC Monza": {
@@ -13203,7 +13432,7 @@
           "gc": 16,
           "puntos": 1,
           "ppp": 0.17,
-          "victorias_pct": 0.0
+          "victorias_pct": 0
         },
         "local": {
           "pj": 5,
@@ -13214,7 +13443,7 @@
           "gc": 9,
           "puntos": 6,
           "ppp": 1.2,
-          "victorias_pct": 40.0
+          "victorias_pct": 40
         }
       },
       "Genoa CFC": {
@@ -13238,7 +13467,7 @@
           "gc": 6,
           "puntos": 3,
           "ppp": 0.75,
-          "victorias_pct": 25.0
+          "victorias_pct": 25
         }
       },
       "SSC Napoli": {
@@ -13262,7 +13491,7 @@
           "gc": 6,
           "puntos": 11,
           "ppp": 1.83,
-          "victorias_pct": 50.0
+          "victorias_pct": 50
         }
       },
       "Parma Calcio 1913": {
@@ -13286,7 +13515,7 @@
           "gc": 9,
           "puntos": 3,
           "ppp": 0.6,
-          "victorias_pct": 20.0
+          "victorias_pct": 20
         }
       },
       "Cagliari Calcio": {
@@ -13310,7 +13539,7 @@
           "gc": 4,
           "puntos": 7,
           "ppp": 1.4,
-          "victorias_pct": 40.0
+          "victorias_pct": 40
         }
       },
       "Frosinone Calcio": {
@@ -13333,8 +13562,8 @@
           "gf": 8,
           "gc": 9,
           "puntos": 5,
-          "ppp": 1.0,
-          "victorias_pct": 20.0
+          "ppp": 1,
+          "victorias_pct": 20
         }
       },
       "Juventus FC": {
@@ -13357,8 +13586,8 @@
           "gf": 7,
           "gc": 4,
           "puntos": 10,
-          "ppp": 2.0,
-          "victorias_pct": 60.0
+          "ppp": 2,
+          "victorias_pct": 60
         }
       },
       "Venezia FC": {
@@ -13370,7 +13599,7 @@
           "gf": 5,
           "gc": 11,
           "puntos": 6,
-          "ppp": 1.0,
+          "ppp": 1,
           "victorias_pct": 33.33
         },
         "visitante": {
@@ -13381,8 +13610,8 @@
           "gf": 3,
           "gc": 10,
           "puntos": 0,
-          "ppp": 0.0,
-          "victorias_pct": 0.0
+          "ppp": 0,
+          "victorias_pct": 0
         }
       },
       "US Lecce": {
@@ -13394,7 +13623,7 @@
           "gf": 7,
           "gc": 13,
           "puntos": 7,
-          "ppp": 1.0,
+          "ppp": 1,
           "victorias_pct": 28.57
         },
         "local": {
@@ -13406,7 +13635,7 @@
           "gc": 12,
           "puntos": 3,
           "ppp": 0.6,
-          "victorias_pct": 20.0
+          "victorias_pct": 20
         }
       },
       "Atalanta BC": {
@@ -13419,7 +13648,7 @@
           "gc": 11,
           "puntos": 10,
           "ppp": 1.67,
-          "victorias_pct": 50.0
+          "victorias_pct": 50
         },
         "visitante": {
           "pj": 5,
@@ -13430,7 +13659,7 @@
           "gc": 9,
           "puntos": 4,
           "ppp": 0.8,
-          "victorias_pct": 20.0
+          "victorias_pct": 20
         }
       },
       "US Sassuolo Calcio": {
@@ -13443,7 +13672,7 @@
           "gc": 15,
           "puntos": 1,
           "ppp": 0.17,
-          "victorias_pct": 0.0
+          "victorias_pct": 0
         },
         "local": {
           "pj": 5,
@@ -13454,7 +13683,7 @@
           "gc": 14,
           "puntos": 7,
           "ppp": 1.4,
-          "victorias_pct": 40.0
+          "victorias_pct": 40
         }
       },
       "Torino FC": {
@@ -13490,8 +13719,8 @@
           "gf": 10,
           "gc": 6,
           "puntos": 12,
-          "ppp": 2.0,
-          "victorias_pct": 50.0
+          "ppp": 2,
+          "victorias_pct": 50
         },
         "local": {
           "pj": 5,
@@ -13502,7 +13731,7 @@
           "gc": 7,
           "puntos": 12,
           "ppp": 2.4,
-          "victorias_pct": 80.0
+          "victorias_pct": 80
         }
       },
       "Bologna FC 1909": {
@@ -13514,8 +13743,8 @@
           "gf": 6,
           "gc": 8,
           "puntos": 5,
-          "ppp": 1.0,
-          "victorias_pct": 20.0
+          "ppp": 1,
+          "victorias_pct": 20
         },
         "visitante": {
           "pj": 6,
@@ -13525,7 +13754,7 @@
           "gf": 10,
           "gc": 6,
           "puntos": 12,
-          "ppp": 2.0,
+          "ppp": 2,
           "victorias_pct": 66.67
         }
       },
@@ -13587,7 +13816,7 @@
           "gc": 12,
           "puntos": 6,
           "ppp": 1.2,
-          "victorias_pct": 40.0
+          "victorias_pct": 40
         },
         "local": {
           "pj": 6,
@@ -13598,7 +13827,7 @@
           "gc": 13,
           "puntos": 3,
           "ppp": 0.5,
-          "victorias_pct": 0.0
+          "victorias_pct": 0
         }
       }
     },
@@ -13613,7 +13842,7 @@
           "gf": 14,
           "gc": 20,
           "puntos": 7,
-          "ppp": 1.0,
+          "ppp": 1,
           "victorias_pct": 28.57
         },
         "visitante": {
@@ -13625,7 +13854,7 @@
           "gc": 9,
           "puntos": 11,
           "ppp": 1.83,
-          "victorias_pct": 50.0
+          "victorias_pct": 50
         }
       },
       "SBV Excelsior": {
@@ -13662,7 +13891,7 @@
           "gc": 16,
           "puntos": 4,
           "ppp": 0.57,
-          "victorias_pct": 0.0
+          "victorias_pct": 0
         },
         "visitante": {
           "pj": 6,
@@ -13673,7 +13902,7 @@
           "gc": 9,
           "puntos": 10,
           "ppp": 1.67,
-          "victorias_pct": 50.0
+          "victorias_pct": 50
         }
       },
       "Telstar 1963": {
@@ -13710,7 +13939,7 @@
           "gc": 9,
           "puntos": 11,
           "ppp": 1.83,
-          "victorias_pct": 50.0
+          "victorias_pct": 50
         },
         "visitante": {
           "pj": 7,
@@ -13734,7 +13963,7 @@
           "gc": 25,
           "puntos": 1,
           "ppp": 0.14,
-          "victorias_pct": 0.0
+          "victorias_pct": 0
         },
         "local": {
           "pj": 6,
@@ -13745,7 +13974,7 @@
           "gc": 17,
           "puntos": 2,
           "ppp": 0.33,
-          "victorias_pct": 0.0
+          "victorias_pct": 0
         }
       },
       "PSV": {
@@ -13830,7 +14059,7 @@
           "gc": 15,
           "puntos": 2,
           "ppp": 0.29,
-          "victorias_pct": 0.0
+          "victorias_pct": 0
         },
         "local": {
           "pj": 6,
@@ -13901,7 +14130,7 @@
           "gf": 14,
           "gc": 17,
           "puntos": 7,
-          "ppp": 1.0,
+          "ppp": 1,
           "victorias_pct": 28.57
         },
         "visitante": {
@@ -13949,7 +14178,7 @@
           "gf": 6,
           "gc": 14,
           "puntos": 6,
-          "ppp": 1.0,
+          "ppp": 1,
           "victorias_pct": 33.33
         },
         "visitante": {
@@ -14009,7 +14238,7 @@
           "gc": 9,
           "puntos": 11,
           "ppp": 1.83,
-          "victorias_pct": 50.0
+          "victorias_pct": 50
         }
       },
       "FC Twente '65": {
@@ -14022,7 +14251,7 @@
           "gc": 5,
           "puntos": 11,
           "ppp": 1.83,
-          "victorias_pct": 50.0
+          "victorias_pct": 50
         },
         "local": {
           "pj": 7,
@@ -14048,7 +14277,7 @@
           "gc": 8,
           "puntos": 2,
           "ppp": 0.4,
-          "victorias_pct": 0.0
+          "victorias_pct": 0
         },
         "visitante": {
           "pj": 5,
@@ -14058,8 +14287,8 @@
           "gf": 2,
           "gc": 11,
           "puntos": 0,
-          "ppp": 0.0,
-          "victorias_pct": 0.0
+          "ppp": 0,
+          "victorias_pct": 0
         }
       },
       "FC Famalicão": {
@@ -14082,8 +14311,8 @@
           "gf": 4,
           "gc": 7,
           "puntos": 5,
-          "ppp": 1.0,
-          "victorias_pct": 20.0
+          "ppp": 1,
+          "victorias_pct": 20
         }
       },
       "CS Marítimo": {
@@ -14096,7 +14325,7 @@
           "gc": 9,
           "puntos": 4,
           "ppp": 0.8,
-          "victorias_pct": 20.0
+          "victorias_pct": 20
         },
         "visitante": {
           "pj": 5,
@@ -14107,7 +14336,7 @@
           "gc": 12,
           "puntos": 4,
           "ppp": 0.8,
-          "victorias_pct": 20.0
+          "victorias_pct": 20
         }
       },
       "Casa Pia AC": {
@@ -14130,8 +14359,8 @@
           "gf": 1,
           "gc": 15,
           "puntos": 0,
-          "ppp": 0.0,
-          "victorias_pct": 0.0
+          "ppp": 0,
+          "victorias_pct": 0
         }
       },
       "Vitória SC": {
@@ -14155,7 +14384,7 @@
           "gc": 8,
           "puntos": 1,
           "ppp": 0.2,
-          "victorias_pct": 0.0
+          "victorias_pct": 0
         }
       },
       "FC Arouca": {
@@ -14179,7 +14408,7 @@
           "gc": 3,
           "puntos": 12,
           "ppp": 2.4,
-          "victorias_pct": 80.0
+          "victorias_pct": 80
         }
       },
       "CF Estrela da Amadora": {
@@ -14202,8 +14431,8 @@
           "gf": 9,
           "gc": 10,
           "puntos": 5,
-          "ppp": 1.0,
-          "victorias_pct": 20.0
+          "ppp": 1,
+          "victorias_pct": 20
         }
       },
       "Sporting Clube de Portugal": {
@@ -14216,7 +14445,7 @@
           "gc": 4,
           "puntos": 11,
           "ppp": 2.2,
-          "victorias_pct": 60.0
+          "victorias_pct": 60
         },
         "local": {
           "pj": 6,
@@ -14239,8 +14468,8 @@
           "gf": 13,
           "gc": 2,
           "puntos": 15,
-          "ppp": 3.0,
-          "victorias_pct": 100.0
+          "ppp": 3,
+          "victorias_pct": 100
         },
         "visitante": {
           "pj": 6,
@@ -14250,8 +14479,8 @@
           "gf": 14,
           "gc": 3,
           "puntos": 18,
-          "ppp": 3.0,
-          "victorias_pct": 100.0
+          "ppp": 3,
+          "victorias_pct": 100
         }
       },
       "FC Alverca": {
@@ -14264,7 +14493,7 @@
           "gc": 8,
           "puntos": 6,
           "ppp": 1.2,
-          "victorias_pct": 40.0
+          "victorias_pct": 40
         },
         "local": {
           "pj": 6,
@@ -14274,7 +14503,7 @@
           "gf": 6,
           "gc": 7,
           "puntos": 6,
-          "ppp": 1.0,
+          "ppp": 1,
           "victorias_pct": 16.67
         }
       },
@@ -14288,7 +14517,7 @@
           "gc": 9,
           "puntos": 7,
           "ppp": 1.4,
-          "victorias_pct": 40.0
+          "victorias_pct": 40
         },
         "visitante": {
           "pj": 6,
@@ -14323,7 +14552,7 @@
           "gc": 5,
           "puntos": 9,
           "ppp": 1.8,
-          "victorias_pct": 60.0
+          "victorias_pct": 60
         }
       },
       "Gil Vicente FC": {
@@ -14346,8 +14575,8 @@
           "gf": 6,
           "gc": 5,
           "puntos": 10,
-          "ppp": 2.0,
-          "victorias_pct": 60.0
+          "ppp": 2,
+          "victorias_pct": 60
         }
       },
       "Rio Ave FC": {
@@ -14360,7 +14589,7 @@
           "gc": 8,
           "puntos": 3,
           "ppp": 0.6,
-          "victorias_pct": 20.0
+          "victorias_pct": 20
         },
         "local": {
           "pj": 6,
@@ -14384,7 +14613,7 @@
           "gc": 4,
           "puntos": 13,
           "ppp": 2.6,
-          "victorias_pct": 80.0
+          "victorias_pct": 80
         },
         "visitante": {
           "pj": 6,
@@ -14408,7 +14637,7 @@
           "gc": 6,
           "puntos": 11,
           "ppp": 1.83,
-          "victorias_pct": 50.0
+          "victorias_pct": 50
         },
         "local": {
           "pj": 5,
@@ -14419,7 +14648,7 @@
           "gc": 7,
           "puntos": 9,
           "ppp": 1.8,
-          "victorias_pct": 60.0
+          "victorias_pct": 60
         }
       },
       "CD Santa Clara": {
@@ -14443,7 +14672,7 @@
           "gc": 2,
           "puntos": 13,
           "ppp": 2.6,
-          "victorias_pct": 80.0
+          "victorias_pct": 80
         }
       },
       "CD Nacional": {
@@ -14456,7 +14685,7 @@
           "gc": 9,
           "puntos": 1,
           "ppp": 0.2,
-          "victorias_pct": 0.0
+          "victorias_pct": 0
         },
         "local": {
           "pj": 6,
@@ -14467,7 +14696,7 @@
           "gc": 10,
           "puntos": 9,
           "ppp": 1.5,
-          "victorias_pct": 50.0
+          "victorias_pct": 50
         }
       }
     },
@@ -14475,7 +14704,3847 @@
     "SUI": {},
     "TUR": {}
   },
-  "candidatos": [],
+  "candidatos": [
+    {
+      "liga": "ITA",
+      "fecha": "2026-11-22T17:00:00Z",
+      "local": "AC Milan",
+      "visitante": "Frosinone Calcio",
+      "favorito": "AC Milan",
+      "equipo_proveedor": "AC Milan",
+      "ppp": 2.18,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ITA",
+      "fecha": "2026-11-22T19:45:00Z",
+      "local": "Atalanta BC",
+      "visitante": "FC Internazionale Milano",
+      "favorito": "Inter",
+      "equipo_proveedor": "FC Internazionale Milano",
+      "ppp": 2.55,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ESP",
+      "fecha": "2026-11-22T20:00:00Z",
+      "local": "Getafe CF",
+      "visitante": "Club Atlético de Madrid",
+      "favorito": "Atl. Madrid",
+      "equipo_proveedor": "Club Atlético de Madrid",
+      "ppp": 2.33,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2026-11-28",
+      "local": "Hamburger SV",
+      "visitante": "FC Bayern München",
+      "favorito": "Bayern Munich",
+      "equipo_proveedor": "FC Bayern München",
+      "ppp": 2.2,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ESP",
+      "fecha": "2026-11-28T13:00:00Z",
+      "local": "Real Betis Balompié",
+      "visitante": "Rayo Vallecano de Madrid",
+      "favorito": "Betis",
+      "equipo_proveedor": "Real Betis Balompié",
+      "ppp": 2.08,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ESP",
+      "fecha": "2026-11-28T17:30:00Z",
+      "local": "Elche CF",
+      "visitante": "Club Atlético de Madrid",
+      "favorito": "Atl. Madrid",
+      "equipo_proveedor": "Club Atlético de Madrid",
+      "ppp": 2.33,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2026-11-28T17:45:00Z",
+      "local": "PSV",
+      "visitante": "Go Ahead Eagles",
+      "favorito": "PSV",
+      "equipo_proveedor": "PSV",
+      "ppp": 2.23,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "FRA",
+      "fecha": "2026-11-28T19:45:00Z",
+      "local": "Paris Saint-Germain FC",
+      "visitante": "FC Lorient",
+      "favorito": "PSG",
+      "equipo_proveedor": "Paris Saint-Germain FC",
+      "ppp": 2.36,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ITA",
+      "fecha": "2026-11-28T19:45:00Z",
+      "local": "FC Internazionale Milano",
+      "visitante": "Genoa CFC",
+      "favorito": "Inter",
+      "equipo_proveedor": "FC Internazionale Milano",
+      "ppp": 2.55,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ESP",
+      "fecha": "2026-11-28T20:00:00Z",
+      "local": "Real Madrid CF",
+      "visitante": "Deportivo Alavés",
+      "favorito": "Real Madrid",
+      "equipo_proveedor": "Real Madrid CF",
+      "ppp": 2.54,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2026-11-29",
+      "local": "SC Freiburg",
+      "visitante": "RB Leipzig",
+      "favorito": "RB Leipzig",
+      "equipo_proveedor": "RB Leipzig",
+      "ppp": 2.1,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ESP",
+      "fecha": "2026-11-29T15:15:00Z",
+      "local": "RC Deportivo La Coruña",
+      "visitante": "FC Barcelona",
+      "favorito": "Barcelona",
+      "equipo_proveedor": "FC Barcelona",
+      "ppp": 2.77,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ITA",
+      "fecha": "2026-11-30T19:45:00Z",
+      "local": "Cagliari Calcio",
+      "visitante": "AC Milan",
+      "favorito": "AC Milan",
+      "equipo_proveedor": "AC Milan",
+      "ppp": 2.18,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "POR",
+      "fecha": "2026-11-30T20:15:00Z",
+      "local": "Sport Lisboa e Benfica",
+      "visitante": "FC Famalicão",
+      "favorito": "Benfica",
+      "equipo_proveedor": "Sport Lisboa e Benfica",
+      "ppp": 2.55,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ESP",
+      "fecha": "2026-12-02T18:00:00Z",
+      "local": "Real Sociedad de Fútbol",
+      "visitante": "Real Madrid CF",
+      "favorito": "Real Madrid",
+      "equipo_proveedor": "Real Madrid CF",
+      "ppp": 2.54,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ENG",
+      "fecha": "2026-12-02T19:30:00Z",
+      "local": "Manchester City FC",
+      "visitante": "Leeds United FC",
+      "favorito": "Manchester City",
+      "equipo_proveedor": "Manchester City FC",
+      "ppp": 2,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ENG",
+      "fecha": "2026-12-02T20:15:00Z",
+      "local": "Brentford FC",
+      "visitante": "Arsenal FC",
+      "favorito": "Arsenal",
+      "equipo_proveedor": "Arsenal FC",
+      "ppp": 2.55,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2026-12-04",
+      "local": "FC Bayern München",
+      "visitante": "SC Paderborn 07",
+      "favorito": "Bayern Munich",
+      "equipo_proveedor": "FC Bayern München",
+      "ppp": 2.2,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "FRA",
+      "fecha": "2026-12-04T19:45:00Z",
+      "local": "Toulouse FC",
+      "visitante": "Paris Saint-Germain FC",
+      "favorito": "PSG",
+      "equipo_proveedor": "Paris Saint-Germain FC",
+      "ppp": 2.36,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "POR",
+      "fecha": "2026-12-04T20:15:00Z",
+      "local": "Sporting Clube de Portugal",
+      "visitante": "CS Marítimo",
+      "favorito": "Sporting CP",
+      "equipo_proveedor": "Sporting Clube de Portugal",
+      "ppp": 2.18,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2026-12-05",
+      "local": "RB Leipzig",
+      "visitante": "1. FSV Mainz 05",
+      "favorito": "RB Leipzig",
+      "equipo_proveedor": "RB Leipzig",
+      "ppp": 2.1,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "POR",
+      "fecha": "2026-12-05T15:30:00Z",
+      "local": "CD Nacional",
+      "visitante": "Sport Lisboa e Benfica",
+      "favorito": "Benfica",
+      "equipo_proveedor": "Sport Lisboa e Benfica",
+      "ppp": 2.55,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ITA",
+      "fecha": "2026-12-05T17:00:00Z",
+      "local": "Frosinone Calcio",
+      "visitante": "FC Internazionale Milano",
+      "favorito": "Inter",
+      "equipo_proveedor": "FC Internazionale Milano",
+      "ppp": 2.55,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "POR",
+      "fecha": "2026-12-05T18:00:00Z",
+      "local": "CD Santa Clara",
+      "visitante": "FC Porto",
+      "favorito": "FC Porto",
+      "equipo_proveedor": "FC Porto",
+      "ppp": 3,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2026-12-05T19:00:00Z",
+      "local": "AZ",
+      "visitante": "PSV",
+      "favorito": "PSV",
+      "equipo_proveedor": "PSV",
+      "ppp": 2.23,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ESP",
+      "fecha": "2026-12-05T20:00:00Z",
+      "local": "FC Barcelona",
+      "visitante": "RC Celta de Vigo",
+      "favorito": "Barcelona",
+      "equipo_proveedor": "FC Barcelona",
+      "ppp": 2.77,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ENG",
+      "fecha": "2026-12-05T20:00:00Z",
+      "local": "Brentford FC",
+      "visitante": "Manchester City FC",
+      "favorito": "Manchester City",
+      "equipo_proveedor": "Manchester City FC",
+      "ppp": 2,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2026-12-06",
+      "local": "FC Schalke 04",
+      "visitante": "Borussia Dortmund",
+      "favorito": "Dortmund",
+      "equipo_proveedor": "Borussia Dortmund",
+      "ppp": 2.4,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2026-12-06T13:30:00Z",
+      "local": "AFC Ajax",
+      "visitante": "FC Utrecht",
+      "favorito": "Ajax",
+      "equipo_proveedor": "AFC Ajax",
+      "ppp": 2.15,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ESP",
+      "fecha": "2026-12-06T15:15:00Z",
+      "local": "Athletic Club",
+      "visitante": "Real Madrid CF",
+      "favorito": "Real Madrid",
+      "equipo_proveedor": "Real Madrid CF",
+      "ppp": 2.54,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ENG",
+      "fecha": "2026-12-06T16:30:00Z",
+      "local": "Tottenham Hotspur FC",
+      "visitante": "Arsenal FC",
+      "favorito": "Arsenal",
+      "equipo_proveedor": "Arsenal FC",
+      "ppp": 2.55,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ITA",
+      "fecha": "2026-12-06T19:45:00Z",
+      "local": "AC Milan",
+      "visitante": "Parma Calcio 1913",
+      "favorito": "AC Milan",
+      "equipo_proveedor": "AC Milan",
+      "ppp": 2.18,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2026-12-12",
+      "local": "Borussia Dortmund",
+      "visitante": "FC Augsburg",
+      "favorito": "Dortmund",
+      "equipo_proveedor": "Borussia Dortmund",
+      "ppp": 2.4,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2026-12-12",
+      "local": "1. FC Köln",
+      "visitante": "RB Leipzig",
+      "favorito": "RB Leipzig",
+      "equipo_proveedor": "RB Leipzig",
+      "ppp": 2.1,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "FRA",
+      "fecha": "2026-12-12T16:15:00Z",
+      "local": "Paris Saint-Germain FC",
+      "visitante": "Paris FC",
+      "favorito": "PSG",
+      "equipo_proveedor": "Paris Saint-Germain FC",
+      "ppp": 2.36,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ENG",
+      "fecha": "2026-12-12T17:30:00Z",
+      "local": "Manchester City FC",
+      "visitante": "Chelsea FC",
+      "favorito": "Manchester City",
+      "equipo_proveedor": "Manchester City FC",
+      "ppp": 2,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "POR",
+      "fecha": "2026-12-12T20:30:00Z",
+      "local": "Gil Vicente FC",
+      "visitante": "Sporting Clube de Portugal",
+      "favorito": "Sporting CP",
+      "equipo_proveedor": "Sporting Clube de Portugal",
+      "ppp": 2.18,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2026-12-13",
+      "local": "TSG Hoffenheim",
+      "visitante": "FC Bayern München",
+      "favorito": "Bayern Munich",
+      "equipo_proveedor": "FC Bayern München",
+      "ppp": 2.2,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ESP",
+      "fecha": "2026-12-13T00:00:00Z",
+      "local": "Málaga CF",
+      "visitante": "FC Barcelona",
+      "favorito": "Barcelona",
+      "equipo_proveedor": "FC Barcelona",
+      "ppp": 2.77,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ESP",
+      "fecha": "2026-12-13T00:00:00Z",
+      "local": "Real Madrid CF",
+      "visitante": "CA Osasuna",
+      "favorito": "Real Madrid",
+      "equipo_proveedor": "Real Madrid CF",
+      "ppp": 2.54,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ESP",
+      "fecha": "2026-12-13T00:00:00Z",
+      "local": "Real Betis Balompié",
+      "visitante": "Real Racing Club de Santander",
+      "favorito": "Betis",
+      "equipo_proveedor": "Real Betis Balompié",
+      "ppp": 2.08,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ESP",
+      "fecha": "2026-12-13T00:00:00Z",
+      "local": "Club Atlético de Madrid",
+      "visitante": "Valencia CF",
+      "favorito": "Atl. Madrid",
+      "equipo_proveedor": "Club Atlético de Madrid",
+      "ppp": 2.33,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2026-12-13T11:15:00Z",
+      "local": "PSV",
+      "visitante": "Telstar 1963",
+      "favorito": "PSV",
+      "equipo_proveedor": "PSV",
+      "ppp": 2.23,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ENG",
+      "fecha": "2026-12-13T14:00:00Z",
+      "local": "Arsenal FC",
+      "visitante": "AFC Bournemouth",
+      "favorito": "Arsenal",
+      "equipo_proveedor": "Arsenal FC",
+      "ppp": 2.55,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ITA",
+      "fecha": "2026-12-13T14:00:00Z",
+      "local": "FC Internazionale Milano",
+      "visitante": "Torino FC",
+      "favorito": "Inter",
+      "equipo_proveedor": "FC Internazionale Milano",
+      "ppp": 2.55,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2026-12-13T19:00:00Z",
+      "local": "AFC Ajax",
+      "visitante": "SC Cambuur-Leeuwarden",
+      "favorito": "Ajax",
+      "equipo_proveedor": "AFC Ajax",
+      "ppp": 2.15,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "POR",
+      "fecha": "2026-12-13T20:30:00Z",
+      "local": "FC Porto",
+      "visitante": "CF Estrela da Amadora",
+      "favorito": "FC Porto",
+      "equipo_proveedor": "FC Porto",
+      "ppp": 3,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2026-12-18",
+      "local": "FC Bayern München",
+      "visitante": "SV Werder Bremen",
+      "favorito": "Bayern Munich",
+      "equipo_proveedor": "FC Bayern München",
+      "ppp": 2.2,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ITA",
+      "fecha": "2026-12-18T19:45:00Z",
+      "local": "US Lecce",
+      "visitante": "FC Internazionale Milano",
+      "favorito": "Inter",
+      "equipo_proveedor": "FC Internazionale Milano",
+      "ppp": 2.55,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ENG",
+      "fecha": "2026-12-19T15:00:00Z",
+      "local": "Manchester City FC",
+      "visitante": "Hull City AFC",
+      "favorito": "Manchester City",
+      "equipo_proveedor": "Manchester City FC",
+      "ppp": 2,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ITA",
+      "fecha": "2026-12-19T17:00:00Z",
+      "local": "AC Milan",
+      "visitante": "Como 1907",
+      "favorito": "AC Milan",
+      "equipo_proveedor": "AC Milan",
+      "ppp": 2.18,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ESP",
+      "fecha": "2026-12-20T00:00:00Z",
+      "local": "Athletic Club",
+      "visitante": "Real Betis Balompié",
+      "favorito": "Betis",
+      "equipo_proveedor": "Real Betis Balompié",
+      "ppp": 2.08,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ESP",
+      "fecha": "2026-12-20T00:00:00Z",
+      "local": "FC Barcelona",
+      "visitante": "Real Sociedad de Fútbol",
+      "favorito": "Barcelona",
+      "equipo_proveedor": "FC Barcelona",
+      "ppp": 2.77,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ESP",
+      "fecha": "2026-12-20T00:00:00Z",
+      "local": "RC Celta de Vigo",
+      "visitante": "Club Atlético de Madrid",
+      "favorito": "Atl. Madrid",
+      "equipo_proveedor": "Club Atlético de Madrid",
+      "ppp": 2.33,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ESP",
+      "fecha": "2026-12-20T00:00:00Z",
+      "local": "RC Deportivo La Coruña",
+      "visitante": "Real Madrid CF",
+      "favorito": "Real Madrid",
+      "equipo_proveedor": "Real Madrid CF",
+      "ppp": 2.54,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "POR",
+      "fecha": "2026-12-20T00:00:00Z",
+      "local": "Rio Ave FC",
+      "visitante": "Sport Lisboa e Benfica",
+      "favorito": "Benfica",
+      "equipo_proveedor": "Sport Lisboa e Benfica",
+      "ppp": 2.55,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "POR",
+      "fecha": "2026-12-20T00:00:00Z",
+      "local": "Sporting Clube de Portugal",
+      "visitante": "GD Estoril Praia",
+      "favorito": "Sporting CP",
+      "equipo_proveedor": "Sporting Clube de Portugal",
+      "ppp": 2.18,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "POR",
+      "fecha": "2026-12-20T00:00:00Z",
+      "local": "FC Famalicão",
+      "visitante": "FC Porto",
+      "favorito": "FC Porto",
+      "equipo_proveedor": "FC Porto",
+      "ppp": 3,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2026-12-20T15:45:00Z",
+      "local": "Go Ahead Eagles",
+      "visitante": "AFC Ajax",
+      "favorito": "Ajax",
+      "equipo_proveedor": "AFC Ajax",
+      "ppp": 2.15,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2026-12-20T19:00:00Z",
+      "local": "PSV",
+      "visitante": "PEC Zwolle",
+      "favorito": "PSV",
+      "equipo_proveedor": "PSV",
+      "ppp": 2.23,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ENG",
+      "fecha": "2026-12-26T20:00:00Z",
+      "local": "Newcastle United FC",
+      "visitante": "Manchester City FC",
+      "favorito": "Manchester City",
+      "equipo_proveedor": "Manchester City FC",
+      "ppp": 2,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "POR",
+      "fecha": "2026-12-27T00:00:00Z",
+      "local": "FC Porto",
+      "visitante": "CD Nacional",
+      "favorito": "FC Porto",
+      "equipo_proveedor": "FC Porto",
+      "ppp": 3,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ENG",
+      "fecha": "2026-12-27T19:00:00Z",
+      "local": "Crystal Palace FC",
+      "visitante": "Arsenal FC",
+      "favorito": "Arsenal",
+      "equipo_proveedor": "Arsenal FC",
+      "ppp": 2.55,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ENG",
+      "fecha": "2026-12-29T20:15:00Z",
+      "local": "Everton FC",
+      "visitante": "Manchester City FC",
+      "favorito": "Manchester City",
+      "equipo_proveedor": "Manchester City FC",
+      "ppp": 2,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ENG",
+      "fecha": "2026-12-30T19:30:00Z",
+      "local": "Fulham FC",
+      "visitante": "Arsenal FC",
+      "favorito": "Arsenal",
+      "equipo_proveedor": "Arsenal FC",
+      "ppp": 2.55,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ENG",
+      "fecha": "2027-01-02T15:00:00Z",
+      "local": "Arsenal FC",
+      "visitante": "Ipswich Town FC",
+      "favorito": "Arsenal",
+      "equipo_proveedor": "Arsenal FC",
+      "ppp": 2.55,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ITA",
+      "fecha": "2027-01-02T19:45:00Z",
+      "local": "AC Monza",
+      "visitante": "AC Milan",
+      "favorito": "AC Milan",
+      "equipo_proveedor": "AC Milan",
+      "ppp": 2.18,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ESP",
+      "fecha": "2027-01-03T00:00:00Z",
+      "local": "Real Madrid CF",
+      "visitante": "Getafe CF",
+      "favorito": "Real Madrid",
+      "equipo_proveedor": "Real Madrid CF",
+      "ppp": 2.54,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ESP",
+      "fecha": "2027-01-03T00:00:00Z",
+      "local": "Real Betis Balompié",
+      "visitante": "Deportivo Alavés",
+      "favorito": "Betis",
+      "equipo_proveedor": "Real Betis Balompié",
+      "ppp": 2.08,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ESP",
+      "fecha": "2027-01-03T00:00:00Z",
+      "local": "RCD Espanyol de Barcelona",
+      "visitante": "FC Barcelona",
+      "favorito": "Barcelona",
+      "equipo_proveedor": "FC Barcelona",
+      "ppp": 2.77,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ESP",
+      "fecha": "2027-01-03T00:00:00Z",
+      "local": "Rayo Vallecano de Madrid",
+      "visitante": "Club Atlético de Madrid",
+      "favorito": "Atl. Madrid",
+      "equipo_proveedor": "Club Atlético de Madrid",
+      "ppp": 2.33,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ITA",
+      "fecha": "2027-01-03T11:30:00Z",
+      "local": "FC Internazionale Milano",
+      "visitante": "US Sassuolo Calcio",
+      "favorito": "Inter",
+      "equipo_proveedor": "FC Internazionale Milano",
+      "ppp": 2.55,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ENG",
+      "fecha": "2027-01-03T16:30:00Z",
+      "local": "Manchester City FC",
+      "visitante": "Tottenham Hotspur FC",
+      "favorito": "Manchester City",
+      "equipo_proveedor": "Manchester City FC",
+      "ppp": 2,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "FRA",
+      "fecha": "2027-01-03T19:45:00Z",
+      "local": "Racing Club de Lens",
+      "visitante": "Paris Saint-Germain FC",
+      "favorito": "PSG",
+      "equipo_proveedor": "Paris Saint-Germain FC",
+      "ppp": 2.36,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ENG",
+      "fecha": "2027-01-05T19:30:00Z",
+      "local": "Arsenal FC",
+      "visitante": "Brentford FC",
+      "favorito": "Arsenal",
+      "equipo_proveedor": "Arsenal FC",
+      "ppp": 2.55,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ITA",
+      "fecha": "2027-01-05T19:45:00Z",
+      "local": "AC Milan",
+      "visitante": "ACF Fiorentina",
+      "favorito": "AC Milan",
+      "equipo_proveedor": "AC Milan",
+      "ppp": 2.18,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ITA",
+      "fecha": "2027-01-06T19:45:00Z",
+      "local": "SS Lazio",
+      "visitante": "FC Internazionale Milano",
+      "favorito": "Inter",
+      "equipo_proveedor": "FC Internazionale Milano",
+      "ppp": 2.55,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ENG",
+      "fecha": "2027-01-06T20:15:00Z",
+      "local": "Leeds United FC",
+      "visitante": "Manchester City FC",
+      "favorito": "Manchester City",
+      "equipo_proveedor": "Manchester City FC",
+      "ppp": 2,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-01-08",
+      "local": "Borussia Dortmund",
+      "visitante": "1. FSV Mainz 05",
+      "favorito": "Dortmund",
+      "equipo_proveedor": "Borussia Dortmund",
+      "ppp": 2.4,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-01-09",
+      "local": "SC Paderborn 07",
+      "visitante": "RB Leipzig",
+      "favorito": "RB Leipzig",
+      "equipo_proveedor": "RB Leipzig",
+      "ppp": 2.1,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-01-09",
+      "local": "Borussia Mönchengladbach",
+      "visitante": "FC Bayern München",
+      "favorito": "Bayern Munich",
+      "equipo_proveedor": "FC Bayern München",
+      "ppp": 2.2,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ITA",
+      "fecha": "2027-01-09T17:00:00Z",
+      "local": "AS Roma",
+      "visitante": "AC Milan",
+      "favorito": "AC Milan",
+      "equipo_proveedor": "AC Milan",
+      "ppp": 2.18,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-01-09T19:00:00Z",
+      "local": "Willem II Tilburg",
+      "visitante": "AFC Ajax",
+      "favorito": "Ajax",
+      "equipo_proveedor": "AFC Ajax",
+      "ppp": 2.15,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ESP",
+      "fecha": "2027-01-10T00:00:00Z",
+      "local": "Real Madrid CF",
+      "visitante": "Levante UD",
+      "favorito": "Real Madrid",
+      "equipo_proveedor": "Real Madrid CF",
+      "ppp": 2.54,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ESP",
+      "fecha": "2027-01-10T00:00:00Z",
+      "local": "CA Osasuna",
+      "visitante": "FC Barcelona",
+      "favorito": "Barcelona",
+      "equipo_proveedor": "FC Barcelona",
+      "ppp": 2.77,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ESP",
+      "fecha": "2027-01-10T00:00:00Z",
+      "local": "Club Atlético de Madrid",
+      "visitante": "Real Racing Club de Santander",
+      "favorito": "Atl. Madrid",
+      "equipo_proveedor": "Club Atlético de Madrid",
+      "ppp": 2.33,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ESP",
+      "fecha": "2027-01-10T00:00:00Z",
+      "local": "RCD Espanyol de Barcelona",
+      "visitante": "Real Betis Balompié",
+      "favorito": "Betis",
+      "equipo_proveedor": "Real Betis Balompié",
+      "ppp": 2.08,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "POR",
+      "fecha": "2027-01-10T00:00:00Z",
+      "local": "FC Arouca",
+      "visitante": "Sport Lisboa e Benfica",
+      "favorito": "Benfica",
+      "equipo_proveedor": "Sport Lisboa e Benfica",
+      "ppp": 2.55,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "POR",
+      "fecha": "2027-01-10T00:00:00Z",
+      "local": "Sporting Clube de Portugal",
+      "visitante": "CD Santa Clara",
+      "favorito": "Sporting CP",
+      "equipo_proveedor": "Sporting Clube de Portugal",
+      "ppp": 2.18,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-01-12",
+      "local": "RB Leipzig",
+      "visitante": "VfB Stuttgart",
+      "favorito": "RB Leipzig",
+      "equipo_proveedor": "RB Leipzig",
+      "ppp": 2.1,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-01-12",
+      "local": "1. FC Köln",
+      "visitante": "Borussia Dortmund",
+      "favorito": "Dortmund",
+      "equipo_proveedor": "Borussia Dortmund",
+      "ppp": 2.4,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-01-16",
+      "local": "Borussia Dortmund",
+      "visitante": "SC Freiburg",
+      "favorito": "Dortmund",
+      "equipo_proveedor": "Borussia Dortmund",
+      "ppp": 2.4,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-01-16",
+      "local": "TSG Hoffenheim",
+      "visitante": "RB Leipzig",
+      "favorito": "RB Leipzig",
+      "equipo_proveedor": "RB Leipzig",
+      "ppp": 2.1,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-01-16",
+      "local": "Eintracht Frankfurt",
+      "visitante": "FC Bayern München",
+      "favorito": "Bayern Munich",
+      "equipo_proveedor": "FC Bayern München",
+      "ppp": 2.2,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ENG",
+      "fecha": "2027-01-16T15:00:00Z",
+      "local": "Manchester City FC",
+      "visitante": "Nottingham Forest FC",
+      "favorito": "Manchester City",
+      "equipo_proveedor": "Manchester City FC",
+      "ppp": 2,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ENG",
+      "fecha": "2027-01-16T15:00:00Z",
+      "local": "Hull City AFC",
+      "visitante": "Arsenal FC",
+      "favorito": "Arsenal",
+      "equipo_proveedor": "Arsenal FC",
+      "ppp": 2.55,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "FRA",
+      "fecha": "2027-01-16T16:15:00Z",
+      "local": "Angers SCO",
+      "visitante": "Paris Saint-Germain FC",
+      "favorito": "PSG",
+      "equipo_proveedor": "Paris Saint-Germain FC",
+      "ppp": 2.36,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-01-16T20:00:00Z",
+      "local": "Fortuna Sittard",
+      "visitante": "PSV",
+      "favorito": "PSV",
+      "equipo_proveedor": "PSV",
+      "ppp": 2.23,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ESP",
+      "fecha": "2027-01-17T00:00:00Z",
+      "local": "Málaga CF",
+      "visitante": "Real Madrid CF",
+      "favorito": "Real Madrid",
+      "equipo_proveedor": "Real Madrid CF",
+      "ppp": 2.54,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ESP",
+      "fecha": "2027-01-17T00:00:00Z",
+      "local": "FC Barcelona",
+      "visitante": "Elche CF",
+      "favorito": "Barcelona",
+      "equipo_proveedor": "FC Barcelona",
+      "ppp": 2.77,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ESP",
+      "fecha": "2027-01-17T00:00:00Z",
+      "local": "Real Betis Balompié",
+      "visitante": "RC Deportivo La Coruña",
+      "favorito": "Betis",
+      "equipo_proveedor": "Real Betis Balompié",
+      "ppp": 2.08,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ESP",
+      "fecha": "2027-01-17T00:00:00Z",
+      "local": "Club Atlético de Madrid",
+      "visitante": "Real Sociedad de Fútbol",
+      "favorito": "Atl. Madrid",
+      "equipo_proveedor": "Club Atlético de Madrid",
+      "ppp": 2.33,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ITA",
+      "fecha": "2027-01-17T00:00:00Z",
+      "local": "AC Milan",
+      "visitante": "Torino FC",
+      "favorito": "AC Milan",
+      "equipo_proveedor": "AC Milan",
+      "ppp": 2.18,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ITA",
+      "fecha": "2027-01-17T00:00:00Z",
+      "local": "Parma Calcio 1913",
+      "visitante": "FC Internazionale Milano",
+      "favorito": "Inter",
+      "equipo_proveedor": "FC Internazionale Milano",
+      "ppp": 2.55,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "POR",
+      "fecha": "2027-01-17T00:00:00Z",
+      "local": "Sporting Clube de Portugal",
+      "visitante": "CF Estrela da Amadora",
+      "favorito": "Sporting CP",
+      "equipo_proveedor": "Sporting Clube de Portugal",
+      "ppp": 2.18,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "POR",
+      "fecha": "2027-01-17T00:00:00Z",
+      "local": "FC Alverca",
+      "visitante": "FC Porto",
+      "favorito": "FC Porto",
+      "equipo_proveedor": "FC Porto",
+      "ppp": 3,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "POR",
+      "fecha": "2027-01-17T00:00:00Z",
+      "local": "Académico de Viseu FC",
+      "visitante": "Sport Lisboa e Benfica",
+      "favorito": "Benfica",
+      "equipo_proveedor": "Sport Lisboa e Benfica",
+      "ppp": 2.55,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-01-17T13:30:00Z",
+      "local": "AFC Ajax",
+      "visitante": "FC Groningen",
+      "favorito": "Ajax",
+      "equipo_proveedor": "AFC Ajax",
+      "ppp": 2.15,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-01-23",
+      "local": "VfB Stuttgart",
+      "visitante": "FC Bayern München",
+      "favorito": "Bayern Munich",
+      "equipo_proveedor": "FC Bayern München",
+      "ppp": 2.2,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-01-23",
+      "local": "Borussia Mönchengladbach",
+      "visitante": "RB Leipzig",
+      "favorito": "RB Leipzig",
+      "equipo_proveedor": "RB Leipzig",
+      "ppp": 2.1,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-01-23",
+      "local": "Hamburger SV",
+      "visitante": "Borussia Dortmund",
+      "favorito": "Dortmund",
+      "equipo_proveedor": "Borussia Dortmund",
+      "ppp": 2.4,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-01-23T15:30:00Z",
+      "local": "AFC Ajax",
+      "visitante": "Telstar 1963",
+      "favorito": "Ajax",
+      "equipo_proveedor": "AFC Ajax",
+      "ppp": 2.15,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ENG",
+      "fecha": "2027-01-23T17:30:00Z",
+      "local": "Arsenal FC",
+      "visitante": "Newcastle United FC",
+      "favorito": "Arsenal",
+      "equipo_proveedor": "Arsenal FC",
+      "ppp": 2.55,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "FRA",
+      "fecha": "2027-01-23T19:45:00Z",
+      "local": "Paris Saint-Germain FC",
+      "visitante": "AJ Auxerre",
+      "favorito": "PSG",
+      "equipo_proveedor": "Paris Saint-Germain FC",
+      "ppp": 2.36,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ENG",
+      "fecha": "2027-01-23T20:00:00Z",
+      "local": "Brighton & Hove Albion FC",
+      "visitante": "Manchester City FC",
+      "favorito": "Manchester City",
+      "equipo_proveedor": "Manchester City FC",
+      "ppp": 2,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-01-23T20:00:00Z",
+      "local": "PSV",
+      "visitante": "ADO Den Haag",
+      "favorito": "PSV",
+      "equipo_proveedor": "PSV",
+      "ppp": 2.23,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ESP",
+      "fecha": "2027-01-24T00:00:00Z",
+      "local": "Deportivo Alavés",
+      "visitante": "FC Barcelona",
+      "favorito": "Barcelona",
+      "equipo_proveedor": "FC Barcelona",
+      "ppp": 2.77,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ESP",
+      "fecha": "2027-01-24T00:00:00Z",
+      "local": "RC Deportivo La Coruña",
+      "visitante": "Club Atlético de Madrid",
+      "favorito": "Atl. Madrid",
+      "equipo_proveedor": "Club Atlético de Madrid",
+      "ppp": 2.33,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ITA",
+      "fecha": "2027-01-24T00:00:00Z",
+      "local": "FC Internazionale Milano",
+      "visitante": "Venezia FC",
+      "favorito": "Inter",
+      "equipo_proveedor": "FC Internazionale Milano",
+      "ppp": 2.55,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ITA",
+      "fecha": "2027-01-24T00:00:00Z",
+      "local": "Frosinone Calcio",
+      "visitante": "AC Milan",
+      "favorito": "AC Milan",
+      "equipo_proveedor": "AC Milan",
+      "ppp": 2.18,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "POR",
+      "fecha": "2027-01-24T00:00:00Z",
+      "local": "FC Porto",
+      "visitante": "Rio Ave FC",
+      "favorito": "FC Porto",
+      "equipo_proveedor": "FC Porto",
+      "ppp": 3,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "POR",
+      "fecha": "2027-01-24T00:00:00Z",
+      "local": "Sport Lisboa e Benfica",
+      "visitante": "Casa Pia AC",
+      "favorito": "Benfica",
+      "equipo_proveedor": "Sport Lisboa e Benfica",
+      "ppp": 2.55,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "POR",
+      "fecha": "2027-01-24T00:00:00Z",
+      "local": "Vitória SC",
+      "visitante": "Sporting Clube de Portugal",
+      "favorito": "Sporting CP",
+      "equipo_proveedor": "Sporting Clube de Portugal",
+      "ppp": 2.18,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-01-30",
+      "local": "FC Bayern München",
+      "visitante": "FC Schalke 04",
+      "favorito": "Bayern Munich",
+      "equipo_proveedor": "FC Bayern München",
+      "ppp": 2.2,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-01-30",
+      "local": "Borussia Dortmund",
+      "visitante": "TSG Hoffenheim",
+      "favorito": "Dortmund",
+      "equipo_proveedor": "Borussia Dortmund",
+      "ppp": 2.4,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-01-30",
+      "local": "RB Leipzig",
+      "visitante": "SV Werder Bremen",
+      "favorito": "RB Leipzig",
+      "equipo_proveedor": "RB Leipzig",
+      "ppp": 2.1,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-01-30T19:00:00Z",
+      "local": "Willem II Tilburg",
+      "visitante": "PSV",
+      "favorito": "PSV",
+      "equipo_proveedor": "PSV",
+      "ppp": 2.23,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ESP",
+      "fecha": "2027-01-31T00:00:00Z",
+      "local": "Real Betis Balompié",
+      "visitante": "Elche CF",
+      "favorito": "Betis",
+      "equipo_proveedor": "Real Betis Balompié",
+      "ppp": 2.08,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ESP",
+      "fecha": "2027-01-31T00:00:00Z",
+      "local": "Rayo Vallecano de Madrid",
+      "visitante": "Real Madrid CF",
+      "favorito": "Real Madrid",
+      "equipo_proveedor": "Real Madrid CF",
+      "ppp": 2.54,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ESP",
+      "fecha": "2027-01-31T00:00:00Z",
+      "local": "Club Atlético de Madrid",
+      "visitante": "RCD Espanyol de Barcelona",
+      "favorito": "Atl. Madrid",
+      "equipo_proveedor": "Club Atlético de Madrid",
+      "ppp": 2.33,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ESP",
+      "fecha": "2027-01-31T00:00:00Z",
+      "local": "FC Barcelona",
+      "visitante": "Valencia CF",
+      "favorito": "Barcelona",
+      "equipo_proveedor": "FC Barcelona",
+      "ppp": 2.77,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "POR",
+      "fecha": "2027-01-31T00:00:00Z",
+      "local": "Sport Lisboa e Benfica",
+      "visitante": "Moreirense FC",
+      "favorito": "Benfica",
+      "equipo_proveedor": "Sport Lisboa e Benfica",
+      "ppp": 2.55,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "POR",
+      "fecha": "2027-01-31T00:00:00Z",
+      "local": "FC Arouca",
+      "visitante": "FC Porto",
+      "favorito": "FC Porto",
+      "equipo_proveedor": "FC Porto",
+      "ppp": 3,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "POR",
+      "fecha": "2027-01-31T00:00:00Z",
+      "local": "FC Alverca",
+      "visitante": "Sporting Clube de Portugal",
+      "favorito": "Sporting CP",
+      "equipo_proveedor": "Sporting Clube de Portugal",
+      "ppp": 2.18,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-01-31T11:15:00Z",
+      "local": "SC Heerenveen",
+      "visitante": "AFC Ajax",
+      "favorito": "Ajax",
+      "equipo_proveedor": "AFC Ajax",
+      "ppp": 2.15,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-02-06",
+      "local": "FC Bayern München",
+      "visitante": "SV 07 Elversberg",
+      "favorito": "Bayern Munich",
+      "equipo_proveedor": "FC Bayern München",
+      "ppp": 2.2,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-02-06",
+      "local": "Hamburger SV",
+      "visitante": "RB Leipzig",
+      "favorito": "RB Leipzig",
+      "equipo_proveedor": "RB Leipzig",
+      "ppp": 2.1,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-02-06",
+      "local": "SC Paderborn 07",
+      "visitante": "Borussia Dortmund",
+      "favorito": "Dortmund",
+      "equipo_proveedor": "Borussia Dortmund",
+      "ppp": 2.4,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ENG",
+      "fecha": "2027-02-06T15:00:00Z",
+      "local": "Fulham FC",
+      "visitante": "Manchester City FC",
+      "favorito": "Manchester City",
+      "equipo_proveedor": "Manchester City FC",
+      "ppp": 2,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ESP",
+      "fecha": "2027-02-07T00:00:00Z",
+      "local": "Real Betis Balompié",
+      "visitante": "Sevilla FC",
+      "favorito": "Betis",
+      "equipo_proveedor": "Real Betis Balompié",
+      "ppp": 2.08,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ITA",
+      "fecha": "2027-02-07T00:00:00Z",
+      "local": "FC Internazionale Milano",
+      "visitante": "Cagliari Calcio",
+      "favorito": "Inter",
+      "equipo_proveedor": "FC Internazionale Milano",
+      "ppp": 2.55,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ITA",
+      "fecha": "2027-02-07T00:00:00Z",
+      "local": "Bologna FC 1909",
+      "visitante": "AC Milan",
+      "favorito": "AC Milan",
+      "equipo_proveedor": "AC Milan",
+      "ppp": 2.18,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "POR",
+      "fecha": "2027-02-07T00:00:00Z",
+      "local": "GD Estoril Praia",
+      "visitante": "Sport Lisboa e Benfica",
+      "favorito": "Benfica",
+      "equipo_proveedor": "Sport Lisboa e Benfica",
+      "ppp": 2.55,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "POR",
+      "fecha": "2027-02-07T00:00:00Z",
+      "local": "Sporting Clube de Portugal",
+      "visitante": "Rio Ave FC",
+      "favorito": "Sporting CP",
+      "equipo_proveedor": "Sporting Clube de Portugal",
+      "ppp": 2.18,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "POR",
+      "fecha": "2027-02-07T00:00:00Z",
+      "local": "FC Porto",
+      "visitante": "Académico de Viseu FC",
+      "favorito": "FC Porto",
+      "equipo_proveedor": "FC Porto",
+      "ppp": 3,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ENG",
+      "fecha": "2027-02-10T20:00:00Z",
+      "local": "Tottenham Hotspur FC",
+      "visitante": "Manchester City FC",
+      "favorito": "Manchester City",
+      "equipo_proveedor": "Manchester City FC",
+      "ppp": 2,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ENG",
+      "fecha": "2027-02-10T20:00:00Z",
+      "local": "Ipswich Town FC",
+      "visitante": "Arsenal FC",
+      "favorito": "Arsenal",
+      "equipo_proveedor": "Arsenal FC",
+      "ppp": 2.55,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-02-13",
+      "local": "Borussia Dortmund",
+      "visitante": "VfB Stuttgart",
+      "favorito": "Dortmund",
+      "equipo_proveedor": "Borussia Dortmund",
+      "ppp": 2.4,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-02-13",
+      "local": "1. FC Union Berlin",
+      "visitante": "FC Bayern München",
+      "favorito": "Bayern Munich",
+      "equipo_proveedor": "FC Bayern München",
+      "ppp": 2.2,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "FRA",
+      "fecha": "2027-02-13T00:00:00Z",
+      "local": "Le Mans FC",
+      "visitante": "Paris Saint-Germain FC",
+      "favorito": "PSG",
+      "equipo_proveedor": "Paris Saint-Germain FC",
+      "ppp": 2.36,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-02-13T00:00:00Z",
+      "local": "PSV",
+      "visitante": "FC Twente '65",
+      "favorito": "PSV",
+      "equipo_proveedor": "PSV",
+      "ppp": 2.23,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-02-13T00:00:00Z",
+      "local": "SBV Excelsior",
+      "visitante": "AFC Ajax",
+      "favorito": "Ajax",
+      "equipo_proveedor": "AFC Ajax",
+      "ppp": 2.15,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ESP",
+      "fecha": "2027-02-14T00:00:00Z",
+      "local": "CA Osasuna",
+      "visitante": "Club Atlético de Madrid",
+      "favorito": "Atl. Madrid",
+      "equipo_proveedor": "Club Atlético de Madrid",
+      "ppp": 2.33,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ESP",
+      "fecha": "2027-02-14T00:00:00Z",
+      "local": "Villarreal CF",
+      "visitante": "FC Barcelona",
+      "favorito": "Barcelona",
+      "equipo_proveedor": "FC Barcelona",
+      "ppp": 2.77,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ESP",
+      "fecha": "2027-02-14T00:00:00Z",
+      "local": "Real Sociedad de Fútbol",
+      "visitante": "Real Betis Balompié",
+      "favorito": "Betis",
+      "equipo_proveedor": "Real Betis Balompié",
+      "ppp": 2.08,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ESP",
+      "fecha": "2027-02-14T00:00:00Z",
+      "local": "Real Madrid CF",
+      "visitante": "Athletic Club",
+      "favorito": "Real Madrid",
+      "equipo_proveedor": "Real Madrid CF",
+      "ppp": 2.54,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "POR",
+      "fecha": "2027-02-14T00:00:00Z",
+      "local": "CD Nacional",
+      "visitante": "Sporting Clube de Portugal",
+      "favorito": "Sporting CP",
+      "equipo_proveedor": "Sporting Clube de Portugal",
+      "ppp": 2.18,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "POR",
+      "fecha": "2027-02-14T00:00:00Z",
+      "local": "Moreirense FC",
+      "visitante": "FC Porto",
+      "favorito": "FC Porto",
+      "equipo_proveedor": "FC Porto",
+      "ppp": 3,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "POR",
+      "fecha": "2027-02-14T00:00:00Z",
+      "local": "Sport Lisboa e Benfica",
+      "visitante": "CS Marítimo",
+      "favorito": "Benfica",
+      "equipo_proveedor": "Sport Lisboa e Benfica",
+      "ppp": 2.55,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-02-20",
+      "local": "FC Bayern München",
+      "visitante": "FC Augsburg",
+      "favorito": "Bayern Munich",
+      "equipo_proveedor": "FC Bayern München",
+      "ppp": 2.2,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-02-20",
+      "local": "Eintracht Frankfurt",
+      "visitante": "RB Leipzig",
+      "favorito": "RB Leipzig",
+      "equipo_proveedor": "RB Leipzig",
+      "ppp": 2.1,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-02-20",
+      "local": "SV Werder Bremen",
+      "visitante": "Borussia Dortmund",
+      "favorito": "Dortmund",
+      "equipo_proveedor": "Borussia Dortmund",
+      "ppp": 2.4,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "FRA",
+      "fecha": "2027-02-20T00:00:00Z",
+      "local": "Paris Saint-Germain FC",
+      "visitante": "Stade Brestois 29",
+      "favorito": "PSG",
+      "equipo_proveedor": "Paris Saint-Germain FC",
+      "ppp": 2.36,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-02-20T00:00:00Z",
+      "local": "AFC Ajax",
+      "visitante": "Go Ahead Eagles",
+      "favorito": "Ajax",
+      "equipo_proveedor": "AFC Ajax",
+      "ppp": 2.15,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-02-20T00:00:00Z",
+      "local": "PSV",
+      "visitante": "SC Cambuur-Leeuwarden",
+      "favorito": "PSV",
+      "equipo_proveedor": "PSV",
+      "ppp": 2.23,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ENG",
+      "fecha": "2027-02-20T15:00:00Z",
+      "local": "Manchester City FC",
+      "visitante": "Newcastle United FC",
+      "favorito": "Manchester City",
+      "equipo_proveedor": "Manchester City FC",
+      "ppp": 2,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ENG",
+      "fecha": "2027-02-20T15:00:00Z",
+      "local": "Arsenal FC",
+      "visitante": "Fulham FC",
+      "favorito": "Arsenal",
+      "equipo_proveedor": "Arsenal FC",
+      "ppp": 2.55,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ESP",
+      "fecha": "2027-02-21T00:00:00Z",
+      "local": "Málaga CF",
+      "visitante": "Real Betis Balompié",
+      "favorito": "Betis",
+      "equipo_proveedor": "Real Betis Balompié",
+      "ppp": 2.08,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ESP",
+      "fecha": "2027-02-21T00:00:00Z",
+      "local": "FC Barcelona",
+      "visitante": "Levante UD",
+      "favorito": "Barcelona",
+      "equipo_proveedor": "FC Barcelona",
+      "ppp": 2.77,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ESP",
+      "fecha": "2027-02-21T00:00:00Z",
+      "local": "Sevilla FC",
+      "visitante": "Real Madrid CF",
+      "favorito": "Real Madrid",
+      "equipo_proveedor": "Real Madrid CF",
+      "ppp": 2.54,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ESP",
+      "fecha": "2027-02-21T00:00:00Z",
+      "local": "Club Atlético de Madrid",
+      "visitante": "Elche CF",
+      "favorito": "Atl. Madrid",
+      "equipo_proveedor": "Club Atlético de Madrid",
+      "ppp": 2.33,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ITA",
+      "fecha": "2027-02-21T00:00:00Z",
+      "local": "ACF Fiorentina",
+      "visitante": "FC Internazionale Milano",
+      "favorito": "Inter",
+      "equipo_proveedor": "FC Internazionale Milano",
+      "ppp": 2.55,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ITA",
+      "fecha": "2027-02-21T00:00:00Z",
+      "local": "AC Milan",
+      "visitante": "Genoa CFC",
+      "favorito": "AC Milan",
+      "equipo_proveedor": "AC Milan",
+      "ppp": 2.18,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "POR",
+      "fecha": "2027-02-21T00:00:00Z",
+      "local": "Gil Vicente FC",
+      "visitante": "Sport Lisboa e Benfica",
+      "favorito": "Benfica",
+      "equipo_proveedor": "Sport Lisboa e Benfica",
+      "ppp": 2.55,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "POR",
+      "fecha": "2027-02-21T00:00:00Z",
+      "local": "FC Porto",
+      "visitante": "Casa Pia AC",
+      "favorito": "FC Porto",
+      "equipo_proveedor": "FC Porto",
+      "ppp": 3,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "POR",
+      "fecha": "2027-02-21T00:00:00Z",
+      "local": "Sporting Clube de Portugal",
+      "visitante": "FC Famalicão",
+      "favorito": "Sporting CP",
+      "equipo_proveedor": "Sporting Clube de Portugal",
+      "ppp": 2.18,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-02-27",
+      "local": "Borussia Dortmund",
+      "visitante": "1. FC Union Berlin",
+      "favorito": "Dortmund",
+      "equipo_proveedor": "Borussia Dortmund",
+      "ppp": 2.4,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-02-27T00:00:00Z",
+      "local": "Sparta Rotterdam",
+      "visitante": "PSV",
+      "favorito": "PSV",
+      "equipo_proveedor": "PSV",
+      "ppp": 2.23,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ENG",
+      "fecha": "2027-02-27T15:00:00Z",
+      "local": "Hull City AFC",
+      "visitante": "Manchester City FC",
+      "favorito": "Manchester City",
+      "equipo_proveedor": "Manchester City FC",
+      "ppp": 2,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ESP",
+      "fecha": "2027-02-28T00:00:00Z",
+      "local": "Málaga CF",
+      "visitante": "Club Atlético de Madrid",
+      "favorito": "Atl. Madrid",
+      "equipo_proveedor": "Club Atlético de Madrid",
+      "ppp": 2.33,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ESP",
+      "fecha": "2027-02-28T00:00:00Z",
+      "local": "Real Madrid CF",
+      "visitante": "Valencia CF",
+      "favorito": "Real Madrid",
+      "equipo_proveedor": "Real Madrid CF",
+      "ppp": 2.54,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ESP",
+      "fecha": "2027-02-28T00:00:00Z",
+      "local": "Athletic Club",
+      "visitante": "FC Barcelona",
+      "favorito": "Barcelona",
+      "equipo_proveedor": "FC Barcelona",
+      "ppp": 2.77,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ESP",
+      "fecha": "2027-02-28T00:00:00Z",
+      "local": "Real Betis Balompié",
+      "visitante": "Villarreal CF",
+      "favorito": "Betis",
+      "equipo_proveedor": "Real Betis Balompié",
+      "ppp": 2.08,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ITA",
+      "fecha": "2027-02-28T00:00:00Z",
+      "local": "FC Internazionale Milano",
+      "visitante": "Atalanta BC",
+      "favorito": "Inter",
+      "equipo_proveedor": "FC Internazionale Milano",
+      "ppp": 2.55,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ITA",
+      "fecha": "2027-02-28T00:00:00Z",
+      "local": "Como 1907",
+      "visitante": "AC Milan",
+      "favorito": "AC Milan",
+      "equipo_proveedor": "AC Milan",
+      "ppp": 2.18,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "POR",
+      "fecha": "2027-02-28T00:00:00Z",
+      "local": "FC Arouca",
+      "visitante": "Sporting Clube de Portugal",
+      "favorito": "Sporting CP",
+      "equipo_proveedor": "Sporting Clube de Portugal",
+      "ppp": 2.18,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "FRA",
+      "fecha": "2027-02-28T19:45:00Z",
+      "local": "Paris Saint-Germain FC",
+      "visitante": "Racing Club de Lens",
+      "favorito": "PSG",
+      "equipo_proveedor": "Paris Saint-Germain FC",
+      "ppp": 2.36,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-03-02",
+      "local": "FC Bayern München",
+      "visitante": "SC Freiburg",
+      "favorito": "Bayern Munich",
+      "equipo_proveedor": "FC Bayern München",
+      "ppp": 2.2,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-03-02",
+      "local": "Eintracht Frankfurt",
+      "visitante": "Borussia Dortmund",
+      "favorito": "Dortmund",
+      "equipo_proveedor": "Borussia Dortmund",
+      "ppp": 2.4,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-03-02",
+      "local": "SV 07 Elversberg",
+      "visitante": "RB Leipzig",
+      "favorito": "RB Leipzig",
+      "equipo_proveedor": "RB Leipzig",
+      "ppp": 2.1,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ENG",
+      "fecha": "2027-03-03T20:00:00Z",
+      "local": "Manchester City FC",
+      "visitante": "Everton FC",
+      "favorito": "Manchester City",
+      "equipo_proveedor": "Manchester City FC",
+      "ppp": 2,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ENG",
+      "fecha": "2027-03-03T20:00:00Z",
+      "local": "Arsenal FC",
+      "visitante": "Crystal Palace FC",
+      "favorito": "Arsenal",
+      "equipo_proveedor": "Arsenal FC",
+      "ppp": 2.55,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-03-06",
+      "local": "RB Leipzig",
+      "visitante": "FC Schalke 04",
+      "favorito": "RB Leipzig",
+      "equipo_proveedor": "RB Leipzig",
+      "ppp": 2.1,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "FRA",
+      "fecha": "2027-03-06T00:00:00Z",
+      "local": "Paris Saint-Germain FC",
+      "visitante": "Stade Rennais FC 1901",
+      "favorito": "PSG",
+      "equipo_proveedor": "Paris Saint-Germain FC",
+      "ppp": 2.36,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-03-06T00:00:00Z",
+      "local": "PSV",
+      "visitante": "FC Utrecht",
+      "favorito": "PSV",
+      "equipo_proveedor": "PSV",
+      "ppp": 2.23,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-03-06T00:00:00Z",
+      "local": "ADO Den Haag",
+      "visitante": "AFC Ajax",
+      "favorito": "Ajax",
+      "equipo_proveedor": "AFC Ajax",
+      "ppp": 2.15,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ESP",
+      "fecha": "2027-03-07T00:00:00Z",
+      "local": "Club Atlético de Madrid",
+      "visitante": "RC Celta de Vigo",
+      "favorito": "Atl. Madrid",
+      "equipo_proveedor": "Club Atlético de Madrid",
+      "ppp": 2.33,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ESP",
+      "fecha": "2027-03-07T00:00:00Z",
+      "local": "Villarreal CF",
+      "visitante": "Real Madrid CF",
+      "favorito": "Real Madrid",
+      "equipo_proveedor": "Real Madrid CF",
+      "ppp": 2.54,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ITA",
+      "fecha": "2027-03-07T00:00:00Z",
+      "local": "Udinese Calcio",
+      "visitante": "FC Internazionale Milano",
+      "favorito": "Inter",
+      "equipo_proveedor": "FC Internazionale Milano",
+      "ppp": 2.55,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ITA",
+      "fecha": "2027-03-07T00:00:00Z",
+      "local": "AC Milan",
+      "visitante": "Cagliari Calcio",
+      "favorito": "AC Milan",
+      "equipo_proveedor": "AC Milan",
+      "ppp": 2.18,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "POR",
+      "fecha": "2027-03-07T00:00:00Z",
+      "local": "FC Porto",
+      "visitante": "CS Marítimo",
+      "favorito": "FC Porto",
+      "equipo_proveedor": "FC Porto",
+      "ppp": 3,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "POR",
+      "fecha": "2027-03-07T00:00:00Z",
+      "local": "Vitória SC",
+      "visitante": "Sport Lisboa e Benfica",
+      "favorito": "Benfica",
+      "equipo_proveedor": "Sport Lisboa e Benfica",
+      "ppp": 2.55,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-03-13",
+      "local": "FC Bayern München",
+      "visitante": "1. FSV Mainz 05",
+      "favorito": "Bayern Munich",
+      "equipo_proveedor": "FC Bayern München",
+      "ppp": 2.2,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-03-13",
+      "local": "FC Augsburg",
+      "visitante": "RB Leipzig",
+      "favorito": "RB Leipzig",
+      "equipo_proveedor": "RB Leipzig",
+      "ppp": 2.1,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-03-13",
+      "local": "SV 07 Elversberg",
+      "visitante": "Borussia Dortmund",
+      "favorito": "Dortmund",
+      "equipo_proveedor": "Borussia Dortmund",
+      "ppp": 2.4,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "FRA",
+      "fecha": "2027-03-13T00:00:00Z",
+      "local": "AJ Auxerre",
+      "visitante": "Paris Saint-Germain FC",
+      "favorito": "PSG",
+      "equipo_proveedor": "Paris Saint-Germain FC",
+      "ppp": 2.36,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-03-13T00:00:00Z",
+      "local": "AFC Ajax",
+      "visitante": "PEC Zwolle",
+      "favorito": "Ajax",
+      "equipo_proveedor": "AFC Ajax",
+      "ppp": 2.15,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-03-13T00:00:00Z",
+      "local": "Telstar 1963",
+      "visitante": "PSV",
+      "favorito": "PSV",
+      "equipo_proveedor": "PSV",
+      "ppp": 2.23,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ENG",
+      "fecha": "2027-03-13T15:00:00Z",
+      "local": "Coventry City FC",
+      "visitante": "Manchester City FC",
+      "favorito": "Manchester City",
+      "equipo_proveedor": "Manchester City FC",
+      "ppp": 2,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ENG",
+      "fecha": "2027-03-13T15:00:00Z",
+      "local": "Chelsea FC",
+      "visitante": "Arsenal FC",
+      "favorito": "Arsenal",
+      "equipo_proveedor": "Arsenal FC",
+      "ppp": 2.55,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ESP",
+      "fecha": "2027-03-14T00:00:00Z",
+      "local": "Real Betis Balompié",
+      "visitante": "Levante UD",
+      "favorito": "Betis",
+      "equipo_proveedor": "Real Betis Balompié",
+      "ppp": 2.08,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ESP",
+      "fecha": "2027-03-14T00:00:00Z",
+      "local": "Real Racing Club de Santander",
+      "visitante": "Club Atlético de Madrid",
+      "favorito": "Atl. Madrid",
+      "equipo_proveedor": "Club Atlético de Madrid",
+      "ppp": 2.33,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ESP",
+      "fecha": "2027-03-14T00:00:00Z",
+      "local": "FC Barcelona",
+      "visitante": "RC Deportivo La Coruña",
+      "favorito": "Barcelona",
+      "equipo_proveedor": "FC Barcelona",
+      "ppp": 2.77,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ESP",
+      "fecha": "2027-03-14T00:00:00Z",
+      "local": "Real Madrid CF",
+      "visitante": "RCD Espanyol de Barcelona",
+      "favorito": "Real Madrid",
+      "equipo_proveedor": "Real Madrid CF",
+      "ppp": 2.54,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ITA",
+      "fecha": "2027-03-14T00:00:00Z",
+      "local": "AC Milan",
+      "visitante": "US Sassuolo Calcio",
+      "favorito": "AC Milan",
+      "equipo_proveedor": "AC Milan",
+      "ppp": 2.18,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ITA",
+      "fecha": "2027-03-14T00:00:00Z",
+      "local": "Torino FC",
+      "visitante": "FC Internazionale Milano",
+      "favorito": "Inter",
+      "equipo_proveedor": "FC Internazionale Milano",
+      "ppp": 2.55,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "POR",
+      "fecha": "2027-03-14T00:00:00Z",
+      "local": "Sport Lisboa e Benfica",
+      "visitante": "CD Santa Clara",
+      "favorito": "Benfica",
+      "equipo_proveedor": "Sport Lisboa e Benfica",
+      "ppp": 2.55,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "POR",
+      "fecha": "2027-03-14T00:00:00Z",
+      "local": "Académico de Viseu FC",
+      "visitante": "Sporting Clube de Portugal",
+      "favorito": "Sporting CP",
+      "equipo_proveedor": "Sporting Clube de Portugal",
+      "ppp": 2.18,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "POR",
+      "fecha": "2027-03-14T00:00:00Z",
+      "local": "FC Porto",
+      "visitante": "Gil Vicente FC",
+      "favorito": "FC Porto",
+      "equipo_proveedor": "FC Porto",
+      "ppp": 3,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-03-20",
+      "local": "Borussia Dortmund",
+      "visitante": "Borussia Mönchengladbach",
+      "favorito": "Dortmund",
+      "equipo_proveedor": "Borussia Dortmund",
+      "ppp": 2.4,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-03-20",
+      "local": "RB Leipzig",
+      "visitante": "1. FC Union Berlin",
+      "favorito": "RB Leipzig",
+      "equipo_proveedor": "RB Leipzig",
+      "ppp": 2.1,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-03-20",
+      "local": "1. FC Köln",
+      "visitante": "FC Bayern München",
+      "favorito": "Bayern Munich",
+      "equipo_proveedor": "FC Bayern München",
+      "ppp": 2.2,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "FRA",
+      "fecha": "2027-03-20T00:00:00Z",
+      "local": "Paris Saint-Germain FC",
+      "visitante": "RC Strasbourg Alsace",
+      "favorito": "PSG",
+      "equipo_proveedor": "Paris Saint-Germain FC",
+      "ppp": 2.36,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-03-20T00:00:00Z",
+      "local": "NEC",
+      "visitante": "AFC Ajax",
+      "favorito": "Ajax",
+      "equipo_proveedor": "AFC Ajax",
+      "ppp": 2.15,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-03-20T00:00:00Z",
+      "local": "FC Groningen",
+      "visitante": "PSV",
+      "favorito": "PSV",
+      "equipo_proveedor": "PSV",
+      "ppp": 2.23,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ENG",
+      "fecha": "2027-03-20T15:00:00Z",
+      "local": "Arsenal FC",
+      "visitante": "Sunderland AFC",
+      "favorito": "Arsenal",
+      "equipo_proveedor": "Arsenal FC",
+      "ppp": 2.55,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ESP",
+      "fecha": "2027-03-21T00:00:00Z",
+      "local": "RC Celta de Vigo",
+      "visitante": "Real Madrid CF",
+      "favorito": "Real Madrid",
+      "equipo_proveedor": "Real Madrid CF",
+      "ppp": 2.54,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ESP",
+      "fecha": "2027-03-21T00:00:00Z",
+      "local": "Rayo Vallecano de Madrid",
+      "visitante": "FC Barcelona",
+      "favorito": "Barcelona",
+      "equipo_proveedor": "FC Barcelona",
+      "ppp": 2.77,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ESP",
+      "fecha": "2027-03-21T00:00:00Z",
+      "local": "Real Racing Club de Santander",
+      "visitante": "Real Betis Balompié",
+      "favorito": "Betis",
+      "equipo_proveedor": "Real Betis Balompié",
+      "ppp": 2.08,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ESP",
+      "fecha": "2027-03-21T00:00:00Z",
+      "local": "Club Atlético de Madrid",
+      "visitante": "Getafe CF",
+      "favorito": "Atl. Madrid",
+      "equipo_proveedor": "Club Atlético de Madrid",
+      "ppp": 2.33,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ITA",
+      "fecha": "2027-03-21T00:00:00Z",
+      "local": "FC Internazionale Milano",
+      "visitante": "Frosinone Calcio",
+      "favorito": "Inter",
+      "equipo_proveedor": "FC Internazionale Milano",
+      "ppp": 2.55,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ITA",
+      "fecha": "2027-03-21T00:00:00Z",
+      "local": "Atalanta BC",
+      "visitante": "AC Milan",
+      "favorito": "AC Milan",
+      "equipo_proveedor": "AC Milan",
+      "ppp": 2.18,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "POR",
+      "fecha": "2027-03-21T00:00:00Z",
+      "local": "FC Alverca",
+      "visitante": "Sport Lisboa e Benfica",
+      "favorito": "Benfica",
+      "equipo_proveedor": "Sport Lisboa e Benfica",
+      "ppp": 2.55,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "POR",
+      "fecha": "2027-03-21T00:00:00Z",
+      "local": "GD Estoril Praia",
+      "visitante": "FC Porto",
+      "favorito": "FC Porto",
+      "equipo_proveedor": "FC Porto",
+      "ppp": 3,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "POR",
+      "fecha": "2027-03-21T00:00:00Z",
+      "local": "Sporting Clube de Portugal",
+      "visitante": "Casa Pia AC",
+      "favorito": "Sporting CP",
+      "equipo_proveedor": "Sporting Clube de Portugal",
+      "ppp": 2.18,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-04-03",
+      "local": "FC Bayern München",
+      "visitante": "Hamburger SV",
+      "favorito": "Bayern Munich",
+      "equipo_proveedor": "FC Bayern München",
+      "ppp": 2.2,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-04-03",
+      "local": "RB Leipzig",
+      "visitante": "SC Freiburg",
+      "favorito": "RB Leipzig",
+      "equipo_proveedor": "RB Leipzig",
+      "ppp": 2.1,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "FRA",
+      "fecha": "2027-04-03T00:00:00Z",
+      "local": "Paris FC",
+      "visitante": "Paris Saint-Germain FC",
+      "favorito": "PSG",
+      "equipo_proveedor": "Paris Saint-Germain FC",
+      "ppp": 2.36,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-04-03T00:00:00Z",
+      "local": "PSV",
+      "visitante": "AZ",
+      "favorito": "PSV",
+      "equipo_proveedor": "PSV",
+      "ppp": 2.23,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-04-03T00:00:00Z",
+      "local": "AFC Ajax",
+      "visitante": "FC Twente '65",
+      "favorito": "Ajax",
+      "equipo_proveedor": "AFC Ajax",
+      "ppp": 2.15,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ESP",
+      "fecha": "2027-04-04T00:00:00Z",
+      "local": "FC Barcelona",
+      "visitante": "Sevilla FC",
+      "favorito": "Barcelona",
+      "equipo_proveedor": "FC Barcelona",
+      "ppp": 2.77,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ESP",
+      "fecha": "2027-04-04T00:00:00Z",
+      "local": "Real Betis Balompié",
+      "visitante": "RC Celta de Vigo",
+      "favorito": "Betis",
+      "equipo_proveedor": "Real Betis Balompié",
+      "ppp": 2.08,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ITA",
+      "fecha": "2027-04-04T00:00:00Z",
+      "local": "AC Milan",
+      "visitante": "AC Monza",
+      "favorito": "AC Milan",
+      "equipo_proveedor": "AC Milan",
+      "ppp": 2.18,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ITA",
+      "fecha": "2027-04-04T00:00:00Z",
+      "local": "Genoa CFC",
+      "visitante": "FC Internazionale Milano",
+      "favorito": "Inter",
+      "equipo_proveedor": "FC Internazionale Milano",
+      "ppp": 2.55,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "POR",
+      "fecha": "2027-04-04T00:00:00Z",
+      "local": "Moreirense FC",
+      "visitante": "Sporting Clube de Portugal",
+      "favorito": "Sporting CP",
+      "equipo_proveedor": "Sporting Clube de Portugal",
+      "ppp": 2.18,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "POR",
+      "fecha": "2027-04-04T00:00:00Z",
+      "local": "FC Porto",
+      "visitante": "Vitória SC",
+      "favorito": "FC Porto",
+      "equipo_proveedor": "FC Porto",
+      "ppp": 3,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "POR",
+      "fecha": "2027-04-04T00:00:00Z",
+      "local": "Sport Lisboa e Benfica",
+      "visitante": "CF Estrela da Amadora",
+      "favorito": "Benfica",
+      "equipo_proveedor": "Sport Lisboa e Benfica",
+      "ppp": 2.55,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-04-10",
+      "local": "Borussia Dortmund",
+      "visitante": "FC Schalke 04",
+      "favorito": "Dortmund",
+      "equipo_proveedor": "Borussia Dortmund",
+      "ppp": 2.4,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-04-10",
+      "local": "1. FSV Mainz 05",
+      "visitante": "RB Leipzig",
+      "favorito": "RB Leipzig",
+      "equipo_proveedor": "RB Leipzig",
+      "ppp": 2.1,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-04-10",
+      "local": "SC Paderborn 07",
+      "visitante": "FC Bayern München",
+      "favorito": "Bayern Munich",
+      "equipo_proveedor": "FC Bayern München",
+      "ppp": 2.2,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "FRA",
+      "fecha": "2027-04-10T00:00:00Z",
+      "local": "Paris Saint-Germain FC",
+      "visitante": "Le Havre AC",
+      "favorito": "PSG",
+      "equipo_proveedor": "Paris Saint-Germain FC",
+      "ppp": 2.36,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-04-10T00:00:00Z",
+      "local": "FC Utrecht",
+      "visitante": "AFC Ajax",
+      "favorito": "Ajax",
+      "equipo_proveedor": "AFC Ajax",
+      "ppp": 2.15,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-04-10T00:00:00Z",
+      "local": "PEC Zwolle",
+      "visitante": "PSV",
+      "favorito": "PSV",
+      "equipo_proveedor": "PSV",
+      "ppp": 2.23,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ENG",
+      "fecha": "2027-04-10T14:00:00Z",
+      "local": "Coventry City FC",
+      "visitante": "Arsenal FC",
+      "favorito": "Arsenal",
+      "equipo_proveedor": "Arsenal FC",
+      "ppp": 2.55,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ENG",
+      "fecha": "2027-04-10T14:00:00Z",
+      "local": "AFC Bournemouth",
+      "visitante": "Manchester City FC",
+      "favorito": "Manchester City",
+      "equipo_proveedor": "Manchester City FC",
+      "ppp": 2,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ESP",
+      "fecha": "2027-04-11T00:00:00Z",
+      "local": "Deportivo Alavés",
+      "visitante": "Real Betis Balompié",
+      "favorito": "Betis",
+      "equipo_proveedor": "Real Betis Balompié",
+      "ppp": 2.08,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ESP",
+      "fecha": "2027-04-11T00:00:00Z",
+      "local": "Real Racing Club de Santander",
+      "visitante": "FC Barcelona",
+      "favorito": "Barcelona",
+      "equipo_proveedor": "FC Barcelona",
+      "ppp": 2.77,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ESP",
+      "fecha": "2027-04-11T00:00:00Z",
+      "local": "CA Osasuna",
+      "visitante": "Real Madrid CF",
+      "favorito": "Real Madrid",
+      "equipo_proveedor": "Real Madrid CF",
+      "ppp": 2.54,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ESP",
+      "fecha": "2027-04-11T00:00:00Z",
+      "local": "Club Atlético de Madrid",
+      "visitante": "Levante UD",
+      "favorito": "Atl. Madrid",
+      "equipo_proveedor": "Club Atlético de Madrid",
+      "ppp": 2.33,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ITA",
+      "fecha": "2027-04-11T00:00:00Z",
+      "local": "ACF Fiorentina",
+      "visitante": "AC Milan",
+      "favorito": "AC Milan",
+      "equipo_proveedor": "AC Milan",
+      "ppp": 2.18,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ITA",
+      "fecha": "2027-04-11T00:00:00Z",
+      "local": "FC Internazionale Milano",
+      "visitante": "AS Roma",
+      "favorito": "Inter",
+      "equipo_proveedor": "FC Internazionale Milano",
+      "ppp": 2.55,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "POR",
+      "fecha": "2027-04-11T00:00:00Z",
+      "local": "FC Famalicão",
+      "visitante": "Sport Lisboa e Benfica",
+      "favorito": "Benfica",
+      "equipo_proveedor": "Sport Lisboa e Benfica",
+      "ppp": 2.55,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-04-17",
+      "local": "FC Bayern München",
+      "visitante": "TSG Hoffenheim",
+      "favorito": "Bayern Munich",
+      "equipo_proveedor": "FC Bayern München",
+      "ppp": 2.2,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-04-17",
+      "local": "RB Leipzig",
+      "visitante": "1. FC Köln",
+      "favorito": "RB Leipzig",
+      "equipo_proveedor": "RB Leipzig",
+      "ppp": 2.1,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-04-17",
+      "local": "FC Augsburg",
+      "visitante": "Borussia Dortmund",
+      "favorito": "Dortmund",
+      "equipo_proveedor": "Borussia Dortmund",
+      "ppp": 2.4,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "FRA",
+      "fecha": "2027-04-17T00:00:00Z",
+      "local": "Paris Saint-Germain FC",
+      "visitante": "Lille OSC",
+      "favorito": "PSG",
+      "equipo_proveedor": "Paris Saint-Germain FC",
+      "ppp": 2.36,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ENG",
+      "fecha": "2027-04-17T14:00:00Z",
+      "local": "Arsenal FC",
+      "visitante": "Aston Villa FC",
+      "favorito": "Arsenal",
+      "equipo_proveedor": "Arsenal FC",
+      "ppp": 2.55,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ENG",
+      "fecha": "2027-04-17T14:00:00Z",
+      "local": "Manchester City FC",
+      "visitante": "Crystal Palace FC",
+      "favorito": "Manchester City",
+      "equipo_proveedor": "Manchester City FC",
+      "ppp": 2,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ESP",
+      "fecha": "2027-04-18T00:00:00Z",
+      "local": "Club Atlético de Madrid",
+      "visitante": "Sevilla FC",
+      "favorito": "Atl. Madrid",
+      "equipo_proveedor": "Club Atlético de Madrid",
+      "ppp": 2.33,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ESP",
+      "fecha": "2027-04-18T00:00:00Z",
+      "local": "FC Barcelona",
+      "visitante": "RCD Espanyol de Barcelona",
+      "favorito": "Barcelona",
+      "equipo_proveedor": "FC Barcelona",
+      "ppp": 2.77,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ESP",
+      "fecha": "2027-04-18T00:00:00Z",
+      "local": "Real Betis Balompié",
+      "visitante": "Athletic Club",
+      "favorito": "Betis",
+      "equipo_proveedor": "Real Betis Balompié",
+      "ppp": 2.08,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ESP",
+      "fecha": "2027-04-18T00:00:00Z",
+      "local": "Getafe CF",
+      "visitante": "Real Madrid CF",
+      "favorito": "Real Madrid",
+      "equipo_proveedor": "Real Madrid CF",
+      "ppp": 2.54,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ITA",
+      "fecha": "2027-04-18T00:00:00Z",
+      "local": "AC Monza",
+      "visitante": "FC Internazionale Milano",
+      "favorito": "Inter",
+      "equipo_proveedor": "FC Internazionale Milano",
+      "ppp": 2.55,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "POR",
+      "fecha": "2027-04-18T00:00:00Z",
+      "local": "Sport Lisboa e Benfica",
+      "visitante": "CD Nacional",
+      "favorito": "Benfica",
+      "equipo_proveedor": "Sport Lisboa e Benfica",
+      "ppp": 2.55,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "POR",
+      "fecha": "2027-04-18T00:00:00Z",
+      "local": "FC Porto",
+      "visitante": "CD Santa Clara",
+      "favorito": "FC Porto",
+      "equipo_proveedor": "FC Porto",
+      "ppp": 3,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "POR",
+      "fecha": "2027-04-18T00:00:00Z",
+      "local": "CS Marítimo",
+      "visitante": "Sporting Clube de Portugal",
+      "favorito": "Sporting CP",
+      "equipo_proveedor": "Sporting Clube de Portugal",
+      "ppp": 2.18,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ESP",
+      "fecha": "2027-04-21T00:00:00Z",
+      "local": "Getafe CF",
+      "visitante": "Real Betis Balompié",
+      "favorito": "Betis",
+      "equipo_proveedor": "Real Betis Balompié",
+      "ppp": 2.08,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ESP",
+      "fecha": "2027-04-21T00:00:00Z",
+      "local": "RC Celta de Vigo",
+      "visitante": "FC Barcelona",
+      "favorito": "Barcelona",
+      "equipo_proveedor": "FC Barcelona",
+      "ppp": 2.77,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ESP",
+      "fecha": "2027-04-21T00:00:00Z",
+      "local": "Real Madrid CF",
+      "visitante": "Elche CF",
+      "favorito": "Real Madrid",
+      "equipo_proveedor": "Real Madrid CF",
+      "ppp": 2.54,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ESP",
+      "fecha": "2027-04-21T00:00:00Z",
+      "local": "Villarreal CF",
+      "visitante": "Club Atlético de Madrid",
+      "favorito": "Atl. Madrid",
+      "equipo_proveedor": "Club Atlético de Madrid",
+      "ppp": 2.33,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-04-24",
+      "local": "SV Werder Bremen",
+      "visitante": "FC Bayern München",
+      "favorito": "Bayern Munich",
+      "equipo_proveedor": "FC Bayern München",
+      "ppp": 2.2,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "FRA",
+      "fecha": "2027-04-24T00:00:00Z",
+      "local": "FC Lorient",
+      "visitante": "Paris Saint-Germain FC",
+      "favorito": "PSG",
+      "equipo_proveedor": "Paris Saint-Germain FC",
+      "ppp": 2.36,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ENG",
+      "fecha": "2027-04-24T14:00:00Z",
+      "local": "Chelsea FC",
+      "visitante": "Manchester City FC",
+      "favorito": "Manchester City",
+      "equipo_proveedor": "Manchester City FC",
+      "ppp": 2,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ENG",
+      "fecha": "2027-04-24T14:00:00Z",
+      "local": "AFC Bournemouth",
+      "visitante": "Arsenal FC",
+      "favorito": "Arsenal",
+      "equipo_proveedor": "Arsenal FC",
+      "ppp": 2.55,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ITA",
+      "fecha": "2027-04-25T00:00:00Z",
+      "local": "US Lecce",
+      "visitante": "AC Milan",
+      "favorito": "AC Milan",
+      "equipo_proveedor": "AC Milan",
+      "ppp": 2.18,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ITA",
+      "fecha": "2027-04-25T00:00:00Z",
+      "local": "FC Internazionale Milano",
+      "visitante": "Bologna FC 1909",
+      "favorito": "Inter",
+      "equipo_proveedor": "FC Internazionale Milano",
+      "ppp": 2.55,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "POR",
+      "fecha": "2027-04-25T00:00:00Z",
+      "local": "CF Estrela da Amadora",
+      "visitante": "FC Porto",
+      "favorito": "FC Porto",
+      "equipo_proveedor": "FC Porto",
+      "ppp": 3,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "POR",
+      "fecha": "2027-04-25T00:00:00Z",
+      "local": "Sporting Clube de Portugal",
+      "visitante": "Gil Vicente FC",
+      "favorito": "Sporting CP",
+      "equipo_proveedor": "Sporting Clube de Portugal",
+      "ppp": 2.18,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "FRA",
+      "fecha": "2027-05-01T00:00:00Z",
+      "local": "Paris Saint-Germain FC",
+      "visitante": "Angers SCO",
+      "favorito": "PSG",
+      "equipo_proveedor": "Paris Saint-Germain FC",
+      "ppp": 2.36,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-05-01T00:00:00Z",
+      "local": "Go Ahead Eagles",
+      "visitante": "PSV",
+      "favorito": "PSV",
+      "equipo_proveedor": "PSV",
+      "ppp": 2.23,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-05-01T00:00:00Z",
+      "local": "AFC Ajax",
+      "visitante": "Fortuna Sittard",
+      "favorito": "Ajax",
+      "equipo_proveedor": "AFC Ajax",
+      "ppp": 2.15,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ENG",
+      "fecha": "2027-05-01T14:00:00Z",
+      "local": "Manchester City FC",
+      "visitante": "Brentford FC",
+      "favorito": "Manchester City",
+      "equipo_proveedor": "Manchester City FC",
+      "ppp": 2,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ENG",
+      "fecha": "2027-05-01T14:00:00Z",
+      "local": "Arsenal FC",
+      "visitante": "Tottenham Hotspur FC",
+      "favorito": "Arsenal",
+      "equipo_proveedor": "Arsenal FC",
+      "ppp": 2.55,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ESP",
+      "fecha": "2027-05-02T00:00:00Z",
+      "local": "FC Barcelona",
+      "visitante": "CA Osasuna",
+      "favorito": "Barcelona",
+      "equipo_proveedor": "FC Barcelona",
+      "ppp": 2.77,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ESP",
+      "fecha": "2027-05-02T00:00:00Z",
+      "local": "Real Betis Balompié",
+      "visitante": "Valencia CF",
+      "favorito": "Betis",
+      "equipo_proveedor": "Real Betis Balompié",
+      "ppp": 2.08,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ESP",
+      "fecha": "2027-05-02T00:00:00Z",
+      "local": "Levante UD",
+      "visitante": "Real Madrid CF",
+      "favorito": "Real Madrid",
+      "equipo_proveedor": "Real Madrid CF",
+      "ppp": 2.54,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ESP",
+      "fecha": "2027-05-02T00:00:00Z",
+      "local": "Club Atlético de Madrid",
+      "visitante": "Deportivo Alavés",
+      "favorito": "Atl. Madrid",
+      "equipo_proveedor": "Club Atlético de Madrid",
+      "ppp": 2.33,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ITA",
+      "fecha": "2027-05-02T00:00:00Z",
+      "local": "AC Milan",
+      "visitante": "SS Lazio",
+      "favorito": "AC Milan",
+      "equipo_proveedor": "AC Milan",
+      "ppp": 2.18,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ITA",
+      "fecha": "2027-05-02T00:00:00Z",
+      "local": "Como 1907",
+      "visitante": "FC Internazionale Milano",
+      "favorito": "Inter",
+      "equipo_proveedor": "FC Internazionale Milano",
+      "ppp": 2.55,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "POR",
+      "fecha": "2027-05-02T00:00:00Z",
+      "local": "GD Estoril Praia",
+      "visitante": "Sporting Clube de Portugal",
+      "favorito": "Sporting CP",
+      "equipo_proveedor": "Sporting Clube de Portugal",
+      "ppp": 2.18,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "POR",
+      "fecha": "2027-05-02T00:00:00Z",
+      "local": "FC Porto",
+      "visitante": "FC Famalicão",
+      "favorito": "FC Porto",
+      "equipo_proveedor": "FC Porto",
+      "ppp": 3,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "POR",
+      "fecha": "2027-05-02T00:00:00Z",
+      "local": "Sport Lisboa e Benfica",
+      "visitante": "Rio Ave FC",
+      "favorito": "Benfica",
+      "equipo_proveedor": "Sport Lisboa e Benfica",
+      "ppp": 2.55,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-05-08",
+      "local": "FC Bayern München",
+      "visitante": "Borussia Mönchengladbach",
+      "favorito": "Bayern Munich",
+      "equipo_proveedor": "FC Bayern München",
+      "ppp": 2.2,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-05-08",
+      "local": "RB Leipzig",
+      "visitante": "SC Paderborn 07",
+      "favorito": "RB Leipzig",
+      "equipo_proveedor": "RB Leipzig",
+      "ppp": 2.1,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-05-08",
+      "local": "1. FSV Mainz 05",
+      "visitante": "Borussia Dortmund",
+      "favorito": "Dortmund",
+      "equipo_proveedor": "Borussia Dortmund",
+      "ppp": 2.4,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-05-08T00:00:00Z",
+      "local": "PSV",
+      "visitante": "SBV Excelsior",
+      "favorito": "PSV",
+      "equipo_proveedor": "PSV",
+      "ppp": 2.23,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-05-08T00:00:00Z",
+      "local": "AZ",
+      "visitante": "AFC Ajax",
+      "favorito": "Ajax",
+      "equipo_proveedor": "AFC Ajax",
+      "ppp": 2.15,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ENG",
+      "fecha": "2027-05-08T14:00:00Z",
+      "local": "Leeds United FC",
+      "visitante": "Arsenal FC",
+      "favorito": "Arsenal",
+      "equipo_proveedor": "Arsenal FC",
+      "ppp": 2.55,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ESP",
+      "fecha": "2027-05-09T00:00:00Z",
+      "local": "Valencia CF",
+      "visitante": "Club Atlético de Madrid",
+      "favorito": "Atl. Madrid",
+      "equipo_proveedor": "Club Atlético de Madrid",
+      "ppp": 2.33,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ESP",
+      "fecha": "2027-05-09T00:00:00Z",
+      "local": "Real Betis Balompié",
+      "visitante": "RCD Espanyol de Barcelona",
+      "favorito": "Betis",
+      "equipo_proveedor": "Real Betis Balompié",
+      "ppp": 2.08,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ITA",
+      "fecha": "2027-05-09T00:00:00Z",
+      "local": "Parma Calcio 1913",
+      "visitante": "AC Milan",
+      "favorito": "AC Milan",
+      "equipo_proveedor": "AC Milan",
+      "ppp": 2.18,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ITA",
+      "fecha": "2027-05-09T00:00:00Z",
+      "local": "FC Internazionale Milano",
+      "visitante": "US Lecce",
+      "favorito": "Inter",
+      "equipo_proveedor": "FC Internazionale Milano",
+      "ppp": 2.55,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "POR",
+      "fecha": "2027-05-09T00:00:00Z",
+      "local": "CD Nacional",
+      "visitante": "FC Porto",
+      "favorito": "FC Porto",
+      "equipo_proveedor": "FC Porto",
+      "ppp": 3,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "FRA",
+      "fecha": "2027-05-09T18:45:00Z",
+      "local": "Olympique Lyonnais",
+      "visitante": "Paris Saint-Germain FC",
+      "favorito": "PSG",
+      "equipo_proveedor": "Paris Saint-Germain FC",
+      "ppp": 2.36,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-05-15",
+      "local": "Borussia Dortmund",
+      "visitante": "1. FC Köln",
+      "favorito": "Dortmund",
+      "equipo_proveedor": "Borussia Dortmund",
+      "ppp": 2.4,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-05-15",
+      "local": "VfB Stuttgart",
+      "visitante": "RB Leipzig",
+      "favorito": "RB Leipzig",
+      "equipo_proveedor": "RB Leipzig",
+      "ppp": 2.1,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ENG",
+      "fecha": "2027-05-15T14:00:00Z",
+      "local": "Ipswich Town FC",
+      "visitante": "Manchester City FC",
+      "favorito": "Manchester City",
+      "equipo_proveedor": "Manchester City FC",
+      "ppp": 2,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ENG",
+      "fecha": "2027-05-15T14:00:00Z",
+      "local": "Arsenal FC",
+      "visitante": "Nottingham Forest FC",
+      "favorito": "Arsenal",
+      "equipo_proveedor": "Arsenal FC",
+      "ppp": 2.55,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ESP",
+      "fecha": "2027-05-16T00:00:00Z",
+      "local": "Club Atlético de Madrid",
+      "visitante": "Rayo Vallecano de Madrid",
+      "favorito": "Atl. Madrid",
+      "equipo_proveedor": "Club Atlético de Madrid",
+      "ppp": 2.33,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ESP",
+      "fecha": "2027-05-16T00:00:00Z",
+      "local": "Real Sociedad de Fútbol",
+      "visitante": "FC Barcelona",
+      "favorito": "Barcelona",
+      "equipo_proveedor": "FC Barcelona",
+      "ppp": 2.77,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ESP",
+      "fecha": "2027-05-16T00:00:00Z",
+      "local": "Real Madrid CF",
+      "visitante": "Real Racing Club de Santander",
+      "favorito": "Real Madrid",
+      "equipo_proveedor": "Real Madrid CF",
+      "ppp": 2.54,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ESP",
+      "fecha": "2027-05-16T00:00:00Z",
+      "local": "CA Osasuna",
+      "visitante": "Real Betis Balompié",
+      "favorito": "Betis",
+      "equipo_proveedor": "Real Betis Balompié",
+      "ppp": 2.08,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "FRA",
+      "fecha": "2027-05-16T00:00:00Z",
+      "local": "Paris Saint-Germain FC",
+      "visitante": "OGC Nice",
+      "favorito": "PSG",
+      "equipo_proveedor": "Paris Saint-Germain FC",
+      "ppp": 2.36,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ITA",
+      "fecha": "2027-05-16T00:00:00Z",
+      "local": "AC Milan",
+      "visitante": "AS Roma",
+      "favorito": "AC Milan",
+      "equipo_proveedor": "AC Milan",
+      "ppp": 2.18,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "POR",
+      "fecha": "2027-05-16T00:00:00Z",
+      "local": "Sport Lisboa e Benfica",
+      "visitante": "FC Arouca",
+      "favorito": "Benfica",
+      "equipo_proveedor": "Sport Lisboa e Benfica",
+      "ppp": 2.55,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "POR",
+      "fecha": "2027-05-16T00:00:00Z",
+      "local": "CD Santa Clara",
+      "visitante": "Sporting Clube de Portugal",
+      "favorito": "Sporting CP",
+      "equipo_proveedor": "Sporting Clube de Portugal",
+      "ppp": 2.18,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-05-16T12:30:00Z",
+      "local": "AFC Ajax",
+      "visitante": "Sparta Rotterdam",
+      "favorito": "Ajax",
+      "equipo_proveedor": "AFC Ajax",
+      "ppp": 2.15,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-05-16T12:30:00Z",
+      "local": "PSV",
+      "visitante": "NEC",
+      "favorito": "PSV",
+      "equipo_proveedor": "PSV",
+      "ppp": 2.23,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-05-22",
+      "local": "FC Bayern München",
+      "visitante": "Eintracht Frankfurt",
+      "favorito": "Bayern Munich",
+      "equipo_proveedor": "FC Bayern München",
+      "ppp": 2.2,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-05-22",
+      "local": "RB Leipzig",
+      "visitante": "TSG Hoffenheim",
+      "favorito": "RB Leipzig",
+      "equipo_proveedor": "RB Leipzig",
+      "ppp": 2.1,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-05-22",
+      "local": "SC Freiburg",
+      "visitante": "Borussia Dortmund",
+      "favorito": "Dortmund",
+      "equipo_proveedor": "Borussia Dortmund",
+      "ppp": 2.4,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "FRA",
+      "fecha": "2027-05-22T00:00:00Z",
+      "local": "ES Troyes AC",
+      "visitante": "Paris Saint-Germain FC",
+      "favorito": "PSG",
+      "equipo_proveedor": "Paris Saint-Germain FC",
+      "ppp": 2.36,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ESP",
+      "fecha": "2027-05-23T00:00:00Z",
+      "local": "Club Atlético de Madrid",
+      "visitante": "Athletic Club",
+      "favorito": "Atl. Madrid",
+      "equipo_proveedor": "Club Atlético de Madrid",
+      "ppp": 2.33,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ESP",
+      "fecha": "2027-05-23T00:00:00Z",
+      "local": "Deportivo Alavés",
+      "visitante": "Real Madrid CF",
+      "favorito": "Real Madrid",
+      "equipo_proveedor": "Real Madrid CF",
+      "ppp": 2.54,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ESP",
+      "fecha": "2027-05-23T00:00:00Z",
+      "local": "Rayo Vallecano de Madrid",
+      "visitante": "Real Betis Balompié",
+      "favorito": "Betis",
+      "equipo_proveedor": "Real Betis Balompié",
+      "ppp": 2.08,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ESP",
+      "fecha": "2027-05-23T00:00:00Z",
+      "local": "FC Barcelona",
+      "visitante": "Málaga CF",
+      "favorito": "Barcelona",
+      "equipo_proveedor": "FC Barcelona",
+      "ppp": 2.77,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ITA",
+      "fecha": "2027-05-23T00:00:00Z",
+      "local": "FC Internazionale Milano",
+      "visitante": "SS Lazio",
+      "favorito": "Inter",
+      "equipo_proveedor": "FC Internazionale Milano",
+      "ppp": 2.55,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ITA",
+      "fecha": "2027-05-23T00:00:00Z",
+      "local": "Venezia FC",
+      "visitante": "AC Milan",
+      "favorito": "AC Milan",
+      "equipo_proveedor": "AC Milan",
+      "ppp": 2.18,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-05-23T12:30:00Z",
+      "local": "SC Heerenveen",
+      "visitante": "PSV",
+      "favorito": "PSV",
+      "equipo_proveedor": "PSV",
+      "ppp": 2.23,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-05-23T12:30:00Z",
+      "local": "SC Cambuur-Leeuwarden",
+      "visitante": "AFC Ajax",
+      "favorito": "Ajax",
+      "equipo_proveedor": "AFC Ajax",
+      "ppp": 2.15,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ENG",
+      "fecha": "2027-05-23T14:00:00Z",
+      "local": "Everton FC",
+      "visitante": "Arsenal FC",
+      "favorito": "Arsenal",
+      "equipo_proveedor": "Arsenal FC",
+      "ppp": 2.55,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ENG",
+      "fecha": "2027-05-23T14:00:00Z",
+      "local": "Manchester City FC",
+      "visitante": "Aston Villa FC",
+      "favorito": "Manchester City",
+      "equipo_proveedor": "Manchester City FC",
+      "ppp": 2,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "FRA",
+      "fecha": "2027-05-29T00:00:00Z",
+      "local": "Paris Saint-Germain FC",
+      "visitante": "Toulouse FC",
+      "favorito": "PSG",
+      "equipo_proveedor": "Paris Saint-Germain FC",
+      "ppp": 2.36,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ESP",
+      "fecha": "2027-05-30T00:00:00Z",
+      "local": "Real Madrid CF",
+      "visitante": "RC Deportivo La Coruña",
+      "favorito": "Real Madrid",
+      "equipo_proveedor": "Real Madrid CF",
+      "ppp": 2.54,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ESP",
+      "fecha": "2027-05-30T00:00:00Z",
+      "local": "Getafe CF",
+      "visitante": "FC Barcelona",
+      "favorito": "Barcelona",
+      "equipo_proveedor": "FC Barcelona",
+      "ppp": 2.77,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ITA",
+      "fecha": "2027-05-30T00:00:00Z",
+      "local": "AC Milan",
+      "visitante": "Udinese Calcio",
+      "favorito": "AC Milan",
+      "equipo_proveedor": "AC Milan",
+      "ppp": 2.18,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ITA",
+      "fecha": "2027-05-30T00:00:00Z",
+      "local": "US Sassuolo Calcio",
+      "visitante": "FC Internazionale Milano",
+      "favorito": "Inter",
+      "equipo_proveedor": "FC Internazionale Milano",
+      "ppp": 2.55,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ENG",
+      "fecha": "2027-05-30T15:00:00Z",
+      "local": "Arsenal FC",
+      "visitante": "Brighton & Hove Albion FC",
+      "favorito": "Arsenal",
+      "equipo_proveedor": "Arsenal FC",
+      "ppp": 2.55,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ENG",
+      "fecha": "2027-05-30T15:00:00Z",
+      "local": "Sunderland AFC",
+      "visitante": "Manchester City FC",
+      "favorito": "Manchester City",
+      "equipo_proveedor": "Manchester City FC",
+      "ppp": 2,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    }
+  ],
   "dobles": [],
-  "favoritos_validados": false
+  "favoritos_validados": true
 }
