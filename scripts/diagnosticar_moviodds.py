@@ -297,16 +297,16 @@ def main():
         resumen=os.environ.get("GITHUB_STEP_SUMMARY")
         if resumen:
             with open(resumen,"a",encoding="utf-8") as salida:
-                salida.write("## Diagnóstico MoviOdds\\n\\n")
-                salida.write(f"- Partidos recibidos: **{len(partidos)}**\\n")
-                salida.write(f"- Partidos con cuotas: **{len(con_cuotas)}**\\n")
-                salida.write(f"- Atribución explícita a bet365: **{'Sí' if any('bet365' in v for v in valores_casa) else 'No verificada'}**\\n")
+                salida.write("## Diagnóstico MoviOdds\n\n")
+                salida.write(f"- Partidos recibidos: **{len(partidos)}**\n")
+                salida.write(f"- Partidos con cuotas: **{len(con_cuotas)}**\n")
+                salida.write(f"- Atribución explícita a bet365: **{'Sí' if any('bet365' in v for v in valores_casa) else 'No verificada'}**\n")
                 if ruta.is_file():
-                    salida.write(f"- Candidatos próximos 7 días con hora: **{len(ventana)}**\\n")
-                    salida.write(f"- Coincidencias exactas: **{exactos_7}**\\n")
-                    salida.write(f"- Coincidencias únicas aproximadas (no importables): **{similares_7}**\\n")
-                    salida.write(f"- Cuotas candidatas vigentes 1,20–1,80 (sin verificar casa): **{vigentes_7}**\\n")
-                salida.write("\\n**Estado:** solo diagnóstico; no se han publicado cuotas ni generado dobles.\\n")
+                    salida.write(f"- Candidatos próximos 7 días con hora: **{len(ventana)}**\n")
+                    salida.write(f"- Coincidencias exactas: **{exactos_7}**\n")
+                    salida.write(f"- Coincidencias únicas aproximadas (no importables): **{similares_7}**\n")
+                    salida.write(f"- Cuotas candidatas vigentes 1,20–1,80 (sin verificar casa): **{vigentes_7}**\n")
+                salida.write("\n**Estado:** solo diagnóstico; no se han publicado cuotas ni generado dobles.\n")
 
         return 0
     except HTTPError as error:
