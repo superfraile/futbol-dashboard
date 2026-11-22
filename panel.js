@@ -91,7 +91,7 @@ async function iniciar(){
      nombreLiga(r.liga),r.fecha,r.local,r.visitante,r.favorito,r.ppp,"Pendiente"
    ]));
    const aviso=document.createElement("p");
-   aviso.textContent="Mostrando "+Math.min(100,filtrados.length)+" de "+filtrados.length+" partidos preseleccionados. No son apuestas válidas sin cuotas verificadas.";
+   aviso.textContent="Mostrando "+Math.min(100,filtrados.length)+" de "+filtrados.length+" partidos preseleccionados, ordenados por Pts/PJ (mayor a menor). Cuotas verificadas: "+filtrados.filter(p=>p.cuota_verificada===true&&typeof p.cuota==="number"&&p.cuota>=1.20&&p.cuota<=1.80).length+". No son apuestas válidas sin cuotas verificadas.";
    candidatosDest.append(aviso);
  }
  filtroCandidatos.addEventListener("change",dibujarCandidatos);
