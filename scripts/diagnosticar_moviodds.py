@@ -86,6 +86,45 @@ def main():
                     antiguedades["sin timestamp válido"]+=1
         print("Grupo 40 futuro: coincidencia exacta de etiquetas:",dict(coincidencias))
         print("Grupo 40 futuro: vigencia de registros:",dict(antiguedades))
+        # Diagnóstico de emparejamiento con la preselección publicada.
+        # Exige coincidencia de ambos equipos y fecha de inicio dentro de 3 horas;
+        # no importa cuotas ni publica los nombres de los partidos.
+        from pathlib import Path
+        ruta=Path(__file__).resolve().parent.parent/"datos.json"
+        if ruta.is_file():
+            candidatos=json.loads(ruta.read_text(encoding="utf-8")).get("candidatos",[])
+            encontrados=0
+            ambiguos=0
+            sin_hora=0
+            for p in candidatos:
+                try:
+                    if len(p["fecha"])<=10:
+                        sin_hora+=1
+                        continue
+                    inicio=datetime.fromisoformat(p["fecha"].replace("Z","+00:00"))
+                    if inicio.tzinfo is None:
+                        sin_hora+=1
+                        continue
+                    opciones=[]
+                    for m in partidos:
+                        if not isinstance(m,dict) or m.get("in_play") is True:
+                            continue
+                        if normalizar(m.get("home"))!=normalizar(p["local"]) or normalizar(m.get("away"))!=normalizar(p["visitante"]):
+                            continue
+                        fecha=datetime.fromisoformat(m["kickoff_utc"].replace("Z","+00:00"))
+                        if fecha.tzinfo is not None and abs((fecha-inicio).total_seconds())<=10800:
+                            opciones.append(m)
+                    if len(opciones)==1:
+                        encontrados+=1
+                    elif len(opciones)>1:
+                        ambiguos+=1
+                except (ValueError,TypeError,KeyError,AttributeError):
+                    continue
+            print("Candidatos del dashboard:",len(candidatos))
+            print("Emparejados exactamente con MoviOdds:",encontrados)
+            print("Emparejamientos ambiguos descartados:",ambiguos)
+            print("Candidatos sin hora precisa:",sin_hora)
+            print("Los no emparejados requerirán equivalencias de nombres verificadas.")
         print("No se ha importado ninguna cuota; falta validar esquema y mercado.")
         return 0
     except HTTPError as error:
