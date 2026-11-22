@@ -56,6 +56,7 @@ async function iniciar(){
  const candidatos=(datos.candidatos||[]).filter(r=>r.fecha.slice(0,10)>=hoy);
  const candidatosDest=document.getElementById("lista-candidatos");
  const filtroCandidatos=document.getElementById("filtro-candidatos");
+ const plazoCandidatos=document.getElementById("plazo-candidatos");
  for(const l of CONFIG.ligas.filter(l=>candidatos.some(p=>p.liga===l.id))){
    const opcion=document.createElement("option");opcion.value=l.id;opcion.textContent=l.pais+" - "+l.nombre;filtroCandidatos.append(opcion);
  }
@@ -63,7 +64,10 @@ async function iniciar(){
    if(datos.favoritos_validados!==true || datos.equipos_top?.length!==38){
      candidatosDest.textContent="La lista publicada todavía no coincide con los 38 favoritos confirmados.";return;
    }
-   const filtrados=candidatos.filter(r=>!filtroCandidatos.value||r.liga===filtroCandidatos.value);
+   const dias=plazoCandidatos.value;
+   const limite=new Date();limite.setDate(limite.getDate()+Number(dias==="all"?3650:dias));
+   const fechaLimite=new Intl.DateTimeFormat("sv-SE",{timeZone:"Europe/Madrid",year:"numeric",month:"2-digit",day:"2-digit"}).format(limite);
+   const filtrados=candidatos.filter(r=>(!filtroCandidatos.value||r.liga===filtroCandidatos.value)&&(dias==="all"||r.fecha.slice(0,10)<=fechaLimite));
    if(!filtrados.length){candidatosDest.textContent="Sin partidos preseleccionados para esta liga.";return;}
    tabla(candidatosDest,["Liga","Fecha","Local","Visitante","Favorito fijo","Pts/PJ","Cuota"],filtrados.slice(0,100).map(r=>[
      nombreLiga(r.liga),r.fecha,r.local,r.visitante,r.favorito,r.ppp,"Pendiente"
@@ -73,6 +77,7 @@ async function iniciar(){
    candidatosDest.append(aviso);
  }
  filtroCandidatos.addEventListener("change",dibujarCandidatos);
+ plazoCandidatos.addEventListener("change",dibujarCandidatos);
  dibujarCandidatos();
  const doblesDest=document.getElementById("lista-dobles");
  const dobles=(datos.dobles||[]).filter(d=>Array.isArray(d.partidos)&&d.partidos.length===2&&d.partidos.every(p=>p.fecha.slice(0,10)>=hoy&&p.cuota_verificada===true&&typeof p.cuota==="number"&&p.cuota>=1.20&&p.cuota<=1.80));
