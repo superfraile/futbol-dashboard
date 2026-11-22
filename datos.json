@@ -1,9 +1,21 @@
 {
   "version": "1.1",
-  "ultima_actualizacion": "2026-11-21T06:05:24.490806+00:00",
+  "ultima_actualizacion": "2026-11-22T06:06:56.212750+00:00",
   "fuente": "OpenLigaDB (https://www.openligadb.de), ODbL 1.0; cobertura GER",
   "ligas": {
     "GER": [
+      {
+        "equipo": "Borussia Dortmund",
+        "pj": 10,
+        "g": 7,
+        "e": 3,
+        "p": 0,
+        "gf": 17,
+        "gc": 7,
+        "puntos": 24,
+        "posicion": 1,
+        "ppp": 2.4
+      },
       {
         "equipo": "FC Bayern München",
         "pj": 10,
@@ -13,56 +25,44 @@
         "gf": 30,
         "gc": 10,
         "puntos": 22,
-        "posicion": 1,
+        "posicion": 2,
         "ppp": 2.2
       },
       {
-        "equipo": "Borussia Dortmund",
-        "pj": 9,
-        "g": 6,
-        "e": 3,
-        "p": 0,
-        "gf": 16,
-        "gc": 7,
-        "puntos": 21,
-        "posicion": 2,
-        "ppp": 2.33
-      },
-      {
         "equipo": "SC Freiburg",
-        "pj": 9,
-        "g": 6,
+        "pj": 10,
+        "g": 7,
         "e": 1,
         "p": 2,
-        "gf": 20,
+        "gf": 21,
         "gc": 10,
-        "puntos": 19,
+        "puntos": 22,
         "posicion": 3,
-        "ppp": 2.11
+        "ppp": 2.2
       },
       {
         "equipo": "RB Leipzig",
-        "pj": 9,
-        "g": 6,
+        "pj": 10,
+        "g": 7,
         "e": 0,
         "p": 3,
-        "gf": 27,
-        "gc": 13,
-        "puntos": 18,
+        "gf": 32,
+        "gc": 14,
+        "puntos": 21,
         "posicion": 4,
-        "ppp": 2.0
+        "ppp": 2.1
       },
       {
         "equipo": "Bayer 04 Leverkusen",
-        "pj": 9,
-        "g": 5,
+        "pj": 10,
+        "g": 6,
         "e": 1,
         "p": 3,
-        "gf": 20,
+        "gf": 24,
         "gc": 17,
-        "puntos": 16,
+        "puntos": 19,
         "posicion": 5,
-        "ppp": 1.78
+        "ppp": 1.9
       },
       {
         "equipo": "SV Werder Bremen",
@@ -77,52 +77,52 @@
         "ppp": 1.67
       },
       {
-        "equipo": "SV 07 Elversberg",
-        "pj": 9,
+        "equipo": "Eintracht Frankfurt",
+        "pj": 10,
         "g": 4,
-        "e": 1,
-        "p": 4,
-        "gf": 17,
-        "gc": 18,
-        "puntos": 13,
+        "e": 3,
+        "p": 3,
+        "gf": 16,
+        "gc": 20,
+        "puntos": 15,
         "posicion": 7,
-        "ppp": 1.44
+        "ppp": 1.5
       },
       {
         "equipo": "VfB Stuttgart",
-        "pj": 9,
+        "pj": 10,
         "g": 4,
-        "e": 0,
+        "e": 1,
         "p": 5,
         "gf": 15,
         "gc": 15,
-        "puntos": 12,
+        "puntos": 13,
         "posicion": 8,
-        "ppp": 1.33
+        "ppp": 1.3
+      },
+      {
+        "equipo": "SV 07 Elversberg",
+        "pj": 10,
+        "g": 4,
+        "e": 1,
+        "p": 5,
+        "gf": 17,
+        "gc": 19,
+        "puntos": 13,
+        "posicion": 9,
+        "ppp": 1.3
       },
       {
         "equipo": "TSG Hoffenheim",
-        "pj": 9,
+        "pj": 10,
         "g": 4,
         "e": 0,
-        "p": 5,
+        "p": 6,
         "gf": 16,
-        "gc": 17,
-        "puntos": 12,
-        "posicion": 9,
-        "ppp": 1.33
-      },
-      {
-        "equipo": "Eintracht Frankfurt",
-        "pj": 9,
-        "g": 3,
-        "e": 3,
-        "p": 3,
-        "gf": 15,
-        "gc": 20,
+        "gc": 18,
         "puntos": 12,
         "posicion": 10,
-        "ppp": 1.33
+        "ppp": 1.2
       },
       {
         "equipo": "Hamburger SV",
@@ -149,24 +149,24 @@
         "ppp": 1.11
       },
       {
-        "equipo": "SC Paderborn 07",
-        "pj": 9,
-        "g": 2,
-        "e": 4,
-        "p": 3,
-        "gf": 8,
-        "gc": 11,
-        "puntos": 10,
-        "posicion": 13,
-        "ppp": 1.11
-      },
-      {
         "equipo": "1. FC Köln",
         "pj": 10,
         "g": 2,
         "e": 4,
         "p": 4,
         "gf": 11,
+        "gc": 15,
+        "puntos": 10,
+        "posicion": 13,
+        "ppp": 1.0
+      },
+      {
+        "equipo": "SC Paderborn 07",
+        "pj": 10,
+        "g": 2,
+        "e": 4,
+        "p": 4,
+        "gf": 8,
         "gc": 15,
         "puntos": 10,
         "posicion": 14,
@@ -185,40 +185,40 @@
         "ppp": 1.0
       },
       {
-        "equipo": "1. FC Union Berlin",
-        "pj": 9,
+        "equipo": "FC Schalke 04",
+        "pj": 10,
         "g": 1,
         "e": 4,
-        "p": 4,
-        "gf": 7,
-        "gc": 21,
-        "puntos": 7,
-        "posicion": 16,
-        "ppp": 0.78
-      },
-      {
-        "equipo": "FC Schalke 04",
-        "pj": 9,
-        "g": 1,
-        "e": 3,
         "p": 5,
         "gf": 5,
         "gc": 11,
-        "puntos": 6,
+        "puntos": 7,
+        "posicion": 16,
+        "ppp": 0.7
+      },
+      {
+        "equipo": "1. FC Union Berlin",
+        "pj": 10,
+        "g": 1,
+        "e": 4,
+        "p": 5,
+        "gf": 8,
+        "gc": 26,
+        "puntos": 7,
         "posicion": 17,
-        "ppp": 0.67
+        "ppp": 0.7
       },
       {
         "equipo": "Borussia Mönchengladbach",
-        "pj": 9,
+        "pj": 10,
         "g": 1,
         "e": 1,
-        "p": 7,
+        "p": 8,
         "gf": 12,
-        "gc": 25,
+        "gc": 26,
         "puntos": 4,
         "posicion": 18,
-        "ppp": 0.44
+        "ppp": 0.4
       }
     ],
     "DEN": [],
@@ -238,67 +238,31 @@
   "equipos_top": [
     {
       "liga": "GER",
+      "equipo": "Borussia Dortmund",
+      "elo": 1560.7
+    },
+    {
+      "liga": "GER",
       "equipo": "FC Bayern München",
       "elo": 1553.2
     },
     {
       "liga": "GER",
-      "equipo": "Borussia Dortmund",
-      "elo": 1551.9
-    },
-    {
-      "liga": "GER",
       "equipo": "SC Freiburg",
-      "elo": 1533.7
+      "elo": 1544.5
     },
     {
       "liga": "GER",
       "equipo": "RB Leipzig",
-      "elo": 1526.5
+      "elo": 1536.7
     },
     {
       "liga": "GER",
-      "equipo": "SV Werder Bremen",
-      "elo": 1520.2
+      "equipo": "Bayer 04 Leverkusen",
+      "elo": 1527.0
     }
   ],
   "partidos": [
-    {
-      "liga": "GER",
-      "fecha": "2026-11-21",
-      "local": "Bayer 04 Leverkusen",
-      "visitante": "SC Paderborn 07"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2026-11-21",
-      "local": "Eintracht Frankfurt",
-      "visitante": "TSG Hoffenheim"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2026-11-21",
-      "local": "1. FC Union Berlin",
-      "visitante": "RB Leipzig"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2026-11-21",
-      "local": "Borussia Mönchengladbach",
-      "visitante": "Borussia Dortmund"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2026-11-21",
-      "local": "SV 07 Elversberg",
-      "visitante": "SC Freiburg"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2026-11-21",
-      "local": "FC Schalke 04",
-      "visitante": "VfB Stuttgart"
-    },
     {
       "liga": "GER",
       "fecha": "2026-11-22",
@@ -1636,15 +1600,15 @@
       },
       "VfB Stuttgart": {
         "visitante": {
-          "pj": 5,
+          "pj": 6,
           "g": 2,
-          "e": 0,
+          "e": 1,
           "p": 3,
           "gf": 8,
           "gc": 10,
-          "puntos": 6,
-          "ppp": 1.2,
-          "victorias_pct": 40.0
+          "puntos": 7,
+          "ppp": 1.17,
+          "victorias_pct": 33.33
         },
         "local": {
           "pj": 4,
@@ -1671,15 +1635,15 @@
           "victorias_pct": 100.0
         },
         "visitante": {
-          "pj": 4,
-          "g": 1,
+          "pj": 5,
+          "g": 2,
           "e": 0,
           "p": 3,
-          "gf": 4,
-          "gc": 11,
-          "puntos": 3,
-          "ppp": 0.75,
-          "victorias_pct": 25.0
+          "gf": 9,
+          "gc": 12,
+          "puntos": 6,
+          "ppp": 1.2,
+          "victorias_pct": 40.0
         }
       },
       "Borussia Mönchengladbach": {
@@ -1695,14 +1659,14 @@
           "victorias_pct": 20.0
         },
         "local": {
-          "pj": 4,
+          "pj": 5,
           "g": 0,
           "e": 1,
-          "p": 3,
+          "p": 4,
           "gf": 7,
-          "gc": 10,
+          "gc": 11,
           "puntos": 1,
-          "ppp": 0.25,
+          "ppp": 0.2,
           "victorias_pct": 0.0
         }
       },
@@ -1732,14 +1696,14 @@
       },
       "SC Paderborn 07": {
         "visitante": {
-          "pj": 4,
+          "pj": 5,
           "g": 0,
           "e": 3,
-          "p": 1,
+          "p": 2,
           "gf": 2,
-          "gc": 5,
+          "gc": 9,
           "puntos": 3,
-          "ppp": 0.75,
+          "ppp": 0.6,
           "victorias_pct": 0.0
         },
         "local": {
@@ -1756,15 +1720,15 @@
       },
       "1. FC Union Berlin": {
         "local": {
-          "pj": 5,
+          "pj": 6,
           "g": 1,
           "e": 3,
-          "p": 1,
-          "gf": 6,
-          "gc": 7,
+          "p": 2,
+          "gf": 7,
+          "gc": 12,
           "puntos": 6,
-          "ppp": 1.2,
-          "victorias_pct": 20.0
+          "ppp": 1.0,
+          "victorias_pct": 16.67
         },
         "visitante": {
           "pj": 4,
@@ -1791,15 +1755,15 @@
           "victorias_pct": 20.0
         },
         "local": {
-          "pj": 4,
-          "g": 2,
+          "pj": 5,
+          "g": 3,
           "e": 1,
           "p": 1,
-          "gf": 7,
+          "gf": 8,
           "gc": 7,
-          "puntos": 7,
-          "ppp": 1.75,
-          "victorias_pct": 50.0
+          "puntos": 10,
+          "ppp": 2.0,
+          "victorias_pct": 60.0
         }
       },
       "1. FC Köln": {
@@ -1828,15 +1792,15 @@
       },
       "TSG Hoffenheim": {
         "visitante": {
-          "pj": 4,
+          "pj": 5,
           "g": 1,
           "e": 0,
-          "p": 3,
+          "p": 4,
           "gf": 5,
-          "gc": 9,
+          "gc": 10,
           "puntos": 3,
-          "ppp": 0.75,
-          "victorias_pct": 25.0
+          "ppp": 0.6,
+          "victorias_pct": 20.0
         },
         "local": {
           "pj": 5,
@@ -1852,15 +1816,15 @@
       },
       "SV 07 Elversberg": {
         "local": {
-          "pj": 4,
+          "pj": 5,
           "g": 3,
           "e": 0,
-          "p": 1,
+          "p": 2,
           "gf": 12,
-          "gc": 8,
+          "gc": 9,
           "puntos": 9,
-          "ppp": 2.25,
-          "victorias_pct": 75.0
+          "ppp": 1.8,
+          "victorias_pct": 60.0
         },
         "visitante": {
           "pj": 5,
@@ -1887,15 +1851,15 @@
           "victorias_pct": 40.0
         },
         "local": {
-          "pj": 4,
-          "g": 3,
+          "pj": 5,
+          "g": 4,
           "e": 0,
           "p": 1,
-          "gf": 10,
+          "gf": 14,
           "gc": 5,
-          "puntos": 9,
-          "ppp": 2.25,
-          "victorias_pct": 75.0
+          "puntos": 12,
+          "ppp": 2.4,
+          "victorias_pct": 80.0
         }
       },
       "Borussia Dortmund": {
@@ -1911,15 +1875,15 @@
           "victorias_pct": 80.0
         },
         "visitante": {
-          "pj": 4,
-          "g": 2,
+          "pj": 5,
+          "g": 3,
           "e": 2,
           "p": 0,
-          "gf": 6,
+          "gf": 7,
           "gc": 4,
-          "puntos": 8,
-          "ppp": 2.0,
-          "victorias_pct": 50.0
+          "puntos": 11,
+          "ppp": 2.2,
+          "victorias_pct": 60.0
         }
       },
       "Hamburger SV": {
@@ -1959,15 +1923,15 @@
           "victorias_pct": 80.0
         },
         "visitante": {
-          "pj": 4,
-          "g": 2,
+          "pj": 5,
+          "g": 3,
           "e": 1,
           "p": 1,
-          "gf": 6,
+          "gf": 7,
           "gc": 5,
-          "puntos": 7,
-          "ppp": 1.75,
-          "victorias_pct": 50.0
+          "puntos": 10,
+          "ppp": 2.0,
+          "victorias_pct": 60.0
         }
       },
       "SV Werder Bremen": {
@@ -2031,14 +1995,14 @@
           "victorias_pct": 20.0
         },
         "local": {
-          "pj": 4,
+          "pj": 5,
           "g": 0,
-          "e": 2,
+          "e": 3,
           "p": 2,
           "gf": 0,
           "gc": 3,
-          "puntos": 2,
-          "ppp": 0.5,
+          "puntos": 3,
+          "ppp": 0.6,
           "victorias_pct": 0.0
         }
       }
