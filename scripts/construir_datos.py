@@ -60,7 +60,8 @@ def generar_dobles(candidatos):
     """Solo combina partidos con cuotas numéricas verificadas dentro del rango."""
     validos=[p for p in candidatos
              if type(p.get("cuota")) in (int,float) and 1.20<=p["cuota"]<=1.80
-             and p.get("cuota_verificada") is True]
+             and p.get("cuota_verificada") is True
+             and p.get("casa_apuestas")=="bet365"]
     dobles=[]
     for a,b in combinations(sorted(validos,key=lambda p:p["fecha"]),2):
         # Nunca repetir un partido; cada combinación contiene dos encuentros distintos.
