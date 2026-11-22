@@ -61,6 +61,18 @@ async function iniciar(){
    aviso.textContent=candidatos.length+" partidos preseleccionados. Ninguno es apuesta válida sin cuota comprobada.";
    candidatosDest.append(aviso);
  }else candidatosDest.textContent="No hay partidos preseleccionados con los filtros deportivos actuales.";
+ const doblesDest=document.getElementById("lista-dobles");
+ const dobles=(datos.dobles||[]).filter(d=>Array.isArray(d.partidos)&&d.partidos.length===2&&d.partidos.every(p=>p.fecha.slice(0,10)>=hoy&&p.cuota_verificada===true&&typeof p.cuota==="number"&&p.cuota>=1.20&&p.cuota<=1.80));
+ if(dobles.length){
+   tabla(doblesDest,["Partido 1","Cuota 1","Partido 2","Cuota 2","Cuota combinada"],dobles.slice(0,100).map(d=>[
+     d.partidos[0].local+" - "+d.partidos[0].visitante+" ("+d.partidos[0].fecha.slice(0,10)+")",
+     d.partidos[0].cuota,
+     d.partidos[1].local+" - "+d.partidos[1].visitante+" ("+d.partidos[1].fecha.slice(0,10)+")",
+     d.partidos[1].cuota,
+     d.cuota_combinada
+   ]));
+   const nota=document.createElement("p");nota.textContent="Mostrando "+Math.min(100,dobles.length)+" de "+dobles.length+" combinaciones verificadas.";doblesDest.append(nota);
+ }else doblesDest.textContent="Todavía no hay dobles con dos cuotas verificadas entre 1,20 y 1,80. No se muestran apuestas inventadas.";
  const dest=document.querySelector("#estadisticas .aviso");
  const filas=[];
  for(const l of CONFIG.ligas){
