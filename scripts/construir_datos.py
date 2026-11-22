@@ -135,6 +135,18 @@ def construir(entrada):
         for m in partidos:
             if m.get("estado")=="pendiente":
                 resultado["partidos"].append(dict(liga=liga,fecha=m["fecha"],local=m["local"],visitante=m["visitante"]))
+    # No publicar como próximos partidos con hora de inicio ya transcurrida.
+    ahora=datetime.now(timezone.utc)
+    def futuro(m):
+        fecha=m["fecha"]
+        if len(fecha)>10:
+            instante=datetime.fromisoformat(fecha.replace("Z","+00:00"))
+            if instante.tzinfo is None:
+                return fecha[:10]>=ahora.date().isoformat()
+            return instante>ahora
+        return fecha>=ahora.date().isoformat()
+    resultado["partidos"]=[m for m in resultado["partidos"] if futuro(m)]
+    resultado["candidatos"]=[m for m in resultado["candidatos"] if futuro(m)]
     resultado["partidos"].sort(key=lambda m:m["fecha"])
     resultado["candidatos"].sort(key=lambda m:m["fecha"])
     resultado["dobles"]=generar_dobles(resultado["candidatos"])
