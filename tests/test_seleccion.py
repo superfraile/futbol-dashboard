@@ -23,24 +23,32 @@ class SeleccionTests(unittest.TestCase):
         self.assertIsNone(datos["candidatos"][0]["cuota"])
 
     def test_dobles_solo_con_cuotas_verificadas(self):
-        base=dict(liga="ESP",fecha="2026-11-30",local="A",visitante="B",cuota=1.5,cuota_verificada=True,casa_apuestas="bet365")
-        segundo=dict(base,fecha="2026-12-01",local="C",visitante="D",cuota=1.8)
-        tercero=dict(base,fecha="2026-12-02",local="E",visitante="F",cuota=1.81)
-        sin_verificar=dict(base,fecha="2026-12-03",local="G",visitante="H",cuota_verificada=False)
+        base=dict(liga="ESP",fecha="2026-11-30",local="A",visitante="B",cuota=1.5,cuota_verificada=True,casa_apuestas="bet365",mercado="1X2",equipo_proveedor="A",seleccion="1")
+        segundo=dict(base,fecha="2026-12-01",local="C",visitante="D",equipo_proveedor="C",cuota=1.8)
+        tercero=dict(base,fecha="2026-12-02",local="E",visitante="F",equipo_proveedor="E",cuota=1.81)
+        sin_verificar=dict(base,fecha="2026-12-03",local="G",visitante="H",equipo_proveedor="G",cuota_verificada=False)
         dobles=generar_dobles([base,segundo,tercero,sin_verificar])
         self.assertEqual(len(dobles),1)
         self.assertEqual(dobles[0]["cuota_combinada"],2.7)
 
     def test_todas_las_combinaciones_priorizando_proximidad(self):
         def p(dia,cuota=1.5):
-            return dict(liga="ESP",fecha="2026-12-"+dia,local="A"+dia,visitante="B"+dia,cuota=cuota,cuota_verificada=True,casa_apuestas="bet365")
+            return dict(liga="ESP",fecha="2026-12-"+dia,local="A"+dia,visitante="B"+dia,cuota=cuota,cuota_verificada=True,casa_apuestas="bet365",mercado="1X2",equipo_proveedor="A"+dia,seleccion="1")
         dobles=generar_dobles([p("01"),p("02"),p("20")])
         self.assertEqual(len(dobles),3)
         self.assertEqual([x["fecha"] for x in dobles[0]["partidos"]],["2026-12-01","2026-12-02"])
 
     def test_descarta_cuotas_de_otras_casas(self):
         a=dict(liga="ESP",fecha="2026-12-01",local="A",visitante="B",cuota=1.5,cuota_verificada=True,casa_apuestas="bet365")
-        b=dict(a,fecha="2026-12-02",local="C",visitante="D",casa_apuestas="otra")
+        b=dict(a,fecha="2026-12-02",local="C",visitante="D",equipo_proveedor="C",casa_apuestas="otra")
+        self.assertEqual(generar_dobles([a,b]),[])
+
+    def test_descarta_mercado_o_resultado_incorrecto(self):
+        a=dict(liga="ESP",fecha="2026-12-01",local="A",visitante="B",equipo_proveedor="A",cuota=1.5,cuota_verificada=True,casa_apuestas="bet365",mercado="1X2",seleccion="1")
+        b=dict(a,fecha="2026-12-02",local="C",visitante="D",equipo_proveedor="C",seleccion="2")
+        self.assertEqual(generar_dobles([a,b]),[])
+        b["seleccion"]="1"
+        b["mercado"]="Doble oportunidad"
         self.assertEqual(generar_dobles([a,b]),[])
 
     def test_no_selecciona_con_pocos_puntos(self):
