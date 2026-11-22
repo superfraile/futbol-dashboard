@@ -168,6 +168,46 @@ def main():
             print("Ambos nombres exactos (independiente de fecha):",coincidencia_equipos)
             print("Hora coincidente (independiente de equipos):",coincidencia_hora)
             print("Al menos un equipo exacto:",solo_un_equipo)
+            # Diagnóstico por fecha: similitud orientativa, sin emparejar ni publicar cuotas.
+            from difflib import SequenceMatcher
+            proximos=0
+            nombres_parecidos=0
+            alta_confianza=0
+            ambiguedad=0
+            for p in candidatos:
+                try:
+                    if len(p["fecha"])<=10:
+                        continue
+                    inicio=datetime.fromisoformat(p["fecha"].replace("Z","+00:00"))
+                    if inicio.tzinfo is None:
+                        continue
+                    opciones=[]
+                    for m in partidos:
+                        if not isinstance(m,dict) or m.get("in_play") is True:
+                            continue
+                        t=datetime.fromisoformat(m["kickoff_utc"].replace("Z","+00:00"))
+                        if t.tzinfo is None or abs((t-inicio).total_seconds())>10800:
+                            continue
+                        a=SequenceMatcher(None,normalizar(p["local"]),normalizar(m.get("home"))).ratio()
+                        b=SequenceMatcher(None,normalizar(p["visitante"]),normalizar(m.get("away"))).ratio()
+                        opciones.append((min(a,b),a,b))
+                    if opciones:
+                        proximos+=1
+                        compatibles=[o for o in opciones if o[1]>=0.65 and o[2]>=0.65]
+                        if compatibles:
+                            nombres_parecidos+=1
+                        fuertes=[o for o in opciones if o[1]>=0.85 and o[2]>=0.85]
+                        if len(fuertes)==1:
+                            alta_confianza+=1
+                        elif len(fuertes)>1:
+                            ambiguedad+=1
+                except (ValueError,TypeError,KeyError,AttributeError):
+                    continue
+            print("Candidatos con al menos un partido a ±3h:",proximos)
+            print("Similitud >=65% en ambos equipos:",nombres_parecidos)
+            print("Similitud >=85% en ambos, coincidencia única:",alta_confianza)
+            print("Coincidencias fuertes ambiguas:",ambiguedad)
+            print("Estas similitudes son diagnósticas: no autorizan importar cuotas.")
             print("Los no emparejados requerirán equivalencias de nombres verificadas.")
         print("No se ha importado ninguna cuota; falta validar esquema y mercado.")
         return 0
