@@ -35,6 +35,10 @@ class MoviOddsValidacionTests(unittest.TestCase):
         self.assertEqual(emparejar_candidatos([candidato],[incorrecto]),[])
         self.assertEqual(emparejar_candidatos([candidato],[self.partido,self.partido]),[])
 
+    def test_no_asigna_mismo_partido_a_dos_candidatos(self):
+        candidato=dict(fecha=self.partido["kickoff_utc"],local="FC Barcelona",visitante="Sevilla FC")
+        self.assertEqual(emparejar_candidatos([candidato,dict(candidato)],[self.partido]),[])
+
     def test_equivalencias_explicitas_no_similitud(self):
         candidato=dict(fecha=self.partido["kickoff_utc"],local="Barcelona",visitante="Sevilla")
         self.assertEqual(emparejar_candidatos([candidato],[self.partido]),[])
