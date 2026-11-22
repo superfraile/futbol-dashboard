@@ -10,6 +10,7 @@ from scripts.estadisticas import calcular, desglosar
 from scripts.elo import elo
 import unicodedata
 from itertools import combinations
+from urllib.parse import urlparse
 
 LIGAS="GER DEN SCO ESP FRA GRE ENG ITA NOR NED POR SWE SUI TUR".split()
 
@@ -117,7 +118,9 @@ def aplicar_cuotas_bet365(candidatos, archivo=None):
         url=cuota.get("url_fuente")
         if (cuota.get("verificada") is not True or cuota.get("seleccion")!=signo or type(valor) not in (float,int)
                 or not 1.20<=valor<=1.80 or not isinstance(url,str)
-                or not url.startswith("https://") or not isinstance(fecha_consulta,str)):
+                or not url.startswith("https://")
+                or urlparse(url).hostname not in ("bet365.com","www.bet365.com","bet365.es","www.bet365.es")
+                or not isinstance(fecha_consulta,str)):
             continue
         try:
             instante=datetime.fromisoformat(fecha_consulta.replace("Z","+00:00"))
