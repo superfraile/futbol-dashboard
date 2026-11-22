@@ -39,7 +39,7 @@ async function iniciar(){
    return [nombreLiga(liga),equipo,r?.elo??null,s?.ppp??null];
  })));
  const hoy=new Intl.DateTimeFormat("sv-SE",{timeZone:"Europe/Madrid",year:"numeric",month:"2-digit",day:"2-digit"}).format(new Date());
- const proximos=(datos.partidos||[]).filter(r=>r.fecha.slice(0,10)>=hoy).sort((a,b)=>a.fecha.localeCompare(b.fecha));
+ const proximos=(datos.partidos||[]).filter(r=>r.fecha.length>10?Date.parse(r.fecha)>Date.now():r.fecha>=hoy).sort((a,b)=>a.fecha.localeCompare(b.fecha));
  cards[2].querySelector(".numero").textContent=datos.ultima_actualizacion?proximos.length:"—";
  const partidosDest=document.querySelector("#partidos .aviso");
  const filtro=document.getElementById("filtro-partidos");
@@ -62,7 +62,15 @@ async function iniciar(){
  }
  filtro.addEventListener("change",dibujarPartidos);
  dibujarPartidos();
- const candidatos=(datos.candidatos||[]).filter(r=>r.fecha.slice(0,10)>=hoy);
+ const ahora=Date.now();
+ const esFuturo=r=>{
+   if(r.fecha.length>10){
+     const instante=Date.parse(r.fecha);
+     return Number.isFinite(instante)&&instante>ahora;
+   }
+   return r.fecha>=hoy;
+ };
+ const candidatos=(datos.candidatos||[]).filter(esFuturo);
  const candidatosDest=document.getElementById("lista-candidatos");
  const filtroCandidatos=document.getElementById("filtro-candidatos");
  const plazoCandidatos=document.getElementById("plazo-candidatos");
@@ -89,7 +97,7 @@ async function iniciar(){
  plazoCandidatos.addEventListener("change",dibujarCandidatos);
  dibujarCandidatos();
  const doblesDest=document.getElementById("lista-dobles");
- const dobles=(datos.dobles||[]).filter(d=>Array.isArray(d.partidos)&&d.partidos.length===2&&d.partidos.every(p=>p.fecha.slice(0,10)>=hoy&&p.cuota_verificada===true&&typeof p.cuota==="number"&&p.cuota>=1.20&&p.cuota<=1.80));
+ const dobles=(datos.dobles||[]).filter(d=>Array.isArray(d.partidos)&&d.partidos.length===2&&d.partidos.every(p=>esFuturo(p)&&p.cuota_verificada===true&&typeof p.cuota==="number"&&p.cuota>=1.20&&p.cuota<=1.80));
  if(dobles.length){
    tabla(doblesDest,["Partido 1","Cuota 1","Partido 2","Cuota 2","Cuota combinada"],dobles.slice(0,100).map(d=>[
      d.partidos[0].local+" - "+d.partidos[0].visitante+" ("+d.partidos[0].fecha.slice(0,10)+")",
