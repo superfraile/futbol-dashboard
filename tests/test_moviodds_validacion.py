@@ -1,6 +1,6 @@
 import unittest
 from datetime import datetime, timezone, timedelta
-from scripts.moviodds_validacion import mercado_1x2, emparejar_candidatos
+from scripts.moviodds_validacion import mercado_1x2, emparejar_candidatos, atribucion_bet365
 
 class MoviOddsValidacionTests(unittest.TestCase):
     def setUp(self):
@@ -44,6 +44,17 @@ class MoviOddsValidacionTests(unittest.TestCase):
         self.assertEqual(emparejar_candidatos([candidato],[self.partido]),[])
         aprobadas={"Barcelona":"FC Barcelona","Sevilla":"Sevilla FC"}
         self.assertEqual(len(emparejar_candidatos([candidato],[self.partido],aprobadas)),1)
+
+    def test_atribucion_bet365_por_cuota(self):
+        cuota=self.cuota()
+        self.assertFalse(atribucion_bet365(self.partido,cuota))
+        cuota["bookmaker"]="bet365"
+        self.assertTrue(atribucion_bet365(self.partido,cuota))
+        cuota["sportsbook"]="Otra casa"
+        self.assertFalse(atribucion_bet365(self.partido,cuota))
+        cuota.pop("sportsbook")
+        self.partido["operator"]="Otra casa"
+        self.assertFalse(atribucion_bet365(self.partido,cuota))
 
     def test_no_atribuye_bookmaker(self):
         self.partido["quotes"]=[self.cuota()]
