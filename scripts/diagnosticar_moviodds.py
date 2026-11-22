@@ -208,6 +208,62 @@ def main():
             print("Similitud >=85% en ambos, coincidencia única:",alta_confianza)
             print("Coincidencias fuertes ambiguas:",ambiguedad)
             print("Estas similitudes son diagnósticas: no autorizan importar cuotas.")
+            # Resumen limitado a los próximos siete días: es la ventana operativa del panel.
+            from datetime import timedelta
+            ahora=datetime.now(timezone.utc)
+            fin=ahora+timedelta(days=7)
+            ventana=[]
+            for p in candidatos:
+                try:
+                    fecha=datetime.fromisoformat(p["fecha"].replace("Z","+00:00"))
+                    if fecha.tzinfo is not None and ahora<fecha<=fin:
+                        ventana.append(p)
+                except (ValueError,TypeError,KeyError,AttributeError):
+                    pass
+            exactos_7=0
+            similares_7=0
+            vigentes_7=0
+            for p in ventana:
+                inicio=datetime.fromisoformat(p["fecha"].replace("Z","+00:00"))
+                coincidencias=[]
+                for m in partidos:
+                    try:
+                        if not isinstance(m,dict) or m.get("in_play") is True:
+                            continue
+                        fecha=datetime.fromisoformat(m["kickoff_utc"].replace("Z","+00:00"))
+                        if fecha.tzinfo is None or abs((fecha-inicio).total_seconds())>10800:
+                            continue
+                        local=SequenceMatcher(None,normalizar(p["local"]),normalizar(m.get("home"))).ratio()
+                        visitante=SequenceMatcher(None,normalizar(p["visitante"]),normalizar(m.get("away"))).ratio()
+                        if local>=0.85 and visitante>=0.85:
+                            coincidencias.append(m)
+                    except (ValueError,TypeError,KeyError,AttributeError):
+                        continue
+                if len(coincidencias)==1:
+                    similares_7+=1
+                    m=coincidencias[0]
+                    if normalizar(p["local"])==normalizar(m["home"]) and normalizar(p["visitante"])==normalizar(m["away"]):
+                        exactos_7+=1
+                    favorito=normalizar(p.get("equipo_proveedor"))
+                    nombre=m["home"] if favorito==normalizar(p["local"]) else m["away"] if favorito==normalizar(p["visitante"]) else None
+                    if nombre:
+                        for q in m.get("quotes",[]):
+                            try:
+                                t=datetime.fromisoformat(q["ts"].replace("Z","+00:00"))
+                                if (str(q.get("group_id"))=="40" and normalizar(q.get("label"))==normalizar(nombre)
+                                    and t.tzinfo is not None and 0<=(ahora-t).total_seconds()<=3600
+                                    and isinstance(q.get("odds_dec"),(int,float))
+                                    and not isinstance(q.get("odds_dec"),bool)
+                                    and 1.2<=q["odds_dec"]<=1.8):
+                                    vigentes_7+=1
+                                    break
+                            except (ValueError,TypeError,KeyError,AttributeError):
+                                continue
+            print("Próximos 7 días: candidatos con hora:",len(ventana))
+            print("Próximos 7 días: emparejamientos exactos:",exactos_7)
+            print("Próximos 7 días: coincidencias únicas con similitud >=85%:",similares_7)
+            print("Próximos 7 días: coincidencias con cuota candidata vigente 1.20-1.80:",vigentes_7)
+            print("Las coincidencias aproximadas no se importan sin validación adicional.")
             print("Los no emparejados requerirán equivalencias de nombres verificadas.")
         print("No se ha importado ninguna cuota; falta validar esquema y mercado.")
         return 0
