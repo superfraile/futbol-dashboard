@@ -54,6 +54,38 @@ def main():
         print("Grupo 40, nombres y frecuencias:",grupos.most_common(5))
         print("Grupo 40, lados/etiquetas y frecuencias:",lados.most_common(12))
         print("Grupo 40, fases y frecuencias:",fases.most_common(8))
+        # Comprobar si las etiquetas de victoria coinciden con los nombres de los equipos.
+        # No muestra nombres, precios ni información privada.
+        import unicodedata
+        from datetime import datetime, timezone
+        def normalizar(s):
+            return "".join(x for x in unicodedata.normalize("NFKD",str(s).casefold())
+                           if x.isalnum() and not unicodedata.combining(x))
+        coincidencias=Counter()
+        antiguedades=Counter()
+        for m in con_cuotas:
+            if m.get("in_play") is True:
+                continue
+            try:
+                inicio=datetime.fromisoformat(m["kickoff_utc"].replace("Z","+00:00"))
+                if inicio.tzinfo is None or inicio<=datetime.now(timezone.utc):
+                    continue
+            except (ValueError,TypeError,KeyError,AttributeError):
+                continue
+            etiquetas={normalizar(m.get("home")):"local",normalizar(m.get("away")):"visitante"}
+            for q in m["quotes"]:
+                if not isinstance(q,dict) or str(q.get("group_id"))!="40":
+                    continue
+                lado=etiquetas.get(normalizar(q.get("label")))
+                coincidencias[lado or "sin coincidencia"]+=1
+                try:
+                    t=datetime.fromisoformat(q["ts"].replace("Z","+00:00"))
+                    segundos=(datetime.now(timezone.utc)-t).total_seconds()
+                    antiguedades["<=1h" if 0<=segundos<=3600 else ">1h o futuro"]+=1
+                except (KeyError,ValueError,TypeError,AttributeError):
+                    antiguedades["sin timestamp válido"]+=1
+        print("Grupo 40 futuro: coincidencia exacta de etiquetas:",dict(coincidencias))
+        print("Grupo 40 futuro: vigencia de registros:",dict(antiguedades))
         print("No se ha importado ninguna cuota; falta validar esquema y mercado.")
         return 0
     except HTTPError as error:
