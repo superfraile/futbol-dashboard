@@ -36,5 +36,6 @@ jobs:
           git add datos.json datos-origen.json
           if ! git diff --cached --quiet; then
             git commit -m "Actualizar datos deportivos"
-            git push
+            git pull --rebase origin main
+            git push origin HEAD:main
           fi
