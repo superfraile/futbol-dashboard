@@ -22,6 +22,15 @@ const CONFIG = {
     ]
 };
 
+async function cargarFavoritos() {
+    const respuesta=await fetch("https://raw.githubusercontent.com/superfraile/futbol-dashboard/main/equipos-favoritos.json",{cache:"no-store"});
+    if(!respuesta.ok)throw new Error("No se pudo cargar la lista fija");
+    const lista=await respuesta.json();
+    if(lista.validada!==true || !lista.ligas || Object.values(lista.ligas).flat().length!==38)
+        throw new Error("Lista de favoritos sin validar");
+    return lista;
+}
+
 async function cargarDatos() {
     const respuesta = await fetch("https://raw.githubusercontent.com/superfraile/futbol-dashboard/main/datos.json", {
         cache: "no-store"
