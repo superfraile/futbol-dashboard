@@ -31,6 +31,13 @@ class SeleccionTests(unittest.TestCase):
         self.assertEqual(len(dobles),1)
         self.assertEqual(dobles[0]["cuota_combinada"],2.7)
 
+    def test_todas_las_combinaciones_priorizando_proximidad(self):
+        def p(dia,cuota=1.5):
+            return dict(liga="ESP",fecha="2026-12-"+dia,local="A"+dia,visitante="B"+dia,cuota=cuota,cuota_verificada=True)
+        dobles=generar_dobles([p("01"),p("02"),p("20")])
+        self.assertEqual(len(dobles),3)
+        self.assertEqual([x["fecha"] for x in dobles[0]["partidos"]],["2026-12-01","2026-12-02"])
+
     def test_no_selecciona_con_pocos_puntos(self):
         datos=construir({"fuente":"prueba", "ligas":{"ESP":[
             partido("2026-08-10","FC Barcelona","Sevilla FC",a=0,b=2),
