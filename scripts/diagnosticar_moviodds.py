@@ -36,6 +36,24 @@ def main():
         if con_cuotas:
             print("Estructura de la primera quote (solo tipos):")
             print(json.dumps(estructura(con_cuotas[0]["quotes"][0]),ensure_ascii=False,indent=2))
+        # Resumen acotado de mercados y selecciones, sin publicar cuotas ni equipos.
+        from collections import Counter
+        grupos=Counter()
+        lados=Counter()
+        fases=Counter()
+        for partido in con_cuotas:
+            if partido.get("in_play") is True:
+                continue
+            for q in partido["quotes"]:
+                if not isinstance(q,dict):
+                    continue
+                if str(q.get("group_id","")) in ("40",):
+                    grupos[(str(q.get("group_id")),str(q.get("group_name")))]+=1
+                    lados[(str(q.get("side")),str(q.get("label")))]+=1
+                    fases[str(q.get("phase"))]+=1
+        print("Grupo 40, nombres y frecuencias:",grupos.most_common(5))
+        print("Grupo 40, lados/etiquetas y frecuencias:",lados.most_common(12))
+        print("Grupo 40, fases y frecuencias:",fases.most_common(8))
         print("No se ha importado ninguna cuota; falta validar esquema y mercado.")
         return 0
     except HTTPError as error:
