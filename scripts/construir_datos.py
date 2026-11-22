@@ -26,6 +26,27 @@ def favoritos_configurados():
     return configuracion
 
 
+# Correspondencias exactas revisadas frente a los nombres reales de los proveedores.
+ALIAS = {
+ "GER":{"Bayern Munich":"FC Bayern München","Bayer Leverkusen":"Bayer 04 Leverkusen"},
+ "ESP":{"Barcelona":"FC Barcelona","Real Madrid":"Real Madrid CF","Real Betis":"Real Betis Balompié","Atlético de Madrid":"Club Atlético de Madrid"},
+ "FRA":{"PSG":"Paris Saint-Germain FC","Lens":"Racing Club de Lens","Lille":"Lille OSC","Lyon":"Olympique Lyonnais"},
+ "ENG":{"Arsenal":"Arsenal FC","Manchester City":"Manchester City FC","Manchester United":"Manchester United FC","Liverpool":"Liverpool FC"},
+ "ITA":{"Inter":"FC Internazionale Milano","Napoli":"SSC Napoli","Roma":"AS Roma","Juventus":"Juventus FC"},
+ "NED":{"Feyenoord":"Feyenoord Rotterdam","Twente":"FC Twente '65","Ajax":"AFC Ajax"},
+ "POR":{"Porto":"FC Porto","Sporting":"Sporting Clube de Portugal","Benfica":"Sport Lisboa e Benfica","Braga":"Sporting Clube de Braga"}
+}
+
+def resolver_favoritos(liga, favoritos, tabla):
+    disponibles={clave_equipo(t["equipo"]):t for t in tabla}
+    resueltos={}
+    for favorito in favoritos:
+        nombre=ALIAS.get(liga,{}).get(favorito,favorito)
+        equipo=disponibles.get(clave_equipo(nombre))
+        if equipo:
+            resueltos[equipo["equipo"]]=favorito
+    return resueltos
+
 def validar(entrada):
     ligas=entrada["ligas"]
     if not isinstance(ligas,dict) or set(ligas)-set(LIGAS):
@@ -56,24 +77,42 @@ def construir(entrada):
         raise ValueError("Fuente obligatoria")
     favoritos=favoritos_configurados()
     resultado=dict(version="1.2",ultima_actualizacion=datetime.now(timezone.utc).isoformat(),
-                   fuente=fuente,ligas={},equipos_top=[],partidos=[],estadisticas={})
+                   fuente=fuente,ligas={},equipos_top=[],partidos=[],estadisticas={},candidatos=[])
     for liga in LIGAS:
         partidos=entrada["ligas"].get(liga,[])
         tabla=calcular(partidos)
         rating=elo(partidos)
         resultado["ligas"][liga]=tabla
         resultado["estadisticas"][liga]=desglosar(partidos)
+        resueltos=resolver_favoritos(liga,favoritos[liga],tabla)
         por_nombre={clave_equipo(nombre):(nombre,valor) for nombre,valor in rating.items()}
+        por_equipo={t["equipo"]:t for t in tabla}
         for equipo in favoritos[liga]:
-            encontrado=por_nombre.get(clave_equipo(equipo))
+            nombre=ALIAS.get(liga,{}).get(equipo,equipo)
+            encontrado=por_nombre.get(clave_equipo(nombre))
             resultado["equipos_top"].append(dict(
                 liga=liga,equipo=equipo,
                 elo=round(encontrado[1],1) if encontrado else None,
                 equipo_proveedor=encontrado[0] if encontrado else None))
         for m in partidos:
+            if m.get("estado")!="pendiente":
+                continue
+            local,visitante=m["local"],m["visitante"]
+            # Se excluyen enfrentamientos entre dos favoritos.
+            if local in resueltos and visitante in resueltos:
+                continue
+            favorito=local if local in resueltos else visitante if visitante in resueltos else None
+            if favorito and por_equipo[favorito]["ppp"]>=2:
+                resultado["candidatos"].append(dict(
+                    liga=liga,fecha=m["fecha"],local=local,visitante=visitante,
+                    favorito=resueltos[favorito],equipo_proveedor=favorito,
+                    ppp=por_equipo[favorito]["ppp"],cuota=None,
+                    estado="Pendiente de cuota verificada"))
+        for m in partidos:
             if m.get("estado")=="pendiente":
                 resultado["partidos"].append(dict(liga=liga,fecha=m["fecha"],local=m["local"],visitante=m["visitante"]))
     resultado["partidos"].sort(key=lambda m:m["fecha"])
+    resultado["candidatos"].sort(key=lambda m:m["fecha"])
     return resultado
 
 if __name__=="__main__":
