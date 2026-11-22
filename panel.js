@@ -29,8 +29,26 @@ async function iniciar(){
  const proximos=(datos.partidos||[]).filter(r=>r.fecha.slice(0,10)>=hoy).sort((a,b)=>a.fecha.localeCompare(b.fecha));
  cards[2].querySelector(".numero").textContent=datos.ultima_actualizacion?proximos.length:"—";
  const partidosDest=document.querySelector("#partidos .aviso");
- if(proximos.length)tabla(partidosDest,["Liga","Fecha (España)","Local","Visitante"],proximos.map(r=>{const fecha=r.fecha.length>10?new Date(r.fecha).toLocaleString("es-ES",{timeZone:"Europe/Madrid",day:"2-digit",month:"2-digit",year:"numeric",hour:"2-digit",minute:"2-digit"}):r.fecha;return [nombreLiga(r.liga),fecha,r.local,r.visitante]}));
- else partidosDest.textContent="Sin próximos partidos verificados.";
+ const filtro=document.getElementById("filtro-partidos");
+ for(const l of CONFIG.ligas.filter(l=>proximos.some(p=>p.liga===l.id))){
+   const opcion=document.createElement("option");
+   opcion.value=l.id;opcion.textContent=l.pais+" - "+l.nombre;
+   filtro.append(opcion);
+ }
+ function dibujarPartidos(){
+   const filtrados=proximos.filter(r=>!filtro.value||r.liga===filtro.value).slice(0,100);
+   if(filtrados.length){
+     tabla(partidosDest,["Liga","Fecha (España)","Local","Visitante"],filtrados.map(r=>{
+       const fecha=r.fecha.length>10?new Date(r.fecha).toLocaleString("es-ES",{timeZone:"Europe/Madrid",day:"2-digit",month:"2-digit",year:"numeric",hour:"2-digit",minute:"2-digit"}):r.fecha;
+       return [nombreLiga(r.liga),fecha,r.local,r.visitante];
+     }));
+     const nota=document.createElement("p");
+     nota.textContent="Mostrando "+filtrados.length+" de "+proximos.filter(r=>!filtro.value||r.liga===filtro.value).length+" partidos futuros.";
+     partidosDest.append(nota);
+   }else partidosDest.textContent="Sin próximos partidos para esta liga.";
+ }
+ filtro.addEventListener("change",dibujarPartidos);
+ dibujarPartidos();
  const dest=document.querySelector("#estadisticas .aviso");
  const filas=[];
  for(const l of CONFIG.ligas){
