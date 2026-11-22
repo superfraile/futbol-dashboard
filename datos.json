@@ -1,6 +1,6 @@
 {
   "version": "1.2",
-  "ultima_actualizacion": "2026-11-22T18:03:39.288052+00:00",
+  "ultima_actualizacion": "2026-11-22T21:18:09.878575+00:00",
   "fuente": "OpenLigaDB (https://www.openligadb.de), ODbL 1.0; GER; football-data.org (PL; ENG); football-data.org (PD; ESP); football-data.org (SA; ITA); football-data.org (FL1; FRA); football-data.org (PPL; POR); football-data.org (DED; NED)",
   "ligas": {
     "GER": [
@@ -66,15 +66,15 @@
       },
       {
         "equipo": "SV Werder Bremen",
-        "pj": 9,
-        "g": 4,
+        "pj": 10,
+        "g": 5,
         "e": 3,
         "p": 2,
-        "gf": 17,
+        "gf": 21,
         "gc": 15,
-        "puntos": 15,
+        "puntos": 18,
         "posicion": 6,
-        "ppp": 1.67
+        "ppp": 1.8
       },
       {
         "equipo": "Eintracht Frankfurt",
@@ -138,15 +138,15 @@
       },
       {
         "equipo": "Hamburger SV",
-        "pj": 9,
+        "pj": 10,
         "g": 4,
         "e": 0,
-        "p": 5,
+        "p": 6,
         "gf": 10,
-        "gc": 20,
+        "gc": 24,
         "puntos": 12,
         "posicion": 12,
-        "ppp": 1.33
+        "ppp": 1.2
       },
       {
         "equipo": "1. FSV Mainz 05",
@@ -226,15 +226,15 @@
     "ESP": [
       {
         "equipo": "FC Barcelona",
-        "pj": 12,
-        "g": 11,
+        "pj": 13,
+        "g": 12,
         "e": 0,
         "p": 1,
-        "gf": 48,
-        "gc": 13,
-        "puntos": 33,
+        "gf": 51,
+        "gc": 15,
+        "puntos": 36,
         "posicion": 1,
-        "ppp": 2.75
+        "ppp": 2.77
       },
       {
         "equipo": "Real Madrid CF",
@@ -274,15 +274,15 @@
       },
       {
         "equipo": "Real Sociedad de Fútbol",
-        "pj": 12,
+        "pj": 13,
         "g": 7,
         "e": 1,
-        "p": 4,
-        "gf": 21,
-        "gc": 20,
+        "p": 5,
+        "gf": 23,
+        "gc": 23,
         "puntos": 22,
         "posicion": 5,
-        "ppp": 1.83
+        "ppp": 1.69
       },
       {
         "equipo": "Sevilla FC",
@@ -297,6 +297,18 @@
         "ppp": 1.46
       },
       {
+        "equipo": "Real Racing Club de Santander",
+        "pj": 13,
+        "g": 5,
+        "e": 2,
+        "p": 6,
+        "gf": 20,
+        "gc": 32,
+        "puntos": 17,
+        "posicion": 7,
+        "ppp": 1.31
+      },
+      {
         "equipo": "Athletic Club",
         "pj": 12,
         "g": 4,
@@ -305,7 +317,7 @@
         "gf": 15,
         "gc": 12,
         "puntos": 16,
-        "posicion": 7,
+        "posicion": 8,
         "ppp": 1.33
       },
       {
@@ -317,20 +329,20 @@
         "gf": 18,
         "gc": 18,
         "puntos": 16,
-        "posicion": 8,
+        "posicion": 9,
         "ppp": 1.23
       },
       {
         "equipo": "Villarreal CF",
-        "pj": 12,
+        "pj": 13,
         "g": 4,
         "e": 3,
-        "p": 5,
-        "gf": 17,
-        "gc": 15,
+        "p": 6,
+        "gf": 19,
+        "gc": 18,
         "puntos": 15,
-        "posicion": 9,
-        "ppp": 1.25
+        "posicion": 10,
+        "ppp": 1.15
       },
       {
         "equipo": "RCD Espanyol de Barcelona",
@@ -341,7 +353,7 @@
         "gf": 14,
         "gc": 14,
         "puntos": 15,
-        "posicion": 10,
+        "posicion": 11,
         "ppp": 1.15
       },
       {
@@ -353,20 +365,20 @@
         "gf": 16,
         "gc": 17,
         "puntos": 15,
-        "posicion": 11,
+        "posicion": 12,
         "ppp": 1.15
       },
       {
-        "equipo": "Real Racing Club de Santander",
-        "pj": 12,
+        "equipo": "CA Osasuna",
+        "pj": 13,
         "g": 4,
-        "e": 2,
+        "e": 3,
         "p": 6,
-        "gf": 17,
-        "gc": 30,
-        "puntos": 14,
-        "posicion": 12,
-        "ppp": 1.17
+        "gf": 13,
+        "gc": 23,
+        "puntos": 15,
+        "posicion": 13,
+        "ppp": 1.15
       },
       {
         "equipo": "RC Celta de Vigo",
@@ -377,7 +389,7 @@
         "gf": 11,
         "gc": 12,
         "puntos": 13,
-        "posicion": 13,
+        "posicion": 14,
         "ppp": 1.0
       },
       {
@@ -389,7 +401,7 @@
         "gf": 15,
         "gc": 22,
         "puntos": 12,
-        "posicion": 14,
+        "posicion": 15,
         "ppp": 1.0
       },
       {
@@ -400,18 +412,6 @@
         "p": 6,
         "gf": 8,
         "gc": 18,
-        "puntos": 12,
-        "posicion": 15,
-        "ppp": 1.0
-      },
-      {
-        "equipo": "CA Osasuna",
-        "pj": 12,
-        "g": 3,
-        "e": 3,
-        "p": 6,
-        "gf": 12,
-        "gc": 23,
         "puntos": 12,
         "posicion": 16,
         "ppp": 1.0
@@ -454,15 +454,15 @@
       },
       {
         "equipo": "Málaga CF",
-        "pj": 12,
+        "pj": 13,
         "g": 0,
         "e": 5,
-        "p": 7,
+        "p": 8,
         "gf": 9,
-        "gc": 23,
+        "gc": 24,
         "puntos": 5,
         "posicion": 20,
-        "ppp": 0.42
+        "ppp": 0.38
       }
     ],
     "FRA": [
@@ -722,6 +722,18 @@
         "ppp": 2.0
       },
       {
+        "equipo": "Liverpool FC",
+        "pj": 11,
+        "g": 6,
+        "e": 3,
+        "p": 2,
+        "gf": 18,
+        "gc": 10,
+        "puntos": 21,
+        "posicion": 4,
+        "ppp": 1.91
+      },
+      {
         "equipo": "AFC Bournemouth",
         "pj": 11,
         "g": 5,
@@ -730,20 +742,8 @@
         "gf": 18,
         "gc": 14,
         "puntos": 18,
-        "posicion": 4,
-        "ppp": 1.64
-      },
-      {
-        "equipo": "Liverpool FC",
-        "pj": 10,
-        "g": 5,
-        "e": 3,
-        "p": 2,
-        "gf": 14,
-        "gc": 10,
-        "puntos": 18,
         "posicion": 5,
-        "ppp": 1.8
+        "ppp": 1.64
       },
       {
         "equipo": "Leeds United FC",
@@ -903,15 +903,15 @@
       },
       {
         "equipo": "Manchester United FC",
-        "pj": 10,
+        "pj": 11,
         "g": 1,
         "e": 5,
-        "p": 4,
+        "p": 5,
         "gf": 14,
-        "gc": 19,
+        "gc": 23,
         "puntos": 8,
         "posicion": 19,
-        "ppp": 0.8
+        "ppp": 0.73
       },
       {
         "equipo": "Crystal Palace FC",
@@ -988,18 +988,6 @@
         "ppp": 2.18
       },
       {
-        "equipo": "Juventus FC",
-        "pj": 12,
-        "g": 6,
-        "e": 3,
-        "p": 3,
-        "gf": 19,
-        "gc": 12,
-        "puntos": 21,
-        "posicion": 6,
-        "ppp": 1.75
-      },
-      {
         "equipo": "Frosinone Calcio",
         "pj": 11,
         "g": 6,
@@ -1008,7 +996,7 @@
         "gf": 24,
         "gc": 15,
         "puntos": 20,
-        "posicion": 7,
+        "posicion": 6,
         "ppp": 1.82
       },
       {
@@ -1020,32 +1008,32 @@
         "gf": 19,
         "gc": 14,
         "puntos": 18,
-        "posicion": 8,
+        "posicion": 7,
         "ppp": 1.5
+      },
+      {
+        "equipo": "Juventus FC",
+        "pj": 11,
+        "g": 5,
+        "e": 3,
+        "p": 3,
+        "gf": 15,
+        "gc": 12,
+        "puntos": 18,
+        "posicion": 8,
+        "ppp": 1.64
       },
       {
         "equipo": "Bologna FC 1909",
-        "pj": 12,
+        "pj": 11,
         "g": 5,
-        "e": 3,
+        "e": 2,
         "p": 4,
-        "gf": 17,
-        "gc": 15,
-        "puntos": 18,
+        "gf": 16,
+        "gc": 14,
+        "puntos": 17,
         "posicion": 9,
-        "ppp": 1.5
-      },
-      {
-        "equipo": "Genoa CFC",
-        "pj": 12,
-        "g": 5,
-        "e": 1,
-        "p": 6,
-        "gf": 13,
-        "gc": 16,
-        "puntos": 16,
-        "posicion": 10,
-        "ppp": 1.33
+        "ppp": 1.55
       },
       {
         "equipo": "Cagliari Calcio",
@@ -1056,7 +1044,7 @@
         "gf": 10,
         "gc": 17,
         "puntos": 16,
-        "posicion": 11,
+        "posicion": 10,
         "ppp": 1.33
       },
       {
@@ -1068,7 +1056,7 @@
         "gf": 17,
         "gc": 20,
         "puntos": 14,
-        "posicion": 12,
+        "posicion": 11,
         "ppp": 1.27
       },
       {
@@ -1080,8 +1068,20 @@
         "gf": 15,
         "gc": 18,
         "puntos": 14,
-        "posicion": 13,
+        "posicion": 12,
         "ppp": 1.17
+      },
+      {
+        "equipo": "Genoa CFC",
+        "pj": 11,
+        "g": 4,
+        "e": 1,
+        "p": 6,
+        "gf": 11,
+        "gc": 16,
+        "puntos": 13,
+        "posicion": 13,
+        "ppp": 1.18
       },
       {
         "equipo": "US Lecce",
@@ -1121,15 +1121,15 @@
       },
       {
         "equipo": "US Sassuolo Calcio",
-        "pj": 12,
+        "pj": 11,
         "g": 2,
         "e": 2,
-        "p": 8,
+        "p": 7,
         "gf": 16,
-        "gc": 31,
+        "gc": 29,
         "puntos": 8,
         "posicion": 17,
-        "ppp": 0.67
+        "ppp": 0.73
       },
       {
         "equipo": "AC Monza",
@@ -1144,28 +1144,28 @@
         "ppp": 0.64
       },
       {
-        "equipo": "Udinese Calcio",
-        "pj": 12,
-        "g": 1,
-        "e": 3,
-        "p": 8,
-        "gf": 13,
-        "gc": 26,
-        "puntos": 6,
-        "posicion": 19,
-        "ppp": 0.5
-      },
-      {
         "equipo": "Venezia FC",
-        "pj": 12,
+        "pj": 11,
         "g": 2,
         "e": 0,
-        "p": 10,
+        "p": 9,
         "gf": 8,
-        "gc": 25,
+        "gc": 21,
         "puntos": 6,
+        "posicion": 19,
+        "ppp": 0.55
+      },
+      {
+        "equipo": "Udinese Calcio",
+        "pj": 11,
+        "g": 1,
+        "e": 2,
+        "p": 8,
+        "gf": 12,
+        "gc": 25,
+        "puntos": 5,
         "posicion": 20,
-        "ppp": 0.5
+        "ppp": 0.45
       }
     ],
     "NOR": [],
@@ -1609,308 +1609,13 @@
     "SUI": [],
     "TUR": []
   },
-  "equipos_top": [
-    {
-      "liga": "GER",
-      "equipo": "Bayern Munich",
-      "elo": null,
-      "equipo_proveedor": null
-    },
-    {
-      "liga": "GER",
-      "equipo": "Borussia Dortmund",
-      "elo": 1560.7,
-      "equipo_proveedor": "Borussia Dortmund"
-    },
-    {
-      "liga": "GER",
-      "equipo": "RB Leipzig",
-      "elo": 1536.7,
-      "equipo_proveedor": "RB Leipzig"
-    },
-    {
-      "liga": "GER",
-      "equipo": "Bayer Leverkusen",
-      "elo": null,
-      "equipo_proveedor": null
-    },
-    {
-      "liga": "DEN",
-      "equipo": "Aarhus",
-      "elo": null,
-      "equipo_proveedor": null
-    },
-    {
-      "liga": "DEN",
-      "equipo": "Midtjylland",
-      "elo": null,
-      "equipo_proveedor": null
-    },
-    {
-      "liga": "DEN",
-      "equipo": "Copenhagen",
-      "elo": null,
-      "equipo_proveedor": null
-    },
-    {
-      "liga": "SCO",
-      "equipo": "Celtic",
-      "elo": null,
-      "equipo_proveedor": null
-    },
-    {
-      "liga": "SCO",
-      "equipo": "Hearts",
-      "elo": null,
-      "equipo_proveedor": null
-    },
-    {
-      "liga": "SCO",
-      "equipo": "Rangers",
-      "elo": null,
-      "equipo_proveedor": null
-    },
-    {
-      "liga": "ESP",
-      "equipo": "Barcelona",
-      "elo": null,
-      "equipo_proveedor": null
-    },
-    {
-      "liga": "ESP",
-      "equipo": "Real Madrid",
-      "elo": null,
-      "equipo_proveedor": null
-    },
-    {
-      "liga": "ESP",
-      "equipo": "Real Betis",
-      "elo": null,
-      "equipo_proveedor": null
-    },
-    {
-      "liga": "ESP",
-      "equipo": "Atlético de Madrid",
-      "elo": null,
-      "equipo_proveedor": null
-    },
-    {
-      "liga": "FRA",
-      "equipo": "PSG",
-      "elo": null,
-      "equipo_proveedor": null
-    },
-    {
-      "liga": "FRA",
-      "equipo": "Lens",
-      "elo": null,
-      "equipo_proveedor": null
-    },
-    {
-      "liga": "FRA",
-      "equipo": "Lille",
-      "elo": null,
-      "equipo_proveedor": null
-    },
-    {
-      "liga": "FRA",
-      "equipo": "Lyon",
-      "elo": null,
-      "equipo_proveedor": null
-    },
-    {
-      "liga": "GRE",
-      "equipo": "AEK",
-      "elo": null,
-      "equipo_proveedor": null
-    },
-    {
-      "liga": "GRE",
-      "equipo": "Olympiakos",
-      "elo": null,
-      "equipo_proveedor": null
-    },
-    {
-      "liga": "GRE",
-      "equipo": "PAOK",
-      "elo": null,
-      "equipo_proveedor": null
-    },
-    {
-      "liga": "ENG",
-      "equipo": "Arsenal",
-      "elo": null,
-      "equipo_proveedor": null
-    },
-    {
-      "liga": "ENG",
-      "equipo": "Manchester City",
-      "elo": null,
-      "equipo_proveedor": null
-    },
-    {
-      "liga": "ENG",
-      "equipo": "Manchester United",
-      "elo": null,
-      "equipo_proveedor": null
-    },
-    {
-      "liga": "ENG",
-      "equipo": "Liverpool",
-      "elo": null,
-      "equipo_proveedor": null
-    },
-    {
-      "liga": "ITA",
-      "equipo": "Inter",
-      "elo": null,
-      "equipo_proveedor": null
-    },
-    {
-      "liga": "ITA",
-      "equipo": "Napoli",
-      "elo": null,
-      "equipo_proveedor": null
-    },
-    {
-      "liga": "ITA",
-      "equipo": "Roma",
-      "elo": null,
-      "equipo_proveedor": null
-    },
-    {
-      "liga": "ITA",
-      "equipo": "Juventus",
-      "elo": null,
-      "equipo_proveedor": null
-    },
-    {
-      "liga": "NOR",
-      "equipo": "Viking",
-      "elo": null,
-      "equipo_proveedor": null
-    },
-    {
-      "liga": "NOR",
-      "equipo": "Tromsø",
-      "elo": null,
-      "equipo_proveedor": null
-    },
-    {
-      "liga": "NOR",
-      "equipo": "Bodø/Glimt",
-      "elo": null,
-      "equipo_proveedor": null
-    },
-    {
-      "liga": "NED",
-      "equipo": "PSV",
-      "elo": 1560.8,
-      "equipo_proveedor": "PSV"
-    },
-    {
-      "liga": "NED",
-      "equipo": "Feyenoord",
-      "elo": null,
-      "equipo_proveedor": null
-    },
-    {
-      "liga": "NED",
-      "equipo": "Twente",
-      "elo": null,
-      "equipo_proveedor": null
-    },
-    {
-      "liga": "NED",
-      "equipo": "Ajax",
-      "elo": null,
-      "equipo_proveedor": null
-    },
-    {
-      "liga": "POR",
-      "equipo": "Porto",
-      "elo": null,
-      "equipo_proveedor": null
-    },
-    {
-      "liga": "POR",
-      "equipo": "Sporting",
-      "elo": null,
-      "equipo_proveedor": null
-    },
-    {
-      "liga": "POR",
-      "equipo": "Benfica",
-      "elo": null,
-      "equipo_proveedor": null
-    },
-    {
-      "liga": "POR",
-      "equipo": "Braga",
-      "elo": null,
-      "equipo_proveedor": null
-    },
-    {
-      "liga": "SWE",
-      "equipo": "Sirius",
-      "elo": null,
-      "equipo_proveedor": null
-    },
-    {
-      "liga": "SWE",
-      "equipo": "Hammarby",
-      "elo": null,
-      "equipo_proveedor": null
-    },
-    {
-      "liga": "SUI",
-      "equipo": "Young Boys",
-      "elo": null,
-      "equipo_proveedor": null
-    },
-    {
-      "liga": "SUI",
-      "equipo": "St. Gallen",
-      "elo": null,
-      "equipo_proveedor": null
-    },
-    {
-      "liga": "SUI",
-      "equipo": "Basilea",
-      "elo": null,
-      "equipo_proveedor": null
-    },
-    {
-      "liga": "TUR",
-      "equipo": "Galatasaray",
-      "elo": null,
-      "equipo_proveedor": null
-    },
-    {
-      "liga": "TUR",
-      "equipo": "Fenerbahçe",
-      "elo": null,
-      "equipo_proveedor": null
-    },
-    {
-      "liga": "TUR",
-      "equipo": "Trabzonspor",
-      "elo": null,
-      "equipo_proveedor": null
-    }
-  ],
+  "equipos_top": [],
   "partidos": [
     {
-      "liga": "GER",
-      "fecha": "2026-11-22",
-      "local": "SV Werder Bremen",
-      "visitante": "Hamburger SV"
-    },
-    {
-      "liga": "ESP",
-      "fecha": "2026-11-22T13:00:00Z",
-      "local": "FC Barcelona",
-      "visitante": "Villarreal CF"
+      "liga": "ITA",
+      "fecha": "2026-11-22T11:30:00Z",
+      "local": "Juventus FC",
+      "visitante": "Venezia FC"
     },
     {
       "liga": "FRA",
@@ -1919,10 +1624,16 @@
       "visitante": "Angers SCO"
     },
     {
-      "liga": "ESP",
-      "fecha": "2026-11-22T15:15:00Z",
-      "local": "Real Racing Club de Santander",
-      "visitante": "Real Sociedad de Fútbol"
+      "liga": "ITA",
+      "fecha": "2026-11-22T14:00:00Z",
+      "local": "Bologna FC 1909",
+      "visitante": "Udinese Calcio"
+    },
+    {
+      "liga": "ITA",
+      "fecha": "2026-11-22T14:00:00Z",
+      "local": "US Sassuolo Calcio",
+      "visitante": "Genoa CFC"
     },
     {
       "liga": "FRA",
@@ -1931,22 +1642,10 @@
       "visitante": "Stade Rennais FC 1901"
     },
     {
-      "liga": "ENG",
-      "fecha": "2026-11-22T16:30:00Z",
-      "local": "Liverpool FC",
-      "visitante": "Manchester United FC"
-    },
-    {
       "liga": "ITA",
       "fecha": "2026-11-22T17:00:00Z",
       "local": "AC Milan",
       "visitante": "Frosinone Calcio"
-    },
-    {
-      "liga": "ESP",
-      "fecha": "2026-11-22T17:30:00Z",
-      "local": "CA Osasuna",
-      "visitante": "Málaga CF"
     },
     {
       "liga": "FRA",
@@ -11901,15 +11600,15 @@
       },
       "Hamburger SV": {
         "visitante": {
-          "pj": 5,
+          "pj": 6,
           "g": 1,
           "e": 0,
-          "p": 4,
+          "p": 5,
           "gf": 4,
-          "gc": 13,
+          "gc": 17,
           "puntos": 3,
-          "ppp": 0.6,
-          "victorias_pct": 20.0
+          "ppp": 0.5,
+          "victorias_pct": 16.67
         },
         "local": {
           "pj": 4,
@@ -11960,15 +11659,15 @@
           "victorias_pct": 20.0
         },
         "local": {
-          "pj": 4,
-          "g": 3,
+          "pj": 5,
+          "g": 4,
           "e": 1,
           "p": 0,
-          "gf": 10,
+          "gf": 14,
           "gc": 5,
-          "puntos": 10,
-          "ppp": 2.5,
-          "victorias_pct": 75.0
+          "puntos": 13,
+          "ppp": 2.6,
+          "victorias_pct": 80.0
         }
       },
       "FC Augsburg": {
@@ -12121,15 +11820,15 @@
       },
       "Real Racing Club de Santander": {
         "local": {
-          "pj": 6,
-          "g": 3,
+          "pj": 7,
+          "g": 4,
           "e": 2,
           "p": 1,
-          "gf": 11,
-          "gc": 11,
-          "puntos": 11,
-          "ppp": 1.83,
-          "victorias_pct": 50.0
+          "gf": 14,
+          "gc": 13,
+          "puntos": 14,
+          "ppp": 2.0,
+          "victorias_pct": 57.14
         },
         "visitante": {
           "pj": 6,
@@ -12145,15 +11844,15 @@
       },
       "Villarreal CF": {
         "visitante": {
-          "pj": 6,
+          "pj": 7,
           "g": 2,
           "e": 2,
-          "p": 2,
-          "gf": 9,
-          "gc": 8,
+          "p": 3,
+          "gf": 11,
+          "gc": 11,
           "puntos": 8,
-          "ppp": 1.33,
-          "victorias_pct": 33.33
+          "ppp": 1.14,
+          "victorias_pct": 28.57
         },
         "local": {
           "pj": 6,
@@ -12289,14 +11988,14 @@
       },
       "Málaga CF": {
         "visitante": {
-          "pj": 6,
+          "pj": 7,
           "g": 0,
           "e": 2,
-          "p": 4,
+          "p": 5,
           "gf": 3,
-          "gc": 11,
+          "gc": 12,
           "puntos": 2,
-          "ppp": 0.33,
+          "ppp": 0.29,
           "victorias_pct": 0.0
         },
         "local": {
@@ -12337,15 +12036,15 @@
       },
       "Real Sociedad de Fútbol": {
         "visitante": {
-          "pj": 6,
+          "pj": 7,
           "g": 3,
           "e": 0,
-          "p": 3,
-          "gf": 13,
-          "gc": 13,
+          "p": 4,
+          "gf": 15,
+          "gc": 16,
           "puntos": 9,
-          "ppp": 1.5,
-          "victorias_pct": 50.0
+          "ppp": 1.29,
+          "victorias_pct": 42.86
         },
         "local": {
           "pj": 6,
@@ -12468,28 +12167,28 @@
           "victorias_pct": 100.0
         },
         "local": {
-          "pj": 6,
-          "g": 5,
+          "pj": 7,
+          "g": 6,
           "e": 0,
           "p": 1,
-          "gf": 24,
-          "gc": 7,
-          "puntos": 15,
-          "ppp": 2.5,
-          "victorias_pct": 83.33
+          "gf": 27,
+          "gc": 9,
+          "puntos": 18,
+          "ppp": 2.57,
+          "victorias_pct": 85.71
         }
       },
       "CA Osasuna": {
         "local": {
-          "pj": 6,
-          "g": 2,
+          "pj": 7,
+          "g": 3,
           "e": 3,
           "p": 1,
-          "gf": 5,
+          "gf": 6,
           "gc": 4,
-          "puntos": 9,
-          "ppp": 1.5,
-          "victorias_pct": 33.33
+          "puntos": 12,
+          "ppp": 1.71,
+          "victorias_pct": 42.86
         },
         "visitante": {
           "pj": 6,
@@ -13014,14 +12713,14 @@
       },
       "Manchester United FC": {
         "visitante": {
-          "pj": 5,
+          "pj": 6,
           "g": 0,
           "e": 3,
-          "p": 2,
+          "p": 3,
           "gf": 4,
-          "gc": 8,
+          "gc": 12,
           "puntos": 3,
-          "ppp": 0.6,
+          "ppp": 0.5,
           "victorias_pct": 0.0
         },
         "local": {
@@ -13361,15 +13060,15 @@
           "victorias_pct": 80.0
         },
         "local": {
-          "pj": 5,
-          "g": 1,
+          "pj": 6,
+          "g": 2,
           "e": 2,
           "p": 2,
-          "gf": 4,
+          "gf": 8,
           "gc": 6,
-          "puntos": 5,
-          "ppp": 1.0,
-          "victorias_pct": 20.0
+          "puntos": 8,
+          "ppp": 1.33,
+          "victorias_pct": 33.33
         }
       },
       "Fulham FC": {
@@ -13435,15 +13134,15 @@
           "victorias_pct": 0.0
         },
         "visitante": {
-          "pj": 6,
+          "pj": 5,
           "g": 1,
-          "e": 2,
+          "e": 1,
           "p": 3,
-          "gf": 9,
-          "gc": 12,
-          "puntos": 5,
-          "ppp": 0.83,
-          "victorias_pct": 16.67
+          "gf": 8,
+          "gc": 11,
+          "puntos": 4,
+          "ppp": 0.8,
+          "victorias_pct": 20.0
         }
       },
       "Como 1907": {
@@ -13531,15 +13230,15 @@
           "victorias_pct": 42.86
         },
         "visitante": {
-          "pj": 5,
-          "g": 2,
+          "pj": 4,
+          "g": 1,
           "e": 0,
           "p": 3,
-          "gf": 5,
+          "gf": 3,
           "gc": 6,
-          "puntos": 6,
-          "ppp": 1.2,
-          "victorias_pct": 40.0
+          "puntos": 3,
+          "ppp": 0.75,
+          "victorias_pct": 25.0
         }
       },
       "SSC Napoli": {
@@ -13651,15 +13350,15 @@
           "victorias_pct": 33.33
         },
         "local": {
-          "pj": 6,
-          "g": 4,
+          "pj": 5,
+          "g": 3,
           "e": 1,
           "p": 1,
-          "gf": 11,
+          "gf": 7,
           "gc": 4,
-          "puntos": 13,
-          "ppp": 2.17,
-          "victorias_pct": 66.67
+          "puntos": 10,
+          "ppp": 2.0,
+          "victorias_pct": 60.0
         }
       },
       "Venezia FC": {
@@ -13675,12 +13374,12 @@
           "victorias_pct": 33.33
         },
         "visitante": {
-          "pj": 6,
+          "pj": 5,
           "g": 0,
           "e": 0,
-          "p": 6,
+          "p": 5,
           "gf": 3,
-          "gc": 14,
+          "gc": 10,
           "puntos": 0,
           "ppp": 0.0,
           "victorias_pct": 0.0
@@ -13747,15 +13446,15 @@
           "victorias_pct": 0.0
         },
         "local": {
-          "pj": 6,
+          "pj": 5,
           "g": 2,
           "e": 1,
-          "p": 3,
+          "p": 2,
           "gf": 10,
-          "gc": 16,
+          "gc": 14,
           "puntos": 7,
-          "ppp": 1.17,
-          "victorias_pct": 33.33
+          "ppp": 1.4,
+          "victorias_pct": 40.0
         }
       },
       "Torino FC": {
@@ -13808,15 +13507,15 @@
       },
       "Bologna FC 1909": {
         "local": {
-          "pj": 6,
+          "pj": 5,
           "g": 1,
-          "e": 3,
+          "e": 2,
           "p": 2,
-          "gf": 7,
-          "gc": 9,
-          "puntos": 6,
+          "gf": 6,
+          "gc": 8,
+          "puntos": 5,
           "ppp": 1.0,
-          "victorias_pct": 16.67
+          "victorias_pct": 20.0
         },
         "visitante": {
           "pj": 6,
@@ -14775,5 +14474,8 @@
     "SWE": {},
     "SUI": {},
     "TUR": {}
-  }
+  },
+  "candidatos": [],
+  "dobles": [],
+  "favoritos_validados": false
 }
