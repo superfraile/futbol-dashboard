@@ -36,6 +36,32 @@ def main():
         if con_cuotas:
             print("Estructura de la primera quote (solo tipos):")
             print(json.dumps(estructura(con_cuotas[0]["quotes"][0]),ensure_ascii=False,indent=2))
+        # Verificar si el proveedor identifica explícitamente la casa de apuestas.
+        # Nunca inferir que una cuota es de bet365 por pertenecer al mercado 1X2.
+        campos_casa=("bookmaker","bookmaker_name","bookmaker_id","sportsbook",
+                     "sportsbook_name","operator","operator_name","brand","source")
+        campos_presentes=set()
+        valores_casa=set()
+        for m in con_cuotas:
+            for objeto in (m,):
+                for campo in campos_casa:
+                    if campo in objeto:
+                        campos_presentes.add("partido."+campo)
+                        if isinstance(objeto[campo],str):
+                            valores_casa.add(objeto[campo].strip().casefold())
+            for q in m.get("quotes",[]):
+                if not isinstance(q,dict):
+                    continue
+                for campo in campos_casa:
+                    if campo in q:
+                        campos_presentes.add("quote."+campo)
+                        if isinstance(q[campo],str):
+                            valores_casa.add(q[campo].strip().casefold())
+        print("Campos de atribución de casa de apuestas:",sorted(campos_presentes))
+        print("Referencia explícita a bet365 en campos de casa:",any(
+            "bet365" in v for v in valores_casa))
+        if not campos_presentes:
+            print("AVISO: no hay atribución de bookmaker en los campos examinados; prohibido publicar como bet365.")
         # Resumen acotado de mercados y selecciones, sin publicar cuotas ni equipos.
         from collections import Counter
         grupos=Counter()
