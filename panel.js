@@ -88,10 +88,10 @@ async function iniciar(){
    const filtrados=candidatos.filter(r=>(!filtroCandidatos.value||r.liga===filtroCandidatos.value)&&(dias==="all"||r.fecha.slice(0,10)<=fechaLimite)).sort((a,b)=>Number(b.ppp)-Number(a.ppp)||a.fecha.localeCompare(b.fecha));
    if(!filtrados.length){candidatosDest.textContent="Sin partidos preseleccionados para esta liga.";return;}
    tabla(candidatosDest,["Liga","Fecha","Local","Visitante","Favorito fijo","Pts/PJ","Cuota"],filtrados.slice(0,100).map(r=>[
-     nombreLiga(r.liga),r.fecha,r.local,r.visitante,r.favorito,r.ppp,r.cuota_verificada===true&&typeof r.cuota==="number"&&r.cuota>=1.20&&r.cuota<=1.80?r.cuota.toFixed(2):"Pendiente"
+     nombreLiga(r.liga),r.fecha,r.local,r.visitante,r.favorito,r.ppp,r.casa_apuestas==="bet365"&&r.cuota_verificada===true&&typeof r.cuota==="number"&&r.cuota>=1.20&&r.cuota<=1.80?r.cuota.toFixed(2):"Pendiente bet365"
    ]));
    const aviso=document.createElement("p");
-   aviso.textContent="Mostrando "+Math.min(100,filtrados.length)+" de "+filtrados.length+" partidos preseleccionados, ordenados por Pts/PJ (mayor a menor). Cuotas verificadas: "+filtrados.filter(p=>p.cuota_verificada===true&&typeof p.cuota==="number"&&p.cuota>=1.20&&p.cuota<=1.80).length+". No son apuestas válidas sin cuotas verificadas.";
+   aviso.textContent="Mostrando "+Math.min(100,filtrados.length)+" de "+filtrados.length+" partidos preseleccionados, ordenados por Pts/PJ (mayor a menor). Cuotas verificadas: "+filtrados.filter(p=>p.casa_apuestas==="bet365"&&p.casa_apuestas==="bet365"&&p.cuota_verificada===true&&typeof p.cuota==="number"&&p.cuota>=1.20&&p.cuota<=1.80).length+". No son apuestas válidas sin cuotas verificadas.";
    candidatosDest.append(aviso);
  }
  filtroCandidatos.addEventListener("change",dibujarCandidatos);
