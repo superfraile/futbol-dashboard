@@ -20,7 +20,16 @@ async function iniciar(){
  cards[0].querySelector(".numero").textContent=Object.values(datos.ligas).filter(t=>Array.isArray(t)&&t.length).length;
  cards[1].querySelector(".numero").textContent=Object.values(listaFija.ligas).flat().length;
  cards[2].querySelector(".numero").textContent=datos.partidos?.length||"—";
- cards[3].querySelector("p").textContent=datos.ultima_actualizacion?new Date(datos.ultima_actualizacion).toLocaleString("es-ES",{timeZone:"Europe/Madrid"}):"Sin datos verificados";
+ const actualizacion=datos.ultima_actualizacion?new Date(datos.ultima_actualizacion):null;
+ const horasAntiguedad=actualizacion?(Date.now()-actualizacion.getTime())/3600000:Infinity;
+ cards[3].querySelector("p").textContent=actualizacion?actualizacion.toLocaleString("es-ES",{timeZone:"Europe/Madrid"}):"Sin datos verificados";
+ if(horasAntiguedad>36){
+   const avisoAntiguedad=document.createElement("p");
+   avisoAntiguedad.setAttribute("role","status");
+   avisoAntiguedad.textContent="AVISO: los datos deportivos tienen más de 36 horas; las clasificaciones y los filtros pueden estar desactualizados.";
+   avisoAntiguedad.style.fontWeight="bold";
+   document.querySelector(".resumen").append(avisoAntiguedad);
+ }
  liga();
  const nombreLiga=id=>CONFIG.ligas.find(l=>l.id===id)?.pais||id;
  const topPublicados=datos.favoritos_validados===true&&datos.equipos_top?.length===38?datos.equipos_top:[];
