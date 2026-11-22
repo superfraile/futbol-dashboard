@@ -15,16 +15,20 @@ function liga(){
 CONFIG.ligas.forEach(l=>{const b=document.createElement("button");b.className="liga";b.textContent=l.pais+" - "+l.nombre;b.onclick=()=>{seleccion=l.id;liga()};lista.append(b)});
 function mostrar(id,boton){document.querySelectorAll(".seccion").forEach(s=>s.classList.remove("visible"));document.querySelectorAll("nav button").forEach(b=>b.classList.remove("activo"));document.getElementById(id).classList.add("visible");boton.classList.add("activo")}
 async function iniciar(){
- try{datos=await cargarDatos(); if(!datos||typeof datos.ligas!=="object")throw Error("Formato incorrecto");
+ try{const [publicados,listaFija]=await Promise.all([cargarDatos(),cargarFavoritos()]); datos=publicados; if(!datos||typeof datos.ligas!=="object")throw Error("Formato incorrecto");
  const cards=document.querySelectorAll(".resumen .tarjeta");
  cards[0].querySelector(".numero").textContent=Object.values(datos.ligas).filter(t=>Array.isArray(t)&&t.length).length;
- cards[1].querySelector(".numero").textContent=datos.equipos_top?.length||"—";
+ cards[1].querySelector(".numero").textContent=Object.values(listaFija.ligas).flat().length;
  cards[2].querySelector(".numero").textContent=datos.partidos?.length||"—";
  cards[3].querySelector("p").textContent=datos.ultima_actualizacion?new Date(datos.ultima_actualizacion).toLocaleString("es-ES",{timeZone:"Europe/Madrid"}):"Sin datos verificados";
  liga();
  const nombreLiga=id=>CONFIG.ligas.find(l=>l.id===id)?.pais||id;
- if(datos.equipos_top?.length)tabla(document.querySelector("#favoritos .aviso"),["Liga","Equipo fijo","ELO estimado","Pts/PJ"],datos.equipos_top.map(r=>{const s=datos.ligas[r.liga]?.find(t=>t.equipo===r.equipo_proveedor);return [nombreLiga(r.liga),r.equipo,r.elo,s?.ppp??null]}));
- else document.querySelector("#favoritos .aviso").textContent="Sin equipos TOP calculados con datos verificados.";
+ const topPublicados=datos.favoritos_validados===true&&datos.equipos_top?.length===38?datos.equipos_top:[];
+ tabla(document.querySelector("#favoritos .aviso"),["Liga","Equipo fijo","ELO estimado","Pts/PJ"],Object.entries(listaFija.ligas).flatMap(([liga,equipos])=>equipos.map(equipo=>{
+   const r=topPublicados.find(x=>x.liga===liga&&x.equipo===equipo);
+   const s=r?datos.ligas[liga]?.find(t=>t.equipo===r.equipo_proveedor):null;
+   return [nombreLiga(liga),equipo,r?.elo??null,s?.ppp??null];
+ })));
  const hoy=new Intl.DateTimeFormat("sv-SE",{timeZone:"Europe/Madrid",year:"numeric",month:"2-digit",day:"2-digit"}).format(new Date());
  const proximos=(datos.partidos||[]).filter(r=>r.fecha.slice(0,10)>=hoy).sort((a,b)=>a.fecha.localeCompare(b.fecha));
  cards[2].querySelector(".numero").textContent=datos.ultima_actualizacion?proximos.length:"—";
@@ -51,7 +55,7 @@ async function iniciar(){
  dibujarPartidos();
  const candidatos=(datos.candidatos||[]).filter(r=>r.fecha.slice(0,10)>=hoy);
  const candidatosDest=document.getElementById("lista-candidatos");
- if(datos.favoritos_validados===false){
+ if(datos.favoritos_validados!==true || datos.equipos_top?.length!==38){
    candidatosDest.textContent="La lista de favoritos está pendiente de validación. No se generan selecciones.";
  }else if(candidatos.length){
    tabla(candidatosDest,["Liga","Fecha","Local","Visitante","Favorito fijo","Pts/PJ","Cuota"],candidatos.slice(0,100).map(r=>[
