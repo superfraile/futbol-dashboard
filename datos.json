@@ -1,7 +1,7 @@
 {
   "version": "1.2",
-  "ultima_actualizacion": "2026-11-22T22:30:02.697421+00:00",
-  "fuente": "OpenLigaDB (https://www.openligadb.de), ODbL 1.0; GER; football-data.org (PL; ENG); football-data.org (PD; ESP); football-data.org (SA; ITA); football-data.org (FL1; FRA); football-data.org (PPL; POR); football-data.org (DED; NED)",
+  "ultima_actualizacion": "2026-11-22T22:30:39.802619+00:00",
+  "fuente": "OpenLigaDB (https://www.openligadb.de), ODbL 1.0; GER; football-data.org (PL; ENG); football-data.org (PD; ESP); football-data.org (SA; ITA); football-data.org (FL1; FRA); football-data.org (PPL; POR); football-data.org (DED; NED; copia anterior)",
   "ligas": {
     "GER": [
       {
@@ -226,15 +226,15 @@
     "ESP": [
       {
         "equipo": "FC Barcelona",
-        "pj": 13,
-        "g": 12,
+        "pj": 12,
+        "g": 11,
         "e": 0,
         "p": 1,
-        "gf": 51,
-        "gc": 15,
-        "puntos": 36,
+        "gf": 48,
+        "gc": 13,
+        "puntos": 33,
         "posicion": 1,
-        "ppp": 2.77
+        "ppp": 2.75
       },
       {
         "equipo": "Real Madrid CF",
@@ -250,15 +250,15 @@
       },
       {
         "equipo": "Club Atlético de Madrid",
-        "pj": 13,
-        "g": 10,
+        "pj": 12,
+        "g": 9,
         "e": 1,
         "p": 2,
-        "gf": 26,
+        "gf": 23,
         "gc": 10,
-        "puntos": 31,
+        "puntos": 28,
         "posicion": 3,
-        "ppp": 2.38
+        "ppp": 2.33
       },
       {
         "equipo": "Real Betis Balompié",
@@ -274,15 +274,15 @@
       },
       {
         "equipo": "Real Sociedad de Fútbol",
-        "pj": 13,
+        "pj": 12,
         "g": 7,
         "e": 1,
-        "p": 5,
-        "gf": 23,
-        "gc": 23,
+        "p": 4,
+        "gf": 21,
+        "gc": 20,
         "puntos": 22,
         "posicion": 5,
-        "ppp": 1.69
+        "ppp": 1.83
       },
       {
         "equipo": "Sevilla FC",
@@ -297,18 +297,6 @@
         "ppp": 1.46
       },
       {
-        "equipo": "Real Racing Club de Santander",
-        "pj": 13,
-        "g": 5,
-        "e": 2,
-        "p": 6,
-        "gf": 20,
-        "gc": 32,
-        "puntos": 17,
-        "posicion": 7,
-        "ppp": 1.31
-      },
-      {
         "equipo": "Athletic Club",
         "pj": 12,
         "g": 4,
@@ -317,7 +305,7 @@
         "gf": 15,
         "gc": 12,
         "puntos": 16,
-        "posicion": 8,
+        "posicion": 7,
         "ppp": 1.33
       },
       {
@@ -329,20 +317,20 @@
         "gf": 18,
         "gc": 18,
         "puntos": 16,
-        "posicion": 9,
+        "posicion": 8,
         "ppp": 1.23
       },
       {
         "equipo": "Villarreal CF",
-        "pj": 13,
+        "pj": 12,
         "g": 4,
         "e": 3,
-        "p": 6,
-        "gf": 19,
-        "gc": 18,
+        "p": 5,
+        "gf": 17,
+        "gc": 15,
         "puntos": 15,
-        "posicion": 10,
-        "ppp": 1.15
+        "posicion": 9,
+        "ppp": 1.25
       },
       {
         "equipo": "RCD Espanyol de Barcelona",
@@ -353,7 +341,7 @@
         "gf": 14,
         "gc": 14,
         "puntos": 15,
-        "posicion": 11,
+        "posicion": 10,
         "ppp": 1.15
       },
       {
@@ -365,20 +353,20 @@
         "gf": 16,
         "gc": 17,
         "puntos": 15,
-        "posicion": 12,
+        "posicion": 11,
         "ppp": 1.15
       },
       {
-        "equipo": "CA Osasuna",
-        "pj": 13,
+        "equipo": "Real Racing Club de Santander",
+        "pj": 12,
         "g": 4,
-        "e": 3,
+        "e": 2,
         "p": 6,
-        "gf": 13,
-        "gc": 23,
-        "puntos": 15,
-        "posicion": 13,
-        "ppp": 1.15
+        "gf": 17,
+        "gc": 30,
+        "puntos": 14,
+        "posicion": 12,
+        "ppp": 1.17
       },
       {
         "equipo": "RC Celta de Vigo",
@@ -389,7 +377,7 @@
         "gf": 11,
         "gc": 12,
         "puntos": 13,
-        "posicion": 14,
+        "posicion": 13,
         "ppp": 1.0
       },
       {
@@ -401,7 +389,31 @@
         "gf": 15,
         "gc": 22,
         "puntos": 12,
+        "posicion": 14,
+        "ppp": 1.0
+      },
+      {
+        "equipo": "Getafe CF",
+        "pj": 12,
+        "g": 3,
+        "e": 3,
+        "p": 6,
+        "gf": 8,
+        "gc": 18,
+        "puntos": 12,
         "posicion": 15,
+        "ppp": 1.0
+      },
+      {
+        "equipo": "CA Osasuna",
+        "pj": 12,
+        "g": 3,
+        "e": 3,
+        "p": 6,
+        "gf": 12,
+        "gc": 23,
+        "puntos": 12,
+        "posicion": 16,
         "ppp": 1.0
       },
       {
@@ -412,18 +424,6 @@
         "p": 7,
         "gf": 9,
         "gc": 20,
-        "puntos": 12,
-        "posicion": 16,
-        "ppp": 0.92
-      },
-      {
-        "equipo": "Getafe CF",
-        "pj": 13,
-        "g": 3,
-        "e": 3,
-        "p": 7,
-        "gf": 8,
-        "gc": 21,
         "puntos": 12,
         "posicion": 17,
         "ppp": 0.92
@@ -454,15 +454,15 @@
       },
       {
         "equipo": "Málaga CF",
-        "pj": 13,
+        "pj": 12,
         "g": 0,
         "e": 5,
-        "p": 8,
+        "p": 7,
         "gf": 9,
-        "gc": 24,
+        "gc": 23,
         "puntos": 5,
         "posicion": 20,
-        "ppp": 0.38
+        "ppp": 0.42
       }
     ],
     "FRA": [
@@ -1661,7 +1661,7 @@
     {
       "liga": "ESP",
       "equipo": "Barcelona",
-      "elo": 1593.7,
+      "elo": 1588.0,
       "equipo_proveedor": "FC Barcelona"
     },
     {
@@ -1679,7 +1679,7 @@
     {
       "liga": "ESP",
       "equipo": "Atl. Madrid",
-      "elo": 1571.4,
+      "elo": 1562.2,
       "equipo_proveedor": "Club Atlético de Madrid"
     },
     {
@@ -11934,15 +11934,15 @@
           "victorias_pct": 0.0
         },
         "local": {
-          "pj": 7,
+          "pj": 6,
           "g": 3,
           "e": 3,
-          "p": 1,
+          "p": 0,
           "gf": 8,
-          "gc": 7,
+          "gc": 4,
           "puntos": 12,
-          "ppp": 1.71,
-          "victorias_pct": 42.86
+          "ppp": 2.0,
+          "victorias_pct": 50.0
         }
       },
       "Sevilla FC": {
@@ -11995,15 +11995,15 @@
       },
       "Real Racing Club de Santander": {
         "local": {
-          "pj": 7,
-          "g": 4,
+          "pj": 6,
+          "g": 3,
           "e": 2,
           "p": 1,
-          "gf": 14,
-          "gc": 13,
-          "puntos": 14,
-          "ppp": 2.0,
-          "victorias_pct": 57.14
+          "gf": 11,
+          "gc": 11,
+          "puntos": 11,
+          "ppp": 1.83,
+          "victorias_pct": 50.0
         },
         "visitante": {
           "pj": 6,
@@ -12019,15 +12019,15 @@
       },
       "Villarreal CF": {
         "visitante": {
-          "pj": 7,
+          "pj": 6,
           "g": 2,
           "e": 2,
-          "p": 3,
-          "gf": 11,
-          "gc": 11,
+          "p": 2,
+          "gf": 9,
+          "gc": 8,
           "puntos": 8,
-          "ppp": 1.14,
-          "victorias_pct": 28.57
+          "ppp": 1.33,
+          "victorias_pct": 33.33
         },
         "local": {
           "pj": 6,
@@ -12150,27 +12150,27 @@
           "victorias_pct": 66.67
         },
         "visitante": {
-          "pj": 7,
-          "g": 6,
+          "pj": 6,
+          "g": 5,
           "e": 0,
           "p": 1,
-          "gf": 14,
+          "gf": 11,
           "gc": 5,
-          "puntos": 18,
-          "ppp": 2.57,
-          "victorias_pct": 85.71
+          "puntos": 15,
+          "ppp": 2.5,
+          "victorias_pct": 83.33
         }
       },
       "Málaga CF": {
         "visitante": {
-          "pj": 7,
+          "pj": 6,
           "g": 0,
           "e": 2,
-          "p": 5,
+          "p": 4,
           "gf": 3,
-          "gc": 12,
+          "gc": 11,
           "puntos": 2,
-          "ppp": 0.29,
+          "ppp": 0.33,
           "victorias_pct": 0.0
         },
         "local": {
@@ -12211,15 +12211,15 @@
       },
       "Real Sociedad de Fútbol": {
         "visitante": {
-          "pj": 7,
+          "pj": 6,
           "g": 3,
           "e": 0,
-          "p": 4,
-          "gf": 15,
-          "gc": 16,
+          "p": 3,
+          "gf": 13,
+          "gc": 13,
           "puntos": 9,
-          "ppp": 1.29,
-          "victorias_pct": 42.86
+          "ppp": 1.5,
+          "victorias_pct": 50.0
         },
         "local": {
           "pj": 6,
@@ -12342,28 +12342,28 @@
           "victorias_pct": 100.0
         },
         "local": {
-          "pj": 7,
-          "g": 6,
+          "pj": 6,
+          "g": 5,
           "e": 0,
           "p": 1,
-          "gf": 27,
-          "gc": 9,
-          "puntos": 18,
-          "ppp": 2.57,
-          "victorias_pct": 85.71
+          "gf": 24,
+          "gc": 7,
+          "puntos": 15,
+          "ppp": 2.5,
+          "victorias_pct": 83.33
         }
       },
       "CA Osasuna": {
         "local": {
-          "pj": 7,
-          "g": 3,
+          "pj": 6,
+          "g": 2,
           "e": 3,
           "p": 1,
-          "gf": 6,
+          "gf": 5,
           "gc": 4,
-          "puntos": 12,
-          "ppp": 1.71,
-          "victorias_pct": 42.86
+          "puntos": 9,
+          "ppp": 1.5,
+          "victorias_pct": 33.33
         },
         "visitante": {
           "pj": 6,
@@ -14680,7 +14680,7 @@
       "visitante": "Club Atlético de Madrid",
       "favorito": "Atl. Madrid",
       "equipo_proveedor": "Club Atlético de Madrid",
-      "ppp": 2.38,
+      "ppp": 2.33,
       "cuota": null,
       "estado": "Pendiente de cuota verificada"
     },
@@ -14746,7 +14746,7 @@
       "visitante": "FC Barcelona",
       "favorito": "Barcelona",
       "equipo_proveedor": "FC Barcelona",
-      "ppp": 2.77,
+      "ppp": 2.75,
       "cuota": null,
       "estado": "Pendiente de cuota verificada"
     },
@@ -14900,7 +14900,7 @@
       "visitante": "RC Celta de Vigo",
       "favorito": "Barcelona",
       "equipo_proveedor": "FC Barcelona",
-      "ppp": 2.77,
+      "ppp": 2.75,
       "cuota": null,
       "estado": "Pendiente de cuota verificada"
     },
@@ -15043,7 +15043,7 @@
       "visitante": "FC Barcelona",
       "favorito": "Barcelona",
       "equipo_proveedor": "FC Barcelona",
-      "ppp": 2.77,
+      "ppp": 2.75,
       "cuota": null,
       "estado": "Pendiente de cuota verificada"
     },
@@ -15076,7 +15076,7 @@
       "visitante": "Valencia CF",
       "favorito": "Atl. Madrid",
       "equipo_proveedor": "Club Atlético de Madrid",
-      "ppp": 2.38,
+      "ppp": 2.33,
       "cuota": null,
       "estado": "Pendiente de cuota verificada"
     },
@@ -15197,7 +15197,7 @@
       "visitante": "Real Sociedad de Fútbol",
       "favorito": "Barcelona",
       "equipo_proveedor": "FC Barcelona",
-      "ppp": 2.77,
+      "ppp": 2.75,
       "cuota": null,
       "estado": "Pendiente de cuota verificada"
     },
@@ -15208,7 +15208,7 @@
       "visitante": "Club Atlético de Madrid",
       "favorito": "Atl. Madrid",
       "equipo_proveedor": "Club Atlético de Madrid",
-      "ppp": 2.38,
+      "ppp": 2.33,
       "cuota": null,
       "estado": "Pendiente de cuota verificada"
     },
@@ -15384,7 +15384,7 @@
       "visitante": "FC Barcelona",
       "favorito": "Barcelona",
       "equipo_proveedor": "FC Barcelona",
-      "ppp": 2.77,
+      "ppp": 2.75,
       "cuota": null,
       "estado": "Pendiente de cuota verificada"
     },
@@ -15395,7 +15395,7 @@
       "visitante": "Club Atlético de Madrid",
       "favorito": "Atl. Madrid",
       "equipo_proveedor": "Club Atlético de Madrid",
-      "ppp": 2.38,
+      "ppp": 2.33,
       "cuota": null,
       "estado": "Pendiente de cuota verificada"
     },
@@ -15549,7 +15549,7 @@
       "visitante": "FC Barcelona",
       "favorito": "Barcelona",
       "equipo_proveedor": "FC Barcelona",
-      "ppp": 2.77,
+      "ppp": 2.75,
       "cuota": null,
       "estado": "Pendiente de cuota verificada"
     },
@@ -15560,7 +15560,7 @@
       "visitante": "Real Racing Club de Santander",
       "favorito": "Atl. Madrid",
       "equipo_proveedor": "Club Atlético de Madrid",
-      "ppp": 2.38,
+      "ppp": 2.33,
       "cuota": null,
       "estado": "Pendiente de cuota verificada"
     },
@@ -15714,7 +15714,7 @@
       "visitante": "Elche CF",
       "favorito": "Barcelona",
       "equipo_proveedor": "FC Barcelona",
-      "ppp": 2.77,
+      "ppp": 2.75,
       "cuota": null,
       "estado": "Pendiente de cuota verificada"
     },
@@ -15736,7 +15736,7 @@
       "visitante": "Real Sociedad de Fútbol",
       "favorito": "Atl. Madrid",
       "equipo_proveedor": "Club Atlético de Madrid",
-      "ppp": 2.38,
+      "ppp": 2.33,
       "cuota": null,
       "estado": "Pendiente de cuota verificada"
     },
@@ -15901,7 +15901,7 @@
       "visitante": "FC Barcelona",
       "favorito": "Barcelona",
       "equipo_proveedor": "FC Barcelona",
-      "ppp": 2.77,
+      "ppp": 2.75,
       "cuota": null,
       "estado": "Pendiente de cuota verificada"
     },
@@ -15912,7 +15912,7 @@
       "visitante": "Club Atlético de Madrid",
       "favorito": "Atl. Madrid",
       "equipo_proveedor": "Club Atlético de Madrid",
-      "ppp": 2.38,
+      "ppp": 2.33,
       "cuota": null,
       "estado": "Pendiente de cuota verificada"
     },
@@ -16044,7 +16044,7 @@
       "visitante": "RCD Espanyol de Barcelona",
       "favorito": "Atl. Madrid",
       "equipo_proveedor": "Club Atlético de Madrid",
-      "ppp": 2.38,
+      "ppp": 2.33,
       "cuota": null,
       "estado": "Pendiente de cuota verificada"
     },
@@ -16055,7 +16055,7 @@
       "visitante": "Valencia CF",
       "favorito": "Barcelona",
       "equipo_proveedor": "FC Barcelona",
-      "ppp": 2.77,
+      "ppp": 2.75,
       "cuota": null,
       "estado": "Pendiente de cuota verificada"
     },
@@ -16297,7 +16297,7 @@
       "visitante": "Club Atlético de Madrid",
       "favorito": "Atl. Madrid",
       "equipo_proveedor": "Club Atlético de Madrid",
-      "ppp": 2.38,
+      "ppp": 2.33,
       "cuota": null,
       "estado": "Pendiente de cuota verificada"
     },
@@ -16308,7 +16308,7 @@
       "visitante": "FC Barcelona",
       "favorito": "Barcelona",
       "equipo_proveedor": "FC Barcelona",
-      "ppp": 2.77,
+      "ppp": 2.75,
       "cuota": null,
       "estado": "Pendiente de cuota verificada"
     },
@@ -16473,7 +16473,7 @@
       "visitante": "Levante UD",
       "favorito": "Barcelona",
       "equipo_proveedor": "FC Barcelona",
-      "ppp": 2.77,
+      "ppp": 2.75,
       "cuota": null,
       "estado": "Pendiente de cuota verificada"
     },
@@ -16495,7 +16495,7 @@
       "visitante": "Elche CF",
       "favorito": "Atl. Madrid",
       "equipo_proveedor": "Club Atlético de Madrid",
-      "ppp": 2.38,
+      "ppp": 2.33,
       "cuota": null,
       "estado": "Pendiente de cuota verificada"
     },
@@ -16594,7 +16594,7 @@
       "visitante": "Club Atlético de Madrid",
       "favorito": "Atl. Madrid",
       "equipo_proveedor": "Club Atlético de Madrid",
-      "ppp": 2.38,
+      "ppp": 2.33,
       "cuota": null,
       "estado": "Pendiente de cuota verificada"
     },
@@ -16616,7 +16616,7 @@
       "visitante": "FC Barcelona",
       "favorito": "Barcelona",
       "equipo_proveedor": "FC Barcelona",
-      "ppp": 2.77,
+      "ppp": 2.75,
       "cuota": null,
       "estado": "Pendiente de cuota verificada"
     },
@@ -16781,7 +16781,7 @@
       "visitante": "RC Celta de Vigo",
       "favorito": "Atl. Madrid",
       "equipo_proveedor": "Club Atlético de Madrid",
-      "ppp": 2.38,
+      "ppp": 2.33,
       "cuota": null,
       "estado": "Pendiente de cuota verificada"
     },
@@ -16946,7 +16946,7 @@
       "visitante": "Club Atlético de Madrid",
       "favorito": "Atl. Madrid",
       "equipo_proveedor": "Club Atlético de Madrid",
-      "ppp": 2.38,
+      "ppp": 2.33,
       "cuota": null,
       "estado": "Pendiente de cuota verificada"
     },
@@ -16957,7 +16957,7 @@
       "visitante": "RC Deportivo La Coruña",
       "favorito": "Barcelona",
       "equipo_proveedor": "FC Barcelona",
-      "ppp": 2.77,
+      "ppp": 2.75,
       "cuota": null,
       "estado": "Pendiente de cuota verificada"
     },
@@ -17122,7 +17122,7 @@
       "visitante": "FC Barcelona",
       "favorito": "Barcelona",
       "equipo_proveedor": "FC Barcelona",
-      "ppp": 2.77,
+      "ppp": 2.75,
       "cuota": null,
       "estado": "Pendiente de cuota verificada"
     },
@@ -17144,7 +17144,7 @@
       "visitante": "Getafe CF",
       "favorito": "Atl. Madrid",
       "equipo_proveedor": "Club Atlético de Madrid",
-      "ppp": 2.38,
+      "ppp": 2.33,
       "cuota": null,
       "estado": "Pendiente de cuota verificada"
     },
@@ -17265,7 +17265,7 @@
       "visitante": "Sevilla FC",
       "favorito": "Barcelona",
       "equipo_proveedor": "FC Barcelona",
-      "ppp": 2.77,
+      "ppp": 2.75,
       "cuota": null,
       "estado": "Pendiente de cuota verificada"
     },
@@ -17441,7 +17441,7 @@
       "visitante": "FC Barcelona",
       "favorito": "Barcelona",
       "equipo_proveedor": "FC Barcelona",
-      "ppp": 2.77,
+      "ppp": 2.75,
       "cuota": null,
       "estado": "Pendiente de cuota verificada"
     },
@@ -17463,7 +17463,7 @@
       "visitante": "Levante UD",
       "favorito": "Atl. Madrid",
       "equipo_proveedor": "Club Atlético de Madrid",
-      "ppp": 2.38,
+      "ppp": 2.33,
       "cuota": null,
       "estado": "Pendiente de cuota verificada"
     },
@@ -17573,7 +17573,7 @@
       "visitante": "Sevilla FC",
       "favorito": "Atl. Madrid",
       "equipo_proveedor": "Club Atlético de Madrid",
-      "ppp": 2.38,
+      "ppp": 2.33,
       "cuota": null,
       "estado": "Pendiente de cuota verificada"
     },
@@ -17584,7 +17584,7 @@
       "visitante": "RCD Espanyol de Barcelona",
       "favorito": "Barcelona",
       "equipo_proveedor": "FC Barcelona",
-      "ppp": 2.77,
+      "ppp": 2.75,
       "cuota": null,
       "estado": "Pendiente de cuota verificada"
     },
@@ -17672,7 +17672,7 @@
       "visitante": "FC Barcelona",
       "favorito": "Barcelona",
       "equipo_proveedor": "FC Barcelona",
-      "ppp": 2.77,
+      "ppp": 2.75,
       "cuota": null,
       "estado": "Pendiente de cuota verificada"
     },
@@ -17694,7 +17694,7 @@
       "visitante": "Club Atlético de Madrid",
       "favorito": "Atl. Madrid",
       "equipo_proveedor": "Club Atlético de Madrid",
-      "ppp": 2.38,
+      "ppp": 2.33,
       "cuota": null,
       "estado": "Pendiente de cuota verificada"
     },
@@ -17848,7 +17848,7 @@
       "visitante": "CA Osasuna",
       "favorito": "Barcelona",
       "equipo_proveedor": "FC Barcelona",
-      "ppp": 2.77,
+      "ppp": 2.75,
       "cuota": null,
       "estado": "Pendiente de cuota verificada"
     },
@@ -17881,7 +17881,7 @@
       "visitante": "Deportivo Alavés",
       "favorito": "Atl. Madrid",
       "equipo_proveedor": "Club Atlético de Madrid",
-      "ppp": 2.38,
+      "ppp": 2.33,
       "cuota": null,
       "estado": "Pendiente de cuota verificada"
     },
@@ -18013,7 +18013,7 @@
       "visitante": "Club Atlético de Madrid",
       "favorito": "Atl. Madrid",
       "equipo_proveedor": "Club Atlético de Madrid",
-      "ppp": 2.38,
+      "ppp": 2.33,
       "cuota": null,
       "estado": "Pendiente de cuota verificada"
     },
@@ -18123,7 +18123,7 @@
       "visitante": "Rayo Vallecano de Madrid",
       "favorito": "Atl. Madrid",
       "equipo_proveedor": "Club Atlético de Madrid",
-      "ppp": 2.38,
+      "ppp": 2.33,
       "cuota": null,
       "estado": "Pendiente de cuota verificada"
     },
@@ -18134,7 +18134,7 @@
       "visitante": "FC Barcelona",
       "favorito": "Barcelona",
       "equipo_proveedor": "FC Barcelona",
-      "ppp": 2.77,
+      "ppp": 2.75,
       "cuota": null,
       "estado": "Pendiente de cuota verificada"
     },
@@ -18277,7 +18277,7 @@
       "visitante": "Athletic Club",
       "favorito": "Atl. Madrid",
       "equipo_proveedor": "Club Atlético de Madrid",
-      "ppp": 2.38,
+      "ppp": 2.33,
       "cuota": null,
       "estado": "Pendiente de cuota verificada"
     },
@@ -18310,7 +18310,7 @@
       "visitante": "Málaga CF",
       "favorito": "Barcelona",
       "equipo_proveedor": "FC Barcelona",
-      "ppp": 2.77,
+      "ppp": 2.75,
       "cuota": null,
       "estado": "Pendiente de cuota verificada"
     },
@@ -18409,7 +18409,7 @@
       "visitante": "FC Barcelona",
       "favorito": "Barcelona",
       "equipo_proveedor": "FC Barcelona",
-      "ppp": 2.77,
+      "ppp": 2.75,
       "cuota": null,
       "estado": "Pendiente de cuota verificada"
     },
