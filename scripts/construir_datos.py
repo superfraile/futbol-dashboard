@@ -115,7 +115,7 @@ def aplicar_cuotas_bet365(candidatos, archivo=None):
         valor=cuota.get("cuota")
         fecha_consulta=cuota.get("consultada_en")
         url=cuota.get("url_fuente")
-        if (cuota.get("seleccion")!=signo or type(valor) not in (float,int)
+        if (cuota.get("verificada") is not True or cuota.get("seleccion")!=signo or type(valor) not in (float,int)
                 or not 1.20<=valor<=1.80 or not isinstance(url,str)
                 or not url.startswith("https://") or not isinstance(fecha_consulta,str)):
             continue
@@ -123,7 +123,8 @@ def aplicar_cuotas_bet365(candidatos, archivo=None):
             instante=datetime.fromisoformat(fecha_consulta.replace("Z","+00:00"))
         except ValueError:
             continue
-        if instante.tzinfo is None or instante>datetime.now(timezone.utc):
+        if (instante.tzinfo is None or instante>datetime.now(timezone.utc)
+                or (datetime.now(timezone.utc)-instante).total_seconds()>3600):
             continue
         partido.update(cuota=valor,cuota_verificada=True,casa_apuestas="bet365",
                        mercado="1X2",seleccion=signo,consultada_en=fecha_consulta,
