@@ -8,8 +8,23 @@ from datetime import datetime, timezone, date
 from pathlib import Path
 from scripts.estadisticas import calcular, desglosar
 from scripts.elo import elo
+import unicodedata
 
 LIGAS="GER DEN SCO ESP FRA GRE ENG ITA NOR NED POR SWE SUI TUR".split()
+
+def clave_equipo(nombre):
+    normal=unicodedata.normalize("NFKD",nombre.casefold())
+    return "".join(c for c in normal if c.isalnum() and not unicodedata.combining(c))
+
+def favoritos_configurados():
+    archivo=Path(__file__).resolve().parent.parent/"equipos-favoritos.json"
+    configuracion=json.loads(archivo.read_text(encoding="utf-8"))["ligas"]
+    if set(configuracion)!=set(LIGAS):
+        raise ValueError("La lista fija debe contener las 14 ligas")
+    if any(not isinstance(equipos,list) or len(equipos)>5 or len(equipos)!=len(set(equipos)) for equipos in configuracion.values()):
+        raise ValueError("Lista fija inválida")
+    return configuracion
+
 
 def validar(entrada):
     ligas=entrada["ligas"]
@@ -39,7 +54,8 @@ def construir(entrada):
     fuente=entrada["fuente"]
     if not isinstance(fuente,str) or not fuente.strip():
         raise ValueError("Fuente obligatoria")
-    resultado=dict(version="1.1",ultima_actualizacion=datetime.now(timezone.utc).isoformat(),
+    favoritos=favoritos_configurados()
+    resultado=dict(version="1.2",ultima_actualizacion=datetime.now(timezone.utc).isoformat(),
                    fuente=fuente,ligas={},equipos_top=[],partidos=[],estadisticas={})
     for liga in LIGAS:
         partidos=entrada["ligas"].get(liga,[])
@@ -47,8 +63,13 @@ def construir(entrada):
         rating=elo(partidos)
         resultado["ligas"][liga]=tabla
         resultado["estadisticas"][liga]=desglosar(partidos)
-        for equipo,valor in sorted(rating.items(),key=lambda x:(-x[1],x[0]))[:5]:
-            resultado["equipos_top"].append(dict(liga=liga,equipo=equipo,elo=round(valor,1)))
+        por_nombre={clave_equipo(nombre):(nombre,valor) for nombre,valor in rating.items()}
+        for equipo in favoritos[liga]:
+            encontrado=por_nombre.get(clave_equipo(equipo))
+            resultado["equipos_top"].append(dict(
+                liga=liga,equipo=equipo,
+                elo=round(encontrado[1],1) if encontrado else None,
+                equipo_proveedor=encontrado[0] if encontrado else None))
         for m in partidos:
             if m.get("estado")=="pendiente":
                 resultado["partidos"].append(dict(liga=liga,fecha=m["fecha"],local=m["local"],visitante=m["visitante"]))
