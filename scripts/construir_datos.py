@@ -149,6 +149,11 @@ def construir(entrada):
         resultado["ligas"][liga]=tabla
         resultado["estadisticas"][liga]=desglosar(partidos)
         resueltos=resolver_favoritos(liga,favoritos[liga],tabla) if lista_validada else {}
+        # Un favorito puede no figurar en la clasificación si todavía no ha jugado.
+        # Aun así, debe excluirse cualquier enfrentamiento entre dos favoritos.
+        nombres_fijos={clave_equipo(ALIAS.get(liga,{}).get(nombre,nombre)) for nombre in favoritos[liga]} if lista_validada else set()
+        def es_favorito_fijo(nombre):
+            return clave_equipo(nombre) in nombres_fijos
         por_nombre={clave_equipo(nombre):(nombre,valor) for nombre,valor in rating.items()}
         por_equipo={t["equipo"]:t for t in tabla}
         for equipo in (favoritos[liga] if lista_validada else []):
@@ -163,7 +168,7 @@ def construir(entrada):
                 continue
             local,visitante=m["local"],m["visitante"]
             # Se excluyen enfrentamientos entre dos favoritos.
-            if local in resueltos and visitante in resueltos:
+            if es_favorito_fijo(local) and es_favorito_fijo(visitante):
                 continue
             favorito=local if local in resueltos else visitante if visitante in resueltos else None
             if favorito and por_equipo[favorito]["ppp"]>=2:
