@@ -1,6 +1,6 @@
 "use strict";
 const lista=document.getElementById("lista-ligas");
-let datos=null, seleccion="ESP";
+let datos=null, seleccion="GER";
 function tabla(dest,headers,rows){
  const t=document.createElement("table"), h=t.createTHead().insertRow();
  headers.forEach(v=>{const c=document.createElement("th");c.textContent=v;h.append(c)});
@@ -17,6 +17,7 @@ function mostrar(id,boton){document.querySelectorAll(".seccion").forEach(s=>s.cl
 async function iniciar(){
  try{datos=await cargarDatos(); if(!datos||typeof datos.ligas!=="object")throw Error("Formato incorrecto");
  const cards=document.querySelectorAll(".resumen .tarjeta");
+ cards[0].querySelector(".numero").textContent=Object.values(datos.ligas).filter(t=>Array.isArray(t)&&t.length).length;
  cards[1].querySelector(".numero").textContent=datos.equipos_top?.length||"—";
  cards[2].querySelector(".numero").textContent=datos.partidos?.length||"—";
  cards[3].querySelector("p").textContent=datos.ultima_actualizacion?new Date(datos.ultima_actualizacion).toLocaleString("es-ES",{timeZone:"Europe/Madrid"}):"Sin datos verificados";
@@ -28,7 +29,7 @@ async function iniciar(){
  const proximos=(datos.partidos||[]).filter(r=>r.fecha.slice(0,10)>=hoy).sort((a,b)=>a.fecha.localeCompare(b.fecha));
  cards[2].querySelector(".numero").textContent=datos.ultima_actualizacion?proximos.length:"—";
  const partidosDest=document.querySelector("#partidos .aviso");
- if(proximos.length)tabla(partidosDest,["Liga","Fecha","Local","Visitante"],proximos.map(r=>[nombreLiga(r.liga),r.fecha,r.local,r.visitante]));
+ if(proximos.length)tabla(partidosDest,["Liga","Fecha (España)","Local","Visitante"],proximos.map(r=>{const fecha=r.fecha.length>10?new Date(r.fecha).toLocaleString("es-ES",{timeZone:"Europe/Madrid",day:"2-digit",month:"2-digit",year:"numeric",hour:"2-digit",minute:"2-digit"}):r.fecha;return [nombreLiga(r.liga),fecha,r.local,r.visitante]}));
  else partidosDest.textContent="Sin próximos partidos verificados.";
  const dest=document.querySelector("#estadisticas .aviso");
  const filas=[];
