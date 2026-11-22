@@ -9,6 +9,7 @@ from pathlib import Path
 from scripts.estadisticas import calcular, desglosar
 from scripts.elo import elo
 import unicodedata
+from itertools import combinations
 
 LIGAS="GER DEN SCO ESP FRA GRE ENG ITA NOR NED POR SWE SUI TUR".split()
 
@@ -47,6 +48,19 @@ def resolver_favoritos(liga, favoritos, tabla):
             resueltos[equipo["equipo"]]=favorito
     return resueltos
 
+def generar_dobles(candidatos):
+    """Solo combina partidos con cuotas numéricas verificadas dentro del rango."""
+    validos=[p for p in candidatos
+             if type(p.get("cuota")) in (int,float) and 1.20<=p["cuota"]<=1.80
+             and p.get("cuota_verificada") is True]
+    dobles=[]
+    for a,b in combinations(sorted(validos,key=lambda p:p["fecha"]),2):
+        # Nunca repetir un partido; cada combinación contiene dos encuentros distintos.
+        if (a["liga"],a["fecha"],a["local"],a["visitante"]) == (b["liga"],b["fecha"],b["local"],b["visitante"]):
+            continue
+        dobles.append(dict(partidos=[a,b],cuota_combinada=round(a["cuota"]*b["cuota"],3)))
+    return dobles
+
 def validar(entrada):
     ligas=entrada["ligas"]
     if not isinstance(ligas,dict) or set(ligas)-set(LIGAS):
@@ -77,7 +91,7 @@ def construir(entrada):
         raise ValueError("Fuente obligatoria")
     favoritos=favoritos_configurados()
     resultado=dict(version="1.2",ultima_actualizacion=datetime.now(timezone.utc).isoformat(),
-                   fuente=fuente,ligas={},equipos_top=[],partidos=[],estadisticas={},candidatos=[])
+                   fuente=fuente,ligas={},equipos_top=[],partidos=[],estadisticas={},candidatos=[],dobles=[])
     for liga in LIGAS:
         partidos=entrada["ligas"].get(liga,[])
         tabla=calcular(partidos)
@@ -113,6 +127,7 @@ def construir(entrada):
                 resultado["partidos"].append(dict(liga=liga,fecha=m["fecha"],local=m["local"],visitante=m["visitante"]))
     resultado["partidos"].sort(key=lambda m:m["fecha"])
     resultado["candidatos"].sort(key=lambda m:m["fecha"])
+    resultado["dobles"]=generar_dobles(resultado["candidatos"])
     return resultado
 
 if __name__=="__main__":
