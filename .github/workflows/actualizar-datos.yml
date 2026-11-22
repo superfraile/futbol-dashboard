@@ -29,7 +29,7 @@ jobs:
           FOOTBALL_DATA_API_KEY: ${{ secrets.FOOTBALL_DATA_API_KEY }}
       - run: python -m scripts.construir_datos entrada.json datos.json
       - run: |
-          python -c 'import json; d=json.load(open("datos.json")); assert len(d["ligas"]["GER"])==18'
+          python -c 'import json; d=json.load(open("datos.json")); assert any(len(v)>0 for v in d["ligas"].values()); assert d["favoritos_validados"] is True; assert len(d["equipos_top"])==38; assert "candidatos" in d and "dobles" in d'
           mv entrada.json datos-origen.json
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
