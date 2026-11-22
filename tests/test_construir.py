@@ -8,9 +8,9 @@ class TestConstruir(unittest.TestCase):
             dict(fecha="2026-01-08",local="B",visitante="A",estado="pendiente")]}})
         self.assertEqual(len(datos["ligas"]),14)
         self.assertEqual(datos["ligas"]["ESP"][0]["puntos"],3)
-        self.assertEqual(len(datos["equipos_top"]),48)
-        self.assertEqual([e["equipo"] for e in datos["equipos_top"] if e["liga"]=="ESP"],["Barcelona","Real Madrid","Real Betis","Atlético de Madrid"])
-        self.assertIsNone(next(e["elo"] for e in datos["equipos_top"] if e["equipo"]=="Barcelona"))
+        self.assertEqual(len(datos["equipos_top"]),0)
+        self.assertFalse(datos["favoritos_validados"])
+        self.assertEqual(datos["candidatos"],[])
         self.assertEqual(len(datos["partidos"]),1)
         self.assertEqual(datos["estadisticas"]["ESP"]["A"]["local"]["ppp"],3)
     def test_fuente(self):
