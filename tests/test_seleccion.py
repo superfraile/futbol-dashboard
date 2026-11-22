@@ -42,6 +42,21 @@ class SeleccionTests(unittest.TestCase):
         self.assertEqual(len(dobles),3)
         self.assertEqual([x["fecha"] for x in dobles[0]["partidos"]],["2026-12-01T18:00:00Z","2026-12-02T18:00:00Z"])
 
+    def test_dobles_descartan_cuotas_caducadas_y_partidos_pasados(self):
+        ahora=datetime(2026,11,22,20,30,tzinfo=timezone.utc)
+        base=dict(liga="ESP",fecha="2026-11-23T18:00:00Z",
+                  consultada_en="2026-11-22T20:00:00Z",
+                  local="A",visitante="B",equipo_proveedor="A",
+                  cuota=1.5,cuota_verificada=True,casa_apuestas="bet365",
+                  mercado="1X2",seleccion="1")
+        segundo=dict(base,local="C",visitante="D",equipo_proveedor="C")
+        self.assertEqual(len(generar_dobles([base,segundo],ahora)),1)
+        segundo["consultada_en"]="2026-11-22T18:00:00Z"
+        self.assertEqual(generar_dobles([base,segundo],ahora),[])
+        segundo["consultada_en"]="2026-11-22T20:00:00Z"
+        segundo["fecha"]="2026-11-22T19:00:00Z"
+        self.assertEqual(generar_dobles([base,segundo],ahora),[])
+
     def test_descarta_cuotas_de_otras_casas(self):
         a=dict(liga="ESP",fecha="2026-12-01",local="A",visitante="B",cuota=1.5,cuota_verificada=True,casa_apuestas="bet365")
         b=dict(a,fecha="2026-12-02",local="C",visitante="D",equipo_proveedor="C",casa_apuestas="otra")
