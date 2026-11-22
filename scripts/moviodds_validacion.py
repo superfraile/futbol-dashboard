@@ -95,3 +95,35 @@ def emparejar_candidatos(candidatos, partidos, equivalencias=None, tolerancia_se
     return [(candidatos[i],partidos[opciones[0]])
             for i,opciones in opciones_por_candidato.items()
             if len(opciones)==1 and len(candidatos_por_partido[opciones[0]])==1]
+
+CAMPOS_BOOKMAKER=("bookmaker","bookmaker_name","bookmaker_id",
+                  "sportsbook","sportsbook_name","operator","operator_name","brand")
+
+def atribucion_bet365(partido, cuota):
+    """Exige identificación explícita y no contradictoria en el registro de cuota.
+
+    La presencia de bet365 en otro partido o en otra selección no es suficiente.
+    Si no hay atribución por selección, no se considera verificada.
+    """
+    if not isinstance(partido,dict) or not isinstance(cuota,dict):
+        return False
+    identificadores=[]
+    for campo in CAMPOS_BOOKMAKER:
+        if campo in cuota:
+            valor=cuota[campo]
+            if not isinstance(valor,str) or not valor.strip():
+                return False
+            identificadores.append(valor.casefold().replace(" ","").strip())
+    # El origen del partido puede corroborar, pero nunca sustituir, el de la cuota.
+    if not identificadores:
+        return False
+    if any(valor not in ("bet365","bet365.com","www.bet365.com","bet365.es",
+                         "www.bet365.es") for valor in identificadores):
+        return False
+    for campo in CAMPOS_BOOKMAKER:
+        if campo in partido:
+            valor=partido[campo]
+            if not isinstance(valor,str) or valor.casefold().replace(" ","").strip() not in (
+                    "bet365","bet365.com","www.bet365.com","bet365.es","www.bet365.es"):
+                return False
+    return True
