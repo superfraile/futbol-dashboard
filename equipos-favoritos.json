@@ -1,0 +1,81 @@
+{
+  "descripcion": "Lista fija recuperada de la configuración anterior; pendiente de cotejo con Numbers original",
+  "ligas": {
+    "GER": [
+      "Bayern Munich",
+      "Borussia Dortmund",
+      "RB Leipzig",
+      "Bayer Leverkusen"
+    ],
+    "DEN": [
+      "Aarhus",
+      "Midtjylland",
+      "Copenhagen"
+    ],
+    "SCO": [
+      "Celtic",
+      "Hearts",
+      "Rangers"
+    ],
+    "ESP": [
+      "Barcelona",
+      "Real Madrid",
+      "Real Betis",
+      "Atlético de Madrid"
+    ],
+    "FRA": [
+      "PSG",
+      "Lens",
+      "Lille",
+      "Lyon"
+    ],
+    "GRE": [
+      "AEK",
+      "Olympiakos",
+      "PAOK"
+    ],
+    "ENG": [
+      "Arsenal",
+      "Manchester City",
+      "Manchester United",
+      "Liverpool"
+    ],
+    "ITA": [
+      "Inter",
+      "Napoli",
+      "Roma",
+      "Juventus"
+    ],
+    "NOR": [
+      "Viking",
+      "Tromsø",
+      "Bodø/Glimt"
+    ],
+    "NED": [
+      "PSV",
+      "Feyenoord",
+      "Twente",
+      "Ajax"
+    ],
+    "POR": [
+      "Porto",
+      "Sporting",
+      "Benfica",
+      "Braga"
+    ],
+    "SWE": [
+      "Sirius",
+      "Hammarby"
+    ],
+    "SUI": [
+      "Young Boys",
+      "St. Gallen",
+      "Basilea"
+    ],
+    "TUR": [
+      "Galatasaray",
+      "Fenerbahçe",
+      "Trabzonspor"
+    ]
+  }
+}
