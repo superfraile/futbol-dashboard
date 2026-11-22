@@ -76,7 +76,7 @@ async function iniciar(){
    const dias=plazoCandidatos.value;
    const limite=new Date();limite.setDate(limite.getDate()+Number(dias==="all"?3650:dias));
    const fechaLimite=new Intl.DateTimeFormat("sv-SE",{timeZone:"Europe/Madrid",year:"numeric",month:"2-digit",day:"2-digit"}).format(limite);
-   const filtrados=candidatos.filter(r=>(!filtroCandidatos.value||r.liga===filtroCandidatos.value)&&(dias==="all"||r.fecha.slice(0,10)<=fechaLimite));
+   const filtrados=candidatos.filter(r=>(!filtroCandidatos.value||r.liga===filtroCandidatos.value)&&(dias==="all"||r.fecha.slice(0,10)<=fechaLimite)).sort((a,b)=>Number(b.ppp)-Number(a.ppp)||a.fecha.localeCompare(b.fecha));
    if(!filtrados.length){candidatosDest.textContent="Sin partidos preseleccionados para esta liga.";return;}
    tabla(candidatosDest,["Liga","Fecha","Local","Visitante","Favorito fijo","Pts/PJ","Cuota"],filtrados.slice(0,100).map(r=>[
      nombreLiga(r.liga),r.fecha,r.local,r.visitante,r.favorito,r.ppp,"Pendiente"
