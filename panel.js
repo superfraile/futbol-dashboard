@@ -82,8 +82,9 @@ async function iniciar(){
      candidatosDest.textContent="La lista publicada todavía no coincide con los 38 favoritos confirmados.";return;
    }
    const dias=plazoCandidatos.value;
-   const limite=new Date();limite.setDate(limite.getDate()+Number(dias==="all"?3650:dias));
-   const fechaLimite=new Intl.DateTimeFormat("sv-SE",{timeZone:"Europe/Madrid",year:"numeric",month:"2-digit",day:"2-digit"}).format(limite);
+   // Siete días significa hoy y los seis días siguientes, en calendario español.
+   const inicio=Date.parse(hoy+"T12:00:00Z");
+   const fechaLimite=new Date(inicio+(Number(dias==="all"?3650:dias)-1)*86400000).toISOString().slice(0,10);
    const filtrados=candidatos.filter(r=>(!filtroCandidatos.value||r.liga===filtroCandidatos.value)&&(dias==="all"||r.fecha.slice(0,10)<=fechaLimite)).sort((a,b)=>Number(b.ppp)-Number(a.ppp)||a.fecha.localeCompare(b.fecha));
    if(!filtrados.length){candidatosDest.textContent="Sin partidos preseleccionados para esta liga.";return;}
    tabla(candidatosDest,["Liga","Fecha","Local","Visitante","Favorito fijo","Pts/PJ","Cuota"],filtrados.slice(0,100).map(r=>[
