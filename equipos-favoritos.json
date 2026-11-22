@@ -1,5 +1,5 @@
 {
-  "descripcion": "Lista fija recuperada de la configuración anterior; pendiente de cotejo con Numbers original",
+  "descripcion": "Lista provisional de 48 equipos NO validada. El usuario confirma que su lista real tiene 38. No utilizar para generar preselecciones hasta cotejar la lista original.",
   "ligas": {
     "GER": [
       "Bayern Munich",
@@ -77,5 +77,6 @@
       "Fenerbahçe",
       "Trabzonspor"
     ]
-  }
+  },
+  "validada": false
 }
