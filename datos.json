@@ -1,7 +1,7 @@
 {
   "version": "1.2",
-  "ultima_actualizacion": "2026-11-22T22:30:39.802619+00:00",
-  "fuente": "OpenLigaDB (https://www.openligadb.de), ODbL 1.0; GER; football-data.org (PL; ENG); football-data.org (PD; ESP); football-data.org (SA; ITA); football-data.org (FL1; FRA); football-data.org (PPL; POR); football-data.org (DED; NED; copia anterior)",
+  "ultima_actualizacion": "2026-11-22T22:31:16.911600+00:00",
+  "fuente": "OpenLigaDB (https://www.openligadb.de), ODbL 1.0; GER; football-data.org (PL; ENG; copia anterior); football-data.org (PD; ESP; copia anterior); football-data.org (SA; ITA; copia anterior); football-data.org (FL1; FRA; copia anterior); football-data.org (PPL; POR); football-data.org (DED; NED)",
   "ligas": {
     "GER": [
       {
