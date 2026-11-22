@@ -1,0 +1,50 @@
+name: Reconstruir selección desde datos guardados
+on:
+  push:
+    paths:
+      - 'equipos-favoritos.json'
+      - 'scripts/construir_datos.py'
+      - 'scripts/estadisticas.py'
+      - 'scripts/elo.py'
+      - 'tests/test_*.py'
+      - '.github/workflows/reconstruir-seleccion.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: datos-deportivos
+  cancel-in-progress: false
+jobs:
+  reconstruir:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Probar filtros
+        run: python -m unittest discover -s tests -v
+      - name: Reconstruir sin depender de proveedores externos
+        run: python -m scripts.construir_datos datos-origen.json datos.json
+      - name: Validar favoritos y selección
+        run: |
+          python - <<'PY'
+          import json
+          d=json.load(open("datos.json",encoding="utf-8"))
+          assert d["favoritos_validados"] is True
+          assert len(d["equipos_top"])==38
+          assert len({(e["liga"],e["equipo"]) for e in d["equipos_top"]})==38
+          assert "candidatos" in d and "dobles" in d
+          assert sum(bool(v) for v in d["ligas"].values())>=1
+          print("38 favoritos confirmados; candidatos:",len(d["candidatos"]))
+          PY
+      - name: Publicar JSON
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add datos.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Reconstruir selección con favoritos confirmados"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
