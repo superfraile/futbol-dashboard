@@ -1,6 +1,6 @@
 import unittest
 from datetime import datetime, timezone, timedelta
-from scripts.moviodds_validacion import mercado_1x2
+from scripts.moviodds_validacion import mercado_1x2, emparejar_candidatos
 
 class MoviOddsValidacionTests(unittest.TestCase):
     def setUp(self):
@@ -28,6 +28,19 @@ class MoviOddsValidacionTests(unittest.TestCase):
         self.assertEqual(mercado_1x2(self.partido,self.ahora),{})
         self.partido["quotes"]=[self.cuota(),self.cuota(valor=1.6),self.cuota(valor=1.7)]
         self.assertEqual(mercado_1x2(self.partido,self.ahora),{})
+    def test_empareja_solo_ambos_equipos_y_hora(self):
+        candidato=dict(fecha=self.partido["kickoff_utc"],local="FC Barcelona",visitante="Sevilla FC")
+        self.assertEqual(len(emparejar_candidatos([candidato],[self.partido])),1)
+        incorrecto=dict(self.partido,away="Valencia CF")
+        self.assertEqual(emparejar_candidatos([candidato],[incorrecto]),[])
+        self.assertEqual(emparejar_candidatos([candidato],[self.partido,self.partido]),[])
+
+    def test_equivalencias_explicitas_no_similitud(self):
+        candidato=dict(fecha=self.partido["kickoff_utc"],local="Barcelona",visitante="Sevilla")
+        self.assertEqual(emparejar_candidatos([candidato],[self.partido]),[])
+        aprobadas={"Barcelona":"FC Barcelona","Sevilla":"Sevilla FC"}
+        self.assertEqual(len(emparejar_candidatos([candidato],[self.partido],aprobadas)),1)
+
     def test_no_atribuye_bookmaker(self):
         self.partido["quotes"]=[self.cuota()]
         datos=mercado_1x2(self.partido,self.ahora)
