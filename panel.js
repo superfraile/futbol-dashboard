@@ -71,6 +71,15 @@ async function iniciar(){
    }
    return r.fecha>=hoy;
  };
+ const cuotaBet365Vigente=p=>{
+   if(p.casa_apuestas!=="bet365"||p.mercado!=="1X2"||p.cuota_verificada!==true||
+      typeof p.cuota!=="number"||p.cuota<1.20||p.cuota>1.80||
+      !p.consultada_en||!p.url_fuente)return false;
+   const consulta=Date.parse(p.consultada_en);
+   if(!Number.isFinite(consulta)||consulta>ahora||ahora-consulta>3600000)return false;
+   const signo=p.equipo_proveedor===p.local?"1":p.equipo_proveedor===p.visitante?"2":null;
+   return signo!==null&&p.seleccion===signo;
+ };
  const candidatos=(datos.candidatos||[]).filter(esFuturo);
  const candidatosDest=document.getElementById("lista-candidatos");
  const filtroCandidatos=document.getElementById("filtro-candidatos");
@@ -89,17 +98,17 @@ async function iniciar(){
    const filtrados=candidatos.filter(r=>(!filtroCandidatos.value||r.liga===filtroCandidatos.value)&&(dias==="all"||r.fecha.slice(0,10)<=fechaLimite)).sort((a,b)=>Number(b.ppp)-Number(a.ppp)||a.fecha.localeCompare(b.fecha));
    if(!filtrados.length){candidatosDest.textContent="Sin partidos preseleccionados para esta liga.";return;}
    tabla(candidatosDest,["Liga","Fecha","Local","Visitante","Favorito fijo","Pts/PJ","Cuota"],filtrados.slice(0,100).map(r=>[
-     nombreLiga(r.liga),fechaEspana(r.fecha),r.local,r.visitante,r.favorito,r.ppp,r.casa_apuestas==="bet365"&&r.mercado==="1X2"&&r.cuota_verificada===true&&typeof r.cuota==="number"&&r.cuota>=1.20&&r.cuota<=1.80?r.cuota.toFixed(2):"Pendiente bet365"
+     nombreLiga(r.liga),fechaEspana(r.fecha),r.local,r.visitante,r.favorito,r.ppp,cuotaBet365Vigente(r)?r.cuota.toFixed(2):"Pendiente bet365"
    ]));
    const aviso=document.createElement("p");
-   aviso.textContent="Mostrando "+Math.min(100,filtrados.length)+" de "+filtrados.length+" partidos preseleccionados, ordenados por Pts/PJ (mayor a menor). Cuotas verificadas: "+filtrados.filter(p=>p.casa_apuestas==="bet365"&&p.mercado==="1X2"&&p.cuota_verificada===true&&typeof p.cuota==="number"&&p.cuota>=1.20&&p.cuota<=1.80).length+". No son apuestas válidas sin cuotas verificadas.";
+   aviso.textContent="Mostrando "+Math.min(100,filtrados.length)+" de "+filtrados.length+" partidos preseleccionados, ordenados por Pts/PJ (mayor a menor). Cuotas verificadas: "+filtrados.filter(p=>cuotaBet365Vigente(p)).length+". No son apuestas válidas sin cuotas verificadas.";
    candidatosDest.append(aviso);
  }
  filtroCandidatos.addEventListener("change",dibujarCandidatos);
  plazoCandidatos.addEventListener("change",dibujarCandidatos);
  dibujarCandidatos();
  const doblesDest=document.getElementById("lista-dobles");
- const dobles=(datos.dobles||[]).filter(d=>Array.isArray(d.partidos)&&d.partidos.length===2&&d.partidos.every(p=>esFuturo(p)&&p.casa_apuestas==="bet365"&&p.mercado==="1X2"&&p.cuota_verificada===true&&typeof p.cuota==="number"&&p.cuota>=1.20&&p.cuota<=1.80));
+ const dobles=(datos.dobles||[]).filter(d=>Array.isArray(d.partidos)&&d.partidos.length===2&&d.partidos.every(p=>esFuturo(p)&&cuotaBet365Vigente(p)));
  if(dobles.length){
    tabla(doblesDest,["Partido 1","Cuota 1","Partido 2","Cuota 2","Cuota combinada"],dobles.slice(0,100).map(d=>[
      d.partidos[0].local+" - "+d.partidos[0].visitante+" ("+d.partidos[0].fecha.slice(0,10)+")",
