@@ -25,18 +25,25 @@ def favoritos_configurados():
         raise ValueError("La lista fija debe contener las 14 ligas")
     if any(not isinstance(equipos,list) or len(equipos)>5 or len(equipos)!=len(set(equipos)) for equipos in configuracion.values()):
         raise ValueError("Lista fija inválida")
+    if documento.get("validada") is True and sum(map(len,configuracion.values()))!=38:
+        raise ValueError("La lista validada debe contener exactamente 38 favoritos")
     return configuracion
 
 
 # Correspondencias exactas revisadas frente a los nombres reales de los proveedores.
 ALIAS = {
- "GER":{"Bayern Munich":"FC Bayern München","Bayer Leverkusen":"Bayer 04 Leverkusen"},
- "ESP":{"Barcelona":"FC Barcelona","Real Madrid":"Real Madrid CF","Real Betis":"Real Betis Balompié","Atlético de Madrid":"Club Atlético de Madrid"},
- "FRA":{"PSG":"Paris Saint-Germain FC","Lens":"Racing Club de Lens","Lille":"Lille OSC","Lyon":"Olympique Lyonnais"},
- "ENG":{"Arsenal":"Arsenal FC","Manchester City":"Manchester City FC","Manchester United":"Manchester United FC","Liverpool":"Liverpool FC"},
- "ITA":{"Inter":"FC Internazionale Milano","Napoli":"SSC Napoli","Roma":"AS Roma","Juventus":"Juventus FC"},
- "NED":{"Feyenoord":"Feyenoord Rotterdam","Twente":"FC Twente '65","Ajax":"AFC Ajax"},
- "POR":{"Porto":"FC Porto","Sporting":"Sporting Clube de Portugal","Benfica":"Sport Lisboa e Benfica","Braga":"Sporting Clube de Braga"}
+ "GER":{"Bayern Munich":"FC Bayern München","Dortmund":"Borussia Dortmund","Bayer Leverkusen":"Bayer 04 Leverkusen"},
+ "DEN":{"FC Copenhagen":"FC København"},
+ "ESP":{"Barcelona":"FC Barcelona","Real Madrid":"Real Madrid CF","Betis":"Real Betis Balompié","Atl. Madrid":"Club Atlético de Madrid"},
+ "FRA":{"PSG":"Paris Saint-Germain FC","Monaco":"AS Monaco FC","Marseille":"Olympique de Marseille"},
+ "GRE":{"AEK Athens":"AEK Athens","Olympiacos Piraeus":"Olympiacos"},
+ "ENG":{"Arsenal":"Arsenal FC","Manchester City":"Manchester City FC","Manchester Utd":"Manchester United FC","Liverpool":"Liverpool FC"},
+ "ITA":{"Inter":"FC Internazionale Milano","Napoli":"SSC Napoli","AC Milan":"AC Milan","Juventus":"Juventus FC"},
+ "NOR":{"Bodo/Glimt":"FK Bodø/Glimt"},
+ "NED":{"Feyenoord":"Feyenoord Rotterdam","Ajax":"AFC Ajax"},
+ "POR":{"FC Porto":"FC Porto","Sporting CP":"Sporting Clube de Portugal","Benfica":"Sport Lisboa e Benfica","Braga":"Sporting Clube de Braga"},
+ "SWE":{"Malmo FF":"Malmö FF"},
+ "TUR":{"Fenerbahce":"Fenerbahçe"}
 }
 
 def resolver_favoritos(liga, favoritos, tabla):
