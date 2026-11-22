@@ -1,7 +1,7 @@
 {
-  "version": "1.1",
-  "ultima_actualizacion": "2026-11-22T17:27:44.905166+00:00",
-  "fuente": "OpenLigaDB (https://www.openligadb.de), ODbL 1.0; GER; football-data.org (PL; ENG); football-data.org (PD; ESP); football-data.org (SA; ITA); football-data.org (FL1; FRA); football-data.org (PPL; POR)",
+  "version": "1.2",
+  "ultima_actualizacion": "2026-11-22T18:03:39.288052+00:00",
+  "fuente": "OpenLigaDB (https://www.openligadb.de), ODbL 1.0; GER; football-data.org (PL; ENG); football-data.org (PD; ESP); football-data.org (SA; ITA); football-data.org (FL1; FRA); football-data.org (PPL; POR); football-data.org (DED; NED)",
   "ligas": {
     "GER": [
       {
@@ -226,15 +226,15 @@
     "ESP": [
       {
         "equipo": "FC Barcelona",
-        "pj": 13,
-        "g": 12,
+        "pj": 12,
+        "g": 11,
         "e": 0,
         "p": 1,
-        "gf": 51,
-        "gc": 15,
-        "puntos": 36,
+        "gf": 48,
+        "gc": 13,
+        "puntos": 33,
         "posicion": 1,
-        "ppp": 2.77
+        "ppp": 2.75
       },
       {
         "equipo": "Real Madrid CF",
@@ -274,15 +274,15 @@
       },
       {
         "equipo": "Real Sociedad de Fútbol",
-        "pj": 13,
+        "pj": 12,
         "g": 7,
         "e": 1,
-        "p": 5,
-        "gf": 23,
-        "gc": 23,
+        "p": 4,
+        "gf": 21,
+        "gc": 20,
         "puntos": 22,
         "posicion": 5,
-        "ppp": 1.69
+        "ppp": 1.83
       },
       {
         "equipo": "Sevilla FC",
@@ -297,18 +297,6 @@
         "ppp": 1.46
       },
       {
-        "equipo": "Real Racing Club de Santander",
-        "pj": 13,
-        "g": 5,
-        "e": 2,
-        "p": 6,
-        "gf": 20,
-        "gc": 32,
-        "puntos": 17,
-        "posicion": 7,
-        "ppp": 1.31
-      },
-      {
         "equipo": "Athletic Club",
         "pj": 12,
         "g": 4,
@@ -317,7 +305,7 @@
         "gf": 15,
         "gc": 12,
         "puntos": 16,
-        "posicion": 8,
+        "posicion": 7,
         "ppp": 1.33
       },
       {
@@ -329,20 +317,20 @@
         "gf": 18,
         "gc": 18,
         "puntos": 16,
-        "posicion": 9,
+        "posicion": 8,
         "ppp": 1.23
       },
       {
         "equipo": "Villarreal CF",
-        "pj": 13,
+        "pj": 12,
         "g": 4,
         "e": 3,
-        "p": 6,
-        "gf": 19,
-        "gc": 18,
+        "p": 5,
+        "gf": 17,
+        "gc": 15,
         "puntos": 15,
-        "posicion": 10,
-        "ppp": 1.15
+        "posicion": 9,
+        "ppp": 1.25
       },
       {
         "equipo": "RCD Espanyol de Barcelona",
@@ -353,7 +341,7 @@
         "gf": 14,
         "gc": 14,
         "puntos": 15,
-        "posicion": 11,
+        "posicion": 10,
         "ppp": 1.15
       },
       {
@@ -365,8 +353,20 @@
         "gf": 16,
         "gc": 17,
         "puntos": 15,
-        "posicion": 12,
+        "posicion": 11,
         "ppp": 1.15
+      },
+      {
+        "equipo": "Real Racing Club de Santander",
+        "pj": 12,
+        "g": 4,
+        "e": 2,
+        "p": 6,
+        "gf": 17,
+        "gc": 30,
+        "puntos": 14,
+        "posicion": 12,
+        "ppp": 1.17
       },
       {
         "equipo": "RC Celta de Vigo",
@@ -479,18 +479,6 @@
         "ppp": 2.36
       },
       {
-        "equipo": "Paris FC",
-        "pj": 11,
-        "g": 7,
-        "e": 2,
-        "p": 2,
-        "gf": 21,
-        "gc": 10,
-        "puntos": 23,
-        "posicion": 2,
-        "ppp": 2.09
-      },
-      {
         "equipo": "Lille OSC",
         "pj": 11,
         "g": 6,
@@ -499,8 +487,20 @@
         "gf": 14,
         "gc": 8,
         "puntos": 21,
-        "posicion": 3,
+        "posicion": 2,
         "ppp": 1.91
+      },
+      {
+        "equipo": "Paris FC",
+        "pj": 10,
+        "g": 6,
+        "e": 2,
+        "p": 2,
+        "gf": 17,
+        "gc": 10,
+        "puntos": 20,
+        "posicion": 3,
+        "ppp": 2.0
       },
       {
         "equipo": "Olympique Lyonnais",
@@ -660,15 +660,15 @@
       },
       {
         "equipo": "Angers SCO",
-        "pj": 11,
+        "pj": 10,
         "g": 2,
         "e": 2,
-        "p": 7,
+        "p": 6,
         "gf": 9,
-        "gc": 23,
+        "gc": 19,
         "puntos": 8,
         "posicion": 17,
-        "ppp": 0.73
+        "ppp": 0.8
       },
       {
         "equipo": "Le Havre AC",
@@ -1169,7 +1169,224 @@
       }
     ],
     "NOR": [],
-    "NED": [],
+    "NED": [
+      {
+        "equipo": "PSV",
+        "pj": 13,
+        "g": 9,
+        "e": 2,
+        "p": 2,
+        "gf": 44,
+        "gc": 16,
+        "puntos": 29,
+        "posicion": 1,
+        "ppp": 2.23
+      },
+      {
+        "equipo": "AFC Ajax",
+        "pj": 13,
+        "g": 8,
+        "e": 4,
+        "p": 1,
+        "gf": 35,
+        "gc": 15,
+        "puntos": 28,
+        "posicion": 2,
+        "ppp": 2.15
+      },
+      {
+        "equipo": "FC Twente '65",
+        "pj": 13,
+        "g": 8,
+        "e": 3,
+        "p": 2,
+        "gf": 32,
+        "gc": 13,
+        "puntos": 27,
+        "posicion": 3,
+        "ppp": 2.08
+      },
+      {
+        "equipo": "AZ",
+        "pj": 13,
+        "g": 8,
+        "e": 2,
+        "p": 3,
+        "gf": 29,
+        "gc": 17,
+        "puntos": 26,
+        "posicion": 4,
+        "ppp": 2.0
+      },
+      {
+        "equipo": "Feyenoord Rotterdam",
+        "pj": 13,
+        "g": 7,
+        "e": 4,
+        "p": 2,
+        "gf": 38,
+        "gc": 20,
+        "puntos": 25,
+        "posicion": 5,
+        "ppp": 1.92
+      },
+      {
+        "equipo": "SC Heerenveen",
+        "pj": 13,
+        "g": 7,
+        "e": 3,
+        "p": 3,
+        "gf": 27,
+        "gc": 17,
+        "puntos": 24,
+        "posicion": 6,
+        "ppp": 1.85
+      },
+      {
+        "equipo": "Fortuna Sittard",
+        "pj": 13,
+        "g": 6,
+        "e": 5,
+        "p": 2,
+        "gf": 21,
+        "gc": 20,
+        "puntos": 23,
+        "posicion": 7,
+        "ppp": 1.77
+      },
+      {
+        "equipo": "SC Cambuur-Leeuwarden",
+        "pj": 13,
+        "g": 5,
+        "e": 3,
+        "p": 5,
+        "gf": 28,
+        "gc": 29,
+        "puntos": 18,
+        "posicion": 8,
+        "ppp": 1.38
+      },
+      {
+        "equipo": "Go Ahead Eagles",
+        "pj": 13,
+        "g": 4,
+        "e": 5,
+        "p": 4,
+        "gf": 24,
+        "gc": 28,
+        "puntos": 17,
+        "posicion": 9,
+        "ppp": 1.31
+      },
+      {
+        "equipo": "FC Groningen",
+        "pj": 13,
+        "g": 4,
+        "e": 3,
+        "p": 6,
+        "gf": 30,
+        "gc": 31,
+        "puntos": 15,
+        "posicion": 10,
+        "ppp": 1.15
+      },
+      {
+        "equipo": "PEC Zwolle",
+        "pj": 13,
+        "g": 4,
+        "e": 3,
+        "p": 6,
+        "gf": 16,
+        "gc": 25,
+        "puntos": 15,
+        "posicion": 11,
+        "ppp": 1.15
+      },
+      {
+        "equipo": "NEC",
+        "pj": 13,
+        "g": 3,
+        "e": 5,
+        "p": 5,
+        "gf": 21,
+        "gc": 25,
+        "puntos": 14,
+        "posicion": 12,
+        "ppp": 1.08
+      },
+      {
+        "equipo": "SBV Excelsior",
+        "pj": 13,
+        "g": 4,
+        "e": 2,
+        "p": 7,
+        "gf": 19,
+        "gc": 31,
+        "puntos": 14,
+        "posicion": 13,
+        "ppp": 1.08
+      },
+      {
+        "equipo": "Sparta Rotterdam",
+        "pj": 13,
+        "g": 3,
+        "e": 3,
+        "p": 7,
+        "gf": 22,
+        "gc": 34,
+        "puntos": 12,
+        "posicion": 14,
+        "ppp": 0.92
+      },
+      {
+        "equipo": "FC Utrecht",
+        "pj": 13,
+        "g": 3,
+        "e": 3,
+        "p": 7,
+        "gf": 23,
+        "gc": 37,
+        "puntos": 12,
+        "posicion": 15,
+        "ppp": 0.92
+      },
+      {
+        "equipo": "Telstar 1963",
+        "pj": 13,
+        "g": 2,
+        "e": 4,
+        "p": 7,
+        "gf": 19,
+        "gc": 28,
+        "puntos": 10,
+        "posicion": 16,
+        "ppp": 0.77
+      },
+      {
+        "equipo": "ADO Den Haag",
+        "pj": 13,
+        "g": 2,
+        "e": 3,
+        "p": 8,
+        "gf": 16,
+        "gc": 28,
+        "puntos": 9,
+        "posicion": 17,
+        "ppp": 0.69
+      },
+      {
+        "equipo": "Willem II Tilburg",
+        "pj": 13,
+        "g": 0,
+        "e": 3,
+        "p": 10,
+        "gf": 12,
+        "gc": 42,
+        "puntos": 3,
+        "posicion": 18,
+        "ppp": 0.23
+      }
+    ],
     "POR": [
       {
         "equipo": "FC Porto",
@@ -1395,153 +1612,291 @@
   "equipos_top": [
     {
       "liga": "GER",
+      "equipo": "Bayern Munich",
+      "elo": null,
+      "equipo_proveedor": null
+    },
+    {
+      "liga": "GER",
       "equipo": "Borussia Dortmund",
-      "elo": 1560.7
-    },
-    {
-      "liga": "GER",
-      "equipo": "FC Bayern München",
-      "elo": 1553.2
-    },
-    {
-      "liga": "GER",
-      "equipo": "SC Freiburg",
-      "elo": 1544.5
+      "elo": 1560.7,
+      "equipo_proveedor": "Borussia Dortmund"
     },
     {
       "liga": "GER",
       "equipo": "RB Leipzig",
-      "elo": 1536.7
+      "elo": 1536.7,
+      "equipo_proveedor": "RB Leipzig"
     },
     {
       "liga": "GER",
-      "equipo": "Bayer 04 Leverkusen",
-      "elo": 1527.0
+      "equipo": "Bayer Leverkusen",
+      "elo": null,
+      "equipo_proveedor": null
+    },
+    {
+      "liga": "DEN",
+      "equipo": "Aarhus",
+      "elo": null,
+      "equipo_proveedor": null
+    },
+    {
+      "liga": "DEN",
+      "equipo": "Midtjylland",
+      "elo": null,
+      "equipo_proveedor": null
+    },
+    {
+      "liga": "DEN",
+      "equipo": "Copenhagen",
+      "elo": null,
+      "equipo_proveedor": null
+    },
+    {
+      "liga": "SCO",
+      "equipo": "Celtic",
+      "elo": null,
+      "equipo_proveedor": null
+    },
+    {
+      "liga": "SCO",
+      "equipo": "Hearts",
+      "elo": null,
+      "equipo_proveedor": null
+    },
+    {
+      "liga": "SCO",
+      "equipo": "Rangers",
+      "elo": null,
+      "equipo_proveedor": null
     },
     {
       "liga": "ESP",
-      "equipo": "FC Barcelona",
-      "elo": 1593.7
+      "equipo": "Barcelona",
+      "elo": null,
+      "equipo_proveedor": null
     },
     {
       "liga": "ESP",
-      "equipo": "Real Madrid CF",
-      "elo": 1580.1
+      "equipo": "Real Madrid",
+      "elo": null,
+      "equipo_proveedor": null
     },
     {
       "liga": "ESP",
-      "equipo": "Club Atlético de Madrid",
-      "elo": 1562.2
+      "equipo": "Real Betis",
+      "elo": null,
+      "equipo_proveedor": null
     },
     {
       "liga": "ESP",
-      "equipo": "Real Betis Balompié",
-      "elo": 1551.3
-    },
-    {
-      "liga": "ESP",
-      "equipo": "Real Sociedad de Fútbol",
-      "elo": 1517.0
+      "equipo": "Atlético de Madrid",
+      "elo": null,
+      "equipo_proveedor": null
     },
     {
       "liga": "FRA",
-      "equipo": "Paris Saint-Germain FC",
-      "elo": 1568.2
+      "equipo": "PSG",
+      "elo": null,
+      "equipo_proveedor": null
     },
     {
       "liga": "FRA",
-      "equipo": "Paris FC",
-      "elo": 1543.0
+      "equipo": "Lens",
+      "elo": null,
+      "equipo_proveedor": null
     },
     {
       "liga": "FRA",
-      "equipo": "Lille OSC",
-      "elo": 1531.8
+      "equipo": "Lille",
+      "elo": null,
+      "equipo_proveedor": null
     },
     {
       "liga": "FRA",
-      "equipo": "Olympique Lyonnais",
-      "elo": 1528.0
+      "equipo": "Lyon",
+      "elo": null,
+      "equipo_proveedor": null
     },
     {
-      "liga": "FRA",
-      "equipo": "Olympique de Marseille",
-      "elo": 1521.1
+      "liga": "GRE",
+      "equipo": "AEK",
+      "elo": null,
+      "equipo_proveedor": null
     },
     {
-      "liga": "ENG",
-      "equipo": "Arsenal FC",
-      "elo": 1571.5
+      "liga": "GRE",
+      "equipo": "Olympiakos",
+      "elo": null,
+      "equipo_proveedor": null
     },
     {
-      "liga": "ENG",
-      "equipo": "Brighton & Hove Albion FC",
-      "elo": 1538.0
-    },
-    {
-      "liga": "ENG",
-      "equipo": "Liverpool FC",
-      "elo": 1528.6
-    },
-    {
-      "liga": "ENG",
-      "equipo": "Manchester City FC",
-      "elo": 1526.6
+      "liga": "GRE",
+      "equipo": "PAOK",
+      "elo": null,
+      "equipo_proveedor": null
     },
     {
       "liga": "ENG",
-      "equipo": "AFC Bournemouth",
-      "elo": 1520.2
+      "equipo": "Arsenal",
+      "elo": null,
+      "equipo_proveedor": null
+    },
+    {
+      "liga": "ENG",
+      "equipo": "Manchester City",
+      "elo": null,
+      "equipo_proveedor": null
+    },
+    {
+      "liga": "ENG",
+      "equipo": "Manchester United",
+      "elo": null,
+      "equipo_proveedor": null
+    },
+    {
+      "liga": "ENG",
+      "equipo": "Liverpool",
+      "elo": null,
+      "equipo_proveedor": null
     },
     {
       "liga": "ITA",
-      "equipo": "SS Lazio",
-      "elo": 1582.9
+      "equipo": "Inter",
+      "elo": null,
+      "equipo_proveedor": null
     },
     {
       "liga": "ITA",
-      "equipo": "AS Roma",
-      "elo": 1575.7
+      "equipo": "Napoli",
+      "elo": null,
+      "equipo_proveedor": null
     },
     {
       "liga": "ITA",
-      "equipo": "FC Internazionale Milano",
-      "elo": 1567.1
+      "equipo": "Roma",
+      "elo": null,
+      "equipo_proveedor": null
     },
     {
       "liga": "ITA",
-      "equipo": "AC Milan",
-      "elo": 1554.4
+      "equipo": "Juventus",
+      "elo": null,
+      "equipo_proveedor": null
     },
     {
-      "liga": "ITA",
-      "equipo": "Como 1907",
-      "elo": 1553.9
+      "liga": "NOR",
+      "equipo": "Viking",
+      "elo": null,
+      "equipo_proveedor": null
+    },
+    {
+      "liga": "NOR",
+      "equipo": "Tromsø",
+      "elo": null,
+      "equipo_proveedor": null
+    },
+    {
+      "liga": "NOR",
+      "equipo": "Bodø/Glimt",
+      "elo": null,
+      "equipo_proveedor": null
+    },
+    {
+      "liga": "NED",
+      "equipo": "PSV",
+      "elo": 1560.8,
+      "equipo_proveedor": "PSV"
+    },
+    {
+      "liga": "NED",
+      "equipo": "Feyenoord",
+      "elo": null,
+      "equipo_proveedor": null
+    },
+    {
+      "liga": "NED",
+      "equipo": "Twente",
+      "elo": null,
+      "equipo_proveedor": null
+    },
+    {
+      "liga": "NED",
+      "equipo": "Ajax",
+      "elo": null,
+      "equipo_proveedor": null
     },
     {
       "liga": "POR",
-      "equipo": "FC Porto",
-      "elo": 1596.1
+      "equipo": "Porto",
+      "elo": null,
+      "equipo_proveedor": null
     },
     {
       "liga": "POR",
-      "equipo": "Sport Lisboa e Benfica",
-      "elo": 1572.6
+      "equipo": "Sporting",
+      "elo": null,
+      "equipo_proveedor": null
     },
     {
       "liga": "POR",
-      "equipo": "Sporting Clube de Portugal",
-      "elo": 1549.5
+      "equipo": "Benfica",
+      "elo": null,
+      "equipo_proveedor": null
     },
     {
       "liga": "POR",
-      "equipo": "CD Santa Clara",
-      "elo": 1530.4
+      "equipo": "Braga",
+      "elo": null,
+      "equipo_proveedor": null
     },
     {
-      "liga": "POR",
-      "equipo": "Académico de Viseu FC",
-      "elo": 1529.0
+      "liga": "SWE",
+      "equipo": "Sirius",
+      "elo": null,
+      "equipo_proveedor": null
+    },
+    {
+      "liga": "SWE",
+      "equipo": "Hammarby",
+      "elo": null,
+      "equipo_proveedor": null
+    },
+    {
+      "liga": "SUI",
+      "equipo": "Young Boys",
+      "elo": null,
+      "equipo_proveedor": null
+    },
+    {
+      "liga": "SUI",
+      "equipo": "St. Gallen",
+      "elo": null,
+      "equipo_proveedor": null
+    },
+    {
+      "liga": "SUI",
+      "equipo": "Basilea",
+      "elo": null,
+      "equipo_proveedor": null
+    },
+    {
+      "liga": "TUR",
+      "equipo": "Galatasaray",
+      "elo": null,
+      "equipo_proveedor": null
+    },
+    {
+      "liga": "TUR",
+      "equipo": "Fenerbahçe",
+      "elo": null,
+      "equipo_proveedor": null
+    },
+    {
+      "liga": "TUR",
+      "equipo": "Trabzonspor",
+      "elo": null,
+      "equipo_proveedor": null
     }
   ],
   "partidos": [
@@ -1550,6 +1905,24 @@
       "fecha": "2026-11-22",
       "local": "SV Werder Bremen",
       "visitante": "Hamburger SV"
+    },
+    {
+      "liga": "ESP",
+      "fecha": "2026-11-22T13:00:00Z",
+      "local": "FC Barcelona",
+      "visitante": "Villarreal CF"
+    },
+    {
+      "liga": "FRA",
+      "fecha": "2026-11-22T14:00:00Z",
+      "local": "Paris FC",
+      "visitante": "Angers SCO"
+    },
+    {
+      "liga": "ESP",
+      "fecha": "2026-11-22T15:15:00Z",
+      "local": "Real Racing Club de Santander",
+      "visitante": "Real Sociedad de Fútbol"
     },
     {
       "liga": "FRA",
@@ -1616,6 +1989,12 @@
       "fecha": "2026-11-27",
       "local": "SV Werder Bremen",
       "visitante": "Borussia Mönchengladbach"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2026-11-27T19:00:00Z",
+      "local": "FC Groningen",
+      "visitante": "Willem II Tilburg"
     },
     {
       "liga": "FRA",
@@ -1708,6 +2087,12 @@
       "visitante": "Athletic Club"
     },
     {
+      "liga": "NED",
+      "fecha": "2026-11-28T15:30:00Z",
+      "local": "SBV Excelsior",
+      "visitante": "Telstar 1963"
+    },
+    {
       "liga": "POR",
       "fecha": "2026-11-28T15:30:00Z",
       "local": "Moreirense FC",
@@ -1742,6 +2127,12 @@
       "fecha": "2026-11-28T17:30:00Z",
       "local": "Ipswich Town FC",
       "visitante": "Aston Villa FC"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2026-11-28T17:45:00Z",
+      "local": "PSV",
+      "visitante": "Go Ahead Eagles"
     },
     {
       "liga": "POR",
@@ -1786,6 +2177,12 @@
       "visitante": "Deportivo Alavés"
     },
     {
+      "liga": "NED",
+      "fecha": "2026-11-28T20:00:00Z",
+      "local": "SC Cambuur-Leeuwarden",
+      "visitante": "Sparta Rotterdam"
+    },
+    {
       "liga": "POR",
       "fecha": "2026-11-28T20:30:00Z",
       "local": "Vitória SC",
@@ -1810,6 +2207,12 @@
       "visitante": "Bayer 04 Leverkusen"
     },
     {
+      "liga": "NED",
+      "fecha": "2026-11-29T11:15:00Z",
+      "local": "ADO Den Haag",
+      "visitante": "FC Utrecht"
+    },
+    {
       "liga": "ITA",
       "fecha": "2026-11-29T11:30:00Z",
       "local": "Udinese Calcio",
@@ -1826,6 +2229,18 @@
       "fecha": "2026-11-29T13:00:00Z",
       "local": "Valencia CF",
       "visitante": "CA Osasuna"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2026-11-29T13:30:00Z",
+      "local": "Fortuna Sittard",
+      "visitante": "SC Heerenveen"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2026-11-29T13:30:00Z",
+      "local": "Feyenoord Rotterdam",
+      "visitante": "AFC Ajax"
     },
     {
       "liga": "FRA",
@@ -1870,6 +2285,12 @@
       "visitante": "FC Barcelona"
     },
     {
+      "liga": "NED",
+      "fecha": "2026-11-29T15:45:00Z",
+      "local": "PEC Zwolle",
+      "visitante": "AZ"
+    },
+    {
       "liga": "FRA",
       "fecha": "2026-11-29T16:15:00Z",
       "local": "Toulouse FC",
@@ -1898,6 +2319,12 @@
       "fecha": "2026-11-29T18:00:00Z",
       "local": "Gil Vicente FC",
       "visitante": "GD Estoril Praia"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2026-11-29T19:00:00Z",
+      "local": "NEC",
+      "visitante": "FC Twente '65"
     },
     {
       "liga": "FRA",
@@ -2032,6 +2459,12 @@
       "visitante": "SC Paderborn 07"
     },
     {
+      "liga": "NED",
+      "fecha": "2026-12-04T19:00:00Z",
+      "local": "Telstar 1963",
+      "visitante": "FC Groningen"
+    },
+    {
       "liga": "FRA",
       "fecha": "2026-12-04T19:45:00Z",
       "local": "Toulouse FC",
@@ -2140,6 +2573,12 @@
       "visitante": "Levante UD"
     },
     {
+      "liga": "NED",
+      "fecha": "2026-12-05T15:30:00Z",
+      "local": "Willem II Tilburg",
+      "visitante": "Feyenoord Rotterdam"
+    },
+    {
       "liga": "POR",
       "fecha": "2026-12-05T15:30:00Z",
       "local": "CD Nacional",
@@ -2170,10 +2609,22 @@
       "visitante": "Brighton & Hove Albion FC"
     },
     {
+      "liga": "NED",
+      "fecha": "2026-12-05T17:45:00Z",
+      "local": "Sparta Rotterdam",
+      "visitante": "NEC"
+    },
+    {
       "liga": "POR",
       "fecha": "2026-12-05T18:00:00Z",
       "local": "CD Santa Clara",
       "visitante": "FC Porto"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2026-12-05T19:00:00Z",
+      "local": "AZ",
+      "visitante": "PSV"
     },
     {
       "liga": "FRA",
@@ -2218,6 +2669,12 @@
       "visitante": "Manchester City FC"
     },
     {
+      "liga": "NED",
+      "fecha": "2026-12-05T20:00:00Z",
+      "local": "Fortuna Sittard",
+      "visitante": "PEC Zwolle"
+    },
+    {
       "liga": "POR",
       "fecha": "2026-12-05T20:30:00Z",
       "local": "Sporting Clube de Braga",
@@ -2236,6 +2693,12 @@
       "visitante": "VfB Stuttgart"
     },
     {
+      "liga": "NED",
+      "fecha": "2026-12-06T11:15:00Z",
+      "local": "SC Heerenveen",
+      "visitante": "SC Cambuur-Leeuwarden"
+    },
+    {
       "liga": "ITA",
       "fecha": "2026-12-06T11:30:00Z",
       "local": "Genoa CFC",
@@ -2246,6 +2709,18 @@
       "fecha": "2026-12-06T13:00:00Z",
       "local": "CA Osasuna",
       "visitante": "Elche CF"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2026-12-06T13:30:00Z",
+      "local": "AFC Ajax",
+      "visitante": "FC Utrecht"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2026-12-06T13:30:00Z",
+      "local": "Go Ahead Eagles",
+      "visitante": "FC Twente '65"
     },
     {
       "liga": "FRA",
@@ -2288,6 +2763,12 @@
       "fecha": "2026-12-06T15:30:00Z",
       "local": "Rio Ave FC",
       "visitante": "Casa Pia AC"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2026-12-06T15:45:00Z",
+      "local": "ADO Den Haag",
+      "visitante": "SBV Excelsior"
     },
     {
       "liga": "FRA",
@@ -2446,6 +2927,12 @@
       "visitante": "Brentford FC"
     },
     {
+      "liga": "NED",
+      "fecha": "2026-12-12T15:30:00Z",
+      "local": "FC Utrecht",
+      "visitante": "Fortuna Sittard"
+    },
+    {
       "liga": "POR",
       "fecha": "2026-12-12T15:30:00Z",
       "local": "GD Estoril Praia",
@@ -2468,6 +2955,12 @@
       "fecha": "2026-12-12T17:30:00Z",
       "local": "Manchester City FC",
       "visitante": "Chelsea FC"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2026-12-12T17:45:00Z",
+      "local": "SC Heerenveen",
+      "visitante": "Go Ahead Eagles"
     },
     {
       "liga": "POR",
@@ -2504,6 +2997,12 @@
       "fecha": "2026-12-12T19:45:00Z",
       "local": "Como 1907",
       "visitante": "Bologna FC 1909"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2026-12-12T20:00:00Z",
+      "local": "PEC Zwolle",
+      "visitante": "SBV Excelsior"
     },
     {
       "liga": "POR",
@@ -2590,10 +3089,28 @@
       "visitante": "Valencia CF"
     },
     {
+      "liga": "NED",
+      "fecha": "2026-12-13T11:15:00Z",
+      "local": "PSV",
+      "visitante": "Telstar 1963"
+    },
+    {
       "liga": "ITA",
       "fecha": "2026-12-13T11:30:00Z",
       "local": "SS Lazio",
       "visitante": "AS Roma"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2026-12-13T13:30:00Z",
+      "local": "FC Groningen",
+      "visitante": "Feyenoord Rotterdam"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2026-12-13T13:30:00Z",
+      "local": "Willem II Tilburg",
+      "visitante": "ADO Den Haag"
     },
     {
       "liga": "FRA",
@@ -2638,6 +3155,12 @@
       "visitante": "FC Famalicão"
     },
     {
+      "liga": "NED",
+      "fecha": "2026-12-13T15:45:00Z",
+      "local": "AZ",
+      "visitante": "NEC"
+    },
+    {
       "liga": "FRA",
       "fecha": "2026-12-13T16:15:00Z",
       "local": "Stade Rennais FC 1901",
@@ -2666,6 +3189,12 @@
       "fecha": "2026-12-13T19:00:00Z",
       "local": "Crystal Palace FC",
       "visitante": "Manchester United FC"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2026-12-13T19:00:00Z",
+      "local": "AFC Ajax",
+      "visitante": "SC Cambuur-Leeuwarden"
     },
     {
       "liga": "FRA",
@@ -2720,6 +3249,12 @@
       "fecha": "2026-12-18T17:30:00Z",
       "local": "Frosinone Calcio",
       "visitante": "SS Lazio"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2026-12-18T19:00:00Z",
+      "local": "Telstar 1963",
+      "visitante": "Willem II Tilburg"
     },
     {
       "liga": "ITA",
@@ -2788,6 +3323,12 @@
       "visitante": "Coventry City FC"
     },
     {
+      "liga": "NED",
+      "fecha": "2026-12-19T15:30:00Z",
+      "local": "SBV Excelsior",
+      "visitante": "AZ"
+    },
+    {
       "liga": "ITA",
       "fecha": "2026-12-19T17:00:00Z",
       "local": "AC Milan",
@@ -2800,10 +3341,22 @@
       "visitante": "Tottenham Hotspur FC"
     },
     {
+      "liga": "NED",
+      "fecha": "2026-12-19T17:45:00Z",
+      "local": "Fortuna Sittard",
+      "visitante": "Sparta Rotterdam"
+    },
+    {
       "liga": "ITA",
       "fecha": "2026-12-19T19:45:00Z",
       "local": "AS Roma",
       "visitante": "Juventus FC"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2026-12-19T20:00:00Z",
+      "local": "FC Utrecht",
+      "visitante": "SC Heerenveen"
     },
     {
       "liga": "GER",
@@ -2938,10 +3491,28 @@
       "visitante": "Casa Pia AC"
     },
     {
+      "liga": "NED",
+      "fecha": "2026-12-20T11:15:00Z",
+      "local": "NEC",
+      "visitante": "ADO Den Haag"
+    },
+    {
       "liga": "ITA",
       "fecha": "2026-12-20T11:30:00Z",
       "local": "ACF Fiorentina",
       "visitante": "Bologna FC 1909"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2026-12-20T13:30:00Z",
+      "local": "SC Cambuur-Leeuwarden",
+      "visitante": "FC Groningen"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2026-12-20T13:30:00Z",
+      "local": "Feyenoord Rotterdam",
+      "visitante": "FC Twente '65"
     },
     {
       "liga": "ENG",
@@ -2974,6 +3545,12 @@
       "visitante": "AC Monza"
     },
     {
+      "liga": "NED",
+      "fecha": "2026-12-20T15:45:00Z",
+      "local": "Go Ahead Eagles",
+      "visitante": "AFC Ajax"
+    },
+    {
       "liga": "ENG",
       "fecha": "2026-12-20T16:30:00Z",
       "local": "Arsenal FC",
@@ -2984,6 +3561,12 @@
       "fecha": "2026-12-20T17:00:00Z",
       "local": "Genoa CFC",
       "visitante": "Udinese Calcio"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2026-12-20T19:00:00Z",
+      "local": "PSV",
+      "visitante": "PEC Zwolle"
     },
     {
       "liga": "ITA",
@@ -3538,6 +4121,12 @@
       "visitante": "1. FSV Mainz 05"
     },
     {
+      "liga": "NED",
+      "fecha": "2027-01-08T19:00:00Z",
+      "local": "FC Twente '65",
+      "visitante": "Fortuna Sittard"
+    },
+    {
       "liga": "GER",
       "fecha": "2027-01-09",
       "local": "VfB Stuttgart",
@@ -3580,16 +4169,40 @@
       "visitante": "Frosinone Calcio"
     },
     {
+      "liga": "NED",
+      "fecha": "2027-01-09T15:30:00Z",
+      "local": "Sparta Rotterdam",
+      "visitante": "SBV Excelsior"
+    },
+    {
       "liga": "ITA",
       "fecha": "2027-01-09T17:00:00Z",
       "local": "AS Roma",
       "visitante": "AC Milan"
     },
     {
+      "liga": "NED",
+      "fecha": "2027-01-09T17:45:00Z",
+      "local": "PEC Zwolle",
+      "visitante": "FC Utrecht"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-01-09T19:00:00Z",
+      "local": "Willem II Tilburg",
+      "visitante": "AFC Ajax"
+    },
+    {
       "liga": "ITA",
       "fecha": "2027-01-09T19:45:00Z",
       "local": "Bologna FC 1909",
       "visitante": "Genoa CFC"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-01-09T20:00:00Z",
+      "local": "AZ",
+      "visitante": "SC Heerenveen"
     },
     {
       "liga": "GER",
@@ -3718,10 +4331,28 @@
       "visitante": "CD Santa Clara"
     },
     {
+      "liga": "NED",
+      "fecha": "2027-01-10T11:15:00Z",
+      "local": "NEC",
+      "visitante": "SC Cambuur-Leeuwarden"
+    },
+    {
       "liga": "ITA",
       "fecha": "2027-01-10T11:30:00Z",
       "local": "Como 1907",
       "visitante": "SS Lazio"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-01-10T13:30:00Z",
+      "local": "Feyenoord Rotterdam",
+      "visitante": "PSV"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-01-10T13:30:00Z",
+      "local": "ADO Den Haag",
+      "visitante": "Telstar 1963"
     },
     {
       "liga": "ITA",
@@ -3734,6 +4365,12 @@
       "fecha": "2027-01-10T14:00:00Z",
       "local": "Parma Calcio 1913",
       "visitante": "Venezia FC"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-01-10T15:45:00Z",
+      "local": "FC Groningen",
+      "visitante": "Go Ahead Eagles"
     },
     {
       "liga": "ITA",
@@ -3820,6 +4457,12 @@
       "visitante": "1. FSV Mainz 05"
     },
     {
+      "liga": "NED",
+      "fecha": "2027-01-15T19:00:00Z",
+      "local": "SC Heerenveen",
+      "visitante": "Sparta Rotterdam"
+    },
+    {
       "liga": "FRA",
       "fecha": "2027-01-15T19:45:00Z",
       "local": "Olympique de Marseille",
@@ -3898,6 +4541,12 @@
       "visitante": "Fulham FC"
     },
     {
+      "liga": "NED",
+      "fecha": "2027-01-16T15:30:00Z",
+      "local": "Telstar 1963",
+      "visitante": "NEC"
+    },
+    {
       "liga": "FRA",
       "fecha": "2027-01-16T16:15:00Z",
       "local": "Angers SCO",
@@ -3908,6 +4557,18 @@
       "fecha": "2027-01-16T17:30:00Z",
       "local": "Aston Villa FC",
       "visitante": "Manchester United FC"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-01-16T17:45:00Z",
+      "local": "SBV Excelsior",
+      "visitante": "Feyenoord Rotterdam"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-01-16T19:00:00Z",
+      "local": "ADO Den Haag",
+      "visitante": "PEC Zwolle"
     },
     {
       "liga": "FRA",
@@ -3932,6 +4593,12 @@
       "fecha": "2027-01-16T19:45:00Z",
       "local": "RC Strasbourg Alsace",
       "visitante": "Le Mans FC"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-01-16T20:00:00Z",
+      "local": "Fortuna Sittard",
+      "visitante": "PSV"
     },
     {
       "liga": "GER",
@@ -4120,6 +4787,24 @@
       "visitante": "Vitória SC"
     },
     {
+      "liga": "NED",
+      "fecha": "2027-01-17T11:15:00Z",
+      "local": "FC Utrecht",
+      "visitante": "FC Twente '65"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-01-17T13:30:00Z",
+      "local": "Go Ahead Eagles",
+      "visitante": "AZ"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-01-17T13:30:00Z",
+      "local": "AFC Ajax",
+      "visitante": "FC Groningen"
+    },
+    {
       "liga": "FRA",
       "fecha": "2027-01-17T14:00:00Z",
       "local": "Paris FC",
@@ -4130,6 +4815,12 @@
       "fecha": "2027-01-17T14:00:00Z",
       "local": "AFC Bournemouth",
       "visitante": "Ipswich Town FC"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-01-17T15:45:00Z",
+      "local": "SC Cambuur-Leeuwarden",
+      "visitante": "Willem II Tilburg"
     },
     {
       "liga": "FRA",
@@ -4160,6 +4851,12 @@
       "fecha": "2027-01-22",
       "local": "SV Werder Bremen",
       "visitante": "SC Freiburg"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-01-22T19:00:00Z",
+      "local": "SBV Excelsior",
+      "visitante": "Fortuna Sittard"
     },
     {
       "liga": "FRA",
@@ -4210,6 +4907,12 @@
       "visitante": "Aston Villa FC"
     },
     {
+      "liga": "NED",
+      "fecha": "2027-01-23T15:30:00Z",
+      "local": "AFC Ajax",
+      "visitante": "Telstar 1963"
+    },
+    {
       "liga": "FRA",
       "fecha": "2027-01-23T16:15:00Z",
       "local": "Lille OSC",
@@ -4220,6 +4923,18 @@
       "fecha": "2027-01-23T17:30:00Z",
       "local": "Arsenal FC",
       "visitante": "Newcastle United FC"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-01-23T17:45:00Z",
+      "local": "Feyenoord Rotterdam",
+      "visitante": "PEC Zwolle"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-01-23T19:00:00Z",
+      "local": "FC Twente '65",
+      "visitante": "SC Heerenveen"
     },
     {
       "liga": "FRA",
@@ -4250,6 +4965,12 @@
       "fecha": "2027-01-23T20:00:00Z",
       "local": "Brighton & Hove Albion FC",
       "visitante": "Manchester City FC"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-01-23T20:00:00Z",
+      "local": "PSV",
+      "visitante": "ADO Den Haag"
     },
     {
       "liga": "GER",
@@ -4444,6 +5165,24 @@
       "visitante": "Sporting Clube de Portugal"
     },
     {
+      "liga": "NED",
+      "fecha": "2027-01-24T11:15:00Z",
+      "local": "Go Ahead Eagles",
+      "visitante": "SC Cambuur-Leeuwarden"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-01-24T13:30:00Z",
+      "local": "NEC",
+      "visitante": "Willem II Tilburg"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-01-24T13:30:00Z",
+      "local": "Sparta Rotterdam",
+      "visitante": "FC Groningen"
+    },
+    {
       "liga": "FRA",
       "fecha": "2027-01-24T14:00:00Z",
       "local": "Le Havre AC",
@@ -4474,6 +5213,12 @@
       "visitante": "Tottenham Hotspur FC"
     },
     {
+      "liga": "NED",
+      "fecha": "2027-01-24T15:45:00Z",
+      "local": "AZ",
+      "visitante": "FC Utrecht"
+    },
+    {
       "liga": "FRA",
       "fecha": "2027-01-24T16:15:00Z",
       "local": "FC Lorient",
@@ -4496,6 +5241,12 @@
       "fecha": "2027-01-25T20:00:00Z",
       "local": "Leeds United FC",
       "visitante": "Chelsea FC"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-01-29T19:00:00Z",
+      "local": "FC Utrecht",
+      "visitante": "SBV Excelsior"
     },
     {
       "liga": "FRA",
@@ -4576,6 +5327,12 @@
       "visitante": "Ipswich Town FC"
     },
     {
+      "liga": "NED",
+      "fecha": "2027-01-30T15:30:00Z",
+      "local": "Sparta Rotterdam",
+      "visitante": "Telstar 1963"
+    },
+    {
       "liga": "FRA",
       "fecha": "2027-01-30T16:15:00Z",
       "local": "AS Monaco FC",
@@ -4586,6 +5343,18 @@
       "fecha": "2027-01-30T17:30:00Z",
       "local": "Chelsea FC",
       "visitante": "Nottingham Forest FC"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-01-30T17:45:00Z",
+      "local": "ADO Den Haag",
+      "visitante": "Go Ahead Eagles"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-01-30T19:00:00Z",
+      "local": "Willem II Tilburg",
+      "visitante": "PSV"
     },
     {
       "liga": "FRA",
@@ -4610,6 +5379,12 @@
       "fecha": "2027-01-30T19:45:00Z",
       "local": "Toulouse FC",
       "visitante": "Racing Club de Lens"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-01-30T20:00:00Z",
+      "local": "PEC Zwolle",
+      "visitante": "Fortuna Sittard"
     },
     {
       "liga": "ESP",
@@ -4786,6 +5561,24 @@
       "visitante": "Sporting Clube de Portugal"
     },
     {
+      "liga": "NED",
+      "fecha": "2027-01-31T11:15:00Z",
+      "local": "SC Heerenveen",
+      "visitante": "AFC Ajax"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-01-31T13:30:00Z",
+      "local": "FC Twente '65",
+      "visitante": "SC Cambuur-Leeuwarden"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-01-31T13:30:00Z",
+      "local": "AZ",
+      "visitante": "Feyenoord Rotterdam"
+    },
+    {
       "liga": "FRA",
       "fecha": "2027-01-31T14:00:00Z",
       "local": "Stade Rennais FC 1901",
@@ -4814,6 +5607,12 @@
       "fecha": "2027-01-31T14:00:00Z",
       "local": "AFC Bournemouth",
       "visitante": "Fulham FC"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-01-31T15:45:00Z",
+      "local": "FC Groningen",
+      "visitante": "NEC"
     },
     {
       "liga": "FRA",
@@ -4940,6 +5739,12 @@
       "fecha": "2027-02-06T00:00:00Z",
       "local": "AJ Auxerre",
       "visitante": "AS Monaco FC"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-02-06T00:00:00Z",
+      "local": "FC Twente '65",
+      "visitante": "Sparta Rotterdam"
     },
     {
       "liga": "ENG",
@@ -5338,6 +6143,60 @@
       "visitante": "Racing Club de Lens"
     },
     {
+      "liga": "NED",
+      "fecha": "2027-02-13T00:00:00Z",
+      "local": "Telstar 1963",
+      "visitante": "SC Heerenveen"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-02-13T00:00:00Z",
+      "local": "Fortuna Sittard",
+      "visitante": "ADO Den Haag"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-02-13T00:00:00Z",
+      "local": "Feyenoord Rotterdam",
+      "visitante": "NEC"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-02-13T00:00:00Z",
+      "local": "SC Cambuur-Leeuwarden",
+      "visitante": "FC Utrecht"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-02-13T00:00:00Z",
+      "local": "PSV",
+      "visitante": "FC Twente '65"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-02-13T00:00:00Z",
+      "local": "FC Groningen",
+      "visitante": "AZ"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-02-13T00:00:00Z",
+      "local": "Go Ahead Eagles",
+      "visitante": "PEC Zwolle"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-02-13T00:00:00Z",
+      "local": "SBV Excelsior",
+      "visitante": "AFC Ajax"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-02-13T00:00:00Z",
+      "local": "Willem II Tilburg",
+      "visitante": "Sparta Rotterdam"
+    },
+    {
       "liga": "ESP",
       "fecha": "2027-02-14T00:00:00Z",
       "local": "Sevilla FC",
@@ -5618,6 +6477,60 @@
       "fecha": "2027-02-20T00:00:00Z",
       "local": "Racing Club de Lens",
       "visitante": "ES Troyes AC"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-02-20T00:00:00Z",
+      "local": "NEC",
+      "visitante": "Sparta Rotterdam"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-02-20T00:00:00Z",
+      "local": "Feyenoord Rotterdam",
+      "visitante": "Telstar 1963"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-02-20T00:00:00Z",
+      "local": "FC Utrecht",
+      "visitante": "ADO Den Haag"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-02-20T00:00:00Z",
+      "local": "AZ",
+      "visitante": "Fortuna Sittard"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-02-20T00:00:00Z",
+      "local": "SC Heerenveen",
+      "visitante": "Willem II Tilburg"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-02-20T00:00:00Z",
+      "local": "PEC Zwolle",
+      "visitante": "FC Groningen"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-02-20T00:00:00Z",
+      "local": "AFC Ajax",
+      "visitante": "Go Ahead Eagles"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-02-20T00:00:00Z",
+      "local": "PSV",
+      "visitante": "SC Cambuur-Leeuwarden"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-02-20T00:00:00Z",
+      "local": "FC Twente '65",
+      "visitante": "SBV Excelsior"
     },
     {
       "liga": "ENG",
@@ -5954,6 +6867,60 @@
       "fecha": "2027-02-27T00:00:00Z",
       "local": "Le Mans FC",
       "visitante": "Paris FC"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-02-27T00:00:00Z",
+      "local": "Sparta Rotterdam",
+      "visitante": "PSV"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-02-27T00:00:00Z",
+      "local": "NEC",
+      "visitante": "AZ"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-02-27T00:00:00Z",
+      "local": "SC Cambuur-Leeuwarden",
+      "visitante": "PEC Zwolle"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-02-27T00:00:00Z",
+      "local": "SBV Excelsior",
+      "visitante": "SC Heerenveen"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-02-27T00:00:00Z",
+      "local": "ADO Den Haag",
+      "visitante": "FC Twente '65"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-02-27T00:00:00Z",
+      "local": "AFC Ajax",
+      "visitante": "Feyenoord Rotterdam"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-02-27T00:00:00Z",
+      "local": "Willem II Tilburg",
+      "visitante": "FC Groningen"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-02-27T00:00:00Z",
+      "local": "Fortuna Sittard",
+      "visitante": "FC Utrecht"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-02-27T00:00:00Z",
+      "local": "Telstar 1963",
+      "visitante": "Go Ahead Eagles"
     },
     {
       "liga": "ENG",
@@ -6418,6 +7385,60 @@
       "visitante": "Olympique de Marseille"
     },
     {
+      "liga": "NED",
+      "fecha": "2027-03-06T00:00:00Z",
+      "local": "FC Twente '65",
+      "visitante": "AZ"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-03-06T00:00:00Z",
+      "local": "Feyenoord Rotterdam",
+      "visitante": "SC Heerenveen"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-03-06T00:00:00Z",
+      "local": "Go Ahead Eagles",
+      "visitante": "SBV Excelsior"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-03-06T00:00:00Z",
+      "local": "PSV",
+      "visitante": "FC Utrecht"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-03-06T00:00:00Z",
+      "local": "ADO Den Haag",
+      "visitante": "AFC Ajax"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-03-06T00:00:00Z",
+      "local": "FC Groningen",
+      "visitante": "Telstar 1963"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-03-06T00:00:00Z",
+      "local": "PEC Zwolle",
+      "visitante": "Willem II Tilburg"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-03-06T00:00:00Z",
+      "local": "Fortuna Sittard",
+      "visitante": "NEC"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-03-06T00:00:00Z",
+      "local": "Sparta Rotterdam",
+      "visitante": "SC Cambuur-Leeuwarden"
+    },
+    {
       "liga": "ESP",
       "fecha": "2027-03-07T00:00:00Z",
       "local": "FC Barcelona",
@@ -6698,6 +7719,60 @@
       "fecha": "2027-03-13T00:00:00Z",
       "local": "Olympique Lyonnais",
       "visitante": "ES Troyes AC"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-03-13T00:00:00Z",
+      "local": "AFC Ajax",
+      "visitante": "PEC Zwolle"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-03-13T00:00:00Z",
+      "local": "SC Cambuur-Leeuwarden",
+      "visitante": "ADO Den Haag"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-03-13T00:00:00Z",
+      "local": "SBV Excelsior",
+      "visitante": "NEC"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-03-13T00:00:00Z",
+      "local": "Go Ahead Eagles",
+      "visitante": "Feyenoord Rotterdam"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-03-13T00:00:00Z",
+      "local": "Telstar 1963",
+      "visitante": "PSV"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-03-13T00:00:00Z",
+      "local": "AZ",
+      "visitante": "Sparta Rotterdam"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-03-13T00:00:00Z",
+      "local": "Willem II Tilburg",
+      "visitante": "FC Twente '65"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-03-13T00:00:00Z",
+      "local": "FC Utrecht",
+      "visitante": "FC Groningen"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-03-13T00:00:00Z",
+      "local": "SC Heerenveen",
+      "visitante": "Fortuna Sittard"
     },
     {
       "liga": "ENG",
@@ -7034,6 +8109,60 @@
       "fecha": "2027-03-20T00:00:00Z",
       "local": "FC Lorient",
       "visitante": "OGC Nice"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-03-20T00:00:00Z",
+      "local": "FC Utrecht",
+      "visitante": "Sparta Rotterdam"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-03-20T00:00:00Z",
+      "local": "Feyenoord Rotterdam",
+      "visitante": "SC Cambuur-Leeuwarden"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-03-20T00:00:00Z",
+      "local": "AZ",
+      "visitante": "SBV Excelsior"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-03-20T00:00:00Z",
+      "local": "PEC Zwolle",
+      "visitante": "SC Heerenveen"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-03-20T00:00:00Z",
+      "local": "Telstar 1963",
+      "visitante": "Fortuna Sittard"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-03-20T00:00:00Z",
+      "local": "NEC",
+      "visitante": "AFC Ajax"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-03-20T00:00:00Z",
+      "local": "FC Groningen",
+      "visitante": "PSV"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-03-20T00:00:00Z",
+      "local": "ADO Den Haag",
+      "visitante": "Willem II Tilburg"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-03-20T00:00:00Z",
+      "local": "FC Twente '65",
+      "visitante": "Go Ahead Eagles"
     },
     {
       "liga": "ENG",
@@ -7384,6 +8513,60 @@
       "visitante": "Olympique Lyonnais"
     },
     {
+      "liga": "NED",
+      "fecha": "2027-04-03T00:00:00Z",
+      "local": "PSV",
+      "visitante": "AZ"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-04-03T00:00:00Z",
+      "local": "Fortuna Sittard",
+      "visitante": "Feyenoord Rotterdam"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-04-03T00:00:00Z",
+      "local": "SC Heerenveen",
+      "visitante": "FC Groningen"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-04-03T00:00:00Z",
+      "local": "AFC Ajax",
+      "visitante": "FC Twente '65"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-04-03T00:00:00Z",
+      "local": "SC Cambuur-Leeuwarden",
+      "visitante": "Telstar 1963"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-04-03T00:00:00Z",
+      "local": "SBV Excelsior",
+      "visitante": "PEC Zwolle"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-04-03T00:00:00Z",
+      "local": "Sparta Rotterdam",
+      "visitante": "ADO Den Haag"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-04-03T00:00:00Z",
+      "local": "Go Ahead Eagles",
+      "visitante": "NEC"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-04-03T00:00:00Z",
+      "local": "Willem II Tilburg",
+      "visitante": "FC Utrecht"
+    },
+    {
       "liga": "ESP",
       "fecha": "2027-04-04T00:00:00Z",
       "local": "Levante UD",
@@ -7664,6 +8847,60 @@
       "fecha": "2027-04-10T00:00:00Z",
       "local": "OGC Nice",
       "visitante": "Paris FC"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-04-10T00:00:00Z",
+      "local": "ADO Den Haag",
+      "visitante": "Feyenoord Rotterdam"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-04-10T00:00:00Z",
+      "local": "SC Cambuur-Leeuwarden",
+      "visitante": "Fortuna Sittard"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-04-10T00:00:00Z",
+      "local": "NEC",
+      "visitante": "SC Heerenveen"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-04-10T00:00:00Z",
+      "local": "FC Groningen",
+      "visitante": "SBV Excelsior"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-04-10T00:00:00Z",
+      "local": "Willem II Tilburg",
+      "visitante": "AZ"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-04-10T00:00:00Z",
+      "local": "FC Utrecht",
+      "visitante": "AFC Ajax"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-04-10T00:00:00Z",
+      "local": "Telstar 1963",
+      "visitante": "FC Twente '65"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-04-10T00:00:00Z",
+      "local": "PEC Zwolle",
+      "visitante": "PSV"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-04-10T00:00:00Z",
+      "local": "Sparta Rotterdam",
+      "visitante": "Go Ahead Eagles"
     },
     {
       "liga": "ENG",
@@ -8410,6 +9647,60 @@
       "visitante": "Stade Rennais FC 1901"
     },
     {
+      "liga": "NED",
+      "fecha": "2027-04-24T00:00:00Z",
+      "local": "FC Twente '65",
+      "visitante": "NEC"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-04-24T00:00:00Z",
+      "local": "SC Heerenveen",
+      "visitante": "ADO Den Haag"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-04-24T00:00:00Z",
+      "local": "SBV Excelsior",
+      "visitante": "Willem II Tilburg"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-04-24T00:00:00Z",
+      "local": "Go Ahead Eagles",
+      "visitante": "FC Utrecht"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-04-24T00:00:00Z",
+      "local": "AZ",
+      "visitante": "SC Cambuur-Leeuwarden"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-04-24T00:00:00Z",
+      "local": "PEC Zwolle",
+      "visitante": "Telstar 1963"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-04-24T00:00:00Z",
+      "local": "Fortuna Sittard",
+      "visitante": "FC Groningen"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-04-24T00:00:00Z",
+      "local": "Feyenoord Rotterdam",
+      "visitante": "Sparta Rotterdam"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-04-24T00:00:00Z",
+      "local": "PSV",
+      "visitante": "AFC Ajax"
+    },
+    {
       "liga": "ENG",
       "fecha": "2027-04-24T14:00:00Z",
       "local": "Chelsea FC",
@@ -8636,6 +9927,60 @@
       "fecha": "2027-05-01T00:00:00Z",
       "local": "Toulouse FC",
       "visitante": "Olympique de Marseille"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-05-01T00:00:00Z",
+      "local": "Go Ahead Eagles",
+      "visitante": "PSV"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-05-01T00:00:00Z",
+      "local": "SC Heerenveen",
+      "visitante": "FC Utrecht"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-05-01T00:00:00Z",
+      "local": "Sparta Rotterdam",
+      "visitante": "FC Twente '65"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-05-01T00:00:00Z",
+      "local": "FC Groningen",
+      "visitante": "ADO Den Haag"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-05-01T00:00:00Z",
+      "local": "NEC",
+      "visitante": "PEC Zwolle"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-05-01T00:00:00Z",
+      "local": "AFC Ajax",
+      "visitante": "Fortuna Sittard"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-05-01T00:00:00Z",
+      "local": "SBV Excelsior",
+      "visitante": "SC Cambuur-Leeuwarden"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-05-01T00:00:00Z",
+      "local": "Telstar 1963",
+      "visitante": "AZ"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-05-01T00:00:00Z",
+      "local": "Feyenoord Rotterdam",
+      "visitante": "Willem II Tilburg"
     },
     {
       "liga": "ENG",
@@ -8972,6 +10317,60 @@
       "fecha": "2027-05-08T00:00:00Z",
       "local": "OGC Nice",
       "visitante": "Olympique de Marseille"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-05-08T00:00:00Z",
+      "local": "PSV",
+      "visitante": "SBV Excelsior"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-05-08T00:00:00Z",
+      "local": "FC Utrecht",
+      "visitante": "Feyenoord Rotterdam"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-05-08T00:00:00Z",
+      "local": "FC Twente '65",
+      "visitante": "FC Groningen"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-05-08T00:00:00Z",
+      "local": "PEC Zwolle",
+      "visitante": "Sparta Rotterdam"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-05-08T00:00:00Z",
+      "local": "Fortuna Sittard",
+      "visitante": "Go Ahead Eagles"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-05-08T00:00:00Z",
+      "local": "SC Cambuur-Leeuwarden",
+      "visitante": "SC Heerenveen"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-05-08T00:00:00Z",
+      "local": "AZ",
+      "visitante": "AFC Ajax"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-05-08T00:00:00Z",
+      "local": "ADO Den Haag",
+      "visitante": "NEC"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-05-08T00:00:00Z",
+      "local": "Willem II Tilburg",
+      "visitante": "Telstar 1963"
     },
     {
       "liga": "ENG",
@@ -9556,6 +10955,60 @@
       "visitante": "Rio Ave FC"
     },
     {
+      "liga": "NED",
+      "fecha": "2027-05-16T12:30:00Z",
+      "local": "AZ",
+      "visitante": "PEC Zwolle"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-05-16T12:30:00Z",
+      "local": "Go Ahead Eagles",
+      "visitante": "SC Heerenveen"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-05-16T12:30:00Z",
+      "local": "FC Twente '65",
+      "visitante": "Feyenoord Rotterdam"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-05-16T12:30:00Z",
+      "local": "AFC Ajax",
+      "visitante": "Sparta Rotterdam"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-05-16T12:30:00Z",
+      "local": "SBV Excelsior",
+      "visitante": "ADO Den Haag"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-05-16T12:30:00Z",
+      "local": "PSV",
+      "visitante": "NEC"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-05-16T12:30:00Z",
+      "local": "Fortuna Sittard",
+      "visitante": "Willem II Tilburg"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-05-16T12:30:00Z",
+      "local": "FC Utrecht",
+      "visitante": "Telstar 1963"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-05-16T12:30:00Z",
+      "local": "FC Groningen",
+      "visitante": "SC Cambuur-Leeuwarden"
+    },
+    {
       "liga": "GER",
       "fecha": "2027-05-22",
       "local": "FC Bayern München",
@@ -9782,6 +11235,60 @@
       "fecha": "2027-05-23T00:00:00Z",
       "local": "Genoa CFC",
       "visitante": "Bologna FC 1909"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-05-23T12:30:00Z",
+      "local": "NEC",
+      "visitante": "FC Utrecht"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-05-23T12:30:00Z",
+      "local": "SC Heerenveen",
+      "visitante": "PSV"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-05-23T12:30:00Z",
+      "local": "Sparta Rotterdam",
+      "visitante": "Fortuna Sittard"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-05-23T12:30:00Z",
+      "local": "SC Cambuur-Leeuwarden",
+      "visitante": "AFC Ajax"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-05-23T12:30:00Z",
+      "local": "PEC Zwolle",
+      "visitante": "FC Twente '65"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-05-23T12:30:00Z",
+      "local": "Feyenoord Rotterdam",
+      "visitante": "FC Groningen"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-05-23T12:30:00Z",
+      "local": "ADO Den Haag",
+      "visitante": "AZ"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-05-23T12:30:00Z",
+      "local": "Telstar 1963",
+      "visitante": "SBV Excelsior"
+    },
+    {
+      "liga": "NED",
+      "fecha": "2027-05-23T12:30:00Z",
+      "local": "Willem II Tilburg",
+      "visitante": "Go Ahead Eagles"
     },
     {
       "liga": "ENG",
@@ -10614,15 +12121,15 @@
       },
       "Real Racing Club de Santander": {
         "local": {
-          "pj": 7,
-          "g": 4,
+          "pj": 6,
+          "g": 3,
           "e": 2,
           "p": 1,
-          "gf": 14,
-          "gc": 13,
-          "puntos": 14,
-          "ppp": 2.0,
-          "victorias_pct": 57.14
+          "gf": 11,
+          "gc": 11,
+          "puntos": 11,
+          "ppp": 1.83,
+          "victorias_pct": 50.0
         },
         "visitante": {
           "pj": 6,
@@ -10638,15 +12145,15 @@
       },
       "Villarreal CF": {
         "visitante": {
-          "pj": 7,
+          "pj": 6,
           "g": 2,
           "e": 2,
-          "p": 3,
-          "gf": 11,
-          "gc": 11,
+          "p": 2,
+          "gf": 9,
+          "gc": 8,
           "puntos": 8,
-          "ppp": 1.14,
-          "victorias_pct": 28.57
+          "ppp": 1.33,
+          "victorias_pct": 33.33
         },
         "local": {
           "pj": 6,
@@ -10830,15 +12337,15 @@
       },
       "Real Sociedad de Fútbol": {
         "visitante": {
-          "pj": 7,
+          "pj": 6,
           "g": 3,
           "e": 0,
-          "p": 4,
-          "gf": 15,
-          "gc": 16,
+          "p": 3,
+          "gf": 13,
+          "gc": 13,
           "puntos": 9,
-          "ppp": 1.29,
-          "victorias_pct": 42.86
+          "ppp": 1.5,
+          "victorias_pct": 50.0
         },
         "local": {
           "pj": 6,
@@ -10961,15 +12468,15 @@
           "victorias_pct": 100.0
         },
         "local": {
-          "pj": 7,
-          "g": 6,
+          "pj": 6,
+          "g": 5,
           "e": 0,
           "p": 1,
-          "gf": 27,
-          "gc": 9,
-          "puntos": 18,
-          "ppp": 2.57,
-          "victorias_pct": 85.71
+          "gf": 24,
+          "gc": 7,
+          "puntos": 15,
+          "ppp": 2.5,
+          "victorias_pct": 83.33
         }
       },
       "CA Osasuna": {
@@ -11179,15 +12686,15 @@
           "victorias_pct": 40.0
         },
         "local": {
-          "pj": 6,
-          "g": 5,
+          "pj": 5,
+          "g": 4,
           "e": 1,
           "p": 0,
-          "gf": 16,
+          "gf": 12,
           "gc": 5,
-          "puntos": 16,
-          "ppp": 2.67,
-          "victorias_pct": 83.33
+          "puntos": 13,
+          "ppp": 2.6,
+          "victorias_pct": 80.0
         }
       },
       "OGC Nice": {
@@ -11299,15 +12806,15 @@
           "victorias_pct": 16.67
         },
         "visitante": {
-          "pj": 5,
+          "pj": 4,
           "g": 1,
           "e": 1,
-          "p": 3,
+          "p": 2,
           "gf": 4,
-          "gc": 12,
+          "gc": 8,
           "puntos": 4,
-          "ppp": 0.8,
-          "victorias_pct": 20.0
+          "ppp": 1.0,
+          "victorias_pct": 25.0
         }
       },
       "Lille OSC": {
@@ -12397,7 +13904,440 @@
       }
     },
     "NOR": {},
-    "NED": {},
+    "NED": {
+      "SC Cambuur-Leeuwarden": {
+        "local": {
+          "pj": 7,
+          "g": 2,
+          "e": 1,
+          "p": 4,
+          "gf": 14,
+          "gc": 20,
+          "puntos": 7,
+          "ppp": 1.0,
+          "victorias_pct": 28.57
+        },
+        "visitante": {
+          "pj": 6,
+          "g": 3,
+          "e": 2,
+          "p": 1,
+          "gf": 14,
+          "gc": 9,
+          "puntos": 11,
+          "ppp": 1.83,
+          "victorias_pct": 50.0
+        }
+      },
+      "SBV Excelsior": {
+        "visitante": {
+          "pj": 7,
+          "g": 3,
+          "e": 2,
+          "p": 2,
+          "gf": 14,
+          "gc": 11,
+          "puntos": 11,
+          "ppp": 1.57,
+          "victorias_pct": 42.86
+        },
+        "local": {
+          "pj": 6,
+          "g": 1,
+          "e": 0,
+          "p": 5,
+          "gf": 5,
+          "gc": 20,
+          "puntos": 3,
+          "ppp": 0.5,
+          "victorias_pct": 16.67
+        }
+      },
+      "NEC": {
+        "local": {
+          "pj": 7,
+          "g": 0,
+          "e": 4,
+          "p": 3,
+          "gf": 10,
+          "gc": 16,
+          "puntos": 4,
+          "ppp": 0.57,
+          "victorias_pct": 0.0
+        },
+        "visitante": {
+          "pj": 6,
+          "g": 3,
+          "e": 1,
+          "p": 2,
+          "gf": 11,
+          "gc": 9,
+          "puntos": 10,
+          "ppp": 1.67,
+          "victorias_pct": 50.0
+        }
+      },
+      "Telstar 1963": {
+        "visitante": {
+          "pj": 6,
+          "g": 1,
+          "e": 2,
+          "p": 3,
+          "gf": 6,
+          "gc": 8,
+          "puntos": 5,
+          "ppp": 0.83,
+          "victorias_pct": 16.67
+        },
+        "local": {
+          "pj": 7,
+          "g": 1,
+          "e": 2,
+          "p": 4,
+          "gf": 13,
+          "gc": 20,
+          "puntos": 5,
+          "ppp": 0.71,
+          "victorias_pct": 14.29
+        }
+      },
+      "Go Ahead Eagles": {
+        "local": {
+          "pj": 6,
+          "g": 3,
+          "e": 2,
+          "p": 1,
+          "gf": 14,
+          "gc": 9,
+          "puntos": 11,
+          "ppp": 1.83,
+          "victorias_pct": 50.0
+        },
+        "visitante": {
+          "pj": 7,
+          "g": 1,
+          "e": 3,
+          "p": 3,
+          "gf": 10,
+          "gc": 19,
+          "puntos": 6,
+          "ppp": 0.86,
+          "victorias_pct": 14.29
+        }
+      },
+      "Willem II Tilburg": {
+        "visitante": {
+          "pj": 7,
+          "g": 0,
+          "e": 1,
+          "p": 6,
+          "gf": 7,
+          "gc": 25,
+          "puntos": 1,
+          "ppp": 0.14,
+          "victorias_pct": 0.0
+        },
+        "local": {
+          "pj": 6,
+          "g": 0,
+          "e": 2,
+          "p": 4,
+          "gf": 5,
+          "gc": 17,
+          "puntos": 2,
+          "ppp": 0.33,
+          "victorias_pct": 0.0
+        }
+      },
+      "PSV": {
+        "local": {
+          "pj": 6,
+          "g": 4,
+          "e": 2,
+          "p": 0,
+          "gf": 21,
+          "gc": 5,
+          "puntos": 14,
+          "ppp": 2.33,
+          "victorias_pct": 66.67
+        },
+        "visitante": {
+          "pj": 7,
+          "g": 5,
+          "e": 0,
+          "p": 2,
+          "gf": 23,
+          "gc": 11,
+          "puntos": 15,
+          "ppp": 2.14,
+          "victorias_pct": 71.43
+        }
+      },
+      "Fortuna Sittard": {
+        "visitante": {
+          "pj": 7,
+          "g": 4,
+          "e": 3,
+          "p": 0,
+          "gf": 13,
+          "gc": 9,
+          "puntos": 15,
+          "ppp": 2.14,
+          "victorias_pct": 57.14
+        },
+        "local": {
+          "pj": 6,
+          "g": 2,
+          "e": 2,
+          "p": 2,
+          "gf": 8,
+          "gc": 11,
+          "puntos": 8,
+          "ppp": 1.33,
+          "victorias_pct": 33.33
+        }
+      },
+      "AZ": {
+        "local": {
+          "pj": 6,
+          "g": 4,
+          "e": 1,
+          "p": 1,
+          "gf": 13,
+          "gc": 8,
+          "puntos": 13,
+          "ppp": 2.17,
+          "victorias_pct": 66.67
+        },
+        "visitante": {
+          "pj": 7,
+          "g": 4,
+          "e": 1,
+          "p": 2,
+          "gf": 16,
+          "gc": 9,
+          "puntos": 13,
+          "ppp": 1.86,
+          "victorias_pct": 57.14
+        }
+      },
+      "ADO Den Haag": {
+        "visitante": {
+          "pj": 7,
+          "g": 0,
+          "e": 2,
+          "p": 5,
+          "gf": 5,
+          "gc": 15,
+          "puntos": 2,
+          "ppp": 0.29,
+          "victorias_pct": 0.0
+        },
+        "local": {
+          "pj": 6,
+          "g": 2,
+          "e": 1,
+          "p": 3,
+          "gf": 11,
+          "gc": 13,
+          "puntos": 7,
+          "ppp": 1.17,
+          "victorias_pct": 33.33
+        }
+      },
+      "Sparta Rotterdam": {
+        "local": {
+          "pj": 7,
+          "g": 1,
+          "e": 2,
+          "p": 4,
+          "gf": 10,
+          "gc": 19,
+          "puntos": 5,
+          "ppp": 0.71,
+          "victorias_pct": 14.29
+        },
+        "visitante": {
+          "pj": 6,
+          "g": 2,
+          "e": 1,
+          "p": 3,
+          "gf": 12,
+          "gc": 15,
+          "puntos": 7,
+          "ppp": 1.17,
+          "victorias_pct": 33.33
+        }
+      },
+      "Feyenoord Rotterdam": {
+        "visitante": {
+          "pj": 7,
+          "g": 5,
+          "e": 1,
+          "p": 1,
+          "gf": 24,
+          "gc": 12,
+          "puntos": 16,
+          "ppp": 2.29,
+          "victorias_pct": 71.43
+        },
+        "local": {
+          "pj": 6,
+          "g": 2,
+          "e": 3,
+          "p": 1,
+          "gf": 14,
+          "gc": 8,
+          "puntos": 9,
+          "ppp": 1.5,
+          "victorias_pct": 33.33
+        }
+      },
+      "FC Groningen": {
+        "local": {
+          "pj": 7,
+          "g": 2,
+          "e": 1,
+          "p": 4,
+          "gf": 14,
+          "gc": 17,
+          "puntos": 7,
+          "ppp": 1.0,
+          "victorias_pct": 28.57
+        },
+        "visitante": {
+          "pj": 6,
+          "g": 2,
+          "e": 2,
+          "p": 2,
+          "gf": 16,
+          "gc": 14,
+          "puntos": 8,
+          "ppp": 1.33,
+          "victorias_pct": 33.33
+        }
+      },
+      "FC Utrecht": {
+        "visitante": {
+          "pj": 6,
+          "g": 2,
+          "e": 1,
+          "p": 3,
+          "gf": 10,
+          "gc": 16,
+          "puntos": 7,
+          "ppp": 1.17,
+          "victorias_pct": 33.33
+        },
+        "local": {
+          "pj": 7,
+          "g": 1,
+          "e": 2,
+          "p": 4,
+          "gf": 13,
+          "gc": 21,
+          "puntos": 5,
+          "ppp": 0.71,
+          "victorias_pct": 14.29
+        }
+      },
+      "PEC Zwolle": {
+        "local": {
+          "pj": 6,
+          "g": 2,
+          "e": 0,
+          "p": 4,
+          "gf": 6,
+          "gc": 14,
+          "puntos": 6,
+          "ppp": 1.0,
+          "victorias_pct": 33.33
+        },
+        "visitante": {
+          "pj": 7,
+          "g": 2,
+          "e": 3,
+          "p": 2,
+          "gf": 10,
+          "gc": 11,
+          "puntos": 9,
+          "ppp": 1.29,
+          "victorias_pct": 28.57
+        }
+      },
+      "AFC Ajax": {
+        "visitante": {
+          "pj": 6,
+          "g": 5,
+          "e": 1,
+          "p": 0,
+          "gf": 20,
+          "gc": 6,
+          "puntos": 16,
+          "ppp": 2.67,
+          "victorias_pct": 83.33
+        },
+        "local": {
+          "pj": 7,
+          "g": 3,
+          "e": 3,
+          "p": 1,
+          "gf": 15,
+          "gc": 9,
+          "puntos": 12,
+          "ppp": 1.71,
+          "victorias_pct": 42.86
+        }
+      },
+      "SC Heerenveen": {
+        "local": {
+          "pj": 7,
+          "g": 4,
+          "e": 1,
+          "p": 2,
+          "gf": 13,
+          "gc": 8,
+          "puntos": 13,
+          "ppp": 1.86,
+          "victorias_pct": 57.14
+        },
+        "visitante": {
+          "pj": 6,
+          "g": 3,
+          "e": 2,
+          "p": 1,
+          "gf": 14,
+          "gc": 9,
+          "puntos": 11,
+          "ppp": 1.83,
+          "victorias_pct": 50.0
+        }
+      },
+      "FC Twente '65": {
+        "visitante": {
+          "pj": 6,
+          "g": 3,
+          "e": 2,
+          "p": 1,
+          "gf": 18,
+          "gc": 5,
+          "puntos": 11,
+          "ppp": 1.83,
+          "victorias_pct": 50.0
+        },
+        "local": {
+          "pj": 7,
+          "g": 5,
+          "e": 1,
+          "p": 1,
+          "gf": 14,
+          "gc": 8,
+          "puntos": 16,
+          "ppp": 2.29,
+          "victorias_pct": 71.43
+        }
+      }
+    },
     "POR": {
       "GD Estoril Praia": {
         "local": {
