@@ -73,6 +73,14 @@ def descargar():
     fuentes = ["OpenLigaDB (https://www.openligadb.de), ODbL 1.0; GER"]
     clave = os.environ.get("FOOTBALL_DATA_API_KEY", "").strip()
     if clave:
+        anteriores = {}
+        try:
+            from pathlib import Path
+            anterior = Path("datos-origen.json")
+            if anterior.exists():
+                anteriores = json.loads(anterior.read_text(encoding="utf-8")).get("ligas", {})
+        except (OSError, ValueError, TypeError):
+            print("AVISO: no se pudo leer la copia anterior")
         for liga, codigo in COMPETICIONES.items():
             try:
                 ligas[liga] = football_data(codigo, clave)
@@ -81,6 +89,9 @@ def descargar():
             except Exception as error:
                 # No bloquear la Bundesliga ni publicar datos falsos.
                 print(f"AVISO: {liga} no disponible: {type(error).__name__}: {error}")
+                if anteriores.get(liga):
+                    ligas[liga] = anteriores[liga]
+                    fuentes.append(f"football-data.org ({codigo}; {liga}; copia anterior)")
     return {"fuente": "; ".join(fuentes), "ligas": ligas}
 
 if __name__ == "__main__":
