@@ -124,6 +124,50 @@ def main():
             print("Emparejados exactamente con MoviOdds:",encontrados)
             print("Emparejamientos ambiguos descartados:",ambiguos)
             print("Candidatos sin hora precisa:",sin_hora)
+            # Distinguir ausencia de partido, diferencia horaria y variación de nombres.
+            # Solo se imprimen contadores agregados, nunca nombres ni cuotas.
+            coincidencia_equipos=0
+            coincidencia_hora=0
+            solo_un_equipo=0
+            candidatos_validos=0
+            for p in candidatos:
+                try:
+                    if len(p["fecha"])<=10:
+                        continue
+                    inicio=datetime.fromisoformat(p["fecha"].replace("Z","+00:00"))
+                    if inicio.tzinfo is None:
+                        continue
+                    candidatos_validos+=1
+                    local=normalizar(p["local"])
+                    visitante=normalizar(p["visitante"])
+                    ambos=False
+                    hora=False
+                    uno=False
+                    for m in partidos:
+                        if not isinstance(m,dict) or m.get("in_play") is True:
+                            continue
+                        ml=normalizar(m.get("home"))
+                        mv=normalizar(m.get("away"))
+                        equipos=(ml==local and mv==visitante)
+                        if ml==local or mv==visitante:
+                            uno=True
+                        if equipos:
+                            ambos=True
+                        try:
+                            fecha=datetime.fromisoformat(m["kickoff_utc"].replace("Z","+00:00"))
+                            if fecha.tzinfo is not None and abs((fecha-inicio).total_seconds())<=10800:
+                                hora=True
+                        except (ValueError,TypeError,KeyError,AttributeError):
+                            pass
+                    coincidencia_equipos+=int(ambos)
+                    coincidencia_hora+=int(hora)
+                    solo_un_equipo+=int(uno)
+                except (ValueError,TypeError,KeyError,AttributeError):
+                    continue
+            print("Candidatos con hora válida analizados:",candidatos_validos)
+            print("Ambos nombres exactos (independiente de fecha):",coincidencia_equipos)
+            print("Hora coincidente (independiente de equipos):",coincidencia_hora)
+            print("Al menos un equipo exacto:",solo_un_equipo)
             print("Los no emparejados requerirán equivalencias de nombres verificadas.")
         print("No se ha importado ninguna cuota; falta validar esquema y mercado.")
         return 0
