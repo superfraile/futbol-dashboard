@@ -18,9 +18,9 @@ class SeleccionTests(unittest.TestCase):
             partido("2026-11-30","FC Barcelona","Sevilla FC","pendiente"),
             partido("2026-12-01","FC Barcelona","Real Madrid CF","pendiente")
         ]}})
-        self.assertEqual(len(datos["candidatos"]),0)
-        self.assertFalse(datos["favoritos_validados"])
-        self.assertEqual(datos["dobles"],[])
+        self.assertEqual(len(datos["candidatos"]),1)
+        self.assertEqual(datos["candidatos"][0]["favorito"],"Barcelona")
+        self.assertIsNone(datos["candidatos"][0]["cuota"])
 
     def test_dobles_solo_con_cuotas_verificadas(self):
         base=dict(liga="ESP",fecha="2026-11-30",local="A",visitante="B",cuota=1.5,cuota_verificada=True)
