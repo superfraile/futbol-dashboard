@@ -96,6 +96,39 @@ def validar(entrada):
                 raise ValueError("Partido duplicado")
             vistos.add(clave)
 
+def aplicar_cuotas_bet365(candidatos, archivo=None):
+    """Importa solo cuotas 1X2 documentadas de bet365, nunca estimaciones."""
+    ruta=archivo or Path(__file__).resolve().parent.parent/"cuotas-bet365.json"
+    ruta=Path(ruta)
+    if not ruta.is_file():
+        return
+    documento=json.loads(ruta.read_text(encoding="utf-8"))
+    if documento.get("casa_apuestas")!="bet365" or documento.get("mercado")!="1X2":
+        raise ValueError("La fuente de cuotas debe ser bet365, mercado 1X2")
+    indices={(p["liga"],p["fecha"],p["local"],p["visitante"]):p for p in candidatos}
+    for cuota in documento.get("cuotas",[]):
+        clave=tuple(cuota[k] for k in ("liga","fecha","local","visitante"))
+        partido=indices.get(clave)
+        if partido is None:
+            continue
+        signo="1" if partido["equipo_proveedor"]==partido["local"] else "2"
+        valor=cuota.get("cuota")
+        fecha_consulta=cuota.get("consultada_en")
+        url=cuota.get("url_fuente")
+        if (cuota.get("seleccion")!=signo or type(valor) not in (float,int)
+                or not 1.20<=valor<=1.80 or not isinstance(url,str)
+                or not url.startswith("https://") or not isinstance(fecha_consulta,str)):
+            continue
+        try:
+            instante=datetime.fromisoformat(fecha_consulta.replace("Z","+00:00"))
+        except ValueError:
+            continue
+        if instante.tzinfo is None or instante>datetime.now(timezone.utc):
+            continue
+        partido.update(cuota=valor,cuota_verificada=True,casa_apuestas="bet365",
+                       mercado="1X2",seleccion=signo,consultada_en=fecha_consulta,
+                       url_fuente=url,estado="Cuota bet365 documentada")
+
 def construir(entrada):
     validar(entrada)
     fuente=entrada["fuente"]
@@ -152,6 +185,7 @@ def construir(entrada):
     resultado["candidatos"]=[m for m in resultado["candidatos"] if futuro(m)]
     resultado["partidos"].sort(key=lambda m:m["fecha"])
     resultado["candidatos"].sort(key=lambda m:m["fecha"])
+    aplicar_cuotas_bet365(resultado["candidatos"])
     resultado["dobles"]=generar_dobles(resultado["candidatos"])
     resultado["favoritos_validados"]=lista_validada
     return resultado
