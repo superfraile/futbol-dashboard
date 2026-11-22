@@ -19,7 +19,8 @@ def clave_equipo(nombre):
 
 def favoritos_configurados():
     archivo=Path(__file__).resolve().parent.parent/"equipos-favoritos.json"
-    configuracion=json.loads(archivo.read_text(encoding="utf-8"))["ligas"]
+    documento=json.loads(archivo.read_text(encoding="utf-8"))
+    configuracion=documento["ligas"]
     if set(configuracion)!=set(LIGAS):
         raise ValueError("La lista fija debe contener las 14 ligas")
     if any(not isinstance(equipos,list) or len(equipos)>5 or len(equipos)!=len(set(equipos)) for equipos in configuracion.values()):
@@ -90,6 +91,7 @@ def construir(entrada):
     if not isinstance(fuente,str) or not fuente.strip():
         raise ValueError("Fuente obligatoria")
     favoritos=favoritos_configurados()
+    lista_validada=json.loads((Path(__file__).resolve().parent.parent/"equipos-favoritos.json").read_text(encoding="utf-8")).get("validada") is True
     resultado=dict(version="1.2",ultima_actualizacion=datetime.now(timezone.utc).isoformat(),
                    fuente=fuente,ligas={},equipos_top=[],partidos=[],estadisticas={},candidatos=[],dobles=[])
     for liga in LIGAS:
@@ -98,10 +100,10 @@ def construir(entrada):
         rating=elo(partidos)
         resultado["ligas"][liga]=tabla
         resultado["estadisticas"][liga]=desglosar(partidos)
-        resueltos=resolver_favoritos(liga,favoritos[liga],tabla)
+        resueltos=resolver_favoritos(liga,favoritos[liga],tabla) if lista_validada else {}
         por_nombre={clave_equipo(nombre):(nombre,valor) for nombre,valor in rating.items()}
         por_equipo={t["equipo"]:t for t in tabla}
-        for equipo in favoritos[liga]:
+        for equipo in (favoritos[liga] if lista_validada else []):
             nombre=ALIAS.get(liga,{}).get(equipo,equipo)
             encontrado=por_nombre.get(clave_equipo(nombre))
             resultado["equipos_top"].append(dict(
@@ -128,6 +130,7 @@ def construir(entrada):
     resultado["partidos"].sort(key=lambda m:m["fecha"])
     resultado["candidatos"].sort(key=lambda m:m["fecha"])
     resultado["dobles"]=generar_dobles(resultado["candidatos"])
+    resultado["favoritos_validados"]=lista_validada
     return resultado
 
 if __name__=="__main__":
