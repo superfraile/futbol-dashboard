@@ -1,5 +1,7 @@
 name: Probar conexión MoviOdds
 on:
+  schedule:
+    - cron: '13 7,11,15,19 * * *'
   workflow_dispatch:
 permissions:
   contents: read
