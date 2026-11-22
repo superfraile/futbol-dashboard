@@ -289,16 +289,32 @@ def main():
             # para la futura integración, sin autorizar la publicación de cuotas.
             from scripts.moviodds_validacion import emparejar_candidatos, mercado_1x2
             emparejados=emparejar_candidatos(ventana,partidos)
+            from scripts.moviodds_validacion import atribucion_bet365, fecha_utc
             cuotas_estrictas=0
+            cuotas_bet365_atribuidas=0
             for candidato,partido in emparejados:
                 signo=("1" if candidato.get("equipo_proveedor")==candidato.get("local")
                        else "2" if candidato.get("equipo_proveedor")==candidato.get("visitante")
                        else None)
                 seleccion=mercado_1x2(partido,ahora).get(signo)
-                if seleccion and 1.20<=seleccion["cuota"]<=1.80:
-                    cuotas_estrictas+=1
+                if not seleccion or not 1.20<=seleccion["cuota"]<=1.80:
+                    continue
+                cuotas_estrictas+=1
+                # Corroborar la atribución en la misma selección y timestamp,
+                # no en otra cuota del mismo partido.
+                nombre=partido["home"] if signo=="1" else partido["away"] if signo=="2" else None
+                coincidencias=[
+                    q for q in partido.get("quotes",[])
+                    if isinstance(q,dict) and str(q.get("group_id"))=="40"
+                    and normalizar(q.get("label"))==normalizar(nombre)
+                    and q.get("odds_dec")==seleccion["cuota"]
+                    and fecha_utc(q.get("ts"))==fecha_utc(seleccion["consultada_en"])
+                ]
+                if len(coincidencias)==1 and atribucion_bet365(partido,coincidencias[0]):
+                    cuotas_bet365_atribuidas+=1
             print("Motor estricto: partidos únicos emparejados:",len(emparejados))
             print("Motor estricto: cuotas vigentes en rango (bookmaker no verificado):",cuotas_estrictas)
+            print("Motor estricto: cuotas atribuidas explícitamente a bet365:",cuotas_bet365_atribuidas)
             print("Próximos 7 días: candidatos con hora:",len(ventana))
             print("Próximos 7 días: emparejamientos exactos:",exactos_7)
             print("Próximos 7 días: coincidencias únicas con similitud >=85%:",similares_7)
@@ -320,6 +336,7 @@ def main():
                     salida.write(f"- Coincidencias exactas: **{exactos_7}**\n")
                     salida.write(f"- Emparejamientos únicos del motor estricto: **{len(emparejados)}**\n")
                     salida.write(f"- Cuotas en rango del motor estricto (bookmaker no verificado): **{cuotas_estrictas}**\n")
+                    salida.write(f"- Cuotas atribuidas expresamente a bet365: **{cuotas_bet365_atribuidas}**\n")
                     salida.write(f"- Coincidencias únicas aproximadas (no importables): **{similares_7}**\n")
                     salida.write(f"- Cuotas candidatas vigentes 1,20–1,80 (sin verificar casa): **{vigentes_7}**\n")
                 salida.write("\n**Estado:** solo diagnóstico; no se han publicado cuotas ni generado dobles.\n")
