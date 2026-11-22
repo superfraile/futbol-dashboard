@@ -7,7 +7,7 @@ on:
     paths:
       - '.github/workflows/actualizar-datos.yml'
       - 'scripts/proveedores.py'
-      - 'tests/test_football_data.py'
+      - 'tests/test_*.py'
 permissions:
   contents: write
 concurrency:
