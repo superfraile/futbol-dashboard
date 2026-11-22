@@ -52,3 +52,44 @@ def mercado_1x2(partido, ahora=None):
         else:
             resultados[signo]={"cuota":valor,"consultada_en":instante.isoformat()}
     return {k:v for k,v in resultados.items() if k not in duplicados}
+
+def emparejar_candidatos(candidatos, partidos, equivalencias=None, tolerancia_segundos=10800):
+    """Relaciona partidos únicamente por ambos equipos y horario; descarta ambigüedades.
+
+    equivalencias: mapeo explícitamente revisado de nombre del proveedor deportivo
+    a nombre de MoviOdds. Nunca usa similitud aproximada.
+    """
+    equivalencias=equivalencias or {}
+    if not isinstance(candidatos,list) or not isinstance(partidos,list):
+        raise ValueError("Se requieren listas de partidos")
+    if not isinstance(equivalencias,dict):
+        raise ValueError("Equivalencias inválidas")
+    def nombre(valor):
+        return clave_equipo(equivalencias.get(valor,valor)) if isinstance(valor,str) else None
+    resultado=[]
+    usados=set()
+    for candidato in candidatos:
+        if not isinstance(candidato,dict):
+            continue
+        inicio=fecha_utc(candidato.get("fecha"))
+        if inicio is None:
+            continue
+        local=nombre(candidato.get("local"))
+        visitante=nombre(candidato.get("visitante"))
+        if not local or not visitante or local==visitante:
+            continue
+        opciones=[]
+        for indice,partido in enumerate(partidos):
+            if not isinstance(partido,dict) or partido.get("in_play") is not False:
+                continue
+            fecha=fecha_utc(partido.get("kickoff_utc"))
+            if fecha is None or abs((fecha-inicio).total_seconds())>tolerancia_segundos:
+                continue
+            if clave_equipo(partido.get("home",""))==local and clave_equipo(partido.get("away",""))==visitante:
+                opciones.append((indice,partido))
+        if len(opciones)==1:
+            indice,partido=opciones[0]
+            if indice not in usados:
+                resultado.append((candidato,partido))
+                usados.add(indice)
+    return resultado
