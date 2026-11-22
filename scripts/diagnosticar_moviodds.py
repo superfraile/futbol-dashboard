@@ -29,6 +29,13 @@ def main():
             datos=json.load(respuesta)
         print("Conexión HTTP correcta; estructura de la respuesta (sin valores):")
         print(json.dumps(estructura(datos),ensure_ascii=False,indent=2))
+        # Muestra únicamente los nombres de campos y tipos de una cuota, nunca valores.
+        partidos=datos.get("matches",[]) if isinstance(datos,dict) else []
+        con_cuotas=[m for m in partidos if isinstance(m,dict) and isinstance(m.get("quotes"),list) and m["quotes"]]
+        print("Partidos con quotes no vacías:",len(con_cuotas))
+        if con_cuotas:
+            print("Estructura de la primera quote (solo tipos):")
+            print(json.dumps(estructura(con_cuotas[0]["quotes"][0]),ensure_ascii=False,indent=2))
         print("No se ha importado ninguna cuota; falta validar esquema y mercado.")
         return 0
     except HTTPError as error:
