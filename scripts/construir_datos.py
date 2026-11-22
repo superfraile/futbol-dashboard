@@ -57,9 +57,19 @@ def resolver_favoritos(liga, favoritos, tabla):
             resueltos[equipo["equipo"]]=favorito
     return resueltos
 
-def generar_dobles(candidatos):
-    """Solo combina partidos con cuotas numéricas verificadas dentro del rango."""
+def generar_dobles(candidatos, ahora=None):
+    """Solo combina partidos futuros con cuotas verificadas y vigentes."""
+    ahora=ahora or datetime.now(timezone.utc)
+    def vigente(p):
+        try:
+            fecha=datetime.fromisoformat(p["fecha"].replace("Z","+00:00"))
+            consulta=datetime.fromisoformat(p["consultada_en"].replace("Z","+00:00"))
+            return (fecha.tzinfo is not None and fecha>ahora and
+                    consulta.tzinfo is not None and 0<=(ahora-consulta).total_seconds()<=3600)
+        except (KeyError,TypeError,ValueError,AttributeError):
+            return False
     validos=[p for p in candidatos
+             if vigente(p)
              if type(p.get("cuota")) in (int,float) and 1.20<=p["cuota"]<=1.80
              and p.get("cuota_verificada") is True
              and p.get("casa_apuestas")=="bet365"
