@@ -83,7 +83,12 @@ def generar_dobles(candidatos, ahora=None):
         if (a["liga"],a["fecha"],a["local"],a["visitante"]) == (b["liga"],b["fecha"],b["local"],b["visitante"]):
             continue
         dobles.append(dict(partidos=[a,b],cuota_combinada=round(a["cuota"]*b["cuota"],3)))
-    dobles.sort(key=lambda d:((date.fromisoformat(d["partidos"][1]["fecha"][:10])-date.fromisoformat(d["partidos"][0]["fecha"][:10])).days,d["partidos"][0]["fecha"],d["partidos"][1]["fecha"]))
+    def proximidad(d):
+        primero,segundo=(p["fecha"] for p in d["partidos"])
+        a=datetime.fromisoformat(primero.replace("Z","+00:00"))
+        b=datetime.fromisoformat(segundo.replace("Z","+00:00"))
+        return ((b-a).total_seconds(),primero,segundo)
+    dobles.sort(key=proximidad)
     return dobles
 
 def validar(entrada):
