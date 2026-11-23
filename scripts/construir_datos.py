@@ -87,7 +87,7 @@ def generar_dobles(candidatos, ahora=None):
     dobles.sort(key=lambda d:(
         -sum(float(p.get("valoracion") or 0) for p in d["partidos"]),
         d["partidos"][0]["fecha"],d["partidos"][1]["fecha"]))
-    return dobles
+    return dobles[:5]
 
 def validar(entrada):
     ligas=entrada["ligas"]
