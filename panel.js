@@ -107,13 +107,13 @@ async function iniciar(){
    // Siete días significa hoy y los seis días siguientes, en calendario español.
    const inicio=Date.parse(hoy+"T12:00:00Z");
    const fechaLimite=new Date(inicio+(Number(dias==="all"?3650:dias)-1)*86400000).toISOString().slice(0,10);
-   const filtrados=candidatos.filter(r=>(!filtroCandidatos.value||r.liga===filtroCandidatos.value)&&(dias==="all"||diaEspana(r.fecha)<=fechaLimite)).sort((a,b)=>Number(b.ppp)-Number(a.ppp)||a.fecha.localeCompare(b.fecha));
+   const filtrados=candidatos.filter(r=>(!filtroCandidatos.value||r.liga===filtroCandidatos.value)&&(dias==="all"||diaEspana(r.fecha)<=fechaLimite)).sort((a,b)=>Number(b.valoracion??-Infinity)-Number(a.valoracion??-Infinity)||Number(b.ppp)-Number(a.ppp)||a.fecha.localeCompare(b.fecha));
    if(!filtrados.length){candidatosDest.textContent="Sin partidos preseleccionados para esta liga.";return;}
-   tabla(candidatosDest,["Liga","Fecha","Local","Visitante","Favorito fijo","Pts/PJ","Cuota"],filtrados.slice(0,100).map(r=>[
-     nombreLiga(r.liga),fechaEspana(r.fecha),r.local,r.visitante,r.favorito,r.ppp,cuotaBet365Vigente(r)?r.cuota.toFixed(2):"Pendiente bet365"
+   tabla(candidatosDest,["Liga","Fecha","Local","Visitante","Favorito fijo","Pts/PJ","Pts/PJ rival","Bonus local","Valoración","Cuota"],filtrados.slice(0,100).map(r=>[
+     nombreLiga(r.liga),fechaEspana(r.fecha),r.local,r.visitante,r.favorito,r.ppp,r.ppp_rival??"Sin datos",r.bonus_local??0,r.valoracion??"Sin datos",cuotaBet365Vigente(r)?r.cuota.toFixed(2):"Pendiente bet365"
    ]));
    const aviso=document.createElement("p");
-   aviso.textContent="Mostrando "+Math.min(100,filtrados.length)+" de "+filtrados.length+" partidos preseleccionados, ordenados por Pts/PJ (mayor a menor). Cuotas verificadas: "+filtrados.filter(p=>cuotaBet365Vigente(p)).length+". No son apuestas válidas sin cuotas verificadas.";
+   aviso.textContent="Mostrando "+Math.min(100,filtrados.length)+" de "+filtrados.length+" partidos preseleccionados, ordenados por valoración (diferencia Pts/PJ + 0,2 si el favorito juega en casa). Cuotas verificadas: "+filtrados.filter(p=>cuotaBet365Vigente(p)).length+". No son apuestas válidas sin cuotas verificadas.";
    candidatosDest.append(aviso);
  }
  filtroCandidatos.addEventListener("change",dibujarCandidatos);
