@@ -5,7 +5,7 @@ import sys
 from datetime import datetime, timezone
 from pathlib import Path
 from urllib.request import Request, urlopen
-from scripts.moviodds_validacion import emparejar_candidatos, mercado_1x2
+from scripts.moviodds_validacion import emparejar_candidatos, mercado_1x2, fecha_utc
 from scripts.construir_datos import generar_dobles
 
 URL="https://moviodds.com/odds?sport=soccer"
@@ -53,7 +53,28 @@ def main():
     partidos=documento["matches"]
     if not isinstance(partidos,list):
         raise ValueError("Formato MoviOdds no reconocido: matches debe ser lista")
-    incorporar(datos,partidos)
+    # Diagnóstico sin mostrar equipos, cuotas ni credenciales.
+    ahora=datetime.now(timezone.utc)
+    candidatos=datos.get("candidatos",[])
+    emparejados=emparejar_candidatos(candidatos,partidos)
+    sin_hora=sum(fecha_utc(p.get("fecha")) is None for p in candidatos)
+    con_mercado=sum(bool(mercado_1x2(m,ahora)) for _,m in emparejados)
+    elegibles=0
+    for candidato,partido in emparejados:
+        signo=("1" if candidato.get("equipo_proveedor")==candidato.get("local") else
+               "2" if candidato.get("equipo_proveedor")==candidato.get("visitante") else None)
+        q=mercado_1x2(partido,ahora).get(signo)
+        if q and 1.20<=q["cuota"]<=1.80:
+            elegibles+=1
+    print("Diagnóstico MoviOdds:",json.dumps({
+        "partidos_proveedor":len(partidos),
+        "candidatos":len(candidatos),
+        "candidatos_sin_hora":sin_hora,
+        "emparejamientos_unicos":len(emparejados),
+        "emparejados_con_mercado_1x2_vigente":con_mercado,
+        "selecciones_en_rango":elegibles
+    },ensure_ascii=False))
+    incorporar(datos,partidos,ahora)
     temporal=ruta.with_suffix(".tmp")
     temporal.write_text(json.dumps(datos,ensure_ascii=False,indent=2),encoding="utf-8")
     temporal.replace(ruta)
