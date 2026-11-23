@@ -72,8 +72,15 @@ def generar_dobles(candidatos, ahora=None):
         except (KeyError,TypeError,ValueError,AttributeError):
             return False
     hoy_es=ahora.astimezone(ZoneInfo("Europe/Madrid")).date()
+    def en_ventana(p):
+        try:
+            inicio=datetime.fromisoformat(p["fecha"].replace("Z","+00:00"))
+            return (inicio.tzinfo is not None and
+                    hoy_es<=inicio.astimezone(ZoneInfo("Europe/Madrid")).date()<hoy_es+timedelta(days=7))
+        except (KeyError,TypeError,ValueError,AttributeError):
+            return False
     validos=[p for p in candidatos
-             if hoy_es<=datetime.fromisoformat(p["fecha"].replace("Z","+00:00")).astimezone(ZoneInfo("Europe/Madrid")).date()<hoy_es+timedelta(days=7)
+             if en_ventana(p)
              if vigente(p)
              if type(p.get("cuota")) in (int,float) and isfinite(p["cuota"]) and 1.20<=p["cuota"]<=1.80
              and p.get("cuota_verificada") is True
