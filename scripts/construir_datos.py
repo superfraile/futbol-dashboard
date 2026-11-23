@@ -118,7 +118,12 @@ def aplicar_cuotas_bet365(candidatos, archivo=None):
     documento=json.loads(ruta.read_text(encoding="utf-8"))
     if documento.get("casa_apuestas")!="bet365" or documento.get("mercado")!="1X2":
         raise ValueError("La fuente de cuotas debe ser bet365, mercado 1X2")
-    indices={(p["liga"],p["fecha"],p["local"],p["visitante"]):p for p in candidatos}
+    # Rechazar claves ambiguas también en la lista de candidatos.
+    from collections import Counter
+    claves_candidatos=[(p["liga"],p["fecha"],p["local"],p["visitante"]) for p in candidatos]
+    recuento_candidatos=Counter(claves_candidatos)
+    indices={clave:p for clave,p in zip(claves_candidatos,candidatos)
+             if recuento_candidatos[clave]==1}
     ahora=datetime.now(timezone.utc)
     registros=documento.get("cuotas",[])
     if not isinstance(registros,list):
