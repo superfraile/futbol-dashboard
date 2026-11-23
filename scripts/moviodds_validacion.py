@@ -87,8 +87,10 @@ def emparejar_candidatos(candidatos, partidos, equivalencias=None, tolerancia_se
             fecha=fecha_utc(partido.get("kickoff_utc"))
             if fecha is None or abs((fecha-inicio).total_seconds())>tolerancia_segundos:
                 continue
-            if (clave_equipo(partido.get("home",""))==local and
-                    clave_equipo(partido.get("away",""))==visitante):
+            home=partido.get("home")
+            away=partido.get("away")
+            if (isinstance(home,str) and isinstance(away,str) and
+                    clave_equipo(home)==local and clave_equipo(away)==visitante):
                 opciones.append(indice_partido)
                 candidatos_por_partido.setdefault(indice_partido,set()).add(indice_candidato)
         opciones_por_candidato[indice_candidato]=opciones
