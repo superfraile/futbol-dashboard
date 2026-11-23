@@ -13,6 +13,13 @@ URL="https://moviodds.com/odds?sport=soccer"
 def incorporar(datos, partidos, ahora=None):
     ahora=ahora or datetime.now(timezone.utc)
     candidatos=datos.get("candidatos",[])
+    # Las cuotas MoviOdds anteriores no se conservan si el proveedor deja de devolverlas.
+    for candidato in candidatos:
+        if candidato.get("casa_apuestas")=="MoviOdds":
+            for campo in ("cuota","consultada_en","cuota_verificada","casa_apuestas","mercado","seleccion","url_fuente"):
+                candidato.pop(campo,None)
+            candidato["cuota"]=None
+            candidato["estado"]="Pendiente de cuota actualizada"
     for candidato, partido in emparejar_candidatos(candidatos,partidos):
         signo=("1" if candidato["equipo_proveedor"]==candidato["local"] else
                "2" if candidato["equipo_proveedor"]==candidato["visitante"] else None)
