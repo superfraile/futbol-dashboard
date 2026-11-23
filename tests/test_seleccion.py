@@ -74,6 +74,21 @@ class SeleccionTests(unittest.TestCase):
         self.assertEqual({p["local"] for p in dobles[-1]["partidos"]},
                          {"Local 1","Local 4"})
 
+    def test_valoracion_desconocida_no_equivale_a_cero(self):
+        ahora=datetime(2026,11,22,20,30,tzinfo=timezone.utc)
+        def candidato(n,valoracion):
+            return dict(liga="ESP",fecha=f"2026-11-{23+n:02d}T18:00:00Z",
+                        consultada_en="2026-11-22T20:00:00Z",
+                        local=f"Equipo {n}",visitante=f"Rival {n}",
+                        equipo_proveedor=f"Equipo {n}",cuota=1.5,
+                        cuota_verificada=True,casa_apuestas="MoviOdds",
+                        mercado="1X2",seleccion="1",valoracion=valoracion)
+        dobles=generar_dobles([candidato(1,None),candidato(2,0.1),
+                               candidato(3,-0.2)],ahora)
+        self.assertEqual(len(dobles),3)
+        self.assertEqual({p["local"] for p in dobles[0]["partidos"]},
+                         {"Equipo 2","Equipo 3"})
+
     def test_dobles_descartan_cuotas_caducadas_y_partidos_pasados(self):
         ahora=datetime(2026,11,22,20,30,tzinfo=timezone.utc)
         base=dict(liga="ESP",fecha="2026-11-23T18:00:00Z",
