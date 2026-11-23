@@ -48,9 +48,11 @@ def main():
                                     "User-Agent":"FutbolDashboard/1.0"})
     with urlopen(solicitud,timeout=25) as respuesta:
         documento=json.load(respuesta)
-    partidos=documento.get("matches",[]) if isinstance(documento,dict) else []
+    if not isinstance(documento,dict) or "matches" not in documento:
+        raise ValueError("Respuesta MoviOdds sin campo matches: no se publican cambios")
+    partidos=documento["matches"]
     if not isinstance(partidos,list):
-        raise ValueError("Formato MoviOdds no reconocido")
+        raise ValueError("Formato MoviOdds no reconocido: matches debe ser lista")
     incorporar(datos,partidos)
     temporal=ruta.with_suffix(".tmp")
     temporal.write_text(json.dumps(datos,ensure_ascii=False,indent=2),encoding="utf-8")
