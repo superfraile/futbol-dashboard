@@ -120,6 +120,14 @@ async function iniciar(){
  filtroCandidatos.addEventListener("change",dibujarCandidatos);
  plazoCandidatos.addEventListener("change",dibujarCandidatos);
  dibujarCandidatos();
+ const cuotasActualizadas=datos.ultima_actualizacion_cuotas?new Date(datos.ultima_actualizacion_cuotas):null;
+ const avisoCuotas=document.createElement("p");
+ avisoCuotas.setAttribute("role","status");
+ avisoCuotas.textContent=cuotasActualizadas
+   ?"Última consulta de cuotas MoviOdds: "+cuotasActualizadas.toLocaleString("es-ES",{timeZone:"Europe/Madrid"})+
+     (Date.now()-cuotasActualizadas.getTime()>3600000?" (más de una hora; comprobar vigencia de cada cuota)":"")
+   :"Sin actualización automática de cuotas MoviOdds confirmada.";
+ candidatosDest.parentElement.append(avisoCuotas);
  const doblesDest=document.getElementById("lista-dobles");
  const dobles=(datos.dobles||[]).filter(d=>Array.isArray(d.partidos)&&d.partidos.length===2&&d.partidos.every(p=>esFuturo(p)&&cuotaVigente(p)));
  if(dobles.length){
