@@ -5,7 +5,8 @@ No descarga ni publica información por su cuenta.
 import json
 import sys
 from math import isfinite
-from datetime import datetime, timezone, date
+from datetime import datetime, timezone, date, timedelta
+from zoneinfo import ZoneInfo
 from pathlib import Path
 from scripts.estadisticas import calcular, desglosar
 from scripts.elo import elo
@@ -70,7 +71,9 @@ def generar_dobles(candidatos, ahora=None):
                     0<=(ahora-consulta).total_seconds()<=3600)
         except (KeyError,TypeError,ValueError,AttributeError):
             return False
+    hoy_es=ahora.astimezone(ZoneInfo("Europe/Madrid")).date()
     validos=[p for p in candidatos
+             if hoy_es<=datetime.fromisoformat(p["fecha"].replace("Z","+00:00")).astimezone(ZoneInfo("Europe/Madrid")).date()<hoy_es+timedelta(days=7)
              if vigente(p)
              if type(p.get("cuota")) in (int,float) and isfinite(p["cuota"]) and 1.20<=p["cuota"]<=1.80
              and p.get("cuota_verificada") is True
@@ -237,7 +240,16 @@ def construir(entrada):
             return instante>ahora
         return fecha>=ahora.date().isoformat()
     resultado["partidos"]=[m for m in resultado["partidos"] if futuro(m)]
-    resultado["candidatos"]=[m for m in resultado["candidatos"] if futuro(m)]
+    hoy_es=ahora.astimezone(ZoneInfo("Europe/Madrid")).date()
+    def dentro_siete_dias(m):
+        fecha=m["fecha"]
+        if len(fecha)>10:
+            instante=datetime.fromisoformat(fecha.replace("Z","+00:00"))
+            dia=instante.astimezone(ZoneInfo("Europe/Madrid")).date() if instante.tzinfo else instante.date()
+        else:
+            dia=date.fromisoformat(fecha)
+        return hoy_es<=dia<hoy_es+timedelta(days=7)
+    resultado["candidatos"]=[m for m in resultado["candidatos"] if futuro(m) and dentro_siete_dias(m)]
     resultado["partidos"].sort(key=lambda m:m["fecha"])
     resultado["candidatos"].sort(key=lambda m:m["fecha"])
     aplicar_cuotas_bet365(resultado["candidatos"])
