@@ -95,6 +95,20 @@ class SeleccionTests(unittest.TestCase):
             antiguo=(ahora-timedelta(hours=2)).isoformat()
             self.assertIsNone(probar(dict(base,consultada_en=antiguo))["cuota"])
 
+    def test_importador_descarta_registros_duplicados(self):
+        ahora=datetime.now(timezone.utc).isoformat()
+        candidato=dict(liga="ESP",fecha="2099-12-01",local="A",
+                       visitante="B",equipo_proveedor="A",cuota=None)
+        cuota=dict(liga="ESP",fecha="2099-12-01",local="A",visitante="B",
+                   seleccion="1",cuota=1.5,verificada=True,
+                   consultada_en=ahora,url_fuente="https://www.bet365.com/")
+        with tempfile.TemporaryDirectory() as carpeta:
+            archivo=Path(carpeta)/"cuotas.json"
+            archivo.write_text(json.dumps(dict(casa_apuestas="bet365",mercado="1X2",
+                                               cuotas=[cuota,dict(cuota,cuota=1.6)])))
+            aplicar_cuotas_bet365([candidato],archivo)
+            self.assertIsNone(candidato["cuota"])
+
     def test_no_selecciona_con_pocos_puntos(self):
         datos=construir({"fuente":"prueba", "ligas":{"ESP":[
             partido("2026-08-10","FC Barcelona","Sevilla FC",a=0,b=2),
