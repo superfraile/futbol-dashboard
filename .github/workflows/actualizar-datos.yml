@@ -8,6 +8,7 @@ on:
       - '.github/workflows/actualizar-datos.yml'
       - 'scripts/proveedores.py'
       - 'scripts/construir_datos.py'
+      - 'scripts/importar_moviodds.py'
       - 'equipos-favoritos.json'
       - 'tests/test_*.py'
 permissions:
@@ -28,6 +29,9 @@ jobs:
         env:
           FOOTBALL_DATA_API_KEY: ${{ secrets.FOOTBALL_DATA_API_KEY }}
       - run: python -m scripts.construir_datos entrada.json datos.json
+      - run: python -m scripts.importar_moviodds datos.json
+        env:
+          MOVIODDS_API_KEY: ${{ secrets.MOVIODDS_API_KEY }}
       - run: |
           python -c 'import json; d=json.load(open("datos.json")); assert any(len(v)>0 for v in d["ligas"].values()); assert d["favoritos_validados"] is True; assert len(d["equipos_top"])==38; assert "candidatos" in d and "dobles" in d'
           mv entrada.json datos-origen.json
