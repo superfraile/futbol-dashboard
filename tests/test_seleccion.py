@@ -19,28 +19,28 @@ class SeleccionTests(unittest.TestCase):
         datos=construir({"fuente":"prueba", "ligas":{"ESP":[
             partido("2026-08-10","FC Barcelona","Sevilla FC"),
             partido("2026-08-17","FC Barcelona","Valencia CF"),
-            partido("2026-11-30","FC Barcelona","Sevilla FC","pendiente"),
-            partido("2026-12-01","FC Barcelona","Real Madrid CF","pendiente")
+            partido((datetime.now(timezone.utc)+timedelta(days=2)).date().isoformat(),"FC Barcelona","Sevilla FC","pendiente"),
+            partido((datetime.now(timezone.utc)+timedelta(days=3)).date().isoformat(),"FC Barcelona","Real Madrid CF","pendiente")
         ]}})
         self.assertEqual(len(datos["candidatos"]),1)
         self.assertEqual(datos["candidatos"][0]["favorito"],"Barcelona")
         self.assertIsNone(datos["candidatos"][0]["cuota"])
 
     def test_dobles_solo_con_cuotas_verificadas(self):
-        base=dict(liga="ESP",fecha="2026-11-30T18:00:00Z",consultada_en="2026-11-22T20:00:00Z",local="A",visitante="B",cuota=1.5,cuota_verificada=True,casa_apuestas="bet365",mercado="1X2",equipo_proveedor="A",seleccion="1")
-        segundo=dict(base,fecha="2026-12-01T18:00:00Z",local="C",visitante="D",equipo_proveedor="C",cuota=1.8)
-        tercero=dict(base,fecha="2026-12-02T18:00:00Z",local="E",visitante="F",equipo_proveedor="E",cuota=1.81)
-        sin_verificar=dict(base,fecha="2026-12-03T18:00:00Z",local="G",visitante="H",equipo_proveedor="G",cuota_verificada=False)
+        base=dict(liga="ESP",fecha="2026-11-24T18:00:00Z",consultada_en="2026-11-22T20:00:00Z",local="A",visitante="B",cuota=1.5,cuota_verificada=True,casa_apuestas="bet365",mercado="1X2",equipo_proveedor="A",seleccion="1")
+        segundo=dict(base,fecha="2026-11-25T18:00:00Z",local="C",visitante="D",equipo_proveedor="C",cuota=1.8)
+        tercero=dict(base,fecha="2026-11-26T18:00:00Z",local="E",visitante="F",equipo_proveedor="E",cuota=1.81)
+        sin_verificar=dict(base,fecha="2026-11-27T18:00:00Z",local="G",visitante="H",equipo_proveedor="G",cuota_verificada=False)
         dobles=generar_dobles([base,segundo,tercero,sin_verificar],datetime(2026,11,22,20,30,tzinfo=timezone.utc))
         self.assertEqual(len(dobles),1)
         self.assertEqual(dobles[0]["cuota_combinada"],2.7)
 
     def test_todas_las_combinaciones_sin_excluir_por_horario(self):
         def p(dia,cuota=1.5):
-            return dict(liga="ESP",fecha="2026-12-"+dia+"T18:00:00Z",consultada_en="2026-11-22T20:00:00Z",local="A"+dia,visitante="B"+dia,cuota=cuota,cuota_verificada=True,casa_apuestas="bet365",mercado="1X2",equipo_proveedor="A"+dia,seleccion="1")
-        dobles=generar_dobles([p("01"),p("02"),p("20")],datetime(2026,11,22,20,30,tzinfo=timezone.utc))
-        self.assertEqual(len(dobles),3)
-        self.assertEqual([x["fecha"] for x in dobles[0]["partidos"]],["2026-12-01T18:00:00Z","2026-12-02T18:00:00Z"])
+            return dict(liga="ESP",fecha="2026-11-"+dia+"T18:00:00Z",consultada_en="2026-11-22T20:00:00Z",local="A"+dia,visitante="B"+dia,cuota=cuota,cuota_verificada=True,casa_apuestas="bet365",mercado="1X2",equipo_proveedor="A"+dia,seleccion="1")
+        dobles=generar_dobles([p("24"),p("25"),p("30")],datetime(2026,11,22,20,30,tzinfo=timezone.utc))
+        self.assertEqual(len(dobles),1)
+        self.assertEqual([x["fecha"] for x in dobles[0]["partidos"]],["2026-11-24T18:00:00Z","2026-11-25T18:00:00Z"])
 
     def test_prioriza_rendimiento_y_no_horario(self):
         ahora=datetime(2026,11,22,20,30,tzinfo=timezone.utc)
@@ -48,7 +48,7 @@ class SeleccionTests(unittest.TestCase):
             return dict(liga="ESP",fecha=fecha,consultada_en="2026-11-22T20:00:00Z",
                         local=local,visitante="Rival "+local,equipo_proveedor=local,
                         cuota=1.5,cuota_verificada=True,casa_apuestas="bet365",
-                        mercado="1X2",seleccion="1",ppp=ppp)
+                        mercado="1X2",seleccion="1",ppp=ppp,valoracion=ppp)
         candidatos=[p("2026-11-24T23:30:00Z","A",2.1),
                     p("2026-11-25T00:00:00Z","B",2.2),
                     p("2026-11-24T12:00:00Z","C",2.8)]
