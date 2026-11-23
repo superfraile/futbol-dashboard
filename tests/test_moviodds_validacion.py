@@ -1,6 +1,7 @@
 import unittest
 from datetime import datetime, timezone, timedelta
 from scripts.moviodds_validacion import mercado_1x2, emparejar_candidatos, atribucion_bet365
+from scripts.importar_moviodds import incorporar
 
 class MoviOddsValidacionTests(unittest.TestCase):
     def setUp(self):
@@ -66,6 +67,33 @@ class MoviOddsValidacionTests(unittest.TestCase):
         cuota.pop("sportsbook")
         self.partido["operator"]="Otra casa"
         self.assertFalse(atribucion_bet365(self.partido,cuota))
+
+    def test_importa_cuotas_moviodds_y_genera_doble(self):
+        ahora=self.ahora
+        primero=dict(liga="ESP",fecha=self.partido["kickoff_utc"],
+                     local="FC Barcelona",visitante="Sevilla FC",
+                     equipo_proveedor="FC Barcelona",valoracion=2.1,cuota=None)
+        segundo=dict(liga="ESP",fecha=(ahora+timedelta(days=2)).isoformat(),
+                     local="Real Betis",visitante="Valencia CF",
+                     equipo_proveedor="Real Betis",valoracion=1.7,cuota=None)
+        p1=dict(self.partido,quotes=[self.cuota()])
+        p2=dict(home="Real Betis",away="Valencia CF",in_play=False,
+                kickoff_utc=segundo["fecha"],
+                quotes=[self.cuota(label="Real Betis",valor=1.6)])
+        datos=incorporar({"candidatos":[primero,segundo],"dobles":[]},[p1,p2],ahora)
+        self.assertEqual(datos["candidatos"][0]["casa_apuestas"],"MoviOdds")
+        self.assertEqual(datos["candidatos"][1]["cuota"],1.6)
+        self.assertEqual(len(datos["dobles"]),1)
+        self.assertEqual(datos["dobles"][0]["cuota_combinada"],2.4)
+
+    def test_importador_no_acepta_emparejamiento_ambiguo(self):
+        candidato=dict(liga="ESP",fecha=self.partido["kickoff_utc"],
+                       local="FC Barcelona",visitante="Sevilla FC",
+                       equipo_proveedor="FC Barcelona",cuota=None)
+        partido=dict(self.partido,quotes=[self.cuota()])
+        datos=incorporar({"candidatos":[candidato],"dobles":[]},[partido,dict(partido)],self.ahora)
+        self.assertIsNone(datos["candidatos"][0]["cuota"])
+        self.assertEqual(datos["dobles"],[])
 
     def test_no_atribuye_bookmaker(self):
         self.partido["quotes"]=[self.cuota()]
