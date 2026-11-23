@@ -171,6 +171,21 @@ def main():
                     etiqueta=campo+":"+formato
                     tipos_ts[etiqueta]=tipos_ts.get(etiqueta,0)+1
     diagnostico["formatos_fechas_cuotas"]=tipos_ts
+    # Antigüedad agregada, sin exponer precios ni nombres de partidos.
+    edades=[]
+    for _,partido in emparejados:
+        for cuota in partido.get("quotes",[]) if isinstance(partido.get("quotes"),list) else []:
+            if not isinstance(cuota,dict) or str(cuota.get("group_id"))!="40":
+                continue
+            instante=fecha_utc(cuota.get("ts"))
+            if instante is not None:
+                edades.append((ahora-instante).total_seconds())
+    if edades:
+        diagnostico["antiguedad_1x2_minima_minutos"]=round(min(edades)/60,1)
+        diagnostico["antiguedad_1x2_maxima_minutos"]=round(max(edades)/60,1)
+        diagnostico["cotizaciones_1x2_futuras"]=sum(edad<0 for edad in edades)
+        diagnostico["cotizaciones_1x2_mas_de_60_minutos"]=sum(edad>3600 for edad in edades)
+
 
 
 
