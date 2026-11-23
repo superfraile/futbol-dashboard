@@ -167,6 +167,24 @@ class SeleccionTests(unittest.TestCase):
             aplicar_cuotas_bet365(candidatos,archivo)
             self.assertTrue(all(p["cuota"] is None for p in candidatos))
 
+    def test_valoracion_local_y_visitante(self):
+        partidos=[
+            partido("2026-08-10","FC Barcelona","Rival A",a=2,b=0),
+            partido("2026-08-11","Rival A","FC Barcelona",a=0,b=2),
+            partido("2026-08-12","Rival B","Rival C",a=1,b=0),
+            partido("2099-12-01","FC Barcelona","Rival A","pendiente"),
+            partido("2099-12-02","Rival A","FC Barcelona","pendiente"),
+            partido("2099-12-03","FC Barcelona","Rival sin datos","pendiente")]
+        datos=construir({"fuente":"prueba","ligas":{"ESP":partidos}})
+        candidatos={p["fecha"]:p for p in datos["candidatos"]}
+        self.assertEqual(candidatos["2099-12-01"]["ppp"],3)
+        self.assertEqual(candidatos["2099-12-01"]["ppp_rival"],0)
+        self.assertEqual(candidatos["2099-12-01"]["bonus_local"],0.2)
+        self.assertEqual(candidatos["2099-12-01"]["valoracion"],3.2)
+        self.assertEqual(candidatos["2099-12-02"]["bonus_local"],0)
+        self.assertEqual(candidatos["2099-12-02"]["valoracion"],3)
+        self.assertIsNone(candidatos["2099-12-03"]["valoracion"])
+
     def test_no_selecciona_con_pocos_puntos(self):
         datos=construir({"fuente":"prueba", "ligas":{"ESP":[
             partido("2026-08-10","FC Barcelona","Sevilla FC",a=0,b=2),
