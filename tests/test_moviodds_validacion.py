@@ -28,6 +28,12 @@ class MoviOddsValidacionTests(unittest.TestCase):
         self.assertEqual(mercado_1x2(self.partido,self.ahora),{})
         self.partido["quotes"]=[self.cuota(),self.cuota(valor=1.6),self.cuota(valor=1.7)]
         self.assertEqual(mercado_1x2(self.partido,self.ahora),{})
+    def test_descarta_valores_no_finitos_y_booleanos(self):
+        for valor in (float("nan"),float("inf"),float("-inf"),True):
+            with self.subTest(valor=str(valor)):
+                self.partido["quotes"]=[self.cuota(valor=valor)]
+                self.assertEqual(mercado_1x2(self.partido,self.ahora),{})
+
     def test_empareja_solo_ambos_equipos_y_hora(self):
         candidato=dict(fecha=self.partido["kickoff_utc"],local="FC Barcelona",visitante="Sevilla FC")
         self.assertEqual(len(emparejar_candidatos([candidato],[self.partido])),1)
