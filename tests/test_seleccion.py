@@ -72,10 +72,10 @@ class SeleccionTests(unittest.TestCase):
 
     def test_importador_bet365_verificacion_y_caducidad(self):
         def candidato():
-            return dict(liga="ESP",fecha="2099-12-01",local="A",visitante="B",
+            return dict(liga="ESP",fecha="2099-12-01T18:00:00Z",local="A",visitante="B",
                         equipo_proveedor="A",cuota=None)
         ahora=datetime.now(timezone.utc)
-        base=dict(liga="ESP",fecha="2099-12-01",local="A",visitante="B",
+        base=dict(liga="ESP",fecha="2099-12-01T18:00:00Z",local="A",visitante="B",
                   seleccion="1",cuota=1.5,verificada=True,
                   consultada_en=ahora.isoformat(),url_fuente="https://www.bet365.com/")
         with tempfile.TemporaryDirectory() as carpeta:
@@ -97,9 +97,9 @@ class SeleccionTests(unittest.TestCase):
 
     def test_importador_descarta_registros_duplicados(self):
         ahora=datetime.now(timezone.utc).isoformat()
-        candidato=dict(liga="ESP",fecha="2099-12-01",local="A",
+        candidato=dict(liga="ESP",fecha="2099-12-01T18:00:00Z",local="A",
                        visitante="B",equipo_proveedor="A",cuota=None)
-        cuota=dict(liga="ESP",fecha="2099-12-01",local="A",visitante="B",
+        cuota=dict(liga="ESP",fecha="2099-12-01T18:00:00Z",local="A",visitante="B",
                    seleccion="1",cuota=1.5,verificada=True,
                    consultada_en=ahora,url_fuente="https://www.bet365.com/")
         with tempfile.TemporaryDirectory() as carpeta:
@@ -108,6 +108,22 @@ class SeleccionTests(unittest.TestCase):
                                                cuotas=[cuota,dict(cuota,cuota=1.6)])))
             aplicar_cuotas_bet365([candidato],archivo)
             self.assertIsNone(candidato["cuota"])
+
+    def test_importador_rechaza_partido_sin_hora_o_pasado(self):
+        ahora=datetime.now(timezone.utc)
+        registro=dict(liga="ESP",fecha="2099-12-01",local="A",visitante="B",
+                      seleccion="1",cuota=1.5,verificada=True,
+                      consultada_en=ahora.isoformat(),url_fuente="https://www.bet365.com/")
+        with tempfile.TemporaryDirectory() as carpeta:
+            archivo=Path(carpeta)/"cuotas.json"
+            for fecha in ("2099-12-01","2020-12-01T18:00:00Z"):
+                registro["fecha"]=fecha
+                archivo.write_text(json.dumps(dict(casa_apuestas="bet365",mercado="1X2",
+                                                   cuotas=[registro])))
+                candidato=dict(liga="ESP",fecha=fecha,local="A",visitante="B",
+                               equipo_proveedor="A",cuota=None)
+                aplicar_cuotas_bet365([candidato],archivo)
+                self.assertIsNone(candidato["cuota"])
 
     def test_no_selecciona_con_pocos_puntos(self):
         datos=construir({"fuente":"prueba", "ligas":{"ESP":[
