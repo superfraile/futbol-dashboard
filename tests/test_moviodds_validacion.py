@@ -39,6 +39,11 @@ class MoviOddsValidacionTests(unittest.TestCase):
         candidato=dict(fecha=self.partido["kickoff_utc"],local="FC Barcelona",visitante="Sevilla FC")
         self.assertEqual(emparejar_candidatos([candidato,dict(candidato)],[self.partido]),[])
 
+    def test_nombres_nulos_del_proveedor_no_interrumpen(self):
+        candidato=dict(fecha=self.partido["kickoff_utc"],local="FC Barcelona",visitante="Sevilla FC")
+        incompleto=dict(self.partido,home=None)
+        self.assertEqual(len(emparejar_candidatos([candidato],[incompleto,self.partido])),1)
+
     def test_equivalencias_explicitas_no_similitud(self):
         candidato=dict(fecha=self.partido["kickoff_utc"],local="Barcelona",visitante="Sevilla")
         self.assertEqual(emparejar_candidatos([candidato],[self.partido]),[])
