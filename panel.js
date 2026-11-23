@@ -134,7 +134,8 @@ async function iniciar(){
    detalle.setAttribute("role","status");
    detalle.textContent="Diagnóstico de cuotas: "+diagnostico.candidatos+" candidatos, "+
      diagnostico.candidatos_sin_hora+" sin hora de inicio, "+
-     diagnostico.emparejamientos_unicos+" partidos identificados en MoviOdds, "+
+     (diagnostico.candidatos_con_nombres_exactos_en_proveedor??"—")+" coincidencias por nombres de equipos, "+
+     diagnostico.emparejamientos_unicos+" partidos identificados con horario compatible, "+
      diagnostico.selecciones_en_rango+" selecciones con cuota válida. "+
      (diagnostico.emparejamientos_unicos===0
        ?"No se han podido relacionar los partidos entre ambas fuentes."
