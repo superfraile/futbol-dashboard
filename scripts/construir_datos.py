@@ -118,8 +118,21 @@ def aplicar_cuotas_bet365(candidatos, archivo=None):
     if documento.get("casa_apuestas")!="bet365" or documento.get("mercado")!="1X2":
         raise ValueError("La fuente de cuotas debe ser bet365, mercado 1X2")
     indices={(p["liga"],p["fecha"],p["local"],p["visitante"]):p for p in candidatos}
-    for cuota in documento.get("cuotas",[]):
-        clave=tuple(cuota[k] for k in ("liga","fecha","local","visitante"))
+    registros=documento.get("cuotas",[])
+    if not isinstance(registros,list):
+        raise ValueError("La lista de cuotas debe ser una lista")
+    # Si hay varias entradas para un mismo encuentro, ninguna se aplica:
+    # no es seguro escoger arbitrariamente una cuota o selección.
+    from collections import Counter
+    claves=[tuple(q.get(k) for k in ("liga","fecha","local","visitante"))
+            for q in registros if isinstance(q,dict)]
+    repeticiones=Counter(claves)
+    for cuota in registros:
+        if not isinstance(cuota,dict):
+            continue
+        clave=tuple(cuota.get(k) for k in ("liga","fecha","local","visitante"))
+        if repeticiones[clave]!=1:
+            continue
         partido=indices.get(clave)
         if partido is None:
             continue
