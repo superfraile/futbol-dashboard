@@ -128,6 +128,21 @@ async function iniciar(){
      (Date.now()-cuotasActualizadas.getTime()>3600000?" (más de una hora; comprobar vigencia de cada cuota)":"")
    :"Sin actualización automática de cuotas MoviOdds confirmada.";
  candidatosDest.parentElement.append(avisoCuotas);
+ if(datos.diagnostico_cuotas){
+   const diagnostico=datos.diagnostico_cuotas;
+   const detalle=document.createElement("p");
+   detalle.setAttribute("role","status");
+   detalle.textContent="Diagnóstico de cuotas: "+diagnostico.candidatos+" candidatos, "+
+     diagnostico.candidatos_sin_hora+" sin hora de inicio, "+
+     diagnostico.emparejamientos_unicos+" partidos identificados en MoviOdds, "+
+     diagnostico.selecciones_en_rango+" selecciones con cuota válida. "+
+     (diagnostico.emparejamientos_unicos===0
+       ?"No se han podido relacionar los partidos entre ambas fuentes."
+       :diagnostico.selecciones_en_rango===0
+         ?"Los partidos encontrados no tienen cuotas utilizables dentro de 1,20–1,80."
+         :"");
+   candidatosDest.parentElement.append(detalle);
+ }
  const doblesDest=document.getElementById("lista-dobles");
  const dobles=(datos.dobles||[]).filter(d=>Array.isArray(d.partidos)&&d.partidos.length===2&&d.partidos.every(p=>esFuturo(p)&&cuotaVigente(p)));
  if(dobles.length){
