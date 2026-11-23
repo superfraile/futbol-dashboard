@@ -29,9 +29,17 @@ jobs:
         env:
           FOOTBALL_DATA_API_KEY: ${{ secrets.FOOTBALL_DATA_API_KEY }}
       - run: python -m scripts.construir_datos entrada.json datos.json
-      - run: python -m scripts.importar_moviodds datos.json
+      - name: Importar cuotas MoviOdds sin bloquear datos deportivos
         env:
           MOVIODDS_API_KEY: ${{ secrets.MOVIODDS_API_KEY }}
+        run: |
+          if [ -z "$MOVIODDS_API_KEY" ]; then
+            echo "::warning::MoviOdds sin clave; se publican los datos deportivos sin cuotas nuevas."
+          elif python -m scripts.importar_moviodds datos.json; then
+            echo "Consulta MoviOdds completada."
+          else
+            echo "::warning::Falló MoviOdds; se publican los datos deportivos sin cuotas nuevas."
+          fi
       - run: |
           python -c 'import json; d=json.load(open("datos.json")); assert any(len(v)>0 for v in d["ligas"].values()); assert d["favoritos_validados"] is True; assert len(d["equipos_top"])==38; assert "candidatos" in d and "dobles" in d'
           mv entrada.json datos-origen.json
