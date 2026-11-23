@@ -132,6 +132,29 @@ def main():
             diferencias.append(min(abs((fecha-inicio).total_seconds()) for fecha in opciones))
     diagnostico["nombres_coincidentes_con_horario_mas_de_3h"]=sum(delta>10800 for delta in diferencias)
     diagnostico["nombres_coincidentes_sin_hora_proveedor"]=max(0,pares_identicos-len(diferencias))
+    # Distinguir mercados ausentes, marcas temporales caducadas y etiquetas no reconocidas.
+    from collections import Counter
+    motivos=Counter()
+    for candidato,partido in emparejados:
+        cuotas=partido.get("quotes",[])
+        if not isinstance(cuotas,list):
+            motivos["sin_lista_cuotas"]+=1
+            continue
+        grupo=[q for q in cuotas if isinstance(q,dict) and str(q.get("group_id"))=="40"]
+        if not grupo:
+            motivos["sin_grupo_1x2"]+=1
+            continue
+        motivos["con_grupo_1x2"]+=1
+        recientes=[q for q in grupo if (lambda t:t is not None and
+                   0<=(ahora-t).total_seconds()<=3600)(fecha_utc(q.get("ts")))]
+        if not recientes:
+            motivos["grupo_1x2_sin_cotizaciones_recientes"]+=1
+        else:
+            motivos["grupo_1x2_con_cotizaciones_recientes"]+=1
+        if not mercado_1x2(partido,ahora):
+            motivos["grupo_1x2_no_interpretable"]+=1
+    diagnostico["detalle_mercado_1x2"]=dict(motivos)
+
 
     print("Diagnóstico MoviOdds:",json.dumps(diagnostico,ensure_ascii=False))
     incorporar(datos,partidos,ahora)
