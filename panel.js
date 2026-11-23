@@ -39,6 +39,9 @@ async function iniciar(){
    return [nombreLiga(liga),equipo,r?.elo??null,s?.ppp??null];
  })));
  const hoy=new Intl.DateTimeFormat("sv-SE",{timeZone:"Europe/Madrid",year:"numeric",month:"2-digit",day:"2-digit"}).format(new Date());
+ const diaEspana=valor=>valor.length>10
+   ?new Intl.DateTimeFormat("sv-SE",{timeZone:"Europe/Madrid",year:"numeric",month:"2-digit",day:"2-digit"}).format(new Date(valor))
+   :valor.slice(0,10);
  const fechaEspana=valor=>valor.length>10?new Date(valor).toLocaleString("es-ES",{timeZone:"Europe/Madrid",day:"2-digit",month:"2-digit",year:"numeric",hour:"2-digit",minute:"2-digit"}):valor;
  const proximos=(datos.partidos||[]).filter(r=>r.fecha.length>10?Date.parse(r.fecha)>Date.now():r.fecha>=hoy).sort((a,b)=>a.fecha.localeCompare(b.fecha));
  cards[2].querySelector(".numero").textContent=datos.ultima_actualizacion?proximos.length:"—";
@@ -104,7 +107,7 @@ async function iniciar(){
    // Siete días significa hoy y los seis días siguientes, en calendario español.
    const inicio=Date.parse(hoy+"T12:00:00Z");
    const fechaLimite=new Date(inicio+(Number(dias==="all"?3650:dias)-1)*86400000).toISOString().slice(0,10);
-   const filtrados=candidatos.filter(r=>(!filtroCandidatos.value||r.liga===filtroCandidatos.value)&&(dias==="all"||r.fecha.slice(0,10)<=fechaLimite)).sort((a,b)=>Number(b.ppp)-Number(a.ppp)||a.fecha.localeCompare(b.fecha));
+   const filtrados=candidatos.filter(r=>(!filtroCandidatos.value||r.liga===filtroCandidatos.value)&&(dias==="all"||diaEspana(r.fecha)<=fechaLimite)).sort((a,b)=>Number(b.ppp)-Number(a.ppp)||a.fecha.localeCompare(b.fecha));
    if(!filtrados.length){candidatosDest.textContent="Sin partidos preseleccionados para esta liga.";return;}
    tabla(candidatosDest,["Liga","Fecha","Local","Visitante","Favorito fijo","Pts/PJ","Cuota"],filtrados.slice(0,100).map(r=>[
      nombreLiga(r.liga),fechaEspana(r.fecha),r.local,r.visitante,r.favorito,r.ppp,cuotaBet365Vigente(r)?r.cuota.toFixed(2):"Pendiente bet365"
