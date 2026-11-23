@@ -1,0 +1,32 @@
+name: Actualizar cuotas MoviOdds
+on:
+  schedule:
+    - cron: '13 * * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: datos-deportivos
+  cancel-in-progress: false
+jobs:
+  cuotas:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Actualizar cuotas del panel
+        env:
+          MOVIODDS_API_KEY: ${{ secrets.MOVIODDS_API_KEY }}
+        run: python -m scripts.importar_moviodds datos.json
+      - name: Publicar datos actualizados
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add datos.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Actualizar cuotas MoviOdds"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
