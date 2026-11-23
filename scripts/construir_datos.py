@@ -4,6 +4,7 @@ No descarga ni publica información por su cuenta.
 """
 import json
 import sys
+from math import isfinite
 from datetime import datetime, timezone, date
 from pathlib import Path
 from scripts.estadisticas import calcular, desglosar
@@ -70,7 +71,7 @@ def generar_dobles(candidatos, ahora=None):
             return False
     validos=[p for p in candidatos
              if vigente(p)
-             if type(p.get("cuota")) in (int,float) and 1.20<=p["cuota"]<=1.80
+             if type(p.get("cuota")) in (int,float) and isfinite(p["cuota"]) and 1.20<=p["cuota"]<=1.80
              and p.get("cuota_verificada") is True
              and p.get("casa_apuestas")=="bet365"
              and p.get("mercado")=="1X2"
@@ -127,7 +128,7 @@ def aplicar_cuotas_bet365(candidatos, archivo=None):
         fecha_consulta=cuota.get("consultada_en")
         url=cuota.get("url_fuente")
         if (cuota.get("verificada") is not True or cuota.get("seleccion")!=signo or type(valor) not in (float,int)
-                or not 1.20<=valor<=1.80 or not isinstance(url,str)
+                or not isfinite(valor) or not 1.20<=valor<=1.80 or not isinstance(url,str)
                 or not url.startswith("https://")
                 or urlparse(url).hostname not in ("bet365.com","www.bet365.com","bet365.es","www.bet365.es")
                 or not isinstance(fecha_consulta,str)):
