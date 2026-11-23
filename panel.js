@@ -74,8 +74,8 @@ async function iniciar(){
    }
    return r.fecha>=hoy;
  };
- const cuotaBet365Vigente=p=>{
-   if(p.casa_apuestas!=="bet365"||p.mercado!=="1X2"||p.cuota_verificada!==true||
+ const cuotaVigente=p=>{
+   if(!["bet365","MoviOdds"].includes(p.casa_apuestas)||p.mercado!=="1X2"||p.cuota_verificada!==true||
       typeof p.cuota!=="number"||!Number.isFinite(p.cuota)||
       p.cuota<1.20||p.cuota>1.80||
       typeof p.fecha!=="string"||p.fecha.length<=10||
@@ -86,8 +86,9 @@ async function iniciar(){
       consulta>=inicio||ahora-consulta>3600000)return false;
    try{
      const fuente=new URL(p.url_fuente);
-     if(fuente.protocol!=="https:"||
-        !["bet365.com","www.bet365.com","bet365.es","www.bet365.es"].includes(fuente.hostname))return false;
+     if(fuente.protocol!=="https:")return false;
+     const dominios=p.casa_apuestas==="bet365"?["bet365.com","www.bet365.com","bet365.es","www.bet365.es"]:["moviodds.com","www.moviodds.com"];
+     if(!dominios.includes(fuente.hostname))return false;
    }catch(_){return false;}
    const signo=p.equipo_proveedor===p.local?"1":p.equipo_proveedor===p.visitante?"2":null;
    return signo!==null&&p.seleccion===signo;
@@ -110,27 +111,27 @@ async function iniciar(){
    const filtrados=candidatos.filter(r=>(!filtroCandidatos.value||r.liga===filtroCandidatos.value)&&(dias==="all"||diaEspana(r.fecha)<=fechaLimite)).sort((a,b)=>Number(b.valoracion??-Infinity)-Number(a.valoracion??-Infinity)||Number(b.ppp)-Number(a.ppp)||a.fecha.localeCompare(b.fecha));
    if(!filtrados.length){candidatosDest.textContent="Sin partidos preseleccionados para esta liga.";return;}
    tabla(candidatosDest,["Liga","Fecha","Local","Visitante","Favorito fijo","Pts/PJ","Pts/PJ rival","Bonus local","Valoración","Cuota"],filtrados.slice(0,100).map(r=>[
-     nombreLiga(r.liga),fechaEspana(r.fecha),r.local,r.visitante,r.favorito,r.ppp,r.ppp_rival??"Sin datos",r.bonus_local??0,r.valoracion??"Sin datos",cuotaBet365Vigente(r)?r.cuota.toFixed(2):"Pendiente bet365"
+     nombreLiga(r.liga),fechaEspana(r.fecha),r.local,r.visitante,r.favorito,r.ppp,r.ppp_rival??"Sin datos",r.bonus_local??0,r.valoracion??"Sin datos",cuotaVigente(r)?r.cuota.toFixed(2)+" ("+r.casa_apuestas+")":"Pendiente de cuota"
    ]));
    const aviso=document.createElement("p");
-   aviso.textContent="Mostrando "+Math.min(100,filtrados.length)+" de "+filtrados.length+" partidos preseleccionados, ordenados por valoración (diferencia Pts/PJ + 0,2 si el favorito juega en casa). Cuotas verificadas: "+filtrados.filter(p=>cuotaBet365Vigente(p)).length+". No son apuestas válidas sin cuotas verificadas.";
+   aviso.textContent="Mostrando "+Math.min(100,filtrados.length)+" de "+filtrados.length+" partidos preseleccionados, ordenados por valoración (diferencia Pts/PJ + 0,2 si el favorito juega en casa). Cuotas disponibles (fuente indicada): "+filtrados.filter(p=>cuotaVigente(p)).length+". Las cuotas MoviOdds no son cuotas verificadas de bet365.";
    candidatosDest.append(aviso);
  }
  filtroCandidatos.addEventListener("change",dibujarCandidatos);
  plazoCandidatos.addEventListener("change",dibujarCandidatos);
  dibujarCandidatos();
  const doblesDest=document.getElementById("lista-dobles");
- const dobles=(datos.dobles||[]).filter(d=>Array.isArray(d.partidos)&&d.partidos.length===2&&d.partidos.every(p=>esFuturo(p)&&cuotaBet365Vigente(p)));
+ const dobles=(datos.dobles||[]).filter(d=>Array.isArray(d.partidos)&&d.partidos.length===2&&d.partidos.every(p=>esFuturo(p)&&cuotaVigente(p)));
  if(dobles.length){
    tabla(doblesDest,["Partido 1","Cuota 1","Partido 2","Cuota 2","Cuota combinada"],dobles.slice(0,5).map(d=>[
      d.partidos[0].local+" - "+d.partidos[0].visitante+" ("+d.partidos[0].fecha.slice(0,10)+")",
-     d.partidos[0].cuota,
+     d.partidos[0].cuota+" ("+d.partidos[0].casa_apuestas+")",
      d.partidos[1].local+" - "+d.partidos[1].visitante+" ("+d.partidos[1].fecha.slice(0,10)+")",
-     d.partidos[1].cuota,
+     d.partidos[1].cuota+" ("+d.partidos[1].casa_apuestas+")",
      d.cuota_combinada
    ]));
    const nota=document.createElement("p");nota.textContent="Mostrando un máximo de 5 dobles recomendadas, ordenadas por valoración. Cuotas sujetas a cambios.";doblesDest.append(nota);
- }else doblesDest.textContent="Todavía no hay dobles con dos cuotas verificadas entre 1,20 y 1,80. No se muestran apuestas inventadas.";
+ }else doblesDest.textContent="Todavía no hay dobles con dos cuotas disponibles entre 1,20 y 1,80. No se muestran apuestas inventadas.";
  const dest=document.querySelector("#estadisticas .aviso");
  const filas=[];
  for(const l of CONFIG.ligas){
