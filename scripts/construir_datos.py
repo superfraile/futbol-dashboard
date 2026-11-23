@@ -136,6 +136,13 @@ def aplicar_cuotas_bet365(candidatos, archivo=None):
         partido=indices.get(clave)
         if partido is None:
             continue
+        # Una cuota no es operativa sin hora de inicio inequívoca y futura.
+        try:
+            inicio=datetime.fromisoformat(partido["fecha"].replace("Z","+00:00"))
+            if inicio.tzinfo is None or inicio<=datetime.now(timezone.utc):
+                continue
+        except (KeyError,TypeError,ValueError,AttributeError):
+            continue
         signo="1" if partido["equipo_proveedor"]==partido["local"] else "2"
         valor=cuota.get("cuota")
         fecha_consulta=cuota.get("consultada_en")
