@@ -1,7 +1,7 @@
 {
   "version": "1.2",
-  "ultima_actualizacion": "2026-11-23T22:02:22.523728+00:00",
-  "fuente": "OpenLigaDB (https://www.openligadb.de), ODbL 1.0; GER; football-data.org (PL; ENG); football-data.org (PD; ESP); football-data.org (SA; ITA); football-data.org (FL1; FRA); football-data.org (PPL; POR); football-data.org (DED; NED; copia anterior)",
+  "ultima_actualizacion": "2026-11-23T22:03:16.314671+00:00",
+  "fuente": "OpenLigaDB (https://www.openligadb.de), ODbL 1.0; GER; football-data.org (PL; ENG); football-data.org (PD; ESP); football-data.org (SA; ITA); football-data.org (FL1; FRA); football-data.org (PPL; POR); football-data.org (DED; NED)",
   "ligas": {
     "GER": [
       {
@@ -14762,5 +14762,16 @@
   ],
   "dobles": [],
   "favoritos_validados": true,
-  "ultima_actualizacion_cuotas": "2026-11-23T22:02:26.704354+00:00"
+  "ultima_actualizacion_cuotas": "2026-11-23T22:03:17.991570+00:00",
+  "diagnostico_cuotas": {
+    "partidos_proveedor": 819,
+    "candidatos": 9,
+    "candidatos_sin_hora": 2,
+    "emparejamientos_unicos": 1,
+    "emparejados_con_mercado_1x2_vigente": 0,
+    "selecciones_en_rango": 0,
+    "emparejados_con_favorito_identificado": 1,
+    "sin_cuota_vigente_del_favorito": 1,
+    "cuotas_fuera_de_1_20_a_1_80": 0
+  }
 }
