@@ -56,6 +56,24 @@ class SeleccionTests(unittest.TestCase):
         self.assertEqual(len(dobles),3)
         self.assertEqual({x["local"] for x in dobles[0]["partidos"]},{"B","C"})
 
+    def test_maximo_cinco_dobles_y_prioridad_por_valoracion(self):
+        ahora=datetime(2026,11,22,20,30,tzinfo=timezone.utc)
+        candidatos=[]
+        for n,valoracion in enumerate((0.3,2.6,1.8,2.2),start=1):
+            candidatos.append(dict(
+                liga="ESP",fecha=f"2026-11-{23+n:02d}T18:00:00Z",
+                consultada_en="2026-11-22T20:00:00Z",
+                local=f"Local {n}",visitante=f"Rival {n}",
+                equipo_proveedor=f"Local {n}",cuota=1.5,
+                cuota_verificada=True,casa_apuestas="MoviOdds",
+                mercado="1X2",seleccion="1",valoracion=valoracion))
+        dobles=generar_dobles(candidatos,ahora)
+        self.assertEqual(len(dobles),5)
+        self.assertEqual({p["local"] for p in dobles[0]["partidos"]},
+                         {"Local 2","Local 4"})
+        self.assertEqual({p["local"] for p in dobles[-1]["partidos"]},
+                         {"Local 1","Local 3"})
+
     def test_dobles_descartan_cuotas_caducadas_y_partidos_pasados(self):
         ahora=datetime(2026,11,22,20,30,tzinfo=timezone.utc)
         base=dict(liga="ESP",fecha="2026-11-23T18:00:00Z",
