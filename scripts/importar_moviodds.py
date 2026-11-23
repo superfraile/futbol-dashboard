@@ -84,7 +84,7 @@ def main():
             con_mercado_favorito+=1
             if not 1.20<=cuota_favorito["cuota"]<=1.80:
                 fuera_rango+=1
-    print("Diagnóstico MoviOdds:",json.dumps({
+    diagnostico={
         "partidos_proveedor":len(partidos),
         "candidatos":len(candidatos),
         "candidatos_sin_hora":sin_hora,
@@ -94,8 +94,10 @@ def main():
         "emparejados_con_favorito_identificado":con_signo,
         "sin_cuota_vigente_del_favorito":sin_cuota_favorito,
         "cuotas_fuera_de_1_20_a_1_80":fuera_rango
-    },ensure_ascii=False))
+    }
+    print("Diagnóstico MoviOdds:",json.dumps(diagnostico,ensure_ascii=False))
     incorporar(datos,partidos,ahora)
+    datos["diagnostico_cuotas"]=diagnostico
     temporal=ruta.with_suffix(".tmp")
     temporal.write_text(json.dumps(datos,ensure_ascii=False,indent=2),encoding="utf-8")
     temporal.replace(ruta)
