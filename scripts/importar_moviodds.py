@@ -6,7 +6,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 from urllib.request import Request, urlopen
 from scripts.moviodds_validacion import emparejar_candidatos, mercado_1x2, fecha_utc
-from scripts.construir_datos import generar_dobles
+from scripts.construir_datos import generar_dobles, clave_equipo
 
 URL="https://moviodds.com/odds?sport=soccer"
 
@@ -95,6 +95,22 @@ def main():
         "sin_cuota_vigente_del_favorito":sin_cuota_favorito,
         "cuotas_fuera_de_1_20_a_1_80":fuera_rango
     }
+    # Medir coincidencias de equipos sin relajar la regla estricta de publicación.
+    pares_proveedor=set()
+    for partido in partidos:
+        if not isinstance(partido,dict):
+            continue
+        local,visitante=partido.get("home"),partido.get("away")
+        if isinstance(local,str) and isinstance(visitante,str):
+            pares_proveedor.add((clave_equipo(local),clave_equipo(visitante)))
+    pares_identicos=0
+    for candidato in candidatos:
+        local,visitante=candidato.get("local"),candidato.get("visitante")
+        if isinstance(local,str) and isinstance(visitante,str):
+            if (clave_equipo(local),clave_equipo(visitante)) in pares_proveedor:
+                pares_identicos+=1
+    diagnostico["candidatos_con_nombres_exactos_en_proveedor"]=pares_identicos
+    diagnostico["coincidencias_nombres_sin_horario_compatible"]=max(0,pares_identicos-len(emparejados))
     print("Diagnóstico MoviOdds:",json.dumps(diagnostico,ensure_ascii=False))
     incorporar(datos,partidos,ahora)
     datos["diagnostico_cuotas"]=diagnostico
