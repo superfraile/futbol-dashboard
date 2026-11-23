@@ -77,7 +77,7 @@ def generar_dobles(candidatos, ahora=None):
              if vigente(p)
              if type(p.get("cuota")) in (int,float) and isfinite(p["cuota"]) and 1.20<=p["cuota"]<=1.80
              and p.get("cuota_verificada") is True
-             and p.get("casa_apuestas")=="bet365"
+             and p.get("casa_apuestas") in ("bet365","MoviOdds")
              and p.get("mercado")=="1X2"
              and p.get("seleccion")==("1" if p.get("equipo_proveedor")==p.get("local") else "2" if p.get("equipo_proveedor")==p.get("visitante") else None)]
     dobles=[]
