@@ -83,10 +83,9 @@ def generar_dobles(candidatos, ahora=None):
         if (a["liga"],a["fecha"],a["local"],a["visitante"]) == (b["liga"],b["fecha"],b["local"],b["visitante"]):
             continue
         dobles.append(dict(partidos=[a,b],cuota_combinada=round(a["cuota"]*b["cuota"],3)))
-    # Priorizar rendimiento del favorito, no proximidad de horarios.
-    # La regla de comparación con el rival se fijará cuando esté definida.
+    # Priorizar la diferencia de puntos por partido con bonus de localía.
     dobles.sort(key=lambda d:(
-        -sum(float(p.get("ppp") or 0) for p in d["partidos"]),
+        -sum(float(p.get("valoracion") or 0) for p in d["partidos"]),
         d["partidos"][0]["fecha"],d["partidos"][1]["fecha"]))
     return dobles
 
@@ -220,6 +219,8 @@ def construir(entrada):
                     favorito=resueltos[favorito],equipo_proveedor=favorito,
                     ppp=por_equipo[favorito]["ppp"],
                     ppp_rival=por_equipo.get(visitante if favorito==local else local,{}).get("ppp"),
+                    bonus_local=0.2 if favorito==local else 0.0,
+                    valoracion=round(por_equipo[favorito]["ppp"]-por_equipo[visitante if favorito==local else local]["ppp"]+(0.2 if favorito==local else 0.0),2) if (visitante if favorito==local else local) in por_equipo else None,
                     cuota=None,
                     estado="Pendiente de cuota verificada"))
         for m in partidos:
