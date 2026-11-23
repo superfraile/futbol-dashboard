@@ -73,10 +73,19 @@ async function iniciar(){
  };
  const cuotaBet365Vigente=p=>{
    if(p.casa_apuestas!=="bet365"||p.mercado!=="1X2"||p.cuota_verificada!==true||
-      typeof p.cuota!=="number"||p.cuota<1.20||p.cuota>1.80||
-      !p.consultada_en||!p.url_fuente)return false;
-   const consulta=Date.parse(p.consultada_en);
-   if(!Number.isFinite(consulta)||consulta>ahora||ahora-consulta>3600000)return false;
+      typeof p.cuota!=="number"||!Number.isFinite(p.cuota)||
+      p.cuota<1.20||p.cuota>1.80||
+      typeof p.fecha!=="string"||p.fecha.length<=10||
+      typeof p.consultada_en!=="string"||typeof p.url_fuente!=="string")return false;
+   const inicio=Date.parse(p.fecha),consulta=Date.parse(p.consultada_en);
+   if(!Number.isFinite(inicio)||inicio<=ahora||
+      !Number.isFinite(consulta)||consulta>ahora||
+      consulta>=inicio||ahora-consulta>3600000)return false;
+   try{
+     const fuente=new URL(p.url_fuente);
+     if(fuente.protocol!=="https:"||
+        !["bet365.com","www.bet365.com","bet365.es","www.bet365.es"].includes(fuente.hostname))return false;
+   }catch(_){return false;}
    const signo=p.equipo_proveedor===p.local?"1":p.equipo_proveedor===p.visitante?"2":null;
    return signo!==null&&p.seleccion===signo;
  };
