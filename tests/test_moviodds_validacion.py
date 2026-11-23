@@ -86,6 +86,22 @@ class MoviOddsValidacionTests(unittest.TestCase):
         self.assertEqual(len(datos["dobles"]),1)
         self.assertEqual(datos["dobles"][0]["cuota_combinada"],2.4)
 
+    def test_actualizacion_no_conserva_cuota_antigua(self):
+        candidato=dict(liga="ESP",fecha=self.partido["kickoff_utc"],
+                       local="FC Barcelona",visitante="Sevilla FC",
+                       equipo_proveedor="FC Barcelona",cuota=1.5,
+                       cuota_verificada=True,casa_apuestas="MoviOdds",
+                       mercado="1X2",seleccion="1",
+                       consultada_en=self.ahora.isoformat(),
+                       url_fuente="https://moviodds.com/odds?sport=soccer")
+        datos=incorporar({"candidatos":[candidato],"dobles":[]},[],self.ahora)
+        self.assertIsNone(datos["candidatos"][0]["cuota"])
+        self.assertEqual(datos["dobles"],[])
+        actualizado=dict(self.partido,quotes=[self.cuota(valor=1.6)])
+        datos=incorporar(datos,[actualizado],self.ahora)
+        self.assertEqual(datos["candidatos"][0]["cuota"],1.6)
+        self.assertEqual(datos["candidatos"][0]["casa_apuestas"],"MoviOdds")
+
     def test_importador_no_acepta_emparejamiento_ambiguo(self):
         candidato=dict(liga="ESP",fecha=self.partido["kickoff_utc"],
                        local="FC Barcelona",visitante="Sevilla FC",
