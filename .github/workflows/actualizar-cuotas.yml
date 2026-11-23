@@ -19,7 +19,12 @@ jobs:
       - name: Actualizar cuotas del panel
         env:
           MOVIODDS_API_KEY: ${{ secrets.MOVIODDS_API_KEY }}
-        run: python -m scripts.importar_moviodds datos.json
+        run: |
+          if [ -z "$MOVIODDS_API_KEY" ]; then
+            echo "::error::Falta el secreto MOVIODDS_API_KEY; no se han actualizado las cuotas."
+            exit 1
+          fi
+          python -m scripts.importar_moviodds datos.json
       - name: Publicar datos actualizados
         run: |
           git config user.name "github-actions[bot]"
