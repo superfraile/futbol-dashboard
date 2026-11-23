@@ -83,12 +83,11 @@ def generar_dobles(candidatos, ahora=None):
         if (a["liga"],a["fecha"],a["local"],a["visitante"]) == (b["liga"],b["fecha"],b["local"],b["visitante"]):
             continue
         dobles.append(dict(partidos=[a,b],cuota_combinada=round(a["cuota"]*b["cuota"],3)))
-    def proximidad(d):
-        primero,segundo=(p["fecha"] for p in d["partidos"])
-        a=datetime.fromisoformat(primero.replace("Z","+00:00"))
-        b=datetime.fromisoformat(segundo.replace("Z","+00:00"))
-        return ((b-a).total_seconds(),primero,segundo)
-    dobles.sort(key=proximidad)
+    # Priorizar rendimiento del favorito, no proximidad de horarios.
+    # La regla de comparación con el rival se fijará cuando esté definida.
+    dobles.sort(key=lambda d:(
+        -sum(float(p.get("ppp") or 0) for p in d["partidos"]),
+        d["partidos"][0]["fecha"],d["partidos"][1]["fecha"]))
     return dobles
 
 def validar(entrada):
@@ -219,7 +218,9 @@ def construir(entrada):
                 resultado["candidatos"].append(dict(
                     liga=liga,fecha=m["fecha"],local=local,visitante=visitante,
                     favorito=resueltos[favorito],equipo_proveedor=favorito,
-                    ppp=por_equipo[favorito]["ppp"],cuota=None,
+                    ppp=por_equipo[favorito]["ppp"],
+                    ppp_rival=por_equipo.get(visitante if favorito==local else local,{}).get("ppp"),
+                    cuota=None,
                     estado="Pendiente de cuota verificada"))
         for m in partidos:
             if m.get("estado")=="pendiente":
