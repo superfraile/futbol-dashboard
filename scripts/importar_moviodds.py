@@ -33,14 +33,15 @@ def incorporar(datos, partidos, ahora=None):
                          cuota_verificada=True,casa_apuestas="MoviOdds",
                          mercado="1X2",seleccion=signo,url_fuente=URL,
                          estado="Cuota MoviOdds; no verificada en bet365")
+    datos["ultima_actualizacion_cuotas"]=ahora.isoformat()
     datos["dobles"]=generar_dobles(candidatos,ahora)
     return datos
 
 def main():
     clave=os.environ.get("MOVIODDS_API_KEY","").strip()
     if not clave:
-        print("Sin clave MoviOdds: no se importan cuotas.")
-        return 0
+        print("ERROR: falta MOVIODDS_API_KEY; cuotas sin actualizar.")
+        return 2
     ruta=Path(sys.argv[1] if len(sys.argv)>1 else "datos.json")
     datos=json.loads(ruta.read_text(encoding="utf-8"))
     solicitud=Request(URL,headers={"X-API-Key":clave,"Accept":"application/json",
