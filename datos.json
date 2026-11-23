@@ -1,7 +1,7 @@
 {
   "version": "1.2",
-  "ultima_actualizacion": "2026-11-23T19:22:49.434814+00:00",
-  "fuente": "OpenLigaDB (https://www.openligadb.de), ODbL 1.0; GER; football-data.org (PL; ENG); football-data.org (PD; ESP); football-data.org (SA; ITA); football-data.org (FL1; FRA); football-data.org (PPL; POR); football-data.org (DED; NED)",
+  "ultima_actualizacion": "2026-11-23T19:23:52.107594+00:00",
+  "fuente": "OpenLigaDB (https://www.openligadb.de), ODbL 1.0; GER; football-data.org (PL; ENG); football-data.org (PD; ESP); football-data.org (SA; ITA); football-data.org (FL1; FRA); football-data.org (PPL; POR); football-data.org (DED; NED; copia anterior)",
   "ligas": {
     "GER": [
       {
@@ -2741,6 +2741,12 @@
       "visitante": "Frosinone Calcio"
     },
     {
+      "liga": "ESP",
+      "fecha": "2026-12-11T20:00:00Z",
+      "local": "Elche CF",
+      "visitante": "Sevilla FC"
+    },
+    {
       "liga": "POR",
       "fecha": "2026-12-11T20:15:00Z",
       "local": "Académico de Viseu FC",
@@ -2777,6 +2783,12 @@
       "visitante": "Eintracht Frankfurt"
     },
     {
+      "liga": "ESP",
+      "fecha": "2026-12-12T13:00:00Z",
+      "local": "Levante UD",
+      "visitante": "Deportivo Alavés"
+    },
+    {
       "liga": "ITA",
       "fecha": "2026-12-12T14:00:00Z",
       "local": "Cagliari Calcio",
@@ -2801,6 +2813,12 @@
       "visitante": "Brentford FC"
     },
     {
+      "liga": "ESP",
+      "fecha": "2026-12-12T15:15:00Z",
+      "local": "Villarreal CF",
+      "visitante": "Rayo Vallecano de Madrid"
+    },
+    {
       "liga": "NED",
       "fecha": "2026-12-12T15:30:00Z",
       "local": "FC Utrecht",
@@ -2823,6 +2841,12 @@
       "fecha": "2026-12-12T17:00:00Z",
       "local": "US Lecce",
       "visitante": "US Sassuolo Calcio"
+    },
+    {
+      "liga": "ESP",
+      "fecha": "2026-12-12T17:30:00Z",
+      "local": "Málaga CF",
+      "visitante": "FC Barcelona"
     },
     {
       "liga": "ENG",
@@ -2873,6 +2897,12 @@
       "visitante": "Bologna FC 1909"
     },
     {
+      "liga": "ESP",
+      "fecha": "2026-12-12T20:00:00Z",
+      "local": "Real Betis Balompié",
+      "visitante": "Real Racing Club de Santander"
+    },
+    {
       "liga": "NED",
       "fecha": "2026-12-12T20:00:00Z",
       "local": "PEC Zwolle",
@@ -2903,66 +2933,6 @@
       "visitante": "Bayer 04 Leverkusen"
     },
     {
-      "liga": "ESP",
-      "fecha": "2026-12-13T00:00:00Z",
-      "local": "RCD Espanyol de Barcelona",
-      "visitante": "RC Celta de Vigo"
-    },
-    {
-      "liga": "ESP",
-      "fecha": "2026-12-13T00:00:00Z",
-      "local": "Málaga CF",
-      "visitante": "FC Barcelona"
-    },
-    {
-      "liga": "ESP",
-      "fecha": "2026-12-13T00:00:00Z",
-      "local": "Real Madrid CF",
-      "visitante": "CA Osasuna"
-    },
-    {
-      "liga": "ESP",
-      "fecha": "2026-12-13T00:00:00Z",
-      "local": "RC Deportivo La Coruña",
-      "visitante": "Athletic Club"
-    },
-    {
-      "liga": "ESP",
-      "fecha": "2026-12-13T00:00:00Z",
-      "local": "Levante UD",
-      "visitante": "Deportivo Alavés"
-    },
-    {
-      "liga": "ESP",
-      "fecha": "2026-12-13T00:00:00Z",
-      "local": "Elche CF",
-      "visitante": "Sevilla FC"
-    },
-    {
-      "liga": "ESP",
-      "fecha": "2026-12-13T00:00:00Z",
-      "local": "Villarreal CF",
-      "visitante": "Rayo Vallecano de Madrid"
-    },
-    {
-      "liga": "ESP",
-      "fecha": "2026-12-13T00:00:00Z",
-      "local": "Real Betis Balompié",
-      "visitante": "Real Racing Club de Santander"
-    },
-    {
-      "liga": "ESP",
-      "fecha": "2026-12-13T00:00:00Z",
-      "local": "Real Sociedad de Fútbol",
-      "visitante": "Getafe CF"
-    },
-    {
-      "liga": "ESP",
-      "fecha": "2026-12-13T00:00:00Z",
-      "local": "Club Atlético de Madrid",
-      "visitante": "Valencia CF"
-    },
-    {
       "liga": "NED",
       "fecha": "2026-12-13T11:15:00Z",
       "local": "PSV",
@@ -2973,6 +2943,12 @@
       "fecha": "2026-12-13T11:30:00Z",
       "local": "SS Lazio",
       "visitante": "AS Roma"
+    },
+    {
+      "liga": "ESP",
+      "fecha": "2026-12-13T13:00:00Z",
+      "local": "Club Atlético de Madrid",
+      "visitante": "Valencia CF"
     },
     {
       "liga": "NED",
@@ -3017,6 +2993,12 @@
       "visitante": "Torino FC"
     },
     {
+      "liga": "ESP",
+      "fecha": "2026-12-13T15:15:00Z",
+      "local": "RC Deportivo La Coruña",
+      "visitante": "Athletic Club"
+    },
+    {
       "liga": "POR",
       "fecha": "2026-12-13T15:30:00Z",
       "local": "Casa Pia AC",
@@ -3053,6 +3035,12 @@
       "visitante": "ACF Fiorentina"
     },
     {
+      "liga": "ESP",
+      "fecha": "2026-12-13T17:30:00Z",
+      "local": "Real Sociedad de Fútbol",
+      "visitante": "Getafe CF"
+    },
+    {
       "liga": "POR",
       "fecha": "2026-12-13T18:00:00Z",
       "local": "Vitória SC",
@@ -3083,6 +3071,12 @@
       "visitante": "AC Milan"
     },
     {
+      "liga": "ESP",
+      "fecha": "2026-12-13T20:00:00Z",
+      "local": "Real Madrid CF",
+      "visitante": "CA Osasuna"
+    },
+    {
       "liga": "POR",
       "fecha": "2026-12-13T20:30:00Z",
       "local": "FC Porto",
@@ -3099,6 +3093,12 @@
       "fecha": "2026-12-14T19:45:00Z",
       "local": "Juventus FC",
       "visitante": "AC Monza"
+    },
+    {
+      "liga": "ESP",
+      "fecha": "2026-12-14T20:00:00Z",
+      "local": "RCD Espanyol de Barcelona",
+      "visitante": "RC Celta de Vigo"
     },
     {
       "liga": "ENG",
@@ -15004,6 +15004,17 @@
       "estado": "Pendiente de cuota verificada"
     },
     {
+      "liga": "ESP",
+      "fecha": "2026-12-12T17:30:00Z",
+      "local": "Málaga CF",
+      "visitante": "FC Barcelona",
+      "favorito": "Barcelona",
+      "equipo_proveedor": "FC Barcelona",
+      "ppp": 2.77,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
       "liga": "ENG",
       "fecha": "2026-12-12T17:30:00Z",
       "local": "Manchester City FC",
@@ -15011,6 +15022,17 @@
       "favorito": "Manchester City",
       "equipo_proveedor": "Manchester City FC",
       "ppp": 2.0,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ESP",
+      "fecha": "2026-12-12T20:00:00Z",
+      "local": "Real Betis Balompié",
+      "visitante": "Real Racing Club de Santander",
+      "favorito": "Betis",
+      "equipo_proveedor": "Real Betis Balompié",
+      "ppp": 2.08,
       "cuota": null,
       "estado": "Pendiente de cuota verificada"
     },
@@ -15037,50 +15059,6 @@
       "estado": "Pendiente de cuota verificada"
     },
     {
-      "liga": "ESP",
-      "fecha": "2026-12-13T00:00:00Z",
-      "local": "Málaga CF",
-      "visitante": "FC Barcelona",
-      "favorito": "Barcelona",
-      "equipo_proveedor": "FC Barcelona",
-      "ppp": 2.77,
-      "cuota": null,
-      "estado": "Pendiente de cuota verificada"
-    },
-    {
-      "liga": "ESP",
-      "fecha": "2026-12-13T00:00:00Z",
-      "local": "Real Madrid CF",
-      "visitante": "CA Osasuna",
-      "favorito": "Real Madrid",
-      "equipo_proveedor": "Real Madrid CF",
-      "ppp": 2.54,
-      "cuota": null,
-      "estado": "Pendiente de cuota verificada"
-    },
-    {
-      "liga": "ESP",
-      "fecha": "2026-12-13T00:00:00Z",
-      "local": "Real Betis Balompié",
-      "visitante": "Real Racing Club de Santander",
-      "favorito": "Betis",
-      "equipo_proveedor": "Real Betis Balompié",
-      "ppp": 2.08,
-      "cuota": null,
-      "estado": "Pendiente de cuota verificada"
-    },
-    {
-      "liga": "ESP",
-      "fecha": "2026-12-13T00:00:00Z",
-      "local": "Club Atlético de Madrid",
-      "visitante": "Valencia CF",
-      "favorito": "Atl. Madrid",
-      "equipo_proveedor": "Club Atlético de Madrid",
-      "ppp": 2.38,
-      "cuota": null,
-      "estado": "Pendiente de cuota verificada"
-    },
-    {
       "liga": "NED",
       "fecha": "2026-12-13T11:15:00Z",
       "local": "PSV",
@@ -15088,6 +15066,17 @@
       "favorito": "PSV",
       "equipo_proveedor": "PSV",
       "ppp": 2.23,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ESP",
+      "fecha": "2026-12-13T13:00:00Z",
+      "local": "Club Atlético de Madrid",
+      "visitante": "Valencia CF",
+      "favorito": "Atl. Madrid",
+      "equipo_proveedor": "Club Atlético de Madrid",
+      "ppp": 2.38,
       "cuota": null,
       "estado": "Pendiente de cuota verificada"
     },
@@ -15121,6 +15110,17 @@
       "favorito": "Ajax",
       "equipo_proveedor": "AFC Ajax",
       "ppp": 2.15,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ESP",
+      "fecha": "2026-12-13T20:00:00Z",
+      "local": "Real Madrid CF",
+      "visitante": "CA Osasuna",
+      "favorito": "Real Madrid",
+      "equipo_proveedor": "Real Madrid CF",
+      "ppp": 2.54,
       "cuota": null,
       "estado": "Pendiente de cuota verificada"
     },
