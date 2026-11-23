@@ -154,6 +154,24 @@ def main():
         if not mercado_1x2(partido,ahora):
             motivos["grupo_1x2_no_interpretable"]+=1
     diagnostico["detalle_mercado_1x2"]=dict(motivos)
+    # Identificar el formato real de las marcas de tiempo, sin publicar sus valores.
+    tipos_ts={}
+    campos_temporales=("ts","timestamp","updated_at","last_update","last_updated")
+    for candidato,partido in emparejados:
+        for cuota in partido.get("quotes",[]) if isinstance(partido.get("quotes"),list) else []:
+            if not isinstance(cuota,dict) or str(cuota.get("group_id"))!="40":
+                continue
+            for campo in campos_temporales:
+                if campo in cuota:
+                    valor=cuota[campo]
+                    formato=("iso_con_zona" if fecha_utc(valor) is not None else
+                             "texto_sin_zona_o_invalido" if isinstance(valor,str) else
+                             "numero" if isinstance(valor,(float,int)) and not isinstance(valor,bool) else
+                             type(valor).__name__)
+                    etiqueta=campo+":"+formato
+                    tipos_ts[etiqueta]=tipos_ts.get(etiqueta,0)+1
+    diagnostico["formatos_fechas_cuotas"]=tipos_ts
+
 
 
     print("Diagnóstico MoviOdds:",json.dumps(diagnostico,ensure_ascii=False))
