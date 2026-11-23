@@ -1,5 +1,6 @@
 """Validaciones locales de datos MoviOdds. No consulta ni publica cuotas."""
 from datetime import datetime, timezone
+from math import isfinite
 from scripts.construir_datos import clave_equipo
 
 def fecha_utc(valor):
@@ -44,7 +45,7 @@ def mercado_1x2(partido, ahora=None):
         instante=fecha_utc(q.get("ts"))
         valor=q.get("odds_dec")
         if (instante is None or instante>ahora or (ahora-instante).total_seconds()>3600
-                or type(valor) not in (float,int) or valor<=1):
+                or type(valor) not in (float,int) or not isfinite(valor) or valor<=1):
             continue
         # Duplicados para una misma selección son ambiguos: no escoger arbitrariamente.
         if signo in resultados:
