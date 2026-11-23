@@ -35,26 +35,26 @@ class SeleccionTests(unittest.TestCase):
         self.assertEqual(len(dobles),1)
         self.assertEqual(dobles[0]["cuota_combinada"],2.7)
 
-    def test_todas_las_combinaciones_priorizando_proximidad(self):
+    def test_todas_las_combinaciones_sin_excluir_por_horario(self):
         def p(dia,cuota=1.5):
             return dict(liga="ESP",fecha="2026-12-"+dia+"T18:00:00Z",consultada_en="2026-11-22T20:00:00Z",local="A"+dia,visitante="B"+dia,cuota=cuota,cuota_verificada=True,casa_apuestas="bet365",mercado="1X2",equipo_proveedor="A"+dia,seleccion="1")
         dobles=generar_dobles([p("01"),p("02"),p("20")],datetime(2026,11,22,20,30,tzinfo=timezone.utc))
         self.assertEqual(len(dobles),3)
         self.assertEqual([x["fecha"] for x in dobles[0]["partidos"]],["2026-12-01T18:00:00Z","2026-12-02T18:00:00Z"])
 
-    def test_prioriza_horas_reales_y_no_solo_dias(self):
+    def test_prioriza_rendimiento_y_no_horario(self):
         ahora=datetime(2026,11,22,20,30,tzinfo=timezone.utc)
-        def p(fecha,local):
+        def p(fecha,local,ppp):
             return dict(liga="ESP",fecha=fecha,consultada_en="2026-11-22T20:00:00Z",
                         local=local,visitante="Rival "+local,equipo_proveedor=local,
                         cuota=1.5,cuota_verificada=True,casa_apuestas="bet365",
-                        mercado="1X2",seleccion="1")
-        candidatos=[p("2026-11-24T23:30:00Z","A"),
-                    p("2026-11-25T00:00:00Z","B"),
-                    p("2026-11-24T12:00:00Z","C")]
+                        mercado="1X2",seleccion="1",ppp=ppp)
+        candidatos=[p("2026-11-24T23:30:00Z","A",2.1),
+                    p("2026-11-25T00:00:00Z","B",2.2),
+                    p("2026-11-24T12:00:00Z","C",2.8)]
         dobles=generar_dobles(candidatos,ahora)
         self.assertEqual(len(dobles),3)
-        self.assertEqual([x["local"] for x in dobles[0]["partidos"]],["A","B"])
+        self.assertEqual({x["local"] for x in dobles[0]["partidos"]},{"B","C"})
 
     def test_dobles_descartan_cuotas_caducadas_y_partidos_pasados(self):
         ahora=datetime(2026,11,22,20,30,tzinfo=timezone.utc)
