@@ -95,7 +95,8 @@ def generar_dobles(candidatos, ahora=None):
         dobles.append(dict(partidos=[a,b],cuota_combinada=round(a["cuota"]*b["cuota"],3)))
     # Priorizar la diferencia de puntos por partido con bonus de localía.
     dobles.sort(key=lambda d:(
-        -sum(float(p.get("valoracion") or 0) for p in d["partidos"]),
+        -sum(p.get("valoracion") is not None for p in d["partidos"]),
+        -sum(float(p["valoracion"]) for p in d["partidos"] if p.get("valoracion") is not None),
         d["partidos"][0]["fecha"],d["partidos"][1]["fecha"]))
     return dobles[:5]
 
