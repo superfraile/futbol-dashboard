@@ -66,13 +66,34 @@ def main():
         q=mercado_1x2(partido,ahora).get(signo)
         if q and 1.20<=q["cuota"]<=1.80:
             elegibles+=1
+    # Desglosar por causa, sin revelar nombres ni precios.
+    con_signo=0
+    con_mercado_favorito=0
+    fuera_rango=0
+    sin_cuota_favorito=0
+    for candidato,partido in emparejados:
+        signo=("1" if candidato.get("equipo_proveedor")==candidato.get("local") else
+               "2" if candidato.get("equipo_proveedor")==candidato.get("visitante") else None)
+        if signo is None:
+            continue
+        con_signo+=1
+        cuota_favorito=mercado_1x2(partido,ahora).get(signo)
+        if cuota_favorito is None:
+            sin_cuota_favorito+=1
+        else:
+            con_mercado_favorito+=1
+            if not 1.20<=cuota_favorito["cuota"]<=1.80:
+                fuera_rango+=1
     print("Diagnóstico MoviOdds:",json.dumps({
         "partidos_proveedor":len(partidos),
         "candidatos":len(candidatos),
         "candidatos_sin_hora":sin_hora,
         "emparejamientos_unicos":len(emparejados),
         "emparejados_con_mercado_1x2_vigente":con_mercado,
-        "selecciones_en_rango":elegibles
+        "selecciones_en_rango":elegibles,
+        "emparejados_con_favorito_identificado":con_signo,
+        "sin_cuota_vigente_del_favorito":sin_cuota_favorito,
+        "cuotas_fuera_de_1_20_a_1_80":fuera_rango
     },ensure_ascii=False))
     incorporar(datos,partidos,ahora)
     temporal=ruta.with_suffix(".tmp")
