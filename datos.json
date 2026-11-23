@@ -1,6 +1,6 @@
 {
   "version": "1.2",
-  "ultima_actualizacion": "2026-11-23T22:05:51.923579+00:00",
+  "ultima_actualizacion": "2026-11-23T22:06:40.172758+00:00",
   "fuente": "OpenLigaDB (https://www.openligadb.de), ODbL 1.0; GER; football-data.org (PL; ENG); football-data.org (PD; ESP); football-data.org (SA; ITA); football-data.org (FL1; FRA); football-data.org (PPL; POR); football-data.org (DED; NED)",
   "ligas": {
     "GER": [
@@ -14762,9 +14762,9 @@
   ],
   "dobles": [],
   "favoritos_validados": true,
-  "ultima_actualizacion_cuotas": "2026-11-23T22:05:55.146057+00:00",
+  "ultima_actualizacion_cuotas": "2026-11-23T22:06:42.889419+00:00",
   "diagnostico_cuotas": {
-    "partidos_proveedor": 817,
+    "partidos_proveedor": 816,
     "candidatos": 9,
     "candidatos_sin_hora": 2,
     "emparejamientos_unicos": 1,
@@ -14781,6 +14781,9 @@
       "con_grupo_1x2": 1,
       "grupo_1x2_sin_cotizaciones_recientes": 1,
       "grupo_1x2_no_interpretable": 1
+    },
+    "formatos_fechas_cuotas": {
+      "ts:iso_con_zona": 3
     }
   }
 }
