@@ -1,6 +1,6 @@
 {
   "version": "1.2",
-  "ultima_actualizacion": "2026-11-23T19:28:25.354724+00:00",
+  "ultima_actualizacion": "2026-11-23T21:23:38.180702+00:00",
   "fuente": "OpenLigaDB (https://www.openligadb.de), ODbL 1.0; GER; football-data.org (PL; ENG); football-data.org (PD; ESP); football-data.org (SA; ITA); football-data.org (FL1; FRA); football-data.org (PPL; POR); football-data.org (DED; NED)",
   "ligas": {
     "GER": [
@@ -1840,24 +1840,6 @@
     }
   ],
   "partidos": [
-    {
-      "liga": "ITA",
-      "fecha": "2026-11-23T19:45:00Z",
-      "local": "AC Monza",
-      "visitante": "ACF Fiorentina"
-    },
-    {
-      "liga": "ESP",
-      "fecha": "2026-11-23T20:00:00Z",
-      "local": "Levante UD",
-      "visitante": "Elche CF"
-    },
-    {
-      "liga": "ENG",
-      "fecha": "2026-11-23T20:00:00Z",
-      "local": "Brentford FC",
-      "visitante": "Everton FC"
-    },
     {
       "liga": "GER",
       "fecha": "2026-11-27",
