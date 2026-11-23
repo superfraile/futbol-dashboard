@@ -118,6 +118,7 @@ def aplicar_cuotas_bet365(candidatos, archivo=None):
     if documento.get("casa_apuestas")!="bet365" or documento.get("mercado")!="1X2":
         raise ValueError("La fuente de cuotas debe ser bet365, mercado 1X2")
     indices={(p["liga"],p["fecha"],p["local"],p["visitante"]):p for p in candidatos}
+    ahora=datetime.now(timezone.utc)
     registros=documento.get("cuotas",[])
     if not isinstance(registros,list):
         raise ValueError("La lista de cuotas debe ser una lista")
@@ -139,7 +140,7 @@ def aplicar_cuotas_bet365(candidatos, archivo=None):
         # Una cuota no es operativa sin hora de inicio inequívoca y futura.
         try:
             inicio=datetime.fromisoformat(partido["fecha"].replace("Z","+00:00"))
-            if inicio.tzinfo is None or inicio<=datetime.now(timezone.utc):
+            if inicio.tzinfo is None or inicio<=ahora:
                 continue
         except (KeyError,TypeError,ValueError,AttributeError):
             continue
@@ -157,8 +158,9 @@ def aplicar_cuotas_bet365(candidatos, archivo=None):
             instante=datetime.fromisoformat(fecha_consulta.replace("Z","+00:00"))
         except ValueError:
             continue
-        if (instante.tzinfo is None or instante>datetime.now(timezone.utc)
-                or (datetime.now(timezone.utc)-instante).total_seconds()>3600):
+        if (instante.tzinfo is None or instante>ahora
+                or (ahora-instante).total_seconds()>3600
+                or instante>=inicio):
             continue
         partido.update(cuota=valor,cuota_verificada=True,casa_apuestas="bet365",
                        mercado="1X2",seleccion=signo,consultada_en=fecha_consulta,
