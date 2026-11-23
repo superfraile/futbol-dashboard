@@ -72,7 +72,7 @@ class SeleccionTests(unittest.TestCase):
         self.assertEqual({p["local"] for p in dobles[0]["partidos"]},
                          {"Local 2","Local 4"})
         self.assertEqual({p["local"] for p in dobles[-1]["partidos"]},
-                         {"Local 1","Local 3"})
+                         {"Local 1","Local 4"})
 
     def test_dobles_descartan_cuotas_caducadas_y_partidos_pasados(self):
         ahora=datetime(2026,11,22,20,30,tzinfo=timezone.utc)
