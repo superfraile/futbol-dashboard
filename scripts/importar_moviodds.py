@@ -111,6 +111,28 @@ def main():
                 pares_identicos+=1
     diagnostico["candidatos_con_nombres_exactos_en_proveedor"]=pares_identicos
     diagnostico["coincidencias_nombres_sin_horario_compatible"]=max(0,pares_identicos-len(emparejados))
+    # Diferencias horarias agregadas para coincidencias exactas por equipos.
+    # No relajar el umbral de 3 horas: solo diagnóstico.
+    horarios_proveedor={}
+    for partido in partidos:
+        if not isinstance(partido,dict):
+            continue
+        local,visitante=partido.get("home"),partido.get("away")
+        inicio=fecha_utc(partido.get("kickoff_utc"))
+        if isinstance(local,str) and isinstance(visitante,str) and inicio is not None:
+            horarios_proveedor.setdefault((clave_equipo(local),clave_equipo(visitante)),[]).append(inicio)
+    diferencias=[]
+    for candidato in candidatos:
+        local,visitante=candidato.get("local"),candidato.get("visitante")
+        inicio=fecha_utc(candidato.get("fecha"))
+        if not isinstance(local,str) or not isinstance(visitante,str) or inicio is None:
+            continue
+        opciones=horarios_proveedor.get((clave_equipo(local),clave_equipo(visitante)),[])
+        if opciones:
+            diferencias.append(min(abs((fecha-inicio).total_seconds()) for fecha in opciones))
+    diagnostico["nombres_coincidentes_con_horario_mas_de_3h"]=sum(delta>10800 for delta in diferencias)
+    diagnostico["nombres_coincidentes_sin_hora_proveedor"]=max(0,pares_identicos-len(diferencias))
+
     print("Diagnóstico MoviOdds:",json.dumps(diagnostico,ensure_ascii=False))
     incorporar(datos,partidos,ahora)
     datos["diagnostico_cuotas"]=diagnostico
