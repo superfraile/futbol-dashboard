@@ -66,7 +66,8 @@ def generar_dobles(candidatos, ahora=None):
             fecha=datetime.fromisoformat(p["fecha"].replace("Z","+00:00"))
             consulta=datetime.fromisoformat(p["consultada_en"].replace("Z","+00:00"))
             return (fecha.tzinfo is not None and fecha>ahora and
-                    consulta.tzinfo is not None and 0<=(ahora-consulta).total_seconds()<=3600)
+                    consulta.tzinfo is not None and consulta<fecha and
+                    0<=(ahora-consulta).total_seconds()<=3600)
         except (KeyError,TypeError,ValueError,AttributeError):
             return False
     validos=[p for p in candidatos
