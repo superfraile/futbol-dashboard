@@ -16,7 +16,17 @@ def openligadb(temporada):
     partidos = []
     for m in datos:
         final = m["matchIsFinished"]
-        p = dict(fecha=m["matchDateTime"][:10],
+        # Conservar la hora UTC de OpenLigaDB; no inventarla si falta.
+        fecha=m["matchDateTime"][:10]
+        valor=m.get("matchDateTimeUTC")
+        if isinstance(valor,str):
+            try:
+                instante=datetime.fromisoformat(valor.replace("Z","+00:00"))
+                if instante.tzinfo is not None:
+                    fecha=instante.isoformat()
+            except ValueError:
+                pass
+        p = dict(fecha=fecha,
                  local=m["team1"]["teamName"],
                  visitante=m["team2"]["teamName"],
                  estado="finalizado" if final else "pendiente")
