@@ -1,0 +1,2583 @@
+{
+  "fecha": "2026-11-24T18:14:09.367925+00:00",
+  "consultas": 335,
+  "ligas": {
+    "DEN": {
+      "temporada": "2026/27",
+      "partidos": 90,
+      "equipos_discrepantes": [],
+      "fechas_invalidas": [],
+      "estado": "validado",
+      "estadisticas": {
+        "Viborg": {
+          "local": {
+            "pj": 8,
+            "g": 5,
+            "e": 1,
+            "p": 2,
+            "gf": 13,
+            "gc": 6,
+            "puntos": 16,
+            "ppp": 2.0,
+            "victorias_pct": 62.5
+          },
+          "visitante": {
+            "pj": 7,
+            "g": 3,
+            "e": 2,
+            "p": 2,
+            "gf": 9,
+            "gc": 7,
+            "puntos": 11,
+            "ppp": 1.57,
+            "victorias_pct": 42.86
+          }
+        },
+        "OB": {
+          "visitante": {
+            "pj": 8,
+            "g": 2,
+            "e": 4,
+            "p": 2,
+            "gf": 8,
+            "gc": 8,
+            "puntos": 10,
+            "ppp": 1.25,
+            "victorias_pct": 25.0
+          },
+          "local": {
+            "pj": 7,
+            "g": 3,
+            "e": 1,
+            "p": 3,
+            "gf": 10,
+            "gc": 12,
+            "puntos": 10,
+            "ppp": 1.43,
+            "victorias_pct": 42.86
+          }
+        },
+        "AGF": {
+          "local": {
+            "pj": 8,
+            "g": 4,
+            "e": 3,
+            "p": 1,
+            "gf": 14,
+            "gc": 9,
+            "puntos": 15,
+            "ppp": 1.88,
+            "victorias_pct": 50.0
+          },
+          "visitante": {
+            "pj": 7,
+            "g": 0,
+            "e": 3,
+            "p": 4,
+            "gf": 7,
+            "gc": 13,
+            "puntos": 3,
+            "ppp": 0.43,
+            "victorias_pct": 0.0
+          }
+        },
+        "Brøndby": {
+          "visitante": {
+            "pj": 7,
+            "g": 2,
+            "e": 1,
+            "p": 4,
+            "gf": 9,
+            "gc": 12,
+            "puntos": 7,
+            "ppp": 1.0,
+            "victorias_pct": 28.57
+          },
+          "local": {
+            "pj": 8,
+            "g": 5,
+            "e": 0,
+            "p": 3,
+            "gf": 14,
+            "gc": 11,
+            "puntos": 15,
+            "ppp": 1.88,
+            "victorias_pct": 62.5
+          }
+        },
+        "Sønderjyske": {
+          "local": {
+            "pj": 8,
+            "g": 2,
+            "e": 1,
+            "p": 5,
+            "gf": 13,
+            "gc": 17,
+            "puntos": 7,
+            "ppp": 0.88,
+            "victorias_pct": 25.0
+          },
+          "visitante": {
+            "pj": 7,
+            "g": 0,
+            "e": 2,
+            "p": 5,
+            "gf": 7,
+            "gc": 18,
+            "puntos": 2,
+            "ppp": 0.29,
+            "victorias_pct": 0.0
+          }
+        },
+        "Midtjylland": {
+          "visitante": {
+            "pj": 8,
+            "g": 5,
+            "e": 3,
+            "p": 0,
+            "gf": 15,
+            "gc": 8,
+            "puntos": 18,
+            "ppp": 2.25,
+            "victorias_pct": 62.5
+          },
+          "local": {
+            "pj": 7,
+            "g": 5,
+            "e": 2,
+            "p": 0,
+            "gf": 16,
+            "gc": 9,
+            "puntos": 17,
+            "ppp": 2.43,
+            "victorias_pct": 71.43
+          }
+        },
+        "Copenhagen": {
+          "local": {
+            "pj": 7,
+            "g": 5,
+            "e": 2,
+            "p": 0,
+            "gf": 13,
+            "gc": 5,
+            "puntos": 17,
+            "ppp": 2.43,
+            "victorias_pct": 71.43
+          },
+          "visitante": {
+            "pj": 8,
+            "g": 5,
+            "e": 0,
+            "p": 3,
+            "gf": 16,
+            "gc": 12,
+            "puntos": 15,
+            "ppp": 1.88,
+            "victorias_pct": 62.5
+          }
+        },
+        "Lyngby": {
+          "visitante": {
+            "pj": 8,
+            "g": 1,
+            "e": 0,
+            "p": 7,
+            "gf": 10,
+            "gc": 18,
+            "puntos": 3,
+            "ppp": 0.38,
+            "victorias_pct": 12.5
+          },
+          "local": {
+            "pj": 7,
+            "g": 1,
+            "e": 5,
+            "p": 1,
+            "gf": 10,
+            "gc": 13,
+            "puntos": 8,
+            "ppp": 1.14,
+            "victorias_pct": 14.29
+          }
+        },
+        "Horsens": {
+          "local": {
+            "pj": 8,
+            "g": 3,
+            "e": 3,
+            "p": 2,
+            "gf": 15,
+            "gc": 11,
+            "puntos": 12,
+            "ppp": 1.5,
+            "victorias_pct": 37.5
+          },
+          "visitante": {
+            "pj": 7,
+            "g": 2,
+            "e": 1,
+            "p": 4,
+            "gf": 11,
+            "gc": 13,
+            "puntos": 7,
+            "ppp": 1.0,
+            "victorias_pct": 28.57
+          }
+        },
+        "Nordsjælland": {
+          "visitante": {
+            "pj": 8,
+            "g": 2,
+            "e": 4,
+            "p": 2,
+            "gf": 17,
+            "gc": 14,
+            "puntos": 10,
+            "ppp": 1.25,
+            "victorias_pct": 25.0
+          },
+          "local": {
+            "pj": 7,
+            "g": 5,
+            "e": 1,
+            "p": 1,
+            "gf": 14,
+            "gc": 4,
+            "puntos": 16,
+            "ppp": 2.29,
+            "victorias_pct": 71.43
+          }
+        },
+        "Randers": {
+          "local": {
+            "pj": 8,
+            "g": 2,
+            "e": 1,
+            "p": 5,
+            "gf": 8,
+            "gc": 19,
+            "puntos": 7,
+            "ppp": 0.88,
+            "victorias_pct": 25.0
+          },
+          "visitante": {
+            "pj": 7,
+            "g": 1,
+            "e": 2,
+            "p": 4,
+            "gf": 6,
+            "gc": 8,
+            "puntos": 5,
+            "ppp": 0.71,
+            "victorias_pct": 14.29
+          }
+        },
+        "Silkeborg": {
+          "visitante": {
+            "pj": 8,
+            "g": 1,
+            "e": 2,
+            "p": 5,
+            "gf": 10,
+            "gc": 18,
+            "puntos": 5,
+            "ppp": 0.62,
+            "victorias_pct": 12.5
+          },
+          "local": {
+            "pj": 7,
+            "g": 2,
+            "e": 4,
+            "p": 1,
+            "gf": 9,
+            "gc": 9,
+            "puntos": 10,
+            "ppp": 1.43,
+            "victorias_pct": 28.57
+          }
+        }
+      },
+      "elo": {
+        "OB": 1506.8,
+        "Viborg": 1530.1,
+        "Brøndby": 1497.2,
+        "AGF": 1495.0,
+        "Midtjylland": 1585.0,
+        "Sønderjyske": 1436.4,
+        "Lyngby": 1450.2,
+        "Copenhagen": 1555.3,
+        "Nordsjælland": 1534.5,
+        "Horsens": 1488.4,
+        "Silkeborg": 1475.1,
+        "Randers": 1446.0
+      }
+    },
+    "SCO": {
+      "temporada": "2026/27",
+      "partidos": 81,
+      "equipos_discrepantes": [],
+      "fechas_invalidas": [],
+      "estado": "validado",
+      "estadisticas": {
+        "Dundee United": {
+          "local": {
+            "pj": 6,
+            "g": 2,
+            "e": 3,
+            "p": 1,
+            "gf": 7,
+            "gc": 7,
+            "puntos": 9,
+            "ppp": 1.5,
+            "victorias_pct": 33.33
+          },
+          "visitante": {
+            "pj": 7,
+            "g": 3,
+            "e": 2,
+            "p": 2,
+            "gf": 14,
+            "gc": 10,
+            "puntos": 11,
+            "ppp": 1.57,
+            "victorias_pct": 42.86
+          }
+        },
+        "Rangers": {
+          "visitante": {
+            "pj": 8,
+            "g": 5,
+            "e": 3,
+            "p": 0,
+            "gf": 13,
+            "gc": 7,
+            "puntos": 18,
+            "ppp": 2.25,
+            "victorias_pct": 62.5
+          },
+          "local": {
+            "pj": 5,
+            "g": 4,
+            "e": 0,
+            "p": 1,
+            "gf": 10,
+            "gc": 3,
+            "puntos": 12,
+            "ppp": 2.4,
+            "victorias_pct": 80.0
+          }
+        },
+        "Falkirk": {
+          "local": {
+            "pj": 7,
+            "g": 4,
+            "e": 0,
+            "p": 3,
+            "gf": 11,
+            "gc": 8,
+            "puntos": 12,
+            "ppp": 1.71,
+            "victorias_pct": 57.14
+          },
+          "visitante": {
+            "pj": 7,
+            "g": 3,
+            "e": 3,
+            "p": 1,
+            "gf": 11,
+            "gc": 7,
+            "puntos": 12,
+            "ppp": 1.71,
+            "victorias_pct": 42.86
+          }
+        },
+        "St. Mirren": {
+          "visitante": {
+            "pj": 7,
+            "g": 2,
+            "e": 0,
+            "p": 5,
+            "gf": 5,
+            "gc": 14,
+            "puntos": 6,
+            "ppp": 0.86,
+            "victorias_pct": 28.57
+          },
+          "local": {
+            "pj": 7,
+            "g": 2,
+            "e": 2,
+            "p": 3,
+            "gf": 8,
+            "gc": 12,
+            "puntos": 8,
+            "ppp": 1.14,
+            "victorias_pct": 28.57
+          }
+        },
+        "Aberdeen": {
+          "local": {
+            "pj": 7,
+            "g": 2,
+            "e": 1,
+            "p": 4,
+            "gf": 5,
+            "gc": 9,
+            "puntos": 7,
+            "ppp": 1.0,
+            "victorias_pct": 28.57
+          },
+          "visitante": {
+            "pj": 6,
+            "g": 2,
+            "e": 1,
+            "p": 3,
+            "gf": 11,
+            "gc": 11,
+            "puntos": 7,
+            "ppp": 1.17,
+            "victorias_pct": 33.33
+          }
+        },
+        "Hearts": {
+          "visitante": {
+            "pj": 7,
+            "g": 3,
+            "e": 1,
+            "p": 3,
+            "gf": 17,
+            "gc": 13,
+            "puntos": 10,
+            "ppp": 1.43,
+            "victorias_pct": 42.86
+          },
+          "local": {
+            "pj": 6,
+            "g": 4,
+            "e": 1,
+            "p": 1,
+            "gf": 17,
+            "gc": 9,
+            "puntos": 13,
+            "ppp": 2.17,
+            "victorias_pct": 66.67
+          }
+        },
+        "St. Johnstone": {
+          "local": {
+            "pj": 7,
+            "g": 3,
+            "e": 3,
+            "p": 1,
+            "gf": 12,
+            "gc": 10,
+            "puntos": 12,
+            "ppp": 1.71,
+            "victorias_pct": 42.86
+          },
+          "visitante": {
+            "pj": 7,
+            "g": 1,
+            "e": 2,
+            "p": 4,
+            "gf": 6,
+            "gc": 12,
+            "puntos": 5,
+            "ppp": 0.71,
+            "victorias_pct": 14.29
+          }
+        },
+        "Kilmarnock": {
+          "visitante": {
+            "pj": 7,
+            "g": 1,
+            "e": 1,
+            "p": 5,
+            "gf": 6,
+            "gc": 14,
+            "puntos": 4,
+            "ppp": 0.57,
+            "victorias_pct": 14.29
+          },
+          "local": {
+            "pj": 7,
+            "g": 1,
+            "e": 2,
+            "p": 4,
+            "gf": 9,
+            "gc": 19,
+            "puntos": 5,
+            "ppp": 0.71,
+            "victorias_pct": 14.29
+          }
+        },
+        "Hibernian": {
+          "local": {
+            "pj": 7,
+            "g": 0,
+            "e": 1,
+            "p": 6,
+            "gf": 5,
+            "gc": 15,
+            "puntos": 1,
+            "ppp": 0.14,
+            "victorias_pct": 0.0
+          },
+          "visitante": {
+            "pj": 6,
+            "g": 3,
+            "e": 1,
+            "p": 2,
+            "gf": 10,
+            "gc": 6,
+            "puntos": 10,
+            "ppp": 1.67,
+            "victorias_pct": 50.0
+          }
+        },
+        "Motherwell": {
+          "visitante": {
+            "pj": 7,
+            "g": 1,
+            "e": 3,
+            "p": 3,
+            "gf": 11,
+            "gc": 13,
+            "puntos": 6,
+            "ppp": 0.86,
+            "victorias_pct": 14.29
+          },
+          "local": {
+            "pj": 7,
+            "g": 2,
+            "e": 1,
+            "p": 4,
+            "gf": 5,
+            "gc": 10,
+            "puntos": 7,
+            "ppp": 1.0,
+            "victorias_pct": 28.57
+          }
+        },
+        "Celtic": {
+          "local": {
+            "pj": 8,
+            "g": 6,
+            "e": 1,
+            "p": 1,
+            "gf": 20,
+            "gc": 6,
+            "puntos": 19,
+            "ppp": 2.38,
+            "victorias_pct": 75.0
+          },
+          "visitante": {
+            "pj": 6,
+            "g": 5,
+            "e": 0,
+            "p": 1,
+            "gf": 12,
+            "gc": 5,
+            "puntos": 15,
+            "ppp": 2.5,
+            "victorias_pct": 83.33
+          }
+        },
+        "Dundee": {
+          "visitante": {
+            "pj": 6,
+            "g": 2,
+            "e": 0,
+            "p": 4,
+            "gf": 7,
+            "gc": 8,
+            "puntos": 6,
+            "ppp": 1.0,
+            "victorias_pct": 33.33
+          },
+          "local": {
+            "pj": 7,
+            "g": 3,
+            "e": 2,
+            "p": 2,
+            "gf": 11,
+            "gc": 15,
+            "puntos": 11,
+            "ppp": 1.57,
+            "victorias_pct": 42.86
+          }
+        }
+      },
+      "elo": {
+        "Rangers": 1575.4,
+        "Dundee United": 1521.3,
+        "St. Mirren": 1462.0,
+        "Falkirk": 1534.9,
+        "Hearts": 1527.3,
+        "Aberdeen": 1468.9,
+        "Kilmarnock": 1441.5,
+        "St. Johnstone": 1492.4,
+        "Motherwell": 1465.6,
+        "Hibernian": 1454.4,
+        "Dundee": 1487.7,
+        "Celtic": 1568.5
+      }
+    },
+    "GRE": {
+      "temporada": "2026/27",
+      "partidos": 76,
+      "equipos_discrepantes": [],
+      "fechas_invalidas": [],
+      "estado": "validado",
+      "estadisticas": {
+        "AEK Athens": {
+          "local": {
+            "pj": 5,
+            "g": 5,
+            "e": 0,
+            "p": 0,
+            "gf": 19,
+            "gc": 1,
+            "puntos": 15,
+            "ppp": 3.0,
+            "victorias_pct": 100.0
+          },
+          "visitante": {
+            "pj": 5,
+            "g": 2,
+            "e": 2,
+            "p": 1,
+            "gf": 5,
+            "gc": 5,
+            "puntos": 8,
+            "ppp": 1.6,
+            "victorias_pct": 40.0
+          }
+        },
+        "Iraklis 1908": {
+          "visitante": {
+            "pj": 7,
+            "g": 1,
+            "e": 3,
+            "p": 3,
+            "gf": 7,
+            "gc": 14,
+            "puntos": 6,
+            "ppp": 0.86,
+            "victorias_pct": 14.29
+          },
+          "local": {
+            "pj": 4,
+            "g": 1,
+            "e": 1,
+            "p": 2,
+            "gf": 6,
+            "gc": 6,
+            "puntos": 4,
+            "ppp": 1.0,
+            "victorias_pct": 25.0
+          }
+        },
+        "Kalamata": {
+          "local": {
+            "pj": 6,
+            "g": 2,
+            "e": 1,
+            "p": 3,
+            "gf": 10,
+            "gc": 10,
+            "puntos": 7,
+            "ppp": 1.17,
+            "victorias_pct": 33.33
+          },
+          "visitante": {
+            "pj": 5,
+            "g": 1,
+            "e": 2,
+            "p": 2,
+            "gf": 5,
+            "gc": 10,
+            "puntos": 5,
+            "ppp": 1.0,
+            "victorias_pct": 20.0
+          }
+        },
+        "Aris": {
+          "visitante": {
+            "pj": 6,
+            "g": 3,
+            "e": 0,
+            "p": 3,
+            "gf": 6,
+            "gc": 13,
+            "puntos": 9,
+            "ppp": 1.5,
+            "victorias_pct": 50.0
+          },
+          "local": {
+            "pj": 5,
+            "g": 4,
+            "e": 1,
+            "p": 0,
+            "gf": 11,
+            "gc": 4,
+            "puntos": 13,
+            "ppp": 2.6,
+            "victorias_pct": 80.0
+          }
+        },
+        "Olympiakos": {
+          "local": {
+            "pj": 6,
+            "g": 4,
+            "e": 1,
+            "p": 1,
+            "gf": 14,
+            "gc": 4,
+            "puntos": 13,
+            "ppp": 2.17,
+            "victorias_pct": 66.67
+          },
+          "visitante": {
+            "pj": 5,
+            "g": 4,
+            "e": 1,
+            "p": 0,
+            "gf": 8,
+            "gc": 3,
+            "puntos": 13,
+            "ppp": 2.6,
+            "victorias_pct": 80.0
+          }
+        },
+        "Atromitos": {
+          "visitante": {
+            "pj": 6,
+            "g": 0,
+            "e": 3,
+            "p": 3,
+            "gf": 4,
+            "gc": 8,
+            "puntos": 3,
+            "ppp": 0.5,
+            "victorias_pct": 0.0
+          },
+          "local": {
+            "pj": 4,
+            "g": 1,
+            "e": 1,
+            "p": 2,
+            "gf": 6,
+            "gc": 5,
+            "puntos": 4,
+            "ppp": 1.0,
+            "victorias_pct": 25.0
+          }
+        },
+        "OFI": {
+          "local": {
+            "pj": 5,
+            "g": 3,
+            "e": 2,
+            "p": 0,
+            "gf": 8,
+            "gc": 3,
+            "puntos": 11,
+            "ppp": 2.2,
+            "victorias_pct": 60.0
+          },
+          "visitante": {
+            "pj": 6,
+            "g": 2,
+            "e": 0,
+            "p": 4,
+            "gf": 6,
+            "gc": 11,
+            "puntos": 6,
+            "ppp": 1.0,
+            "victorias_pct": 33.33
+          }
+        },
+        "Volos NFC": {
+          "visitante": {
+            "pj": 6,
+            "g": 0,
+            "e": 1,
+            "p": 5,
+            "gf": 3,
+            "gc": 12,
+            "puntos": 1,
+            "ppp": 0.17,
+            "victorias_pct": 0.0
+          },
+          "local": {
+            "pj": 5,
+            "g": 0,
+            "e": 2,
+            "p": 3,
+            "gf": 4,
+            "gc": 8,
+            "puntos": 2,
+            "ppp": 0.4,
+            "victorias_pct": 0.0
+          }
+        },
+        "PAOK": {
+          "local": {
+            "pj": 6,
+            "g": 5,
+            "e": 0,
+            "p": 1,
+            "gf": 15,
+            "gc": 5,
+            "puntos": 15,
+            "ppp": 2.5,
+            "victorias_pct": 83.33
+          },
+          "visitante": {
+            "pj": 5,
+            "g": 2,
+            "e": 1,
+            "p": 2,
+            "gf": 8,
+            "gc": 8,
+            "puntos": 7,
+            "ppp": 1.4,
+            "victorias_pct": 40.0
+          }
+        },
+        "Levadiakos": {
+          "visitante": {
+            "pj": 5,
+            "g": 0,
+            "e": 2,
+            "p": 3,
+            "gf": 1,
+            "gc": 8,
+            "puntos": 2,
+            "ppp": 0.4,
+            "victorias_pct": 0.0
+          },
+          "local": {
+            "pj": 6,
+            "g": 1,
+            "e": 2,
+            "p": 3,
+            "gf": 4,
+            "gc": 6,
+            "puntos": 5,
+            "ppp": 0.83,
+            "victorias_pct": 16.67
+          }
+        },
+        "Panaitolikos": {
+          "local": {
+            "pj": 6,
+            "g": 3,
+            "e": 0,
+            "p": 3,
+            "gf": 7,
+            "gc": 7,
+            "puntos": 9,
+            "ppp": 1.5,
+            "victorias_pct": 50.0
+          },
+          "visitante": {
+            "pj": 5,
+            "g": 1,
+            "e": 0,
+            "p": 4,
+            "gf": 2,
+            "gc": 13,
+            "puntos": 3,
+            "ppp": 0.6,
+            "victorias_pct": 20.0
+          }
+        },
+        "Asteras Tripolis": {
+          "visitante": {
+            "pj": 4,
+            "g": 0,
+            "e": 1,
+            "p": 3,
+            "gf": 5,
+            "gc": 12,
+            "puntos": 1,
+            "ppp": 0.25,
+            "victorias_pct": 0.0
+          },
+          "local": {
+            "pj": 7,
+            "g": 1,
+            "e": 3,
+            "p": 3,
+            "gf": 4,
+            "gc": 7,
+            "puntos": 6,
+            "ppp": 0.86,
+            "victorias_pct": 14.29
+          }
+        },
+        "Kifisia": {
+          "local": {
+            "pj": 5,
+            "g": 1,
+            "e": 2,
+            "p": 2,
+            "gf": 6,
+            "gc": 6,
+            "puntos": 5,
+            "ppp": 1.0,
+            "victorias_pct": 20.0
+          },
+          "visitante": {
+            "pj": 6,
+            "g": 3,
+            "e": 0,
+            "p": 3,
+            "gf": 9,
+            "gc": 13,
+            "puntos": 9,
+            "ppp": 1.5,
+            "victorias_pct": 50.0
+          }
+        },
+        "Panathinaikos": {
+          "visitante": {
+            "pj": 5,
+            "g": 4,
+            "e": 0,
+            "p": 1,
+            "gf": 6,
+            "gc": 2,
+            "puntos": 12,
+            "ppp": 2.4,
+            "victorias_pct": 80.0
+          },
+          "local": {
+            "pj": 6,
+            "g": 6,
+            "e": 0,
+            "p": 0,
+            "gf": 18,
+            "gc": 3,
+            "puntos": 18,
+            "ppp": 3.0,
+            "victorias_pct": 100.0
+          }
+        }
+      },
+      "elo": {
+        "Iraklis 1908": 1476.7,
+        "AEK Athens": 1552.9,
+        "Aris": 1533.6,
+        "Kalamata": 1483.6,
+        "Atromitos": 1467.6,
+        "Olympiakos": 1560.5,
+        "Volos NFC": 1428.3,
+        "OFI": 1510.4,
+        "Levadiakos": 1457.1,
+        "PAOK": 1534.3,
+        "Asteras Tripolis": 1453.2,
+        "Panaitolikos": 1469.9,
+        "Kifisia": 1494.1,
+        "Panathinaikos": 1577.9
+      }
+    },
+    "NOR": {
+      "temporada": "2026",
+      "partidos": 216,
+      "equipos_discrepantes": [],
+      "fechas_invalidas": [],
+      "estado": "validado",
+      "estadisticas": {
+        "HamKam": {
+          "local": {
+            "pj": 14,
+            "g": 6,
+            "e": 3,
+            "p": 5,
+            "gf": 20,
+            "gc": 24,
+            "puntos": 21,
+            "ppp": 1.5,
+            "victorias_pct": 42.86
+          },
+          "visitante": {
+            "pj": 13,
+            "g": 2,
+            "e": 4,
+            "p": 7,
+            "gf": 18,
+            "gc": 29,
+            "puntos": 10,
+            "ppp": 0.77,
+            "victorias_pct": 15.38
+          }
+        },
+        "Viking": {
+          "visitante": {
+            "pj": 14,
+            "g": 7,
+            "e": 2,
+            "p": 5,
+            "gf": 22,
+            "gc": 16,
+            "puntos": 23,
+            "ppp": 1.64,
+            "victorias_pct": 50.0
+          },
+          "local": {
+            "pj": 13,
+            "g": 13,
+            "e": 0,
+            "p": 0,
+            "gf": 49,
+            "gc": 14,
+            "puntos": 39,
+            "ppp": 3.0,
+            "victorias_pct": 100.0
+          }
+        },
+        "Molde": {
+          "local": {
+            "pj": 14,
+            "g": 9,
+            "e": 1,
+            "p": 4,
+            "gf": 37,
+            "gc": 19,
+            "puntos": 28,
+            "ppp": 2.0,
+            "victorias_pct": 64.29
+          },
+          "visitante": {
+            "pj": 13,
+            "g": 4,
+            "e": 4,
+            "p": 5,
+            "gf": 29,
+            "gc": 29,
+            "puntos": 16,
+            "ppp": 1.23,
+            "victorias_pct": 30.77
+          }
+        },
+        "Rosenborg": {
+          "visitante": {
+            "pj": 14,
+            "g": 6,
+            "e": 2,
+            "p": 6,
+            "gf": 23,
+            "gc": 19,
+            "puntos": 20,
+            "ppp": 1.43,
+            "victorias_pct": 42.86
+          },
+          "local": {
+            "pj": 13,
+            "g": 8,
+            "e": 3,
+            "p": 2,
+            "gf": 32,
+            "gc": 15,
+            "puntos": 27,
+            "ppp": 2.08,
+            "victorias_pct": 61.54
+          }
+        },
+        "Kristiansund": {
+          "local": {
+            "pj": 14,
+            "g": 5,
+            "e": 4,
+            "p": 5,
+            "gf": 19,
+            "gc": 22,
+            "puntos": 19,
+            "ppp": 1.36,
+            "victorias_pct": 35.71
+          },
+          "visitante": {
+            "pj": 13,
+            "g": 2,
+            "e": 2,
+            "p": 9,
+            "gf": 13,
+            "gc": 31,
+            "puntos": 8,
+            "ppp": 0.62,
+            "victorias_pct": 15.38
+          }
+        },
+        "Brann": {
+          "visitante": {
+            "pj": 14,
+            "g": 4,
+            "e": 3,
+            "p": 7,
+            "gf": 28,
+            "gc": 27,
+            "puntos": 15,
+            "ppp": 1.07,
+            "victorias_pct": 28.57
+          },
+          "local": {
+            "pj": 13,
+            "g": 7,
+            "e": 0,
+            "p": 6,
+            "gf": 23,
+            "gc": 20,
+            "puntos": 21,
+            "ppp": 1.62,
+            "victorias_pct": 53.85
+          }
+        },
+        "Aalesund": {
+          "local": {
+            "pj": 14,
+            "g": 2,
+            "e": 7,
+            "p": 5,
+            "gf": 29,
+            "gc": 36,
+            "puntos": 13,
+            "ppp": 0.93,
+            "victorias_pct": 14.29
+          },
+          "visitante": {
+            "pj": 13,
+            "g": 3,
+            "e": 3,
+            "p": 7,
+            "gf": 18,
+            "gc": 26,
+            "puntos": 12,
+            "ppp": 0.92,
+            "victorias_pct": 23.08
+          }
+        },
+        "Lillestrøm": {
+          "visitante": {
+            "pj": 14,
+            "g": 8,
+            "e": 2,
+            "p": 4,
+            "gf": 16,
+            "gc": 14,
+            "puntos": 26,
+            "ppp": 1.86,
+            "victorias_pct": 57.14
+          },
+          "local": {
+            "pj": 13,
+            "g": 7,
+            "e": 1,
+            "p": 5,
+            "gf": 25,
+            "gc": 21,
+            "puntos": 22,
+            "ppp": 1.69,
+            "victorias_pct": 53.85
+          }
+        },
+        "KFUM": {
+          "local": {
+            "pj": 14,
+            "g": 6,
+            "e": 3,
+            "p": 5,
+            "gf": 20,
+            "gc": 20,
+            "puntos": 21,
+            "ppp": 1.5,
+            "victorias_pct": 42.86
+          },
+          "visitante": {
+            "pj": 13,
+            "g": 2,
+            "e": 4,
+            "p": 7,
+            "gf": 16,
+            "gc": 30,
+            "puntos": 10,
+            "ppp": 0.77,
+            "victorias_pct": 15.38
+          }
+        },
+        "Start": {
+          "visitante": {
+            "pj": 14,
+            "g": 2,
+            "e": 1,
+            "p": 11,
+            "gf": 14,
+            "gc": 40,
+            "puntos": 7,
+            "ppp": 0.5,
+            "victorias_pct": 14.29
+          },
+          "local": {
+            "pj": 13,
+            "g": 4,
+            "e": 3,
+            "p": 6,
+            "gf": 15,
+            "gc": 20,
+            "puntos": 15,
+            "ppp": 1.15,
+            "victorias_pct": 30.77
+          }
+        },
+        "Vålerenga": {
+          "local": {
+            "pj": 14,
+            "g": 6,
+            "e": 2,
+            "p": 6,
+            "gf": 28,
+            "gc": 22,
+            "puntos": 20,
+            "ppp": 1.43,
+            "victorias_pct": 42.86
+          },
+          "visitante": {
+            "pj": 13,
+            "g": 3,
+            "e": 3,
+            "p": 7,
+            "gf": 16,
+            "gc": 27,
+            "puntos": 12,
+            "ppp": 0.92,
+            "victorias_pct": 23.08
+          }
+        },
+        "Sandefjord": {
+          "visitante": {
+            "pj": 14,
+            "g": 4,
+            "e": 2,
+            "p": 8,
+            "gf": 18,
+            "gc": 24,
+            "puntos": 14,
+            "ppp": 1.0,
+            "victorias_pct": 28.57
+          },
+          "local": {
+            "pj": 13,
+            "g": 3,
+            "e": 6,
+            "p": 4,
+            "gf": 15,
+            "gc": 17,
+            "puntos": 15,
+            "ppp": 1.15,
+            "victorias_pct": 23.08
+          }
+        },
+        "Tromsø": {
+          "local": {
+            "pj": 14,
+            "g": 8,
+            "e": 4,
+            "p": 2,
+            "gf": 25,
+            "gc": 14,
+            "puntos": 28,
+            "ppp": 2.0,
+            "victorias_pct": 57.14
+          },
+          "visitante": {
+            "pj": 13,
+            "g": 4,
+            "e": 3,
+            "p": 6,
+            "gf": 21,
+            "gc": 28,
+            "puntos": 15,
+            "ppp": 1.15,
+            "victorias_pct": 30.77
+          }
+        },
+        "Fredrikstad": {
+          "visitante": {
+            "pj": 14,
+            "g": 3,
+            "e": 3,
+            "p": 8,
+            "gf": 15,
+            "gc": 29,
+            "puntos": 12,
+            "ppp": 0.86,
+            "victorias_pct": 21.43
+          },
+          "local": {
+            "pj": 13,
+            "g": 5,
+            "e": 4,
+            "p": 4,
+            "gf": 16,
+            "gc": 17,
+            "puntos": 19,
+            "ppp": 1.46,
+            "victorias_pct": 38.46
+          }
+        },
+        "Sarpsborg 08": {
+          "visitante": {
+            "pj": 13,
+            "g": 3,
+            "e": 4,
+            "p": 6,
+            "gf": 16,
+            "gc": 22,
+            "puntos": 13,
+            "ppp": 1.0,
+            "victorias_pct": 23.08
+          },
+          "local": {
+            "pj": 14,
+            "g": 5,
+            "e": 3,
+            "p": 6,
+            "gf": 16,
+            "gc": 22,
+            "puntos": 18,
+            "ppp": 1.29,
+            "victorias_pct": 35.71
+          }
+        },
+        "Bodø / Glimt": {
+          "visitante": {
+            "pj": 14,
+            "g": 10,
+            "e": 2,
+            "p": 2,
+            "gf": 30,
+            "gc": 15,
+            "puntos": 32,
+            "ppp": 2.29,
+            "victorias_pct": 71.43
+          },
+          "local": {
+            "pj": 13,
+            "g": 11,
+            "e": 0,
+            "p": 2,
+            "gf": 37,
+            "gc": 10,
+            "puntos": 33,
+            "ppp": 2.54,
+            "victorias_pct": 84.62
+          }
+        }
+      },
+      "elo": {
+        "Viking": 1601.4,
+        "HamKam": 1465.4,
+        "Rosenborg": 1559.8,
+        "Molde": 1521.5,
+        "Brann": 1492.0,
+        "Kristiansund": 1453.4,
+        "Lillestrøm": 1546.2,
+        "Aalesund": 1450.7,
+        "Start": 1426.8,
+        "KFUM": 1469.4,
+        "Sandefjord": 1468.3,
+        "Vålerenga": 1467.6,
+        "Fredrikstad": 1472.9,
+        "Tromsø": 1517.8,
+        "Sarpsborg 08": 1461.6,
+        "Bodø / Glimt": 1625.4
+      }
+    },
+    "SWE": {
+      "temporada": "2026",
+      "partidos": 232,
+      "equipos_discrepantes": [],
+      "fechas_invalidas": [],
+      "estado": "validado",
+      "estadisticas": {
+        "Degerfors": {
+          "local": {
+            "pj": 14,
+            "g": 3,
+            "e": 2,
+            "p": 9,
+            "gf": 13,
+            "gc": 22,
+            "puntos": 11,
+            "ppp": 0.79,
+            "victorias_pct": 21.43
+          },
+          "visitante": {
+            "pj": 15,
+            "g": 2,
+            "e": 4,
+            "p": 9,
+            "gf": 10,
+            "gc": 26,
+            "puntos": 10,
+            "ppp": 0.67,
+            "victorias_pct": 13.33
+          }
+        },
+        "Sirius": {
+          "visitante": {
+            "pj": 14,
+            "g": 10,
+            "e": 1,
+            "p": 3,
+            "gf": 28,
+            "gc": 16,
+            "puntos": 31,
+            "ppp": 2.21,
+            "victorias_pct": 71.43
+          },
+          "local": {
+            "pj": 15,
+            "g": 9,
+            "e": 3,
+            "p": 3,
+            "gf": 31,
+            "gc": 19,
+            "puntos": 30,
+            "ppp": 2.0,
+            "victorias_pct": 60.0
+          }
+        },
+        "Hammarby": {
+          "local": {
+            "pj": 15,
+            "g": 12,
+            "e": 1,
+            "p": 2,
+            "gf": 43,
+            "gc": 9,
+            "puntos": 37,
+            "ppp": 2.47,
+            "victorias_pct": 80.0
+          },
+          "visitante": {
+            "pj": 14,
+            "g": 7,
+            "e": 3,
+            "p": 4,
+            "gf": 20,
+            "gc": 15,
+            "puntos": 24,
+            "ppp": 1.71,
+            "victorias_pct": 50.0
+          }
+        },
+        "Mjällby": {
+          "visitante": {
+            "pj": 14,
+            "g": 3,
+            "e": 7,
+            "p": 4,
+            "gf": 18,
+            "gc": 22,
+            "puntos": 16,
+            "ppp": 1.14,
+            "victorias_pct": 21.43
+          },
+          "local": {
+            "pj": 15,
+            "g": 3,
+            "e": 4,
+            "p": 8,
+            "gf": 13,
+            "gc": 22,
+            "puntos": 13,
+            "ppp": 0.87,
+            "victorias_pct": 20.0
+          }
+        },
+        "AIK": {
+          "local": {
+            "pj": 15,
+            "g": 5,
+            "e": 4,
+            "p": 6,
+            "gf": 24,
+            "gc": 31,
+            "puntos": 19,
+            "ppp": 1.27,
+            "victorias_pct": 33.33
+          },
+          "visitante": {
+            "pj": 14,
+            "g": 6,
+            "e": 5,
+            "p": 3,
+            "gf": 22,
+            "gc": 18,
+            "puntos": 23,
+            "ppp": 1.64,
+            "victorias_pct": 42.86
+          }
+        },
+        "Halmstad": {
+          "visitante": {
+            "pj": 15,
+            "g": 2,
+            "e": 3,
+            "p": 10,
+            "gf": 12,
+            "gc": 29,
+            "puntos": 9,
+            "ppp": 0.6,
+            "victorias_pct": 13.33
+          },
+          "local": {
+            "pj": 14,
+            "g": 4,
+            "e": 2,
+            "p": 8,
+            "gf": 11,
+            "gc": 23,
+            "puntos": 14,
+            "ppp": 1.0,
+            "victorias_pct": 28.57
+          }
+        },
+        "Kalmar": {
+          "local": {
+            "pj": 14,
+            "g": 6,
+            "e": 2,
+            "p": 6,
+            "gf": 15,
+            "gc": 21,
+            "puntos": 20,
+            "ppp": 1.43,
+            "victorias_pct": 42.86
+          },
+          "visitante": {
+            "pj": 15,
+            "g": 1,
+            "e": 3,
+            "p": 11,
+            "gf": 11,
+            "gc": 24,
+            "puntos": 6,
+            "ppp": 0.4,
+            "victorias_pct": 6.67
+          }
+        },
+        "Västerås": {
+          "visitante": {
+            "pj": 15,
+            "g": 7,
+            "e": 2,
+            "p": 6,
+            "gf": 21,
+            "gc": 26,
+            "puntos": 23,
+            "ppp": 1.53,
+            "victorias_pct": 46.67
+          },
+          "local": {
+            "pj": 14,
+            "g": 6,
+            "e": 4,
+            "p": 4,
+            "gf": 20,
+            "gc": 15,
+            "puntos": 22,
+            "ppp": 1.57,
+            "victorias_pct": 42.86
+          }
+        },
+        "Örgryte": {
+          "local": {
+            "pj": 15,
+            "g": 3,
+            "e": 7,
+            "p": 5,
+            "gf": 25,
+            "gc": 26,
+            "puntos": 16,
+            "ppp": 1.07,
+            "victorias_pct": 20.0
+          },
+          "visitante": {
+            "pj": 14,
+            "g": 2,
+            "e": 1,
+            "p": 11,
+            "gf": 11,
+            "gc": 36,
+            "puntos": 7,
+            "ppp": 0.5,
+            "victorias_pct": 14.29
+          }
+        },
+        "Malmö FF": {
+          "visitante": {
+            "pj": 15,
+            "g": 7,
+            "e": 5,
+            "p": 3,
+            "gf": 17,
+            "gc": 14,
+            "puntos": 26,
+            "ppp": 1.73,
+            "victorias_pct": 46.67
+          },
+          "local": {
+            "pj": 14,
+            "g": 5,
+            "e": 1,
+            "p": 8,
+            "gf": 26,
+            "gc": 23,
+            "puntos": 16,
+            "ppp": 1.14,
+            "victorias_pct": 35.71
+          }
+        },
+        "Elfsborg": {
+          "local": {
+            "pj": 14,
+            "g": 8,
+            "e": 4,
+            "p": 2,
+            "gf": 23,
+            "gc": 10,
+            "puntos": 28,
+            "ppp": 2.0,
+            "victorias_pct": 57.14
+          },
+          "visitante": {
+            "pj": 15,
+            "g": 4,
+            "e": 6,
+            "p": 5,
+            "gf": 20,
+            "gc": 23,
+            "puntos": 18,
+            "ppp": 1.2,
+            "victorias_pct": 26.67
+          }
+        },
+        "IFK Göteborg": {
+          "visitante": {
+            "pj": 15,
+            "g": 4,
+            "e": 4,
+            "p": 7,
+            "gf": 20,
+            "gc": 35,
+            "puntos": 16,
+            "ppp": 1.07,
+            "victorias_pct": 26.67
+          },
+          "local": {
+            "pj": 14,
+            "g": 6,
+            "e": 5,
+            "p": 3,
+            "gf": 17,
+            "gc": 14,
+            "puntos": 23,
+            "ppp": 1.64,
+            "victorias_pct": 42.86
+          }
+        },
+        "Häcken": {
+          "local": {
+            "pj": 15,
+            "g": 8,
+            "e": 5,
+            "p": 2,
+            "gf": 28,
+            "gc": 19,
+            "puntos": 29,
+            "ppp": 1.93,
+            "victorias_pct": 53.33
+          },
+          "visitante": {
+            "pj": 14,
+            "g": 6,
+            "e": 5,
+            "p": 3,
+            "gf": 24,
+            "gc": 15,
+            "puntos": 23,
+            "ppp": 1.64,
+            "victorias_pct": 42.86
+          }
+        },
+        "Brommapojkarna": {
+          "visitante": {
+            "pj": 14,
+            "g": 5,
+            "e": 3,
+            "p": 6,
+            "gf": 24,
+            "gc": 29,
+            "puntos": 18,
+            "ppp": 1.29,
+            "victorias_pct": 35.71
+          },
+          "local": {
+            "pj": 15,
+            "g": 4,
+            "e": 5,
+            "p": 6,
+            "gf": 15,
+            "gc": 18,
+            "puntos": 17,
+            "ppp": 1.13,
+            "victorias_pct": 26.67
+          }
+        },
+        "GAIS": {
+          "local": {
+            "pj": 15,
+            "g": 7,
+            "e": 5,
+            "p": 3,
+            "gf": 22,
+            "gc": 8,
+            "puntos": 26,
+            "ppp": 1.73,
+            "victorias_pct": 46.67
+          },
+          "visitante": {
+            "pj": 14,
+            "g": 5,
+            "e": 2,
+            "p": 7,
+            "gf": 17,
+            "gc": 21,
+            "puntos": 17,
+            "ppp": 1.21,
+            "victorias_pct": 35.71
+          }
+        },
+        "Djurgården": {
+          "visitante": {
+            "pj": 15,
+            "g": 9,
+            "e": 2,
+            "p": 4,
+            "gf": 22,
+            "gc": 11,
+            "puntos": 29,
+            "ppp": 1.93,
+            "victorias_pct": 60.0
+          },
+          "local": {
+            "pj": 14,
+            "g": 7,
+            "e": 2,
+            "p": 5,
+            "gf": 34,
+            "gc": 17,
+            "puntos": 23,
+            "ppp": 1.64,
+            "victorias_pct": 50.0
+          }
+        }
+      },
+      "elo": {
+        "Sirius": 1570.9,
+        "Degerfors": 1406.1,
+        "Mjällby": 1454.2,
+        "Hammarby": 1598.4,
+        "Halmstad": 1434.5,
+        "AIK": 1511.9,
+        "Västerås": 1518.5,
+        "Kalmar": 1427.5,
+        "Malmö FF": 1507.0,
+        "Örgryte": 1426.6,
+        "IFK Göteborg": 1508.4,
+        "Elfsborg": 1535.8,
+        "Brommapojkarna": 1472.8,
+        "Häcken": 1560.3,
+        "Djurgården": 1546.6,
+        "GAIS": 1520.6
+      }
+    },
+    "SUI": {
+      "temporada": "2026/27",
+      "partidos": 84,
+      "equipos_discrepantes": [],
+      "fechas_invalidas": [],
+      "estado": "validado",
+      "estadisticas": {
+        "Lausanne-Sport": {
+          "local": {
+            "pj": 7,
+            "g": 0,
+            "e": 3,
+            "p": 4,
+            "gf": 11,
+            "gc": 18,
+            "puntos": 3,
+            "ppp": 0.43,
+            "victorias_pct": 0.0
+          },
+          "visitante": {
+            "pj": 7,
+            "g": 1,
+            "e": 2,
+            "p": 4,
+            "gf": 3,
+            "gc": 7,
+            "puntos": 5,
+            "ppp": 0.71,
+            "victorias_pct": 14.29
+          }
+        },
+        "Grasshoppers": {
+          "visitante": {
+            "pj": 7,
+            "g": 1,
+            "e": 2,
+            "p": 4,
+            "gf": 7,
+            "gc": 15,
+            "puntos": 5,
+            "ppp": 0.71,
+            "victorias_pct": 14.29
+          },
+          "local": {
+            "pj": 7,
+            "g": 1,
+            "e": 3,
+            "p": 3,
+            "gf": 10,
+            "gc": 16,
+            "puntos": 6,
+            "ppp": 0.86,
+            "victorias_pct": 14.29
+          }
+        },
+        "Servette": {
+          "local": {
+            "pj": 7,
+            "g": 3,
+            "e": 2,
+            "p": 2,
+            "gf": 8,
+            "gc": 6,
+            "puntos": 11,
+            "ppp": 1.57,
+            "victorias_pct": 42.86
+          },
+          "visitante": {
+            "pj": 7,
+            "g": 2,
+            "e": 0,
+            "p": 5,
+            "gf": 9,
+            "gc": 12,
+            "puntos": 6,
+            "ppp": 0.86,
+            "victorias_pct": 28.57
+          }
+        },
+        "Basel": {
+          "visitante": {
+            "pj": 7,
+            "g": 3,
+            "e": 2,
+            "p": 2,
+            "gf": 14,
+            "gc": 14,
+            "puntos": 11,
+            "ppp": 1.57,
+            "victorias_pct": 42.86
+          },
+          "local": {
+            "pj": 7,
+            "g": 1,
+            "e": 1,
+            "p": 5,
+            "gf": 7,
+            "gc": 13,
+            "puntos": 4,
+            "ppp": 0.57,
+            "victorias_pct": 14.29
+          }
+        },
+        "Luzern": {
+          "local": {
+            "pj": 7,
+            "g": 3,
+            "e": 1,
+            "p": 3,
+            "gf": 14,
+            "gc": 13,
+            "puntos": 10,
+            "ppp": 1.43,
+            "victorias_pct": 42.86
+          },
+          "visitante": {
+            "pj": 7,
+            "g": 1,
+            "e": 3,
+            "p": 3,
+            "gf": 9,
+            "gc": 15,
+            "puntos": 6,
+            "ppp": 0.86,
+            "victorias_pct": 14.29
+          }
+        },
+        "FC Thun": {
+          "visitante": {
+            "pj": 8,
+            "g": 4,
+            "e": 0,
+            "p": 4,
+            "gf": 22,
+            "gc": 23,
+            "puntos": 12,
+            "ppp": 1.5,
+            "victorias_pct": 50.0
+          },
+          "local": {
+            "pj": 6,
+            "g": 0,
+            "e": 2,
+            "p": 4,
+            "gf": 7,
+            "gc": 17,
+            "puntos": 2,
+            "ppp": 0.33,
+            "victorias_pct": 0.0
+          }
+        },
+        "Young Boys": {
+          "local": {
+            "pj": 8,
+            "g": 5,
+            "e": 2,
+            "p": 1,
+            "gf": 25,
+            "gc": 19,
+            "puntos": 17,
+            "ppp": 2.12,
+            "victorias_pct": 62.5
+          },
+          "visitante": {
+            "pj": 6,
+            "g": 4,
+            "e": 2,
+            "p": 0,
+            "gf": 19,
+            "gc": 8,
+            "puntos": 14,
+            "ppp": 2.33,
+            "victorias_pct": 66.67
+          }
+        },
+        "Sion": {
+          "visitante": {
+            "pj": 7,
+            "g": 4,
+            "e": 1,
+            "p": 2,
+            "gf": 17,
+            "gc": 11,
+            "puntos": 13,
+            "ppp": 1.86,
+            "victorias_pct": 57.14
+          },
+          "local": {
+            "pj": 7,
+            "g": 5,
+            "e": 1,
+            "p": 1,
+            "gf": 14,
+            "gc": 7,
+            "puntos": 16,
+            "ppp": 2.29,
+            "victorias_pct": 71.43
+          }
+        },
+        "Lugano": {
+          "local": {
+            "pj": 8,
+            "g": 7,
+            "e": 1,
+            "p": 0,
+            "gf": 22,
+            "gc": 6,
+            "puntos": 22,
+            "ppp": 2.75,
+            "victorias_pct": 87.5
+          },
+          "visitante": {
+            "pj": 6,
+            "g": 5,
+            "e": 0,
+            "p": 1,
+            "gf": 16,
+            "gc": 10,
+            "puntos": 15,
+            "ppp": 2.5,
+            "victorias_pct": 83.33
+          }
+        },
+        "Vaduz": {
+          "visitante": {
+            "pj": 8,
+            "g": 0,
+            "e": 2,
+            "p": 6,
+            "gf": 12,
+            "gc": 19,
+            "puntos": 2,
+            "ppp": 0.25,
+            "victorias_pct": 0.0
+          },
+          "local": {
+            "pj": 6,
+            "g": 3,
+            "e": 0,
+            "p": 3,
+            "gf": 14,
+            "gc": 12,
+            "puntos": 9,
+            "ppp": 1.5,
+            "victorias_pct": 50.0
+          }
+        },
+        "St.Gallen": {
+          "local": {
+            "pj": 7,
+            "g": 4,
+            "e": 1,
+            "p": 2,
+            "gf": 15,
+            "gc": 11,
+            "puntos": 13,
+            "ppp": 1.86,
+            "victorias_pct": 57.14
+          },
+          "visitante": {
+            "pj": 7,
+            "g": 3,
+            "e": 1,
+            "p": 3,
+            "gf": 11,
+            "gc": 13,
+            "puntos": 10,
+            "ppp": 1.43,
+            "victorias_pct": 42.86
+          }
+        },
+        "Zürich": {
+          "visitante": {
+            "pj": 7,
+            "g": 2,
+            "e": 3,
+            "p": 2,
+            "gf": 12,
+            "gc": 15,
+            "puntos": 9,
+            "ppp": 1.29,
+            "victorias_pct": 28.57
+          },
+          "local": {
+            "pj": 7,
+            "g": 4,
+            "e": 1,
+            "p": 2,
+            "gf": 15,
+            "gc": 13,
+            "puntos": 13,
+            "ppp": 1.86,
+            "victorias_pct": 57.14
+          }
+        }
+      },
+      "elo": {
+        "Grasshoppers": 1456.7,
+        "Lausanne-Sport": 1436.2,
+        "Basel": 1469.8,
+        "Servette": 1486.6,
+        "FC Thun": 1468.4,
+        "Luzern": 1487.2,
+        "Sion": 1549.7,
+        "Young Boys": 1563.7,
+        "Vaduz": 1451.6,
+        "Lugano": 1585.3,
+        "Zürich": 1523.1,
+        "St.Gallen": 1521.6
+      }
+    },
+    "TUR": {
+      "temporada": "2026/27",
+      "partidos": 108,
+      "equipos_discrepantes": [],
+      "fechas_invalidas": [],
+      "estado": "validado",
+      "estadisticas": {
+        "Galatasaray": {
+          "local": {
+            "pj": 7,
+            "g": 6,
+            "e": 1,
+            "p": 0,
+            "gf": 17,
+            "gc": 10,
+            "puntos": 19,
+            "ppp": 2.71,
+            "victorias_pct": 85.71
+          },
+          "visitante": {
+            "pj": 5,
+            "g": 4,
+            "e": 0,
+            "p": 1,
+            "gf": 12,
+            "gc": 6,
+            "puntos": 12,
+            "ppp": 2.4,
+            "victorias_pct": 80.0
+          }
+        },
+        "Çorum": {
+          "visitante": {
+            "pj": 7,
+            "g": 3,
+            "e": 1,
+            "p": 3,
+            "gf": 17,
+            "gc": 16,
+            "puntos": 10,
+            "ppp": 1.43,
+            "victorias_pct": 42.86
+          },
+          "local": {
+            "pj": 5,
+            "g": 2,
+            "e": 0,
+            "p": 3,
+            "gf": 6,
+            "gc": 9,
+            "puntos": 6,
+            "ppp": 1.2,
+            "victorias_pct": 40.0
+          }
+        },
+        "Kasımpaşa": {
+          "local": {
+            "pj": 6,
+            "g": 2,
+            "e": 4,
+            "p": 0,
+            "gf": 11,
+            "gc": 7,
+            "puntos": 10,
+            "ppp": 1.67,
+            "victorias_pct": 33.33
+          },
+          "visitante": {
+            "pj": 6,
+            "g": 4,
+            "e": 1,
+            "p": 1,
+            "gf": 8,
+            "gc": 5,
+            "puntos": 13,
+            "ppp": 2.17,
+            "victorias_pct": 66.67
+          }
+        },
+        "Trabzonspor": {
+          "visitante": {
+            "pj": 6,
+            "g": 3,
+            "e": 1,
+            "p": 2,
+            "gf": 11,
+            "gc": 7,
+            "puntos": 10,
+            "ppp": 1.67,
+            "victorias_pct": 50.0
+          },
+          "local": {
+            "pj": 6,
+            "g": 6,
+            "e": 0,
+            "p": 0,
+            "gf": 16,
+            "gc": 1,
+            "puntos": 18,
+            "ppp": 3.0,
+            "victorias_pct": 100.0
+          }
+        },
+        "Konyaspor": {
+          "local": {
+            "pj": 7,
+            "g": 2,
+            "e": 1,
+            "p": 4,
+            "gf": 6,
+            "gc": 11,
+            "puntos": 7,
+            "ppp": 1.0,
+            "victorias_pct": 28.57
+          },
+          "visitante": {
+            "pj": 5,
+            "g": 0,
+            "e": 1,
+            "p": 4,
+            "gf": 2,
+            "gc": 7,
+            "puntos": 1,
+            "ppp": 0.2,
+            "victorias_pct": 0.0
+          }
+        },
+        "Rizespor": {
+          "visitante": {
+            "pj": 7,
+            "g": 4,
+            "e": 2,
+            "p": 1,
+            "gf": 10,
+            "gc": 5,
+            "puntos": 14,
+            "ppp": 2.0,
+            "victorias_pct": 57.14
+          },
+          "local": {
+            "pj": 5,
+            "g": 1,
+            "e": 0,
+            "p": 4,
+            "gf": 5,
+            "gc": 11,
+            "puntos": 3,
+            "ppp": 0.6,
+            "victorias_pct": 20.0
+          }
+        },
+        "Gaziantep FK": {
+          "local": {
+            "pj": 6,
+            "g": 0,
+            "e": 2,
+            "p": 4,
+            "gf": 3,
+            "gc": 11,
+            "puntos": 2,
+            "ppp": 0.33,
+            "victorias_pct": 0.0
+          },
+          "visitante": {
+            "pj": 6,
+            "g": 2,
+            "e": 0,
+            "p": 4,
+            "gf": 6,
+            "gc": 9,
+            "puntos": 6,
+            "ppp": 1.0,
+            "victorias_pct": 33.33
+          }
+        },
+        "Alanyaspor": {
+          "visitante": {
+            "pj": 7,
+            "g": 2,
+            "e": 1,
+            "p": 4,
+            "gf": 6,
+            "gc": 14,
+            "puntos": 7,
+            "ppp": 1.0,
+            "victorias_pct": 28.57
+          },
+          "local": {
+            "pj": 5,
+            "g": 1,
+            "e": 2,
+            "p": 2,
+            "gf": 4,
+            "gc": 6,
+            "puntos": 5,
+            "ppp": 1.0,
+            "victorias_pct": 20.0
+          }
+        },
+        "Gençlerbirliği": {
+          "local": {
+            "pj": 7,
+            "g": 3,
+            "e": 2,
+            "p": 2,
+            "gf": 12,
+            "gc": 7,
+            "puntos": 11,
+            "ppp": 1.57,
+            "victorias_pct": 42.86
+          },
+          "visitante": {
+            "pj": 5,
+            "g": 1,
+            "e": 0,
+            "p": 4,
+            "gf": 1,
+            "gc": 14,
+            "puntos": 3,
+            "ppp": 0.6,
+            "victorias_pct": 20.0
+          }
+        },
+        "Fenerbahçe": {
+          "visitante": {
+            "pj": 7,
+            "g": 3,
+            "e": 2,
+            "p": 2,
+            "gf": 14,
+            "gc": 6,
+            "puntos": 11,
+            "ppp": 1.57,
+            "victorias_pct": 42.86
+          },
+          "local": {
+            "pj": 5,
+            "g": 3,
+            "e": 0,
+            "p": 2,
+            "gf": 17,
+            "gc": 6,
+            "puntos": 9,
+            "ppp": 1.8,
+            "victorias_pct": 60.0
+          }
+        },
+        "İstanbul Başakşehir": {
+          "local": {
+            "pj": 7,
+            "g": 5,
+            "e": 1,
+            "p": 1,
+            "gf": 20,
+            "gc": 9,
+            "puntos": 16,
+            "ppp": 2.29,
+            "victorias_pct": 71.43
+          },
+          "visitante": {
+            "pj": 5,
+            "g": 1,
+            "e": 1,
+            "p": 3,
+            "gf": 3,
+            "gc": 10,
+            "puntos": 4,
+            "ppp": 0.8,
+            "victorias_pct": 20.0
+          }
+        },
+        "Kocaelispor": {
+          "visitante": {
+            "pj": 6,
+            "g": 3,
+            "e": 0,
+            "p": 3,
+            "gf": 7,
+            "gc": 7,
+            "puntos": 9,
+            "ppp": 1.5,
+            "victorias_pct": 50.0
+          },
+          "local": {
+            "pj": 6,
+            "g": 3,
+            "e": 2,
+            "p": 1,
+            "gf": 8,
+            "gc": 4,
+            "puntos": 11,
+            "ppp": 1.83,
+            "victorias_pct": 50.0
+          }
+        },
+        "Amed": {
+          "local": {
+            "pj": 7,
+            "g": 6,
+            "e": 0,
+            "p": 1,
+            "gf": 19,
+            "gc": 6,
+            "puntos": 18,
+            "ppp": 2.57,
+            "victorias_pct": 85.71
+          },
+          "visitante": {
+            "pj": 5,
+            "g": 1,
+            "e": 2,
+            "p": 2,
+            "gf": 9,
+            "gc": 11,
+            "puntos": 5,
+            "ppp": 1.0,
+            "victorias_pct": 20.0
+          }
+        },
+        "Erzurumspor FK": {
+          "visitante": {
+            "pj": 6,
+            "g": 1,
+            "e": 2,
+            "p": 3,
+            "gf": 5,
+            "gc": 10,
+            "puntos": 5,
+            "ppp": 0.83,
+            "victorias_pct": 16.67
+          },
+          "local": {
+            "pj": 6,
+            "g": 3,
+            "e": 0,
+            "p": 3,
+            "gf": 5,
+            "gc": 8,
+            "puntos": 9,
+            "ppp": 1.5,
+            "victorias_pct": 50.0
+          }
+        },
+        "Beşiktaş": {
+          "local": {
+            "pj": 6,
+            "g": 6,
+            "e": 0,
+            "p": 0,
+            "gf": 17,
+            "gc": 3,
+            "puntos": 18,
+            "ppp": 3.0,
+            "victorias_pct": 100.0
+          },
+          "visitante": {
+            "pj": 6,
+            "g": 2,
+            "e": 1,
+            "p": 3,
+            "gf": 10,
+            "gc": 11,
+            "puntos": 7,
+            "ppp": 1.17,
+            "victorias_pct": 33.33
+          }
+        },
+        "Eyüpspor": {
+          "visitante": {
+            "pj": 6,
+            "g": 0,
+            "e": 0,
+            "p": 6,
+            "gf": 1,
+            "gc": 20,
+            "puntos": 0,
+            "ppp": 0.0,
+            "victorias_pct": 0.0
+          },
+          "local": {
+            "pj": 6,
+            "g": 1,
+            "e": 0,
+            "p": 5,
+            "gf": 2,
+            "gc": 11,
+            "puntos": 3,
+            "ppp": 0.5,
+            "victorias_pct": 16.67
+          }
+        },
+        "Samsunspor": {
+          "local": {
+            "pj": 6,
+            "g": 1,
+            "e": 1,
+            "p": 4,
+            "gf": 6,
+            "gc": 15,
+            "puntos": 4,
+            "ppp": 0.67,
+            "victorias_pct": 16.67
+          },
+          "visitante": {
+            "pj": 6,
+            "g": 1,
+            "e": 0,
+            "p": 5,
+            "gf": 6,
+            "gc": 13,
+            "puntos": 3,
+            "ppp": 0.5,
+            "victorias_pct": 16.67
+          }
+        },
+        "Göztepe": {
+          "visitante": {
+            "pj": 7,
+            "g": 4,
+            "e": 2,
+            "p": 1,
+            "gf": 16,
+            "gc": 10,
+            "puntos": 14,
+            "ppp": 2.0,
+            "victorias_pct": 57.14
+          },
+          "local": {
+            "pj": 5,
+            "g": 1,
+            "e": 1,
+            "p": 3,
+            "gf": 7,
+            "gc": 9,
+            "puntos": 4,
+            "ppp": 0.8,
+            "victorias_pct": 20.0
+          }
+        }
+      },
+      "elo": {
+        "Çorum": 1494.2,
+        "Galatasaray": 1576.1,
+        "Trabzonspor": 1561.0,
+        "Kasımpaşa": 1541.8,
+        "Rizespor": 1505.2,
+        "Konyaspor": 1446.3,
+        "Alanyaspor": 1472.8,
+        "Gaziantep FK": 1443.7,
+        "Fenerbahçe": 1522.9,
+        "Gençlerbirliği": 1478.3,
+        "Kocaelispor": 1516.2,
+        "İstanbul Başakşehir": 1517.5,
+        "Erzurumspor FK": 1480.2,
+        "Amed": 1527.6,
+        "Eyüpspor": 1414.3,
+        "Beşiktaş": 1544.3,
+        "Göztepe": 1517.0,
+        "Samsunspor": 1440.6
+      }
+    }
+  }
+}
