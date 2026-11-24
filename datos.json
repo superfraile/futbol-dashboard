@@ -1,6 +1,6 @@
 {
   "version": "1.2",
-  "ultima_actualizacion": "2026-11-24T06:09:34.740901+00:00",
+  "ultima_actualizacion": "2026-11-24T16:41:05.983280+00:00",
   "fuente": "OpenLigaDB (https://www.openligadb.de), ODbL 1.0; GER; football-data.org (PL; ENG); football-data.org (PD; ESP); football-data.org (SA; ITA); football-data.org (FL1; FRA); football-data.org (PPL; POR); football-data.org (DED; NED)",
   "ligas": {
     "GER": [
@@ -1841,16 +1841,16 @@
   ],
   "partidos": [
     {
-      "liga": "GER",
-      "fecha": "2026-11-27",
-      "local": "SV Werder Bremen",
-      "visitante": "Borussia Mönchengladbach"
-    },
-    {
       "liga": "NED",
       "fecha": "2026-11-27T19:00:00Z",
       "local": "FC Groningen",
       "visitante": "Willem II Tilburg"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2026-11-27T19:30:00+00:00",
+      "local": "SV Werder Bremen",
+      "visitante": "Borussia Mönchengladbach"
     },
     {
       "liga": "FRA",
@@ -1883,36 +1883,6 @@
       "visitante": "CD Nacional"
     },
     {
-      "liga": "GER",
-      "fecha": "2026-11-28",
-      "local": "1. FSV Mainz 05",
-      "visitante": "1. FC Union Berlin"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2026-11-28",
-      "local": "Hamburger SV",
-      "visitante": "FC Bayern München"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2026-11-28",
-      "local": "1. FC Köln",
-      "visitante": "SV 07 Elversberg"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2026-11-28",
-      "local": "SC Paderborn 07",
-      "visitante": "FC Schalke 04"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2026-11-28",
-      "local": "VfB Stuttgart",
-      "visitante": "Eintracht Frankfurt"
-    },
-    {
       "liga": "ESP",
       "fecha": "2026-11-28T13:00:00Z",
       "local": "Real Betis Balompié",
@@ -1923,6 +1893,30 @@
       "fecha": "2026-11-28T14:00:00Z",
       "local": "Frosinone Calcio",
       "visitante": "Parma Calcio 1913"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2026-11-28T14:30:00+00:00",
+      "local": "1. FSV Mainz 05",
+      "visitante": "1. FC Union Berlin"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2026-11-28T14:30:00+00:00",
+      "local": "Hamburger SV",
+      "visitante": "FC Bayern München"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2026-11-28T14:30:00+00:00",
+      "local": "1. FC Köln",
+      "visitante": "SV 07 Elversberg"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2026-11-28T14:30:00+00:00",
+      "local": "SC Paderborn 07",
+      "visitante": "FC Schalke 04"
     },
     {
       "liga": "ENG",
@@ -1971,6 +1965,12 @@
       "fecha": "2026-11-28T17:00:00Z",
       "local": "Torino FC",
       "visitante": "SS Lazio"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2026-11-28T17:30:00+00:00",
+      "local": "VfB Stuttgart",
+      "visitante": "Eintracht Frankfurt"
     },
     {
       "liga": "ESP",
@@ -2045,24 +2045,6 @@
       "visitante": "CF Estrela da Amadora"
     },
     {
-      "liga": "GER",
-      "fecha": "2026-11-29",
-      "local": "SC Freiburg",
-      "visitante": "RB Leipzig"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2026-11-29",
-      "local": "TSG Hoffenheim",
-      "visitante": "FC Augsburg"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2026-11-29",
-      "local": "Borussia Dortmund",
-      "visitante": "Bayer 04 Leverkusen"
-    },
-    {
       "liga": "NED",
       "fecha": "2026-11-29T11:15:00Z",
       "local": "ADO Den Haag",
@@ -2135,6 +2117,12 @@
       "visitante": "Hull City AFC"
     },
     {
+      "liga": "GER",
+      "fecha": "2026-11-29T14:30:00+00:00",
+      "local": "SC Freiburg",
+      "visitante": "RB Leipzig"
+    },
+    {
       "liga": "ESP",
       "fecha": "2026-11-29T15:15:00Z",
       "local": "RC Deportivo La Coruña",
@@ -2151,6 +2139,12 @@
       "fecha": "2026-11-29T16:15:00Z",
       "local": "Toulouse FC",
       "visitante": "Stade Rennais FC 1901"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2026-11-29T16:30:00+00:00",
+      "local": "TSG Hoffenheim",
+      "visitante": "FC Augsburg"
     },
     {
       "liga": "ENG",
@@ -2175,6 +2169,12 @@
       "fecha": "2026-11-29T18:00:00Z",
       "local": "Gil Vicente FC",
       "visitante": "GD Estoril Praia"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2026-11-29T18:30:00+00:00",
+      "local": "Borussia Dortmund",
+      "visitante": "Bayer 04 Leverkusen"
     },
     {
       "liga": "NED",
@@ -2309,16 +2309,16 @@
       "visitante": "Fulham FC"
     },
     {
-      "liga": "GER",
-      "fecha": "2026-12-04",
-      "local": "FC Bayern München",
-      "visitante": "SC Paderborn 07"
-    },
-    {
       "liga": "NED",
       "fecha": "2026-12-04T19:00:00Z",
       "local": "Telstar 1963",
       "visitante": "FC Groningen"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2026-12-04T19:30:00+00:00",
+      "local": "FC Bayern München",
+      "visitante": "SC Paderborn 07"
     },
     {
       "liga": "FRA",
@@ -2345,42 +2345,6 @@
       "visitante": "CS Marítimo"
     },
     {
-      "liga": "GER",
-      "fecha": "2026-12-05",
-      "local": "RB Leipzig",
-      "visitante": "1. FSV Mainz 05"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2026-12-05",
-      "local": "Bayer 04 Leverkusen",
-      "visitante": "Borussia Mönchengladbach"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2026-12-05",
-      "local": "SC Freiburg",
-      "visitante": "TSG Hoffenheim"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2026-12-05",
-      "local": "FC Augsburg",
-      "visitante": "1. FC Köln"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2026-12-05",
-      "local": "1. FC Union Berlin",
-      "visitante": "Hamburger SV"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2026-12-05",
-      "local": "Eintracht Frankfurt",
-      "visitante": "SV Werder Bremen"
-    },
-    {
       "liga": "ENG",
       "fecha": "2026-12-05T12:30:00Z",
       "local": "Chelsea FC",
@@ -2397,6 +2361,36 @@
       "fecha": "2026-12-05T14:00:00Z",
       "local": "AC Monza",
       "visitante": "Como 1907"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2026-12-05T14:30:00+00:00",
+      "local": "RB Leipzig",
+      "visitante": "1. FSV Mainz 05"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2026-12-05T14:30:00+00:00",
+      "local": "Bayer 04 Leverkusen",
+      "visitante": "Borussia Mönchengladbach"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2026-12-05T14:30:00+00:00",
+      "local": "SC Freiburg",
+      "visitante": "TSG Hoffenheim"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2026-12-05T14:30:00+00:00",
+      "local": "FC Augsburg",
+      "visitante": "1. FC Köln"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2026-12-05T14:30:00+00:00",
+      "local": "1. FC Union Berlin",
+      "visitante": "Hamburger SV"
     },
     {
       "liga": "ENG",
@@ -2451,6 +2445,12 @@
       "fecha": "2026-12-05T17:00:00Z",
       "local": "Frosinone Calcio",
       "visitante": "FC Internazionale Milano"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2026-12-05T17:30:00+00:00",
+      "local": "Eintracht Frankfurt",
+      "visitante": "SV Werder Bremen"
     },
     {
       "liga": "ESP",
@@ -2537,18 +2537,6 @@
       "visitante": "FC Arouca"
     },
     {
-      "liga": "GER",
-      "fecha": "2026-12-06",
-      "local": "FC Schalke 04",
-      "visitante": "Borussia Dortmund"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2026-12-06",
-      "local": "SV 07 Elversberg",
-      "visitante": "VfB Stuttgart"
-    },
-    {
       "liga": "NED",
       "fecha": "2026-12-06T11:15:00Z",
       "local": "SC Heerenveen",
@@ -2603,6 +2591,12 @@
       "visitante": "Atalanta BC"
     },
     {
+      "liga": "GER",
+      "fecha": "2026-12-06T14:30:00+00:00",
+      "local": "FC Schalke 04",
+      "visitante": "Borussia Dortmund"
+    },
+    {
       "liga": "ESP",
       "fecha": "2026-12-06T15:15:00Z",
       "local": "Athletic Club",
@@ -2631,6 +2625,12 @@
       "fecha": "2026-12-06T16:15:00Z",
       "local": "Stade Rennais FC 1901",
       "visitante": "Stade Brestois 29"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2026-12-06T16:30:00+00:00",
+      "local": "SV 07 Elversberg",
+      "visitante": "VfB Stuttgart"
     },
     {
       "liga": "ENG",
@@ -2706,7 +2706,7 @@
     },
     {
       "liga": "GER",
-      "fecha": "2026-12-11",
+      "fecha": "2026-12-11T19:30:00+00:00",
       "local": "Hamburger SV",
       "visitante": "FC Schalke 04"
     },
@@ -2735,36 +2735,6 @@
       "visitante": "FC Arouca"
     },
     {
-      "liga": "GER",
-      "fecha": "2026-12-12",
-      "local": "Borussia Dortmund",
-      "visitante": "FC Augsburg"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2026-12-12",
-      "local": "VfB Stuttgart",
-      "visitante": "1. FC Union Berlin"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2026-12-12",
-      "local": "1. FC Köln",
-      "visitante": "RB Leipzig"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2026-12-12",
-      "local": "SC Paderborn 07",
-      "visitante": "SV 07 Elversberg"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2026-12-12",
-      "local": "Borussia Mönchengladbach",
-      "visitante": "Eintracht Frankfurt"
-    },
-    {
       "liga": "ESP",
       "fecha": "2026-12-12T13:00:00Z",
       "local": "Levante UD",
@@ -2775,6 +2745,30 @@
       "fecha": "2026-12-12T14:00:00Z",
       "local": "Cagliari Calcio",
       "visitante": "Venezia FC"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2026-12-12T14:30:00+00:00",
+      "local": "Borussia Dortmund",
+      "visitante": "FC Augsburg"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2026-12-12T14:30:00+00:00",
+      "local": "VfB Stuttgart",
+      "visitante": "1. FC Union Berlin"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2026-12-12T14:30:00+00:00",
+      "local": "1. FC Köln",
+      "visitante": "RB Leipzig"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2026-12-12T14:30:00+00:00",
+      "local": "SC Paderborn 07",
+      "visitante": "SV 07 Elversberg"
     },
     {
       "liga": "ENG",
@@ -2823,6 +2817,12 @@
       "fecha": "2026-12-12T17:00:00Z",
       "local": "US Lecce",
       "visitante": "US Sassuolo Calcio"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2026-12-12T17:30:00+00:00",
+      "local": "Borussia Mönchengladbach",
+      "visitante": "Eintracht Frankfurt"
     },
     {
       "liga": "ESP",
@@ -2897,24 +2897,6 @@
       "visitante": "Sporting Clube de Portugal"
     },
     {
-      "liga": "GER",
-      "fecha": "2026-12-13",
-      "local": "1. FSV Mainz 05",
-      "visitante": "SC Freiburg"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2026-12-13",
-      "local": "TSG Hoffenheim",
-      "visitante": "FC Bayern München"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2026-12-13",
-      "local": "SV Werder Bremen",
-      "visitante": "Bayer 04 Leverkusen"
-    },
-    {
       "liga": "NED",
       "fecha": "2026-12-13T11:15:00Z",
       "local": "PSV",
@@ -2975,6 +2957,12 @@
       "visitante": "Torino FC"
     },
     {
+      "liga": "GER",
+      "fecha": "2026-12-13T14:30:00+00:00",
+      "local": "1. FSV Mainz 05",
+      "visitante": "SC Freiburg"
+    },
+    {
       "liga": "ESP",
       "fecha": "2026-12-13T15:15:00Z",
       "local": "RC Deportivo La Coruña",
@@ -3005,6 +2993,12 @@
       "visitante": "AS Monaco FC"
     },
     {
+      "liga": "GER",
+      "fecha": "2026-12-13T16:30:00+00:00",
+      "local": "TSG Hoffenheim",
+      "visitante": "FC Bayern München"
+    },
+    {
       "liga": "ENG",
       "fecha": "2026-12-13T16:30:00Z",
       "local": "Coventry City FC",
@@ -3027,6 +3021,12 @@
       "fecha": "2026-12-13T18:00:00Z",
       "local": "Vitória SC",
       "visitante": "FC Alverca"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2026-12-13T18:30:00+00:00",
+      "local": "SV Werder Bremen",
+      "visitante": "Bayer 04 Leverkusen"
     },
     {
       "liga": "ENG",
@@ -3095,12 +3095,6 @@
       "visitante": "Sporting Clube de Braga"
     },
     {
-      "liga": "GER",
-      "fecha": "2026-12-18",
-      "local": "FC Bayern München",
-      "visitante": "SV Werder Bremen"
-    },
-    {
       "liga": "ITA",
       "fecha": "2026-12-18T17:30:00Z",
       "local": "Frosinone Calcio",
@@ -3113,40 +3107,16 @@
       "visitante": "Willem II Tilburg"
     },
     {
+      "liga": "GER",
+      "fecha": "2026-12-18T19:30:00+00:00",
+      "local": "FC Bayern München",
+      "visitante": "SV Werder Bremen"
+    },
+    {
       "liga": "ITA",
       "fecha": "2026-12-18T19:45:00Z",
       "local": "US Lecce",
       "visitante": "FC Internazionale Milano"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2026-12-19",
-      "local": "Bayer 04 Leverkusen",
-      "visitante": "Eintracht Frankfurt"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2026-12-19",
-      "local": "FC Augsburg",
-      "visitante": "SC Paderborn 07"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2026-12-19",
-      "local": "1. FSV Mainz 05",
-      "visitante": "1. FC Köln"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2026-12-19",
-      "local": "SV 07 Elversberg",
-      "visitante": "Hamburger SV"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2026-12-19",
-      "local": "RB Leipzig",
-      "visitante": "Borussia Dortmund"
     },
     {
       "liga": "ENG",
@@ -3159,6 +3129,30 @@
       "fecha": "2026-12-19T14:00:00Z",
       "local": "US Sassuolo Calcio",
       "visitante": "Parma Calcio 1913"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2026-12-19T14:30:00+00:00",
+      "local": "Bayer 04 Leverkusen",
+      "visitante": "Eintracht Frankfurt"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2026-12-19T14:30:00+00:00",
+      "local": "FC Augsburg",
+      "visitante": "SC Paderborn 07"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2026-12-19T14:30:00+00:00",
+      "local": "1. FSV Mainz 05",
+      "visitante": "1. FC Köln"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2026-12-19T14:30:00+00:00",
+      "local": "SV 07 Elversberg",
+      "visitante": "Hamburger SV"
     },
     {
       "liga": "ENG",
@@ -3191,6 +3185,12 @@
       "visitante": "Como 1907"
     },
     {
+      "liga": "GER",
+      "fecha": "2026-12-19T17:30:00+00:00",
+      "local": "RB Leipzig",
+      "visitante": "Borussia Dortmund"
+    },
+    {
       "liga": "ENG",
       "fecha": "2026-12-19T17:30:00Z",
       "local": "Liverpool FC",
@@ -3213,24 +3213,6 @@
       "fecha": "2026-12-19T20:00:00Z",
       "local": "FC Utrecht",
       "visitante": "SC Heerenveen"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2026-12-20",
-      "local": "SC Freiburg",
-      "visitante": "VfB Stuttgart"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2026-12-20",
-      "local": "1. FC Union Berlin",
-      "visitante": "TSG Hoffenheim"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2026-12-20",
-      "local": "FC Schalke 04",
-      "visitante": "Borussia Mönchengladbach"
     },
     {
       "liga": "ESP",
@@ -3401,10 +3383,22 @@
       "visitante": "AC Monza"
     },
     {
+      "liga": "GER",
+      "fecha": "2026-12-20T14:30:00+00:00",
+      "local": "SC Freiburg",
+      "visitante": "VfB Stuttgart"
+    },
+    {
       "liga": "NED",
       "fecha": "2026-12-20T15:45:00Z",
       "local": "Go Ahead Eagles",
       "visitante": "AFC Ajax"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2026-12-20T16:30:00+00:00",
+      "local": "1. FC Union Berlin",
+      "visitante": "TSG Hoffenheim"
     },
     {
       "liga": "ENG",
@@ -3417,6 +3411,12 @@
       "fecha": "2026-12-20T17:00:00Z",
       "local": "Genoa CFC",
       "visitante": "Udinese Calcio"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2026-12-20T18:30:00+00:00",
+      "local": "FC Schalke 04",
+      "visitante": "Borussia Mönchengladbach"
     },
     {
       "liga": "NED",
@@ -3715,12 +3715,6 @@
     {
       "liga": "FRA",
       "fecha": "2027-01-02T20:00:00Z",
-      "local": "Paris FC",
-      "visitante": "Le Havre AC"
-    },
-    {
-      "liga": "FRA",
-      "fecha": "2027-01-02T20:00:00Z",
       "local": "FC Lorient",
       "visitante": "AJ Auxerre"
     },
@@ -3813,6 +3807,12 @@
       "fecha": "2027-01-03T14:00:00Z",
       "local": "Como 1907",
       "visitante": "US Lecce"
+    },
+    {
+      "liga": "FRA",
+      "fecha": "2027-01-03T16:15:00Z",
+      "local": "Paris FC",
+      "visitante": "Le Havre AC"
     },
     {
       "liga": "FRA",
@@ -3971,12 +3971,6 @@
       "visitante": "Newcastle United FC"
     },
     {
-      "liga": "GER",
-      "fecha": "2027-01-08",
-      "local": "Borussia Dortmund",
-      "visitante": "1. FSV Mainz 05"
-    },
-    {
       "liga": "NED",
       "fecha": "2027-01-08T19:00:00Z",
       "local": "FC Twente '65",
@@ -3984,45 +3978,45 @@
     },
     {
       "liga": "GER",
-      "fecha": "2027-01-09",
-      "local": "VfB Stuttgart",
-      "visitante": "FC Augsburg"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2027-01-09",
-      "local": "TSG Hoffenheim",
-      "visitante": "SV 07 Elversberg"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2027-01-09",
-      "local": "Eintracht Frankfurt",
-      "visitante": "FC Schalke 04"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2027-01-09",
-      "local": "1. FC Köln",
-      "visitante": "SC Freiburg"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2027-01-09",
-      "local": "SC Paderborn 07",
-      "visitante": "RB Leipzig"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2027-01-09",
-      "local": "Borussia Mönchengladbach",
-      "visitante": "FC Bayern München"
+      "fecha": "2027-01-08T19:30:00+00:00",
+      "local": "Borussia Dortmund",
+      "visitante": "1. FSV Mainz 05"
     },
     {
       "liga": "ITA",
       "fecha": "2027-01-09T14:00:00Z",
       "local": "AC Monza",
       "visitante": "Frosinone Calcio"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-01-09T14:30:00+00:00",
+      "local": "VfB Stuttgart",
+      "visitante": "FC Augsburg"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-01-09T14:30:00+00:00",
+      "local": "TSG Hoffenheim",
+      "visitante": "SV 07 Elversberg"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-01-09T14:30:00+00:00",
+      "local": "Eintracht Frankfurt",
+      "visitante": "FC Schalke 04"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-01-09T14:30:00+00:00",
+      "local": "1. FC Köln",
+      "visitante": "SC Freiburg"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-01-09T14:30:00+00:00",
+      "local": "SC Paderborn 07",
+      "visitante": "RB Leipzig"
     },
     {
       "liga": "NED",
@@ -4035,6 +4029,12 @@
       "fecha": "2027-01-09T17:00:00Z",
       "local": "AS Roma",
       "visitante": "AC Milan"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-01-09T17:30:00+00:00",
+      "local": "Borussia Mönchengladbach",
+      "visitante": "FC Bayern München"
     },
     {
       "liga": "NED",
@@ -4059,18 +4059,6 @@
       "fecha": "2027-01-09T20:00:00Z",
       "local": "AZ",
       "visitante": "SC Heerenveen"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2027-01-10",
-      "local": "SV Werder Bremen",
-      "visitante": "1. FC Union Berlin"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2027-01-10",
-      "local": "Hamburger SV",
-      "visitante": "Bayer 04 Leverkusen"
     },
     {
       "liga": "ESP",
@@ -4223,10 +4211,22 @@
       "visitante": "Venezia FC"
     },
     {
+      "liga": "GER",
+      "fecha": "2027-01-10T14:30:00+00:00",
+      "local": "SV Werder Bremen",
+      "visitante": "1. FC Union Berlin"
+    },
+    {
       "liga": "NED",
       "fecha": "2027-01-10T15:45:00Z",
       "local": "FC Groningen",
       "visitante": "Go Ahead Eagles"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-01-10T16:30:00+00:00",
+      "local": "Hamburger SV",
+      "visitante": "Bayer 04 Leverkusen"
     },
     {
       "liga": "ITA",
@@ -4254,63 +4254,57 @@
     },
     {
       "liga": "GER",
-      "fecha": "2027-01-12",
+      "fecha": "2027-01-12T17:30:00+00:00",
       "local": "RB Leipzig",
       "visitante": "VfB Stuttgart"
     },
     {
       "liga": "GER",
-      "fecha": "2027-01-12",
+      "fecha": "2027-01-12T19:30:00+00:00",
       "local": "FC Augsburg",
       "visitante": "Borussia Mönchengladbach"
     },
     {
       "liga": "GER",
-      "fecha": "2027-01-12",
+      "fecha": "2027-01-12T19:30:00+00:00",
       "local": "1. FSV Mainz 05",
       "visitante": "TSG Hoffenheim"
     },
     {
       "liga": "GER",
-      "fecha": "2027-01-12",
+      "fecha": "2027-01-12T19:30:00+00:00",
       "local": "1. FC Köln",
       "visitante": "Borussia Dortmund"
     },
     {
       "liga": "GER",
-      "fecha": "2027-01-13",
+      "fecha": "2027-01-13T17:30:00+00:00",
       "local": "SV 07 Elversberg",
       "visitante": "Eintracht Frankfurt"
     },
     {
       "liga": "GER",
-      "fecha": "2027-01-13",
+      "fecha": "2027-01-13T19:30:00+00:00",
       "local": "FC Bayern München",
       "visitante": "Bayer 04 Leverkusen"
     },
     {
       "liga": "GER",
-      "fecha": "2027-01-13",
+      "fecha": "2027-01-13T19:30:00+00:00",
       "local": "SC Freiburg",
       "visitante": "Hamburger SV"
     },
     {
       "liga": "GER",
-      "fecha": "2027-01-13",
+      "fecha": "2027-01-13T19:30:00+00:00",
       "local": "1. FC Union Berlin",
       "visitante": "SC Paderborn 07"
     },
     {
       "liga": "GER",
-      "fecha": "2027-01-13",
+      "fecha": "2027-01-13T19:30:00+00:00",
       "local": "FC Schalke 04",
       "visitante": "SV Werder Bremen"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2027-01-15",
-      "local": "VfB Stuttgart",
-      "visitante": "1. FSV Mainz 05"
     },
     {
       "liga": "NED",
@@ -4319,52 +4313,52 @@
       "visitante": "Sparta Rotterdam"
     },
     {
+      "liga": "GER",
+      "fecha": "2027-01-15T19:30:00+00:00",
+      "local": "VfB Stuttgart",
+      "visitante": "1. FSV Mainz 05"
+    },
+    {
       "liga": "FRA",
       "fecha": "2027-01-15T19:45:00Z",
       "local": "Olympique de Marseille",
       "visitante": "Lille OSC"
     },
     {
+      "liga": "ENG",
+      "fecha": "2027-01-16T12:30:00Z",
+      "local": "Coventry City FC",
+      "visitante": "Everton FC"
+    },
+    {
       "liga": "GER",
-      "fecha": "2027-01-16",
+      "fecha": "2027-01-16T14:30:00+00:00",
       "local": "Borussia Dortmund",
       "visitante": "SC Freiburg"
     },
     {
       "liga": "GER",
-      "fecha": "2027-01-16",
+      "fecha": "2027-01-16T14:30:00+00:00",
       "local": "TSG Hoffenheim",
       "visitante": "RB Leipzig"
     },
     {
       "liga": "GER",
-      "fecha": "2027-01-16",
+      "fecha": "2027-01-16T14:30:00+00:00",
       "local": "Borussia Mönchengladbach",
       "visitante": "1. FC Union Berlin"
     },
     {
       "liga": "GER",
-      "fecha": "2027-01-16",
+      "fecha": "2027-01-16T14:30:00+00:00",
       "local": "Hamburger SV",
       "visitante": "FC Augsburg"
     },
     {
       "liga": "GER",
-      "fecha": "2027-01-16",
+      "fecha": "2027-01-16T14:30:00+00:00",
       "local": "SC Paderborn 07",
       "visitante": "1. FC Köln"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2027-01-16",
-      "local": "Eintracht Frankfurt",
-      "visitante": "FC Bayern München"
-    },
-    {
-      "liga": "ENG",
-      "fecha": "2027-01-16T12:30:00Z",
-      "local": "Coventry City FC",
-      "visitante": "Everton FC"
     },
     {
       "liga": "ENG",
@@ -4407,6 +4401,12 @@
       "fecha": "2027-01-16T16:15:00Z",
       "local": "Angers SCO",
       "visitante": "Paris Saint-Germain FC"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-01-16T17:30:00+00:00",
+      "local": "Eintracht Frankfurt",
+      "visitante": "FC Bayern München"
     },
     {
       "liga": "ENG",
@@ -4455,18 +4455,6 @@
       "fecha": "2027-01-16T20:00:00Z",
       "local": "Fortuna Sittard",
       "visitante": "PSV"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2027-01-17",
-      "local": "SV Werder Bremen",
-      "visitante": "SV 07 Elversberg"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2027-01-17",
-      "local": "Bayer 04 Leverkusen",
-      "visitante": "FC Schalke 04"
     },
     {
       "liga": "ESP",
@@ -4673,6 +4661,12 @@
       "visitante": "Ipswich Town FC"
     },
     {
+      "liga": "GER",
+      "fecha": "2027-01-17T14:30:00+00:00",
+      "local": "SV Werder Bremen",
+      "visitante": "SV 07 Elversberg"
+    },
+    {
       "liga": "NED",
       "fecha": "2027-01-17T15:45:00Z",
       "local": "SC Cambuur-Leeuwarden",
@@ -4683,6 +4677,12 @@
       "fecha": "2027-01-17T16:15:00Z",
       "local": "AS Monaco FC",
       "visitante": "Stade Brestois 29"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-01-17T16:30:00+00:00",
+      "local": "Bayer 04 Leverkusen",
+      "visitante": "FC Schalke 04"
     },
     {
       "liga": "ENG",
@@ -4703,16 +4703,16 @@
       "visitante": "Brighton & Hove Albion FC"
     },
     {
-      "liga": "GER",
-      "fecha": "2027-01-22",
-      "local": "SV Werder Bremen",
-      "visitante": "SC Freiburg"
-    },
-    {
       "liga": "NED",
       "fecha": "2027-01-22T19:00:00Z",
       "local": "SBV Excelsior",
       "visitante": "Fortuna Sittard"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-01-22T19:30:00+00:00",
+      "local": "SV Werder Bremen",
+      "visitante": "SC Freiburg"
     },
     {
       "liga": "FRA",
@@ -4722,33 +4722,27 @@
     },
     {
       "liga": "GER",
-      "fecha": "2027-01-23",
+      "fecha": "2027-01-23T14:30:00+00:00",
       "local": "VfB Stuttgart",
       "visitante": "FC Bayern München"
     },
     {
       "liga": "GER",
-      "fecha": "2027-01-23",
+      "fecha": "2027-01-23T14:30:00+00:00",
       "local": "Borussia Mönchengladbach",
       "visitante": "RB Leipzig"
     },
     {
       "liga": "GER",
-      "fecha": "2027-01-23",
+      "fecha": "2027-01-23T14:30:00+00:00",
       "local": "FC Schalke 04",
       "visitante": "FC Augsburg"
     },
     {
       "liga": "GER",
-      "fecha": "2027-01-23",
+      "fecha": "2027-01-23T14:30:00+00:00",
       "local": "SC Paderborn 07",
       "visitante": "1. FSV Mainz 05"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2027-01-23",
-      "local": "Hamburger SV",
-      "visitante": "Borussia Dortmund"
     },
     {
       "liga": "ENG",
@@ -4773,6 +4767,12 @@
       "fecha": "2027-01-23T16:15:00Z",
       "local": "Lille OSC",
       "visitante": "Paris FC"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-01-23T17:30:00+00:00",
+      "local": "Hamburger SV",
+      "visitante": "Borussia Dortmund"
     },
     {
       "liga": "ENG",
@@ -4827,24 +4827,6 @@
       "fecha": "2027-01-23T20:00:00Z",
       "local": "PSV",
       "visitante": "ADO Den Haag"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2027-01-24",
-      "local": "Eintracht Frankfurt",
-      "visitante": "1. FC Union Berlin"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2027-01-24",
-      "local": "Bayer 04 Leverkusen",
-      "visitante": "SV 07 Elversberg"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2027-01-24",
-      "local": "TSG Hoffenheim",
-      "visitante": "1. FC Köln"
     },
     {
       "liga": "ESP",
@@ -5069,6 +5051,12 @@
       "visitante": "Tottenham Hotspur FC"
     },
     {
+      "liga": "GER",
+      "fecha": "2027-01-24T14:30:00+00:00",
+      "local": "Eintracht Frankfurt",
+      "visitante": "1. FC Union Berlin"
+    },
+    {
       "liga": "NED",
       "fecha": "2027-01-24T15:45:00Z",
       "local": "AZ",
@@ -5081,10 +5069,22 @@
       "visitante": "Olympique de Marseille"
     },
     {
+      "liga": "GER",
+      "fecha": "2027-01-24T16:30:00+00:00",
+      "local": "Bayer 04 Leverkusen",
+      "visitante": "SV 07 Elversberg"
+    },
+    {
       "liga": "ENG",
       "fecha": "2027-01-24T16:30:00Z",
       "local": "Manchester United FC",
       "visitante": "Liverpool FC"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-01-24T18:30:00+00:00",
+      "local": "TSG Hoffenheim",
+      "visitante": "1. FC Köln"
     },
     {
       "liga": "FRA",
@@ -5111,64 +5111,64 @@
       "visitante": "RC Strasbourg Alsace"
     },
     {
+      "liga": "ENG",
+      "fecha": "2027-01-30T12:30:00Z",
+      "local": "Liverpool FC",
+      "visitante": "Everton FC"
+    },
+    {
       "liga": "GER",
-      "fecha": "2027-01-30",
+      "fecha": "2027-01-30T14:30:00+00:00",
       "local": "FC Bayern München",
       "visitante": "FC Schalke 04"
     },
     {
       "liga": "GER",
-      "fecha": "2027-01-30",
+      "fecha": "2027-01-30T14:30:00+00:00",
       "local": "Borussia Dortmund",
       "visitante": "TSG Hoffenheim"
     },
     {
       "liga": "GER",
-      "fecha": "2027-01-30",
+      "fecha": "2027-01-30T14:30:00+00:00",
       "local": "RB Leipzig",
       "visitante": "SV Werder Bremen"
     },
     {
       "liga": "GER",
-      "fecha": "2027-01-30",
+      "fecha": "2027-01-30T14:30:00+00:00",
       "local": "SC Freiburg",
       "visitante": "SC Paderborn 07"
     },
     {
       "liga": "GER",
-      "fecha": "2027-01-30",
+      "fecha": "2027-01-30T14:30:00+00:00",
       "local": "FC Augsburg",
       "visitante": "Eintracht Frankfurt"
     },
     {
       "liga": "GER",
-      "fecha": "2027-01-30",
+      "fecha": "2027-01-30T14:30:00+00:00",
       "local": "1. FSV Mainz 05",
       "visitante": "Hamburger SV"
     },
     {
       "liga": "GER",
-      "fecha": "2027-01-30",
+      "fecha": "2027-01-30T14:30:00+00:00",
       "local": "1. FC Union Berlin",
       "visitante": "Bayer 04 Leverkusen"
     },
     {
       "liga": "GER",
-      "fecha": "2027-01-30",
+      "fecha": "2027-01-30T14:30:00+00:00",
       "local": "1. FC Köln",
       "visitante": "VfB Stuttgart"
     },
     {
       "liga": "GER",
-      "fecha": "2027-01-30",
+      "fecha": "2027-01-30T14:30:00+00:00",
       "local": "SV 07 Elversberg",
       "visitante": "Borussia Mönchengladbach"
-    },
-    {
-      "liga": "ENG",
-      "fecha": "2027-01-30T12:30:00Z",
-      "local": "Liverpool FC",
-      "visitante": "Everton FC"
     },
     {
       "liga": "ENG",
@@ -5495,60 +5495,6 @@
       "visitante": "Manchester United FC"
     },
     {
-      "liga": "GER",
-      "fecha": "2027-02-06",
-      "local": "FC Bayern München",
-      "visitante": "SV 07 Elversberg"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2027-02-06",
-      "local": "VfB Stuttgart",
-      "visitante": "TSG Hoffenheim"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2027-02-06",
-      "local": "Bayer 04 Leverkusen",
-      "visitante": "FC Augsburg"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2027-02-06",
-      "local": "Eintracht Frankfurt",
-      "visitante": "1. FSV Mainz 05"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2027-02-06",
-      "local": "Borussia Mönchengladbach",
-      "visitante": "SC Freiburg"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2027-02-06",
-      "local": "Hamburger SV",
-      "visitante": "RB Leipzig"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2027-02-06",
-      "local": "SV Werder Bremen",
-      "visitante": "1. FC Köln"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2027-02-06",
-      "local": "FC Schalke 04",
-      "visitante": "1. FC Union Berlin"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2027-02-06",
-      "local": "SC Paderborn 07",
-      "visitante": "Borussia Dortmund"
-    },
-    {
       "liga": "FRA",
       "fecha": "2027-02-06T00:00:00Z",
       "local": "ES Troyes AC",
@@ -5601,6 +5547,60 @@
       "fecha": "2027-02-06T00:00:00Z",
       "local": "FC Twente '65",
       "visitante": "Sparta Rotterdam"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-02-06T14:30:00+00:00",
+      "local": "FC Bayern München",
+      "visitante": "SV 07 Elversberg"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-02-06T14:30:00+00:00",
+      "local": "VfB Stuttgart",
+      "visitante": "TSG Hoffenheim"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-02-06T14:30:00+00:00",
+      "local": "Bayer 04 Leverkusen",
+      "visitante": "FC Augsburg"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-02-06T14:30:00+00:00",
+      "local": "Eintracht Frankfurt",
+      "visitante": "1. FSV Mainz 05"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-02-06T14:30:00+00:00",
+      "local": "Borussia Mönchengladbach",
+      "visitante": "SC Freiburg"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-02-06T14:30:00+00:00",
+      "local": "Hamburger SV",
+      "visitante": "RB Leipzig"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-02-06T14:30:00+00:00",
+      "local": "SV Werder Bremen",
+      "visitante": "1. FC Köln"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-02-06T14:30:00+00:00",
+      "local": "FC Schalke 04",
+      "visitante": "1. FC Union Berlin"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-02-06T14:30:00+00:00",
+      "local": "SC Paderborn 07",
+      "visitante": "Borussia Dortmund"
     },
     {
       "liga": "ENG",
@@ -5891,60 +5891,6 @@
       "visitante": "Arsenal FC"
     },
     {
-      "liga": "GER",
-      "fecha": "2027-02-13",
-      "local": "Borussia Dortmund",
-      "visitante": "VfB Stuttgart"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2027-02-13",
-      "local": "RB Leipzig",
-      "visitante": "Bayer 04 Leverkusen"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2027-02-13",
-      "local": "TSG Hoffenheim",
-      "visitante": "SC Paderborn 07"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2027-02-13",
-      "local": "SC Freiburg",
-      "visitante": "Eintracht Frankfurt"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2027-02-13",
-      "local": "FC Augsburg",
-      "visitante": "SV Werder Bremen"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2027-02-13",
-      "local": "1. FSV Mainz 05",
-      "visitante": "Borussia Mönchengladbach"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2027-02-13",
-      "local": "1. FC Union Berlin",
-      "visitante": "FC Bayern München"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2027-02-13",
-      "local": "1. FC Köln",
-      "visitante": "Hamburger SV"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2027-02-13",
-      "local": "SV 07 Elversberg",
-      "visitante": "FC Schalke 04"
-    },
-    {
       "liga": "FRA",
       "fecha": "2027-02-13T00:00:00Z",
       "local": "Stade Brestois 29",
@@ -6051,6 +5997,60 @@
       "fecha": "2027-02-13T00:00:00Z",
       "local": "Willem II Tilburg",
       "visitante": "Sparta Rotterdam"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-02-13T14:30:00+00:00",
+      "local": "Borussia Dortmund",
+      "visitante": "VfB Stuttgart"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-02-13T14:30:00+00:00",
+      "local": "RB Leipzig",
+      "visitante": "Bayer 04 Leverkusen"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-02-13T14:30:00+00:00",
+      "local": "TSG Hoffenheim",
+      "visitante": "SC Paderborn 07"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-02-13T14:30:00+00:00",
+      "local": "SC Freiburg",
+      "visitante": "Eintracht Frankfurt"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-02-13T14:30:00+00:00",
+      "local": "FC Augsburg",
+      "visitante": "SV Werder Bremen"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-02-13T14:30:00+00:00",
+      "local": "1. FSV Mainz 05",
+      "visitante": "Borussia Mönchengladbach"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-02-13T14:30:00+00:00",
+      "local": "1. FC Union Berlin",
+      "visitante": "FC Bayern München"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-02-13T14:30:00+00:00",
+      "local": "1. FC Köln",
+      "visitante": "Hamburger SV"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-02-13T14:30:00+00:00",
+      "local": "SV 07 Elversberg",
+      "visitante": "FC Schalke 04"
     },
     {
       "liga": "ESP",
@@ -6227,60 +6227,6 @@
       "visitante": "CD Santa Clara"
     },
     {
-      "liga": "GER",
-      "fecha": "2027-02-20",
-      "local": "FC Bayern München",
-      "visitante": "FC Augsburg"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2027-02-20",
-      "local": "VfB Stuttgart",
-      "visitante": "SC Paderborn 07"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2027-02-20",
-      "local": "Bayer 04 Leverkusen",
-      "visitante": "1. FSV Mainz 05"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2027-02-20",
-      "local": "Eintracht Frankfurt",
-      "visitante": "RB Leipzig"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2027-02-20",
-      "local": "Borussia Mönchengladbach",
-      "visitante": "1. FC Köln"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2027-02-20",
-      "local": "Hamburger SV",
-      "visitante": "TSG Hoffenheim"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2027-02-20",
-      "local": "SV Werder Bremen",
-      "visitante": "Borussia Dortmund"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2027-02-20",
-      "local": "FC Schalke 04",
-      "visitante": "SC Freiburg"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2027-02-20",
-      "local": "SV 07 Elversberg",
-      "visitante": "1. FC Union Berlin"
-    },
-    {
       "liga": "FRA",
       "fecha": "2027-02-20T00:00:00Z",
       "local": "Angers SCO",
@@ -6387,6 +6333,60 @@
       "fecha": "2027-02-20T00:00:00Z",
       "local": "FC Twente '65",
       "visitante": "SBV Excelsior"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-02-20T14:30:00+00:00",
+      "local": "FC Bayern München",
+      "visitante": "FC Augsburg"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-02-20T14:30:00+00:00",
+      "local": "VfB Stuttgart",
+      "visitante": "SC Paderborn 07"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-02-20T14:30:00+00:00",
+      "local": "Bayer 04 Leverkusen",
+      "visitante": "1. FSV Mainz 05"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-02-20T14:30:00+00:00",
+      "local": "Eintracht Frankfurt",
+      "visitante": "RB Leipzig"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-02-20T14:30:00+00:00",
+      "local": "Borussia Mönchengladbach",
+      "visitante": "1. FC Köln"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-02-20T14:30:00+00:00",
+      "local": "Hamburger SV",
+      "visitante": "TSG Hoffenheim"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-02-20T14:30:00+00:00",
+      "local": "SV Werder Bremen",
+      "visitante": "Borussia Dortmund"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-02-20T14:30:00+00:00",
+      "local": "FC Schalke 04",
+      "visitante": "SC Freiburg"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-02-20T14:30:00+00:00",
+      "local": "SV 07 Elversberg",
+      "visitante": "1. FC Union Berlin"
     },
     {
       "liga": "ENG",
@@ -6623,60 +6623,6 @@
       "visitante": "CD Nacional"
     },
     {
-      "liga": "GER",
-      "fecha": "2027-02-27",
-      "local": "Borussia Dortmund",
-      "visitante": "1. FC Union Berlin"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2027-02-27",
-      "local": "RB Leipzig",
-      "visitante": "FC Bayern München"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2027-02-27",
-      "local": "VfB Stuttgart",
-      "visitante": "Hamburger SV"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2027-02-27",
-      "local": "TSG Hoffenheim",
-      "visitante": "Borussia Mönchengladbach"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2027-02-27",
-      "local": "SC Freiburg",
-      "visitante": "Bayer 04 Leverkusen"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2027-02-27",
-      "local": "FC Augsburg",
-      "visitante": "SV 07 Elversberg"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2027-02-27",
-      "local": "1. FSV Mainz 05",
-      "visitante": "FC Schalke 04"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2027-02-27",
-      "local": "1. FC Köln",
-      "visitante": "Eintracht Frankfurt"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2027-02-27",
-      "local": "SC Paderborn 07",
-      "visitante": "SV Werder Bremen"
-    },
-    {
       "liga": "FRA",
       "fecha": "2027-02-27T00:00:00Z",
       "local": "RC Strasbourg Alsace",
@@ -6777,6 +6723,60 @@
       "fecha": "2027-02-27T00:00:00Z",
       "local": "Telstar 1963",
       "visitante": "Go Ahead Eagles"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-02-27T14:30:00+00:00",
+      "local": "Borussia Dortmund",
+      "visitante": "1. FC Union Berlin"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-02-27T14:30:00+00:00",
+      "local": "RB Leipzig",
+      "visitante": "FC Bayern München"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-02-27T14:30:00+00:00",
+      "local": "VfB Stuttgart",
+      "visitante": "Hamburger SV"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-02-27T14:30:00+00:00",
+      "local": "TSG Hoffenheim",
+      "visitante": "Borussia Mönchengladbach"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-02-27T14:30:00+00:00",
+      "local": "SC Freiburg",
+      "visitante": "Bayer 04 Leverkusen"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-02-27T14:30:00+00:00",
+      "local": "FC Augsburg",
+      "visitante": "SV 07 Elversberg"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-02-27T14:30:00+00:00",
+      "local": "1. FSV Mainz 05",
+      "visitante": "FC Schalke 04"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-02-27T14:30:00+00:00",
+      "local": "1. FC Köln",
+      "visitante": "Eintracht Frankfurt"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-02-27T14:30:00+00:00",
+      "local": "SC Paderborn 07",
+      "visitante": "SV Werder Bremen"
     },
     {
       "liga": "ENG",
@@ -7020,55 +7020,55 @@
     },
     {
       "liga": "GER",
-      "fecha": "2027-03-02",
+      "fecha": "2027-03-02T19:30:00+00:00",
       "local": "FC Bayern München",
       "visitante": "SC Freiburg"
     },
     {
       "liga": "GER",
-      "fecha": "2027-03-02",
+      "fecha": "2027-03-02T19:30:00+00:00",
       "local": "Bayer 04 Leverkusen",
       "visitante": "TSG Hoffenheim"
     },
     {
       "liga": "GER",
-      "fecha": "2027-03-02",
+      "fecha": "2027-03-02T19:30:00+00:00",
       "local": "Eintracht Frankfurt",
       "visitante": "Borussia Dortmund"
     },
     {
       "liga": "GER",
-      "fecha": "2027-03-02",
+      "fecha": "2027-03-02T19:30:00+00:00",
       "local": "1. FC Union Berlin",
       "visitante": "FC Augsburg"
     },
     {
       "liga": "GER",
-      "fecha": "2027-03-02",
+      "fecha": "2027-03-02T19:30:00+00:00",
       "local": "Borussia Mönchengladbach",
       "visitante": "VfB Stuttgart"
     },
     {
       "liga": "GER",
-      "fecha": "2027-03-02",
+      "fecha": "2027-03-02T19:30:00+00:00",
       "local": "Hamburger SV",
       "visitante": "SC Paderborn 07"
     },
     {
       "liga": "GER",
-      "fecha": "2027-03-02",
+      "fecha": "2027-03-02T19:30:00+00:00",
       "local": "SV Werder Bremen",
       "visitante": "1. FSV Mainz 05"
     },
     {
       "liga": "GER",
-      "fecha": "2027-03-02",
+      "fecha": "2027-03-02T19:30:00+00:00",
       "local": "FC Schalke 04",
       "visitante": "1. FC Köln"
     },
     {
       "liga": "GER",
-      "fecha": "2027-03-02",
+      "fecha": "2027-03-02T19:30:00+00:00",
       "local": "SV 07 Elversberg",
       "visitante": "RB Leipzig"
     },
@@ -7131,60 +7131,6 @@
       "fecha": "2027-03-03T20:00:00Z",
       "local": "Chelsea FC",
       "visitante": "Coventry City FC"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2027-03-06",
-      "local": "Borussia Dortmund",
-      "visitante": "FC Bayern München"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2027-03-06",
-      "local": "RB Leipzig",
-      "visitante": "FC Schalke 04"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2027-03-06",
-      "local": "VfB Stuttgart",
-      "visitante": "Bayer 04 Leverkusen"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2027-03-06",
-      "local": "TSG Hoffenheim",
-      "visitante": "SV Werder Bremen"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2027-03-06",
-      "local": "SC Freiburg",
-      "visitante": "FC Augsburg"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2027-03-06",
-      "local": "1. FSV Mainz 05",
-      "visitante": "SV 07 Elversberg"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2027-03-06",
-      "local": "Hamburger SV",
-      "visitante": "Eintracht Frankfurt"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2027-03-06",
-      "local": "1. FC Köln",
-      "visitante": "1. FC Union Berlin"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2027-03-06",
-      "local": "SC Paderborn 07",
-      "visitante": "Borussia Mönchengladbach"
     },
     {
       "liga": "FRA",
@@ -7293,6 +7239,60 @@
       "fecha": "2027-03-06T00:00:00Z",
       "local": "Sparta Rotterdam",
       "visitante": "SC Cambuur-Leeuwarden"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-03-06T14:30:00+00:00",
+      "local": "Borussia Dortmund",
+      "visitante": "FC Bayern München"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-03-06T14:30:00+00:00",
+      "local": "RB Leipzig",
+      "visitante": "FC Schalke 04"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-03-06T14:30:00+00:00",
+      "local": "VfB Stuttgart",
+      "visitante": "Bayer 04 Leverkusen"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-03-06T14:30:00+00:00",
+      "local": "TSG Hoffenheim",
+      "visitante": "SV Werder Bremen"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-03-06T14:30:00+00:00",
+      "local": "SC Freiburg",
+      "visitante": "FC Augsburg"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-03-06T14:30:00+00:00",
+      "local": "1. FSV Mainz 05",
+      "visitante": "SV 07 Elversberg"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-03-06T14:30:00+00:00",
+      "local": "Hamburger SV",
+      "visitante": "Eintracht Frankfurt"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-03-06T14:30:00+00:00",
+      "local": "1. FC Köln",
+      "visitante": "1. FC Union Berlin"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-03-06T14:30:00+00:00",
+      "local": "SC Paderborn 07",
+      "visitante": "Borussia Mönchengladbach"
     },
     {
       "liga": "ESP",
@@ -7469,60 +7469,6 @@
       "visitante": "Académico de Viseu FC"
     },
     {
-      "liga": "GER",
-      "fecha": "2027-03-13",
-      "local": "FC Bayern München",
-      "visitante": "1. FSV Mainz 05"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2027-03-13",
-      "local": "Bayer 04 Leverkusen",
-      "visitante": "1. FC Köln"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2027-03-13",
-      "local": "Eintracht Frankfurt",
-      "visitante": "SC Paderborn 07"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2027-03-13",
-      "local": "FC Augsburg",
-      "visitante": "RB Leipzig"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2027-03-13",
-      "local": "1. FC Union Berlin",
-      "visitante": "SC Freiburg"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2027-03-13",
-      "local": "Borussia Mönchengladbach",
-      "visitante": "Hamburger SV"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2027-03-13",
-      "local": "SV Werder Bremen",
-      "visitante": "VfB Stuttgart"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2027-03-13",
-      "local": "FC Schalke 04",
-      "visitante": "TSG Hoffenheim"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2027-03-13",
-      "local": "SV 07 Elversberg",
-      "visitante": "Borussia Dortmund"
-    },
-    {
       "liga": "FRA",
       "fecha": "2027-03-13T00:00:00Z",
       "local": "OGC Nice",
@@ -7629,6 +7575,60 @@
       "fecha": "2027-03-13T00:00:00Z",
       "local": "SC Heerenveen",
       "visitante": "Fortuna Sittard"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-03-13T14:30:00+00:00",
+      "local": "FC Bayern München",
+      "visitante": "1. FSV Mainz 05"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-03-13T14:30:00+00:00",
+      "local": "Bayer 04 Leverkusen",
+      "visitante": "1. FC Köln"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-03-13T14:30:00+00:00",
+      "local": "Eintracht Frankfurt",
+      "visitante": "SC Paderborn 07"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-03-13T14:30:00+00:00",
+      "local": "FC Augsburg",
+      "visitante": "RB Leipzig"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-03-13T14:30:00+00:00",
+      "local": "1. FC Union Berlin",
+      "visitante": "SC Freiburg"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-03-13T14:30:00+00:00",
+      "local": "Borussia Mönchengladbach",
+      "visitante": "Hamburger SV"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-03-13T14:30:00+00:00",
+      "local": "SV Werder Bremen",
+      "visitante": "VfB Stuttgart"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-03-13T14:30:00+00:00",
+      "local": "FC Schalke 04",
+      "visitante": "TSG Hoffenheim"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-03-13T14:30:00+00:00",
+      "local": "SV 07 Elversberg",
+      "visitante": "Borussia Dortmund"
     },
     {
       "liga": "ENG",
@@ -7865,60 +7865,6 @@
       "visitante": "GD Estoril Praia"
     },
     {
-      "liga": "GER",
-      "fecha": "2027-03-20",
-      "local": "Borussia Dortmund",
-      "visitante": "Borussia Mönchengladbach"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2027-03-20",
-      "local": "RB Leipzig",
-      "visitante": "1. FC Union Berlin"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2027-03-20",
-      "local": "VfB Stuttgart",
-      "visitante": "FC Schalke 04"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2027-03-20",
-      "local": "TSG Hoffenheim",
-      "visitante": "Eintracht Frankfurt"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2027-03-20",
-      "local": "SC Freiburg",
-      "visitante": "SV 07 Elversberg"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2027-03-20",
-      "local": "1. FSV Mainz 05",
-      "visitante": "FC Augsburg"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2027-03-20",
-      "local": "Hamburger SV",
-      "visitante": "SV Werder Bremen"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2027-03-20",
-      "local": "1. FC Köln",
-      "visitante": "FC Bayern München"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2027-03-20",
-      "local": "SC Paderborn 07",
-      "visitante": "Bayer 04 Leverkusen"
-    },
-    {
       "liga": "FRA",
       "fecha": "2027-03-20T00:00:00Z",
       "local": "Angers SCO",
@@ -8019,6 +7965,60 @@
       "fecha": "2027-03-20T00:00:00Z",
       "local": "FC Twente '65",
       "visitante": "Go Ahead Eagles"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-03-20T14:30:00+00:00",
+      "local": "Borussia Dortmund",
+      "visitante": "Borussia Mönchengladbach"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-03-20T14:30:00+00:00",
+      "local": "RB Leipzig",
+      "visitante": "1. FC Union Berlin"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-03-20T14:30:00+00:00",
+      "local": "VfB Stuttgart",
+      "visitante": "FC Schalke 04"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-03-20T14:30:00+00:00",
+      "local": "TSG Hoffenheim",
+      "visitante": "Eintracht Frankfurt"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-03-20T14:30:00+00:00",
+      "local": "SC Freiburg",
+      "visitante": "SV 07 Elversberg"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-03-20T14:30:00+00:00",
+      "local": "1. FSV Mainz 05",
+      "visitante": "FC Augsburg"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-03-20T14:30:00+00:00",
+      "local": "Hamburger SV",
+      "visitante": "SV Werder Bremen"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-03-20T14:30:00+00:00",
+      "local": "1. FC Köln",
+      "visitante": "FC Bayern München"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-03-20T14:30:00+00:00",
+      "local": "SC Paderborn 07",
+      "visitante": "Bayer 04 Leverkusen"
     },
     {
       "liga": "ENG",
@@ -8261,60 +8261,6 @@
       "visitante": "Olympique Lyonnais"
     },
     {
-      "liga": "GER",
-      "fecha": "2027-04-03",
-      "local": "FC Bayern München",
-      "visitante": "Hamburger SV"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2027-04-03",
-      "local": "RB Leipzig",
-      "visitante": "SC Freiburg"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2027-04-03",
-      "local": "Bayer 04 Leverkusen",
-      "visitante": "Borussia Dortmund"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2027-04-03",
-      "local": "Eintracht Frankfurt",
-      "visitante": "VfB Stuttgart"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2027-04-03",
-      "local": "FC Augsburg",
-      "visitante": "TSG Hoffenheim"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2027-04-03",
-      "local": "1. FC Union Berlin",
-      "visitante": "1. FSV Mainz 05"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2027-04-03",
-      "local": "Borussia Mönchengladbach",
-      "visitante": "SV Werder Bremen"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2027-04-03",
-      "local": "FC Schalke 04",
-      "visitante": "SC Paderborn 07"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2027-04-03",
-      "local": "SV 07 Elversberg",
-      "visitante": "1. FC Köln"
-    },
-    {
       "liga": "FRA",
       "fecha": "2027-04-03T00:00:00Z",
       "local": "Le Havre AC",
@@ -8421,6 +8367,60 @@
       "fecha": "2027-04-03T00:00:00Z",
       "local": "Willem II Tilburg",
       "visitante": "FC Utrecht"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-04-03T13:30:00+00:00",
+      "local": "FC Bayern München",
+      "visitante": "Hamburger SV"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-04-03T13:30:00+00:00",
+      "local": "RB Leipzig",
+      "visitante": "SC Freiburg"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-04-03T13:30:00+00:00",
+      "local": "Bayer 04 Leverkusen",
+      "visitante": "Borussia Dortmund"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-04-03T13:30:00+00:00",
+      "local": "Eintracht Frankfurt",
+      "visitante": "VfB Stuttgart"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-04-03T13:30:00+00:00",
+      "local": "FC Augsburg",
+      "visitante": "TSG Hoffenheim"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-04-03T13:30:00+00:00",
+      "local": "1. FC Union Berlin",
+      "visitante": "1. FSV Mainz 05"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-04-03T13:30:00+00:00",
+      "local": "Borussia Mönchengladbach",
+      "visitante": "SV Werder Bremen"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-04-03T13:30:00+00:00",
+      "local": "FC Schalke 04",
+      "visitante": "SC Paderborn 07"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-04-03T13:30:00+00:00",
+      "local": "SV 07 Elversberg",
+      "visitante": "1. FC Köln"
     },
     {
       "liga": "ESP",
@@ -8597,60 +8597,6 @@
       "visitante": "CF Estrela da Amadora"
     },
     {
-      "liga": "GER",
-      "fecha": "2027-04-10",
-      "local": "Borussia Dortmund",
-      "visitante": "FC Schalke 04"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2027-04-10",
-      "local": "VfB Stuttgart",
-      "visitante": "SV 07 Elversberg"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2027-04-10",
-      "local": "TSG Hoffenheim",
-      "visitante": "SC Freiburg"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2027-04-10",
-      "local": "1. FSV Mainz 05",
-      "visitante": "RB Leipzig"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2027-04-10",
-      "local": "Borussia Mönchengladbach",
-      "visitante": "Bayer 04 Leverkusen"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2027-04-10",
-      "local": "Hamburger SV",
-      "visitante": "1. FC Union Berlin"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2027-04-10",
-      "local": "1. FC Köln",
-      "visitante": "FC Augsburg"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2027-04-10",
-      "local": "SV Werder Bremen",
-      "visitante": "Eintracht Frankfurt"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2027-04-10",
-      "local": "SC Paderborn 07",
-      "visitante": "FC Bayern München"
-    },
-    {
       "liga": "FRA",
       "fecha": "2027-04-10T00:00:00Z",
       "local": "FC Lorient",
@@ -8757,6 +8703,60 @@
       "fecha": "2027-04-10T00:00:00Z",
       "local": "Sparta Rotterdam",
       "visitante": "Go Ahead Eagles"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-04-10T13:30:00+00:00",
+      "local": "Borussia Dortmund",
+      "visitante": "FC Schalke 04"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-04-10T13:30:00+00:00",
+      "local": "VfB Stuttgart",
+      "visitante": "SV 07 Elversberg"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-04-10T13:30:00+00:00",
+      "local": "TSG Hoffenheim",
+      "visitante": "SC Freiburg"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-04-10T13:30:00+00:00",
+      "local": "1. FSV Mainz 05",
+      "visitante": "RB Leipzig"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-04-10T13:30:00+00:00",
+      "local": "Borussia Mönchengladbach",
+      "visitante": "Bayer 04 Leverkusen"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-04-10T13:30:00+00:00",
+      "local": "Hamburger SV",
+      "visitante": "1. FC Union Berlin"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-04-10T13:30:00+00:00",
+      "local": "1. FC Köln",
+      "visitante": "FC Augsburg"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-04-10T13:30:00+00:00",
+      "local": "SV Werder Bremen",
+      "visitante": "Eintracht Frankfurt"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-04-10T13:30:00+00:00",
+      "local": "SC Paderborn 07",
+      "visitante": "FC Bayern München"
     },
     {
       "liga": "ENG",
@@ -8993,60 +8993,6 @@
       "visitante": "Gil Vicente FC"
     },
     {
-      "liga": "GER",
-      "fecha": "2027-04-17",
-      "local": "FC Bayern München",
-      "visitante": "TSG Hoffenheim"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2027-04-17",
-      "local": "RB Leipzig",
-      "visitante": "1. FC Köln"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2027-04-17",
-      "local": "Bayer 04 Leverkusen",
-      "visitante": "SV Werder Bremen"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2027-04-17",
-      "local": "SC Freiburg",
-      "visitante": "1. FSV Mainz 05"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2027-04-17",
-      "local": "Eintracht Frankfurt",
-      "visitante": "Borussia Mönchengladbach"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2027-04-17",
-      "local": "FC Augsburg",
-      "visitante": "Borussia Dortmund"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2027-04-17",
-      "local": "1. FC Union Berlin",
-      "visitante": "VfB Stuttgart"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2027-04-17",
-      "local": "FC Schalke 04",
-      "visitante": "Hamburger SV"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2027-04-17",
-      "local": "SV 07 Elversberg",
-      "visitante": "SC Paderborn 07"
-    },
-    {
       "liga": "FRA",
       "fecha": "2027-04-17T00:00:00Z",
       "local": "AJ Auxerre",
@@ -9099,6 +9045,60 @@
       "fecha": "2027-04-17T00:00:00Z",
       "local": "Toulouse FC",
       "visitante": "Paris FC"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-04-17T13:30:00+00:00",
+      "local": "FC Bayern München",
+      "visitante": "TSG Hoffenheim"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-04-17T13:30:00+00:00",
+      "local": "RB Leipzig",
+      "visitante": "1. FC Köln"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-04-17T13:30:00+00:00",
+      "local": "Bayer 04 Leverkusen",
+      "visitante": "SV Werder Bremen"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-04-17T13:30:00+00:00",
+      "local": "SC Freiburg",
+      "visitante": "1. FSV Mainz 05"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-04-17T13:30:00+00:00",
+      "local": "Eintracht Frankfurt",
+      "visitante": "Borussia Mönchengladbach"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-04-17T13:30:00+00:00",
+      "local": "FC Augsburg",
+      "visitante": "Borussia Dortmund"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-04-17T13:30:00+00:00",
+      "local": "1. FC Union Berlin",
+      "visitante": "VfB Stuttgart"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-04-17T13:30:00+00:00",
+      "local": "FC Schalke 04",
+      "visitante": "Hamburger SV"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-04-17T13:30:00+00:00",
+      "local": "SV 07 Elversberg",
+      "visitante": "SC Paderborn 07"
     },
     {
       "liga": "ENG",
@@ -9395,60 +9395,6 @@
       "visitante": "Real Sociedad de Fútbol"
     },
     {
-      "liga": "GER",
-      "fecha": "2027-04-24",
-      "local": "Borussia Dortmund",
-      "visitante": "RB Leipzig"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2027-04-24",
-      "local": "VfB Stuttgart",
-      "visitante": "SC Freiburg"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2027-04-24",
-      "local": "TSG Hoffenheim",
-      "visitante": "1. FC Union Berlin"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2027-04-24",
-      "local": "Eintracht Frankfurt",
-      "visitante": "Bayer 04 Leverkusen"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2027-04-24",
-      "local": "Borussia Mönchengladbach",
-      "visitante": "FC Schalke 04"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2027-04-24",
-      "local": "Hamburger SV",
-      "visitante": "SV 07 Elversberg"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2027-04-24",
-      "local": "1. FC Köln",
-      "visitante": "1. FSV Mainz 05"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2027-04-24",
-      "local": "SV Werder Bremen",
-      "visitante": "FC Bayern München"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2027-04-24",
-      "local": "SC Paderborn 07",
-      "visitante": "FC Augsburg"
-    },
-    {
       "liga": "FRA",
       "fecha": "2027-04-24T00:00:00Z",
       "local": "Paris FC",
@@ -9555,6 +9501,60 @@
       "fecha": "2027-04-24T00:00:00Z",
       "local": "PSV",
       "visitante": "AFC Ajax"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-04-24T13:30:00+00:00",
+      "local": "Borussia Dortmund",
+      "visitante": "RB Leipzig"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-04-24T13:30:00+00:00",
+      "local": "VfB Stuttgart",
+      "visitante": "SC Freiburg"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-04-24T13:30:00+00:00",
+      "local": "TSG Hoffenheim",
+      "visitante": "1. FC Union Berlin"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-04-24T13:30:00+00:00",
+      "local": "Eintracht Frankfurt",
+      "visitante": "Bayer 04 Leverkusen"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-04-24T13:30:00+00:00",
+      "local": "Borussia Mönchengladbach",
+      "visitante": "FC Schalke 04"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-04-24T13:30:00+00:00",
+      "local": "Hamburger SV",
+      "visitante": "SV 07 Elversberg"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-04-24T13:30:00+00:00",
+      "local": "1. FC Köln",
+      "visitante": "1. FSV Mainz 05"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-04-24T13:30:00+00:00",
+      "local": "SV Werder Bremen",
+      "visitante": "FC Bayern München"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-04-24T13:30:00+00:00",
+      "local": "SC Paderborn 07",
+      "visitante": "FC Augsburg"
     },
     {
       "liga": "ENG",
@@ -10073,60 +10073,6 @@
       "visitante": "Rio Ave FC"
     },
     {
-      "liga": "GER",
-      "fecha": "2027-05-08",
-      "local": "FC Bayern München",
-      "visitante": "Borussia Mönchengladbach"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2027-05-08",
-      "local": "RB Leipzig",
-      "visitante": "SC Paderborn 07"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2027-05-08",
-      "local": "Bayer 04 Leverkusen",
-      "visitante": "Hamburger SV"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2027-05-08",
-      "local": "SC Freiburg",
-      "visitante": "1. FC Köln"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2027-05-08",
-      "local": "FC Augsburg",
-      "visitante": "VfB Stuttgart"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2027-05-08",
-      "local": "1. FSV Mainz 05",
-      "visitante": "Borussia Dortmund"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2027-05-08",
-      "local": "1. FC Union Berlin",
-      "visitante": "SV Werder Bremen"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2027-05-08",
-      "local": "FC Schalke 04",
-      "visitante": "Eintracht Frankfurt"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2027-05-08",
-      "local": "SV 07 Elversberg",
-      "visitante": "TSG Hoffenheim"
-    },
-    {
       "liga": "FRA",
       "fecha": "2027-05-08T00:00:00Z",
       "local": "Paris FC",
@@ -10227,6 +10173,60 @@
       "fecha": "2027-05-08T00:00:00Z",
       "local": "Willem II Tilburg",
       "visitante": "Telstar 1963"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-05-08T13:30:00+00:00",
+      "local": "FC Bayern München",
+      "visitante": "Borussia Mönchengladbach"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-05-08T13:30:00+00:00",
+      "local": "RB Leipzig",
+      "visitante": "SC Paderborn 07"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-05-08T13:30:00+00:00",
+      "local": "Bayer 04 Leverkusen",
+      "visitante": "Hamburger SV"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-05-08T13:30:00+00:00",
+      "local": "SC Freiburg",
+      "visitante": "1. FC Köln"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-05-08T13:30:00+00:00",
+      "local": "FC Augsburg",
+      "visitante": "VfB Stuttgart"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-05-08T13:30:00+00:00",
+      "local": "1. FSV Mainz 05",
+      "visitante": "Borussia Dortmund"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-05-08T13:30:00+00:00",
+      "local": "1. FC Union Berlin",
+      "visitante": "SV Werder Bremen"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-05-08T13:30:00+00:00",
+      "local": "FC Schalke 04",
+      "visitante": "Eintracht Frankfurt"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-05-08T13:30:00+00:00",
+      "local": "SV 07 Elversberg",
+      "visitante": "TSG Hoffenheim"
     },
     {
       "liga": "ENG",
@@ -10470,55 +10470,55 @@
     },
     {
       "liga": "GER",
-      "fecha": "2027-05-15",
+      "fecha": "2027-05-15T13:30:00+00:00",
       "local": "Borussia Dortmund",
       "visitante": "1. FC Köln"
     },
     {
       "liga": "GER",
-      "fecha": "2027-05-15",
+      "fecha": "2027-05-15T13:30:00+00:00",
       "local": "VfB Stuttgart",
       "visitante": "RB Leipzig"
     },
     {
       "liga": "GER",
-      "fecha": "2027-05-15",
+      "fecha": "2027-05-15T13:30:00+00:00",
       "local": "TSG Hoffenheim",
       "visitante": "1. FSV Mainz 05"
     },
     {
       "liga": "GER",
-      "fecha": "2027-05-15",
+      "fecha": "2027-05-15T13:30:00+00:00",
       "local": "Bayer 04 Leverkusen",
       "visitante": "FC Bayern München"
     },
     {
       "liga": "GER",
-      "fecha": "2027-05-15",
+      "fecha": "2027-05-15T13:30:00+00:00",
       "local": "Eintracht Frankfurt",
       "visitante": "SV 07 Elversberg"
     },
     {
       "liga": "GER",
-      "fecha": "2027-05-15",
+      "fecha": "2027-05-15T13:30:00+00:00",
       "local": "Borussia Mönchengladbach",
       "visitante": "FC Augsburg"
     },
     {
       "liga": "GER",
-      "fecha": "2027-05-15",
+      "fecha": "2027-05-15T13:30:00+00:00",
       "local": "Hamburger SV",
       "visitante": "SC Freiburg"
     },
     {
       "liga": "GER",
-      "fecha": "2027-05-15",
+      "fecha": "2027-05-15T13:30:00+00:00",
       "local": "SV Werder Bremen",
       "visitante": "FC Schalke 04"
     },
     {
       "liga": "GER",
-      "fecha": "2027-05-15",
+      "fecha": "2027-05-15T13:30:00+00:00",
       "local": "SC Paderborn 07",
       "visitante": "1. FC Union Berlin"
     },
@@ -10865,60 +10865,6 @@
       "visitante": "SC Cambuur-Leeuwarden"
     },
     {
-      "liga": "GER",
-      "fecha": "2027-05-22",
-      "local": "FC Bayern München",
-      "visitante": "Eintracht Frankfurt"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2027-05-22",
-      "local": "RB Leipzig",
-      "visitante": "TSG Hoffenheim"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2027-05-22",
-      "local": "SC Freiburg",
-      "visitante": "Borussia Dortmund"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2027-05-22",
-      "local": "FC Augsburg",
-      "visitante": "Hamburger SV"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2027-05-22",
-      "local": "1. FSV Mainz 05",
-      "visitante": "VfB Stuttgart"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2027-05-22",
-      "local": "1. FC Union Berlin",
-      "visitante": "Borussia Mönchengladbach"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2027-05-22",
-      "local": "1. FC Köln",
-      "visitante": "SC Paderborn 07"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2027-05-22",
-      "local": "FC Schalke 04",
-      "visitante": "Bayer 04 Leverkusen"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2027-05-22",
-      "local": "SV 07 Elversberg",
-      "visitante": "SV Werder Bremen"
-    },
-    {
       "liga": "FRA",
       "fecha": "2027-05-22T00:00:00Z",
       "local": "OGC Nice",
@@ -10971,6 +10917,60 @@
       "fecha": "2027-05-22T00:00:00Z",
       "local": "Racing Club de Lens",
       "visitante": "Stade Rennais FC 1901"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-05-22T13:30:00+00:00",
+      "local": "FC Bayern München",
+      "visitante": "Eintracht Frankfurt"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-05-22T13:30:00+00:00",
+      "local": "RB Leipzig",
+      "visitante": "TSG Hoffenheim"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-05-22T13:30:00+00:00",
+      "local": "SC Freiburg",
+      "visitante": "Borussia Dortmund"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-05-22T13:30:00+00:00",
+      "local": "FC Augsburg",
+      "visitante": "Hamburger SV"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-05-22T13:30:00+00:00",
+      "local": "1. FSV Mainz 05",
+      "visitante": "VfB Stuttgart"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-05-22T13:30:00+00:00",
+      "local": "1. FC Union Berlin",
+      "visitante": "Borussia Mönchengladbach"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-05-22T13:30:00+00:00",
+      "local": "1. FC Köln",
+      "visitante": "SC Paderborn 07"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-05-22T13:30:00+00:00",
+      "local": "FC Schalke 04",
+      "visitante": "Bayer 04 Leverkusen"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2027-05-22T13:30:00+00:00",
+      "local": "SV 07 Elversberg",
+      "visitante": "SV Werder Bremen"
     },
     {
       "liga": "ESP",
@@ -14634,20 +14634,6 @@
   },
   "candidatos": [
     {
-      "liga": "GER",
-      "fecha": "2026-11-28",
-      "local": "Hamburger SV",
-      "visitante": "FC Bayern München",
-      "favorito": "Bayern Munich",
-      "equipo_proveedor": "FC Bayern München",
-      "ppp": 2.2,
-      "ppp_rival": 1.2,
-      "bonus_local": 0.0,
-      "valoracion": 1.0,
-      "cuota": null,
-      "estado": "Pendiente de cuota verificada"
-    },
-    {
       "liga": "ESP",
       "fecha": "2026-11-28T13:00:00Z",
       "local": "Real Betis Balompié",
@@ -14658,6 +14644,20 @@
       "ppp_rival": 1.0,
       "bonus_local": 0.2,
       "valoracion": 1.28,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2026-11-28T14:30:00+00:00",
+      "local": "Hamburger SV",
+      "visitante": "FC Bayern München",
+      "favorito": "Bayern Munich",
+      "equipo_proveedor": "FC Bayern München",
+      "ppp": 2.2,
+      "ppp_rival": 1.2,
+      "bonus_local": 0.0,
+      "valoracion": 1.0,
       "cuota": null,
       "estado": "Pendiente de cuota verificada"
     },
@@ -14733,7 +14733,7 @@
     },
     {
       "liga": "GER",
-      "fecha": "2026-11-29",
+      "fecha": "2026-11-29T14:30:00+00:00",
       "local": "SC Freiburg",
       "visitante": "RB Leipzig",
       "favorito": "RB Leipzig",
@@ -14790,32 +14790,32 @@
   ],
   "dobles": [],
   "favoritos_validados": true,
-  "ultima_actualizacion_cuotas": "2026-11-24T16:15:07.671386+00:00",
+  "ultima_actualizacion_cuotas": "2026-11-24T16:41:11.779542+00:00",
   "diagnostico_cuotas": {
-    "partidos_proveedor": 1010,
+    "partidos_proveedor": 1009,
     "candidatos": 11,
-    "candidatos_sin_hora": 2,
-    "emparejamientos_unicos": 1,
+    "candidatos_sin_hora": 0,
+    "emparejamientos_unicos": 2,
     "emparejados_con_mercado_1x2_vigente": 0,
     "selecciones_en_rango": 0,
-    "emparejados_con_favorito_identificado": 1,
-    "sin_cuota_vigente_del_favorito": 1,
+    "emparejados_con_favorito_identificado": 2,
+    "sin_cuota_vigente_del_favorito": 2,
     "cuotas_fuera_de_1_20_a_1_80": 0,
     "candidatos_con_nombres_exactos_en_proveedor": 2,
-    "coincidencias_nombres_sin_horario_compatible": 1,
+    "coincidencias_nombres_sin_horario_compatible": 0,
     "nombres_coincidentes_con_horario_mas_de_3h": 0,
-    "nombres_coincidentes_sin_hora_proveedor": 1,
+    "nombres_coincidentes_sin_hora_proveedor": 0,
     "detalle_mercado_1x2": {
-      "con_grupo_1x2": 1,
-      "grupo_1x2_sin_cotizaciones_recientes": 1,
-      "grupo_1x2_no_interpretable": 1
+      "con_grupo_1x2": 2,
+      "grupo_1x2_sin_cotizaciones_recientes": 2,
+      "grupo_1x2_no_interpretable": 2
     },
     "formatos_fechas_cuotas": {
-      "ts:iso_con_zona": 3
+      "ts:iso_con_zona": 6
     },
-    "antiguedad_1x2_minima_minutos": 2119.9,
-    "antiguedad_1x2_maxima_minutos": 2119.9,
+    "antiguedad_1x2_minima_minutos": 1793.5,
+    "antiguedad_1x2_maxima_minutos": 2145.9,
     "cotizaciones_1x2_futuras": 0,
-    "cotizaciones_1x2_mas_de_60_minutos": 3
+    "cotizaciones_1x2_mas_de_60_minutos": 6
   }
 }
