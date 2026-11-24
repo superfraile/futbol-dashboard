@@ -148,12 +148,13 @@ async function iniciar(){
        :diagnostico.selecciones_en_rango===0
          ?"Los partidos encontrados no tienen cuotas utilizables dentro de 1,20–1,80."
          :"");
-   if(diagnostico.cotizaciones_1x2_mas_de_60_minutos>0 &&
-      diagnostico.emparejados_con_mercado_1x2_vigente===0 &&
-      Number.isFinite(diagnostico.antiguedad_1x2_minima_minutos)){
-     detalle.textContent+=" MoviOdds devuelve cotizaciones antiguas: la más reciente tiene "+
-       Math.round(diagnostico.antiguedad_1x2_minima_minutos)+" minutos. "+
-       "Se aplica el límite de antigüedad según la proximidad del partido.";
+   if(Number.isFinite(diagnostico.antiguedad_comprobacion_maxima_minutos)){
+     detalle.textContent+=" Últimas comprobaciones de precios: entre "+
+       diagnostico.antiguedad_comprobacion_minima_minutos+" y "+
+       diagnostico.antiguedad_comprobacion_maxima_minutos+" minutos de antigüedad.";
+   }
+   if(diagnostico.cuotas_fuera_de_1_20_a_1_80>0){
+     detalle.textContent+=" Cuotas vigentes fuera de rango: "+diagnostico.cuotas_fuera_de_1_20_a_1_80+".";
    }
    candidatosDest.parentElement.append(detalle);
  }
@@ -162,9 +163,9 @@ async function iniciar(){
  if(dobles.length){
    tabla(doblesDest,["Partido 1","Cuota 1","Partido 2","Cuota 2","Cuota combinada"],dobles.slice(0,5).map(d=>[
      d.partidos[0].local+" - "+d.partidos[0].visitante+" ("+d.partidos[0].fecha.slice(0,10)+")",
-     d.partidos[0].cuota+" ("+d.partidos[0].casa_apuestas+")",
+     d.partidos[0].cuota.toFixed(2)+" ("+d.partidos[0].casa_apuestas+")",
      d.partidos[1].local+" - "+d.partidos[1].visitante+" ("+d.partidos[1].fecha.slice(0,10)+")",
-     d.partidos[1].cuota+" ("+d.partidos[1].casa_apuestas+")",
+     d.partidos[1].cuota.toFixed(2)+" ("+d.partidos[1].casa_apuestas+")",
      d.cuota_combinada
    ]));
    const nota=document.createElement("p");nota.textContent="Mostrando un máximo de 5 dobles recomendadas, ordenadas por valoración. Cuotas sujetas a cambios.";doblesDest.append(nota);
