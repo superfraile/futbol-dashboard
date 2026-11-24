@@ -1,4 +1,5 @@
 name: Comprobar cobertura SportAPI
+# Revalidar acceso tras la actualización del secreto.
 on:
   workflow_dispatch:
   push:
