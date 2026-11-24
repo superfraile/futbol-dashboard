@@ -83,7 +83,7 @@ async function iniciar(){
    const inicio=Date.parse(p.fecha),consulta=Date.parse(p.consultada_en);
    if(!Number.isFinite(inicio)||inicio<=ahora||
       !Number.isFinite(consulta)||consulta>ahora||
-      consulta>=inicio||ahora-consulta>3600000)return false;
+      consulta>=inicio||ahora-consulta>3600000*((inicio-ahora)>48*3600000?12:(inicio-ahora)>=24*3600000?6:(inicio-ahora)>=6*3600000?3:1))return false;
    try{
      const fuente=new URL(p.url_fuente);
      if(fuente.protocol!=="https:")return false;
@@ -147,7 +147,7 @@ async function iniciar(){
       Number.isFinite(diagnostico.antiguedad_1x2_minima_minutos)){
      detalle.textContent+=" MoviOdds devuelve cotizaciones antiguas: la más reciente tiene "+
        Math.round(diagnostico.antiguedad_1x2_minima_minutos)+" minutos. "+
-       "No se publican como cuotas vigentes.";
+       "Se aplica el límite de antigüedad según la proximidad del partido.";
    }
    candidatosDest.parentElement.append(detalle);
  }
