@@ -171,6 +171,32 @@ def main():
                     etiqueta=campo+":"+formato
                     tipos_ts[etiqueta]=tipos_ts.get(etiqueta,0)+1
     diagnostico["formatos_fechas_cuotas"]=tipos_ts
+    # Propuestas para revisión manual: nunca se usan para publicar cuotas.
+    from difflib import SequenceMatcher
+    propuestas=[]
+    for candidato in candidatos:
+        inicio=fecha_utc(candidato.get("fecha"))
+        if inicio is None or any(candidato is x for x,_ in emparejados):
+            continue
+        opciones=[]
+        for partido in partidos:
+            if not isinstance(partido,dict) or partido.get("in_play") is not False:
+                continue
+            fecha=fecha_utc(partido.get("kickoff_utc"))
+            home,away=partido.get("home"),partido.get("away")
+            if fecha is None or abs((fecha-inicio).total_seconds())>10800:
+                continue
+            if not isinstance(home,str) or not isinstance(away,str):
+                continue
+            a=SequenceMatcher(None,clave_equipo(candidato["local"]),clave_equipo(home)).ratio()
+            b=SequenceMatcher(None,clave_equipo(candidato["visitante"]),clave_equipo(away)).ratio()
+            if min(a,b)>=0.45 and (a+b)/2>=0.65:
+                opciones.append((round((a+b)/2,3),home,away))
+        if opciones:
+            propuestas.append({"local":candidato["local"],"visitante":candidato["visitante"],
+                               "posibles":sorted(opciones,reverse=True)[:3]})
+    diagnostico["propuestas_equivalencias_no_validadas"]=propuestas
+
     # Antigüedad agregada, sin exponer precios ni nombres de partidos.
     edades=[]
     for _,partido in emparejados:
