@@ -111,7 +111,7 @@ async function iniciar(){
    const filtrados=candidatos.filter(r=>(!filtroCandidatos.value||r.liga===filtroCandidatos.value)&&(dias==="all"||diaEspana(r.fecha)<=fechaLimite)).sort((a,b)=>Number(b.valoracion??-Infinity)-Number(a.valoracion??-Infinity)||Number(b.ppp)-Number(a.ppp)||a.fecha.localeCompare(b.fecha));
    if(!filtrados.length){candidatosDest.textContent="Sin partidos preseleccionados para esta liga.";return;}
    tabla(candidatosDest,["Liga","Fecha","Local","Visitante","Favorito fijo","Pts/PJ","Pts/PJ rival","Bonus local","Valoración","Cuota"],filtrados.slice(0,100).map(r=>[
-     nombreLiga(r.liga),fechaEspana(r.fecha),r.local,r.visitante,r.favorito,r.ppp,r.ppp_rival??"Sin datos",r.bonus_local??0,r.valoracion??"Sin datos",cuotaVigente(r)?r.cuota.toFixed(2)+" ("+r.casa_apuestas+")":"Pendiente de cuota"
+     nombreLiga(r.liga),fechaEspana(r.fecha),r.local,r.visitante,r.favorito,r.ppp,r.ppp_rival??"Sin datos",r.bonus_local??0,r.valoracion??"Sin datos",cuotaVigente(r)?r.cuota.toFixed(2)+" ("+r.casa_apuestas+"; "+new Date(r.consultada_en).toLocaleString("es-ES",{timeZone:"Europe/Madrid"})+")":(r.cuota_verificada===true?"Cuota caducada":r.motivo_cuota_moviodds||"Pendiente de cuota")
    ]));
    const aviso=document.createElement("p");
    aviso.textContent="Mostrando "+Math.min(100,filtrados.length)+" de "+filtrados.length+" partidos preseleccionados, ordenados por valoración (diferencia Pts/PJ + 0,2 si el favorito juega en casa). Cuotas disponibles (fuente indicada): "+filtrados.filter(p=>cuotaVigente(p)).length+". Las cuotas MoviOdds no son cuotas verificadas de bet365.";
