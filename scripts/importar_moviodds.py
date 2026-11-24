@@ -28,6 +28,11 @@ EQUIVALENCIAS={
     "Cagliari Calcio":"Cagliari",
     "Sport Lisboa e Benfica":"Benfica",
     "FC Famalicão":"Famalicao",
+    "Bodø / Glimt":"Bodo/Glimt",
+    "Sion":"FC Sion",
+    "Aris":"Aris Salonika",
+    "Olympiakos":"Olympiacos",
+    "PAOK":"PAOK Salonika",
 }
 
 
