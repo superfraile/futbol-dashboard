@@ -33,9 +33,7 @@ jobs:
         env:
           MOVIODDS_API_KEY: ${{ secrets.MOVIODDS_API_KEY }}
         run: |
-          if [ -z "$MOVIODDS_API_KEY" ]; then
-            echo "::warning::MoviOdds sin clave; se publican los datos deportivos sin cuotas nuevas."
-          elif python -m scripts.importar_moviodds datos.json; then
+          if python -m scripts.importar_moviodds datos.json; then
             echo "Consulta MoviOdds completada."
           else
             echo "::warning::Falló MoviOdds; se publican los datos deportivos sin cuotas nuevas."
