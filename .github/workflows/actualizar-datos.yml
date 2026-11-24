@@ -7,6 +7,7 @@ on:
     paths:
       - '.github/workflows/actualizar-datos.yml'
       - 'scripts/proveedores.py'
+      - 'scripts/sportapi.py'
       - 'scripts/construir_datos.py'
       - 'scripts/importar_moviodds.py'
       - 'equipos-favoritos.json'
@@ -28,6 +29,7 @@ jobs:
       - run: python -m scripts.proveedores
         env:
           FOOTBALL_DATA_API_KEY: ${{ secrets.FOOTBALL_DATA_API_KEY }}
+          SPORTAPI_API_KEY: ${{ secrets.SPORTAPI_API_KEY }}
       - run: python -m scripts.construir_datos entrada.json datos.json
       - name: Importar cuotas MoviOdds sin bloquear datos deportivos
         env:
