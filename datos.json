@@ -1,7 +1,7 @@
 {
   "version": "1.2",
-  "ultima_actualizacion": "2026-11-24T16:41:05.983280+00:00",
-  "fuente": "OpenLigaDB (https://www.openligadb.de), ODbL 1.0; GER; football-data.org (PL; ENG); football-data.org (PD; ESP); football-data.org (SA; ITA); football-data.org (FL1; FRA); football-data.org (PPL; POR); football-data.org (DED; NED)",
+  "ultima_actualizacion": "2026-11-24T16:41:50.327432+00:00",
+  "fuente": "OpenLigaDB (https://www.openligadb.de), ODbL 1.0; GER; football-data.org (PL; ENG); football-data.org (PD; ESP); football-data.org (SA; ITA); football-data.org (FL1; FRA); football-data.org (PPL; POR); football-data.org (DED; NED; copia anterior)",
   "ligas": {
     "GER": [
       {
@@ -3715,6 +3715,12 @@
     {
       "liga": "FRA",
       "fecha": "2027-01-02T20:00:00Z",
+      "local": "Paris FC",
+      "visitante": "Le Havre AC"
+    },
+    {
+      "liga": "FRA",
+      "fecha": "2027-01-02T20:00:00Z",
       "local": "FC Lorient",
       "visitante": "AJ Auxerre"
     },
@@ -3807,12 +3813,6 @@
       "fecha": "2027-01-03T14:00:00Z",
       "local": "Como 1907",
       "visitante": "US Lecce"
-    },
-    {
-      "liga": "FRA",
-      "fecha": "2027-01-03T16:15:00Z",
-      "local": "Paris FC",
-      "visitante": "Le Havre AC"
     },
     {
       "liga": "FRA",
@@ -14790,7 +14790,7 @@
   ],
   "dobles": [],
   "favoritos_validados": true,
-  "ultima_actualizacion_cuotas": "2026-11-24T16:41:11.779542+00:00",
+  "ultima_actualizacion_cuotas": "2026-11-24T16:41:53.707334+00:00",
   "diagnostico_cuotas": {
     "partidos_proveedor": 1009,
     "candidatos": 11,
@@ -14813,8 +14813,98 @@
     "formatos_fechas_cuotas": {
       "ts:iso_con_zona": 6
     },
-    "antiguedad_1x2_minima_minutos": 1793.5,
-    "antiguedad_1x2_maxima_minutos": 2145.9,
+    "propuestas_equivalencias_no_validadas": [
+      {
+        "local": "Real Betis Balompié",
+        "visitante": "Rayo Vallecano de Madrid",
+        "posibles": [
+          [
+            0.729,
+            "Real Betis",
+            "Rayo Vallecano"
+          ]
+        ]
+      },
+      {
+        "local": "Hamburger SV",
+        "visitante": "FC Bayern München",
+        "posibles": [
+          [
+            0.796,
+            "Hamburg",
+            "Bayern Munich"
+          ]
+        ]
+      },
+      {
+        "local": "Elche CF",
+        "visitante": "Club Atlético de Madrid",
+        "posibles": [
+          [
+            0.828,
+            "Elche",
+            "Atletico Madrid"
+          ]
+        ]
+      },
+      {
+        "local": "FC Internazionale Milano",
+        "visitante": "Genoa CFC",
+        "posibles": [
+          [
+            0.697,
+            "Inter Milan",
+            "Genoa"
+          ]
+        ]
+      },
+      {
+        "local": "Real Madrid CF",
+        "visitante": "Deportivo Alavés",
+        "posibles": [
+          [
+            0.759,
+            "Real Madrid",
+            "CD Alaves"
+          ]
+        ]
+      },
+      {
+        "local": "RC Deportivo La Coruña",
+        "visitante": "FC Barcelona",
+        "posibles": [
+          [
+            0.907,
+            "Deportivo A Coruna",
+            "Barcelona"
+          ]
+        ]
+      },
+      {
+        "local": "Cagliari Calcio",
+        "visitante": "AC Milan",
+        "posibles": [
+          [
+            0.864,
+            "Cagliari",
+            "AC Milan"
+          ]
+        ]
+      },
+      {
+        "local": "Sport Lisboa e Benfica",
+        "visitante": "FC Famalicão",
+        "posibles": [
+          [
+            0.719,
+            "Benfica",
+            "Famalicao"
+          ]
+        ]
+      }
+    ],
+    "antiguedad_1x2_minima_minutos": 1794.2,
+    "antiguedad_1x2_maxima_minutos": 2146.6,
     "cotizaciones_1x2_futuras": 0,
     "cotizaciones_1x2_mas_de_60_minutos": 6
   }
