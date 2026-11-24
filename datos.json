@@ -1,6 +1,6 @@
 {
   "version": "1.2",
-  "ultima_actualizacion": "2026-11-24T18:08:17.204625+00:00",
+  "ultima_actualizacion": "2026-11-24T18:15:56.438389+00:00",
   "fuente": "OpenLigaDB (https://www.openligadb.de), ODbL 1.0; GER; football-data.org (PL; ENG); football-data.org (PD; ESP); football-data.org (SA; ITA); football-data.org (FL1; FRA); football-data.org (PPL; POR); football-data.org (DED; NED); SportAPI.ai (https://sportapi.ai/); clasificación y calendario de DEN,SCO,GRE,NOR,SWE,SUI,TUR",
   "ligas": {
     "GER": [
@@ -2844,25 +2844,25 @@
     {
       "liga": "DEN",
       "equipo": "Midtjylland",
-      "elo": null,
+      "elo": 1585.0,
       "equipo_proveedor": "Midtjylland"
     },
     {
       "liga": "DEN",
       "equipo": "FC Copenhagen",
-      "elo": null,
+      "elo": 1555.3,
       "equipo_proveedor": "Copenhagen"
     },
     {
       "liga": "SCO",
       "equipo": "Celtic",
-      "elo": null,
+      "elo": 1568.5,
       "equipo_proveedor": "Celtic"
     },
     {
       "liga": "SCO",
       "equipo": "Rangers",
-      "elo": null,
+      "elo": 1575.4,
       "equipo_proveedor": "Rangers"
     },
     {
@@ -2910,13 +2910,13 @@
     {
       "liga": "GRE",
       "equipo": "AEK Athens",
-      "elo": null,
+      "elo": 1552.9,
       "equipo_proveedor": "AEK Athens"
     },
     {
       "liga": "GRE",
       "equipo": "Olympiacos Piraeus",
-      "elo": null,
+      "elo": 1560.5,
       "equipo_proveedor": "Olympiakos"
     },
     {
@@ -2970,13 +2970,13 @@
     {
       "liga": "NOR",
       "equipo": "Molde",
-      "elo": null,
+      "elo": 1521.5,
       "equipo_proveedor": "Molde"
     },
     {
       "liga": "NOR",
       "equipo": "Bodo/Glimt",
-      "elo": null,
+      "elo": 1625.4,
       "equipo_proveedor": "Bodø / Glimt"
     },
     {
@@ -3024,25 +3024,25 @@
     {
       "liga": "SWE",
       "equipo": "Malmo FF",
-      "elo": null,
+      "elo": 1507.0,
       "equipo_proveedor": "Malmö FF"
     },
     {
       "liga": "SUI",
       "equipo": "Young Boys",
-      "elo": null,
+      "elo": 1563.7,
       "equipo_proveedor": "Young Boys"
     },
     {
       "liga": "TUR",
       "equipo": "Galatasaray",
-      "elo": null,
+      "elo": 1576.1,
       "equipo_proveedor": "Galatasaray"
     },
     {
       "liga": "TUR",
       "equipo": "Fenerbahce",
-      "elo": null,
+      "elo": 1522.9,
       "equipo_proveedor": "Fenerbahçe"
     }
   ],
@@ -13395,8 +13395,586 @@
         }
       }
     },
-    "DEN": {},
-    "SCO": {},
+    "DEN": {
+      "Viborg": {
+        "local": {
+          "pj": 8,
+          "g": 5,
+          "e": 1,
+          "p": 2,
+          "gf": 13,
+          "gc": 6,
+          "puntos": 16,
+          "ppp": 2.0,
+          "victorias_pct": 62.5
+        },
+        "visitante": {
+          "pj": 7,
+          "g": 3,
+          "e": 2,
+          "p": 2,
+          "gf": 9,
+          "gc": 7,
+          "puntos": 11,
+          "ppp": 1.57,
+          "victorias_pct": 42.86
+        }
+      },
+      "OB": {
+        "visitante": {
+          "pj": 8,
+          "g": 2,
+          "e": 4,
+          "p": 2,
+          "gf": 8,
+          "gc": 8,
+          "puntos": 10,
+          "ppp": 1.25,
+          "victorias_pct": 25.0
+        },
+        "local": {
+          "pj": 7,
+          "g": 3,
+          "e": 1,
+          "p": 3,
+          "gf": 10,
+          "gc": 12,
+          "puntos": 10,
+          "ppp": 1.43,
+          "victorias_pct": 42.86
+        }
+      },
+      "AGF": {
+        "local": {
+          "pj": 8,
+          "g": 4,
+          "e": 3,
+          "p": 1,
+          "gf": 14,
+          "gc": 9,
+          "puntos": 15,
+          "ppp": 1.88,
+          "victorias_pct": 50.0
+        },
+        "visitante": {
+          "pj": 7,
+          "g": 0,
+          "e": 3,
+          "p": 4,
+          "gf": 7,
+          "gc": 13,
+          "puntos": 3,
+          "ppp": 0.43,
+          "victorias_pct": 0.0
+        }
+      },
+      "Brøndby": {
+        "visitante": {
+          "pj": 7,
+          "g": 2,
+          "e": 1,
+          "p": 4,
+          "gf": 9,
+          "gc": 12,
+          "puntos": 7,
+          "ppp": 1.0,
+          "victorias_pct": 28.57
+        },
+        "local": {
+          "pj": 8,
+          "g": 5,
+          "e": 0,
+          "p": 3,
+          "gf": 14,
+          "gc": 11,
+          "puntos": 15,
+          "ppp": 1.88,
+          "victorias_pct": 62.5
+        }
+      },
+      "Sønderjyske": {
+        "local": {
+          "pj": 8,
+          "g": 2,
+          "e": 1,
+          "p": 5,
+          "gf": 13,
+          "gc": 17,
+          "puntos": 7,
+          "ppp": 0.88,
+          "victorias_pct": 25.0
+        },
+        "visitante": {
+          "pj": 7,
+          "g": 0,
+          "e": 2,
+          "p": 5,
+          "gf": 7,
+          "gc": 18,
+          "puntos": 2,
+          "ppp": 0.29,
+          "victorias_pct": 0.0
+        }
+      },
+      "Midtjylland": {
+        "visitante": {
+          "pj": 8,
+          "g": 5,
+          "e": 3,
+          "p": 0,
+          "gf": 15,
+          "gc": 8,
+          "puntos": 18,
+          "ppp": 2.25,
+          "victorias_pct": 62.5
+        },
+        "local": {
+          "pj": 7,
+          "g": 5,
+          "e": 2,
+          "p": 0,
+          "gf": 16,
+          "gc": 9,
+          "puntos": 17,
+          "ppp": 2.43,
+          "victorias_pct": 71.43
+        }
+      },
+      "Copenhagen": {
+        "local": {
+          "pj": 7,
+          "g": 5,
+          "e": 2,
+          "p": 0,
+          "gf": 13,
+          "gc": 5,
+          "puntos": 17,
+          "ppp": 2.43,
+          "victorias_pct": 71.43
+        },
+        "visitante": {
+          "pj": 8,
+          "g": 5,
+          "e": 0,
+          "p": 3,
+          "gf": 16,
+          "gc": 12,
+          "puntos": 15,
+          "ppp": 1.88,
+          "victorias_pct": 62.5
+        }
+      },
+      "Lyngby": {
+        "visitante": {
+          "pj": 8,
+          "g": 1,
+          "e": 0,
+          "p": 7,
+          "gf": 10,
+          "gc": 18,
+          "puntos": 3,
+          "ppp": 0.38,
+          "victorias_pct": 12.5
+        },
+        "local": {
+          "pj": 7,
+          "g": 1,
+          "e": 5,
+          "p": 1,
+          "gf": 10,
+          "gc": 13,
+          "puntos": 8,
+          "ppp": 1.14,
+          "victorias_pct": 14.29
+        }
+      },
+      "Horsens": {
+        "local": {
+          "pj": 8,
+          "g": 3,
+          "e": 3,
+          "p": 2,
+          "gf": 15,
+          "gc": 11,
+          "puntos": 12,
+          "ppp": 1.5,
+          "victorias_pct": 37.5
+        },
+        "visitante": {
+          "pj": 7,
+          "g": 2,
+          "e": 1,
+          "p": 4,
+          "gf": 11,
+          "gc": 13,
+          "puntos": 7,
+          "ppp": 1.0,
+          "victorias_pct": 28.57
+        }
+      },
+      "Nordsjælland": {
+        "visitante": {
+          "pj": 8,
+          "g": 2,
+          "e": 4,
+          "p": 2,
+          "gf": 17,
+          "gc": 14,
+          "puntos": 10,
+          "ppp": 1.25,
+          "victorias_pct": 25.0
+        },
+        "local": {
+          "pj": 7,
+          "g": 5,
+          "e": 1,
+          "p": 1,
+          "gf": 14,
+          "gc": 4,
+          "puntos": 16,
+          "ppp": 2.29,
+          "victorias_pct": 71.43
+        }
+      },
+      "Randers": {
+        "local": {
+          "pj": 8,
+          "g": 2,
+          "e": 1,
+          "p": 5,
+          "gf": 8,
+          "gc": 19,
+          "puntos": 7,
+          "ppp": 0.88,
+          "victorias_pct": 25.0
+        },
+        "visitante": {
+          "pj": 7,
+          "g": 1,
+          "e": 2,
+          "p": 4,
+          "gf": 6,
+          "gc": 8,
+          "puntos": 5,
+          "ppp": 0.71,
+          "victorias_pct": 14.29
+        }
+      },
+      "Silkeborg": {
+        "visitante": {
+          "pj": 8,
+          "g": 1,
+          "e": 2,
+          "p": 5,
+          "gf": 10,
+          "gc": 18,
+          "puntos": 5,
+          "ppp": 0.62,
+          "victorias_pct": 12.5
+        },
+        "local": {
+          "pj": 7,
+          "g": 2,
+          "e": 4,
+          "p": 1,
+          "gf": 9,
+          "gc": 9,
+          "puntos": 10,
+          "ppp": 1.43,
+          "victorias_pct": 28.57
+        }
+      }
+    },
+    "SCO": {
+      "Dundee United": {
+        "local": {
+          "pj": 6,
+          "g": 2,
+          "e": 3,
+          "p": 1,
+          "gf": 7,
+          "gc": 7,
+          "puntos": 9,
+          "ppp": 1.5,
+          "victorias_pct": 33.33
+        },
+        "visitante": {
+          "pj": 7,
+          "g": 3,
+          "e": 2,
+          "p": 2,
+          "gf": 14,
+          "gc": 10,
+          "puntos": 11,
+          "ppp": 1.57,
+          "victorias_pct": 42.86
+        }
+      },
+      "Rangers": {
+        "visitante": {
+          "pj": 8,
+          "g": 5,
+          "e": 3,
+          "p": 0,
+          "gf": 13,
+          "gc": 7,
+          "puntos": 18,
+          "ppp": 2.25,
+          "victorias_pct": 62.5
+        },
+        "local": {
+          "pj": 5,
+          "g": 4,
+          "e": 0,
+          "p": 1,
+          "gf": 10,
+          "gc": 3,
+          "puntos": 12,
+          "ppp": 2.4,
+          "victorias_pct": 80.0
+        }
+      },
+      "Falkirk": {
+        "local": {
+          "pj": 7,
+          "g": 4,
+          "e": 0,
+          "p": 3,
+          "gf": 11,
+          "gc": 8,
+          "puntos": 12,
+          "ppp": 1.71,
+          "victorias_pct": 57.14
+        },
+        "visitante": {
+          "pj": 7,
+          "g": 3,
+          "e": 3,
+          "p": 1,
+          "gf": 11,
+          "gc": 7,
+          "puntos": 12,
+          "ppp": 1.71,
+          "victorias_pct": 42.86
+        }
+      },
+      "St. Mirren": {
+        "visitante": {
+          "pj": 7,
+          "g": 2,
+          "e": 0,
+          "p": 5,
+          "gf": 5,
+          "gc": 14,
+          "puntos": 6,
+          "ppp": 0.86,
+          "victorias_pct": 28.57
+        },
+        "local": {
+          "pj": 7,
+          "g": 2,
+          "e": 2,
+          "p": 3,
+          "gf": 8,
+          "gc": 12,
+          "puntos": 8,
+          "ppp": 1.14,
+          "victorias_pct": 28.57
+        }
+      },
+      "Aberdeen": {
+        "local": {
+          "pj": 7,
+          "g": 2,
+          "e": 1,
+          "p": 4,
+          "gf": 5,
+          "gc": 9,
+          "puntos": 7,
+          "ppp": 1.0,
+          "victorias_pct": 28.57
+        },
+        "visitante": {
+          "pj": 6,
+          "g": 2,
+          "e": 1,
+          "p": 3,
+          "gf": 11,
+          "gc": 11,
+          "puntos": 7,
+          "ppp": 1.17,
+          "victorias_pct": 33.33
+        }
+      },
+      "Hearts": {
+        "visitante": {
+          "pj": 7,
+          "g": 3,
+          "e": 1,
+          "p": 3,
+          "gf": 17,
+          "gc": 13,
+          "puntos": 10,
+          "ppp": 1.43,
+          "victorias_pct": 42.86
+        },
+        "local": {
+          "pj": 6,
+          "g": 4,
+          "e": 1,
+          "p": 1,
+          "gf": 17,
+          "gc": 9,
+          "puntos": 13,
+          "ppp": 2.17,
+          "victorias_pct": 66.67
+        }
+      },
+      "St. Johnstone": {
+        "local": {
+          "pj": 7,
+          "g": 3,
+          "e": 3,
+          "p": 1,
+          "gf": 12,
+          "gc": 10,
+          "puntos": 12,
+          "ppp": 1.71,
+          "victorias_pct": 42.86
+        },
+        "visitante": {
+          "pj": 7,
+          "g": 1,
+          "e": 2,
+          "p": 4,
+          "gf": 6,
+          "gc": 12,
+          "puntos": 5,
+          "ppp": 0.71,
+          "victorias_pct": 14.29
+        }
+      },
+      "Kilmarnock": {
+        "visitante": {
+          "pj": 7,
+          "g": 1,
+          "e": 1,
+          "p": 5,
+          "gf": 6,
+          "gc": 14,
+          "puntos": 4,
+          "ppp": 0.57,
+          "victorias_pct": 14.29
+        },
+        "local": {
+          "pj": 7,
+          "g": 1,
+          "e": 2,
+          "p": 4,
+          "gf": 9,
+          "gc": 19,
+          "puntos": 5,
+          "ppp": 0.71,
+          "victorias_pct": 14.29
+        }
+      },
+      "Hibernian": {
+        "local": {
+          "pj": 7,
+          "g": 0,
+          "e": 1,
+          "p": 6,
+          "gf": 5,
+          "gc": 15,
+          "puntos": 1,
+          "ppp": 0.14,
+          "victorias_pct": 0.0
+        },
+        "visitante": {
+          "pj": 6,
+          "g": 3,
+          "e": 1,
+          "p": 2,
+          "gf": 10,
+          "gc": 6,
+          "puntos": 10,
+          "ppp": 1.67,
+          "victorias_pct": 50.0
+        }
+      },
+      "Motherwell": {
+        "visitante": {
+          "pj": 7,
+          "g": 1,
+          "e": 3,
+          "p": 3,
+          "gf": 11,
+          "gc": 13,
+          "puntos": 6,
+          "ppp": 0.86,
+          "victorias_pct": 14.29
+        },
+        "local": {
+          "pj": 7,
+          "g": 2,
+          "e": 1,
+          "p": 4,
+          "gf": 5,
+          "gc": 10,
+          "puntos": 7,
+          "ppp": 1.0,
+          "victorias_pct": 28.57
+        }
+      },
+      "Celtic": {
+        "local": {
+          "pj": 8,
+          "g": 6,
+          "e": 1,
+          "p": 1,
+          "gf": 20,
+          "gc": 6,
+          "puntos": 19,
+          "ppp": 2.38,
+          "victorias_pct": 75.0
+        },
+        "visitante": {
+          "pj": 6,
+          "g": 5,
+          "e": 0,
+          "p": 1,
+          "gf": 12,
+          "gc": 5,
+          "puntos": 15,
+          "ppp": 2.5,
+          "victorias_pct": 83.33
+        }
+      },
+      "Dundee": {
+        "visitante": {
+          "pj": 6,
+          "g": 2,
+          "e": 0,
+          "p": 4,
+          "gf": 7,
+          "gc": 8,
+          "puntos": 6,
+          "ppp": 1.0,
+          "victorias_pct": 33.33
+        },
+        "local": {
+          "pj": 7,
+          "g": 3,
+          "e": 2,
+          "p": 2,
+          "gf": 11,
+          "gc": 15,
+          "puntos": 11,
+          "ppp": 1.57,
+          "victorias_pct": 42.86
+        }
+      }
+    },
     "ESP": {
       "Deportivo Alavés": {
         "local": {
@@ -14313,7 +14891,344 @@
         }
       }
     },
-    "GRE": {},
+    "GRE": {
+      "AEK Athens": {
+        "local": {
+          "pj": 5,
+          "g": 5,
+          "e": 0,
+          "p": 0,
+          "gf": 19,
+          "gc": 1,
+          "puntos": 15,
+          "ppp": 3.0,
+          "victorias_pct": 100.0
+        },
+        "visitante": {
+          "pj": 5,
+          "g": 2,
+          "e": 2,
+          "p": 1,
+          "gf": 5,
+          "gc": 5,
+          "puntos": 8,
+          "ppp": 1.6,
+          "victorias_pct": 40.0
+        }
+      },
+      "Iraklis 1908": {
+        "visitante": {
+          "pj": 7,
+          "g": 1,
+          "e": 3,
+          "p": 3,
+          "gf": 7,
+          "gc": 14,
+          "puntos": 6,
+          "ppp": 0.86,
+          "victorias_pct": 14.29
+        },
+        "local": {
+          "pj": 4,
+          "g": 1,
+          "e": 1,
+          "p": 2,
+          "gf": 6,
+          "gc": 6,
+          "puntos": 4,
+          "ppp": 1.0,
+          "victorias_pct": 25.0
+        }
+      },
+      "Kalamata": {
+        "local": {
+          "pj": 6,
+          "g": 2,
+          "e": 1,
+          "p": 3,
+          "gf": 10,
+          "gc": 10,
+          "puntos": 7,
+          "ppp": 1.17,
+          "victorias_pct": 33.33
+        },
+        "visitante": {
+          "pj": 5,
+          "g": 1,
+          "e": 2,
+          "p": 2,
+          "gf": 5,
+          "gc": 10,
+          "puntos": 5,
+          "ppp": 1.0,
+          "victorias_pct": 20.0
+        }
+      },
+      "Aris": {
+        "visitante": {
+          "pj": 6,
+          "g": 3,
+          "e": 0,
+          "p": 3,
+          "gf": 6,
+          "gc": 13,
+          "puntos": 9,
+          "ppp": 1.5,
+          "victorias_pct": 50.0
+        },
+        "local": {
+          "pj": 5,
+          "g": 4,
+          "e": 1,
+          "p": 0,
+          "gf": 11,
+          "gc": 4,
+          "puntos": 13,
+          "ppp": 2.6,
+          "victorias_pct": 80.0
+        }
+      },
+      "Olympiakos": {
+        "local": {
+          "pj": 6,
+          "g": 4,
+          "e": 1,
+          "p": 1,
+          "gf": 14,
+          "gc": 4,
+          "puntos": 13,
+          "ppp": 2.17,
+          "victorias_pct": 66.67
+        },
+        "visitante": {
+          "pj": 5,
+          "g": 4,
+          "e": 1,
+          "p": 0,
+          "gf": 8,
+          "gc": 3,
+          "puntos": 13,
+          "ppp": 2.6,
+          "victorias_pct": 80.0
+        }
+      },
+      "Atromitos": {
+        "visitante": {
+          "pj": 6,
+          "g": 0,
+          "e": 3,
+          "p": 3,
+          "gf": 4,
+          "gc": 8,
+          "puntos": 3,
+          "ppp": 0.5,
+          "victorias_pct": 0.0
+        },
+        "local": {
+          "pj": 4,
+          "g": 1,
+          "e": 1,
+          "p": 2,
+          "gf": 6,
+          "gc": 5,
+          "puntos": 4,
+          "ppp": 1.0,
+          "victorias_pct": 25.0
+        }
+      },
+      "OFI": {
+        "local": {
+          "pj": 5,
+          "g": 3,
+          "e": 2,
+          "p": 0,
+          "gf": 8,
+          "gc": 3,
+          "puntos": 11,
+          "ppp": 2.2,
+          "victorias_pct": 60.0
+        },
+        "visitante": {
+          "pj": 6,
+          "g": 2,
+          "e": 0,
+          "p": 4,
+          "gf": 6,
+          "gc": 11,
+          "puntos": 6,
+          "ppp": 1.0,
+          "victorias_pct": 33.33
+        }
+      },
+      "Volos NFC": {
+        "visitante": {
+          "pj": 6,
+          "g": 0,
+          "e": 1,
+          "p": 5,
+          "gf": 3,
+          "gc": 12,
+          "puntos": 1,
+          "ppp": 0.17,
+          "victorias_pct": 0.0
+        },
+        "local": {
+          "pj": 5,
+          "g": 0,
+          "e": 2,
+          "p": 3,
+          "gf": 4,
+          "gc": 8,
+          "puntos": 2,
+          "ppp": 0.4,
+          "victorias_pct": 0.0
+        }
+      },
+      "PAOK": {
+        "local": {
+          "pj": 6,
+          "g": 5,
+          "e": 0,
+          "p": 1,
+          "gf": 15,
+          "gc": 5,
+          "puntos": 15,
+          "ppp": 2.5,
+          "victorias_pct": 83.33
+        },
+        "visitante": {
+          "pj": 5,
+          "g": 2,
+          "e": 1,
+          "p": 2,
+          "gf": 8,
+          "gc": 8,
+          "puntos": 7,
+          "ppp": 1.4,
+          "victorias_pct": 40.0
+        }
+      },
+      "Levadiakos": {
+        "visitante": {
+          "pj": 5,
+          "g": 0,
+          "e": 2,
+          "p": 3,
+          "gf": 1,
+          "gc": 8,
+          "puntos": 2,
+          "ppp": 0.4,
+          "victorias_pct": 0.0
+        },
+        "local": {
+          "pj": 6,
+          "g": 1,
+          "e": 2,
+          "p": 3,
+          "gf": 4,
+          "gc": 6,
+          "puntos": 5,
+          "ppp": 0.83,
+          "victorias_pct": 16.67
+        }
+      },
+      "Panaitolikos": {
+        "local": {
+          "pj": 6,
+          "g": 3,
+          "e": 0,
+          "p": 3,
+          "gf": 7,
+          "gc": 7,
+          "puntos": 9,
+          "ppp": 1.5,
+          "victorias_pct": 50.0
+        },
+        "visitante": {
+          "pj": 5,
+          "g": 1,
+          "e": 0,
+          "p": 4,
+          "gf": 2,
+          "gc": 13,
+          "puntos": 3,
+          "ppp": 0.6,
+          "victorias_pct": 20.0
+        }
+      },
+      "Asteras Tripolis": {
+        "visitante": {
+          "pj": 4,
+          "g": 0,
+          "e": 1,
+          "p": 3,
+          "gf": 5,
+          "gc": 12,
+          "puntos": 1,
+          "ppp": 0.25,
+          "victorias_pct": 0.0
+        },
+        "local": {
+          "pj": 7,
+          "g": 1,
+          "e": 3,
+          "p": 3,
+          "gf": 4,
+          "gc": 7,
+          "puntos": 6,
+          "ppp": 0.86,
+          "victorias_pct": 14.29
+        }
+      },
+      "Kifisia": {
+        "local": {
+          "pj": 5,
+          "g": 1,
+          "e": 2,
+          "p": 2,
+          "gf": 6,
+          "gc": 6,
+          "puntos": 5,
+          "ppp": 1.0,
+          "victorias_pct": 20.0
+        },
+        "visitante": {
+          "pj": 6,
+          "g": 3,
+          "e": 0,
+          "p": 3,
+          "gf": 9,
+          "gc": 13,
+          "puntos": 9,
+          "ppp": 1.5,
+          "victorias_pct": 50.0
+        }
+      },
+      "Panathinaikos": {
+        "visitante": {
+          "pj": 5,
+          "g": 4,
+          "e": 0,
+          "p": 1,
+          "gf": 6,
+          "gc": 2,
+          "puntos": 12,
+          "ppp": 2.4,
+          "victorias_pct": 80.0
+        },
+        "local": {
+          "pj": 6,
+          "g": 6,
+          "e": 0,
+          "p": 0,
+          "gf": 18,
+          "gc": 3,
+          "puntos": 18,
+          "ppp": 3.0,
+          "victorias_pct": 100.0
+        }
+      }
+    },
     "ENG": {
       "Arsenal FC": {
         "local": {
@@ -15278,7 +16193,392 @@
         }
       }
     },
-    "NOR": {},
+    "NOR": {
+      "HamKam": {
+        "local": {
+          "pj": 14,
+          "g": 6,
+          "e": 3,
+          "p": 5,
+          "gf": 20,
+          "gc": 24,
+          "puntos": 21,
+          "ppp": 1.5,
+          "victorias_pct": 42.86
+        },
+        "visitante": {
+          "pj": 13,
+          "g": 2,
+          "e": 4,
+          "p": 7,
+          "gf": 18,
+          "gc": 29,
+          "puntos": 10,
+          "ppp": 0.77,
+          "victorias_pct": 15.38
+        }
+      },
+      "Viking": {
+        "visitante": {
+          "pj": 14,
+          "g": 7,
+          "e": 2,
+          "p": 5,
+          "gf": 22,
+          "gc": 16,
+          "puntos": 23,
+          "ppp": 1.64,
+          "victorias_pct": 50.0
+        },
+        "local": {
+          "pj": 13,
+          "g": 13,
+          "e": 0,
+          "p": 0,
+          "gf": 49,
+          "gc": 14,
+          "puntos": 39,
+          "ppp": 3.0,
+          "victorias_pct": 100.0
+        }
+      },
+      "Molde": {
+        "local": {
+          "pj": 14,
+          "g": 9,
+          "e": 1,
+          "p": 4,
+          "gf": 37,
+          "gc": 19,
+          "puntos": 28,
+          "ppp": 2.0,
+          "victorias_pct": 64.29
+        },
+        "visitante": {
+          "pj": 13,
+          "g": 4,
+          "e": 4,
+          "p": 5,
+          "gf": 29,
+          "gc": 29,
+          "puntos": 16,
+          "ppp": 1.23,
+          "victorias_pct": 30.77
+        }
+      },
+      "Rosenborg": {
+        "visitante": {
+          "pj": 14,
+          "g": 6,
+          "e": 2,
+          "p": 6,
+          "gf": 23,
+          "gc": 19,
+          "puntos": 20,
+          "ppp": 1.43,
+          "victorias_pct": 42.86
+        },
+        "local": {
+          "pj": 13,
+          "g": 8,
+          "e": 3,
+          "p": 2,
+          "gf": 32,
+          "gc": 15,
+          "puntos": 27,
+          "ppp": 2.08,
+          "victorias_pct": 61.54
+        }
+      },
+      "Kristiansund": {
+        "local": {
+          "pj": 14,
+          "g": 5,
+          "e": 4,
+          "p": 5,
+          "gf": 19,
+          "gc": 22,
+          "puntos": 19,
+          "ppp": 1.36,
+          "victorias_pct": 35.71
+        },
+        "visitante": {
+          "pj": 13,
+          "g": 2,
+          "e": 2,
+          "p": 9,
+          "gf": 13,
+          "gc": 31,
+          "puntos": 8,
+          "ppp": 0.62,
+          "victorias_pct": 15.38
+        }
+      },
+      "Brann": {
+        "visitante": {
+          "pj": 14,
+          "g": 4,
+          "e": 3,
+          "p": 7,
+          "gf": 28,
+          "gc": 27,
+          "puntos": 15,
+          "ppp": 1.07,
+          "victorias_pct": 28.57
+        },
+        "local": {
+          "pj": 13,
+          "g": 7,
+          "e": 0,
+          "p": 6,
+          "gf": 23,
+          "gc": 20,
+          "puntos": 21,
+          "ppp": 1.62,
+          "victorias_pct": 53.85
+        }
+      },
+      "Aalesund": {
+        "local": {
+          "pj": 14,
+          "g": 2,
+          "e": 7,
+          "p": 5,
+          "gf": 29,
+          "gc": 36,
+          "puntos": 13,
+          "ppp": 0.93,
+          "victorias_pct": 14.29
+        },
+        "visitante": {
+          "pj": 13,
+          "g": 3,
+          "e": 3,
+          "p": 7,
+          "gf": 18,
+          "gc": 26,
+          "puntos": 12,
+          "ppp": 0.92,
+          "victorias_pct": 23.08
+        }
+      },
+      "Lillestrøm": {
+        "visitante": {
+          "pj": 14,
+          "g": 8,
+          "e": 2,
+          "p": 4,
+          "gf": 16,
+          "gc": 14,
+          "puntos": 26,
+          "ppp": 1.86,
+          "victorias_pct": 57.14
+        },
+        "local": {
+          "pj": 13,
+          "g": 7,
+          "e": 1,
+          "p": 5,
+          "gf": 25,
+          "gc": 21,
+          "puntos": 22,
+          "ppp": 1.69,
+          "victorias_pct": 53.85
+        }
+      },
+      "KFUM": {
+        "local": {
+          "pj": 14,
+          "g": 6,
+          "e": 3,
+          "p": 5,
+          "gf": 20,
+          "gc": 20,
+          "puntos": 21,
+          "ppp": 1.5,
+          "victorias_pct": 42.86
+        },
+        "visitante": {
+          "pj": 13,
+          "g": 2,
+          "e": 4,
+          "p": 7,
+          "gf": 16,
+          "gc": 30,
+          "puntos": 10,
+          "ppp": 0.77,
+          "victorias_pct": 15.38
+        }
+      },
+      "Start": {
+        "visitante": {
+          "pj": 14,
+          "g": 2,
+          "e": 1,
+          "p": 11,
+          "gf": 14,
+          "gc": 40,
+          "puntos": 7,
+          "ppp": 0.5,
+          "victorias_pct": 14.29
+        },
+        "local": {
+          "pj": 13,
+          "g": 4,
+          "e": 3,
+          "p": 6,
+          "gf": 15,
+          "gc": 20,
+          "puntos": 15,
+          "ppp": 1.15,
+          "victorias_pct": 30.77
+        }
+      },
+      "Vålerenga": {
+        "local": {
+          "pj": 14,
+          "g": 6,
+          "e": 2,
+          "p": 6,
+          "gf": 28,
+          "gc": 22,
+          "puntos": 20,
+          "ppp": 1.43,
+          "victorias_pct": 42.86
+        },
+        "visitante": {
+          "pj": 13,
+          "g": 3,
+          "e": 3,
+          "p": 7,
+          "gf": 16,
+          "gc": 27,
+          "puntos": 12,
+          "ppp": 0.92,
+          "victorias_pct": 23.08
+        }
+      },
+      "Sandefjord": {
+        "visitante": {
+          "pj": 14,
+          "g": 4,
+          "e": 2,
+          "p": 8,
+          "gf": 18,
+          "gc": 24,
+          "puntos": 14,
+          "ppp": 1.0,
+          "victorias_pct": 28.57
+        },
+        "local": {
+          "pj": 13,
+          "g": 3,
+          "e": 6,
+          "p": 4,
+          "gf": 15,
+          "gc": 17,
+          "puntos": 15,
+          "ppp": 1.15,
+          "victorias_pct": 23.08
+        }
+      },
+      "Tromsø": {
+        "local": {
+          "pj": 14,
+          "g": 8,
+          "e": 4,
+          "p": 2,
+          "gf": 25,
+          "gc": 14,
+          "puntos": 28,
+          "ppp": 2.0,
+          "victorias_pct": 57.14
+        },
+        "visitante": {
+          "pj": 13,
+          "g": 4,
+          "e": 3,
+          "p": 6,
+          "gf": 21,
+          "gc": 28,
+          "puntos": 15,
+          "ppp": 1.15,
+          "victorias_pct": 30.77
+        }
+      },
+      "Fredrikstad": {
+        "visitante": {
+          "pj": 14,
+          "g": 3,
+          "e": 3,
+          "p": 8,
+          "gf": 15,
+          "gc": 29,
+          "puntos": 12,
+          "ppp": 0.86,
+          "victorias_pct": 21.43
+        },
+        "local": {
+          "pj": 13,
+          "g": 5,
+          "e": 4,
+          "p": 4,
+          "gf": 16,
+          "gc": 17,
+          "puntos": 19,
+          "ppp": 1.46,
+          "victorias_pct": 38.46
+        }
+      },
+      "Sarpsborg 08": {
+        "visitante": {
+          "pj": 13,
+          "g": 3,
+          "e": 4,
+          "p": 6,
+          "gf": 16,
+          "gc": 22,
+          "puntos": 13,
+          "ppp": 1.0,
+          "victorias_pct": 23.08
+        },
+        "local": {
+          "pj": 14,
+          "g": 5,
+          "e": 3,
+          "p": 6,
+          "gf": 16,
+          "gc": 22,
+          "puntos": 18,
+          "ppp": 1.29,
+          "victorias_pct": 35.71
+        }
+      },
+      "Bodø / Glimt": {
+        "visitante": {
+          "pj": 14,
+          "g": 10,
+          "e": 2,
+          "p": 2,
+          "gf": 30,
+          "gc": 15,
+          "puntos": 32,
+          "ppp": 2.29,
+          "victorias_pct": 71.43
+        },
+        "local": {
+          "pj": 13,
+          "g": 11,
+          "e": 0,
+          "p": 2,
+          "gf": 37,
+          "gc": 10,
+          "puntos": 33,
+          "ppp": 2.54,
+          "victorias_pct": 84.62
+        }
+      }
+    },
     "NED": {
       "SC Cambuur-Leeuwarden": {
         "local": {
@@ -16147,9 +17447,1116 @@
         }
       }
     },
-    "SWE": {},
-    "SUI": {},
-    "TUR": {}
+    "SWE": {
+      "Degerfors": {
+        "local": {
+          "pj": 14,
+          "g": 3,
+          "e": 2,
+          "p": 9,
+          "gf": 13,
+          "gc": 22,
+          "puntos": 11,
+          "ppp": 0.79,
+          "victorias_pct": 21.43
+        },
+        "visitante": {
+          "pj": 15,
+          "g": 2,
+          "e": 4,
+          "p": 9,
+          "gf": 10,
+          "gc": 26,
+          "puntos": 10,
+          "ppp": 0.67,
+          "victorias_pct": 13.33
+        }
+      },
+      "Sirius": {
+        "visitante": {
+          "pj": 14,
+          "g": 10,
+          "e": 1,
+          "p": 3,
+          "gf": 28,
+          "gc": 16,
+          "puntos": 31,
+          "ppp": 2.21,
+          "victorias_pct": 71.43
+        },
+        "local": {
+          "pj": 15,
+          "g": 9,
+          "e": 3,
+          "p": 3,
+          "gf": 31,
+          "gc": 19,
+          "puntos": 30,
+          "ppp": 2.0,
+          "victorias_pct": 60.0
+        }
+      },
+      "Hammarby": {
+        "local": {
+          "pj": 15,
+          "g": 12,
+          "e": 1,
+          "p": 2,
+          "gf": 43,
+          "gc": 9,
+          "puntos": 37,
+          "ppp": 2.47,
+          "victorias_pct": 80.0
+        },
+        "visitante": {
+          "pj": 14,
+          "g": 7,
+          "e": 3,
+          "p": 4,
+          "gf": 20,
+          "gc": 15,
+          "puntos": 24,
+          "ppp": 1.71,
+          "victorias_pct": 50.0
+        }
+      },
+      "Mjällby": {
+        "visitante": {
+          "pj": 14,
+          "g": 3,
+          "e": 7,
+          "p": 4,
+          "gf": 18,
+          "gc": 22,
+          "puntos": 16,
+          "ppp": 1.14,
+          "victorias_pct": 21.43
+        },
+        "local": {
+          "pj": 15,
+          "g": 3,
+          "e": 4,
+          "p": 8,
+          "gf": 13,
+          "gc": 22,
+          "puntos": 13,
+          "ppp": 0.87,
+          "victorias_pct": 20.0
+        }
+      },
+      "AIK": {
+        "local": {
+          "pj": 15,
+          "g": 5,
+          "e": 4,
+          "p": 6,
+          "gf": 24,
+          "gc": 31,
+          "puntos": 19,
+          "ppp": 1.27,
+          "victorias_pct": 33.33
+        },
+        "visitante": {
+          "pj": 14,
+          "g": 6,
+          "e": 5,
+          "p": 3,
+          "gf": 22,
+          "gc": 18,
+          "puntos": 23,
+          "ppp": 1.64,
+          "victorias_pct": 42.86
+        }
+      },
+      "Halmstad": {
+        "visitante": {
+          "pj": 15,
+          "g": 2,
+          "e": 3,
+          "p": 10,
+          "gf": 12,
+          "gc": 29,
+          "puntos": 9,
+          "ppp": 0.6,
+          "victorias_pct": 13.33
+        },
+        "local": {
+          "pj": 14,
+          "g": 4,
+          "e": 2,
+          "p": 8,
+          "gf": 11,
+          "gc": 23,
+          "puntos": 14,
+          "ppp": 1.0,
+          "victorias_pct": 28.57
+        }
+      },
+      "Kalmar": {
+        "local": {
+          "pj": 14,
+          "g": 6,
+          "e": 2,
+          "p": 6,
+          "gf": 15,
+          "gc": 21,
+          "puntos": 20,
+          "ppp": 1.43,
+          "victorias_pct": 42.86
+        },
+        "visitante": {
+          "pj": 15,
+          "g": 1,
+          "e": 3,
+          "p": 11,
+          "gf": 11,
+          "gc": 24,
+          "puntos": 6,
+          "ppp": 0.4,
+          "victorias_pct": 6.67
+        }
+      },
+      "Västerås": {
+        "visitante": {
+          "pj": 15,
+          "g": 7,
+          "e": 2,
+          "p": 6,
+          "gf": 21,
+          "gc": 26,
+          "puntos": 23,
+          "ppp": 1.53,
+          "victorias_pct": 46.67
+        },
+        "local": {
+          "pj": 14,
+          "g": 6,
+          "e": 4,
+          "p": 4,
+          "gf": 20,
+          "gc": 15,
+          "puntos": 22,
+          "ppp": 1.57,
+          "victorias_pct": 42.86
+        }
+      },
+      "Örgryte": {
+        "local": {
+          "pj": 15,
+          "g": 3,
+          "e": 7,
+          "p": 5,
+          "gf": 25,
+          "gc": 26,
+          "puntos": 16,
+          "ppp": 1.07,
+          "victorias_pct": 20.0
+        },
+        "visitante": {
+          "pj": 14,
+          "g": 2,
+          "e": 1,
+          "p": 11,
+          "gf": 11,
+          "gc": 36,
+          "puntos": 7,
+          "ppp": 0.5,
+          "victorias_pct": 14.29
+        }
+      },
+      "Malmö FF": {
+        "visitante": {
+          "pj": 15,
+          "g": 7,
+          "e": 5,
+          "p": 3,
+          "gf": 17,
+          "gc": 14,
+          "puntos": 26,
+          "ppp": 1.73,
+          "victorias_pct": 46.67
+        },
+        "local": {
+          "pj": 14,
+          "g": 5,
+          "e": 1,
+          "p": 8,
+          "gf": 26,
+          "gc": 23,
+          "puntos": 16,
+          "ppp": 1.14,
+          "victorias_pct": 35.71
+        }
+      },
+      "Elfsborg": {
+        "local": {
+          "pj": 14,
+          "g": 8,
+          "e": 4,
+          "p": 2,
+          "gf": 23,
+          "gc": 10,
+          "puntos": 28,
+          "ppp": 2.0,
+          "victorias_pct": 57.14
+        },
+        "visitante": {
+          "pj": 15,
+          "g": 4,
+          "e": 6,
+          "p": 5,
+          "gf": 20,
+          "gc": 23,
+          "puntos": 18,
+          "ppp": 1.2,
+          "victorias_pct": 26.67
+        }
+      },
+      "IFK Göteborg": {
+        "visitante": {
+          "pj": 15,
+          "g": 4,
+          "e": 4,
+          "p": 7,
+          "gf": 20,
+          "gc": 35,
+          "puntos": 16,
+          "ppp": 1.07,
+          "victorias_pct": 26.67
+        },
+        "local": {
+          "pj": 14,
+          "g": 6,
+          "e": 5,
+          "p": 3,
+          "gf": 17,
+          "gc": 14,
+          "puntos": 23,
+          "ppp": 1.64,
+          "victorias_pct": 42.86
+        }
+      },
+      "Häcken": {
+        "local": {
+          "pj": 15,
+          "g": 8,
+          "e": 5,
+          "p": 2,
+          "gf": 28,
+          "gc": 19,
+          "puntos": 29,
+          "ppp": 1.93,
+          "victorias_pct": 53.33
+        },
+        "visitante": {
+          "pj": 14,
+          "g": 6,
+          "e": 5,
+          "p": 3,
+          "gf": 24,
+          "gc": 15,
+          "puntos": 23,
+          "ppp": 1.64,
+          "victorias_pct": 42.86
+        }
+      },
+      "Brommapojkarna": {
+        "visitante": {
+          "pj": 14,
+          "g": 5,
+          "e": 3,
+          "p": 6,
+          "gf": 24,
+          "gc": 29,
+          "puntos": 18,
+          "ppp": 1.29,
+          "victorias_pct": 35.71
+        },
+        "local": {
+          "pj": 15,
+          "g": 4,
+          "e": 5,
+          "p": 6,
+          "gf": 15,
+          "gc": 18,
+          "puntos": 17,
+          "ppp": 1.13,
+          "victorias_pct": 26.67
+        }
+      },
+      "GAIS": {
+        "local": {
+          "pj": 15,
+          "g": 7,
+          "e": 5,
+          "p": 3,
+          "gf": 22,
+          "gc": 8,
+          "puntos": 26,
+          "ppp": 1.73,
+          "victorias_pct": 46.67
+        },
+        "visitante": {
+          "pj": 14,
+          "g": 5,
+          "e": 2,
+          "p": 7,
+          "gf": 17,
+          "gc": 21,
+          "puntos": 17,
+          "ppp": 1.21,
+          "victorias_pct": 35.71
+        }
+      },
+      "Djurgården": {
+        "visitante": {
+          "pj": 15,
+          "g": 9,
+          "e": 2,
+          "p": 4,
+          "gf": 22,
+          "gc": 11,
+          "puntos": 29,
+          "ppp": 1.93,
+          "victorias_pct": 60.0
+        },
+        "local": {
+          "pj": 14,
+          "g": 7,
+          "e": 2,
+          "p": 5,
+          "gf": 34,
+          "gc": 17,
+          "puntos": 23,
+          "ppp": 1.64,
+          "victorias_pct": 50.0
+        }
+      }
+    },
+    "SUI": {
+      "Lausanne-Sport": {
+        "local": {
+          "pj": 7,
+          "g": 0,
+          "e": 3,
+          "p": 4,
+          "gf": 11,
+          "gc": 18,
+          "puntos": 3,
+          "ppp": 0.43,
+          "victorias_pct": 0.0
+        },
+        "visitante": {
+          "pj": 7,
+          "g": 1,
+          "e": 2,
+          "p": 4,
+          "gf": 3,
+          "gc": 7,
+          "puntos": 5,
+          "ppp": 0.71,
+          "victorias_pct": 14.29
+        }
+      },
+      "Grasshoppers": {
+        "visitante": {
+          "pj": 7,
+          "g": 1,
+          "e": 2,
+          "p": 4,
+          "gf": 7,
+          "gc": 15,
+          "puntos": 5,
+          "ppp": 0.71,
+          "victorias_pct": 14.29
+        },
+        "local": {
+          "pj": 7,
+          "g": 1,
+          "e": 3,
+          "p": 3,
+          "gf": 10,
+          "gc": 16,
+          "puntos": 6,
+          "ppp": 0.86,
+          "victorias_pct": 14.29
+        }
+      },
+      "Servette": {
+        "local": {
+          "pj": 7,
+          "g": 3,
+          "e": 2,
+          "p": 2,
+          "gf": 8,
+          "gc": 6,
+          "puntos": 11,
+          "ppp": 1.57,
+          "victorias_pct": 42.86
+        },
+        "visitante": {
+          "pj": 7,
+          "g": 2,
+          "e": 0,
+          "p": 5,
+          "gf": 9,
+          "gc": 12,
+          "puntos": 6,
+          "ppp": 0.86,
+          "victorias_pct": 28.57
+        }
+      },
+      "Basel": {
+        "visitante": {
+          "pj": 7,
+          "g": 3,
+          "e": 2,
+          "p": 2,
+          "gf": 14,
+          "gc": 14,
+          "puntos": 11,
+          "ppp": 1.57,
+          "victorias_pct": 42.86
+        },
+        "local": {
+          "pj": 7,
+          "g": 1,
+          "e": 1,
+          "p": 5,
+          "gf": 7,
+          "gc": 13,
+          "puntos": 4,
+          "ppp": 0.57,
+          "victorias_pct": 14.29
+        }
+      },
+      "Luzern": {
+        "local": {
+          "pj": 7,
+          "g": 3,
+          "e": 1,
+          "p": 3,
+          "gf": 14,
+          "gc": 13,
+          "puntos": 10,
+          "ppp": 1.43,
+          "victorias_pct": 42.86
+        },
+        "visitante": {
+          "pj": 7,
+          "g": 1,
+          "e": 3,
+          "p": 3,
+          "gf": 9,
+          "gc": 15,
+          "puntos": 6,
+          "ppp": 0.86,
+          "victorias_pct": 14.29
+        }
+      },
+      "FC Thun": {
+        "visitante": {
+          "pj": 8,
+          "g": 4,
+          "e": 0,
+          "p": 4,
+          "gf": 22,
+          "gc": 23,
+          "puntos": 12,
+          "ppp": 1.5,
+          "victorias_pct": 50.0
+        },
+        "local": {
+          "pj": 6,
+          "g": 0,
+          "e": 2,
+          "p": 4,
+          "gf": 7,
+          "gc": 17,
+          "puntos": 2,
+          "ppp": 0.33,
+          "victorias_pct": 0.0
+        }
+      },
+      "Young Boys": {
+        "local": {
+          "pj": 8,
+          "g": 5,
+          "e": 2,
+          "p": 1,
+          "gf": 25,
+          "gc": 19,
+          "puntos": 17,
+          "ppp": 2.12,
+          "victorias_pct": 62.5
+        },
+        "visitante": {
+          "pj": 6,
+          "g": 4,
+          "e": 2,
+          "p": 0,
+          "gf": 19,
+          "gc": 8,
+          "puntos": 14,
+          "ppp": 2.33,
+          "victorias_pct": 66.67
+        }
+      },
+      "Sion": {
+        "visitante": {
+          "pj": 7,
+          "g": 4,
+          "e": 1,
+          "p": 2,
+          "gf": 17,
+          "gc": 11,
+          "puntos": 13,
+          "ppp": 1.86,
+          "victorias_pct": 57.14
+        },
+        "local": {
+          "pj": 7,
+          "g": 5,
+          "e": 1,
+          "p": 1,
+          "gf": 14,
+          "gc": 7,
+          "puntos": 16,
+          "ppp": 2.29,
+          "victorias_pct": 71.43
+        }
+      },
+      "Lugano": {
+        "local": {
+          "pj": 8,
+          "g": 7,
+          "e": 1,
+          "p": 0,
+          "gf": 22,
+          "gc": 6,
+          "puntos": 22,
+          "ppp": 2.75,
+          "victorias_pct": 87.5
+        },
+        "visitante": {
+          "pj": 6,
+          "g": 5,
+          "e": 0,
+          "p": 1,
+          "gf": 16,
+          "gc": 10,
+          "puntos": 15,
+          "ppp": 2.5,
+          "victorias_pct": 83.33
+        }
+      },
+      "Vaduz": {
+        "visitante": {
+          "pj": 8,
+          "g": 0,
+          "e": 2,
+          "p": 6,
+          "gf": 12,
+          "gc": 19,
+          "puntos": 2,
+          "ppp": 0.25,
+          "victorias_pct": 0.0
+        },
+        "local": {
+          "pj": 6,
+          "g": 3,
+          "e": 0,
+          "p": 3,
+          "gf": 14,
+          "gc": 12,
+          "puntos": 9,
+          "ppp": 1.5,
+          "victorias_pct": 50.0
+        }
+      },
+      "St.Gallen": {
+        "local": {
+          "pj": 7,
+          "g": 4,
+          "e": 1,
+          "p": 2,
+          "gf": 15,
+          "gc": 11,
+          "puntos": 13,
+          "ppp": 1.86,
+          "victorias_pct": 57.14
+        },
+        "visitante": {
+          "pj": 7,
+          "g": 3,
+          "e": 1,
+          "p": 3,
+          "gf": 11,
+          "gc": 13,
+          "puntos": 10,
+          "ppp": 1.43,
+          "victorias_pct": 42.86
+        }
+      },
+      "Zürich": {
+        "visitante": {
+          "pj": 7,
+          "g": 2,
+          "e": 3,
+          "p": 2,
+          "gf": 12,
+          "gc": 15,
+          "puntos": 9,
+          "ppp": 1.29,
+          "victorias_pct": 28.57
+        },
+        "local": {
+          "pj": 7,
+          "g": 4,
+          "e": 1,
+          "p": 2,
+          "gf": 15,
+          "gc": 13,
+          "puntos": 13,
+          "ppp": 1.86,
+          "victorias_pct": 57.14
+        }
+      }
+    },
+    "TUR": {
+      "Galatasaray": {
+        "local": {
+          "pj": 7,
+          "g": 6,
+          "e": 1,
+          "p": 0,
+          "gf": 17,
+          "gc": 10,
+          "puntos": 19,
+          "ppp": 2.71,
+          "victorias_pct": 85.71
+        },
+        "visitante": {
+          "pj": 5,
+          "g": 4,
+          "e": 0,
+          "p": 1,
+          "gf": 12,
+          "gc": 6,
+          "puntos": 12,
+          "ppp": 2.4,
+          "victorias_pct": 80.0
+        }
+      },
+      "Çorum": {
+        "visitante": {
+          "pj": 7,
+          "g": 3,
+          "e": 1,
+          "p": 3,
+          "gf": 17,
+          "gc": 16,
+          "puntos": 10,
+          "ppp": 1.43,
+          "victorias_pct": 42.86
+        },
+        "local": {
+          "pj": 5,
+          "g": 2,
+          "e": 0,
+          "p": 3,
+          "gf": 6,
+          "gc": 9,
+          "puntos": 6,
+          "ppp": 1.2,
+          "victorias_pct": 40.0
+        }
+      },
+      "Kasımpaşa": {
+        "local": {
+          "pj": 6,
+          "g": 2,
+          "e": 4,
+          "p": 0,
+          "gf": 11,
+          "gc": 7,
+          "puntos": 10,
+          "ppp": 1.67,
+          "victorias_pct": 33.33
+        },
+        "visitante": {
+          "pj": 6,
+          "g": 4,
+          "e": 1,
+          "p": 1,
+          "gf": 8,
+          "gc": 5,
+          "puntos": 13,
+          "ppp": 2.17,
+          "victorias_pct": 66.67
+        }
+      },
+      "Trabzonspor": {
+        "visitante": {
+          "pj": 6,
+          "g": 3,
+          "e": 1,
+          "p": 2,
+          "gf": 11,
+          "gc": 7,
+          "puntos": 10,
+          "ppp": 1.67,
+          "victorias_pct": 50.0
+        },
+        "local": {
+          "pj": 6,
+          "g": 6,
+          "e": 0,
+          "p": 0,
+          "gf": 16,
+          "gc": 1,
+          "puntos": 18,
+          "ppp": 3.0,
+          "victorias_pct": 100.0
+        }
+      },
+      "Konyaspor": {
+        "local": {
+          "pj": 7,
+          "g": 2,
+          "e": 1,
+          "p": 4,
+          "gf": 6,
+          "gc": 11,
+          "puntos": 7,
+          "ppp": 1.0,
+          "victorias_pct": 28.57
+        },
+        "visitante": {
+          "pj": 5,
+          "g": 0,
+          "e": 1,
+          "p": 4,
+          "gf": 2,
+          "gc": 7,
+          "puntos": 1,
+          "ppp": 0.2,
+          "victorias_pct": 0.0
+        }
+      },
+      "Rizespor": {
+        "visitante": {
+          "pj": 7,
+          "g": 4,
+          "e": 2,
+          "p": 1,
+          "gf": 10,
+          "gc": 5,
+          "puntos": 14,
+          "ppp": 2.0,
+          "victorias_pct": 57.14
+        },
+        "local": {
+          "pj": 5,
+          "g": 1,
+          "e": 0,
+          "p": 4,
+          "gf": 5,
+          "gc": 11,
+          "puntos": 3,
+          "ppp": 0.6,
+          "victorias_pct": 20.0
+        }
+      },
+      "Gaziantep FK": {
+        "local": {
+          "pj": 6,
+          "g": 0,
+          "e": 2,
+          "p": 4,
+          "gf": 3,
+          "gc": 11,
+          "puntos": 2,
+          "ppp": 0.33,
+          "victorias_pct": 0.0
+        },
+        "visitante": {
+          "pj": 6,
+          "g": 2,
+          "e": 0,
+          "p": 4,
+          "gf": 6,
+          "gc": 9,
+          "puntos": 6,
+          "ppp": 1.0,
+          "victorias_pct": 33.33
+        }
+      },
+      "Alanyaspor": {
+        "visitante": {
+          "pj": 7,
+          "g": 2,
+          "e": 1,
+          "p": 4,
+          "gf": 6,
+          "gc": 14,
+          "puntos": 7,
+          "ppp": 1.0,
+          "victorias_pct": 28.57
+        },
+        "local": {
+          "pj": 5,
+          "g": 1,
+          "e": 2,
+          "p": 2,
+          "gf": 4,
+          "gc": 6,
+          "puntos": 5,
+          "ppp": 1.0,
+          "victorias_pct": 20.0
+        }
+      },
+      "Gençlerbirliği": {
+        "local": {
+          "pj": 7,
+          "g": 3,
+          "e": 2,
+          "p": 2,
+          "gf": 12,
+          "gc": 7,
+          "puntos": 11,
+          "ppp": 1.57,
+          "victorias_pct": 42.86
+        },
+        "visitante": {
+          "pj": 5,
+          "g": 1,
+          "e": 0,
+          "p": 4,
+          "gf": 1,
+          "gc": 14,
+          "puntos": 3,
+          "ppp": 0.6,
+          "victorias_pct": 20.0
+        }
+      },
+      "Fenerbahçe": {
+        "visitante": {
+          "pj": 7,
+          "g": 3,
+          "e": 2,
+          "p": 2,
+          "gf": 14,
+          "gc": 6,
+          "puntos": 11,
+          "ppp": 1.57,
+          "victorias_pct": 42.86
+        },
+        "local": {
+          "pj": 5,
+          "g": 3,
+          "e": 0,
+          "p": 2,
+          "gf": 17,
+          "gc": 6,
+          "puntos": 9,
+          "ppp": 1.8,
+          "victorias_pct": 60.0
+        }
+      },
+      "İstanbul Başakşehir": {
+        "local": {
+          "pj": 7,
+          "g": 5,
+          "e": 1,
+          "p": 1,
+          "gf": 20,
+          "gc": 9,
+          "puntos": 16,
+          "ppp": 2.29,
+          "victorias_pct": 71.43
+        },
+        "visitante": {
+          "pj": 5,
+          "g": 1,
+          "e": 1,
+          "p": 3,
+          "gf": 3,
+          "gc": 10,
+          "puntos": 4,
+          "ppp": 0.8,
+          "victorias_pct": 20.0
+        }
+      },
+      "Kocaelispor": {
+        "visitante": {
+          "pj": 6,
+          "g": 3,
+          "e": 0,
+          "p": 3,
+          "gf": 7,
+          "gc": 7,
+          "puntos": 9,
+          "ppp": 1.5,
+          "victorias_pct": 50.0
+        },
+        "local": {
+          "pj": 6,
+          "g": 3,
+          "e": 2,
+          "p": 1,
+          "gf": 8,
+          "gc": 4,
+          "puntos": 11,
+          "ppp": 1.83,
+          "victorias_pct": 50.0
+        }
+      },
+      "Amed": {
+        "local": {
+          "pj": 7,
+          "g": 6,
+          "e": 0,
+          "p": 1,
+          "gf": 19,
+          "gc": 6,
+          "puntos": 18,
+          "ppp": 2.57,
+          "victorias_pct": 85.71
+        },
+        "visitante": {
+          "pj": 5,
+          "g": 1,
+          "e": 2,
+          "p": 2,
+          "gf": 9,
+          "gc": 11,
+          "puntos": 5,
+          "ppp": 1.0,
+          "victorias_pct": 20.0
+        }
+      },
+      "Erzurumspor FK": {
+        "visitante": {
+          "pj": 6,
+          "g": 1,
+          "e": 2,
+          "p": 3,
+          "gf": 5,
+          "gc": 10,
+          "puntos": 5,
+          "ppp": 0.83,
+          "victorias_pct": 16.67
+        },
+        "local": {
+          "pj": 6,
+          "g": 3,
+          "e": 0,
+          "p": 3,
+          "gf": 5,
+          "gc": 8,
+          "puntos": 9,
+          "ppp": 1.5,
+          "victorias_pct": 50.0
+        }
+      },
+      "Beşiktaş": {
+        "local": {
+          "pj": 6,
+          "g": 6,
+          "e": 0,
+          "p": 0,
+          "gf": 17,
+          "gc": 3,
+          "puntos": 18,
+          "ppp": 3.0,
+          "victorias_pct": 100.0
+        },
+        "visitante": {
+          "pj": 6,
+          "g": 2,
+          "e": 1,
+          "p": 3,
+          "gf": 10,
+          "gc": 11,
+          "puntos": 7,
+          "ppp": 1.17,
+          "victorias_pct": 33.33
+        }
+      },
+      "Eyüpspor": {
+        "visitante": {
+          "pj": 6,
+          "g": 0,
+          "e": 0,
+          "p": 6,
+          "gf": 1,
+          "gc": 20,
+          "puntos": 0,
+          "ppp": 0.0,
+          "victorias_pct": 0.0
+        },
+        "local": {
+          "pj": 6,
+          "g": 1,
+          "e": 0,
+          "p": 5,
+          "gf": 2,
+          "gc": 11,
+          "puntos": 3,
+          "ppp": 0.5,
+          "victorias_pct": 16.67
+        }
+      },
+      "Samsunspor": {
+        "local": {
+          "pj": 6,
+          "g": 1,
+          "e": 1,
+          "p": 4,
+          "gf": 6,
+          "gc": 15,
+          "puntos": 4,
+          "ppp": 0.67,
+          "victorias_pct": 16.67
+        },
+        "visitante": {
+          "pj": 6,
+          "g": 1,
+          "e": 0,
+          "p": 5,
+          "gf": 6,
+          "gc": 13,
+          "puntos": 3,
+          "ppp": 0.5,
+          "victorias_pct": 16.67
+        }
+      },
+      "Göztepe": {
+        "visitante": {
+          "pj": 7,
+          "g": 4,
+          "e": 2,
+          "p": 1,
+          "gf": 16,
+          "gc": 10,
+          "puntos": 14,
+          "ppp": 2.0,
+          "victorias_pct": 57.14
+        },
+        "local": {
+          "pj": 5,
+          "g": 1,
+          "e": 1,
+          "p": 3,
+          "gf": 7,
+          "gc": 9,
+          "puntos": 4,
+          "ppp": 0.8,
+          "victorias_pct": 20.0
+        }
+      }
+    }
   },
   "candidatos": [
     {
@@ -16163,16 +18570,15 @@
       "ppp_rival": 1.08,
       "bonus_local": 0.2,
       "valoracion": 1.43,
-      "estado": "Cuota MoviOdds; no verificada en bet365",
-      "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
       "cuota": 1.2222222222222223,
-      "consultada_en": "2026-11-24T18:08:06.501519+00:00",
-      "ultimo_cambio": "2026-11-24T11:58:47.443798+00:00",
+      "estado": "Cuota MoviOdds; no verificada en bet365",
       "cuota_verificada": true,
       "casa_apuestas": "MoviOdds",
       "mercado": "1X2",
       "seleccion": "1",
-      "url_fuente": "https://moviodds.com/odds?sport=soccer"
+      "consultada_en": "2026-11-24T18:08:06.501519+00:00",
+      "url_fuente": "https://moviodds.com/odds?sport=soccer",
+      "ultimo_cambio": "2026-11-24T11:58:47.443798+00:00"
     },
     {
       "liga": "ESP",
@@ -16185,16 +18591,15 @@
       "ppp_rival": 1.0,
       "bonus_local": 0.2,
       "valoracion": 1.28,
-      "estado": "Cuota MoviOdds; no verificada en bet365",
-      "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
       "cuota": 1.5714285714285714,
-      "consultada_en": "2026-11-24T18:07:52.745864+00:00",
-      "ultimo_cambio": "2026-11-23T21:32:03.555011+00:00",
+      "estado": "Cuota MoviOdds; no verificada en bet365",
       "cuota_verificada": true,
       "casa_apuestas": "MoviOdds",
       "mercado": "1X2",
       "seleccion": "1",
-      "url_fuente": "https://moviodds.com/odds?sport=soccer"
+      "consultada_en": "2026-11-24T18:07:52.745864+00:00",
+      "url_fuente": "https://moviodds.com/odds?sport=soccer",
+      "ultimo_cambio": "2026-11-23T21:32:03.555011+00:00"
     },
     {
       "liga": "GER",
@@ -16207,16 +18612,15 @@
       "ppp_rival": 1.2,
       "bonus_local": 0.0,
       "valoracion": 1.0,
-      "estado": "Cuota MoviOdds; no verificada en bet365",
-      "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
       "cuota": 1.25,
-      "consultada_en": "2026-11-24T18:08:05.509788+00:00",
-      "ultimo_cambio": "2026-11-23T04:30:34.032987+00:00",
+      "estado": "Cuota MoviOdds; no verificada en bet365",
       "cuota_verificada": true,
       "casa_apuestas": "MoviOdds",
       "mercado": "1X2",
       "seleccion": "2",
-      "url_fuente": "https://moviodds.com/odds?sport=soccer"
+      "consultada_en": "2026-11-24T18:08:05.509788+00:00",
+      "url_fuente": "https://moviodds.com/odds?sport=soccer",
+      "ultimo_cambio": "2026-11-23T04:30:34.032987+00:00"
     },
     {
       "liga": "SCO",
@@ -16229,16 +18633,15 @@
       "ppp_rival": 1.71,
       "bonus_local": 0.2,
       "valoracion": 0.8,
-      "estado": "Cuota MoviOdds; no verificada en bet365",
-      "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
       "cuota": 1.25,
-      "consultada_en": "2026-11-24T18:07:52.758970+00:00",
-      "ultimo_cambio": "2026-11-23T04:30:48.669284+00:00",
+      "estado": "Cuota MoviOdds; no verificada en bet365",
       "cuota_verificada": true,
       "casa_apuestas": "MoviOdds",
       "mercado": "1X2",
       "seleccion": "1",
-      "url_fuente": "https://moviodds.com/odds?sport=soccer"
+      "consultada_en": "2026-11-24T18:07:52.758970+00:00",
+      "url_fuente": "https://moviodds.com/odds?sport=soccer",
+      "ultimo_cambio": "2026-11-23T04:30:48.669284+00:00"
     },
     {
       "liga": "NOR",
@@ -16252,8 +18655,7 @@
       "bonus_local": 0.2,
       "valoracion": 1.46,
       "cuota": null,
-      "estado": "Pendiente de cuota verificada",
-      "motivo_cuota_moviodds": "Cuota vigente fuera de 1,20–1,80"
+      "estado": "Pendiente de cuota verificada"
     },
     {
       "liga": "ESP",
@@ -16266,16 +18668,15 @@
       "ppp_rival": 0.85,
       "bonus_local": 0.0,
       "valoracion": 1.53,
-      "estado": "Cuota MoviOdds; no verificada en bet365",
-      "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
       "cuota": 1.48,
-      "consultada_en": "2026-11-24T18:07:52.736030+00:00",
-      "ultimo_cambio": "2026-11-23T22:10:18.767637+00:00",
+      "estado": "Cuota MoviOdds; no verificada en bet365",
       "cuota_verificada": true,
       "casa_apuestas": "MoviOdds",
       "mercado": "1X2",
       "seleccion": "2",
-      "url_fuente": "https://moviodds.com/odds?sport=soccer"
+      "consultada_en": "2026-11-24T18:07:52.736030+00:00",
+      "url_fuente": "https://moviodds.com/odds?sport=soccer",
+      "ultimo_cambio": "2026-11-23T22:10:18.767637+00:00"
     },
     {
       "liga": "NED",
@@ -16288,16 +18689,15 @@
       "ppp_rival": 1.31,
       "bonus_local": 0.2,
       "valoracion": 1.12,
-      "estado": "Cuota MoviOdds; no verificada en bet365",
-      "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
       "cuota": 1.2222222222222223,
-      "consultada_en": "2026-11-24T18:08:05.497824+00:00",
-      "ultimo_cambio": "2026-11-23T04:55:16.397652+00:00",
+      "estado": "Cuota MoviOdds; no verificada en bet365",
       "cuota_verificada": true,
       "casa_apuestas": "MoviOdds",
       "mercado": "1X2",
       "seleccion": "1",
-      "url_fuente": "https://moviodds.com/odds?sport=soccer"
+      "consultada_en": "2026-11-24T18:08:05.497824+00:00",
+      "url_fuente": "https://moviodds.com/odds?sport=soccer",
+      "ultimo_cambio": "2026-11-23T04:55:16.397652+00:00"
     },
     {
       "liga": "FRA",
@@ -16311,8 +18711,7 @@
       "bonus_local": 0.2,
       "valoracion": 1.11,
       "cuota": null,
-      "estado": "Pendiente de cuota verificada",
-      "motivo_cuota_moviodds": "Partido sin coincidencia inequívoca en MoviOdds"
+      "estado": "Pendiente de cuota verificada"
     },
     {
       "liga": "ITA",
@@ -16325,16 +18724,15 @@
       "ppp_rival": 1.33,
       "bonus_local": 0.2,
       "valoracion": 1.29,
-      "estado": "Cuota MoviOdds; no verificada en bet365",
-      "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
       "cuota": 1.3,
-      "consultada_en": "2026-11-24T18:07:52.690909+00:00",
-      "ultimo_cambio": "2026-11-23T08:40:34.863556+00:00",
+      "estado": "Cuota MoviOdds; no verificada en bet365",
       "cuota_verificada": true,
       "casa_apuestas": "MoviOdds",
       "mercado": "1X2",
       "seleccion": "1",
-      "url_fuente": "https://moviodds.com/odds?sport=soccer"
+      "consultada_en": "2026-11-24T18:07:52.690909+00:00",
+      "url_fuente": "https://moviodds.com/odds?sport=soccer",
+      "ultimo_cambio": "2026-11-23T08:40:34.863556+00:00"
     },
     {
       "liga": "ESP",
@@ -16348,8 +18746,7 @@
       "bonus_local": 0.2,
       "valoracion": 1.51,
       "cuota": null,
-      "estado": "Pendiente de cuota verificada",
-      "motivo_cuota_moviodds": "Cuota vigente fuera de 1,20–1,80"
+      "estado": "Pendiente de cuota verificada"
     },
     {
       "liga": "GER",
@@ -16363,8 +18760,7 @@
       "bonus_local": 0.0,
       "valoracion": -0.1,
       "cuota": null,
-      "estado": "Pendiente de cuota verificada",
-      "motivo_cuota_moviodds": "Cuota vigente fuera de 1,20–1,80"
+      "estado": "Pendiente de cuota verificada"
     },
     {
       "liga": "SCO",
@@ -16378,8 +18774,7 @@
       "bonus_local": 0.0,
       "valoracion": 0.66,
       "cuota": null,
-      "estado": "Pendiente de cuota verificada",
-      "motivo_cuota_moviodds": "Cuota vigente fuera de 1,20–1,80"
+      "estado": "Pendiente de cuota verificada"
     },
     {
       "liga": "ESP",
@@ -16392,16 +18787,15 @@
       "ppp_rival": 1.15,
       "bonus_local": 0.0,
       "valoracion": 1.62,
-      "estado": "Cuota MoviOdds; no verificada en bet365",
-      "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
       "cuota": 1.25,
-      "consultada_en": "2026-11-24T18:07:52.763206+00:00",
-      "ultimo_cambio": "2026-11-23T04:30:50.584526+00:00",
+      "estado": "Cuota MoviOdds; no verificada en bet365",
       "cuota_verificada": true,
       "casa_apuestas": "MoviOdds",
       "mercado": "1X2",
       "seleccion": "2",
-      "url_fuente": "https://moviodds.com/odds?sport=soccer"
+      "consultada_en": "2026-11-24T18:07:52.763206+00:00",
+      "url_fuente": "https://moviodds.com/odds?sport=soccer",
+      "ultimo_cambio": "2026-11-23T04:30:50.584526+00:00"
     },
     {
       "liga": "SUI",
@@ -16415,8 +18809,7 @@
       "bonus_local": 0.0,
       "valoracion": 0.14,
       "cuota": null,
-      "estado": "Pendiente de cuota verificada",
-      "motivo_cuota_moviodds": "Cuota vigente fuera de 1,20–1,80"
+      "estado": "Pendiente de cuota verificada"
     },
     {
       "liga": "GRE",
@@ -16431,14 +18824,13 @@
       "valoracion": 0.36,
       "cuota": 1.7272727272727273,
       "estado": "Cuota MoviOdds; no verificada en bet365",
-      "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
-      "consultada_en": "2026-11-24T18:07:52.740773+00:00",
-      "ultimo_cambio": "2026-11-23T04:30:46.990121+00:00",
       "cuota_verificada": true,
       "casa_apuestas": "MoviOdds",
       "mercado": "1X2",
       "seleccion": "2",
-      "url_fuente": "https://moviodds.com/odds?sport=soccer"
+      "consultada_en": "2026-11-24T18:07:52.740773+00:00",
+      "url_fuente": "https://moviodds.com/odds?sport=soccer",
+      "ultimo_cambio": "2026-11-23T04:30:46.990121+00:00"
     },
     {
       "liga": "GRE",
@@ -16453,14 +18845,13 @@
       "valoracion": 0.5,
       "cuota": 1.6153846153846154,
       "estado": "Cuota MoviOdds; no verificada en bet365",
-      "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
-      "consultada_en": "2026-11-24T18:07:52.760627+00:00",
-      "ultimo_cambio": "2026-11-24T13:49:00.603306+00:00",
       "cuota_verificada": true,
       "casa_apuestas": "MoviOdds",
       "mercado": "1X2",
       "seleccion": "1",
-      "url_fuente": "https://moviodds.com/odds?sport=soccer"
+      "consultada_en": "2026-11-24T18:07:52.760627+00:00",
+      "url_fuente": "https://moviodds.com/odds?sport=soccer",
+      "ultimo_cambio": "2026-11-24T13:49:00.603306+00:00"
     },
     {
       "liga": "TUR",
@@ -16474,8 +18865,7 @@
       "bonus_local": 0.0,
       "valoracion": 0.5,
       "cuota": null,
-      "estado": "Pendiente de cuota verificada",
-      "motivo_cuota_moviodds": "Cuota vigente fuera de 1,20–1,80"
+      "estado": "Pendiente de cuota verificada"
     },
     {
       "liga": "ITA",
@@ -16488,16 +18878,15 @@
       "ppp_rival": 1.33,
       "bonus_local": 0.0,
       "valoracion": 0.92,
-      "estado": "Cuota MoviOdds; no verificada en bet365",
-      "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
       "cuota": 1.7,
-      "consultada_en": "2026-11-24T18:07:52.687733+00:00",
-      "ultimo_cambio": "2026-11-23T04:30:44.708320+00:00",
+      "estado": "Cuota MoviOdds; no verificada en bet365",
       "cuota_verificada": true,
       "casa_apuestas": "MoviOdds",
       "mercado": "1X2",
       "seleccion": "2",
-      "url_fuente": "https://moviodds.com/odds?sport=soccer"
+      "consultada_en": "2026-11-24T18:07:52.687733+00:00",
+      "url_fuente": "https://moviodds.com/odds?sport=soccer",
+      "ultimo_cambio": "2026-11-23T04:30:44.708320+00:00"
     },
     {
       "liga": "POR",
@@ -16511,8 +18900,7 @@
       "bonus_local": 0.2,
       "valoracion": 1.57,
       "cuota": null,
-      "estado": "Pendiente de cuota verificada",
-      "motivo_cuota_moviodds": "Cuota vigente fuera de 1,20–1,80"
+      "estado": "Pendiente de cuota verificada"
     }
   ],
   "dobles": [
@@ -16529,16 +18917,15 @@
           "ppp_rival": 0.85,
           "bonus_local": 0.0,
           "valoracion": 1.53,
-          "estado": "Cuota MoviOdds; no verificada en bet365",
-          "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
           "cuota": 1.48,
-          "consultada_en": "2026-11-24T18:07:52.736030+00:00",
-          "ultimo_cambio": "2026-11-23T22:10:18.767637+00:00",
+          "estado": "Cuota MoviOdds; no verificada en bet365",
           "cuota_verificada": true,
           "casa_apuestas": "MoviOdds",
           "mercado": "1X2",
           "seleccion": "2",
-          "url_fuente": "https://moviodds.com/odds?sport=soccer"
+          "consultada_en": "2026-11-24T18:07:52.736030+00:00",
+          "url_fuente": "https://moviodds.com/odds?sport=soccer",
+          "ultimo_cambio": "2026-11-23T22:10:18.767637+00:00"
         },
         {
           "liga": "ESP",
@@ -16551,16 +18938,15 @@
           "ppp_rival": 1.15,
           "bonus_local": 0.0,
           "valoracion": 1.62,
-          "estado": "Cuota MoviOdds; no verificada en bet365",
-          "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
           "cuota": 1.25,
-          "consultada_en": "2026-11-24T18:07:52.763206+00:00",
-          "ultimo_cambio": "2026-11-23T04:30:50.584526+00:00",
+          "estado": "Cuota MoviOdds; no verificada en bet365",
           "cuota_verificada": true,
           "casa_apuestas": "MoviOdds",
           "mercado": "1X2",
           "seleccion": "2",
-          "url_fuente": "https://moviodds.com/odds?sport=soccer"
+          "consultada_en": "2026-11-24T18:07:52.763206+00:00",
+          "url_fuente": "https://moviodds.com/odds?sport=soccer",
+          "ultimo_cambio": "2026-11-23T04:30:50.584526+00:00"
         }
       ],
       "cuota_combinada": 1.85
@@ -16578,16 +18964,15 @@
           "ppp_rival": 1.08,
           "bonus_local": 0.2,
           "valoracion": 1.43,
-          "estado": "Cuota MoviOdds; no verificada en bet365",
-          "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
           "cuota": 1.2222222222222223,
-          "consultada_en": "2026-11-24T18:08:06.501519+00:00",
-          "ultimo_cambio": "2026-11-24T11:58:47.443798+00:00",
+          "estado": "Cuota MoviOdds; no verificada en bet365",
           "cuota_verificada": true,
           "casa_apuestas": "MoviOdds",
           "mercado": "1X2",
           "seleccion": "1",
-          "url_fuente": "https://moviodds.com/odds?sport=soccer"
+          "consultada_en": "2026-11-24T18:08:06.501519+00:00",
+          "url_fuente": "https://moviodds.com/odds?sport=soccer",
+          "ultimo_cambio": "2026-11-24T11:58:47.443798+00:00"
         },
         {
           "liga": "ITA",
@@ -16600,16 +18985,15 @@
           "ppp_rival": 1.33,
           "bonus_local": 0.2,
           "valoracion": 1.29,
-          "estado": "Cuota MoviOdds; no verificada en bet365",
-          "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
           "cuota": 1.3,
-          "consultada_en": "2026-11-24T18:07:52.690909+00:00",
-          "ultimo_cambio": "2026-11-23T08:40:34.863556+00:00",
+          "estado": "Cuota MoviOdds; no verificada en bet365",
           "cuota_verificada": true,
           "casa_apuestas": "MoviOdds",
           "mercado": "1X2",
           "seleccion": "1",
-          "url_fuente": "https://moviodds.com/odds?sport=soccer"
+          "consultada_en": "2026-11-24T18:07:52.690909+00:00",
+          "url_fuente": "https://moviodds.com/odds?sport=soccer",
+          "ultimo_cambio": "2026-11-23T08:40:34.863556+00:00"
         }
       ],
       "cuota_combinada": 1.589
@@ -16627,16 +19011,15 @@
           "ppp_rival": 1.0,
           "bonus_local": 0.2,
           "valoracion": 1.28,
-          "estado": "Cuota MoviOdds; no verificada en bet365",
-          "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
           "cuota": 1.5714285714285714,
-          "consultada_en": "2026-11-24T18:07:52.745864+00:00",
-          "ultimo_cambio": "2026-11-23T21:32:03.555011+00:00",
+          "estado": "Cuota MoviOdds; no verificada en bet365",
           "cuota_verificada": true,
           "casa_apuestas": "MoviOdds",
           "mercado": "1X2",
           "seleccion": "1",
-          "url_fuente": "https://moviodds.com/odds?sport=soccer"
+          "consultada_en": "2026-11-24T18:07:52.745864+00:00",
+          "url_fuente": "https://moviodds.com/odds?sport=soccer",
+          "ultimo_cambio": "2026-11-23T21:32:03.555011+00:00"
         },
         {
           "liga": "NED",
@@ -16649,16 +19032,15 @@
           "ppp_rival": 1.31,
           "bonus_local": 0.2,
           "valoracion": 1.12,
-          "estado": "Cuota MoviOdds; no verificada en bet365",
-          "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
           "cuota": 1.2222222222222223,
-          "consultada_en": "2026-11-24T18:08:05.497824+00:00",
-          "ultimo_cambio": "2026-11-23T04:55:16.397652+00:00",
+          "estado": "Cuota MoviOdds; no verificada en bet365",
           "cuota_verificada": true,
           "casa_apuestas": "MoviOdds",
           "mercado": "1X2",
           "seleccion": "1",
-          "url_fuente": "https://moviodds.com/odds?sport=soccer"
+          "consultada_en": "2026-11-24T18:08:05.497824+00:00",
+          "url_fuente": "https://moviodds.com/odds?sport=soccer",
+          "ultimo_cambio": "2026-11-23T04:55:16.397652+00:00"
         }
       ],
       "cuota_combinada": 1.921
@@ -16676,16 +19058,15 @@
           "ppp_rival": 1.2,
           "bonus_local": 0.0,
           "valoracion": 1.0,
-          "estado": "Cuota MoviOdds; no verificada en bet365",
-          "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
           "cuota": 1.25,
-          "consultada_en": "2026-11-24T18:08:05.509788+00:00",
-          "ultimo_cambio": "2026-11-23T04:30:34.032987+00:00",
+          "estado": "Cuota MoviOdds; no verificada en bet365",
           "cuota_verificada": true,
           "casa_apuestas": "MoviOdds",
           "mercado": "1X2",
           "seleccion": "2",
-          "url_fuente": "https://moviodds.com/odds?sport=soccer"
+          "consultada_en": "2026-11-24T18:08:05.509788+00:00",
+          "url_fuente": "https://moviodds.com/odds?sport=soccer",
+          "ultimo_cambio": "2026-11-23T04:30:34.032987+00:00"
         },
         {
           "liga": "ITA",
@@ -16698,16 +19079,15 @@
           "ppp_rival": 1.33,
           "bonus_local": 0.0,
           "valoracion": 0.92,
-          "estado": "Cuota MoviOdds; no verificada en bet365",
-          "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
           "cuota": 1.7,
-          "consultada_en": "2026-11-24T18:07:52.687733+00:00",
-          "ultimo_cambio": "2026-11-23T04:30:44.708320+00:00",
+          "estado": "Cuota MoviOdds; no verificada en bet365",
           "cuota_verificada": true,
           "casa_apuestas": "MoviOdds",
           "mercado": "1X2",
           "seleccion": "2",
-          "url_fuente": "https://moviodds.com/odds?sport=soccer"
+          "consultada_en": "2026-11-24T18:07:52.687733+00:00",
+          "url_fuente": "https://moviodds.com/odds?sport=soccer",
+          "ultimo_cambio": "2026-11-23T04:30:44.708320+00:00"
         }
       ],
       "cuota_combinada": 2.125
@@ -16725,16 +19105,15 @@
           "ppp_rival": 1.71,
           "bonus_local": 0.2,
           "valoracion": 0.8,
-          "estado": "Cuota MoviOdds; no verificada en bet365",
-          "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
           "cuota": 1.25,
-          "consultada_en": "2026-11-24T18:07:52.758970+00:00",
-          "ultimo_cambio": "2026-11-23T04:30:48.669284+00:00",
+          "estado": "Cuota MoviOdds; no verificada en bet365",
           "cuota_verificada": true,
           "casa_apuestas": "MoviOdds",
           "mercado": "1X2",
           "seleccion": "1",
-          "url_fuente": "https://moviodds.com/odds?sport=soccer"
+          "consultada_en": "2026-11-24T18:07:52.758970+00:00",
+          "url_fuente": "https://moviodds.com/odds?sport=soccer",
+          "ultimo_cambio": "2026-11-23T04:30:48.669284+00:00"
         },
         {
           "liga": "GRE",
@@ -16749,49 +19128,27 @@
           "valoracion": 0.5,
           "cuota": 1.6153846153846154,
           "estado": "Cuota MoviOdds; no verificada en bet365",
-          "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
-          "consultada_en": "2026-11-24T18:07:52.760627+00:00",
-          "ultimo_cambio": "2026-11-24T13:49:00.603306+00:00",
           "cuota_verificada": true,
           "casa_apuestas": "MoviOdds",
           "mercado": "1X2",
           "seleccion": "1",
-          "url_fuente": "https://moviodds.com/odds?sport=soccer"
+          "consultada_en": "2026-11-24T18:07:52.760627+00:00",
+          "url_fuente": "https://moviodds.com/odds?sport=soccer",
+          "ultimo_cambio": "2026-11-24T13:49:00.603306+00:00"
         }
       ],
       "cuota_combinada": 2.019
     }
   ],
+  "fecha_estadisticas_por_liga": {
+    "DEN": "2026-11-24T18:14:09.367925+00:00",
+    "SCO": "2026-11-24T18:14:09.367925+00:00",
+    "GRE": "2026-11-24T18:14:09.367925+00:00",
+    "NOR": "2026-11-24T18:14:09.367925+00:00",
+    "SWE": "2026-11-24T18:14:09.367925+00:00",
+    "SUI": "2026-11-24T18:14:09.367925+00:00",
+    "TUR": "2026-11-24T18:14:09.367925+00:00"
+  },
   "favoritos_validados": true,
-  "ultima_actualizacion_cuotas": "2026-11-24T18:08:21.233226+00:00",
-  "diagnostico_cuotas": {
-    "partidos_proveedor": 997,
-    "candidatos": 19,
-    "candidatos_sin_hora": 0,
-    "emparejamientos_unicos": 18,
-    "emparejados_con_mercado_1x2_vigente": 18,
-    "selecciones_en_rango": 11,
-    "emparejados_con_favorito_identificado": 18,
-    "sin_cuota_vigente_del_favorito": 0,
-    "cuotas_fuera_de_1_20_a_1_80": 7,
-    "candidatos_con_nombres_exactos_en_proveedor": 6,
-    "coincidencias_nombres_sin_horario_compatible": 0,
-    "nombres_coincidentes_con_horario_mas_de_3h": 0,
-    "nombres_coincidentes_sin_hora_proveedor": 0,
-    "detalle_mercado_1x2": {
-      "con_grupo_1x2": 18,
-      "grupo_1x2_con_cotizaciones_recientes": 18
-    },
-    "formatos_fechas_cuotas": {
-      "ts:iso_con_zona": 54
-    },
-    "propuestas_equivalencias_no_validadas": [],
-    "partidos_con_polled_at": 18,
-    "antiguedad_comprobacion_minima_minutos": 0.2,
-    "antiguedad_comprobacion_maxima_minutos": 0.6,
-    "antiguedad_1x2_minima_minutos": 207.7,
-    "antiguedad_1x2_maxima_minutos": 2257.8,
-    "cotizaciones_1x2_futuras": 0,
-    "cotizaciones_1x2_mas_de_60_minutos": 54
-  }
+  "ultima_actualizacion_cuotas": "2026-11-24T18:08:21.233226+00:00"
 }
