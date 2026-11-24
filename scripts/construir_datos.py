@@ -16,6 +16,10 @@ from urllib.parse import urlparse
 
 LIGAS="GER DEN SCO ESP FRA GRE ENG ITA NOR NED POR SWE SUI TUR".split()
 
+def limite_antiguedad(inicio, ahora):
+    horas=(inicio-ahora).total_seconds()/3600
+    return 3600*(12 if horas>48 else 6 if horas>=24 else 3 if horas>=6 else 1)
+
 def clave_equipo(nombre):
     normal=unicodedata.normalize("NFKD",nombre.casefold())
     return "".join(c for c in normal if c.isalnum() and not unicodedata.combining(c))
@@ -68,7 +72,7 @@ def generar_dobles(candidatos, ahora=None):
             consulta=datetime.fromisoformat(p["consultada_en"].replace("Z","+00:00"))
             return (fecha.tzinfo is not None and fecha>ahora and
                     consulta.tzinfo is not None and consulta<fecha and
-                    0<=(ahora-consulta).total_seconds()<=3600)
+                    0<=(ahora-consulta).total_seconds()<=limite_antiguedad(fecha,ahora))
         except (KeyError,TypeError,ValueError,AttributeError):
             return False
     hoy_es=ahora.astimezone(ZoneInfo("Europe/Madrid")).date()
@@ -179,7 +183,7 @@ def aplicar_cuotas_bet365(candidatos, archivo=None):
         except ValueError:
             continue
         if (instante.tzinfo is None or instante>ahora
-                or (ahora-instante).total_seconds()>3600
+                or (ahora-instante).total_seconds()>limite_antiguedad(inicio,ahora)
                 or instante>=inicio):
             continue
         partido.update(cuota=valor,cuota_verificada=True,casa_apuestas="bet365",
