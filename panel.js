@@ -142,6 +142,13 @@ async function iniciar(){
        :diagnostico.selecciones_en_rango===0
          ?"Los partidos encontrados no tienen cuotas utilizables dentro de 1,20–1,80."
          :"");
+   if(diagnostico.cotizaciones_1x2_mas_de_60_minutos>0 &&
+      diagnostico.emparejados_con_mercado_1x2_vigente===0 &&
+      Number.isFinite(diagnostico.antiguedad_1x2_minima_minutos)){
+     detalle.textContent+=" MoviOdds devuelve cotizaciones antiguas: la más reciente tiene "+
+       Math.round(diagnostico.antiguedad_1x2_minima_minutos)+" minutos. "+
+       "No se publican como cuotas vigentes.";
+   }
    candidatosDest.parentElement.append(detalle);
  }
  const doblesDest=document.getElementById("lista-dobles");
