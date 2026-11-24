@@ -19,11 +19,20 @@ class MoviOddsValidacionTests(unittest.TestCase):
         self.assertEqual(datos["X"]["cuota"],3.2)
         self.assertEqual(datos["2"]["cuota"],5.0)
     def test_rechaza_directo_y_cuotas_antiguas(self):
-        self.partido["quotes"]=[self.cuota(minutos=90)]
+        self.partido["quotes"]=[self.cuota(minutos=361)]
         self.assertEqual(mercado_1x2(self.partido,self.ahora),{})
         self.partido["quotes"]=[self.cuota()]
         self.partido["in_play"]=True
         self.assertEqual(mercado_1x2(self.partido,self.ahora),{})
+    def test_antiguedad_variable(self):
+        for horas,limite in ((5,60),(6,180),(23,180),(24,360),(48,360),(49,720)):
+            with self.subTest(horas=horas):
+                self.partido["kickoff_utc"]=(self.ahora+timedelta(hours=horas)).isoformat()
+                self.partido["quotes"]=[self.cuota(minutos=limite)]
+                self.assertIn("1",mercado_1x2(self.partido,self.ahora))
+                self.partido["quotes"]=[self.cuota(minutos=limite+1)]
+                self.assertEqual(mercado_1x2(self.partido,self.ahora),{})
+
     def test_rechaza_mercados_distintos_y_duplicados(self):
         self.partido["quotes"]=[self.cuota(grupo=1777)]
         self.assertEqual(mercado_1x2(self.partido,self.ahora),{})
