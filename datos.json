@@ -1,7 +1,7 @@
 {
   "version": "1.2",
-  "ultima_actualizacion": "2026-11-24T18:05:03.356842+00:00",
-  "fuente": "OpenLigaDB (https://www.openligadb.de), ODbL 1.0; GER; football-data.org (PL; ENG); football-data.org (PD; ESP); football-data.org (SA; ITA); football-data.org (FL1; FRA); football-data.org (PPL; POR); football-data.org (DED; NED)",
+  "ultima_actualizacion": "2026-11-24T18:07:13.500243+00:00",
+  "fuente": "OpenLigaDB (https://www.openligadb.de), ODbL 1.0; GER; football-data.org (PL; ENG); football-data.org (PD; ESP); football-data.org (SA; ITA); football-data.org (FL1; FRA); football-data.org (PPL; POR); football-data.org (DED; NED); SportAPI.ai (https://sportapi.ai/); clasificación y calendario de DEN,SCO,GRE,NOR,SWE,SUI,TUR",
   "ligas": {
     "GER": [
       {
@@ -221,8 +221,298 @@
         "ppp": 0.4
       }
     ],
-    "DEN": [],
-    "SCO": [],
+    "DEN": [
+      {
+        "equipo": "Midtjylland",
+        "posicion": 1,
+        "pj": 15,
+        "g": 10,
+        "e": 5,
+        "p": 0,
+        "gf": 31,
+        "gc": 17,
+        "puntos": 35,
+        "ppp": 2.33
+      },
+      {
+        "equipo": "Copenhagen",
+        "posicion": 2,
+        "pj": 15,
+        "g": 10,
+        "e": 2,
+        "p": 3,
+        "gf": 29,
+        "gc": 17,
+        "puntos": 32,
+        "ppp": 2.13
+      },
+      {
+        "equipo": "Viborg",
+        "posicion": 3,
+        "pj": 15,
+        "g": 8,
+        "e": 3,
+        "p": 4,
+        "gf": 22,
+        "gc": 13,
+        "puntos": 27,
+        "ppp": 1.8
+      },
+      {
+        "equipo": "Nordsjælland",
+        "posicion": 4,
+        "pj": 15,
+        "g": 7,
+        "e": 5,
+        "p": 3,
+        "gf": 31,
+        "gc": 18,
+        "puntos": 26,
+        "ppp": 1.73
+      },
+      {
+        "equipo": "Brøndby",
+        "posicion": 5,
+        "pj": 15,
+        "g": 7,
+        "e": 1,
+        "p": 7,
+        "gf": 23,
+        "gc": 23,
+        "puntos": 22,
+        "ppp": 1.47
+      },
+      {
+        "equipo": "OB",
+        "posicion": 6,
+        "pj": 15,
+        "g": 5,
+        "e": 5,
+        "p": 5,
+        "gf": 18,
+        "gc": 20,
+        "puntos": 20,
+        "ppp": 1.33
+      },
+      {
+        "equipo": "Horsens",
+        "posicion": 7,
+        "pj": 15,
+        "g": 5,
+        "e": 4,
+        "p": 6,
+        "gf": 26,
+        "gc": 24,
+        "puntos": 19,
+        "ppp": 1.27
+      },
+      {
+        "equipo": "AGF",
+        "posicion": 8,
+        "pj": 15,
+        "g": 4,
+        "e": 6,
+        "p": 5,
+        "gf": 21,
+        "gc": 22,
+        "puntos": 18,
+        "ppp": 1.2
+      },
+      {
+        "equipo": "Silkeborg",
+        "posicion": 9,
+        "pj": 15,
+        "g": 3,
+        "e": 6,
+        "p": 6,
+        "gf": 19,
+        "gc": 27,
+        "puntos": 15,
+        "ppp": 1.0
+      },
+      {
+        "equipo": "Randers",
+        "posicion": 10,
+        "pj": 15,
+        "g": 3,
+        "e": 3,
+        "p": 9,
+        "gf": 14,
+        "gc": 27,
+        "puntos": 12,
+        "ppp": 0.8
+      },
+      {
+        "equipo": "Lyngby",
+        "posicion": 11,
+        "pj": 15,
+        "g": 2,
+        "e": 5,
+        "p": 8,
+        "gf": 20,
+        "gc": 31,
+        "puntos": 11,
+        "ppp": 0.73
+      },
+      {
+        "equipo": "Sønderjyske",
+        "posicion": 12,
+        "pj": 15,
+        "g": 2,
+        "e": 3,
+        "p": 10,
+        "gf": 20,
+        "gc": 35,
+        "puntos": 9,
+        "ppp": 0.6
+      }
+    ],
+    "SCO": [
+      {
+        "equipo": "Celtic",
+        "posicion": 1,
+        "pj": 14,
+        "g": 11,
+        "e": 1,
+        "p": 2,
+        "gf": 32,
+        "gc": 11,
+        "puntos": 34,
+        "ppp": 2.43
+      },
+      {
+        "equipo": "Rangers",
+        "posicion": 2,
+        "pj": 13,
+        "g": 9,
+        "e": 3,
+        "p": 1,
+        "gf": 23,
+        "gc": 10,
+        "puntos": 30,
+        "ppp": 2.31
+      },
+      {
+        "equipo": "Falkirk",
+        "posicion": 3,
+        "pj": 14,
+        "g": 7,
+        "e": 3,
+        "p": 4,
+        "gf": 22,
+        "gc": 15,
+        "puntos": 24,
+        "ppp": 1.71
+      },
+      {
+        "equipo": "Hearts",
+        "posicion": 4,
+        "pj": 13,
+        "g": 7,
+        "e": 2,
+        "p": 4,
+        "gf": 34,
+        "gc": 22,
+        "puntos": 23,
+        "ppp": 1.77
+      },
+      {
+        "equipo": "Dundee United",
+        "posicion": 5,
+        "pj": 13,
+        "g": 5,
+        "e": 5,
+        "p": 3,
+        "gf": 21,
+        "gc": 17,
+        "puntos": 20,
+        "ppp": 1.54
+      },
+      {
+        "equipo": "St. Johnstone",
+        "posicion": 6,
+        "pj": 14,
+        "g": 4,
+        "e": 5,
+        "p": 5,
+        "gf": 18,
+        "gc": 22,
+        "puntos": 17,
+        "ppp": 1.21
+      },
+      {
+        "equipo": "Dundee",
+        "posicion": 7,
+        "pj": 13,
+        "g": 5,
+        "e": 2,
+        "p": 6,
+        "gf": 18,
+        "gc": 23,
+        "puntos": 17,
+        "ppp": 1.31
+      },
+      {
+        "equipo": "Aberdeen",
+        "posicion": 8,
+        "pj": 13,
+        "g": 4,
+        "e": 2,
+        "p": 7,
+        "gf": 16,
+        "gc": 20,
+        "puntos": 14,
+        "ppp": 1.08
+      },
+      {
+        "equipo": "St. Mirren",
+        "posicion": 9,
+        "pj": 14,
+        "g": 4,
+        "e": 2,
+        "p": 8,
+        "gf": 13,
+        "gc": 26,
+        "puntos": 14,
+        "ppp": 1.0
+      },
+      {
+        "equipo": "Motherwell",
+        "posicion": 10,
+        "pj": 14,
+        "g": 3,
+        "e": 4,
+        "p": 7,
+        "gf": 16,
+        "gc": 23,
+        "puntos": 13,
+        "ppp": 0.93
+      },
+      {
+        "equipo": "Hibernian",
+        "posicion": 11,
+        "pj": 13,
+        "g": 3,
+        "e": 2,
+        "p": 8,
+        "gf": 15,
+        "gc": 21,
+        "puntos": 11,
+        "ppp": 0.85
+      },
+      {
+        "equipo": "Kilmarnock",
+        "posicion": 12,
+        "pj": 14,
+        "g": 2,
+        "e": 3,
+        "p": 9,
+        "gf": 15,
+        "gc": 33,
+        "puntos": 9,
+        "ppp": 0.64
+      }
+    ],
     "ESP": [
       {
         "equipo": "FC Barcelona",
@@ -683,7 +973,176 @@
         "ppp": 0.18
       }
     ],
-    "GRE": [],
+    "GRE": [
+      {
+        "equipo": "Panathinaikos",
+        "posicion": 1,
+        "pj": 11,
+        "g": 10,
+        "e": 0,
+        "p": 1,
+        "gf": 24,
+        "gc": 5,
+        "puntos": 30,
+        "ppp": 2.73
+      },
+      {
+        "equipo": "Olympiakos",
+        "posicion": 2,
+        "pj": 11,
+        "g": 8,
+        "e": 2,
+        "p": 1,
+        "gf": 22,
+        "gc": 7,
+        "puntos": 26,
+        "ppp": 2.36
+      },
+      {
+        "equipo": "AEK Athens",
+        "posicion": 3,
+        "pj": 10,
+        "g": 7,
+        "e": 2,
+        "p": 1,
+        "gf": 24,
+        "gc": 6,
+        "puntos": 23,
+        "ppp": 2.3
+      },
+      {
+        "equipo": "PAOK",
+        "posicion": 4,
+        "pj": 11,
+        "g": 7,
+        "e": 1,
+        "p": 3,
+        "gf": 23,
+        "gc": 13,
+        "puntos": 22,
+        "ppp": 2.0
+      },
+      {
+        "equipo": "Aris",
+        "posicion": 5,
+        "pj": 11,
+        "g": 7,
+        "e": 1,
+        "p": 3,
+        "gf": 17,
+        "gc": 17,
+        "puntos": 22,
+        "ppp": 2.0
+      },
+      {
+        "equipo": "OFI",
+        "posicion": 6,
+        "pj": 11,
+        "g": 5,
+        "e": 2,
+        "p": 4,
+        "gf": 14,
+        "gc": 14,
+        "puntos": 17,
+        "ppp": 1.55
+      },
+      {
+        "equipo": "Kifisia",
+        "posicion": 7,
+        "pj": 11,
+        "g": 4,
+        "e": 2,
+        "p": 5,
+        "gf": 15,
+        "gc": 19,
+        "puntos": 14,
+        "ppp": 1.27
+      },
+      {
+        "equipo": "Kalamata",
+        "posicion": 8,
+        "pj": 11,
+        "g": 3,
+        "e": 3,
+        "p": 5,
+        "gf": 15,
+        "gc": 20,
+        "puntos": 12,
+        "ppp": 1.09
+      },
+      {
+        "equipo": "Panaitolikos",
+        "posicion": 9,
+        "pj": 11,
+        "g": 4,
+        "e": 0,
+        "p": 7,
+        "gf": 9,
+        "gc": 20,
+        "puntos": 12,
+        "ppp": 1.09
+      },
+      {
+        "equipo": "Iraklis 1908",
+        "posicion": 10,
+        "pj": 11,
+        "g": 2,
+        "e": 4,
+        "p": 5,
+        "gf": 13,
+        "gc": 20,
+        "puntos": 10,
+        "ppp": 0.91
+      },
+      {
+        "equipo": "Atromitos",
+        "posicion": 11,
+        "pj": 10,
+        "g": 1,
+        "e": 4,
+        "p": 5,
+        "gf": 10,
+        "gc": 13,
+        "puntos": 7,
+        "ppp": 0.7
+      },
+      {
+        "equipo": "Levadiakos",
+        "posicion": 12,
+        "pj": 11,
+        "g": 1,
+        "e": 4,
+        "p": 6,
+        "gf": 5,
+        "gc": 14,
+        "puntos": 7,
+        "ppp": 0.64
+      },
+      {
+        "equipo": "Asteras Tripolis",
+        "posicion": 13,
+        "pj": 11,
+        "g": 1,
+        "e": 4,
+        "p": 6,
+        "gf": 9,
+        "gc": 19,
+        "puntos": 7,
+        "ppp": 0.64
+      },
+      {
+        "equipo": "Volos NFC",
+        "posicion": 14,
+        "pj": 11,
+        "g": 0,
+        "e": 3,
+        "p": 8,
+        "gf": 7,
+        "gc": 20,
+        "puntos": 3,
+        "ppp": 0.27
+      }
+    ],
     "ENG": [
       {
         "equipo": "Arsenal FC",
@@ -1168,7 +1627,200 @@
         "ppp": 0.5
       }
     ],
-    "NOR": [],
+    "NOR": [
+      {
+        "equipo": "Bodø / Glimt",
+        "posicion": 1,
+        "pj": 27,
+        "g": 21,
+        "e": 2,
+        "p": 4,
+        "gf": 67,
+        "gc": 25,
+        "puntos": 65,
+        "ppp": 2.41
+      },
+      {
+        "equipo": "Viking",
+        "posicion": 2,
+        "pj": 27,
+        "g": 20,
+        "e": 2,
+        "p": 5,
+        "gf": 71,
+        "gc": 30,
+        "puntos": 62,
+        "ppp": 2.3
+      },
+      {
+        "equipo": "Lillestrøm",
+        "posicion": 3,
+        "pj": 27,
+        "g": 15,
+        "e": 3,
+        "p": 9,
+        "gf": 41,
+        "gc": 35,
+        "puntos": 48,
+        "ppp": 1.78
+      },
+      {
+        "equipo": "Rosenborg",
+        "posicion": 4,
+        "pj": 27,
+        "g": 14,
+        "e": 5,
+        "p": 8,
+        "gf": 55,
+        "gc": 34,
+        "puntos": 47,
+        "ppp": 1.74
+      },
+      {
+        "equipo": "Molde",
+        "posicion": 5,
+        "pj": 27,
+        "g": 13,
+        "e": 5,
+        "p": 9,
+        "gf": 66,
+        "gc": 48,
+        "puntos": 44,
+        "ppp": 1.63
+      },
+      {
+        "equipo": "Tromsø",
+        "posicion": 6,
+        "pj": 27,
+        "g": 12,
+        "e": 7,
+        "p": 8,
+        "gf": 46,
+        "gc": 42,
+        "puntos": 43,
+        "ppp": 1.59
+      },
+      {
+        "equipo": "Brann",
+        "posicion": 7,
+        "pj": 27,
+        "g": 11,
+        "e": 3,
+        "p": 13,
+        "gf": 51,
+        "gc": 47,
+        "puntos": 36,
+        "ppp": 1.33
+      },
+      {
+        "equipo": "Vålerenga",
+        "posicion": 8,
+        "pj": 27,
+        "g": 9,
+        "e": 5,
+        "p": 13,
+        "gf": 44,
+        "gc": 49,
+        "puntos": 32,
+        "ppp": 1.19
+      },
+      {
+        "equipo": "Sarpsborg 08",
+        "posicion": 9,
+        "pj": 27,
+        "g": 8,
+        "e": 7,
+        "p": 12,
+        "gf": 32,
+        "gc": 44,
+        "puntos": 31,
+        "ppp": 1.15
+      },
+      {
+        "equipo": "KFUM",
+        "posicion": 10,
+        "pj": 27,
+        "g": 8,
+        "e": 7,
+        "p": 12,
+        "gf": 36,
+        "gc": 50,
+        "puntos": 31,
+        "ppp": 1.15
+      },
+      {
+        "equipo": "HamKam",
+        "posicion": 11,
+        "pj": 27,
+        "g": 8,
+        "e": 7,
+        "p": 12,
+        "gf": 38,
+        "gc": 53,
+        "puntos": 31,
+        "ppp": 1.15
+      },
+      {
+        "equipo": "Fredrikstad",
+        "posicion": 12,
+        "pj": 27,
+        "g": 8,
+        "e": 7,
+        "p": 12,
+        "gf": 31,
+        "gc": 46,
+        "puntos": 31,
+        "ppp": 1.15
+      },
+      {
+        "equipo": "Sandefjord",
+        "posicion": 13,
+        "pj": 27,
+        "g": 7,
+        "e": 8,
+        "p": 12,
+        "gf": 33,
+        "gc": 41,
+        "puntos": 29,
+        "ppp": 1.07
+      },
+      {
+        "equipo": "Kristiansund",
+        "posicion": 14,
+        "pj": 27,
+        "g": 7,
+        "e": 6,
+        "p": 14,
+        "gf": 32,
+        "gc": 53,
+        "puntos": 27,
+        "ppp": 1.0
+      },
+      {
+        "equipo": "Aalesund",
+        "posicion": 15,
+        "pj": 27,
+        "g": 5,
+        "e": 10,
+        "p": 12,
+        "gf": 47,
+        "gc": 62,
+        "puntos": 25,
+        "ppp": 0.93
+      },
+      {
+        "equipo": "Start",
+        "posicion": 16,
+        "pj": 27,
+        "g": 6,
+        "e": 4,
+        "p": 17,
+        "gf": 29,
+        "gc": 60,
+        "puntos": 22,
+        "ppp": 0.81
+      }
+    ],
     "NED": [
       {
         "equipo": "PSV",
@@ -1605,9 +2257,564 @@
         "ppp": 0.2
       }
     ],
-    "SWE": [],
-    "SUI": [],
-    "TUR": []
+    "SWE": [
+      {
+        "equipo": "Hammarby",
+        "posicion": 1,
+        "pj": 29,
+        "g": 19,
+        "e": 4,
+        "p": 6,
+        "gf": 63,
+        "gc": 24,
+        "puntos": 61,
+        "ppp": 2.1
+      },
+      {
+        "equipo": "Sirius",
+        "posicion": 2,
+        "pj": 29,
+        "g": 19,
+        "e": 4,
+        "p": 6,
+        "gf": 59,
+        "gc": 35,
+        "puntos": 61,
+        "ppp": 2.1
+      },
+      {
+        "equipo": "Djurgården",
+        "posicion": 3,
+        "pj": 29,
+        "g": 16,
+        "e": 4,
+        "p": 9,
+        "gf": 56,
+        "gc": 28,
+        "puntos": 52,
+        "ppp": 1.79
+      },
+      {
+        "equipo": "Häcken",
+        "posicion": 4,
+        "pj": 29,
+        "g": 14,
+        "e": 10,
+        "p": 5,
+        "gf": 52,
+        "gc": 34,
+        "puntos": 52,
+        "ppp": 1.79
+      },
+      {
+        "equipo": "Elfsborg",
+        "posicion": 5,
+        "pj": 29,
+        "g": 12,
+        "e": 10,
+        "p": 7,
+        "gf": 43,
+        "gc": 33,
+        "puntos": 46,
+        "ppp": 1.59
+      },
+      {
+        "equipo": "Västerås",
+        "posicion": 6,
+        "pj": 29,
+        "g": 13,
+        "e": 6,
+        "p": 10,
+        "gf": 41,
+        "gc": 41,
+        "puntos": 45,
+        "ppp": 1.55
+      },
+      {
+        "equipo": "GAIS",
+        "posicion": 7,
+        "pj": 29,
+        "g": 12,
+        "e": 7,
+        "p": 10,
+        "gf": 39,
+        "gc": 29,
+        "puntos": 43,
+        "ppp": 1.48
+      },
+      {
+        "equipo": "Malmö FF",
+        "posicion": 8,
+        "pj": 29,
+        "g": 12,
+        "e": 6,
+        "p": 11,
+        "gf": 43,
+        "gc": 37,
+        "puntos": 42,
+        "ppp": 1.45
+      },
+      {
+        "equipo": "AIK",
+        "posicion": 9,
+        "pj": 29,
+        "g": 11,
+        "e": 9,
+        "p": 9,
+        "gf": 46,
+        "gc": 49,
+        "puntos": 42,
+        "ppp": 1.45
+      },
+      {
+        "equipo": "IFK Göteborg",
+        "posicion": 10,
+        "pj": 29,
+        "g": 10,
+        "e": 9,
+        "p": 10,
+        "gf": 37,
+        "gc": 49,
+        "puntos": 39,
+        "ppp": 1.34
+      },
+      {
+        "equipo": "Brommapojkarna",
+        "posicion": 11,
+        "pj": 29,
+        "g": 9,
+        "e": 8,
+        "p": 12,
+        "gf": 39,
+        "gc": 47,
+        "puntos": 35,
+        "ppp": 1.21
+      },
+      {
+        "equipo": "Mjällby",
+        "posicion": 12,
+        "pj": 29,
+        "g": 6,
+        "e": 11,
+        "p": 12,
+        "gf": 31,
+        "gc": 44,
+        "puntos": 29,
+        "ppp": 1.0
+      },
+      {
+        "equipo": "Kalmar",
+        "posicion": 13,
+        "pj": 29,
+        "g": 7,
+        "e": 5,
+        "p": 17,
+        "gf": 26,
+        "gc": 45,
+        "puntos": 26,
+        "ppp": 0.9
+      },
+      {
+        "equipo": "Örgryte",
+        "posicion": 14,
+        "pj": 29,
+        "g": 5,
+        "e": 8,
+        "p": 16,
+        "gf": 36,
+        "gc": 62,
+        "puntos": 23,
+        "ppp": 0.79
+      },
+      {
+        "equipo": "Halmstad",
+        "posicion": 15,
+        "pj": 29,
+        "g": 6,
+        "e": 5,
+        "p": 18,
+        "gf": 23,
+        "gc": 52,
+        "puntos": 23,
+        "ppp": 0.79
+      },
+      {
+        "equipo": "Degerfors",
+        "posicion": 16,
+        "pj": 29,
+        "g": 5,
+        "e": 6,
+        "p": 18,
+        "gf": 23,
+        "gc": 48,
+        "puntos": 21,
+        "ppp": 0.72
+      }
+    ],
+    "SUI": [
+      {
+        "equipo": "Lugano",
+        "posicion": 1,
+        "pj": 14,
+        "g": 12,
+        "e": 1,
+        "p": 1,
+        "gf": 38,
+        "gc": 16,
+        "puntos": 37,
+        "ppp": 2.64
+      },
+      {
+        "equipo": "Young Boys",
+        "posicion": 2,
+        "pj": 14,
+        "g": 9,
+        "e": 4,
+        "p": 1,
+        "gf": 44,
+        "gc": 27,
+        "puntos": 31,
+        "ppp": 2.21
+      },
+      {
+        "equipo": "Sion",
+        "posicion": 3,
+        "pj": 14,
+        "g": 9,
+        "e": 2,
+        "p": 3,
+        "gf": 31,
+        "gc": 18,
+        "puntos": 29,
+        "ppp": 2.07
+      },
+      {
+        "equipo": "St.Gallen",
+        "posicion": 4,
+        "pj": 14,
+        "g": 7,
+        "e": 2,
+        "p": 5,
+        "gf": 26,
+        "gc": 24,
+        "puntos": 23,
+        "ppp": 1.64
+      },
+      {
+        "equipo": "Zürich",
+        "posicion": 5,
+        "pj": 14,
+        "g": 6,
+        "e": 4,
+        "p": 4,
+        "gf": 27,
+        "gc": 28,
+        "puntos": 22,
+        "ppp": 1.57
+      },
+      {
+        "equipo": "Servette",
+        "posicion": 6,
+        "pj": 14,
+        "g": 5,
+        "e": 2,
+        "p": 7,
+        "gf": 17,
+        "gc": 18,
+        "puntos": 17,
+        "ppp": 1.21
+      },
+      {
+        "equipo": "Luzern",
+        "posicion": 7,
+        "pj": 14,
+        "g": 4,
+        "e": 4,
+        "p": 6,
+        "gf": 23,
+        "gc": 28,
+        "puntos": 16,
+        "ppp": 1.14
+      },
+      {
+        "equipo": "Basel",
+        "posicion": 8,
+        "pj": 14,
+        "g": 4,
+        "e": 3,
+        "p": 7,
+        "gf": 21,
+        "gc": 27,
+        "puntos": 15,
+        "ppp": 1.07
+      },
+      {
+        "equipo": "FC Thun",
+        "posicion": 9,
+        "pj": 14,
+        "g": 4,
+        "e": 2,
+        "p": 8,
+        "gf": 29,
+        "gc": 40,
+        "puntos": 14,
+        "ppp": 1.0
+      },
+      {
+        "equipo": "Vaduz",
+        "posicion": 10,
+        "pj": 14,
+        "g": 3,
+        "e": 2,
+        "p": 9,
+        "gf": 26,
+        "gc": 31,
+        "puntos": 11,
+        "ppp": 0.79
+      },
+      {
+        "equipo": "Grasshoppers",
+        "posicion": 11,
+        "pj": 14,
+        "g": 2,
+        "e": 5,
+        "p": 7,
+        "gf": 17,
+        "gc": 31,
+        "puntos": 11,
+        "ppp": 0.79
+      },
+      {
+        "equipo": "Lausanne-Sport",
+        "posicion": 12,
+        "pj": 14,
+        "g": 1,
+        "e": 5,
+        "p": 8,
+        "gf": 14,
+        "gc": 25,
+        "puntos": 8,
+        "ppp": 0.57
+      }
+    ],
+    "TUR": [
+      {
+        "equipo": "Galatasaray",
+        "posicion": 1,
+        "pj": 12,
+        "g": 10,
+        "e": 1,
+        "p": 1,
+        "gf": 29,
+        "gc": 16,
+        "puntos": 31,
+        "ppp": 2.58
+      },
+      {
+        "equipo": "Trabzonspor",
+        "posicion": 2,
+        "pj": 12,
+        "g": 9,
+        "e": 1,
+        "p": 2,
+        "gf": 27,
+        "gc": 8,
+        "puntos": 28,
+        "ppp": 2.33
+      },
+      {
+        "equipo": "Beşiktaş",
+        "posicion": 3,
+        "pj": 12,
+        "g": 8,
+        "e": 1,
+        "p": 3,
+        "gf": 27,
+        "gc": 14,
+        "puntos": 25,
+        "ppp": 2.08
+      },
+      {
+        "equipo": "Amed",
+        "posicion": 4,
+        "pj": 12,
+        "g": 7,
+        "e": 2,
+        "p": 3,
+        "gf": 28,
+        "gc": 17,
+        "puntos": 23,
+        "ppp": 1.92
+      },
+      {
+        "equipo": "Kasımpaşa",
+        "posicion": 5,
+        "pj": 12,
+        "g": 6,
+        "e": 5,
+        "p": 1,
+        "gf": 19,
+        "gc": 12,
+        "puntos": 23,
+        "ppp": 1.92
+      },
+      {
+        "equipo": "Fenerbahçe",
+        "posicion": 6,
+        "pj": 12,
+        "g": 6,
+        "e": 2,
+        "p": 4,
+        "gf": 31,
+        "gc": 12,
+        "puntos": 20,
+        "ppp": 1.67
+      },
+      {
+        "equipo": "İstanbul Başakşehir",
+        "posicion": 7,
+        "pj": 12,
+        "g": 6,
+        "e": 2,
+        "p": 4,
+        "gf": 23,
+        "gc": 19,
+        "puntos": 20,
+        "ppp": 1.67
+      },
+      {
+        "equipo": "Kocaelispor",
+        "posicion": 8,
+        "pj": 12,
+        "g": 6,
+        "e": 2,
+        "p": 4,
+        "gf": 15,
+        "gc": 11,
+        "puntos": 20,
+        "ppp": 1.67
+      },
+      {
+        "equipo": "Göztepe",
+        "posicion": 9,
+        "pj": 12,
+        "g": 5,
+        "e": 3,
+        "p": 4,
+        "gf": 23,
+        "gc": 19,
+        "puntos": 18,
+        "ppp": 1.5
+      },
+      {
+        "equipo": "Rizespor",
+        "posicion": 10,
+        "pj": 12,
+        "g": 5,
+        "e": 2,
+        "p": 5,
+        "gf": 15,
+        "gc": 16,
+        "puntos": 17,
+        "ppp": 1.42
+      },
+      {
+        "equipo": "Çorum",
+        "posicion": 11,
+        "pj": 12,
+        "g": 5,
+        "e": 1,
+        "p": 6,
+        "gf": 23,
+        "gc": 25,
+        "puntos": 16,
+        "ppp": 1.33
+      },
+      {
+        "equipo": "Gençlerbirliği",
+        "posicion": 12,
+        "pj": 12,
+        "g": 4,
+        "e": 2,
+        "p": 6,
+        "gf": 13,
+        "gc": 21,
+        "puntos": 14,
+        "ppp": 1.17
+      },
+      {
+        "equipo": "Erzurumspor FK",
+        "posicion": 13,
+        "pj": 12,
+        "g": 4,
+        "e": 2,
+        "p": 6,
+        "gf": 10,
+        "gc": 18,
+        "puntos": 14,
+        "ppp": 1.17
+      },
+      {
+        "equipo": "Alanyaspor",
+        "posicion": 14,
+        "pj": 12,
+        "g": 3,
+        "e": 3,
+        "p": 6,
+        "gf": 10,
+        "gc": 20,
+        "puntos": 12,
+        "ppp": 1.0
+      },
+      {
+        "equipo": "Konyaspor",
+        "posicion": 15,
+        "pj": 12,
+        "g": 2,
+        "e": 2,
+        "p": 8,
+        "gf": 8,
+        "gc": 18,
+        "puntos": 8,
+        "ppp": 0.67
+      },
+      {
+        "equipo": "Gaziantep FK",
+        "posicion": 16,
+        "pj": 12,
+        "g": 2,
+        "e": 2,
+        "p": 8,
+        "gf": 9,
+        "gc": 20,
+        "puntos": 8,
+        "ppp": 0.67
+      },
+      {
+        "equipo": "Samsunspor",
+        "posicion": 17,
+        "pj": 12,
+        "g": 2,
+        "e": 1,
+        "p": 9,
+        "gf": 12,
+        "gc": 28,
+        "puntos": 7,
+        "ppp": 0.58
+      },
+      {
+        "equipo": "Eyüpspor",
+        "posicion": 18,
+        "pj": 12,
+        "g": 1,
+        "e": 0,
+        "p": 11,
+        "gf": 3,
+        "gc": 31,
+        "puntos": 3,
+        "ppp": 0.25
+      }
+    ]
   },
   "equipos_top": [
     {
@@ -1638,25 +2845,25 @@
       "liga": "DEN",
       "equipo": "Midtjylland",
       "elo": null,
-      "equipo_proveedor": null
+      "equipo_proveedor": "Midtjylland"
     },
     {
       "liga": "DEN",
       "equipo": "FC Copenhagen",
       "elo": null,
-      "equipo_proveedor": null
+      "equipo_proveedor": "Copenhagen"
     },
     {
       "liga": "SCO",
       "equipo": "Celtic",
       "elo": null,
-      "equipo_proveedor": null
+      "equipo_proveedor": "Celtic"
     },
     {
       "liga": "SCO",
       "equipo": "Rangers",
       "elo": null,
-      "equipo_proveedor": null
+      "equipo_proveedor": "Rangers"
     },
     {
       "liga": "ESP",
@@ -1704,13 +2911,13 @@
       "liga": "GRE",
       "equipo": "AEK Athens",
       "elo": null,
-      "equipo_proveedor": null
+      "equipo_proveedor": "AEK Athens"
     },
     {
       "liga": "GRE",
       "equipo": "Olympiacos Piraeus",
       "elo": null,
-      "equipo_proveedor": null
+      "equipo_proveedor": "Olympiakos"
     },
     {
       "liga": "ENG",
@@ -1764,13 +2971,13 @@
       "liga": "NOR",
       "equipo": "Molde",
       "elo": null,
-      "equipo_proveedor": null
+      "equipo_proveedor": "Molde"
     },
     {
       "liga": "NOR",
       "equipo": "Bodo/Glimt",
       "elo": null,
-      "equipo_proveedor": null
+      "equipo_proveedor": "Bodø / Glimt"
     },
     {
       "liga": "NED",
@@ -1818,28 +3025,58 @@
       "liga": "SWE",
       "equipo": "Malmo FF",
       "elo": null,
-      "equipo_proveedor": null
+      "equipo_proveedor": "Malmö FF"
     },
     {
       "liga": "SUI",
       "equipo": "Young Boys",
       "elo": null,
-      "equipo_proveedor": null
+      "equipo_proveedor": "Young Boys"
     },
     {
       "liga": "TUR",
       "equipo": "Galatasaray",
       "elo": null,
-      "equipo_proveedor": null
+      "equipo_proveedor": "Galatasaray"
     },
     {
       "liga": "TUR",
       "equipo": "Fenerbahce",
       "elo": null,
-      "equipo_proveedor": null
+      "equipo_proveedor": "Fenerbahçe"
     }
   ],
   "partidos": [
+    {
+      "liga": "SCO",
+      "fecha": "2026-11-24T19:45:00+00:00",
+      "local": "Hibernian",
+      "visitante": "Dundee"
+    },
+    {
+      "liga": "SCO",
+      "fecha": "2026-11-24T20:00:00+00:00",
+      "local": "Rangers",
+      "visitante": "Aberdeen"
+    },
+    {
+      "liga": "TUR",
+      "fecha": "2026-11-27T17:00:00+00:00",
+      "local": "Alanyaspor",
+      "visitante": "Konyaspor"
+    },
+    {
+      "liga": "TUR",
+      "fecha": "2026-11-27T17:00:00+00:00",
+      "local": "Rizespor",
+      "visitante": "Kasımpaşa"
+    },
+    {
+      "liga": "DEN",
+      "fecha": "2026-11-27T18:00:00+00:00",
+      "local": "Sønderjyske",
+      "visitante": "Brøndby"
+    },
     {
       "liga": "NED",
       "fecha": "2026-11-27T19:00:00Z",
@@ -1883,6 +3120,12 @@
       "visitante": "CD Nacional"
     },
     {
+      "liga": "TUR",
+      "fecha": "2026-11-28T13:00:00+00:00",
+      "local": "Samsunspor",
+      "visitante": "Gençlerbirliği"
+    },
+    {
       "liga": "ESP",
       "fecha": "2026-11-28T13:00:00Z",
       "local": "Real Betis Balompié",
@@ -1917,6 +3160,48 @@
       "fecha": "2026-11-28T14:30:00+00:00",
       "local": "SC Paderborn 07",
       "visitante": "FC Schalke 04"
+    },
+    {
+      "liga": "SCO",
+      "fecha": "2026-11-28T15:00:00+00:00",
+      "local": "Aberdeen",
+      "visitante": "Dundee"
+    },
+    {
+      "liga": "SCO",
+      "fecha": "2026-11-28T15:00:00+00:00",
+      "local": "Dundee United",
+      "visitante": "St. Johnstone"
+    },
+    {
+      "liga": "SCO",
+      "fecha": "2026-11-28T15:00:00+00:00",
+      "local": "Rangers",
+      "visitante": "Falkirk"
+    },
+    {
+      "liga": "SCO",
+      "fecha": "2026-11-28T15:00:00+00:00",
+      "local": "St. Mirren",
+      "visitante": "Kilmarnock"
+    },
+    {
+      "liga": "GRE",
+      "fecha": "2026-11-28T15:00:00+00:00",
+      "local": "Volos NFC",
+      "visitante": "Asteras Tripolis"
+    },
+    {
+      "liga": "GRE",
+      "fecha": "2026-11-28T15:00:00+00:00",
+      "local": "Iraklis 1908",
+      "visitante": "Panaitolikos"
+    },
+    {
+      "liga": "NOR",
+      "fecha": "2026-11-28T15:00:00+00:00",
+      "local": "Bodø / Glimt",
+      "visitante": "KFUM"
     },
     {
       "liga": "ENG",
@@ -1955,10 +3240,34 @@
       "visitante": "Rio Ave FC"
     },
     {
+      "liga": "TUR",
+      "fecha": "2026-11-28T16:00:00+00:00",
+      "local": "Gaziantep FK",
+      "visitante": "Amed"
+    },
+    {
       "liga": "FRA",
       "fecha": "2026-11-28T16:15:00Z",
       "local": "Angers SCO",
       "visitante": "Racing Club de Lens"
+    },
+    {
+      "liga": "NOR",
+      "fecha": "2026-11-28T17:00:00+00:00",
+      "local": "Rosenborg",
+      "visitante": "Molde"
+    },
+    {
+      "liga": "SUI",
+      "fecha": "2026-11-28T17:00:00+00:00",
+      "local": "Grasshoppers",
+      "visitante": "Basel"
+    },
+    {
+      "liga": "SUI",
+      "fecha": "2026-11-28T17:00:00+00:00",
+      "local": "Vaduz",
+      "visitante": "Zürich"
     },
     {
       "liga": "ITA",
@@ -1985,16 +3294,34 @@
       "visitante": "Aston Villa FC"
     },
     {
+      "liga": "SCO",
+      "fecha": "2026-11-28T17:45:00+00:00",
+      "local": "Motherwell",
+      "visitante": "Hibernian"
+    },
+    {
       "liga": "NED",
       "fecha": "2026-11-28T17:45:00Z",
       "local": "PSV",
       "visitante": "Go Ahead Eagles"
     },
     {
+      "liga": "GRE",
+      "fecha": "2026-11-28T18:00:00+00:00",
+      "local": "Kifisia",
+      "visitante": "Kalamata"
+    },
+    {
       "liga": "POR",
       "fecha": "2026-11-28T18:00:00Z",
       "local": "Académico de Viseu FC",
       "visitante": "FC Alverca"
+    },
+    {
+      "liga": "SUI",
+      "fecha": "2026-11-28T19:30:00+00:00",
+      "local": "Servette",
+      "visitante": "Lausanne-Sport"
     },
     {
       "liga": "FRA",
@@ -2045,6 +3372,12 @@
       "visitante": "CF Estrela da Amadora"
     },
     {
+      "liga": "TUR",
+      "fecha": "2026-11-29T10:30:00+00:00",
+      "local": "Çorum",
+      "visitante": "Kocaelispor"
+    },
+    {
       "liga": "NED",
       "fecha": "2026-11-29T11:15:00Z",
       "local": "ADO Den Haag",
@@ -2063,10 +3396,40 @@
       "visitante": "Liverpool FC"
     },
     {
+      "liga": "DEN",
+      "fecha": "2026-11-29T13:00:00+00:00",
+      "local": "Lyngby",
+      "visitante": "Viborg"
+    },
+    {
+      "liga": "DEN",
+      "fecha": "2026-11-29T13:00:00+00:00",
+      "local": "Randers",
+      "visitante": "Horsens"
+    },
+    {
+      "liga": "SUI",
+      "fecha": "2026-11-29T13:00:00+00:00",
+      "local": "Luzern",
+      "visitante": "Lugano"
+    },
+    {
+      "liga": "TUR",
+      "fecha": "2026-11-29T13:00:00+00:00",
+      "local": "Eyüpspor",
+      "visitante": "İstanbul Başakşehir"
+    },
+    {
       "liga": "ESP",
       "fecha": "2026-11-29T13:00:00Z",
       "local": "Valencia CF",
       "visitante": "CA Osasuna"
+    },
+    {
+      "liga": "NOR",
+      "fecha": "2026-11-29T13:30:00+00:00",
+      "local": "Fredrikstad",
+      "visitante": "Aalesund"
     },
     {
       "liga": "NED",
@@ -2079,6 +3442,54 @@
       "fecha": "2026-11-29T13:30:00Z",
       "local": "Feyenoord Rotterdam",
       "visitante": "AFC Ajax"
+    },
+    {
+      "liga": "SWE",
+      "fecha": "2026-11-29T14:00:00+00:00",
+      "local": "Degerfors",
+      "visitante": "Örgryte"
+    },
+    {
+      "liga": "SWE",
+      "fecha": "2026-11-29T14:00:00+00:00",
+      "local": "Djurgården",
+      "visitante": "Häcken"
+    },
+    {
+      "liga": "SWE",
+      "fecha": "2026-11-29T14:00:00+00:00",
+      "local": "Elfsborg",
+      "visitante": "GAIS"
+    },
+    {
+      "liga": "SWE",
+      "fecha": "2026-11-29T14:00:00+00:00",
+      "local": "Halmstad",
+      "visitante": "Mjällby"
+    },
+    {
+      "liga": "SWE",
+      "fecha": "2026-11-29T14:00:00+00:00",
+      "local": "IFK Göteborg",
+      "visitante": "Sirius"
+    },
+    {
+      "liga": "SWE",
+      "fecha": "2026-11-29T14:00:00+00:00",
+      "local": "Kalmar",
+      "visitante": "AIK"
+    },
+    {
+      "liga": "SWE",
+      "fecha": "2026-11-29T14:00:00+00:00",
+      "local": "Malmö FF",
+      "visitante": "Brommapojkarna"
+    },
+    {
+      "liga": "SWE",
+      "fecha": "2026-11-29T14:00:00+00:00",
+      "local": "Västerås",
+      "visitante": "Hammarby"
     },
     {
       "liga": "FRA",
@@ -2123,16 +3534,76 @@
       "visitante": "RB Leipzig"
     },
     {
+      "liga": "DEN",
+      "fecha": "2026-11-29T15:00:00+00:00",
+      "local": "Copenhagen",
+      "visitante": "Midtjylland"
+    },
+    {
+      "liga": "SCO",
+      "fecha": "2026-11-29T15:00:00+00:00",
+      "local": "Hearts",
+      "visitante": "Celtic"
+    },
+    {
+      "liga": "GRE",
+      "fecha": "2026-11-29T15:00:00+00:00",
+      "local": "Atromitos",
+      "visitante": "Panathinaikos"
+    },
+    {
       "liga": "ESP",
       "fecha": "2026-11-29T15:15:00Z",
       "local": "RC Deportivo La Coruña",
       "visitante": "FC Barcelona"
     },
     {
+      "liga": "GRE",
+      "fecha": "2026-11-29T15:30:00+00:00",
+      "local": "OFI",
+      "visitante": "Levadiakos"
+    },
+    {
+      "liga": "SUI",
+      "fecha": "2026-11-29T15:30:00+00:00",
+      "local": "Sion",
+      "visitante": "Young Boys"
+    },
+    {
+      "liga": "SUI",
+      "fecha": "2026-11-29T15:30:00+00:00",
+      "local": "FC Thun",
+      "visitante": "St.Gallen"
+    },
+    {
       "liga": "NED",
       "fecha": "2026-11-29T15:45:00Z",
       "local": "PEC Zwolle",
       "visitante": "AZ"
+    },
+    {
+      "liga": "NOR",
+      "fecha": "2026-11-29T16:00:00+00:00",
+      "local": "Brann",
+      "visitante": "Kristiansund"
+    },
+    {
+      "liga": "NOR",
+      "fecha": "2026-11-29T16:00:00+00:00",
+      "local": "Sandefjord",
+      "visitante": "Tromsø"
+    },
+    {
+      "liga": "NOR",
+      "fecha": "2026-11-29T16:00:00+00:00",
+      "local": "Start",
+      "visitante": "Sarpsborg 08"
+    },
+    {
+      "liga": "TUR",
+      "fecha": "2026-11-29T16:00:00+00:00",
+      "local": "Fenerbahçe",
+      "visitante": "Erzurumspor FK"
     },
     {
       "liga": "FRA",
@@ -2153,6 +3624,18 @@
       "visitante": "Manchester City FC"
     },
     {
+      "liga": "DEN",
+      "fecha": "2026-11-29T17:00:00+00:00",
+      "local": "Silkeborg",
+      "visitante": "AGF"
+    },
+    {
+      "liga": "GRE",
+      "fecha": "2026-11-29T17:00:00+00:00",
+      "local": "Aris",
+      "visitante": "Olympiakos"
+    },
+    {
       "liga": "ITA",
       "fecha": "2026-11-29T17:00:00Z",
       "local": "AS Roma",
@@ -2171,10 +3654,22 @@
       "visitante": "GD Estoril Praia"
     },
     {
+      "liga": "NOR",
+      "fecha": "2026-11-29T18:15:00+00:00",
+      "local": "Viking",
+      "visitante": "Vålerenga"
+    },
+    {
       "liga": "GER",
       "fecha": "2026-11-29T18:30:00+00:00",
       "local": "Borussia Dortmund",
       "visitante": "Bayer 04 Leverkusen"
+    },
+    {
+      "liga": "GRE",
+      "fecha": "2026-11-29T19:00:00+00:00",
+      "local": "AEK Athens",
+      "visitante": "PAOK"
     },
     {
       "liga": "NED",
@@ -2207,10 +3702,34 @@
       "visitante": "Sporting Clube de Portugal"
     },
     {
+      "liga": "TUR",
+      "fecha": "2026-11-30T16:00:00+00:00",
+      "local": "Göztepe",
+      "visitante": "Trabzonspor"
+    },
+    {
       "liga": "ITA",
       "fecha": "2026-11-30T17:30:00Z",
       "local": "US Lecce",
       "visitante": "Atalanta BC"
+    },
+    {
+      "liga": "DEN",
+      "fecha": "2026-11-30T18:00:00+00:00",
+      "local": "OB",
+      "visitante": "Nordsjælland"
+    },
+    {
+      "liga": "NOR",
+      "fecha": "2026-11-30T18:00:00+00:00",
+      "local": "Lillestrøm",
+      "visitante": "HamKam"
+    },
+    {
+      "liga": "TUR",
+      "fecha": "2026-11-30T18:00:00+00:00",
+      "local": "Beşiktaş",
+      "visitante": "Galatasaray"
     },
     {
       "liga": "ITA",
@@ -14634,6 +16153,28 @@
   },
   "candidatos": [
     {
+      "liga": "SCO",
+      "fecha": "2026-11-24T20:00:00+00:00",
+      "local": "Rangers",
+      "visitante": "Aberdeen",
+      "favorito": "Rangers",
+      "equipo_proveedor": "Rangers",
+      "ppp": 2.31,
+      "ppp_rival": 1.08,
+      "bonus_local": 0.2,
+      "valoracion": 1.43,
+      "cuota": 1.2222222222222223,
+      "estado": "Cuota MoviOdds; no verificada en bet365",
+      "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
+      "consultada_en": "2026-11-24T18:07:07.102752+00:00",
+      "ultimo_cambio": "2026-11-24T11:58:47.443798+00:00",
+      "cuota_verificada": true,
+      "casa_apuestas": "MoviOdds",
+      "mercado": "1X2",
+      "seleccion": "1",
+      "url_fuente": "https://moviodds.com/odds?sport=soccer"
+    },
+    {
       "liga": "ESP",
       "fecha": "2026-11-28T13:00:00Z",
       "local": "Real Betis Balompié",
@@ -14647,7 +16188,7 @@
       "estado": "Cuota MoviOdds; no verificada en bet365",
       "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
       "cuota": 1.5714285714285714,
-      "consultada_en": "2026-11-24T18:04:29.923972+00:00",
+      "consultada_en": "2026-11-24T18:07:13.435972+00:00",
       "ultimo_cambio": "2026-11-23T21:32:03.555011+00:00",
       "cuota_verificada": true,
       "casa_apuestas": "MoviOdds",
@@ -14669,13 +16210,50 @@
       "estado": "Cuota MoviOdds; no verificada en bet365",
       "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
       "cuota": 1.25,
-      "consultada_en": "2026-11-24T18:04:43.196728+00:00",
+      "consultada_en": "2026-11-24T18:06:43.993725+00:00",
       "ultimo_cambio": "2026-11-23T04:30:34.032987+00:00",
       "cuota_verificada": true,
       "casa_apuestas": "MoviOdds",
       "mercado": "1X2",
       "seleccion": "2",
       "url_fuente": "https://moviodds.com/odds?sport=soccer"
+    },
+    {
+      "liga": "SCO",
+      "fecha": "2026-11-28T15:00:00+00:00",
+      "local": "Rangers",
+      "visitante": "Falkirk",
+      "favorito": "Rangers",
+      "equipo_proveedor": "Rangers",
+      "ppp": 2.31,
+      "ppp_rival": 1.71,
+      "bonus_local": 0.2,
+      "valoracion": 0.8,
+      "cuota": 1.25,
+      "estado": "Cuota MoviOdds; no verificada en bet365",
+      "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
+      "consultada_en": "2026-11-24T18:07:13.438395+00:00",
+      "ultimo_cambio": "2026-11-23T04:30:48.669284+00:00",
+      "cuota_verificada": true,
+      "casa_apuestas": "MoviOdds",
+      "mercado": "1X2",
+      "seleccion": "1",
+      "url_fuente": "https://moviodds.com/odds?sport=soccer"
+    },
+    {
+      "liga": "NOR",
+      "fecha": "2026-11-28T15:00:00+00:00",
+      "local": "Bodø / Glimt",
+      "visitante": "KFUM",
+      "favorito": "Bodo/Glimt",
+      "equipo_proveedor": "Bodø / Glimt",
+      "ppp": 2.41,
+      "ppp_rival": 1.15,
+      "bonus_local": 0.2,
+      "valoracion": 1.46,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada",
+      "motivo_cuota_moviodds": "Partido sin coincidencia inequívoca en MoviOdds"
     },
     {
       "liga": "ESP",
@@ -14691,7 +16269,7 @@
       "estado": "Cuota MoviOdds; no verificada en bet365",
       "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
       "cuota": 1.48,
-      "consultada_en": "2026-11-24T18:04:29.900673+00:00",
+      "consultada_en": "2026-11-24T18:07:13.403515+00:00",
       "ultimo_cambio": "2026-11-23T22:10:18.767637+00:00",
       "cuota_verificada": true,
       "casa_apuestas": "MoviOdds",
@@ -14713,7 +16291,7 @@
       "estado": "Cuota MoviOdds; no verificada en bet365",
       "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
       "cuota": 1.2222222222222223,
-      "consultada_en": "2026-11-24T18:04:43.207543+00:00",
+      "consultada_en": "2026-11-24T18:06:44.008195+00:00",
       "ultimo_cambio": "2026-11-23T04:55:16.397652+00:00",
       "cuota_verificada": true,
       "casa_apuestas": "MoviOdds",
@@ -14750,7 +16328,7 @@
       "estado": "Cuota MoviOdds; no verificada en bet365",
       "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
       "cuota": 1.3,
-      "consultada_en": "2026-11-24T18:04:29.897275+00:00",
+      "consultada_en": "2026-11-24T18:07:13.123614+00:00",
       "ultimo_cambio": "2026-11-23T08:40:34.863556+00:00",
       "cuota_verificada": true,
       "casa_apuestas": "MoviOdds",
@@ -14789,6 +16367,21 @@
       "motivo_cuota_moviodds": "Cuota vigente fuera de 1,20–1,80"
     },
     {
+      "liga": "SCO",
+      "fecha": "2026-11-29T15:00:00+00:00",
+      "local": "Hearts",
+      "visitante": "Celtic",
+      "favorito": "Celtic",
+      "equipo_proveedor": "Celtic",
+      "ppp": 2.43,
+      "ppp_rival": 1.77,
+      "bonus_local": 0.0,
+      "valoracion": 0.66,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada",
+      "motivo_cuota_moviodds": "Cuota vigente fuera de 1,20–1,80"
+    },
+    {
       "liga": "ESP",
       "fecha": "2026-11-29T15:15:00Z",
       "local": "RC Deportivo La Coruña",
@@ -14802,13 +16395,73 @@
       "estado": "Cuota MoviOdds; no verificada en bet365",
       "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
       "cuota": 1.25,
-      "consultada_en": "2026-11-24T18:04:29.910683+00:00",
+      "consultada_en": "2026-11-24T18:07:13.410025+00:00",
       "ultimo_cambio": "2026-11-23T04:30:50.584526+00:00",
       "cuota_verificada": true,
       "casa_apuestas": "MoviOdds",
       "mercado": "1X2",
       "seleccion": "2",
       "url_fuente": "https://moviodds.com/odds?sport=soccer"
+    },
+    {
+      "liga": "SUI",
+      "fecha": "2026-11-29T15:30:00+00:00",
+      "local": "Sion",
+      "visitante": "Young Boys",
+      "favorito": "Young Boys",
+      "equipo_proveedor": "Young Boys",
+      "ppp": 2.21,
+      "ppp_rival": 2.07,
+      "bonus_local": 0.0,
+      "valoracion": 0.14,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada",
+      "motivo_cuota_moviodds": "Partido sin coincidencia inequívoca en MoviOdds"
+    },
+    {
+      "liga": "GRE",
+      "fecha": "2026-11-29T17:00:00+00:00",
+      "local": "Aris",
+      "visitante": "Olympiakos",
+      "favorito": "Olympiacos Piraeus",
+      "equipo_proveedor": "Olympiakos",
+      "ppp": 2.36,
+      "ppp_rival": 2.0,
+      "bonus_local": 0.0,
+      "valoracion": 0.36,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada",
+      "motivo_cuota_moviodds": "Partido sin coincidencia inequívoca en MoviOdds"
+    },
+    {
+      "liga": "GRE",
+      "fecha": "2026-11-29T19:00:00+00:00",
+      "local": "AEK Athens",
+      "visitante": "PAOK",
+      "favorito": "AEK Athens",
+      "equipo_proveedor": "AEK Athens",
+      "ppp": 2.3,
+      "ppp_rival": 2.0,
+      "bonus_local": 0.2,
+      "valoracion": 0.5,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada",
+      "motivo_cuota_moviodds": "Partido sin coincidencia inequívoca en MoviOdds"
+    },
+    {
+      "liga": "TUR",
+      "fecha": "2026-11-30T18:00:00+00:00",
+      "local": "Beşiktaş",
+      "visitante": "Galatasaray",
+      "favorito": "Galatasaray",
+      "equipo_proveedor": "Galatasaray",
+      "ppp": 2.58,
+      "ppp_rival": 2.08,
+      "bonus_local": 0.0,
+      "valoracion": 0.5,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada",
+      "motivo_cuota_moviodds": "Cuota vigente fuera de 1,20–1,80"
     },
     {
       "liga": "ITA",
@@ -14824,7 +16477,7 @@
       "estado": "Cuota MoviOdds; no verificada en bet365",
       "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
       "cuota": 1.7,
-      "consultada_en": "2026-11-24T18:04:29.927041+00:00",
+      "consultada_en": "2026-11-24T18:07:13.270504+00:00",
       "ultimo_cambio": "2026-11-23T04:30:44.708320+00:00",
       "cuota_verificada": true,
       "casa_apuestas": "MoviOdds",
@@ -14865,7 +16518,7 @@
           "estado": "Cuota MoviOdds; no verificada en bet365",
           "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
           "cuota": 1.48,
-          "consultada_en": "2026-11-24T18:04:29.900673+00:00",
+          "consultada_en": "2026-11-24T18:07:13.403515+00:00",
           "ultimo_cambio": "2026-11-23T22:10:18.767637+00:00",
           "cuota_verificada": true,
           "casa_apuestas": "MoviOdds",
@@ -14887,7 +16540,7 @@
           "estado": "Cuota MoviOdds; no verificada en bet365",
           "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
           "cuota": 1.25,
-          "consultada_en": "2026-11-24T18:04:29.910683+00:00",
+          "consultada_en": "2026-11-24T18:07:13.410025+00:00",
           "ultimo_cambio": "2026-11-23T04:30:50.584526+00:00",
           "cuota_verificada": true,
           "casa_apuestas": "MoviOdds",
@@ -14901,21 +16554,21 @@
     {
       "partidos": [
         {
-          "liga": "ESP",
-          "fecha": "2026-11-28T13:00:00Z",
-          "local": "Real Betis Balompié",
-          "visitante": "Rayo Vallecano de Madrid",
-          "favorito": "Betis",
-          "equipo_proveedor": "Real Betis Balompié",
-          "ppp": 2.08,
-          "ppp_rival": 1.0,
+          "liga": "SCO",
+          "fecha": "2026-11-24T20:00:00+00:00",
+          "local": "Rangers",
+          "visitante": "Aberdeen",
+          "favorito": "Rangers",
+          "equipo_proveedor": "Rangers",
+          "ppp": 2.31,
+          "ppp_rival": 1.08,
           "bonus_local": 0.2,
-          "valoracion": 1.28,
+          "valoracion": 1.43,
+          "cuota": 1.2222222222222223,
           "estado": "Cuota MoviOdds; no verificada en bet365",
           "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
-          "cuota": 1.5714285714285714,
-          "consultada_en": "2026-11-24T18:04:29.923972+00:00",
-          "ultimo_cambio": "2026-11-23T21:32:03.555011+00:00",
+          "consultada_en": "2026-11-24T18:07:07.102752+00:00",
+          "ultimo_cambio": "2026-11-24T11:58:47.443798+00:00",
           "cuota_verificada": true,
           "casa_apuestas": "MoviOdds",
           "mercado": "1X2",
@@ -14936,7 +16589,7 @@
           "estado": "Cuota MoviOdds; no verificada en bet365",
           "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
           "cuota": 1.3,
-          "consultada_en": "2026-11-24T18:04:29.897275+00:00",
+          "consultada_en": "2026-11-24T18:07:13.123614+00:00",
           "ultimo_cambio": "2026-11-23T08:40:34.863556+00:00",
           "cuota_verificada": true,
           "casa_apuestas": "MoviOdds",
@@ -14945,7 +16598,56 @@
           "url_fuente": "https://moviodds.com/odds?sport=soccer"
         }
       ],
-      "cuota_combinada": 2.043
+      "cuota_combinada": 1.589
+    },
+    {
+      "partidos": [
+        {
+          "liga": "ESP",
+          "fecha": "2026-11-28T13:00:00Z",
+          "local": "Real Betis Balompié",
+          "visitante": "Rayo Vallecano de Madrid",
+          "favorito": "Betis",
+          "equipo_proveedor": "Real Betis Balompié",
+          "ppp": 2.08,
+          "ppp_rival": 1.0,
+          "bonus_local": 0.2,
+          "valoracion": 1.28,
+          "estado": "Cuota MoviOdds; no verificada en bet365",
+          "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
+          "cuota": 1.5714285714285714,
+          "consultada_en": "2026-11-24T18:07:13.435972+00:00",
+          "ultimo_cambio": "2026-11-23T21:32:03.555011+00:00",
+          "cuota_verificada": true,
+          "casa_apuestas": "MoviOdds",
+          "mercado": "1X2",
+          "seleccion": "1",
+          "url_fuente": "https://moviodds.com/odds?sport=soccer"
+        },
+        {
+          "liga": "NED",
+          "fecha": "2026-11-28T17:45:00Z",
+          "local": "PSV",
+          "visitante": "Go Ahead Eagles",
+          "favorito": "PSV",
+          "equipo_proveedor": "PSV",
+          "ppp": 2.23,
+          "ppp_rival": 1.31,
+          "bonus_local": 0.2,
+          "valoracion": 1.12,
+          "estado": "Cuota MoviOdds; no verificada en bet365",
+          "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
+          "cuota": 1.2222222222222223,
+          "consultada_en": "2026-11-24T18:06:44.008195+00:00",
+          "ultimo_cambio": "2026-11-23T04:55:16.397652+00:00",
+          "cuota_verificada": true,
+          "casa_apuestas": "MoviOdds",
+          "mercado": "1X2",
+          "seleccion": "1",
+          "url_fuente": "https://moviodds.com/odds?sport=soccer"
+        }
+      ],
+      "cuota_combinada": 1.921
     },
     {
       "partidos": [
@@ -14963,7 +16665,7 @@
           "estado": "Cuota MoviOdds; no verificada en bet365",
           "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
           "cuota": 1.25,
-          "consultada_en": "2026-11-24T18:04:43.196728+00:00",
+          "consultada_en": "2026-11-24T18:06:43.993725+00:00",
           "ultimo_cambio": "2026-11-23T04:30:34.032987+00:00",
           "cuota_verificada": true,
           "casa_apuestas": "MoviOdds",
@@ -14972,61 +16674,106 @@
           "url_fuente": "https://moviodds.com/odds?sport=soccer"
         },
         {
-          "liga": "NED",
-          "fecha": "2026-11-28T17:45:00Z",
-          "local": "PSV",
-          "visitante": "Go Ahead Eagles",
-          "favorito": "PSV",
-          "equipo_proveedor": "PSV",
-          "ppp": 2.23,
-          "ppp_rival": 1.31,
-          "bonus_local": 0.2,
-          "valoracion": 1.12,
+          "liga": "ITA",
+          "fecha": "2026-11-30T19:45:00Z",
+          "local": "Cagliari Calcio",
+          "visitante": "AC Milan",
+          "favorito": "AC Milan",
+          "equipo_proveedor": "AC Milan",
+          "ppp": 2.25,
+          "ppp_rival": 1.33,
+          "bonus_local": 0.0,
+          "valoracion": 0.92,
           "estado": "Cuota MoviOdds; no verificada en bet365",
           "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
-          "cuota": 1.2222222222222223,
-          "consultada_en": "2026-11-24T18:04:43.207543+00:00",
-          "ultimo_cambio": "2026-11-23T04:55:16.397652+00:00",
+          "cuota": 1.7,
+          "consultada_en": "2026-11-24T18:07:13.270504+00:00",
+          "ultimo_cambio": "2026-11-23T04:30:44.708320+00:00",
           "cuota_verificada": true,
           "casa_apuestas": "MoviOdds",
           "mercado": "1X2",
-          "seleccion": "1",
+          "seleccion": "2",
           "url_fuente": "https://moviodds.com/odds?sport=soccer"
         }
       ],
-      "cuota_combinada": 1.528
+      "cuota_combinada": 2.125
     }
   ],
   "favoritos_validados": true,
-  "ultima_actualizacion_cuotas": "2026-11-24T18:05:06.736005+00:00",
+  "ultima_actualizacion_cuotas": "2026-11-24T18:07:19.427971+00:00",
   "diagnostico_cuotas": {
     "partidos_proveedor": 996,
-    "candidatos": 11,
+    "candidatos": 19,
     "candidatos_sin_hora": 0,
-    "emparejamientos_unicos": 10,
-    "emparejados_con_mercado_1x2_vigente": 10,
-    "selecciones_en_rango": 7,
-    "emparejados_con_favorito_identificado": 10,
+    "emparejamientos_unicos": 14,
+    "emparejados_con_mercado_1x2_vigente": 14,
+    "selecciones_en_rango": 9,
+    "emparejados_con_favorito_identificado": 14,
     "sin_cuota_vigente_del_favorito": 0,
-    "cuotas_fuera_de_1_20_a_1_80": 3,
-    "candidatos_con_nombres_exactos_en_proveedor": 2,
+    "cuotas_fuera_de_1_20_a_1_80": 5,
+    "candidatos_con_nombres_exactos_en_proveedor": 6,
     "coincidencias_nombres_sin_horario_compatible": 0,
     "nombres_coincidentes_con_horario_mas_de_3h": 0,
     "nombres_coincidentes_sin_hora_proveedor": 0,
     "detalle_mercado_1x2": {
-      "con_grupo_1x2": 10,
-      "grupo_1x2_con_cotizaciones_recientes": 10
+      "con_grupo_1x2": 14,
+      "grupo_1x2_con_cotizaciones_recientes": 14
     },
     "formatos_fechas_cuotas": {
-      "ts:iso_con_zona": 30
+      "ts:iso_con_zona": 42
     },
-    "propuestas_equivalencias_no_validadas": [],
-    "partidos_con_polled_at": 10,
-    "antiguedad_comprobacion_minima_minutos": 0.4,
-    "antiguedad_comprobacion_maxima_minutos": 0.6,
-    "antiguedad_1x2_minima_minutos": 471.1,
-    "antiguedad_1x2_maxima_minutos": 2254.5,
+    "propuestas_equivalencias_no_validadas": [
+      {
+        "local": "Bodø / Glimt",
+        "visitante": "KFUM",
+        "posibles": [
+          [
+            0.944,
+            "Bodo/Glimt",
+            "KFUM"
+          ]
+        ]
+      },
+      {
+        "local": "Sion",
+        "visitante": "Young Boys",
+        "posibles": [
+          [
+            0.9,
+            "FC Sion",
+            "Young Boys"
+          ]
+        ]
+      },
+      {
+        "local": "Aris",
+        "visitante": "Olympiakos",
+        "posibles": [
+          [
+            0.7,
+            "Aris Salonika",
+            "Olympiacos"
+          ]
+        ]
+      },
+      {
+        "local": "AEK Athens",
+        "visitante": "PAOK",
+        "posibles": [
+          [
+            0.75,
+            "AEK Athens",
+            "PAOK Salonika"
+          ]
+        ]
+      }
+    ],
+    "partidos_con_polled_at": 14,
+    "antiguedad_comprobacion_minima_minutos": 0.1,
+    "antiguedad_comprobacion_maxima_minutos": 0.8,
+    "antiguedad_1x2_minima_minutos": 206.6,
+    "antiguedad_1x2_maxima_minutos": 2256.8,
     "cotizaciones_1x2_futuras": 0,
-    "cotizaciones_1x2_mas_de_60_minutos": 30
+    "cotizaciones_1x2_mas_de_60_minutos": 42
   }
 }
