@@ -1,6 +1,6 @@
 {
   "version": "1.2",
-  "ultima_actualizacion": "2026-11-24T17:30:54.003749+00:00",
+  "ultima_actualizacion": "2026-11-24T17:32:48.685403+00:00",
   "fuente": "OpenLigaDB (https://www.openligadb.de), ODbL 1.0; GER; football-data.org (PL; ENG); football-data.org (PD; ESP); football-data.org (SA; ITA); football-data.org (FL1; FRA); football-data.org (PPL; POR); football-data.org (DED; NED)",
   "ligas": {
     "GER": [
@@ -14644,9 +14644,15 @@
       "ppp_rival": 1.0,
       "bonus_local": 0.2,
       "valoracion": 1.28,
-      "cuota": null,
-      "estado": "Pendiente de cuota verificada",
-      "motivo_cuota_moviodds": "Sin cuota 1X2 vigente del favorito"
+      "cuota": 1.5714285714285714,
+      "estado": "Cuota MoviOdds; no verificada en bet365",
+      "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
+      "consultada_en": "2026-11-24T17:32:45.542270+00:00",
+      "cuota_verificada": true,
+      "casa_apuestas": "MoviOdds",
+      "mercado": "1X2",
+      "seleccion": "1",
+      "url_fuente": "https://moviodds.com/odds?sport=soccer"
     },
     {
       "liga": "GER",
@@ -14659,9 +14665,15 @@
       "ppp_rival": 1.2,
       "bonus_local": 0.0,
       "valoracion": 1.0,
-      "cuota": null,
-      "estado": "Pendiente de cuota verificada",
-      "motivo_cuota_moviodds": "Sin cuota 1X2 vigente del favorito"
+      "cuota": 1.25,
+      "estado": "Cuota MoviOdds; no verificada en bet365",
+      "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
+      "consultada_en": "2026-11-24T17:32:17.418147+00:00",
+      "cuota_verificada": true,
+      "casa_apuestas": "MoviOdds",
+      "mercado": "1X2",
+      "seleccion": "2",
+      "url_fuente": "https://moviodds.com/odds?sport=soccer"
     },
     {
       "liga": "ESP",
@@ -14674,9 +14686,15 @@
       "ppp_rival": 0.85,
       "bonus_local": 0.0,
       "valoracion": 1.53,
-      "cuota": null,
-      "estado": "Pendiente de cuota verificada",
-      "motivo_cuota_moviodds": "Sin cuota 1X2 vigente del favorito"
+      "cuota": 1.48,
+      "estado": "Cuota MoviOdds; no verificada en bet365",
+      "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
+      "consultada_en": "2026-11-24T17:32:45.521342+00:00",
+      "cuota_verificada": true,
+      "casa_apuestas": "MoviOdds",
+      "mercado": "1X2",
+      "seleccion": "2",
+      "url_fuente": "https://moviodds.com/odds?sport=soccer"
     },
     {
       "liga": "NED",
@@ -14689,9 +14707,15 @@
       "ppp_rival": 1.31,
       "bonus_local": 0.2,
       "valoracion": 1.12,
-      "cuota": null,
-      "estado": "Pendiente de cuota verificada",
-      "motivo_cuota_moviodds": "Sin cuota 1X2 vigente del favorito"
+      "cuota": 1.2222222222222223,
+      "estado": "Cuota MoviOdds; no verificada en bet365",
+      "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
+      "consultada_en": "2026-11-24T17:32:17.461884+00:00",
+      "cuota_verificada": true,
+      "casa_apuestas": "MoviOdds",
+      "mercado": "1X2",
+      "seleccion": "1",
+      "url_fuente": "https://moviodds.com/odds?sport=soccer"
     },
     {
       "liga": "FRA",
@@ -14719,9 +14743,15 @@
       "ppp_rival": 1.33,
       "bonus_local": 0.2,
       "valoracion": 1.29,
-      "cuota": null,
-      "estado": "Pendiente de cuota verificada",
-      "motivo_cuota_moviodds": "Sin cuota 1X2 vigente del favorito"
+      "cuota": 1.3,
+      "estado": "Cuota MoviOdds; no verificada en bet365",
+      "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
+      "consultada_en": "2026-11-24T17:32:45.305439+00:00",
+      "cuota_verificada": true,
+      "casa_apuestas": "MoviOdds",
+      "mercado": "1X2",
+      "seleccion": "1",
+      "url_fuente": "https://moviodds.com/odds?sport=soccer"
     },
     {
       "liga": "ESP",
@@ -14736,7 +14766,7 @@
       "valoracion": 1.51,
       "cuota": null,
       "estado": "Pendiente de cuota verificada",
-      "motivo_cuota_moviodds": "Sin cuota 1X2 vigente del favorito"
+      "motivo_cuota_moviodds": "Cuota vigente fuera de 1,20–1,80"
     },
     {
       "liga": "GER",
@@ -14751,7 +14781,7 @@
       "valoracion": -0.1,
       "cuota": null,
       "estado": "Pendiente de cuota verificada",
-      "motivo_cuota_moviodds": "Sin cuota 1X2 vigente del favorito"
+      "motivo_cuota_moviodds": "Cuota vigente fuera de 1,20–1,80"
     },
     {
       "liga": "ESP",
@@ -14764,9 +14794,15 @@
       "ppp_rival": 1.15,
       "bonus_local": 0.0,
       "valoracion": 1.62,
-      "cuota": null,
-      "estado": "Pendiente de cuota verificada",
-      "motivo_cuota_moviodds": "Sin cuota 1X2 vigente del favorito"
+      "cuota": 1.25,
+      "estado": "Cuota MoviOdds; no verificada en bet365",
+      "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
+      "consultada_en": "2026-11-24T17:32:45.464164+00:00",
+      "cuota_verificada": true,
+      "casa_apuestas": "MoviOdds",
+      "mercado": "1X2",
+      "seleccion": "2",
+      "url_fuente": "https://moviodds.com/odds?sport=soccer"
     },
     {
       "liga": "ITA",
@@ -14779,9 +14815,15 @@
       "ppp_rival": 1.33,
       "bonus_local": 0.0,
       "valoracion": 0.92,
-      "cuota": null,
-      "estado": "Pendiente de cuota verificada",
-      "motivo_cuota_moviodds": "Sin cuota 1X2 vigente del favorito"
+      "cuota": 1.7,
+      "estado": "Cuota MoviOdds; no verificada en bet365",
+      "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
+      "consultada_en": "2026-11-24T17:32:45.300042+00:00",
+      "cuota_verificada": true,
+      "casa_apuestas": "MoviOdds",
+      "mercado": "1X2",
+      "seleccion": "2",
+      "url_fuente": "https://moviodds.com/odds?sport=soccer"
     },
     {
       "liga": "POR",
@@ -14799,19 +14841,255 @@
       "motivo_cuota_moviodds": "Cuota vigente fuera de 1,20–1,80"
     }
   ],
-  "dobles": [],
+  "dobles": [
+    {
+      "partidos": [
+        {
+          "liga": "ESP",
+          "fecha": "2026-11-28T17:30:00Z",
+          "local": "Elche CF",
+          "visitante": "Club Atlético de Madrid",
+          "favorito": "Atl. Madrid",
+          "equipo_proveedor": "Club Atlético de Madrid",
+          "ppp": 2.38,
+          "ppp_rival": 0.85,
+          "bonus_local": 0.0,
+          "valoracion": 1.53,
+          "cuota": 1.48,
+          "estado": "Cuota MoviOdds; no verificada en bet365",
+          "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
+          "consultada_en": "2026-11-24T17:32:45.521342+00:00",
+          "cuota_verificada": true,
+          "casa_apuestas": "MoviOdds",
+          "mercado": "1X2",
+          "seleccion": "2",
+          "url_fuente": "https://moviodds.com/odds?sport=soccer"
+        },
+        {
+          "liga": "ESP",
+          "fecha": "2026-11-29T15:15:00Z",
+          "local": "RC Deportivo La Coruña",
+          "visitante": "FC Barcelona",
+          "favorito": "Barcelona",
+          "equipo_proveedor": "FC Barcelona",
+          "ppp": 2.77,
+          "ppp_rival": 1.15,
+          "bonus_local": 0.0,
+          "valoracion": 1.62,
+          "cuota": 1.25,
+          "estado": "Cuota MoviOdds; no verificada en bet365",
+          "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
+          "consultada_en": "2026-11-24T17:32:45.464164+00:00",
+          "cuota_verificada": true,
+          "casa_apuestas": "MoviOdds",
+          "mercado": "1X2",
+          "seleccion": "2",
+          "url_fuente": "https://moviodds.com/odds?sport=soccer"
+        }
+      ],
+      "cuota_combinada": 1.85
+    },
+    {
+      "partidos": [
+        {
+          "liga": "ITA",
+          "fecha": "2026-11-28T19:45:00Z",
+          "local": "FC Internazionale Milano",
+          "visitante": "Genoa CFC",
+          "favorito": "Inter",
+          "equipo_proveedor": "FC Internazionale Milano",
+          "ppp": 2.42,
+          "ppp_rival": 1.33,
+          "bonus_local": 0.2,
+          "valoracion": 1.29,
+          "cuota": 1.3,
+          "estado": "Cuota MoviOdds; no verificada en bet365",
+          "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
+          "consultada_en": "2026-11-24T17:32:45.305439+00:00",
+          "cuota_verificada": true,
+          "casa_apuestas": "MoviOdds",
+          "mercado": "1X2",
+          "seleccion": "1",
+          "url_fuente": "https://moviodds.com/odds?sport=soccer"
+        },
+        {
+          "liga": "ESP",
+          "fecha": "2026-11-29T15:15:00Z",
+          "local": "RC Deportivo La Coruña",
+          "visitante": "FC Barcelona",
+          "favorito": "Barcelona",
+          "equipo_proveedor": "FC Barcelona",
+          "ppp": 2.77,
+          "ppp_rival": 1.15,
+          "bonus_local": 0.0,
+          "valoracion": 1.62,
+          "cuota": 1.25,
+          "estado": "Cuota MoviOdds; no verificada en bet365",
+          "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
+          "consultada_en": "2026-11-24T17:32:45.464164+00:00",
+          "cuota_verificada": true,
+          "casa_apuestas": "MoviOdds",
+          "mercado": "1X2",
+          "seleccion": "2",
+          "url_fuente": "https://moviodds.com/odds?sport=soccer"
+        }
+      ],
+      "cuota_combinada": 1.625
+    },
+    {
+      "partidos": [
+        {
+          "liga": "ESP",
+          "fecha": "2026-11-28T13:00:00Z",
+          "local": "Real Betis Balompié",
+          "visitante": "Rayo Vallecano de Madrid",
+          "favorito": "Betis",
+          "equipo_proveedor": "Real Betis Balompié",
+          "ppp": 2.08,
+          "ppp_rival": 1.0,
+          "bonus_local": 0.2,
+          "valoracion": 1.28,
+          "cuota": 1.5714285714285714,
+          "estado": "Cuota MoviOdds; no verificada en bet365",
+          "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
+          "consultada_en": "2026-11-24T17:32:45.542270+00:00",
+          "cuota_verificada": true,
+          "casa_apuestas": "MoviOdds",
+          "mercado": "1X2",
+          "seleccion": "1",
+          "url_fuente": "https://moviodds.com/odds?sport=soccer"
+        },
+        {
+          "liga": "ESP",
+          "fecha": "2026-11-29T15:15:00Z",
+          "local": "RC Deportivo La Coruña",
+          "visitante": "FC Barcelona",
+          "favorito": "Barcelona",
+          "equipo_proveedor": "FC Barcelona",
+          "ppp": 2.77,
+          "ppp_rival": 1.15,
+          "bonus_local": 0.0,
+          "valoracion": 1.62,
+          "cuota": 1.25,
+          "estado": "Cuota MoviOdds; no verificada en bet365",
+          "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
+          "consultada_en": "2026-11-24T17:32:45.464164+00:00",
+          "cuota_verificada": true,
+          "casa_apuestas": "MoviOdds",
+          "mercado": "1X2",
+          "seleccion": "2",
+          "url_fuente": "https://moviodds.com/odds?sport=soccer"
+        }
+      ],
+      "cuota_combinada": 1.964
+    },
+    {
+      "partidos": [
+        {
+          "liga": "ESP",
+          "fecha": "2026-11-28T17:30:00Z",
+          "local": "Elche CF",
+          "visitante": "Club Atlético de Madrid",
+          "favorito": "Atl. Madrid",
+          "equipo_proveedor": "Club Atlético de Madrid",
+          "ppp": 2.38,
+          "ppp_rival": 0.85,
+          "bonus_local": 0.0,
+          "valoracion": 1.53,
+          "cuota": 1.48,
+          "estado": "Cuota MoviOdds; no verificada en bet365",
+          "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
+          "consultada_en": "2026-11-24T17:32:45.521342+00:00",
+          "cuota_verificada": true,
+          "casa_apuestas": "MoviOdds",
+          "mercado": "1X2",
+          "seleccion": "2",
+          "url_fuente": "https://moviodds.com/odds?sport=soccer"
+        },
+        {
+          "liga": "ITA",
+          "fecha": "2026-11-28T19:45:00Z",
+          "local": "FC Internazionale Milano",
+          "visitante": "Genoa CFC",
+          "favorito": "Inter",
+          "equipo_proveedor": "FC Internazionale Milano",
+          "ppp": 2.42,
+          "ppp_rival": 1.33,
+          "bonus_local": 0.2,
+          "valoracion": 1.29,
+          "cuota": 1.3,
+          "estado": "Cuota MoviOdds; no verificada en bet365",
+          "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
+          "consultada_en": "2026-11-24T17:32:45.305439+00:00",
+          "cuota_verificada": true,
+          "casa_apuestas": "MoviOdds",
+          "mercado": "1X2",
+          "seleccion": "1",
+          "url_fuente": "https://moviodds.com/odds?sport=soccer"
+        }
+      ],
+      "cuota_combinada": 1.924
+    },
+    {
+      "partidos": [
+        {
+          "liga": "ESP",
+          "fecha": "2026-11-28T13:00:00Z",
+          "local": "Real Betis Balompié",
+          "visitante": "Rayo Vallecano de Madrid",
+          "favorito": "Betis",
+          "equipo_proveedor": "Real Betis Balompié",
+          "ppp": 2.08,
+          "ppp_rival": 1.0,
+          "bonus_local": 0.2,
+          "valoracion": 1.28,
+          "cuota": 1.5714285714285714,
+          "estado": "Cuota MoviOdds; no verificada en bet365",
+          "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
+          "consultada_en": "2026-11-24T17:32:45.542270+00:00",
+          "cuota_verificada": true,
+          "casa_apuestas": "MoviOdds",
+          "mercado": "1X2",
+          "seleccion": "1",
+          "url_fuente": "https://moviodds.com/odds?sport=soccer"
+        },
+        {
+          "liga": "ESP",
+          "fecha": "2026-11-28T17:30:00Z",
+          "local": "Elche CF",
+          "visitante": "Club Atlético de Madrid",
+          "favorito": "Atl. Madrid",
+          "equipo_proveedor": "Club Atlético de Madrid",
+          "ppp": 2.38,
+          "ppp_rival": 0.85,
+          "bonus_local": 0.0,
+          "valoracion": 1.53,
+          "cuota": 1.48,
+          "estado": "Cuota MoviOdds; no verificada en bet365",
+          "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
+          "consultada_en": "2026-11-24T17:32:45.521342+00:00",
+          "cuota_verificada": true,
+          "casa_apuestas": "MoviOdds",
+          "mercado": "1X2",
+          "seleccion": "2",
+          "url_fuente": "https://moviodds.com/odds?sport=soccer"
+        }
+      ],
+      "cuota_combinada": 2.326
+    }
+  ],
   "favoritos_validados": true,
-  "ultima_actualizacion_cuotas": "2026-11-24T17:30:56.121759+00:00",
+  "ultima_actualizacion_cuotas": "2026-11-24T17:32:54.999599+00:00",
   "diagnostico_cuotas": {
-    "partidos_proveedor": 1013,
+    "partidos_proveedor": 1014,
     "candidatos": 11,
     "candidatos_sin_hora": 0,
     "emparejamientos_unicos": 10,
-    "emparejados_con_mercado_1x2_vigente": 1,
-    "selecciones_en_rango": 0,
+    "emparejados_con_mercado_1x2_vigente": 10,
+    "selecciones_en_rango": 7,
     "emparejados_con_favorito_identificado": 10,
-    "sin_cuota_vigente_del_favorito": 9,
-    "cuotas_fuera_de_1_20_a_1_80": 1,
+    "sin_cuota_vigente_del_favorito": 0,
+    "cuotas_fuera_de_1_20_a_1_80": 3,
     "candidatos_con_nombres_exactos_en_proveedor": 2,
     "coincidencias_nombres_sin_horario_compatible": 0,
     "nombres_coincidentes_con_horario_mas_de_3h": 0,
@@ -14819,15 +15097,14 @@
     "detalle_mercado_1x2": {
       "con_grupo_1x2": 10,
       "grupo_1x2_sin_cotizaciones_recientes": 9,
-      "grupo_1x2_no_interpretable": 9,
       "grupo_1x2_con_cotizaciones_recientes": 1
     },
     "formatos_fechas_cuotas": {
       "ts:iso_con_zona": 30
     },
     "propuestas_equivalencias_no_validadas": [],
-    "antiguedad_1x2_minima_minutos": 436.9,
-    "antiguedad_1x2_maxima_minutos": 2220.4,
+    "antiguedad_1x2_minima_minutos": 438.9,
+    "antiguedad_1x2_maxima_minutos": 2222.3,
     "cotizaciones_1x2_futuras": 0,
     "cotizaciones_1x2_mas_de_60_minutos": 30
   }
