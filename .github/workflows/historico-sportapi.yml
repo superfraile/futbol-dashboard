@@ -1,0 +1,37 @@
+name: Histórico SportAPI
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '37 4 * * 1'
+  push:
+    paths:
+      - 'scripts/historico_sportapi.py'
+      - '.github/workflows/historico-sportapi.yml'
+permissions:
+  contents: write
+concurrency:
+  group: datos-deportivos
+  cancel-in-progress: false
+jobs:
+  historico:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Calcular y conciliar histórico
+        env:
+          SPORTAPI_API_KEY: ${{ secrets.SPORTAPI_API_KEY }}
+        run: python -m scripts.historico_sportapi
+      - name: Publicar estadísticas validadas
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add historico-sportapi.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Actualizar histórico validado SportAPI"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
