@@ -201,6 +201,27 @@ def aplicar_cuotas_bet365(candidatos, archivo=None):
                        mercado="1X2",seleccion=signo,consultada_en=fecha_consulta,
                        url_fuente=url,estado="Cuota bet365 documentada")
 
+def historico_validado(archivo=None, ahora=None):
+    """Solo snapshots conciliados de la temporada actual; caducidad de ocho días."""
+    from scripts.sportapi import IDS, temporada
+    ahora=ahora or datetime.now(timezone.utc)
+    ruta=archivo or Path(__file__).resolve().parent.parent/"historico-sportapi.json"
+    try:
+        doc=json.loads(Path(ruta).read_text(encoding="utf-8"))
+        fecha=datetime.fromisoformat(doc["fecha"].replace("Z","+00:00"))
+        if fecha.tzinfo is None or not timedelta(0)<=ahora-fecha<=timedelta(days=8):
+            return {},None
+        hoy=ahora.astimezone(ZoneInfo("Europe/Madrid")).date()
+        validos={}
+        for liga,h in doc["ligas"].items():
+            if (liga in IDS and h.get("estado")=="validado" and h.get("temporada")==temporada(liga,hoy)
+                    and not h.get("equipos_discrepantes") and not h.get("fechas_invalidas")
+                    and isinstance(h.get("estadisticas"),dict) and isinstance(h.get("elo"),dict)):
+                validos[liga]=h
+        return validos,fecha.isoformat()
+    except (OSError,ValueError,KeyError,TypeError,AttributeError):
+        return {},None
+
 def construir(entrada):
     validar(entrada)
     fuente=entrada["fuente"]
@@ -210,14 +231,23 @@ def construir(entrada):
     lista_validada=json.loads((Path(__file__).resolve().parent.parent/"equipos-favoritos.json").read_text(encoding="utf-8")).get("validada") is True
     resultado=dict(version="1.2",ultima_actualizacion=datetime.now(timezone.utc).isoformat(),
                    fuente=fuente,ligas={},equipos_top=[],partidos=[],estadisticas={},candidatos=[],dobles=[])
+    historicos,fecha_historico=historico_validado()
+    resultado["fecha_estadisticas_por_liga"]={}
     for liga in LIGAS:
         partidos=entrada["ligas"].get(liga,[])
         tabla=entrada.get("clasificaciones_sportapi",{}).get(liga)
+        es_sportapi=tabla is not None
         if tabla is None:
             tabla=calcular(partidos)
         rating=elo(partidos)
         resultado["ligas"][liga]=tabla
         resultado["estadisticas"][liga]=desglosar(partidos)
+        if es_sportapi and liga in historicos:
+            h=historicos[liga]
+            # Las estadísticas y Elo reflejan el último histórico semanal conciliado.
+            resultado["estadisticas"][liga]=h["estadisticas"]
+            rating=h["elo"]
+            resultado["fecha_estadisticas_por_liga"][liga]=fecha_historico
         resueltos=resolver_favoritos(liga,favoritos[liga],tabla) if lista_validada else {}
         # Un favorito puede no figurar en la clasificación si todavía no ha jugado.
         # Aun así, debe excluirse cualquier enfrentamiento entre dos favoritos.
