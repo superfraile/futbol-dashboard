@@ -40,13 +40,13 @@ def favoritos_configurados():
 # Correspondencias exactas revisadas frente a los nombres reales de los proveedores.
 ALIAS = {
  "GER":{"Bayern Munich":"FC Bayern München","Dortmund":"Borussia Dortmund","Bayer Leverkusen":"Bayer 04 Leverkusen"},
- "DEN":{"FC Copenhagen":"FC København"},
+ "DEN":{"FC Copenhagen":"Copenhagen"},
  "ESP":{"Barcelona":"FC Barcelona","Real Madrid":"Real Madrid CF","Betis":"Real Betis Balompié","Atl. Madrid":"Club Atlético de Madrid"},
  "FRA":{"PSG":"Paris Saint-Germain FC","Monaco":"AS Monaco FC","Marseille":"Olympique de Marseille"},
- "GRE":{"AEK Athens":"AEK Athens","Olympiacos Piraeus":"Olympiacos"},
+ "GRE":{"AEK Athens":"AEK Athens","Olympiacos Piraeus":"Olympiakos"},
  "ENG":{"Arsenal":"Arsenal FC","Manchester City":"Manchester City FC","Manchester Utd":"Manchester United FC","Liverpool":"Liverpool FC"},
  "ITA":{"Inter":"FC Internazionale Milano","Napoli":"SSC Napoli","AC Milan":"AC Milan","Juventus":"Juventus FC"},
- "NOR":{"Bodo/Glimt":"FK Bodø/Glimt"},
+ "NOR":{"Bodo/Glimt":"Bodø / Glimt"},
  "NED":{"Feyenoord":"Feyenoord Rotterdam","Ajax":"AFC Ajax"},
  "POR":{"FC Porto":"FC Porto","Sporting CP":"Sporting Clube de Portugal","Benfica":"Sport Lisboa e Benfica","Braga":"Sporting Clube de Braga"},
  "SWE":{"Malmo FF":"Malmö FF"},
@@ -212,7 +212,9 @@ def construir(entrada):
                    fuente=fuente,ligas={},equipos_top=[],partidos=[],estadisticas={},candidatos=[],dobles=[])
     for liga in LIGAS:
         partidos=entrada["ligas"].get(liga,[])
-        tabla=calcular(partidos)
+        tabla=entrada.get("clasificaciones_sportapi",{}).get(liga)
+        if tabla is None:
+            tabla=calcular(partidos)
         rating=elo(partidos)
         resultado["ligas"][liga]=tabla
         resultado["estadisticas"][liga]=desglosar(partidos)
@@ -227,10 +229,11 @@ def construir(entrada):
         for equipo in (favoritos[liga] if lista_validada else []):
             nombre=ALIAS.get(liga,{}).get(equipo,equipo)
             encontrado=por_nombre.get(clave_equipo(nombre))
+            equipo_tabla=next((t["equipo"] for t in tabla if clave_equipo(t["equipo"])==clave_equipo(nombre)),None)
             resultado["equipos_top"].append(dict(
                 liga=liga,equipo=equipo,
                 elo=round(encontrado[1],1) if encontrado else None,
-                equipo_proveedor=encontrado[0] if encontrado else None))
+                equipo_proveedor=encontrado[0] if encontrado else equipo_tabla))
         for m in partidos:
             if m.get("estado")!="pendiente":
                 continue
