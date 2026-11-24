@@ -36,7 +36,7 @@ async function iniciar(){
  tabla(document.querySelector("#favoritos .aviso"),["Liga","Equipo fijo","ELO estimado","Pts/PJ"],Object.entries(listaFija.ligas).flatMap(([liga,equipos])=>equipos.map(equipo=>{
    const r=topPublicados.find(x=>x.liga===liga&&x.equipo===equipo);
    const s=r?datos.ligas[liga]?.find(t=>t.equipo===r.equipo_proveedor):null;
-   return [nombreLiga(liga),equipo,r?.elo??null,s?.ppp??null];
+   return [nombreLiga(liga),equipo,r?.elo??null,r?.elo!=null?fechaStats(liga):null,s?.ppp??null];
  })));
  const hoy=new Intl.DateTimeFormat("sv-SE",{timeZone:"Europe/Madrid",year:"numeric",month:"2-digit",day:"2-digit"}).format(new Date());
  const diaEspana=valor=>valor.length>10
@@ -175,11 +175,11 @@ async function iniciar(){
  for(const l of CONFIG.ligas){
    for(const [equipo,condiciones] of Object.entries(datos.estadisticas?.[l.id]||{})){
      for(const [condicion,s] of Object.entries(condiciones)){
-       filas.push([l.pais,equipo,condicion,s.pj,s.g,s.e,s.p,s.gf,s.gc,s.puntos,s.ppp,s.victorias_pct]);
+       filas.push([l.pais,equipo,condicion,s.pj,s.g,s.e,s.p,s.gf,s.gc,s.puntos,s.ppp,s.victorias_pct,fechaStats(l.id)]);
      }
    }
  }
- if(filas.length)tabla(dest,["Liga","Equipo","Condición","PJ","G","E","P","GF","GC","Pts","Pts/PJ","Victorias %"],filas);
+ if(filas.length)tabla(dest,["Liga","Equipo","Condición","PJ","G","E","P","GF","GC","Pts","Pts/PJ","Victorias %","Fecha datos"],filas);
  else dest.textContent="Sin estadísticas verificadas. Fuente: "+(datos.fuente||"pendiente de validación");
  const fuente=document.createElement("p");fuente.textContent="Fuente: "+(datos.fuente||"pendiente de validación");
  document.querySelector("footer").append(fuente);
