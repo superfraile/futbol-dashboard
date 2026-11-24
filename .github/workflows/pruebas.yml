@@ -17,4 +17,6 @@ jobs:
       - name: Ejecutar pruebas de selección y validación
         run: python -m unittest discover -s tests -v
       - name: Comprobar sintaxis del dashboard JavaScript
-        run: node --check panel.js
+        run: node --check panel.js && node --check seguimiento.js
+      - name: Comprobar carga de todas las pestañas con datos reales
+        run: node tests/panel_carga.test.cjs
