@@ -53,7 +53,7 @@ class SeleccionTests(unittest.TestCase):
                     p("2026-11-25T00:00:00Z","B",2.2),
                     p("2026-11-24T12:00:00Z","C",2.8)]
         dobles=generar_dobles(candidatos,ahora)
-        self.assertEqual(len(dobles),3)
+        self.assertEqual(len(dobles),1)
         self.assertEqual({x["local"] for x in dobles[0]["partidos"]},{"B","C"})
 
     def test_maximo_cinco_dobles_y_prioridad_por_valoracion(self):
@@ -68,11 +68,26 @@ class SeleccionTests(unittest.TestCase):
                 cuota_verificada=True,casa_apuestas="MoviOdds",
                 mercado="1X2",seleccion="1",valoracion=valoracion))
         dobles=generar_dobles(candidatos,ahora)
-        self.assertEqual(len(dobles),5)
+        self.assertEqual(len(dobles),2)
         self.assertEqual({p["local"] for p in dobles[0]["partidos"]},
                          {"Local 2","Local 4"})
         self.assertEqual({p["local"] for p in dobles[-1]["partidos"]},
-                         {"Local 1","Local 4"})
+                         {"Local 1","Local 3"})
+
+    def test_limite_cinco_dobles_sin_repetir_partidos(self):
+        ahora=datetime(2026,11,22,20,30,tzinfo=timezone.utc)
+        candidatos=[dict(liga="ESP",fecha="2026-11-24T18:00:00Z",
+                         consultada_en="2026-11-22T20:00:00Z",
+                         local=f"Local {n}",visitante=f"Rival {n}",
+                         equipo_proveedor=f"Local {n}",cuota=1.5,
+                         cuota_verificada=True,casa_apuestas="MoviOdds",
+                         mercado="1X2",seleccion="1",valoracion=n)
+                    for n in range(12)]
+        dobles=generar_dobles(candidatos,ahora)
+        self.assertEqual(len(dobles),5)
+        partidos=[p["local"] for d in dobles for p in d["partidos"]]
+        self.assertEqual(len(set(partidos)),10)
+        self.assertEqual(set(partidos),{f"Local {n}" for n in range(2,12)})
 
     def test_valoracion_desconocida_no_equivale_a_cero(self):
         ahora=datetime(2026,11,22,20,30,tzinfo=timezone.utc)
@@ -85,7 +100,7 @@ class SeleccionTests(unittest.TestCase):
                         mercado="1X2",seleccion="1",valoracion=valoracion)
         dobles=generar_dobles([candidato(1,None),candidato(2,0.1),
                                candidato(3,-0.2)],ahora)
-        self.assertEqual(len(dobles),3)
+        self.assertEqual(len(dobles),1)
         self.assertEqual({p["local"] for p in dobles[0]["partidos"]},
                          {"Equipo 2","Equipo 3"})
 
