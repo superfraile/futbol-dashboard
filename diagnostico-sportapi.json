@@ -1,6 +1,186 @@
 {
-  "fecha": "2026-11-24T17:58:14.416246+00:00",
-  "estado": "error",
-  "ligas": [],
-  "motivo": "HTTP 401"
+  "fecha": "2026-11-24T18:02:25.938633+00:00",
+  "estado": "consulta_correcta",
+  "ligas": [
+    {
+      "pais": "Denmark",
+      "id": 19,
+      "name": "Danish Superligaen",
+      "has_standings": true,
+      "has_fixtures": true,
+      "fixtures_count": 283,
+      "teams_count": 14
+    },
+    {
+      "pais": "Greece",
+      "id": 10,
+      "name": "Greek Super League",
+      "has_standings": true,
+      "has_fixtures": true,
+      "fixtures_count": 342,
+      "teams_count": 16
+    },
+    {
+      "pais": "Norway",
+      "id": 11,
+      "name": "Norwegian Eliteserien",
+      "has_standings": true,
+      "has_fixtures": true,
+      "fixtures_count": 353,
+      "teams_count": 19
+    },
+    {
+      "pais": "Scotland",
+      "id": 70,
+      "name": "Highland / Lowland",
+      "has_standings": true,
+      "has_fixtures": true,
+      "fixtures_count": 1062,
+      "teams_count": 52
+    },
+    {
+      "pais": "Scotland",
+      "id": 91,
+      "name": "Scottish Challenge Cup",
+      "has_standings": true,
+      "has_fixtures": true,
+      "fixtures_count": 265,
+      "teams_count": 51
+    },
+    {
+      "pais": "Scotland",
+      "id": 68,
+      "name": "Scottish Championship",
+      "has_standings": true,
+      "has_fixtures": true,
+      "fixtures_count": 277,
+      "teams_count": 10
+    },
+    {
+      "pais": "Scotland",
+      "id": 127,
+      "name": "Scottish Championship Play-offs",
+      "has_standings": false,
+      "has_fixtures": true,
+      "fixtures_count": 6,
+      "teams_count": 4
+    },
+    {
+      "pais": "Scotland",
+      "id": 99,
+      "name": "Scottish Cup",
+      "has_standings": false,
+      "has_fixtures": true,
+      "fixtures_count": 236,
+      "teams_count": 137
+    },
+    {
+      "pais": "Scotland",
+      "id": 101,
+      "name": "Scottish League Cup",
+      "has_standings": true,
+      "has_fixtures": true,
+      "fixtures_count": 110,
+      "teams_count": 45
+    },
+    {
+      "pais": "Scotland",
+      "id": 78,
+      "name": "Scottish League One",
+      "has_standings": true,
+      "has_fixtures": true,
+      "fixtures_count": 277,
+      "teams_count": 10
+    },
+    {
+      "pais": "Scotland",
+      "id": 128,
+      "name": "Scottish League One Play-offs",
+      "has_standings": false,
+      "has_fixtures": true,
+      "fixtures_count": 6,
+      "teams_count": 4
+    },
+    {
+      "pais": "Scotland",
+      "id": 69,
+      "name": "Scottish League Two",
+      "has_standings": true,
+      "has_fixtures": true,
+      "fixtures_count": 272,
+      "teams_count": 10
+    },
+    {
+      "pais": "Scotland",
+      "id": 135,
+      "name": "Scottish League Two Play-offs",
+      "has_standings": false,
+      "has_fixtures": true,
+      "fixtures_count": 2,
+      "teams_count": 2
+    },
+    {
+      "pais": "Scotland",
+      "id": 88,
+      "name": "Scottish Premiership",
+      "has_standings": true,
+      "has_fixtures": true,
+      "fixtures_count": 340,
+      "teams_count": 12
+    },
+    {
+      "pais": "Scotland",
+      "id": 126,
+      "name": "Scottish Premiership Play-offs",
+      "has_standings": false,
+      "has_fixtures": true,
+      "fixtures_count": 6,
+      "teams_count": 4
+    },
+    {
+      "pais": "Scotland",
+      "id": 112,
+      "name": "Scottish SWF Cup",
+      "has_standings": false,
+      "has_fixtures": true,
+      "fixtures_count": 71,
+      "teams_count": 49
+    },
+    {
+      "pais": "Scotland",
+      "id": 82,
+      "name": "Scottish SWPL 1",
+      "has_standings": true,
+      "has_fixtures": true,
+      "fixtures_count": 202,
+      "teams_count": 11
+    },
+    {
+      "pais": "Sweden",
+      "id": 21,
+      "name": "Swedish Allsvenskan",
+      "has_standings": true,
+      "has_fixtures": true,
+      "fixtures_count": 342,
+      "teams_count": 19
+    },
+    {
+      "pais": "Switzerland",
+      "id": 15,
+      "name": "Swiss Super League",
+      "has_standings": true,
+      "has_fixtures": true,
+      "fixtures_count": 330,
+      "teams_count": 13
+    },
+    {
+      "pais": "Türkiye",
+      "id": 16,
+      "name": "Turkish Super Lig",
+      "has_standings": true,
+      "has_fixtures": true,
+      "fixtures_count": 450,
+      "teams_count": 21
+    }
+  ]
 }
