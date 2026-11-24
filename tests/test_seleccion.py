@@ -98,7 +98,7 @@ class SeleccionTests(unittest.TestCase):
                   mercado="1X2",seleccion="1")
         segundo=dict(base,local="C",visitante="D",equipo_proveedor="C")
         self.assertEqual(len(generar_dobles([base,segundo],ahora)),1)
-        segundo["consultada_en"]="2026-11-22T18:00:00Z"
+        segundo["consultada_en"]="2026-11-22T17:00:00Z"
         self.assertEqual(generar_dobles([base,segundo],ahora),[])
         segundo["consultada_en"]="2026-11-22T20:00:00Z"
         segundo["fecha"]="2026-11-22T19:00:00Z"
@@ -152,7 +152,7 @@ class SeleccionTests(unittest.TestCase):
             self.assertIsNone(probar(dict(base,verificada=False))["cuota"])
             self.assertIsNone(probar(dict(base,seleccion="2"))["cuota"])
             self.assertIsNone(probar(dict(base,cuota=1.9))["cuota"])
-            antiguo=(ahora-timedelta(hours=2)).isoformat()
+            antiguo=(ahora-timedelta(hours=13)).isoformat()
             self.assertIsNone(probar(dict(base,consultada_en=antiguo))["cuota"])
 
     def test_importador_descarta_registros_duplicados(self):
