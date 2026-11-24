@@ -64,6 +64,7 @@ table{border-collapse:collapse;width:100%;font-size:14px}th,td{padding:9px;text-
 <button onclick="mostrar('candidatos',this)">🎯 Preselección</button>
 <button onclick="mostrar('dobles',this)">🎟️ Dobles</button>
 <button onclick="mostrar('estadisticas',this)">📊 Estadísticas</button>
+<button onclick="mostrar('seguimiento',this)">📈 Seguimiento</button>
 </nav>
 
 <section id="clasificaciones" class="seccion visible">
@@ -106,12 +107,22 @@ table{border-collapse:collapse;width:100%;font-size:14px}th,td{padding:9px;text-
 <div class="aviso">Pendiente de incorporar los datos deportivos.</div>
 </section>
 
+<section id="seguimiento" class="seccion">
+<h2>Seguimiento simulado</h2>
+<p>Registro prospectivo diario de hasta cinco dobles, 5 € ficticios por doble. Sin apuestas reales. No se reutilizan encuentros registrados. Las selecciones aplazadas o sin resultado confirmado permanecen pendientes.</p>
+<div id="resumen-seguimiento" class="resumen"></div>
+<p id="progreso-seguimiento"></p>
+<div class="aviso" id="lista-seguimiento">Cargando registro de simulación.</div>
+<p>El ROI mide el beneficio neto respecto al importe de las dobles liquidadas. Una muestra de 100 dobles es una primera referencia, no una garantía de rentabilidad.</p>
+</section>
+
 </main>
 
 <footer>Fútbol Dashboard | Versión 1.2<br>Football data provided by the Football-Data.org API · Bundesliga: OpenLigaDB</footer>
 
 <script src="datos.js?v=20261124-1835"></script>
 <script src="panel.js?v=20261124-1915"></script>
+<script src="seguimiento.js?v=20261124-1920"></script>
 
 </body>
 </html>
