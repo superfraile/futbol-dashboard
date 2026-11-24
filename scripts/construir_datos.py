@@ -102,7 +102,18 @@ def generar_dobles(candidatos, ahora=None):
         -sum(p.get("valoracion") is not None for p in d["partidos"]),
         -sum(float(p["valoracion"]) for p in d["partidos"] if p.get("valoracion") is not None),
         d["partidos"][0]["fecha"],d["partidos"][1]["fecha"]))
-    return dobles[:5]
+    # Seleccionar por valoración, sin reutilizar encuentros entre dobles.
+    elegidas=[]
+    utilizados=set()
+    for doble in dobles:
+        claves={(p["liga"],p["fecha"],p["local"],p["visitante"]) for p in doble["partidos"]}
+        if claves & utilizados:
+            continue
+        elegidas.append(doble)
+        utilizados.update(claves)
+        if len(elegidas)==5:
+            break
+    return elegidas
 
 def validar(entrada):
     ligas=entrada["ligas"]
