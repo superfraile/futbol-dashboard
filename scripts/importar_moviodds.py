@@ -10,6 +10,26 @@ from scripts.construir_datos import generar_dobles, clave_equipo
 
 URL="https://moviodds.com/odds?sport=soccer"
 
+# Equivalencias explícitas observadas en el feed con horarios compatibles.
+EQUIVALENCIAS={
+    "Real Betis Balompié":"Real Betis",
+    "Rayo Vallecano de Madrid":"Rayo Vallecano",
+    "Hamburger SV":"Hamburg",
+    "FC Bayern München":"Bayern Munich",
+    "Elche CF":"Elche",
+    "Club Atlético de Madrid":"Atletico Madrid",
+    "FC Internazionale Milano":"Inter Milan",
+    "Genoa CFC":"Genoa",
+    "Real Madrid CF":"Real Madrid",
+    "Deportivo Alavés":"CD Alaves",
+    "RC Deportivo La Coruña":"Deportivo A Coruna",
+    "FC Barcelona":"Barcelona",
+    "Cagliari Calcio":"Cagliari",
+    "Sport Lisboa e Benfica":"Benfica",
+    "FC Famalicão":"Famalicao",
+}
+
+
 def incorporar(datos, partidos, ahora=None):
     ahora=ahora or datetime.now(timezone.utc)
     candidatos=datos.get("candidatos",[])
@@ -20,7 +40,7 @@ def incorporar(datos, partidos, ahora=None):
                 candidato.pop(campo,None)
             candidato["cuota"]=None
             candidato["estado"]="Pendiente de cuota actualizada"
-    for candidato, partido in emparejar_candidatos(candidatos,partidos):
+    for candidato, partido in emparejar_candidatos(candidatos,partidos,EQUIVALENCIAS):
         signo=("1" if candidato["equipo_proveedor"]==candidato["local"] else
                "2" if candidato["equipo_proveedor"]==candidato["visitante"] else None)
         cuota=mercado_1x2(partido,ahora).get(signo)
@@ -56,7 +76,7 @@ def main():
     # Diagnóstico sin mostrar equipos, cuotas ni credenciales.
     ahora=datetime.now(timezone.utc)
     candidatos=datos.get("candidatos",[])
-    emparejados=emparejar_candidatos(candidatos,partidos)
+    emparejados=emparejar_candidatos(candidatos,partidos,EQUIVALENCIAS)
     sin_hora=sum(fecha_utc(p.get("fecha")) is None for p in candidatos)
     con_mercado=sum(bool(mercado_1x2(m,ahora)) for _,m in emparejados)
     elegibles=0
@@ -110,7 +130,7 @@ def main():
             if (clave_equipo(local),clave_equipo(visitante)) in pares_proveedor:
                 pares_identicos+=1
     diagnostico["candidatos_con_nombres_exactos_en_proveedor"]=pares_identicos
-    diagnostico["coincidencias_nombres_sin_horario_compatible"]=max(0,pares_identicos-len(emparejados))
+    diagnostico["coincidencias_nombres_sin_horario_compatible"]=max(0,pares_identicos-len(emparejar_candidatos(candidatos,partidos)))
     # Diferencias horarias agregadas para coincidencias exactas por equipos.
     # No relajar el umbral de 3 horas: solo diagnóstico.
     horarios_proveedor={}
