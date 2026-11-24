@@ -6,7 +6,7 @@ on:
       - '.github/workflows/diagnosticar-sportapi.yml'
       - 'scripts/diagnosticar_sportapi.py'
 permissions:
-  contents: read
+  contents: write
 jobs:
   diagnostico:
     runs-on: ubuntu-latest
@@ -16,6 +16,22 @@ jobs:
         with:
           python-version: '3.11'
       - name: Consultar cobertura sin publicar datos
+        id: diagnostico
+        continue-on-error: true
         env:
           SPORTAPI_API_KEY: ${{ secrets.SPORTAPI_API_KEY }}
         run: python -m scripts.diagnosticar_sportapi
+      - name: Guardar diagnóstico sin alterar datos del panel
+        run: |
+          test -f diagnostico-sportapi.json
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add diagnostico-sportapi.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Actualizar diagnóstico de cobertura SportAPI"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
+      - name: Señalar fallo de consulta
+        if: steps.diagnostico.outcome == 'failure'
+        run: exit 1
