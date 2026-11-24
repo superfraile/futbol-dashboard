@@ -16,7 +16,7 @@ CONFIG.ligas.forEach(l=>{const b=document.createElement("button");b.className="l
 function mostrar(id,boton){document.querySelectorAll(".seccion").forEach(s=>s.classList.remove("visible"));document.querySelectorAll("nav button").forEach(b=>b.classList.remove("activo"));document.getElementById(id).classList.add("visible");boton.classList.add("activo")}
 async function iniciar(){
  try{const [publicados,listaFija]=await Promise.all([cargarDatos(),cargarFavoritos()]); datos=publicados; if(!datos||typeof datos.ligas!=="object")throw Error("Formato incorrecto");
- const cards=document.querySelectorAll(".resumen .tarjeta");
+ const cards=document.querySelectorAll("main > .resumen > .tarjeta");
  cards[0].querySelector(".numero").textContent=Object.values(datos.ligas).filter(t=>Array.isArray(t)&&t.length).length;
  cards[1].querySelector(".numero").textContent=Object.values(listaFija.ligas).flat().length;
  cards[2].querySelector(".numero").textContent=datos.partidos?.length||"—";
@@ -32,8 +32,9 @@ async function iniciar(){
  }
  liga();
  const nombreLiga=id=>CONFIG.ligas.find(l=>l.id===id)?.pais||id;
+ const fechaStats=id=>{const fecha=datos.fecha_estadisticas_por_liga?.[id]||datos.ultima_actualizacion;return fecha?new Date(fecha).toLocaleDateString("es-ES",{timeZone:"Europe/Madrid"}):null};
  const topPublicados=datos.favoritos_validados===true&&datos.equipos_top?.length===38?datos.equipos_top:[];
- tabla(document.querySelector("#favoritos .aviso"),["Liga","Equipo fijo","ELO estimado","Pts/PJ"],Object.entries(listaFija.ligas).flatMap(([liga,equipos])=>equipos.map(equipo=>{
+ tabla(document.querySelector("#favoritos .aviso"),["Liga","Equipo fijo","ELO estimado","Fecha Elo","Pts/PJ"],Object.entries(listaFija.ligas).flatMap(([liga,equipos])=>equipos.map(equipo=>{
    const r=topPublicados.find(x=>x.liga===liga&&x.equipo===equipo);
    const s=r?datos.ligas[liga]?.find(t=>t.equipo===r.equipo_proveedor):null;
    return [nombreLiga(liga),equipo,r?.elo??null,r?.elo!=null?fechaStats(liga):null,s?.ppp??null];
@@ -183,6 +184,12 @@ async function iniciar(){
  else dest.textContent="Sin estadísticas verificadas. Fuente: "+(datos.fuente||"pendiente de validación");
  const fuente=document.createElement("p");fuente.textContent="Fuente: "+(datos.fuente||"pendiente de validación");
  document.querySelector("footer").append(fuente);
- }catch(e){document.getElementById("detalle-liga").textContent="No se pudieron cargar los datos. Recarga la página más tarde."}
+ }catch(e){
+   console.error("Error al cargar el panel:",e);
+   for(const selector of ["#detalle-liga","#favoritos .aviso","#partidos .aviso","#lista-candidatos","#lista-dobles","#estadisticas .aviso"]){
+     const dest=document.querySelector(selector);
+     if(dest&&!dest.querySelector("table"))dest.textContent="No se pudieron cargar los datos de esta sección. Recarga la página.";
+   }
+ }
 }
 iniciar();
