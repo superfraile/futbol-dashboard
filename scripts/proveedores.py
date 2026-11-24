@@ -119,7 +119,18 @@ def descargar():
             print(f"AVISO: {liga} conservada de la copia anterior")
     if not ligas:
         raise ValueError("Ninguna liga disponible; se conserva el JSON publicado")
-    return {"fuente": "; ".join(fuentes), "ligas": ligas}
+    tablas={}
+    clave_sportapi=os.environ.get("SPORTAPI_API_KEY","").strip()
+    if clave_sportapi:
+        try:
+            from scripts.sportapi import descargar_sportapi
+            tablas,nuevos=descargar_sportapi(clave_sportapi,hoy.date())
+            ligas.update(nuevos)
+            if tablas:
+                fuentes.append("SportAPI.ai (https://sportapi.ai/); clasificación y calendario de "+",".join(tablas))
+        except Exception as error:
+            print(f"AVISO SportAPI: {type(error).__name__}; se mantienen las ligas existentes")
+    return {"fuente": "; ".join(fuentes), "ligas": ligas, "clasificaciones_sportapi":tablas}
 
 if __name__ == "__main__":
     from pathlib import Path
