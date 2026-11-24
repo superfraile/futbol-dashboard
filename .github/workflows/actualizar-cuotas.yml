@@ -17,13 +17,11 @@ jobs:
         with:
           python-version: '3.11'
       - name: Actualizar cuotas del panel
+        id: importar
+        continue-on-error: true
         env:
           MOVIODDS_API_KEY: ${{ secrets.MOVIODDS_API_KEY }}
         run: |
-          if [ -z "$MOVIODDS_API_KEY" ]; then
-            echo "::error::Falta el secreto MOVIODDS_API_KEY; no se han actualizado las cuotas."
-            exit 1
-          fi
           python -m scripts.importar_moviodds datos.json
       - name: Publicar datos actualizados
         run: |
@@ -35,3 +33,7 @@ jobs:
             git pull --rebase origin main
             git push origin HEAD:main
           fi
+
+      - name: Señalar fallo de actualización tras publicar diagnóstico
+        if: steps.importar.outcome == 'failure'
+        run: exit 1
