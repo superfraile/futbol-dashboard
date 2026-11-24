@@ -17,6 +17,16 @@ def fecha_comprobacion(partido, cuota, ahora):
     cambio=fecha_utc(cuota.get("ts"))
     if cambio is None or cambio>ahora:
         return None
+    # La lectura de otro mercado no confirma el 1X2.
+    if "group_status" in partido:
+        grupos=partido["group_status"]
+        grupo=grupos.get(str(cuota.get("group_id"))) if isinstance(grupos,dict) else None
+        if not isinstance(grupo,dict) or grupo.get("stale",False) is not False:
+            return None
+        lectura=fecha_utc(grupo.get("polled_at"))
+        if lectura is None or lectura>ahora:
+            return None
+        return max(cambio,lectura)
     if "polled_at" not in partido:
         return cambio
     comprobacion=fecha_utc(partido.get("polled_at"))
