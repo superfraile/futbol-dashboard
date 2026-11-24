@@ -1,6 +1,6 @@
 {
   "version": "1.2",
-  "ultima_actualizacion": "2026-11-24T17:29:40.780894+00:00",
+  "ultima_actualizacion": "2026-11-24T17:30:54.003749+00:00",
   "fuente": "OpenLigaDB (https://www.openligadb.de), ODbL 1.0; GER; football-data.org (PL; ENG); football-data.org (PD; ESP); football-data.org (SA; ITA); football-data.org (FL1; FRA); football-data.org (PPL; POR); football-data.org (DED; NED)",
   "ligas": {
     "GER": [
@@ -14645,7 +14645,8 @@
       "bonus_local": 0.2,
       "valoracion": 1.28,
       "cuota": null,
-      "estado": "Pendiente de cuota verificada"
+      "estado": "Pendiente de cuota verificada",
+      "motivo_cuota_moviodds": "Sin cuota 1X2 vigente del favorito"
     },
     {
       "liga": "GER",
@@ -14659,7 +14660,8 @@
       "bonus_local": 0.0,
       "valoracion": 1.0,
       "cuota": null,
-      "estado": "Pendiente de cuota verificada"
+      "estado": "Pendiente de cuota verificada",
+      "motivo_cuota_moviodds": "Sin cuota 1X2 vigente del favorito"
     },
     {
       "liga": "ESP",
@@ -14673,7 +14675,8 @@
       "bonus_local": 0.0,
       "valoracion": 1.53,
       "cuota": null,
-      "estado": "Pendiente de cuota verificada"
+      "estado": "Pendiente de cuota verificada",
+      "motivo_cuota_moviodds": "Sin cuota 1X2 vigente del favorito"
     },
     {
       "liga": "NED",
@@ -14687,7 +14690,8 @@
       "bonus_local": 0.2,
       "valoracion": 1.12,
       "cuota": null,
-      "estado": "Pendiente de cuota verificada"
+      "estado": "Pendiente de cuota verificada",
+      "motivo_cuota_moviodds": "Sin cuota 1X2 vigente del favorito"
     },
     {
       "liga": "FRA",
@@ -14701,7 +14705,8 @@
       "bonus_local": 0.2,
       "valoracion": 1.11,
       "cuota": null,
-      "estado": "Pendiente de cuota verificada"
+      "estado": "Pendiente de cuota verificada",
+      "motivo_cuota_moviodds": "Partido sin coincidencia inequívoca en MoviOdds"
     },
     {
       "liga": "ITA",
@@ -14715,7 +14720,8 @@
       "bonus_local": 0.2,
       "valoracion": 1.29,
       "cuota": null,
-      "estado": "Pendiente de cuota verificada"
+      "estado": "Pendiente de cuota verificada",
+      "motivo_cuota_moviodds": "Sin cuota 1X2 vigente del favorito"
     },
     {
       "liga": "ESP",
@@ -14729,7 +14735,8 @@
       "bonus_local": 0.2,
       "valoracion": 1.51,
       "cuota": null,
-      "estado": "Pendiente de cuota verificada"
+      "estado": "Pendiente de cuota verificada",
+      "motivo_cuota_moviodds": "Sin cuota 1X2 vigente del favorito"
     },
     {
       "liga": "GER",
@@ -14743,7 +14750,8 @@
       "bonus_local": 0.0,
       "valoracion": -0.1,
       "cuota": null,
-      "estado": "Pendiente de cuota verificada"
+      "estado": "Pendiente de cuota verificada",
+      "motivo_cuota_moviodds": "Sin cuota 1X2 vigente del favorito"
     },
     {
       "liga": "ESP",
@@ -14757,7 +14765,8 @@
       "bonus_local": 0.0,
       "valoracion": 1.62,
       "cuota": null,
-      "estado": "Pendiente de cuota verificada"
+      "estado": "Pendiente de cuota verificada",
+      "motivo_cuota_moviodds": "Sin cuota 1X2 vigente del favorito"
     },
     {
       "liga": "ITA",
@@ -14771,7 +14780,8 @@
       "bonus_local": 0.0,
       "valoracion": 0.92,
       "cuota": null,
-      "estado": "Pendiente de cuota verificada"
+      "estado": "Pendiente de cuota verificada",
+      "motivo_cuota_moviodds": "Sin cuota 1X2 vigente del favorito"
     },
     {
       "liga": "POR",
@@ -14785,14 +14795,15 @@
       "bonus_local": 0.2,
       "valoracion": 1.57,
       "cuota": null,
-      "estado": "Pendiente de cuota verificada"
+      "estado": "Pendiente de cuota verificada",
+      "motivo_cuota_moviodds": "Cuota vigente fuera de 1,20–1,80"
     }
   ],
   "dobles": [],
   "favoritos_validados": true,
-  "ultima_actualizacion_cuotas": "2026-11-24T17:29:45.951645+00:00",
+  "ultima_actualizacion_cuotas": "2026-11-24T17:30:56.121759+00:00",
   "diagnostico_cuotas": {
-    "partidos_proveedor": 1012,
+    "partidos_proveedor": 1013,
     "candidatos": 11,
     "candidatos_sin_hora": 0,
     "emparejamientos_unicos": 10,
@@ -14815,8 +14826,8 @@
       "ts:iso_con_zona": 30
     },
     "propuestas_equivalencias_no_validadas": [],
-    "antiguedad_1x2_minima_minutos": 435.7,
-    "antiguedad_1x2_maxima_minutos": 2219.2,
+    "antiguedad_1x2_minima_minutos": 436.9,
+    "antiguedad_1x2_maxima_minutos": 2220.4,
     "cotizaciones_1x2_futuras": 0,
     "cotizaciones_1x2_mas_de_60_minutos": 30
   }
