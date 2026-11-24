@@ -109,6 +109,14 @@ def descargar():
                 if anteriores.get(liga):
                     ligas[liga] = anteriores[liga]
                     fuentes.append(f"football-data.org ({codigo}; {liga}; copia anterior)")
+    # Un secreto ausente o una descarga fallida no debe borrar ligas previas.
+    # Limitar el rescate a los proveedores ya autorizados para estas competiciones.
+    for liga in ("GER", *COMPETICIONES):
+        if liga not in ligas and anteriores.get(liga):
+            ligas[liga] = anteriores[liga]
+            proveedor = "OpenLigaDB" if liga == "GER" else "football-data.org"
+            fuentes.append(f"{proveedor} ({liga}; copia anterior, sin actualización)")
+            print(f"AVISO: {liga} conservada de la copia anterior")
     if not ligas:
         raise ValueError("Ninguna liga disponible; se conserva el JSON publicado")
     return {"fuente": "; ".join(fuentes), "ligas": ligas}
