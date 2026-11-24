@@ -1,6 +1,6 @@
 {
   "version": "1.2",
-  "ultima_actualizacion": "2026-11-24T16:43:39.245656+00:00",
+  "ultima_actualizacion": "2026-11-24T17:06:45.264308+00:00",
   "fuente": "OpenLigaDB (https://www.openligadb.de), ODbL 1.0; GER; football-data.org (PL; ENG); football-data.org (PD; ESP); football-data.org (SA; ITA); football-data.org (FL1; FRA); football-data.org (PPL; POR); football-data.org (DED; NED)",
   "ligas": {
     "GER": [
@@ -14789,34 +14789,5 @@
     }
   ],
   "dobles": [],
-  "favoritos_validados": true,
-  "ultima_actualizacion_cuotas": "2026-11-24T16:43:42.310230+00:00",
-  "diagnostico_cuotas": {
-    "partidos_proveedor": 1011,
-    "candidatos": 11,
-    "candidatos_sin_hora": 0,
-    "emparejamientos_unicos": 10,
-    "emparejados_con_mercado_1x2_vigente": 0,
-    "selecciones_en_rango": 0,
-    "emparejados_con_favorito_identificado": 10,
-    "sin_cuota_vigente_del_favorito": 10,
-    "cuotas_fuera_de_1_20_a_1_80": 0,
-    "candidatos_con_nombres_exactos_en_proveedor": 2,
-    "coincidencias_nombres_sin_horario_compatible": 0,
-    "nombres_coincidentes_con_horario_mas_de_3h": 0,
-    "nombres_coincidentes_sin_hora_proveedor": 0,
-    "detalle_mercado_1x2": {
-      "con_grupo_1x2": 10,
-      "grupo_1x2_sin_cotizaciones_recientes": 10,
-      "grupo_1x2_no_interpretable": 10
-    },
-    "formatos_fechas_cuotas": {
-      "ts:iso_con_zona": 30
-    },
-    "propuestas_equivalencias_no_validadas": [],
-    "antiguedad_1x2_minima_minutos": 389.7,
-    "antiguedad_1x2_maxima_minutos": 2173.1,
-    "cotizaciones_1x2_futuras": 0,
-    "cotizaciones_1x2_mas_de_60_minutos": 30
-  }
+  "favoritos_validados": true
 }
