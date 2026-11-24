@@ -1,6 +1,6 @@
 {
   "version": "1.2",
-  "ultima_actualizacion": "2026-11-23T22:09:39.244245+00:00",
+  "ultima_actualizacion": "2026-11-24T06:09:34.740901+00:00",
   "fuente": "OpenLigaDB (https://www.openligadb.de), ODbL 1.0; GER; football-data.org (PL; ENG); football-data.org (PD; ESP); football-data.org (SA; ITA); football-data.org (FL1; FRA); football-data.org (PPL; POR); football-data.org (DED; NED)",
   "ligas": {
     "GER": [
@@ -746,6 +746,18 @@
         "ppp": 1.64
       },
       {
+        "equipo": "Brentford FC",
+        "pj": 11,
+        "g": 4,
+        "e": 5,
+        "p": 2,
+        "gf": 20,
+        "gc": 11,
+        "puntos": 17,
+        "posicion": 6,
+        "ppp": 1.55
+      },
+      {
         "equipo": "Leeds United FC",
         "pj": 11,
         "g": 4,
@@ -754,20 +766,8 @@
         "gf": 14,
         "gc": 9,
         "puntos": 17,
-        "posicion": 6,
-        "ppp": 1.55
-      },
-      {
-        "equipo": "Everton FC",
-        "pj": 10,
-        "g": 4,
-        "e": 4,
-        "p": 2,
-        "gf": 12,
-        "gc": 10,
-        "puntos": 16,
         "posicion": 7,
-        "ppp": 1.6
+        "ppp": 1.55
       },
       {
         "equipo": "Chelsea FC",
@@ -782,6 +782,18 @@
         "ppp": 1.45
       },
       {
+        "equipo": "Everton FC",
+        "pj": 11,
+        "g": 4,
+        "e": 4,
+        "p": 3,
+        "gf": 12,
+        "gc": 14,
+        "puntos": 16,
+        "posicion": 9,
+        "ppp": 1.45
+      },
+      {
         "equipo": "Tottenham Hotspur FC",
         "pj": 11,
         "g": 4,
@@ -790,20 +802,8 @@
         "gf": 12,
         "gc": 11,
         "puntos": 15,
-        "posicion": 9,
-        "ppp": 1.36
-      },
-      {
-        "equipo": "Brentford FC",
-        "pj": 10,
-        "g": 3,
-        "e": 5,
-        "p": 2,
-        "gf": 16,
-        "gc": 11,
-        "puntos": 14,
         "posicion": 10,
-        "ppp": 1.4
+        "ppp": 1.36
       },
       {
         "equipo": "Hull City AFC",
@@ -13001,15 +13001,15 @@
           "victorias_pct": 60.0
         },
         "visitante": {
-          "pj": 5,
+          "pj": 6,
           "g": 1,
           "e": 3,
-          "p": 1,
+          "p": 2,
           "gf": 4,
-          "gc": 5,
+          "gc": 9,
           "puntos": 6,
-          "ppp": 1.2,
-          "victorias_pct": 20.0
+          "ppp": 1.0,
+          "victorias_pct": 16.67
         }
       },
       "Crystal Palace FC": {
@@ -13038,15 +13038,15 @@
       },
       "Brentford FC": {
         "local": {
-          "pj": 5,
-          "g": 3,
+          "pj": 6,
+          "g": 4,
           "e": 1,
           "p": 1,
-          "gf": 10,
+          "gf": 14,
           "gc": 3,
-          "puntos": 10,
-          "ppp": 2.0,
-          "victorias_pct": 60.0
+          "puntos": 13,
+          "ppp": 2.17,
+          "victorias_pct": 66.67
         },
         "visitante": {
           "pj": 5,
@@ -14758,14 +14758,42 @@
       "valoracion": 1.62,
       "cuota": null,
       "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "ITA",
+      "fecha": "2026-11-30T19:45:00Z",
+      "local": "Cagliari Calcio",
+      "visitante": "AC Milan",
+      "favorito": "AC Milan",
+      "equipo_proveedor": "AC Milan",
+      "ppp": 2.25,
+      "ppp_rival": 1.33,
+      "bonus_local": 0.0,
+      "valoracion": 0.92,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
+    },
+    {
+      "liga": "POR",
+      "fecha": "2026-11-30T20:15:00Z",
+      "local": "Sport Lisboa e Benfica",
+      "visitante": "FC Famalicão",
+      "favorito": "Benfica",
+      "equipo_proveedor": "Sport Lisboa e Benfica",
+      "ppp": 2.55,
+      "ppp_rival": 1.18,
+      "bonus_local": 0.2,
+      "valoracion": 1.57,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada"
     }
   ],
   "dobles": [],
   "favoritos_validados": true,
-  "ultima_actualizacion_cuotas": "2026-11-24T06:06:00.119256+00:00",
+  "ultima_actualizacion_cuotas": "2026-11-24T06:09:39.189879+00:00",
   "diagnostico_cuotas": {
     "partidos_proveedor": 839,
-    "candidatos": 9,
+    "candidatos": 11,
     "candidatos_sin_hora": 2,
     "emparejamientos_unicos": 1,
     "emparejados_con_mercado_1x2_vigente": 0,
@@ -14785,8 +14813,8 @@
     "formatos_fechas_cuotas": {
       "ts:iso_con_zona": 3
     },
-    "antiguedad_1x2_minima_minutos": 1510.7,
-    "antiguedad_1x2_maxima_minutos": 1510.7,
+    "antiguedad_1x2_minima_minutos": 1514.4,
+    "antiguedad_1x2_maxima_minutos": 1514.4,
     "cotizaciones_1x2_futuras": 0,
     "cotizaciones_1x2_mas_de_60_minutos": 3
   }
