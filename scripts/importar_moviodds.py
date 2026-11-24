@@ -36,6 +36,7 @@ def incorporar(datos, partidos, ahora=None):
     candidatos=datos.get("candidatos",[])
     # Las cuotas MoviOdds anteriores no se conservan si el proveedor deja de devolverlas.
     for candidato in candidatos:
+        candidato["motivo_cuota_moviodds"]="Partido sin coincidencia inequívoca en MoviOdds"
         if candidato.get("casa_apuestas")=="MoviOdds":
             for campo in ("cuota","consultada_en","cuota_verificada","casa_apuestas","mercado","seleccion","url_fuente"):
                 candidato.pop(campo,None)
@@ -45,8 +46,13 @@ def incorporar(datos, partidos, ahora=None):
         signo=("1" if candidato["equipo_proveedor"]==candidato["local"] else
                "2" if candidato["equipo_proveedor"]==candidato["visitante"] else None)
         cuota=mercado_1x2(partido,ahora).get(signo)
-        if not cuota or not 1.20<=cuota["cuota"]<=1.80:
+        if not cuota:
+            candidato["motivo_cuota_moviodds"]="Sin cuota 1X2 vigente del favorito"
             continue
+        if not 1.20<=cuota["cuota"]<=1.80:
+            candidato["motivo_cuota_moviodds"]="Cuota vigente fuera de 1,20–1,80"
+            continue
+        candidato["motivo_cuota_moviodds"]="Cuota MoviOdds disponible"
         # Mantener cuotas bet365 previamente documentadas; no confundir proveedores.
         if candidato.get("cuota_verificada") is True:
             continue
