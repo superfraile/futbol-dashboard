@@ -47,6 +47,18 @@ class MoviOddsValidacionTests(unittest.TestCase):
         self.partido["polled_at"]=(self.ahora+timedelta(minutes=1)).isoformat()
         self.assertEqual(mercado_1x2(self.partido,self.ahora),{})
 
+    def test_comprobacion_especifica_1x2(self):
+        self.partido["quotes"]=[self.cuota(minutos=2160)]
+        self.partido["polled_at"]=self.ahora.isoformat()
+        self.partido["group_status"]={"40":{
+            "polled_at":(self.ahora-timedelta(minutes=10)).isoformat()}}
+        self.assertEqual(mercado_1x2(self.partido,self.ahora)["1"]["consultada_en"],
+                         self.partido["group_status"]["40"]["polled_at"])
+        self.partido["group_status"]["40"]["stale"]=True
+        self.assertEqual(mercado_1x2(self.partido,self.ahora),{})
+        self.partido["group_status"]={"43":{"polled_at":self.ahora.isoformat()}}
+        self.assertEqual(mercado_1x2(self.partido,self.ahora),{})
+
     def test_rechaza_mercados_distintos_y_duplicados(self):
         self.partido["quotes"]=[self.cuota(grupo=1777)]
         self.assertEqual(mercado_1x2(self.partido,self.ahora),{})
