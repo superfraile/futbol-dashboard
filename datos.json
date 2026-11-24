@@ -14790,9 +14790,9 @@
   ],
   "dobles": [],
   "favoritos_validados": true,
-  "ultima_actualizacion_cuotas": "2026-11-24T07:21:21.480371+00:00",
+  "ultima_actualizacion_cuotas": "2026-11-24T09:08:41.177118+00:00",
   "diagnostico_cuotas": {
-    "partidos_proveedor": 835,
+    "partidos_proveedor": 860,
     "candidatos": 11,
     "candidatos_sin_hora": 2,
     "emparejamientos_unicos": 1,
@@ -14813,8 +14813,8 @@
     "formatos_fechas_cuotas": {
       "ts:iso_con_zona": 3
     },
-    "antiguedad_1x2_minima_minutos": 1586.1,
-    "antiguedad_1x2_maxima_minutos": 1586.1,
+    "antiguedad_1x2_minima_minutos": 1693.4,
+    "antiguedad_1x2_maxima_minutos": 1693.4,
     "cotizaciones_1x2_futuras": 0,
     "cotizaciones_1x2_mas_de_60_minutos": 3
   }
