@@ -6,7 +6,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 from urllib.request import Request, urlopen
 from urllib.error import HTTPError, URLError
-from scripts.moviodds_validacion import emparejar_candidatos, mercado_1x2, fecha_utc
+from scripts.moviodds_validacion import emparejar_candidatos, mercado_1x2, fecha_utc, fecha_comprobacion
 from scripts.construir_datos import generar_dobles, clave_equipo, limite_antiguedad
 
 URL="https://moviodds.com/odds?sport=soccer"
@@ -38,7 +38,7 @@ def incorporar(datos, partidos, ahora=None):
     for candidato in candidatos:
         candidato["motivo_cuota_moviodds"]="Partido sin coincidencia inequívoca en MoviOdds"
         if candidato.get("casa_apuestas")=="MoviOdds":
-            for campo in ("cuota","consultada_en","cuota_verificada","casa_apuestas","mercado","seleccion","url_fuente"):
+            for campo in ("cuota","consultada_en","ultimo_cambio","cuota_verificada","casa_apuestas","mercado","seleccion","url_fuente"):
                 candidato.pop(campo,None)
             candidato["cuota"]=None
             candidato["estado"]="Pendiente de cuota actualizada"
@@ -57,6 +57,7 @@ def incorporar(datos, partidos, ahora=None):
         if candidato.get("cuota_verificada") is True:
             continue
         candidato.update(cuota=cuota["cuota"],consultada_en=cuota["consultada_en"],
+                         ultimo_cambio=cuota["ultimo_cambio"],
                          cuota_verificada=True,casa_apuestas="MoviOdds",
                          mercado="1X2",seleccion=signo,url_fuente=URL,
                          estado="Cuota MoviOdds; no verificada en bet365")
@@ -173,7 +174,7 @@ def main():
             continue
         motivos["con_grupo_1x2"]+=1
         recientes=[q for q in grupo if (lambda t:t is not None and
-                   0<=(ahora-t).total_seconds()<=limite_antiguedad(fecha_utc(partido["kickoff_utc"]),ahora))(fecha_utc(q.get("ts")))]
+                   0<=(ahora-t).total_seconds()<=limite_antiguedad(fecha_utc(partido["kickoff_utc"]),ahora))(fecha_comprobacion(partido,q,ahora)) and q.get("suspended",False) is False]
         if not recientes:
             motivos["grupo_1x2_sin_cotizaciones_recientes"]+=1
         else:
@@ -226,13 +227,21 @@ def main():
 
     # Antigüedad agregada, sin exponer precios ni nombres de partidos.
     edades=[]
+    diagnostico["partidos_con_polled_at"]=sum(fecha_utc(p.get("polled_at")) is not None for _,p in emparejados)
+    edades_comprobacion=[]
     for _,partido in emparejados:
         for cuota in partido.get("quotes",[]) if isinstance(partido.get("quotes"),list) else []:
             if not isinstance(cuota,dict) or str(cuota.get("group_id"))!="40":
                 continue
+            confirmacion=fecha_comprobacion(partido,cuota,ahora)
+            if confirmacion is not None:
+                edades_comprobacion.append((ahora-confirmacion).total_seconds())
             instante=fecha_utc(cuota.get("ts"))
             if instante is not None:
                 edades.append((ahora-instante).total_seconds())
+    if edades_comprobacion:
+        diagnostico["antiguedad_comprobacion_minima_minutos"]=round(min(edades_comprobacion)/60,1)
+        diagnostico["antiguedad_comprobacion_maxima_minutos"]=round(max(edades_comprobacion)/60,1)
     if edades:
         diagnostico["antiguedad_1x2_minima_minutos"]=round(min(edades)/60,1)
         diagnostico["antiguedad_1x2_maxima_minutos"]=round(max(edades)/60,1)
