@@ -12,6 +12,18 @@ def fecha_utc(valor):
         return None
     return fecha.astimezone(timezone.utc) if fecha.tzinfo else None
 
+def fecha_comprobacion(partido, cuota, ahora):
+    # ts registra cambios de precio; polled_at confirma lecturas del encuentro.
+    cambio=fecha_utc(cuota.get("ts"))
+    if cambio is None or cambio>ahora:
+        return None
+    if "polled_at" not in partido:
+        return cambio
+    comprobacion=fecha_utc(partido.get("polled_at"))
+    if comprobacion is None or comprobacion>ahora:
+        return None
+    return max(cambio,comprobacion)
+
 def mercado_1x2(partido, ahora=None):
     """Extrae únicamente selecciones prepartido 1X2 inequívocas, sin atribuir bookmaker."""
     ahora=ahora or datetime.now(timezone.utc)
@@ -42,7 +54,9 @@ def mercado_1x2(partido, ahora=None):
                "X" if etiqueta.strip().casefold()=="draw" else None)
         if signo is None:
             continue
-        instante=fecha_utc(q.get("ts"))
+        if q.get("suspended",False) is not False or q.get("phase","prematch")!="prematch":
+            continue
+        instante=fecha_comprobacion(partido,q,ahora)
         valor=q.get("odds_dec")
         if (instante is None or instante>ahora or (ahora-instante).total_seconds()>limite_antiguedad(inicio,ahora)
                 or type(valor) not in (float,int) or not isfinite(valor) or valor<=1):
@@ -51,7 +65,7 @@ def mercado_1x2(partido, ahora=None):
         if signo in resultados:
             duplicados.add(signo)
         else:
-            resultados[signo]={"cuota":valor,"consultada_en":instante.isoformat()}
+            resultados[signo]={"cuota":valor,"consultada_en":instante.isoformat(),"ultimo_cambio":fecha_utc(q["ts"]).isoformat()}
     return {k:v for k,v in resultados.items() if k not in duplicados}
 
 def emparejar_candidatos(candidatos, partidos, equivalencias=None, tolerancia_segundos=10800):
