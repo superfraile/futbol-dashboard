@@ -5,8 +5,9 @@ import sys
 from datetime import datetime, timezone
 from pathlib import Path
 from urllib.request import Request, urlopen
+from urllib.error import HTTPError, URLError
 from scripts.moviodds_validacion import emparejar_candidatos, mercado_1x2, fecha_utc
-from scripts.construir_datos import generar_dobles, clave_equipo
+from scripts.construir_datos import generar_dobles, clave_equipo, limite_antiguedad
 
 URL="https://moviodds.com/odds?sport=soccer"
 
@@ -166,7 +167,7 @@ def main():
             continue
         motivos["con_grupo_1x2"]+=1
         recientes=[q for q in grupo if (lambda t:t is not None and
-                   0<=(ahora-t).total_seconds()<=3600)(fecha_utc(q.get("ts")))]
+                   0<=(ahora-t).total_seconds()<=limite_antiguedad(fecha_utc(partido["kickoff_utc"]),ahora))(fecha_utc(q.get("ts")))]
         if not recientes:
             motivos["grupo_1x2_sin_cotizaciones_recientes"]+=1
         else:
@@ -238,6 +239,7 @@ def main():
     print("Diagnóstico MoviOdds:",json.dumps(diagnostico,ensure_ascii=False))
     incorporar(datos,partidos,ahora)
     datos["diagnostico_cuotas"]=diagnostico
+    datos.pop("error_actualizacion_cuotas",None)
     temporal=ruta.with_suffix(".tmp")
     temporal.write_text(json.dumps(datos,ensure_ascii=False,indent=2),encoding="utf-8")
     temporal.replace(ruta)
@@ -245,5 +247,34 @@ def main():
     print("Dobles publicadas:",len(datos["dobles"]))
     return 0
 
+def registrar_fallo(motivo):
+    ruta=Path(sys.argv[1] if len(sys.argv)>1 else "datos.json")
+    datos=json.loads(ruta.read_text(encoding="utf-8"))
+    datos["error_actualizacion_cuotas"]={
+        "fecha":datetime.now(timezone.utc).isoformat(),
+        "motivo":motivo
+    }
+    temporal=ruta.with_suffix(".tmp")
+    temporal.write_text(json.dumps(datos,ensure_ascii=False,indent=2),encoding="utf-8")
+    temporal.replace(ruta)
+    print("ERROR MoviOdds:",motivo)
+
+def ejecutar():
+    try:
+        resultado=main()
+        if resultado:
+            registrar_fallo("Clave API no configurada")
+        return resultado
+    except HTTPError as error:
+        motivo=f"HTTP {error.code}"
+    except (URLError,TimeoutError):
+        motivo="Error de conexión o tiempo de espera"
+    except (ValueError,TypeError,KeyError):
+        motivo="Respuesta inválida o datos incompatibles"
+    except Exception as error:
+        motivo="Error interno: "+type(error).__name__
+    registrar_fallo(motivo)
+    return 2
+
 if __name__=="__main__":
-    sys.exit(main())
+    sys.exit(ejecutar())
