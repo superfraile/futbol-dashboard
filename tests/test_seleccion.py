@@ -3,7 +3,7 @@ import json
 import tempfile
 from pathlib import Path
 from datetime import datetime, timezone, timedelta
-from scripts.construir_datos import construir, resolver_favoritos, generar_dobles, aplicar_cuotas_bet365
+from scripts.construir_datos import construir, resolver_favoritos, generar_dobles, aplicar_cuotas_bet365, conservar_cuotas
 
 def partido(fecha,local,visitante,estado="finalizado",a=2,b=0):
     p=dict(fecha=fecha,local=local,visitante=visitante,estado=estado)
@@ -11,6 +11,27 @@ def partido(fecha,local,visitante,estado="finalizado",a=2,b=0):
     return p
 
 class SeleccionTests(unittest.TestCase):
+    def test_conserva_cuotas_vigentes_sin_repetir_partidos(self):
+        ahora=datetime(2026,11,22,20,30,tzinfo=timezone.utc)
+        nuevos=[dict(liga="ESP",fecha="2026-11-24T18:00:00Z",
+                     local=f"Equipo {n}",visitante=f"Rival {n}",
+                     equipo_proveedor=f"Equipo {n}",cuota=None,valoracion=n)
+                for n in range(7)]
+        anteriores=[dict(p,cuota=1.5,cuota_verificada=True,
+                         casa_apuestas="MoviOdds",mercado="1X2",seleccion="1",
+                         consultada_en=(ahora-timedelta(minutes=10)).isoformat(),
+                         url_fuente="https://moviodds.com/odds?sport=soccer")
+                    for p in nuevos]
+        anteriores[4]["consultada_en"]=(ahora-timedelta(hours=7)).isoformat()
+        anteriores[5]["fecha"]="2026-11-25T18:00:00Z"
+        anteriores[6]["url_fuente"]="https://example.com/"
+        resultado=conservar_cuotas({"candidatos":nuevos},
+                                   {"candidatos":anteriores},ahora)
+        self.assertEqual([p["cuota"] for p in nuevos],[1.5]*4+[None]*3)
+        self.assertEqual(len(resultado["dobles"]),2)
+        self.assertEqual(len({p["local"] for d in resultado["dobles"]
+                              for p in d["partidos"]}),4)
+
     def test_alias_real(self):
         tabla=[{"equipo":"FC Barcelona","ppp":2.5}]
         self.assertEqual(resolver_favoritos("ESP",["Barcelona"],tabla),{"FC Barcelona":"Barcelona"})
