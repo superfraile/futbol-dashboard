@@ -3,6 +3,7 @@ from datetime import datetime, timedelta, timezone
 from zoneinfo import ZoneInfo
 from urllib.request import Request, urlopen
 import json
+from urllib.error import HTTPError
 
 IDS={"DEN":19,"SCO":88,"GRE":10,"NOR":11,"SWE":21,"SUI":15,"TUR":16}
 EQUIPOS={"DEN":12,"SCO":12,"GRE":14,"NOR":16,"SWE":16,"SUI":12,"TUR":18}
@@ -47,7 +48,8 @@ def convertir_tabla(doc,liga,hoy):
         raise ValueError("Equipos o posiciones duplicados")
     return sorted(tabla,key=lambda p:p["posicion"])
 
-def descargar_sportapi(clave,hoy=None):
+def descargar_sportapi(clave,hoy=None,diagnostico=None):
+    diagnostico=diagnostico if diagnostico is not None else {}
     hoy=hoy or datetime.now(ZoneInfo("Europe/Madrid")).date()
     tablas={}
     partidos={}
@@ -55,8 +57,11 @@ def descargar_sportapi(clave,hoy=None):
         try:
             tablas[liga]=convertir_tabla(consultar(f"standings/{id_liga}",clave),liga,hoy)
             partidos[liga]=[]
+            diagnostico[liga]={"clasificacion":"correcta","equipos":len(tablas[liga])}
         except Exception as error:
-            print(f"AVISO SportAPI {liga}: {type(error).__name__}")
+            motivo=str(error) if isinstance(error,ValueError) else f"HTTP {error.code}" if isinstance(error,HTTPError) else type(error).__name__
+            diagnostico[liga]={"clasificacion":"rechazada","motivo":motivo}
+            print(f"AVISO SportAPI {liga}: {motivo}")
     if not tablas:
         return {},{}
     # La fecha del endpoint utiliza CET/CEST, igual que Europe/Madrid.
@@ -77,6 +82,7 @@ def descargar_sportapi(clave,hoy=None):
                 local,visitante=m["home_team"],m["away_team"]
                 inicio=datetime.fromisoformat(m["kickoff_utc"].replace("Z","+00:00"))
                 if inicio.tzinfo is None or local not in nombres or visitante not in nombres or local==visitante:
+                    diagnostico[liga]["partido_no_conciliado"]={"local":local,"visitante":visitante,"hora_con_zona":inicio.tzinfo is not None,"local_en_tabla":local in nombres,"visitante_en_tabla":visitante in nombres}
                     raise ValueError("Partido no conciliado con tabla")
                 inicio=inicio.astimezone(timezone.utc).isoformat()
                 k=(inicio,local,visitante)
@@ -84,7 +90,9 @@ def descargar_sportapi(clave,hoy=None):
                     continue
                 vistos.add(k)
                 partidos[liga].append(dict(fecha=inicio,local=local,visitante=visitante,estado="pendiente"))
-        except (KeyError,ValueError,TypeError,AttributeError):
+            diagnostico[liga].update(calendario="correcto",partidos=len(partidos[liga]))
+        except (KeyError,ValueError,TypeError,AttributeError) as error:
+            diagnostico[liga].update(calendario="rechazado",motivo=str(error) if isinstance(error,ValueError) else type(error).__name__)
             print(f"AVISO SportAPI {liga}: calendario no conciliado")
             tablas.pop(liga)
             partidos.pop(liga)
