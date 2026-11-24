@@ -66,7 +66,7 @@ def emparejar_candidatos(candidatos, partidos, equivalencias=None, tolerancia_se
     if not isinstance(equivalencias,dict):
         raise ValueError("Equivalencias inválidas")
     def nombre(valor):
-        return clave_equipo(equivalencias.get(valor,valor)) if isinstance(valor,str) else None
+        return {clave_equipo(valor),clave_equipo(equivalencias.get(valor,valor))} if isinstance(valor,str) else set()
     # Evaluar todas las relaciones antes de aceptar ninguna: el orden de entrada
     # no debe decidir a qué candidato se asigna un mismo partido.
     opciones_por_candidato={}
@@ -91,7 +91,7 @@ def emparejar_candidatos(candidatos, partidos, equivalencias=None, tolerancia_se
             home=partido.get("home")
             away=partido.get("away")
             if (isinstance(home,str) and isinstance(away,str) and
-                    clave_equipo(home)==local and clave_equipo(away)==visitante):
+                    clave_equipo(home) in local and clave_equipo(away) in visitante):
                 opciones.append(indice_partido)
                 candidatos_por_partido.setdefault(indice_partido,set()).add(indice_candidato)
         opciones_por_candidato[indice_candidato]=opciones
