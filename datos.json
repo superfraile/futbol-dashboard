@@ -1,6 +1,6 @@
 {
   "version": "1.2",
-  "ultima_actualizacion": "2026-11-24T18:07:13.500243+00:00",
+  "ultima_actualizacion": "2026-11-24T18:08:17.204625+00:00",
   "fuente": "OpenLigaDB (https://www.openligadb.de), ODbL 1.0; GER; football-data.org (PL; ENG); football-data.org (PD; ESP); football-data.org (SA; ITA); football-data.org (FL1; FRA); football-data.org (PPL; POR); football-data.org (DED; NED); SportAPI.ai (https://sportapi.ai/); clasificación y calendario de DEN,SCO,GRE,NOR,SWE,SUI,TUR",
   "ligas": {
     "GER": [
@@ -16163,10 +16163,10 @@
       "ppp_rival": 1.08,
       "bonus_local": 0.2,
       "valoracion": 1.43,
-      "cuota": 1.2222222222222223,
       "estado": "Cuota MoviOdds; no verificada en bet365",
       "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
-      "consultada_en": "2026-11-24T18:07:07.102752+00:00",
+      "cuota": 1.2222222222222223,
+      "consultada_en": "2026-11-24T18:08:06.501519+00:00",
       "ultimo_cambio": "2026-11-24T11:58:47.443798+00:00",
       "cuota_verificada": true,
       "casa_apuestas": "MoviOdds",
@@ -16188,7 +16188,7 @@
       "estado": "Cuota MoviOdds; no verificada en bet365",
       "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
       "cuota": 1.5714285714285714,
-      "consultada_en": "2026-11-24T18:07:13.435972+00:00",
+      "consultada_en": "2026-11-24T18:07:52.745864+00:00",
       "ultimo_cambio": "2026-11-23T21:32:03.555011+00:00",
       "cuota_verificada": true,
       "casa_apuestas": "MoviOdds",
@@ -16210,7 +16210,7 @@
       "estado": "Cuota MoviOdds; no verificada en bet365",
       "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
       "cuota": 1.25,
-      "consultada_en": "2026-11-24T18:06:43.993725+00:00",
+      "consultada_en": "2026-11-24T18:08:05.509788+00:00",
       "ultimo_cambio": "2026-11-23T04:30:34.032987+00:00",
       "cuota_verificada": true,
       "casa_apuestas": "MoviOdds",
@@ -16229,10 +16229,10 @@
       "ppp_rival": 1.71,
       "bonus_local": 0.2,
       "valoracion": 0.8,
-      "cuota": 1.25,
       "estado": "Cuota MoviOdds; no verificada en bet365",
       "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
-      "consultada_en": "2026-11-24T18:07:13.438395+00:00",
+      "cuota": 1.25,
+      "consultada_en": "2026-11-24T18:07:52.758970+00:00",
       "ultimo_cambio": "2026-11-23T04:30:48.669284+00:00",
       "cuota_verificada": true,
       "casa_apuestas": "MoviOdds",
@@ -16253,7 +16253,7 @@
       "valoracion": 1.46,
       "cuota": null,
       "estado": "Pendiente de cuota verificada",
-      "motivo_cuota_moviodds": "Partido sin coincidencia inequívoca en MoviOdds"
+      "motivo_cuota_moviodds": "Cuota vigente fuera de 1,20–1,80"
     },
     {
       "liga": "ESP",
@@ -16269,7 +16269,7 @@
       "estado": "Cuota MoviOdds; no verificada en bet365",
       "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
       "cuota": 1.48,
-      "consultada_en": "2026-11-24T18:07:13.403515+00:00",
+      "consultada_en": "2026-11-24T18:07:52.736030+00:00",
       "ultimo_cambio": "2026-11-23T22:10:18.767637+00:00",
       "cuota_verificada": true,
       "casa_apuestas": "MoviOdds",
@@ -16291,7 +16291,7 @@
       "estado": "Cuota MoviOdds; no verificada en bet365",
       "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
       "cuota": 1.2222222222222223,
-      "consultada_en": "2026-11-24T18:06:44.008195+00:00",
+      "consultada_en": "2026-11-24T18:08:05.497824+00:00",
       "ultimo_cambio": "2026-11-23T04:55:16.397652+00:00",
       "cuota_verificada": true,
       "casa_apuestas": "MoviOdds",
@@ -16328,7 +16328,7 @@
       "estado": "Cuota MoviOdds; no verificada en bet365",
       "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
       "cuota": 1.3,
-      "consultada_en": "2026-11-24T18:07:13.123614+00:00",
+      "consultada_en": "2026-11-24T18:07:52.690909+00:00",
       "ultimo_cambio": "2026-11-23T08:40:34.863556+00:00",
       "cuota_verificada": true,
       "casa_apuestas": "MoviOdds",
@@ -16395,7 +16395,7 @@
       "estado": "Cuota MoviOdds; no verificada en bet365",
       "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
       "cuota": 1.25,
-      "consultada_en": "2026-11-24T18:07:13.410025+00:00",
+      "consultada_en": "2026-11-24T18:07:52.763206+00:00",
       "ultimo_cambio": "2026-11-23T04:30:50.584526+00:00",
       "cuota_verificada": true,
       "casa_apuestas": "MoviOdds",
@@ -16416,7 +16416,7 @@
       "valoracion": 0.14,
       "cuota": null,
       "estado": "Pendiente de cuota verificada",
-      "motivo_cuota_moviodds": "Partido sin coincidencia inequívoca en MoviOdds"
+      "motivo_cuota_moviodds": "Cuota vigente fuera de 1,20–1,80"
     },
     {
       "liga": "GRE",
@@ -16429,9 +16429,16 @@
       "ppp_rival": 2.0,
       "bonus_local": 0.0,
       "valoracion": 0.36,
-      "cuota": null,
-      "estado": "Pendiente de cuota verificada",
-      "motivo_cuota_moviodds": "Partido sin coincidencia inequívoca en MoviOdds"
+      "cuota": 1.7272727272727273,
+      "estado": "Cuota MoviOdds; no verificada en bet365",
+      "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
+      "consultada_en": "2026-11-24T18:07:52.740773+00:00",
+      "ultimo_cambio": "2026-11-23T04:30:46.990121+00:00",
+      "cuota_verificada": true,
+      "casa_apuestas": "MoviOdds",
+      "mercado": "1X2",
+      "seleccion": "2",
+      "url_fuente": "https://moviodds.com/odds?sport=soccer"
     },
     {
       "liga": "GRE",
@@ -16444,9 +16451,16 @@
       "ppp_rival": 2.0,
       "bonus_local": 0.2,
       "valoracion": 0.5,
-      "cuota": null,
-      "estado": "Pendiente de cuota verificada",
-      "motivo_cuota_moviodds": "Partido sin coincidencia inequívoca en MoviOdds"
+      "cuota": 1.6153846153846154,
+      "estado": "Cuota MoviOdds; no verificada en bet365",
+      "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
+      "consultada_en": "2026-11-24T18:07:52.760627+00:00",
+      "ultimo_cambio": "2026-11-24T13:49:00.603306+00:00",
+      "cuota_verificada": true,
+      "casa_apuestas": "MoviOdds",
+      "mercado": "1X2",
+      "seleccion": "1",
+      "url_fuente": "https://moviodds.com/odds?sport=soccer"
     },
     {
       "liga": "TUR",
@@ -16477,7 +16491,7 @@
       "estado": "Cuota MoviOdds; no verificada en bet365",
       "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
       "cuota": 1.7,
-      "consultada_en": "2026-11-24T18:07:13.270504+00:00",
+      "consultada_en": "2026-11-24T18:07:52.687733+00:00",
       "ultimo_cambio": "2026-11-23T04:30:44.708320+00:00",
       "cuota_verificada": true,
       "casa_apuestas": "MoviOdds",
@@ -16518,7 +16532,7 @@
           "estado": "Cuota MoviOdds; no verificada en bet365",
           "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
           "cuota": 1.48,
-          "consultada_en": "2026-11-24T18:07:13.403515+00:00",
+          "consultada_en": "2026-11-24T18:07:52.736030+00:00",
           "ultimo_cambio": "2026-11-23T22:10:18.767637+00:00",
           "cuota_verificada": true,
           "casa_apuestas": "MoviOdds",
@@ -16540,7 +16554,7 @@
           "estado": "Cuota MoviOdds; no verificada en bet365",
           "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
           "cuota": 1.25,
-          "consultada_en": "2026-11-24T18:07:13.410025+00:00",
+          "consultada_en": "2026-11-24T18:07:52.763206+00:00",
           "ultimo_cambio": "2026-11-23T04:30:50.584526+00:00",
           "cuota_verificada": true,
           "casa_apuestas": "MoviOdds",
@@ -16564,10 +16578,10 @@
           "ppp_rival": 1.08,
           "bonus_local": 0.2,
           "valoracion": 1.43,
-          "cuota": 1.2222222222222223,
           "estado": "Cuota MoviOdds; no verificada en bet365",
           "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
-          "consultada_en": "2026-11-24T18:07:07.102752+00:00",
+          "cuota": 1.2222222222222223,
+          "consultada_en": "2026-11-24T18:08:06.501519+00:00",
           "ultimo_cambio": "2026-11-24T11:58:47.443798+00:00",
           "cuota_verificada": true,
           "casa_apuestas": "MoviOdds",
@@ -16589,7 +16603,7 @@
           "estado": "Cuota MoviOdds; no verificada en bet365",
           "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
           "cuota": 1.3,
-          "consultada_en": "2026-11-24T18:07:13.123614+00:00",
+          "consultada_en": "2026-11-24T18:07:52.690909+00:00",
           "ultimo_cambio": "2026-11-23T08:40:34.863556+00:00",
           "cuota_verificada": true,
           "casa_apuestas": "MoviOdds",
@@ -16616,7 +16630,7 @@
           "estado": "Cuota MoviOdds; no verificada en bet365",
           "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
           "cuota": 1.5714285714285714,
-          "consultada_en": "2026-11-24T18:07:13.435972+00:00",
+          "consultada_en": "2026-11-24T18:07:52.745864+00:00",
           "ultimo_cambio": "2026-11-23T21:32:03.555011+00:00",
           "cuota_verificada": true,
           "casa_apuestas": "MoviOdds",
@@ -16638,7 +16652,7 @@
           "estado": "Cuota MoviOdds; no verificada en bet365",
           "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
           "cuota": 1.2222222222222223,
-          "consultada_en": "2026-11-24T18:06:44.008195+00:00",
+          "consultada_en": "2026-11-24T18:08:05.497824+00:00",
           "ultimo_cambio": "2026-11-23T04:55:16.397652+00:00",
           "cuota_verificada": true,
           "casa_apuestas": "MoviOdds",
@@ -16665,7 +16679,7 @@
           "estado": "Cuota MoviOdds; no verificada en bet365",
           "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
           "cuota": 1.25,
-          "consultada_en": "2026-11-24T18:06:43.993725+00:00",
+          "consultada_en": "2026-11-24T18:08:05.509788+00:00",
           "ultimo_cambio": "2026-11-23T04:30:34.032987+00:00",
           "cuota_verificada": true,
           "casa_apuestas": "MoviOdds",
@@ -16687,7 +16701,7 @@
           "estado": "Cuota MoviOdds; no verificada en bet365",
           "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
           "cuota": 1.7,
-          "consultada_en": "2026-11-24T18:07:13.270504+00:00",
+          "consultada_en": "2026-11-24T18:07:52.687733+00:00",
           "ultimo_cambio": "2026-11-23T04:30:44.708320+00:00",
           "cuota_verificada": true,
           "casa_apuestas": "MoviOdds",
@@ -16697,83 +16711,87 @@
         }
       ],
       "cuota_combinada": 2.125
+    },
+    {
+      "partidos": [
+        {
+          "liga": "SCO",
+          "fecha": "2026-11-28T15:00:00+00:00",
+          "local": "Rangers",
+          "visitante": "Falkirk",
+          "favorito": "Rangers",
+          "equipo_proveedor": "Rangers",
+          "ppp": 2.31,
+          "ppp_rival": 1.71,
+          "bonus_local": 0.2,
+          "valoracion": 0.8,
+          "estado": "Cuota MoviOdds; no verificada en bet365",
+          "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
+          "cuota": 1.25,
+          "consultada_en": "2026-11-24T18:07:52.758970+00:00",
+          "ultimo_cambio": "2026-11-23T04:30:48.669284+00:00",
+          "cuota_verificada": true,
+          "casa_apuestas": "MoviOdds",
+          "mercado": "1X2",
+          "seleccion": "1",
+          "url_fuente": "https://moviodds.com/odds?sport=soccer"
+        },
+        {
+          "liga": "GRE",
+          "fecha": "2026-11-29T19:00:00+00:00",
+          "local": "AEK Athens",
+          "visitante": "PAOK",
+          "favorito": "AEK Athens",
+          "equipo_proveedor": "AEK Athens",
+          "ppp": 2.3,
+          "ppp_rival": 2.0,
+          "bonus_local": 0.2,
+          "valoracion": 0.5,
+          "cuota": 1.6153846153846154,
+          "estado": "Cuota MoviOdds; no verificada en bet365",
+          "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
+          "consultada_en": "2026-11-24T18:07:52.760627+00:00",
+          "ultimo_cambio": "2026-11-24T13:49:00.603306+00:00",
+          "cuota_verificada": true,
+          "casa_apuestas": "MoviOdds",
+          "mercado": "1X2",
+          "seleccion": "1",
+          "url_fuente": "https://moviodds.com/odds?sport=soccer"
+        }
+      ],
+      "cuota_combinada": 2.019
     }
   ],
   "favoritos_validados": true,
-  "ultima_actualizacion_cuotas": "2026-11-24T18:07:19.427971+00:00",
+  "ultima_actualizacion_cuotas": "2026-11-24T18:08:21.233226+00:00",
   "diagnostico_cuotas": {
-    "partidos_proveedor": 996,
+    "partidos_proveedor": 997,
     "candidatos": 19,
     "candidatos_sin_hora": 0,
-    "emparejamientos_unicos": 14,
-    "emparejados_con_mercado_1x2_vigente": 14,
-    "selecciones_en_rango": 9,
-    "emparejados_con_favorito_identificado": 14,
+    "emparejamientos_unicos": 18,
+    "emparejados_con_mercado_1x2_vigente": 18,
+    "selecciones_en_rango": 11,
+    "emparejados_con_favorito_identificado": 18,
     "sin_cuota_vigente_del_favorito": 0,
-    "cuotas_fuera_de_1_20_a_1_80": 5,
+    "cuotas_fuera_de_1_20_a_1_80": 7,
     "candidatos_con_nombres_exactos_en_proveedor": 6,
     "coincidencias_nombres_sin_horario_compatible": 0,
     "nombres_coincidentes_con_horario_mas_de_3h": 0,
     "nombres_coincidentes_sin_hora_proveedor": 0,
     "detalle_mercado_1x2": {
-      "con_grupo_1x2": 14,
-      "grupo_1x2_con_cotizaciones_recientes": 14
+      "con_grupo_1x2": 18,
+      "grupo_1x2_con_cotizaciones_recientes": 18
     },
     "formatos_fechas_cuotas": {
-      "ts:iso_con_zona": 42
+      "ts:iso_con_zona": 54
     },
-    "propuestas_equivalencias_no_validadas": [
-      {
-        "local": "Bodø / Glimt",
-        "visitante": "KFUM",
-        "posibles": [
-          [
-            0.944,
-            "Bodo/Glimt",
-            "KFUM"
-          ]
-        ]
-      },
-      {
-        "local": "Sion",
-        "visitante": "Young Boys",
-        "posibles": [
-          [
-            0.9,
-            "FC Sion",
-            "Young Boys"
-          ]
-        ]
-      },
-      {
-        "local": "Aris",
-        "visitante": "Olympiakos",
-        "posibles": [
-          [
-            0.7,
-            "Aris Salonika",
-            "Olympiacos"
-          ]
-        ]
-      },
-      {
-        "local": "AEK Athens",
-        "visitante": "PAOK",
-        "posibles": [
-          [
-            0.75,
-            "AEK Athens",
-            "PAOK Salonika"
-          ]
-        ]
-      }
-    ],
-    "partidos_con_polled_at": 14,
-    "antiguedad_comprobacion_minima_minutos": 0.1,
-    "antiguedad_comprobacion_maxima_minutos": 0.8,
-    "antiguedad_1x2_minima_minutos": 206.6,
-    "antiguedad_1x2_maxima_minutos": 2256.8,
+    "propuestas_equivalencias_no_validadas": [],
+    "partidos_con_polled_at": 18,
+    "antiguedad_comprobacion_minima_minutos": 0.2,
+    "antiguedad_comprobacion_maxima_minutos": 0.6,
+    "antiguedad_1x2_minima_minutos": 207.7,
+    "antiguedad_1x2_maxima_minutos": 2257.8,
     "cotizaciones_1x2_futuras": 0,
-    "cotizaciones_1x2_mas_de_60_minutos": 42
+    "cotizaciones_1x2_mas_de_60_minutos": 54
   }
 }
