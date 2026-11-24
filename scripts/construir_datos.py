@@ -280,9 +280,58 @@ def construir(entrada):
     resultado["favoritos_validados"]=lista_validada
     return resultado
 
+def conservar_cuotas(resultado, anterior, ahora=None):
+    """Conservar solo cotizaciones anteriores aún válidas del mismo encuentro."""
+    ahora=ahora or datetime.now(timezone.utc)
+    def clave(p):
+        return tuple(p.get(k) for k in ("liga","fecha","local","visitante","equipo_proveedor"))
+    previos={}
+    for p in anterior.get("candidatos",[]):
+        k=clave(p)
+        previos.setdefault(k,[]).append(p)
+    campos=("cuota","cuota_verificada","casa_apuestas","mercado","seleccion",
+            "consultada_en","url_fuente","ultimo_cambio","estado")
+    for p in resultado["candidatos"]:
+        if p.get("cuota_verificada") is True:
+            continue
+        opciones=previos.get(clave(p),[])
+        if len(opciones)!=1:
+            continue
+        q=opciones[0]
+        try:
+            inicio=datetime.fromisoformat(p["fecha"].replace("Z","+00:00"))
+            consulta=datetime.fromisoformat(q["consultada_en"].replace("Z","+00:00"))
+            cuota=q["cuota"]
+            casa=q.get("casa_apuestas")
+            fuente=urlparse(q["url_fuente"])
+            dominios={"bet365":("bet365.com","www.bet365.com","bet365.es","www.bet365.es"),
+                      "MoviOdds":("moviodds.com","www.moviodds.com")}
+            signo="1" if p["equipo_proveedor"]==p["local"] else "2" if p["equipo_proveedor"]==p["visitante"] else None
+            if not (inicio.tzinfo and consulta.tzinfo and inicio>ahora>=consulta
+                    and (ahora-consulta).total_seconds()<=limite_antiguedad(inicio,ahora)
+                    and q.get("cuota_verificada") is True and q.get("mercado")=="1X2"
+                    and signo is not None and q.get("seleccion")==signo
+                    and type(cuota) in (int,float) and isfinite(cuota) and 1.20<=cuota<=1.80
+                    and fuente.scheme=="https" and fuente.hostname in dominios.get(casa,())):
+                continue
+        except (KeyError,ValueError,TypeError,AttributeError):
+            continue
+        p.update({k:q[k] for k in campos if k in q})
+    if anterior.get("ultima_actualizacion_cuotas"):
+        resultado["ultima_actualizacion_cuotas"]=anterior["ultima_actualizacion_cuotas"]
+    resultado["dobles"]=generar_dobles(resultado["candidatos"],ahora)
+    return resultado
+
 if __name__=="__main__":
     entrada=json.loads(Path(sys.argv[1]).read_text(encoding="utf-8"))
     salida=Path(sys.argv[2])
     temporal=salida.with_suffix(".tmp")
-    temporal.write_text(json.dumps(construir(entrada),ensure_ascii=False,indent=2),encoding="utf-8")
+    resultado=construir(entrada)
+    if salida.exists():
+        try:
+            anterior=json.loads(salida.read_text(encoding="utf-8"))
+            conservar_cuotas(resultado,anterior)
+        except (OSError,ValueError,TypeError):
+            pass
+    temporal.write_text(json.dumps(resultado,ensure_ascii=False,indent=2),encoding="utf-8")
     temporal.replace(salida)
