@@ -128,6 +128,12 @@ async function iniciar(){
      (Date.now()-cuotasActualizadas.getTime()>3600000?" (más de una hora; comprobar vigencia de cada cuota)":"")
    :"Sin actualización automática de cuotas MoviOdds confirmada.";
  candidatosDest.parentElement.append(avisoCuotas);
+ if(datos.error_actualizacion_cuotas){
+   const error=document.createElement("p");
+   error.setAttribute("role","status");
+   error.textContent="Error en la última actualización MoviOdds: "+datos.error_actualizacion_cuotas.motivo+" ("+new Date(datos.error_actualizacion_cuotas.fecha).toLocaleString("es-ES",{timeZone:"Europe/Madrid"})+").";
+   candidatosDest.parentElement.append(error);
+ }
  if(datos.diagnostico_cuotas){
    const diagnostico=datos.diagnostico_cuotas;
    const detalle=document.createElement("p");
