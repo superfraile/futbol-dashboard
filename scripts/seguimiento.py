@@ -21,24 +21,31 @@ def clave(p):
     return (p["liga"],clave_equipo(p["local"]),clave_equipo(p["visitante"]),
             instante(p["fecha"]).astimezone(ZONA).date().isoformat())
 
-def registrar(historial,datos,ahora):
-    # Una selección diaria, sin reutilizar ningún encuentro ya registrado.
-    dia=ahora.astimezone(ZONA).date().isoformat()
-    if any(d["dia"]==dia for d in historial):
+def registrar(historial,datos,ahora,confirmaciones):
+    # Una única selección semanal, incluso si no existen dobles válidas.
+    local=ahora.astimezone(ZONA)
+    if local.weekday()!=1 or local.hour!=20:
+        return
+    dia=local.date().isoformat()
+    if dia in confirmaciones:
         return
     usados={clave(p) for d in historial for p in d["partidos"]}
-    for doble in generar_dobles(datos.get("candidatos",[]),ahora):
+    candidatos=[p for p in datos.get("candidatos",[]) if clave(p) not in usados]
+    cantidad=0
+    for doble in generar_dobles(candidatos,ahora):
         partidos=doble["partidos"]
         claves={clave(p) for p in partidos}
         if len(claves)!=2 or claves & usados:
             continue
-        historial.append(dict(dia=dia,registrada_en=ahora.isoformat(),
+        historial.append(dict(dia=dia,semana_confirmada=dia,registrada_en=ahora.isoformat(),
             stake=STAKE,cuota=round(partidos[0]["cuota"]*partidos[1]["cuota"],4),
             estado="pendiente",beneficio=None,partidos=[
                 {**{k:p[k] for k in ("liga","fecha","local","visitante","favorito",
                   "equipo_proveedor","cuota","casa_apuestas","seleccion","consultada_en")},
                  "estado":"pendiente"} for p in partidos]))
         usados.update(claves)
+        cantidad+=1
+    confirmaciones[dia]=dict(confirmada_en=ahora.isoformat(),cantidad=cantidad)
 
 def resultado(p,filas):
     coincidencias=[]
@@ -122,8 +129,8 @@ def main():
     datos=json.loads(Path("datos.json").read_text(encoding="utf-8"))
     origen=json.loads(Path("datos-origen.json").read_text(encoding="utf-8"))
     actualizar(historial,origen,ahora,os.environ.get("SPORTAPI_API_KEY","").strip())
-    registrar(historial,datos,ahora)
-    doc.update(version=1,actualizado_en=ahora.isoformat(),stake_simulado=STAKE)
+    registrar(historial,datos,ahora,doc.setdefault("confirmaciones",{}))
+    doc.update(version=2,actualizado_en=ahora.isoformat(),stake_simulado=STAKE)
     tmp=RUTA.with_suffix(".tmp")
     tmp.write_text(json.dumps(doc,ensure_ascii=False,indent=2),encoding="utf-8")
     tmp.replace(RUTA)

@@ -3,6 +3,9 @@ on:
   workflow_dispatch:
   schedule:
     - cron: '43 8 * * *'
+    # 20:00 Madrid: 18:00 UTC en verano, 19:00 UTC en invierno.
+    # Segunda ejecución de respaldo, sin duplicar el cierre.
+    - cron: '0,30 18,19 * * 2'
   push:
     paths:
       - 'scripts/seguimiento.py'

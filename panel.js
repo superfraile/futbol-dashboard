@@ -160,7 +160,22 @@ async function iniciar(){
    candidatosDest.parentElement.append(detalle);
  }
  const doblesDest=document.getElementById("lista-dobles");
- const dobles=(datos.dobles||[]).filter(d=>Array.isArray(d.partidos)&&d.partidos.length===2&&d.partidos.every(p=>esFuturo(p)&&cuotaVigente(p)));
+ let registro=null;
+ try{
+   const respuesta=await fetch("https://raw.githubusercontent.com/superfraile/futbol-dashboard/main/seguimiento.json?actualizacion="+Date.now(),{cache:"no-store"});
+   if(respuesta.ok)registro=await respuesta.json();
+ }catch(e){ /* No presentar una selección provisional como confirmada. */ }
+ const partes=Object.fromEntries(new Intl.DateTimeFormat("en-CA",{timeZone:"Europe/Madrid",year:"numeric",month:"2-digit",day:"2-digit",hour:"2-digit",hourCycle:"h23"}).formatToParts(new Date()).map(p=>[p.type,p.value]));
+ const diaMadrid=new Date(Date.UTC(+partes.year,+partes.month-1,+partes.day));
+ let diasDesdeMartes=(diaMadrid.getUTCDay()+5)%7;
+ if(diasDesdeMartes===0&&+partes.hour<20)diasDesdeMartes=7;
+ diaMadrid.setUTCDate(diaMadrid.getUTCDate()-diasDesdeMartes);
+ const semana=diaMadrid.toISOString().slice(0,10);
+ const confirmacion=registro?.confirmaciones?.[semana];
+ const confirmados=Boolean(confirmacion)&&Array.isArray(registro?.dobles);
+ const dobles=confirmados
+   ?registro.dobles.filter(d=>d.semana_confirmada===semana).map(d=>({...d,cuota_combinada:d.cuota}))
+   :(datos.dobles||[]).filter(d=>Array.isArray(d.partidos)&&d.partidos.length===2&&d.partidos.every(p=>esFuturo(p)&&cuotaVigente(p)));
  if(dobles.length){
    tabla(doblesDest,["Partido 1","Cuota 1","Partido 2","Cuota 2","Cuota combinada"],dobles.slice(0,5).map(d=>[
      d.partidos[0].local+" - "+d.partidos[0].visitante+" ("+d.partidos[0].fecha.slice(0,10)+")",
@@ -169,8 +184,10 @@ async function iniciar(){
      d.partidos[1].cuota.toFixed(2)+" ("+d.partidos[1].casa_apuestas+")",
      d.cuota_combinada
    ]));
-   const nota=document.createElement("p");nota.textContent="Mostrando un máximo de 5 dobles recomendadas, ordenadas por valoración. Cuotas sujetas a cambios.";doblesDest.append(nota);
- }else doblesDest.textContent="Todavía no hay dobles con dos cuotas disponibles entre 1,20 y 1,80. No se muestran apuestas inventadas.";
+   const nota=document.createElement("p");
+   nota.textContent=confirmados?"CONFIRMADAS · "+semana+" · Cuotas de referencia bloqueadas; resultados en Seguimiento.":"PROVISIONALES · Pendientes de confirmación semanal (martes, 20:00, hora peninsular).";
+   doblesDest.append(nota);
+ }else doblesDest.textContent=confirmados?"CONFIRMADAS · "+semana+" · No había dobles válidas en el cierre semanal.":"PROVISIONALES · No hay dobles válidas o no consta aún la confirmación semanal.";
  const dest=document.querySelector("#estadisticas .aviso");
  const filas=[];
  for(const l of CONFIG.ligas){
