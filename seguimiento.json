@@ -55,7 +55,9 @@
           "casa_apuestas": "MoviOdds",
           "seleccion": "1",
           "consultada_en": "2026-11-24T18:08:06.501519+00:00",
-          "estado": "pendiente"
+          "estado": "acertado",
+          "marcador": "3-2",
+          "fuente_resultado": "SportAPI.ai"
         },
         {
           "liga": "ITA",
@@ -182,6 +184,6 @@
     }
   ],
   "version": 1,
-  "actualizado_en": "2026-11-24T18:21:34.304241+00:00",
+  "actualizado_en": "2026-11-25T09:52:32.617978+00:00",
   "stake_simulado": 5
 }
