@@ -179,12 +179,14 @@ async function iniciar(){
    ?registro.dobles.filter(d=>d.semana_confirmada===semana).map(d=>({...d,cuota_combinada:d.cuota}))
    :(datos.dobles||[]).filter(d=>Array.isArray(d.partidos)&&d.partidos.length===2&&d.partidos.every(p=>esFuturo(p)&&cuotaVigente(p)));
  if(dobles.length){
-   tabla(doblesDest,["Partido 1","Cuota 1","Partido 2","Cuota 2","Cuota combinada"],dobles.slice(0,5).map(d=>[
-     d.partidos[0].local+" - "+d.partidos[0].visitante+" ("+d.partidos[0].fecha.slice(0,10)+")",
-     d.partidos[0].cuota.toFixed(2)+" ("+d.partidos[0].casa_apuestas+")",
-     d.partidos[1].local+" - "+d.partidos[1].visitante+" ("+d.partidos[1].fecha.slice(0,10)+")",
-     d.partidos[1].cuota.toFixed(2)+" ("+d.partidos[1].casa_apuestas+")",
-     d.cuota_combinada
+   tabla(doblesDest,["Partido 1","Fecha 1","Cuota 1","Partido 2","Fecha 2","Cuota 2","Cuota combinada"],dobles.slice(0,5).map(d=>[
+     d.partidos[0].local+" - "+d.partidos[0].visitante,
+     fechaEspana(d.partidos[0].fecha),
+     d.partidos[0].cuota.toFixed(2),
+     d.partidos[1].local+" - "+d.partidos[1].visitante,
+     fechaEspana(d.partidos[1].fecha),
+     d.partidos[1].cuota.toFixed(2),
+     Number(d.cuota_combinada).toFixed(2)
    ]));
    const nota=document.createElement("p");
    nota.textContent=confirmados?"CONFIRMADAS · "+semana+" · Cuotas de referencia bloqueadas; resultados en Seguimiento.":"PROVISIONALES · Pendientes de confirmación semanal (martes, 20:00, hora peninsular).";

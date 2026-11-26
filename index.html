@@ -63,7 +63,8 @@ button:focus-visible,select:focus-visible{outline:2px solid #4ade80;outline-offs
  table.fichas td{display:grid;grid-template-columns:minmax(85px,36%) minmax(0,1fr);gap:8px;padding:6px 0;overflow-wrap:anywhere;align-items:baseline}
  table.fichas td::before{content:attr(data-label);color:#94a3b8;font-size:12px;font-weight:normal}
  table.fichas td:last-child{border-bottom:0}
- #lista-dobles td:nth-child(2),#lista-dobles td:nth-child(4),#lista-dobles td:last-child{color:#4ade80;font-weight:bold}
+ #lista-dobles td:nth-child(3),#lista-dobles td:nth-child(6),#lista-dobles td:last-child{color:#4ade80;font-weight:bold}
+ #lista-dobles td:nth-child(4){margin-top:6px;padding-top:10px;border-top:1px solid #64748b}
  #lista-dobles td:last-child{margin-top:4px;padding-top:9px;border-top:1px solid #334155;font-size:17px}
  footer{padding:20px 12px;font-size:11px}
 }
@@ -139,7 +140,7 @@ button:focus-visible,select:focus-visible{outline:2px solid #4ade80;outline-offs
 
 <section id="dobles" class="seccion">
 <h2>Combinaciones dobles</h2>
-<p>Se muestran únicamente combinaciones de dos partidos con cuotas individuales de bet365 verificadas entre 1,20 y 1,80, mercado 1X2 y victoria del favorito en 90 minutos. La selección definitiva se confirma cada martes a las 20:00, hora peninsular, y se mantiene sin cambios durante la semana.</p>
+<p>Se muestran únicamente combinaciones de dos partidos con cuotas individuales verificadas entre 1,20 y 1,80, mercado 1X2 y victoria del favorito en 90 minutos. La selección definitiva se confirma cada martes a las 20:00, hora peninsular, y se mantiene sin cambios durante la semana.</p>
 <div class="aviso" id="lista-dobles">Pendiente de cuotas verificadas.</div>
 </section>
 
@@ -162,7 +163,7 @@ button:focus-visible,select:focus-visible{outline:2px solid #4ade80;outline-offs
 <footer>Fútbol Dashboard | Versión 1.2<br>Football data provided by the Football-Data.org API · Bundesliga: OpenLigaDB</footer>
 
 <script src="datos.js?v=20261124-1835"></script>
-<script src="panel.js?v=20261126-mobile1"></script>
+<script src="panel.js?v=20261126-mobile2"></script>
 <script src="seguimiento.js?v=20261124-1920"></script>
 
 </body>
