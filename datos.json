@@ -1,6 +1,6 @@
 {
   "version": "1.2",
-  "ultima_actualizacion": "2026-11-25T19:04:00.361810+00:00",
+  "ultima_actualizacion": "2026-11-26T06:08:49.833365+00:00",
   "fuente": "OpenLigaDB (https://www.openligadb.de), ODbL 1.0; GER; football-data.org (PL; ENG); football-data.org (PD; ESP); football-data.org (SA; ITA); football-data.org (FL1; FRA); football-data.org (PPL; POR); football-data.org (DED; NED); SportAPI.ai (https://sportapi.ai/); clasificación y calendario de DEN,SCO,GRE,NOR,SWE,SUI,TUR",
   "ligas": {
     "GER": [
@@ -3780,6 +3780,42 @@
       "visitante": "Leeds United FC"
     },
     {
+      "liga": "SCO",
+      "fecha": "2026-12-02T19:45:00+00:00",
+      "local": "Dundee",
+      "visitante": "Celtic"
+    },
+    {
+      "liga": "SCO",
+      "fecha": "2026-12-02T19:45:00+00:00",
+      "local": "Falkirk",
+      "visitante": "Motherwell"
+    },
+    {
+      "liga": "SCO",
+      "fecha": "2026-12-02T19:45:00+00:00",
+      "local": "Hearts",
+      "visitante": "Aberdeen"
+    },
+    {
+      "liga": "SCO",
+      "fecha": "2026-12-02T19:45:00+00:00",
+      "local": "Kilmarnock",
+      "visitante": "Hibernian"
+    },
+    {
+      "liga": "SCO",
+      "fecha": "2026-12-02T19:45:00+00:00",
+      "local": "Rangers",
+      "visitante": "Dundee United"
+    },
+    {
+      "liga": "SCO",
+      "fecha": "2026-12-02T19:45:00+00:00",
+      "local": "St. Johnstone",
+      "visitante": "St. Mirren"
+    },
+    {
       "liga": "ENG",
       "fecha": "2026-12-02T20:15:00Z",
       "local": "Aston Villa FC",
@@ -4210,6 +4246,12 @@
       "fecha": "2026-12-07T20:15:00Z",
       "local": "FC Alverca",
       "visitante": "Moreirense FC"
+    },
+    {
+      "liga": "ESP",
+      "fecha": "2026-12-09T19:00:00Z",
+      "local": "Rayo Vallecano de Madrid",
+      "visitante": "Athletic Club"
     },
     {
       "liga": "GER",
@@ -18561,7 +18603,7 @@
       "estado": "Cuota MoviOdds; no verificada en bet365",
       "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
       "cuota": 1.5333333333333332,
-      "consultada_en": "2026-11-26T05:13:19.323509+00:00",
+      "consultada_en": "2026-11-26T06:08:40.761119+00:00",
       "ultimo_cambio": "2026-11-26T04:59:32.638673+00:00",
       "cuota_verificada": true,
       "casa_apuestas": "MoviOdds",
@@ -18583,7 +18625,7 @@
       "estado": "Cuota MoviOdds; no verificada en bet365",
       "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
       "cuota": 1.25,
-      "consultada_en": "2026-11-26T05:13:19.646362+00:00",
+      "consultada_en": "2026-11-26T06:08:40.714799+00:00",
       "ultimo_cambio": "2026-11-26T04:43:27.851138+00:00",
       "cuota_verificada": true,
       "casa_apuestas": "MoviOdds",
@@ -18605,7 +18647,7 @@
       "estado": "Cuota MoviOdds; no verificada en bet365",
       "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
       "cuota": 1.25,
-      "consultada_en": "2026-11-26T05:13:19.338170+00:00",
+      "consultada_en": "2026-11-26T06:08:40.056254+00:00",
       "ultimo_cambio": "2026-11-26T03:43:02.657887+00:00",
       "cuota_verificada": true,
       "casa_apuestas": "MoviOdds",
@@ -18641,9 +18683,9 @@
       "valoracion": 1.53,
       "estado": "Cuota MoviOdds; no verificada en bet365",
       "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
-      "cuota": 1.45,
-      "consultada_en": "2026-11-26T05:13:19.319047+00:00",
-      "ultimo_cambio": "2026-11-26T04:58:29.721115+00:00",
+      "cuota": 1.3636363636363638,
+      "consultada_en": "2026-11-26T06:08:41.558390+00:00",
+      "ultimo_cambio": "2026-11-26T05:20:37.842172+00:00",
       "cuota_verificada": true,
       "casa_apuestas": "MoviOdds",
       "mercado": "1X2",
@@ -18664,7 +18706,7 @@
       "estado": "Cuota MoviOdds; no verificada en bet365",
       "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
       "cuota": 1.25,
-      "consultada_en": "2026-11-26T05:13:19.661227+00:00",
+      "consultada_en": "2026-11-26T06:08:40.889216+00:00",
       "ultimo_cambio": "2026-11-26T03:42:59.793907+00:00",
       "cuota_verificada": true,
       "casa_apuestas": "MoviOdds",
@@ -18701,7 +18743,7 @@
       "estado": "Cuota MoviOdds; no verificada en bet365",
       "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
       "cuota": 1.3333333333333333,
-      "consultada_en": "2026-11-26T05:13:19.736850+00:00",
+      "consultada_en": "2026-11-26T06:08:40.907443+00:00",
       "ultimo_cambio": "2026-11-26T03:43:00.800835+00:00",
       "cuota_verificada": true,
       "casa_apuestas": "MoviOdds",
@@ -18767,9 +18809,9 @@
       "valoracion": 1.62,
       "estado": "Cuota MoviOdds; no verificada en bet365",
       "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
-      "cuota": 1.25,
-      "consultada_en": "2026-11-26T05:13:19.350872+00:00",
-      "ultimo_cambio": "2026-11-26T03:43:18.114176+00:00",
+      "cuota": 1.2222222222222223,
+      "consultada_en": "2026-11-26T06:08:39.808128+00:00",
+      "ultimo_cambio": "2026-11-26T05:20:08.975311+00:00",
       "cuota_verificada": true,
       "casa_apuestas": "MoviOdds",
       "mercado": "1X2",
@@ -18805,7 +18847,7 @@
       "estado": "Cuota MoviOdds; no verificada en bet365",
       "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
       "cuota": 1.8,
-      "consultada_en": "2026-11-26T05:13:19.735013+00:00",
+      "consultada_en": "2026-11-26T06:08:40.931645+00:00",
       "ultimo_cambio": "2026-11-25T23:20:27.372491+00:00",
       "cuota_verificada": true,
       "casa_apuestas": "MoviOdds",
@@ -18827,7 +18869,7 @@
       "estado": "Cuota MoviOdds; no verificada en bet365",
       "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
       "cuota": 1.7,
-      "consultada_en": "2026-11-26T05:13:19.739698+00:00",
+      "consultada_en": "2026-11-26T06:08:40.932062+00:00",
       "ultimo_cambio": "2026-11-26T03:43:14.970947+00:00",
       "cuota_verificada": true,
       "casa_apuestas": "MoviOdds",
@@ -18864,7 +18906,7 @@
       "estado": "Cuota MoviOdds; no verificada en bet365",
       "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
       "cuota": 1.6666666666666665,
-      "consultada_en": "2026-11-26T05:13:19.730674+00:00",
+      "consultada_en": "2026-11-26T06:08:40.912023+00:00",
       "ultimo_cambio": "2026-11-26T03:43:13.477580+00:00",
       "cuota_verificada": true,
       "casa_apuestas": "MoviOdds",
@@ -18886,6 +18928,88 @@
       "cuota": null,
       "estado": "Pendiente de cuota verificada",
       "motivo_cuota_moviodds": "Cuota vigente fuera de 1,20–1,80"
+    },
+    {
+      "liga": "ESP",
+      "fecha": "2026-12-02T18:00:00Z",
+      "local": "Real Sociedad de Fútbol",
+      "visitante": "Real Madrid CF",
+      "favorito": "Real Madrid",
+      "equipo_proveedor": "Real Madrid CF",
+      "ppp": 2.54,
+      "ppp_rival": 1.69,
+      "bonus_local": 0.0,
+      "valoracion": 0.85,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada",
+      "motivo_cuota_moviodds": "Partido sin coincidencia inequívoca en MoviOdds"
+    },
+    {
+      "liga": "ENG",
+      "fecha": "2026-12-02T19:30:00Z",
+      "local": "Manchester City FC",
+      "visitante": "Leeds United FC",
+      "favorito": "Manchester City",
+      "equipo_proveedor": "Manchester City FC",
+      "ppp": 2.0,
+      "ppp_rival": 1.55,
+      "bonus_local": 0.2,
+      "valoracion": 0.65,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada",
+      "motivo_cuota_moviodds": "Partido sin coincidencia inequívoca en MoviOdds"
+    },
+    {
+      "liga": "SCO",
+      "fecha": "2026-12-02T19:45:00+00:00",
+      "local": "Dundee",
+      "visitante": "Celtic",
+      "favorito": "Celtic",
+      "equipo_proveedor": "Celtic",
+      "ppp": 2.43,
+      "ppp_rival": 1.21,
+      "bonus_local": 0.0,
+      "valoracion": 1.22,
+      "cuota": 1.3,
+      "estado": "Cuota MoviOdds; no verificada en bet365",
+      "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
+      "consultada_en": "2026-11-26T06:08:22.504778+00:00",
+      "ultimo_cambio": "2026-11-26T03:44:28.795523+00:00",
+      "cuota_verificada": true,
+      "casa_apuestas": "MoviOdds",
+      "mercado": "1X2",
+      "seleccion": "2",
+      "url_fuente": "https://moviodds.com/odds?sport=soccer"
+    },
+    {
+      "liga": "SCO",
+      "fecha": "2026-12-02T19:45:00+00:00",
+      "local": "Rangers",
+      "visitante": "Dundee United",
+      "favorito": "Rangers",
+      "equipo_proveedor": "Rangers",
+      "ppp": 2.36,
+      "ppp_rival": 1.54,
+      "bonus_local": 0.2,
+      "valoracion": 1.02,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada",
+      "motivo_cuota_moviodds": "Partido sin coincidencia inequívoca en MoviOdds"
+    },
+    {
+      "liga": "ENG",
+      "fecha": "2026-12-02T20:15:00Z",
+      "local": "Brentford FC",
+      "visitante": "Arsenal FC",
+      "favorito": "Arsenal",
+      "equipo_proveedor": "Arsenal FC",
+      "ppp": 2.55,
+      "ppp_rival": 1.55,
+      "bonus_local": 0.0,
+      "valoracion": 1.0,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada",
+      "motivo_cuota_moviodds": "Partido sin coincidencia inequívoca en MoviOdds"
     }
   ],
   "dobles": [
@@ -18904,9 +19028,9 @@
           "valoracion": 1.53,
           "estado": "Cuota MoviOdds; no verificada en bet365",
           "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
-          "cuota": 1.45,
-          "consultada_en": "2026-11-26T05:13:19.319047+00:00",
-          "ultimo_cambio": "2026-11-26T04:58:29.721115+00:00",
+          "cuota": 1.3636363636363638,
+          "consultada_en": "2026-11-26T06:08:41.558390+00:00",
+          "ultimo_cambio": "2026-11-26T05:20:37.842172+00:00",
           "cuota_verificada": true,
           "casa_apuestas": "MoviOdds",
           "mercado": "1X2",
@@ -18926,9 +19050,9 @@
           "valoracion": 1.62,
           "estado": "Cuota MoviOdds; no verificada en bet365",
           "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
-          "cuota": 1.25,
-          "consultada_en": "2026-11-26T05:13:19.350872+00:00",
-          "ultimo_cambio": "2026-11-26T03:43:18.114176+00:00",
+          "cuota": 1.2222222222222223,
+          "consultada_en": "2026-11-26T06:08:39.808128+00:00",
+          "ultimo_cambio": "2026-11-26T05:20:08.975311+00:00",
           "cuota_verificada": true,
           "casa_apuestas": "MoviOdds",
           "mercado": "1X2",
@@ -18936,7 +19060,7 @@
           "url_fuente": "https://moviodds.com/odds?sport=soccer"
         }
       ],
-      "cuota_combinada": 1.812
+      "cuota_combinada": 1.667
     },
     {
       "partidos": [
@@ -18954,7 +19078,7 @@
           "estado": "Cuota MoviOdds; no verificada en bet365",
           "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
           "cuota": 1.5333333333333332,
-          "consultada_en": "2026-11-26T05:13:19.323509+00:00",
+          "consultada_en": "2026-11-26T06:08:40.761119+00:00",
           "ultimo_cambio": "2026-11-26T04:59:32.638673+00:00",
           "cuota_verificada": true,
           "casa_apuestas": "MoviOdds",
@@ -18976,7 +19100,7 @@
           "estado": "Cuota MoviOdds; no verificada en bet365",
           "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
           "cuota": 1.3333333333333333,
-          "consultada_en": "2026-11-26T05:13:19.736850+00:00",
+          "consultada_en": "2026-11-26T06:08:40.907443+00:00",
           "ultimo_cambio": "2026-11-26T03:43:00.800835+00:00",
           "cuota_verificada": true,
           "casa_apuestas": "MoviOdds",
@@ -18986,6 +19110,55 @@
         }
       ],
       "cuota_combinada": 2.044
+    },
+    {
+      "partidos": [
+        {
+          "liga": "NED",
+          "fecha": "2026-11-28T17:45:00Z",
+          "local": "PSV",
+          "visitante": "Go Ahead Eagles",
+          "favorito": "PSV",
+          "equipo_proveedor": "PSV",
+          "ppp": 2.23,
+          "ppp_rival": 1.31,
+          "bonus_local": 0.2,
+          "valoracion": 1.12,
+          "estado": "Cuota MoviOdds; no verificada en bet365",
+          "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
+          "cuota": 1.25,
+          "consultada_en": "2026-11-26T06:08:40.889216+00:00",
+          "ultimo_cambio": "2026-11-26T03:42:59.793907+00:00",
+          "cuota_verificada": true,
+          "casa_apuestas": "MoviOdds",
+          "mercado": "1X2",
+          "seleccion": "1",
+          "url_fuente": "https://moviodds.com/odds?sport=soccer"
+        },
+        {
+          "liga": "SCO",
+          "fecha": "2026-12-02T19:45:00+00:00",
+          "local": "Dundee",
+          "visitante": "Celtic",
+          "favorito": "Celtic",
+          "equipo_proveedor": "Celtic",
+          "ppp": 2.43,
+          "ppp_rival": 1.21,
+          "bonus_local": 0.0,
+          "valoracion": 1.22,
+          "cuota": 1.3,
+          "estado": "Cuota MoviOdds; no verificada en bet365",
+          "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
+          "consultada_en": "2026-11-26T06:08:22.504778+00:00",
+          "ultimo_cambio": "2026-11-26T03:44:28.795523+00:00",
+          "cuota_verificada": true,
+          "casa_apuestas": "MoviOdds",
+          "mercado": "1X2",
+          "seleccion": "2",
+          "url_fuente": "https://moviodds.com/odds?sport=soccer"
+        }
+      ],
+      "cuota_combinada": 1.625
     },
     {
       "partidos": [
@@ -19003,7 +19176,7 @@
           "estado": "Cuota MoviOdds; no verificada en bet365",
           "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
           "cuota": 1.25,
-          "consultada_en": "2026-11-26T05:13:19.646362+00:00",
+          "consultada_en": "2026-11-26T06:08:40.714799+00:00",
           "ultimo_cambio": "2026-11-26T04:43:27.851138+00:00",
           "cuota_verificada": true,
           "casa_apuestas": "MoviOdds",
@@ -19012,29 +19185,29 @@
           "url_fuente": "https://moviodds.com/odds?sport=soccer"
         },
         {
-          "liga": "NED",
-          "fecha": "2026-11-28T17:45:00Z",
-          "local": "PSV",
-          "visitante": "Go Ahead Eagles",
-          "favorito": "PSV",
-          "equipo_proveedor": "PSV",
-          "ppp": 2.23,
-          "ppp_rival": 1.31,
-          "bonus_local": 0.2,
-          "valoracion": 1.12,
+          "liga": "ITA",
+          "fecha": "2026-11-30T19:45:00Z",
+          "local": "Cagliari Calcio",
+          "visitante": "AC Milan",
+          "favorito": "AC Milan",
+          "equipo_proveedor": "AC Milan",
+          "ppp": 2.25,
+          "ppp_rival": 1.33,
+          "bonus_local": 0.0,
+          "valoracion": 0.92,
           "estado": "Cuota MoviOdds; no verificada en bet365",
           "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
-          "cuota": 1.25,
-          "consultada_en": "2026-11-26T05:13:19.661227+00:00",
-          "ultimo_cambio": "2026-11-26T03:42:59.793907+00:00",
+          "cuota": 1.6666666666666665,
+          "consultada_en": "2026-11-26T06:08:40.912023+00:00",
+          "ultimo_cambio": "2026-11-26T03:43:13.477580+00:00",
           "cuota_verificada": true,
           "casa_apuestas": "MoviOdds",
           "mercado": "1X2",
-          "seleccion": "1",
+          "seleccion": "2",
           "url_fuente": "https://moviodds.com/odds?sport=soccer"
         }
       ],
-      "cuota_combinada": 1.562
+      "cuota_combinada": 2.083
     },
     {
       "partidos": [
@@ -19052,61 +19225,12 @@
           "estado": "Cuota MoviOdds; no verificada en bet365",
           "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
           "cuota": 1.25,
-          "consultada_en": "2026-11-26T05:13:19.338170+00:00",
+          "consultada_en": "2026-11-26T06:08:40.056254+00:00",
           "ultimo_cambio": "2026-11-26T03:43:02.657887+00:00",
           "cuota_verificada": true,
           "casa_apuestas": "MoviOdds",
           "mercado": "1X2",
           "seleccion": "1",
-          "url_fuente": "https://moviodds.com/odds?sport=soccer"
-        },
-        {
-          "liga": "ITA",
-          "fecha": "2026-11-30T19:45:00Z",
-          "local": "Cagliari Calcio",
-          "visitante": "AC Milan",
-          "favorito": "AC Milan",
-          "equipo_proveedor": "AC Milan",
-          "ppp": 2.25,
-          "ppp_rival": 1.33,
-          "bonus_local": 0.0,
-          "valoracion": 0.92,
-          "estado": "Cuota MoviOdds; no verificada en bet365",
-          "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
-          "cuota": 1.6666666666666665,
-          "consultada_en": "2026-11-26T05:13:19.730674+00:00",
-          "ultimo_cambio": "2026-11-26T03:43:13.477580+00:00",
-          "cuota_verificada": true,
-          "casa_apuestas": "MoviOdds",
-          "mercado": "1X2",
-          "seleccion": "2",
-          "url_fuente": "https://moviodds.com/odds?sport=soccer"
-        }
-      ],
-      "cuota_combinada": 2.083
-    },
-    {
-      "partidos": [
-        {
-          "liga": "GRE",
-          "fecha": "2026-11-29T17:00:00+00:00",
-          "local": "Aris",
-          "visitante": "Olympiakos",
-          "favorito": "Olympiacos Piraeus",
-          "equipo_proveedor": "Olympiakos",
-          "ppp": 2.36,
-          "ppp_rival": 2.0,
-          "bonus_local": 0.0,
-          "valoracion": 0.36,
-          "estado": "Cuota MoviOdds; no verificada en bet365",
-          "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
-          "cuota": 1.8,
-          "consultada_en": "2026-11-26T05:13:19.735013+00:00",
-          "ultimo_cambio": "2026-11-25T23:20:27.372491+00:00",
-          "cuota_verificada": true,
-          "casa_apuestas": "MoviOdds",
-          "mercado": "1X2",
-          "seleccion": "2",
           "url_fuente": "https://moviodds.com/odds?sport=soccer"
         },
         {
@@ -19123,7 +19247,7 @@
           "estado": "Cuota MoviOdds; no verificada en bet365",
           "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
           "cuota": 1.7,
-          "consultada_en": "2026-11-26T05:13:19.739698+00:00",
+          "consultada_en": "2026-11-26T06:08:40.932062+00:00",
           "ultimo_cambio": "2026-11-26T03:43:14.970947+00:00",
           "cuota_verificada": true,
           "casa_apuestas": "MoviOdds",
@@ -19132,7 +19256,7 @@
           "url_fuente": "https://moviodds.com/odds?sport=soccer"
         }
       ],
-      "cuota_combinada": 3.06
+      "cuota_combinada": 2.125
     }
   ],
   "fecha_estadisticas_por_liga": {
@@ -19145,35 +19269,69 @@
     "TUR": "2026-11-24T18:14:09.367925+00:00"
   },
   "favoritos_validados": true,
-  "ultima_actualizacion_cuotas": "2026-11-26T05:14:04.940410+00:00",
+  "ultima_actualizacion_cuotas": "2026-11-26T06:08:57.826821+00:00",
   "diagnostico_cuotas": {
-    "partidos_proveedor": 1128,
-    "candidatos": 18,
+    "partidos_proveedor": 1216,
+    "candidatos": 23,
     "candidatos_sin_hora": 0,
-    "emparejamientos_unicos": 17,
-    "emparejados_con_mercado_1x2_vigente": 17,
-    "selecciones_en_rango": 10,
-    "emparejados_con_favorito_identificado": 17,
+    "emparejamientos_unicos": 18,
+    "emparejados_con_mercado_1x2_vigente": 18,
+    "selecciones_en_rango": 11,
+    "emparejados_con_favorito_identificado": 18,
     "sin_cuota_vigente_del_favorito": 0,
     "cuotas_fuera_de_1_20_a_1_80": 7,
-    "candidatos_con_nombres_exactos_en_proveedor": 5,
+    "candidatos_con_nombres_exactos_en_proveedor": 6,
     "coincidencias_nombres_sin_horario_compatible": 0,
     "nombres_coincidentes_con_horario_mas_de_3h": 0,
     "nombres_coincidentes_sin_hora_proveedor": 0,
     "detalle_mercado_1x2": {
-      "con_grupo_1x2": 17,
-      "grupo_1x2_con_cotizaciones_recientes": 17
+      "con_grupo_1x2": 18,
+      "grupo_1x2_con_cotizaciones_recientes": 18
     },
     "formatos_fechas_cuotas": {
-      "ts:iso_con_zona": 51
+      "ts:iso_con_zona": 54
     },
-    "propuestas_equivalencias_no_validadas": [],
-    "partidos_con_polled_at": 17,
-    "antiguedad_comprobacion_minima_minutos": 0.6,
+    "propuestas_equivalencias_no_validadas": [
+      {
+        "local": "Real Sociedad de Fútbol",
+        "visitante": "Real Madrid CF",
+        "posibles": [
+          [
+            0.83,
+            "Real Sociedad",
+            "Real Madrid"
+          ]
+        ]
+      },
+      {
+        "local": "Rangers",
+        "visitante": "Dundee United",
+        "posibles": [
+          [
+            0.929,
+            "Rangers",
+            "Dundee Utd"
+          ]
+        ]
+      },
+      {
+        "local": "Brentford FC",
+        "visitante": "Arsenal FC",
+        "posibles": [
+          [
+            0.887,
+            "Brentford",
+            "Arsenal"
+          ]
+        ]
+      }
+    ],
+    "partidos_con_polled_at": 18,
+    "antiguedad_comprobacion_minima_minutos": 0.3,
     "antiguedad_comprobacion_maxima_minutos": 0.8,
-    "antiguedad_1x2_minima_minutos": 11.0,
-    "antiguedad_1x2_maxima_minutos": 353.6,
+    "antiguedad_1x2_minima_minutos": 25.6,
+    "antiguedad_1x2_maxima_minutos": 408.5,
     "cotizaciones_1x2_futuras": 0,
-    "cotizaciones_1x2_mas_de_60_minutos": 42
+    "cotizaciones_1x2_mas_de_60_minutos": 47
   }
 }
