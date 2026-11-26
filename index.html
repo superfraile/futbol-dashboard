@@ -27,6 +27,47 @@ button:hover,button.activo{background:#15803d}
 .aviso{padding:18px;background:#1e293b;border-left:4px solid #eab308;border-radius:6px;color:#cbd5e1;margin:20px 0}
 footer{text-align:center;color:#64748b;padding:25px;font-size:13px}
 table{border-collapse:collapse;width:100%;font-size:14px}th,td{padding:9px;text-align:left;border-bottom:1px solid #334155}.aviso{overflow-x:auto}
+
+/* Mobile: conservar tablas analíticas y convertir listados en fichas. */
+button:focus-visible,select:focus-visible{outline:2px solid #4ade80;outline-offset:2px}
+@media(max-width:700px){
+ body{font-size:15px;line-height:1.45}
+ header{padding:18px 12px}
+ h1{font-size:clamp(20px,6vw,27px)}
+ header p{font-size:12px;margin:7px 0 0}
+ main{padding:12px;min-width:0}
+ .resumen{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+ .tarjeta{min-width:0;padding:12px}
+ .tarjeta p{font-size:12px;margin:5px 0 0;overflow-wrap:anywhere}
+ .numero{font-size:clamp(19px,5vw,26px);overflow-wrap:anywhere}
+ .etiqueta{font-size:12px}
+ nav{position:sticky;top:0;z-index:5;background:#0f172a;flex-wrap:nowrap;overflow-x:auto;gap:6px;margin:16px -12px;padding:8px 12px;scroll-padding:12px;overscroll-behavior-x:contain;scrollbar-width:thin}
+ nav button{flex:0 0 auto;white-space:nowrap;min-height:44px;padding:9px 12px;font-size:13px}
+ .ligas{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+ .liga{padding:11px;font-size:13px;min-width:0;min-height:44px;overflow-wrap:anywhere}
+ h2{font-size:21px;margin:12px 0}
+ .seccion>p{font-size:13px;color:#cbd5e1}
+ .seccion label{display:block;margin:8px 0 4px;font-size:13px}
+ .seccion select{display:block;width:100%;min-height:44px;font-size:16px}
+ .aviso{margin:12px 0;padding:10px;max-width:100%;border-left-width:3px}
+ .aviso>p{font-size:12px;line-height:1.5}
+ table{font-size:13px}
+ th,td{padding:8px}
+ #detalle-liga table,#estadisticas table{min-width:620px}
+ #detalle-liga th,#estadisticas th{white-space:nowrap}
+ #detalle-liga td:nth-child(2),#estadisticas td:nth-child(2){min-width:110px}
+ /* Las cabeceras siguen disponibles para lectores de pantalla. */
+ table.fichas,table.fichas tbody,table.fichas tr{display:block;width:100%}
+ table.fichas thead{position:absolute;width:1px;height:1px;padding:0;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+ table.fichas tr{background:#0f172a;border:1px solid #334155;border-radius:10px;margin-bottom:9px;padding:8px 10px}
+ table.fichas td{display:grid;grid-template-columns:minmax(85px,36%) minmax(0,1fr);gap:8px;padding:6px 0;overflow-wrap:anywhere;align-items:baseline}
+ table.fichas td::before{content:attr(data-label);color:#94a3b8;font-size:12px;font-weight:normal}
+ table.fichas td:last-child{border-bottom:0}
+ #lista-dobles td:nth-child(2),#lista-dobles td:nth-child(4),#lista-dobles td:last-child{color:#4ade80;font-weight:bold}
+ #lista-dobles td:last-child{margin-top:4px;padding-top:9px;border-top:1px solid #334155;font-size:17px}
+ footer{padding:20px 12px;font-size:11px}
+}
+@media(max-width:340px){.ligas{grid-template-columns:1fr} .tarjeta{padding:9px}}
 </style>
 </head>
 <body>
@@ -121,7 +162,7 @@ table{border-collapse:collapse;width:100%;font-size:14px}th,td{padding:9px;text-
 <footer>Fútbol Dashboard | Versión 1.2<br>Football data provided by the Football-Data.org API · Bundesliga: OpenLigaDB</footer>
 
 <script src="datos.js?v=20261124-1835"></script>
-<script src="panel.js?v=20261125-2000"></script>
+<script src="panel.js?v=20261126-mobile1"></script>
 <script src="seguimiento.js?v=20261124-1920"></script>
 
 </body>

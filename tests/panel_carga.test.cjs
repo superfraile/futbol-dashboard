@@ -13,7 +13,7 @@ class Elemento {
   insertCell(){return this.insertRow();}
   querySelector(s){if(!this.selectores.has(s))this.selectores.set(s,new Elemento());return this.selectores.get(s);}
   addEventListener(){}
-  setAttribute(){}
+  setAttribute(k,v){this[k]=v;}
 }
 const elementos=new Map();
 const obtener=s=>{if(!elementos.has(s))elementos.set(s,new Elemento());return elementos.get(s);};
@@ -40,5 +40,8 @@ const contexto=vm.createContext({
   }
   assert.equal(obtener("#favoritos .aviso").children[0].children[1].children.length,38);
   assert.equal(tarjetas[0].querySelector(".numero").textContent,Object.values(datos.ligas).filter(t=>t.length).length);
-  console.log("Carga completa del panel comprobada.");
+  const favoritosTabla=obtener("#favoritos .aviso").children[0];
+  assert.equal(favoritosTabla.className,"fichas");
+  assert.equal(favoritosTabla.children[1].children[0].children[1]["data-label"],"Equipo fijo");
+  console.log("Carga completa del panel y etiquetas móviles comprobadas.");
 })().catch(e=>{console.error(e);process.exitCode=1;});

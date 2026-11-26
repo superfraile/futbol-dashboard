@@ -4,7 +4,9 @@ let datos=null, seleccion="GER";
 function tabla(dest,headers,rows){
  const t=document.createElement("table"), h=t.createTHead().insertRow();
  headers.forEach(v=>{const c=document.createElement("th");c.textContent=v;h.append(c)});
- const b=t.createTBody();rows.forEach(row=>{const r=b.insertRow();row.forEach(v=>{r.insertCell().textContent=v??"—"})});
+ const fichas=["Equipo fijo","Local","Favorito fijo","Partido 1","Registro"].some(k=>headers.includes(k));
+ if(fichas){t.className="fichas";t.setAttribute("role","table");}
+ const b=t.createTBody();rows.forEach(row=>{const r=b.insertRow();row.forEach((v,i)=>{const c=r.insertCell();c.textContent=v??"—";c.setAttribute("data-label",headers[i]||"");})});
  dest.replaceChildren(t);
 }
 function liga(){
