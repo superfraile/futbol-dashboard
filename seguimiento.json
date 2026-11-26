@@ -183,7 +183,8 @@
       ]
     }
   ],
-  "version": 1,
-  "actualizado_en": "2026-11-25T09:52:32.617978+00:00",
-  "stake_simulado": 5
+  "version": 2,
+  "actualizado_en": "2026-11-26T09:48:22.483228+00:00",
+  "stake_simulado": 5,
+  "confirmaciones": {}
 }
