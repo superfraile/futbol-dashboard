@@ -1,6 +1,6 @@
 {
   "version": "1.2",
-  "ultima_actualizacion": "2026-11-26T06:08:49.833365+00:00",
+  "ultima_actualizacion": "2026-11-27T06:13:41.332647+00:00",
   "fuente": "OpenLigaDB (https://www.openligadb.de), ODbL 1.0; GER; football-data.org (PL; ENG); football-data.org (PD; ESP); football-data.org (SA; ITA); football-data.org (FL1; FRA); football-data.org (PPL; POR); football-data.org (DED; NED); SportAPI.ai (https://sportapi.ai/); clasificación y calendario de DEN,SCO,GRE,NOR,SWE,SUI,TUR",
   "ligas": {
     "GER": [
@@ -4752,6 +4752,12 @@
       "visitante": "Sparta Rotterdam"
     },
     {
+      "liga": "POR",
+      "fecha": "2026-12-19T18:00:00Z",
+      "local": "FC Alverca",
+      "visitante": "Gil Vicente FC"
+    },
+    {
       "liga": "ITA",
       "fecha": "2026-12-19T19:45:00Z",
       "local": "AS Roma",
@@ -4762,6 +4768,12 @@
       "fecha": "2026-12-19T20:00:00Z",
       "local": "FC Utrecht",
       "visitante": "SC Heerenveen"
+    },
+    {
+      "liga": "POR",
+      "fecha": "2026-12-19T20:30:00Z",
+      "local": "FC Arouca",
+      "visitante": "Casa Pia AC"
     },
     {
       "liga": "ESP",
@@ -4826,12 +4838,6 @@
     {
       "liga": "POR",
       "fecha": "2026-12-20T00:00:00Z",
-      "local": "Rio Ave FC",
-      "visitante": "Sport Lisboa e Benfica"
-    },
-    {
-      "liga": "POR",
-      "fecha": "2026-12-20T00:00:00Z",
       "local": "Sporting Clube de Braga",
       "visitante": "Académico de Viseu FC"
     },
@@ -4840,42 +4846,6 @@
       "fecha": "2026-12-20T00:00:00Z",
       "local": "Sporting Clube de Portugal",
       "visitante": "GD Estoril Praia"
-    },
-    {
-      "liga": "POR",
-      "fecha": "2026-12-20T00:00:00Z",
-      "local": "CF Estrela da Amadora",
-      "visitante": "CS Marítimo"
-    },
-    {
-      "liga": "POR",
-      "fecha": "2026-12-20T00:00:00Z",
-      "local": "FC Famalicão",
-      "visitante": "FC Porto"
-    },
-    {
-      "liga": "POR",
-      "fecha": "2026-12-20T00:00:00Z",
-      "local": "FC Alverca",
-      "visitante": "Gil Vicente FC"
-    },
-    {
-      "liga": "POR",
-      "fecha": "2026-12-20T00:00:00Z",
-      "local": "CD Santa Clara",
-      "visitante": "Vitória SC"
-    },
-    {
-      "liga": "POR",
-      "fecha": "2026-12-20T00:00:00Z",
-      "local": "CD Nacional",
-      "visitante": "Moreirense FC"
-    },
-    {
-      "liga": "POR",
-      "fecha": "2026-12-20T00:00:00Z",
-      "local": "FC Arouca",
-      "visitante": "Casa Pia AC"
     },
     {
       "liga": "NED",
@@ -4938,6 +4908,12 @@
       "visitante": "VfB Stuttgart"
     },
     {
+      "liga": "POR",
+      "fecha": "2026-12-20T15:30:00Z",
+      "local": "CD Nacional",
+      "visitante": "Moreirense FC"
+    },
+    {
       "liga": "NED",
       "fecha": "2026-12-20T15:45:00Z",
       "local": "Go Ahead Eagles",
@@ -4962,6 +4938,12 @@
       "visitante": "Udinese Calcio"
     },
     {
+      "liga": "POR",
+      "fecha": "2026-12-20T18:00:00Z",
+      "local": "CF Estrela da Amadora",
+      "visitante": "CS Marítimo"
+    },
+    {
       "liga": "GER",
       "fecha": "2026-12-20T18:30:00+00:00",
       "local": "FC Schalke 04",
@@ -4980,10 +4962,28 @@
       "visitante": "SSC Napoli"
     },
     {
+      "liga": "POR",
+      "fecha": "2026-12-20T20:30:00Z",
+      "local": "CD Santa Clara",
+      "visitante": "Vitória SC"
+    },
+    {
+      "liga": "POR",
+      "fecha": "2026-12-21T18:45:00Z",
+      "local": "Rio Ave FC",
+      "visitante": "Sport Lisboa e Benfica"
+    },
+    {
       "liga": "ENG",
       "fecha": "2026-12-21T20:00:00Z",
       "local": "Chelsea FC",
       "visitante": "Aston Villa FC"
+    },
+    {
+      "liga": "POR",
+      "fecha": "2026-12-21T20:45:00Z",
+      "local": "FC Famalicão",
+      "visitante": "FC Porto"
     },
     {
       "liga": "ENG",
@@ -18603,8 +18603,8 @@
       "estado": "Cuota MoviOdds; no verificada en bet365",
       "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
       "cuota": 1.55,
-      "consultada_en": "2026-11-27T05:13:00.824445+00:00",
-      "ultimo_cambio": "2026-11-26T21:40:01.843677+00:00",
+      "consultada_en": "2026-11-27T06:13:19.329100+00:00",
+      "ultimo_cambio": "2026-11-27T05:39:12.844274+00:00",
       "cuota_verificada": true,
       "casa_apuestas": "MoviOdds",
       "mercado": "1X2",
@@ -18625,8 +18625,8 @@
       "estado": "Cuota MoviOdds; no verificada en bet365",
       "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
       "cuota": 1.25,
-      "consultada_en": "2026-11-27T05:12:59.129807+00:00",
-      "ultimo_cambio": "2026-11-26T04:43:27.851138+00:00",
+      "consultada_en": "2026-11-27T06:13:20.443340+00:00",
+      "ultimo_cambio": "2026-11-27T05:39:00.648527+00:00",
       "cuota_verificada": true,
       "casa_apuestas": "MoviOdds",
       "mercado": "1X2",
@@ -18647,8 +18647,8 @@
       "estado": "Cuota MoviOdds; no verificada en bet365",
       "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
       "cuota": 1.2222222222222223,
-      "consultada_en": "2026-11-27T05:13:00.861768+00:00",
-      "ultimo_cambio": "2026-11-27T00:58:43.967567+00:00",
+      "consultada_en": "2026-11-27T06:13:19.332054+00:00",
+      "ultimo_cambio": "2026-11-27T05:39:10.082545+00:00",
       "cuota_verificada": true,
       "casa_apuestas": "MoviOdds",
       "mercado": "1X2",
@@ -18684,8 +18684,8 @@
       "estado": "Cuota MoviOdds; no verificada en bet365",
       "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
       "cuota": 1.45,
-      "consultada_en": "2026-11-27T05:13:00.900556+00:00",
-      "ultimo_cambio": "2026-11-26T22:55:33.462560+00:00",
+      "consultada_en": "2026-11-27T06:13:19.330346+00:00",
+      "ultimo_cambio": "2026-11-27T05:39:12.961230+00:00",
       "cuota_verificada": true,
       "casa_apuestas": "MoviOdds",
       "mercado": "1X2",
@@ -18706,8 +18706,8 @@
       "estado": "Cuota MoviOdds; no verificada en bet365",
       "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
       "cuota": 1.2222222222222223,
-      "consultada_en": "2026-11-27T05:12:59.183568+00:00",
-      "ultimo_cambio": "2026-11-26T12:02:48.565606+00:00",
+      "consultada_en": "2026-11-27T06:13:20.475508+00:00",
+      "ultimo_cambio": "2026-11-27T05:39:02.564377+00:00",
       "cuota_verificada": true,
       "casa_apuestas": "MoviOdds",
       "mercado": "1X2",
@@ -18743,8 +18743,8 @@
       "estado": "Cuota MoviOdds; no verificada en bet365",
       "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
       "cuota": 1.3333333333333333,
-      "consultada_en": "2026-11-27T05:12:59.232854+00:00",
-      "ultimo_cambio": "2026-11-26T03:43:00.800835+00:00",
+      "consultada_en": "2026-11-27T06:13:20.513751+00:00",
+      "ultimo_cambio": "2026-11-27T05:39:03.720703+00:00",
       "cuota_verificada": true,
       "casa_apuestas": "MoviOdds",
       "mercado": "1X2",
@@ -18810,8 +18810,8 @@
       "estado": "Cuota MoviOdds; no verificada en bet365",
       "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
       "cuota": 1.2,
-      "consultada_en": "2026-11-27T05:13:00.873857+00:00",
-      "ultimo_cambio": "2026-11-26T19:01:13.946964+00:00",
+      "consultada_en": "2026-11-27T06:13:19.301030+00:00",
+      "ultimo_cambio": "2026-11-27T05:39:10.810223+00:00",
       "cuota_verificada": true,
       "casa_apuestas": "MoviOdds",
       "mercado": "1X2",
@@ -18847,8 +18847,8 @@
       "estado": "Cuota MoviOdds; no verificada en bet365",
       "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
       "cuota": 1.8,
-      "consultada_en": "2026-11-27T05:12:59.243336+00:00",
-      "ultimo_cambio": "2026-11-26T12:04:13.547061+00:00",
+      "consultada_en": "2026-11-27T06:13:19.295386+00:00",
+      "ultimo_cambio": "2026-11-27T05:39:06.140403+00:00",
       "cuota_verificada": true,
       "casa_apuestas": "MoviOdds",
       "mercado": "1X2",
@@ -18869,8 +18869,8 @@
       "estado": "Cuota MoviOdds; no verificada en bet365",
       "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
       "cuota": 1.75,
-      "consultada_en": "2026-11-27T05:12:59.244504+00:00",
-      "ultimo_cambio": "2026-11-26T22:20:33.639273+00:00",
+      "consultada_en": "2026-11-27T06:13:19.340607+00:00",
+      "ultimo_cambio": "2026-11-27T05:39:06.894506+00:00",
       "cuota_verificada": true,
       "casa_apuestas": "MoviOdds",
       "mercado": "1X2",
@@ -18906,8 +18906,8 @@
       "estado": "Cuota MoviOdds; no verificada en bet365",
       "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
       "cuota": 1.6666666666666665,
-      "consultada_en": "2026-11-27T05:12:59.241775+00:00",
-      "ultimo_cambio": "2026-11-26T03:43:13.477580+00:00",
+      "consultada_en": "2026-11-27T06:13:20.541081+00:00",
+      "ultimo_cambio": "2026-11-27T05:38:59.602010+00:00",
       "cuota_verificada": true,
       "casa_apuestas": "MoviOdds",
       "mercado": "1X2",
@@ -18973,8 +18973,8 @@
       "estado": "Cuota MoviOdds; no verificada en bet365",
       "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
       "cuota": 1.3,
-      "consultada_en": "2026-11-27T05:13:13.061435+00:00",
-      "ultimo_cambio": "2026-11-26T03:44:28.795523+00:00",
+      "consultada_en": "2026-11-27T06:13:25.050978+00:00",
+      "ultimo_cambio": "2026-11-27T05:55:31.036406+00:00",
       "cuota_verificada": true,
       "casa_apuestas": "MoviOdds",
       "mercado": "1X2",
@@ -19029,8 +19029,8 @@
           "estado": "Cuota MoviOdds; no verificada en bet365",
           "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
           "cuota": 1.45,
-          "consultada_en": "2026-11-27T05:13:00.900556+00:00",
-          "ultimo_cambio": "2026-11-26T22:55:33.462560+00:00",
+          "consultada_en": "2026-11-27T06:13:19.330346+00:00",
+          "ultimo_cambio": "2026-11-27T05:39:12.961230+00:00",
           "cuota_verificada": true,
           "casa_apuestas": "MoviOdds",
           "mercado": "1X2",
@@ -19051,8 +19051,8 @@
           "estado": "Cuota MoviOdds; no verificada en bet365",
           "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
           "cuota": 1.2,
-          "consultada_en": "2026-11-27T05:13:00.873857+00:00",
-          "ultimo_cambio": "2026-11-26T19:01:13.946964+00:00",
+          "consultada_en": "2026-11-27T06:13:19.301030+00:00",
+          "ultimo_cambio": "2026-11-27T05:39:10.810223+00:00",
           "cuota_verificada": true,
           "casa_apuestas": "MoviOdds",
           "mercado": "1X2",
@@ -19078,8 +19078,8 @@
           "estado": "Cuota MoviOdds; no verificada en bet365",
           "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
           "cuota": 1.55,
-          "consultada_en": "2026-11-27T05:13:00.824445+00:00",
-          "ultimo_cambio": "2026-11-26T21:40:01.843677+00:00",
+          "consultada_en": "2026-11-27T06:13:19.329100+00:00",
+          "ultimo_cambio": "2026-11-27T05:39:12.844274+00:00",
           "cuota_verificada": true,
           "casa_apuestas": "MoviOdds",
           "mercado": "1X2",
@@ -19100,8 +19100,8 @@
           "estado": "Cuota MoviOdds; no verificada en bet365",
           "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
           "cuota": 1.3333333333333333,
-          "consultada_en": "2026-11-27T05:12:59.232854+00:00",
-          "ultimo_cambio": "2026-11-26T03:43:00.800835+00:00",
+          "consultada_en": "2026-11-27T06:13:20.513751+00:00",
+          "ultimo_cambio": "2026-11-27T05:39:03.720703+00:00",
           "cuota_verificada": true,
           "casa_apuestas": "MoviOdds",
           "mercado": "1X2",
@@ -19127,8 +19127,8 @@
           "estado": "Cuota MoviOdds; no verificada en bet365",
           "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
           "cuota": 1.2222222222222223,
-          "consultada_en": "2026-11-27T05:12:59.183568+00:00",
-          "ultimo_cambio": "2026-11-26T12:02:48.565606+00:00",
+          "consultada_en": "2026-11-27T06:13:20.475508+00:00",
+          "ultimo_cambio": "2026-11-27T05:39:02.564377+00:00",
           "cuota_verificada": true,
           "casa_apuestas": "MoviOdds",
           "mercado": "1X2",
@@ -19149,8 +19149,8 @@
           "estado": "Cuota MoviOdds; no verificada en bet365",
           "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
           "cuota": 1.3,
-          "consultada_en": "2026-11-27T05:13:13.061435+00:00",
-          "ultimo_cambio": "2026-11-26T03:44:28.795523+00:00",
+          "consultada_en": "2026-11-27T06:13:25.050978+00:00",
+          "ultimo_cambio": "2026-11-27T05:55:31.036406+00:00",
           "cuota_verificada": true,
           "casa_apuestas": "MoviOdds",
           "mercado": "1X2",
@@ -19176,8 +19176,8 @@
           "estado": "Cuota MoviOdds; no verificada en bet365",
           "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
           "cuota": 1.25,
-          "consultada_en": "2026-11-27T05:12:59.129807+00:00",
-          "ultimo_cambio": "2026-11-26T04:43:27.851138+00:00",
+          "consultada_en": "2026-11-27T06:13:20.443340+00:00",
+          "ultimo_cambio": "2026-11-27T05:39:00.648527+00:00",
           "cuota_verificada": true,
           "casa_apuestas": "MoviOdds",
           "mercado": "1X2",
@@ -19198,8 +19198,8 @@
           "estado": "Cuota MoviOdds; no verificada en bet365",
           "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
           "cuota": 1.6666666666666665,
-          "consultada_en": "2026-11-27T05:12:59.241775+00:00",
-          "ultimo_cambio": "2026-11-26T03:43:13.477580+00:00",
+          "consultada_en": "2026-11-27T06:13:20.541081+00:00",
+          "ultimo_cambio": "2026-11-27T05:38:59.602010+00:00",
           "cuota_verificada": true,
           "casa_apuestas": "MoviOdds",
           "mercado": "1X2",
@@ -19225,8 +19225,8 @@
           "estado": "Cuota MoviOdds; no verificada en bet365",
           "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
           "cuota": 1.2222222222222223,
-          "consultada_en": "2026-11-27T05:13:00.861768+00:00",
-          "ultimo_cambio": "2026-11-27T00:58:43.967567+00:00",
+          "consultada_en": "2026-11-27T06:13:19.332054+00:00",
+          "ultimo_cambio": "2026-11-27T05:39:10.082545+00:00",
           "cuota_verificada": true,
           "casa_apuestas": "MoviOdds",
           "mercado": "1X2",
@@ -19247,8 +19247,8 @@
           "estado": "Cuota MoviOdds; no verificada en bet365",
           "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
           "cuota": 1.75,
-          "consultada_en": "2026-11-27T05:12:59.244504+00:00",
-          "ultimo_cambio": "2026-11-26T22:20:33.639273+00:00",
+          "consultada_en": "2026-11-27T06:13:19.340607+00:00",
+          "ultimo_cambio": "2026-11-27T05:39:06.894506+00:00",
           "cuota_verificada": true,
           "casa_apuestas": "MoviOdds",
           "mercado": "1X2",
@@ -19269,9 +19269,9 @@
     "TUR": "2026-11-24T18:14:09.367925+00:00"
   },
   "favoritos_validados": true,
-  "ultima_actualizacion_cuotas": "2026-11-27T05:13:40.508977+00:00",
+  "ultima_actualizacion_cuotas": "2026-11-27T06:13:47.978224+00:00",
   "diagnostico_cuotas": {
-    "partidos_proveedor": 1557,
+    "partidos_proveedor": 1582,
     "candidatos": 23,
     "candidatos_sin_hora": 0,
     "emparejamientos_unicos": 18,
@@ -19328,10 +19328,10 @@
     ],
     "partidos_con_polled_at": 18,
     "antiguedad_comprobacion_minima_minutos": 0.4,
-    "antiguedad_comprobacion_maxima_minutos": 0.7,
-    "antiguedad_1x2_minima_minutos": 127.7,
-    "antiguedad_1x2_maxima_minutos": 1530.7,
+    "antiguedad_comprobacion_maxima_minutos": 0.5,
+    "antiguedad_1x2_minima_minutos": 18.3,
+    "antiguedad_1x2_maxima_minutos": 34.8,
     "cotizaciones_1x2_futuras": 0,
-    "cotizaciones_1x2_mas_de_60_minutos": 54
+    "cotizaciones_1x2_mas_de_60_minutos": 0
   }
 }
