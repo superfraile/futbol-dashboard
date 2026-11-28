@@ -1,6 +1,6 @@
 {
   "version": "1.2",
-  "ultima_actualizacion": "2026-11-27T06:13:41.332647+00:00",
+  "ultima_actualizacion": "2026-11-28T06:12:01.757382+00:00",
   "fuente": "OpenLigaDB (https://www.openligadb.de), ODbL 1.0; GER; football-data.org (PL; ENG); football-data.org (PD; ESP); football-data.org (SA; ITA); football-data.org (FL1; FRA); football-data.org (PPL; POR); football-data.org (DED; NED); SportAPI.ai (https://sportapi.ai/); clasificación y calendario de DEN,SCO,GRE,NOR,SWE,SUI,TUR",
   "ligas": {
     "GER": [
@@ -66,15 +66,15 @@
       },
       {
         "equipo": "SV Werder Bremen",
-        "pj": 10,
+        "pj": 11,
         "g": 5,
-        "e": 3,
+        "e": 4,
         "p": 2,
-        "gf": 21,
-        "gc": 15,
-        "puntos": 18,
+        "gf": 24,
+        "gc": 18,
+        "puntos": 19,
         "posicion": 6,
-        "ppp": 1.8
+        "ppp": 1.73
       },
       {
         "equipo": "Eintracht Frankfurt",
@@ -210,15 +210,15 @@
       },
       {
         "equipo": "Borussia Mönchengladbach",
-        "pj": 10,
+        "pj": 11,
         "g": 1,
-        "e": 1,
+        "e": 2,
         "p": 8,
-        "gf": 12,
-        "gc": 26,
-        "puntos": 4,
+        "gf": 15,
+        "gc": 29,
+        "puntos": 5,
         "posicion": 18,
-        "ppp": 0.4
+        "ppp": 0.45
       }
     ],
     "DEN": [
@@ -273,14 +273,14 @@
       {
         "equipo": "Brøndby",
         "posicion": 5,
-        "pj": 15,
+        "pj": 16,
         "g": 7,
-        "e": 1,
+        "e": 2,
         "p": 7,
-        "gf": 23,
-        "gc": 23,
-        "puntos": 22,
-        "ppp": 1.47
+        "gf": 24,
+        "gc": 24,
+        "puntos": 23,
+        "ppp": 1.44
       },
       {
         "equipo": "OB",
@@ -357,14 +357,14 @@
       {
         "equipo": "Sønderjyske",
         "posicion": 12,
-        "pj": 15,
+        "pj": 16,
         "g": 2,
-        "e": 3,
+        "e": 4,
         "p": 10,
-        "gf": 20,
-        "gc": 35,
-        "puntos": 9,
-        "ppp": 0.6
+        "gf": 21,
+        "gc": 36,
+        "puntos": 10,
+        "ppp": 0.62
       }
     ],
     "SCO": [
@@ -575,6 +575,18 @@
         "ppp": 1.69
       },
       {
+        "equipo": "Real Racing Club de Santander",
+        "pj": 14,
+        "g": 6,
+        "e": 2,
+        "p": 6,
+        "gf": 23,
+        "gc": 33,
+        "puntos": 20,
+        "posicion": 6,
+        "ppp": 1.43
+      },
+      {
         "equipo": "Sevilla FC",
         "pj": 13,
         "g": 5,
@@ -583,20 +595,8 @@
         "gf": 18,
         "gc": 20,
         "puntos": 19,
-        "posicion": 6,
-        "ppp": 1.46
-      },
-      {
-        "equipo": "Real Racing Club de Santander",
-        "pj": 13,
-        "g": 5,
-        "e": 2,
-        "p": 6,
-        "gf": 20,
-        "gc": 32,
-        "puntos": 17,
         "posicion": 7,
-        "ppp": 1.31
+        "ppp": 1.46
       },
       {
         "equipo": "Athletic Club",
@@ -684,15 +684,15 @@
       },
       {
         "equipo": "Levante UD",
-        "pj": 13,
+        "pj": 14,
         "g": 2,
         "e": 6,
-        "p": 5,
-        "gf": 17,
-        "gc": 22,
+        "p": 6,
+        "gf": 18,
+        "gc": 25,
         "puntos": 12,
         "posicion": 15,
-        "ppp": 0.92
+        "ppp": 0.86
       },
       {
         "equipo": "Rayo Vallecano de Madrid",
@@ -770,15 +770,27 @@
       },
       {
         "equipo": "Paris FC",
-        "pj": 11,
+        "pj": 12,
         "g": 7,
         "e": 2,
-        "p": 2,
+        "p": 3,
         "gf": 21,
-        "gc": 10,
+        "gc": 11,
         "puntos": 23,
         "posicion": 2,
-        "ppp": 2.09
+        "ppp": 1.92
+      },
+      {
+        "equipo": "Stade Brestois 29",
+        "pj": 12,
+        "g": 6,
+        "e": 3,
+        "p": 3,
+        "gf": 20,
+        "gc": 12,
+        "puntos": 21,
+        "posicion": 3,
+        "ppp": 1.75
       },
       {
         "equipo": "Lille OSC",
@@ -789,7 +801,7 @@
         "gf": 14,
         "gc": 8,
         "puntos": 21,
-        "posicion": 3,
+        "posicion": 4,
         "ppp": 1.91
       },
       {
@@ -801,7 +813,7 @@
         "gf": 16,
         "gc": 9,
         "puntos": 20,
-        "posicion": 4,
+        "posicion": 5,
         "ppp": 1.82
       },
       {
@@ -812,18 +824,6 @@
         "p": 5,
         "gf": 24,
         "gc": 17,
-        "puntos": 18,
-        "posicion": 5,
-        "ppp": 1.64
-      },
-      {
-        "equipo": "Stade Brestois 29",
-        "pj": 11,
-        "g": 5,
-        "e": 3,
-        "p": 3,
-        "gf": 19,
-        "gc": 12,
         "puntos": 18,
         "posicion": 6,
         "ppp": 1.64
@@ -1230,15 +1230,15 @@
       },
       {
         "equipo": "Chelsea FC",
-        "pj": 11,
+        "pj": 12,
         "g": 5,
         "e": 1,
-        "p": 5,
-        "gf": 20,
-        "gc": 20,
+        "p": 6,
+        "gf": 22,
+        "gc": 23,
         "puntos": 16,
         "posicion": 8,
-        "ppp": 1.45
+        "ppp": 1.33
       },
       {
         "equipo": "Everton FC",
@@ -1301,6 +1301,18 @@
         "ppp": 1.18
       },
       {
+        "equipo": "Nottingham Forest FC",
+        "pj": 12,
+        "g": 3,
+        "e": 3,
+        "p": 6,
+        "gf": 12,
+        "gc": 17,
+        "puntos": 12,
+        "posicion": 14,
+        "ppp": 1.0
+      },
+      {
         "equipo": "Coventry City FC",
         "pj": 11,
         "g": 4,
@@ -1309,7 +1321,7 @@
         "gf": 13,
         "gc": 21,
         "puntos": 12,
-        "posicion": 14,
+        "posicion": 15,
         "ppp": 1.09
       },
       {
@@ -1321,7 +1333,7 @@
         "gf": 11,
         "gc": 13,
         "puntos": 11,
-        "posicion": 15,
+        "posicion": 16,
         "ppp": 1.0
       },
       {
@@ -1333,20 +1345,8 @@
         "gf": 15,
         "gc": 22,
         "puntos": 11,
-        "posicion": 16,
-        "ppp": 1.0
-      },
-      {
-        "equipo": "Nottingham Forest FC",
-        "pj": 11,
-        "g": 2,
-        "e": 3,
-        "p": 6,
-        "gf": 9,
-        "gc": 15,
-        "puntos": 9,
         "posicion": 17,
-        "ppp": 0.82
+        "ppp": 1.0
       },
       {
         "equipo": "Sunderland AFC",
@@ -1471,6 +1471,18 @@
         "ppp": 1.67
       },
       {
+        "equipo": "Bologna FC 1909",
+        "pj": 13,
+        "g": 5,
+        "e": 4,
+        "p": 4,
+        "gf": 17,
+        "gc": 15,
+        "puntos": 19,
+        "posicion": 8,
+        "ppp": 1.46
+      },
+      {
         "equipo": "SSC Napoli",
         "pj": 12,
         "g": 5,
@@ -1478,18 +1490,6 @@
         "p": 4,
         "gf": 19,
         "gc": 14,
-        "puntos": 18,
-        "posicion": 8,
-        "ppp": 1.5
-      },
-      {
-        "equipo": "Bologna FC 1909",
-        "pj": 12,
-        "g": 5,
-        "e": 3,
-        "p": 4,
-        "gf": 17,
-        "gc": 15,
         "puntos": 18,
         "posicion": 9,
         "ppp": 1.5
@@ -1603,6 +1603,18 @@
         "ppp": 0.67
       },
       {
+        "equipo": "Venezia FC",
+        "pj": 13,
+        "g": 2,
+        "e": 1,
+        "p": 10,
+        "gf": 8,
+        "gc": 25,
+        "puntos": 7,
+        "posicion": 19,
+        "ppp": 0.54
+      },
+      {
         "equipo": "Udinese Calcio",
         "pj": 12,
         "g": 1,
@@ -1610,18 +1622,6 @@
         "p": 8,
         "gf": 13,
         "gc": 26,
-        "puntos": 6,
-        "posicion": 19,
-        "ppp": 0.5
-      },
-      {
-        "equipo": "Venezia FC",
-        "pj": 12,
-        "g": 2,
-        "e": 0,
-        "p": 10,
-        "gf": 8,
-        "gc": 25,
         "puntos": 6,
         "posicion": 20,
         "ppp": 0.5
@@ -1932,15 +1932,15 @@
       },
       {
         "equipo": "FC Groningen",
-        "pj": 13,
+        "pj": 14,
         "g": 4,
-        "e": 3,
+        "e": 4,
         "p": 6,
-        "gf": 30,
-        "gc": 31,
-        "puntos": 15,
+        "gf": 31,
+        "gc": 32,
+        "puntos": 16,
         "posicion": 10,
-        "ppp": 1.15
+        "ppp": 1.14
       },
       {
         "equipo": "PEC Zwolle",
@@ -2028,15 +2028,15 @@
       },
       {
         "equipo": "Willem II Tilburg",
-        "pj": 13,
+        "pj": 14,
         "g": 0,
-        "e": 3,
+        "e": 4,
         "p": 10,
-        "gf": 12,
-        "gc": 42,
-        "puntos": 3,
+        "gf": 13,
+        "gc": 43,
+        "puntos": 4,
         "posicion": 18,
-        "ppp": 0.23
+        "ppp": 0.29
       }
     ],
     "POR": [
@@ -2161,6 +2161,18 @@
         "ppp": 1.18
       },
       {
+        "equipo": "CD Nacional",
+        "pj": 12,
+        "g": 4,
+        "e": 1,
+        "p": 7,
+        "gf": 13,
+        "gc": 20,
+        "puntos": 13,
+        "posicion": 11,
+        "ppp": 1.08
+      },
+      {
         "equipo": "FC Alverca",
         "pj": 11,
         "g": 3,
@@ -2169,7 +2181,7 @@
         "gf": 14,
         "gc": 15,
         "puntos": 12,
-        "posicion": 11,
+        "posicion": 12,
         "ppp": 1.09
       },
       {
@@ -2180,18 +2192,6 @@
         "p": 5,
         "gf": 17,
         "gc": 22,
-        "puntos": 10,
-        "posicion": 12,
-        "ppp": 0.91
-      },
-      {
-        "equipo": "CD Nacional",
-        "pj": 11,
-        "g": 3,
-        "e": 1,
-        "p": 7,
-        "gf": 11,
-        "gc": 19,
         "puntos": 10,
         "posicion": 13,
         "ppp": 0.91
@@ -2210,15 +2210,15 @@
       },
       {
         "equipo": "CS Marítimo",
-        "pj": 10,
+        "pj": 11,
         "g": 2,
         "e": 2,
-        "p": 6,
-        "gf": 9,
-        "gc": 21,
+        "p": 7,
+        "gf": 10,
+        "gc": 23,
         "puntos": 8,
         "posicion": 15,
-        "ppp": 0.8
+        "ppp": 0.73
       },
       {
         "equipo": "Casa Pia AC",
@@ -2649,14 +2649,14 @@
       {
         "equipo": "Kasımpaşa",
         "posicion": 5,
-        "pj": 12,
+        "pj": 13,
         "g": 6,
         "e": 5,
-        "p": 1,
-        "gf": 19,
-        "gc": 12,
+        "p": 2,
+        "gf": 21,
+        "gc": 15,
         "puntos": 23,
-        "ppp": 1.92
+        "ppp": 1.77
       },
       {
         "equipo": "Fenerbahçe",
@@ -2695,8 +2695,20 @@
         "ppp": 1.67
       },
       {
-        "equipo": "Göztepe",
+        "equipo": "Rizespor",
         "posicion": 9,
+        "pj": 13,
+        "g": 6,
+        "e": 2,
+        "p": 5,
+        "gf": 18,
+        "gc": 18,
+        "puntos": 20,
+        "ppp": 1.54
+      },
+      {
+        "equipo": "Göztepe",
+        "posicion": 10,
         "pj": 12,
         "g": 5,
         "e": 3,
@@ -2705,18 +2717,6 @@
         "gc": 19,
         "puntos": 18,
         "ppp": 1.5
-      },
-      {
-        "equipo": "Rizespor",
-        "posicion": 10,
-        "pj": 12,
-        "g": 5,
-        "e": 2,
-        "p": 5,
-        "gf": 15,
-        "gc": 16,
-        "puntos": 17,
-        "ppp": 1.42
       },
       {
         "equipo": "Çorum",
@@ -2757,26 +2757,26 @@
       {
         "equipo": "Alanyaspor",
         "posicion": 14,
-        "pj": 12,
+        "pj": 13,
         "g": 3,
         "e": 3,
-        "p": 6,
-        "gf": 10,
-        "gc": 20,
+        "p": 7,
+        "gf": 11,
+        "gc": 22,
         "puntos": 12,
-        "ppp": 1.0
+        "ppp": 0.92
       },
       {
         "equipo": "Konyaspor",
         "posicion": 15,
-        "pj": 12,
-        "g": 2,
+        "pj": 13,
+        "g": 3,
         "e": 2,
         "p": 8,
-        "gf": 8,
-        "gc": 18,
-        "puntos": 8,
-        "ppp": 0.67
+        "gf": 10,
+        "gc": 19,
+        "puntos": 11,
+        "ppp": 0.85
       },
       {
         "equipo": "Gaziantep FK",
@@ -3047,66 +3047,6 @@
     }
   ],
   "partidos": [
-    {
-      "liga": "TUR",
-      "fecha": "2026-11-27T17:00:00+00:00",
-      "local": "Alanyaspor",
-      "visitante": "Konyaspor"
-    },
-    {
-      "liga": "TUR",
-      "fecha": "2026-11-27T17:00:00+00:00",
-      "local": "Rizespor",
-      "visitante": "Kasımpaşa"
-    },
-    {
-      "liga": "DEN",
-      "fecha": "2026-11-27T18:00:00+00:00",
-      "local": "Sønderjyske",
-      "visitante": "Brøndby"
-    },
-    {
-      "liga": "NED",
-      "fecha": "2026-11-27T19:00:00Z",
-      "local": "FC Groningen",
-      "visitante": "Willem II Tilburg"
-    },
-    {
-      "liga": "GER",
-      "fecha": "2026-11-27T19:30:00+00:00",
-      "local": "SV Werder Bremen",
-      "visitante": "Borussia Mönchengladbach"
-    },
-    {
-      "liga": "FRA",
-      "fecha": "2026-11-27T19:45:00Z",
-      "local": "Stade Brestois 29",
-      "visitante": "Paris FC"
-    },
-    {
-      "liga": "ITA",
-      "fecha": "2026-11-27T19:45:00Z",
-      "local": "Venezia FC",
-      "visitante": "Bologna FC 1909"
-    },
-    {
-      "liga": "ESP",
-      "fecha": "2026-11-27T20:00:00Z",
-      "local": "Levante UD",
-      "visitante": "Real Racing Club de Santander"
-    },
-    {
-      "liga": "ENG",
-      "fecha": "2026-11-27T20:00:00Z",
-      "local": "Nottingham Forest FC",
-      "visitante": "Chelsea FC"
-    },
-    {
-      "liga": "POR",
-      "fecha": "2026-11-27T20:15:00Z",
-      "local": "CS Marítimo",
-      "visitante": "CD Nacional"
-    },
     {
       "liga": "TUR",
       "fecha": "2026-11-28T13:00:00+00:00",
@@ -3850,6 +3790,18 @@
       "fecha": "2026-12-03T20:00:00Z",
       "local": "Tottenham Hotspur FC",
       "visitante": "Fulham FC"
+    },
+    {
+      "liga": "TUR",
+      "fecha": "2026-12-04T17:00:00+00:00",
+      "local": "Galatasaray",
+      "visitante": "Rizespor"
+    },
+    {
+      "liga": "NOR",
+      "fecha": "2026-12-04T18:00:00+00:00",
+      "local": "Molde",
+      "visitante": "Viking"
     },
     {
       "liga": "NED",
@@ -4836,18 +4788,6 @@
       "visitante": "Real Racing Club de Santander"
     },
     {
-      "liga": "POR",
-      "fecha": "2026-12-20T00:00:00Z",
-      "local": "Sporting Clube de Braga",
-      "visitante": "Académico de Viseu FC"
-    },
-    {
-      "liga": "POR",
-      "fecha": "2026-12-20T00:00:00Z",
-      "local": "Sporting Clube de Portugal",
-      "visitante": "GD Estoril Praia"
-    },
-    {
       "liga": "NED",
       "fecha": "2026-12-20T11:15:00Z",
       "local": "NEC",
@@ -4986,6 +4926,18 @@
       "visitante": "FC Porto"
     },
     {
+      "liga": "POR",
+      "fecha": "2026-12-22T18:45:00Z",
+      "local": "Sporting Clube de Braga",
+      "visitante": "Académico de Viseu FC"
+    },
+    {
+      "liga": "POR",
+      "fecha": "2026-12-22T20:45:00Z",
+      "local": "Sporting Clube de Portugal",
+      "visitante": "GD Estoril Praia"
+    },
+    {
       "liga": "ENG",
       "fecha": "2026-12-26T12:30:00Z",
       "local": "Aston Villa FC",
@@ -5028,64 +4980,16 @@
       "visitante": "Manchester City FC"
     },
     {
-      "liga": "POR",
-      "fecha": "2026-12-27T00:00:00Z",
-      "local": "Vitória SC",
-      "visitante": "Rio Ave FC"
-    },
-    {
-      "liga": "POR",
-      "fecha": "2026-12-27T00:00:00Z",
-      "local": "Casa Pia AC",
-      "visitante": "FC Famalicão"
-    },
-    {
-      "liga": "POR",
-      "fecha": "2026-12-27T00:00:00Z",
-      "local": "FC Porto",
-      "visitante": "CD Nacional"
-    },
-    {
-      "liga": "POR",
-      "fecha": "2026-12-27T00:00:00Z",
-      "local": "CD Santa Clara",
-      "visitante": "CF Estrela da Amadora"
-    },
-    {
-      "liga": "POR",
-      "fecha": "2026-12-27T00:00:00Z",
-      "local": "Moreirense FC",
-      "visitante": "Académico de Viseu FC"
-    },
-    {
-      "liga": "POR",
-      "fecha": "2026-12-27T00:00:00Z",
-      "local": "Sport Lisboa e Benfica",
-      "visitante": "Sporting Clube de Portugal"
-    },
-    {
-      "liga": "POR",
-      "fecha": "2026-12-27T00:00:00Z",
-      "local": "Gil Vicente FC",
-      "visitante": "FC Arouca"
-    },
-    {
-      "liga": "POR",
-      "fecha": "2026-12-27T00:00:00Z",
-      "local": "CS Marítimo",
-      "visitante": "Sporting Clube de Braga"
-    },
-    {
-      "liga": "POR",
-      "fecha": "2026-12-27T00:00:00Z",
-      "local": "GD Estoril Praia",
-      "visitante": "FC Alverca"
-    },
-    {
       "liga": "ENG",
       "fecha": "2026-12-27T14:00:00Z",
       "local": "Coventry City FC",
       "visitante": "Chelsea FC"
+    },
+    {
+      "liga": "POR",
+      "fecha": "2026-12-27T15:30:00Z",
+      "local": "CD Santa Clara",
+      "visitante": "CF Estrela da Amadora"
     },
     {
       "liga": "ENG",
@@ -5098,6 +5002,30 @@
       "fecha": "2026-12-27T19:00:00Z",
       "local": "Crystal Palace FC",
       "visitante": "Arsenal FC"
+    },
+    {
+      "liga": "POR",
+      "fecha": "2026-12-28T18:00:00Z",
+      "local": "CS Marítimo",
+      "visitante": "Sporting Clube de Braga"
+    },
+    {
+      "liga": "POR",
+      "fecha": "2026-12-28T18:45:00Z",
+      "local": "Gil Vicente FC",
+      "visitante": "FC Arouca"
+    },
+    {
+      "liga": "POR",
+      "fecha": "2026-12-28T20:45:00Z",
+      "local": "FC Porto",
+      "visitante": "CD Nacional"
+    },
+    {
+      "liga": "POR",
+      "fecha": "2026-12-29T18:45:00Z",
+      "local": "Casa Pia AC",
+      "visitante": "FC Famalicão"
     },
     {
       "liga": "ENG",
@@ -5116,6 +5044,12 @@
       "fecha": "2026-12-29T20:15:00Z",
       "local": "Everton FC",
       "visitante": "Manchester City FC"
+    },
+    {
+      "liga": "POR",
+      "fecha": "2026-12-29T20:45:00Z",
+      "local": "Sport Lisboa e Benfica",
+      "visitante": "Sporting Clube de Portugal"
     },
     {
       "liga": "ENG",
@@ -5158,6 +5092,12 @@
       "fecha": "2026-12-30T20:15:00Z",
       "local": "Ipswich Town FC",
       "visitante": "Chelsea FC"
+    },
+    {
+      "liga": "POR",
+      "fecha": "2026-12-30T20:15:00Z",
+      "local": "GD Estoril Praia",
+      "visitante": "FC Alverca"
     },
     {
       "liga": "ENG",
@@ -5268,6 +5208,12 @@
       "visitante": "AJ Auxerre"
     },
     {
+      "liga": "POR",
+      "fecha": "2027-01-02T20:30:00Z",
+      "local": "Sporting Clube de Portugal",
+      "visitante": "CD Santa Clara"
+    },
+    {
       "liga": "ESP",
       "fecha": "2027-01-03T00:00:00Z",
       "local": "Real Madrid CF",
@@ -5358,6 +5304,12 @@
       "visitante": "US Lecce"
     },
     {
+      "liga": "POR",
+      "fecha": "2027-01-03T15:30:00Z",
+      "local": "Moreirense FC",
+      "visitante": "Académico de Viseu FC"
+    },
+    {
       "liga": "FRA",
       "fecha": "2027-01-03T16:15:00Z",
       "local": "Paris FC",
@@ -5392,6 +5344,12 @@
       "fecha": "2027-01-03T19:45:00Z",
       "local": "Bologna FC 1909",
       "visitante": "Juventus FC"
+    },
+    {
+      "liga": "POR",
+      "fecha": "2027-01-03T20:30:00Z",
+      "local": "Vitória SC",
+      "visitante": "Rio Ave FC"
     },
     {
       "liga": "POR",
@@ -5678,24 +5636,6 @@
     {
       "liga": "POR",
       "fecha": "2027-01-10T00:00:00Z",
-      "local": "CF Estrela da Amadora",
-      "visitante": "GD Estoril Praia"
-    },
-    {
-      "liga": "POR",
-      "fecha": "2027-01-10T00:00:00Z",
-      "local": "FC Famalicão",
-      "visitante": "Vitória SC"
-    },
-    {
-      "liga": "POR",
-      "fecha": "2027-01-10T00:00:00Z",
-      "local": "CD Nacional",
-      "visitante": "Gil Vicente FC"
-    },
-    {
-      "liga": "POR",
-      "fecha": "2027-01-10T00:00:00Z",
       "local": "Rio Ave FC",
       "visitante": "Moreirense FC"
     },
@@ -5708,20 +5648,8 @@
     {
       "liga": "POR",
       "fecha": "2027-01-10T00:00:00Z",
-      "local": "FC Alverca",
-      "visitante": "CS Marítimo"
-    },
-    {
-      "liga": "POR",
-      "fecha": "2027-01-10T00:00:00Z",
       "local": "Académico de Viseu FC",
       "visitante": "Casa Pia AC"
-    },
-    {
-      "liga": "POR",
-      "fecha": "2027-01-10T00:00:00Z",
-      "local": "Sporting Clube de Portugal",
-      "visitante": "CD Santa Clara"
     },
     {
       "liga": "NED",
@@ -5766,6 +5694,18 @@
       "visitante": "1. FC Union Berlin"
     },
     {
+      "liga": "POR",
+      "fecha": "2027-01-10T15:30:00Z",
+      "local": "CD Nacional",
+      "visitante": "Gil Vicente FC"
+    },
+    {
+      "liga": "POR",
+      "fecha": "2027-01-10T15:30:00Z",
+      "local": "FC Alverca",
+      "visitante": "CS Marítimo"
+    },
+    {
       "liga": "NED",
       "fecha": "2027-01-10T15:45:00Z",
       "local": "FC Groningen",
@@ -5788,6 +5728,18 @@
       "fecha": "2027-01-10T19:45:00Z",
       "local": "FC Internazionale Milano",
       "visitante": "Juventus FC"
+    },
+    {
+      "liga": "POR",
+      "fecha": "2027-01-11T00:00:00Z",
+      "local": "CF Estrela da Amadora",
+      "visitante": "GD Estoril Praia"
+    },
+    {
+      "liga": "POR",
+      "fecha": "2027-01-11T00:00:00Z",
+      "local": "FC Famalicão",
+      "visitante": "Vitória SC"
     },
     {
       "liga": "ITA",
@@ -5874,6 +5826,18 @@
       "visitante": "Lille OSC"
     },
     {
+      "liga": "POR",
+      "fecha": "2027-01-15T20:15:00Z",
+      "local": "FC Alverca",
+      "visitante": "FC Porto"
+    },
+    {
+      "liga": "POR",
+      "fecha": "2027-01-16T00:00:00Z",
+      "local": "Sporting Clube de Braga",
+      "visitante": "Moreirense FC"
+    },
+    {
       "liga": "ENG",
       "fecha": "2027-01-16T12:30:00Z",
       "local": "Coventry City FC",
@@ -5946,6 +5910,12 @@
       "visitante": "NEC"
     },
     {
+      "liga": "POR",
+      "fecha": "2027-01-16T15:30:00Z",
+      "local": "CD Nacional",
+      "visitante": "CD Santa Clara"
+    },
+    {
       "liga": "FRA",
       "fecha": "2027-01-16T16:15:00Z",
       "local": "Angers SCO",
@@ -6004,6 +5974,12 @@
       "fecha": "2027-01-16T20:00:00Z",
       "local": "Fortuna Sittard",
       "visitante": "PSV"
+    },
+    {
+      "liga": "POR",
+      "fecha": "2027-01-16T20:30:00Z",
+      "local": "Sporting Clube de Portugal",
+      "visitante": "CF Estrela da Amadora"
     },
     {
       "liga": "ESP",
@@ -6126,60 +6102,6 @@
       "visitante": "AS Roma"
     },
     {
-      "liga": "POR",
-      "fecha": "2027-01-17T00:00:00Z",
-      "local": "FC Famalicão",
-      "visitante": "GD Estoril Praia"
-    },
-    {
-      "liga": "POR",
-      "fecha": "2027-01-17T00:00:00Z",
-      "local": "Sporting Clube de Portugal",
-      "visitante": "CF Estrela da Amadora"
-    },
-    {
-      "liga": "POR",
-      "fecha": "2027-01-17T00:00:00Z",
-      "local": "Sporting Clube de Braga",
-      "visitante": "Moreirense FC"
-    },
-    {
-      "liga": "POR",
-      "fecha": "2027-01-17T00:00:00Z",
-      "local": "Rio Ave FC",
-      "visitante": "Gil Vicente FC"
-    },
-    {
-      "liga": "POR",
-      "fecha": "2027-01-17T00:00:00Z",
-      "local": "Casa Pia AC",
-      "visitante": "CS Marítimo"
-    },
-    {
-      "liga": "POR",
-      "fecha": "2027-01-17T00:00:00Z",
-      "local": "CD Nacional",
-      "visitante": "CD Santa Clara"
-    },
-    {
-      "liga": "POR",
-      "fecha": "2027-01-17T00:00:00Z",
-      "local": "FC Alverca",
-      "visitante": "FC Porto"
-    },
-    {
-      "liga": "POR",
-      "fecha": "2027-01-17T00:00:00Z",
-      "local": "Académico de Viseu FC",
-      "visitante": "Sport Lisboa e Benfica"
-    },
-    {
-      "liga": "POR",
-      "fecha": "2027-01-17T00:00:00Z",
-      "local": "FC Arouca",
-      "visitante": "Vitória SC"
-    },
-    {
       "liga": "NED",
       "fecha": "2027-01-17T11:15:00Z",
       "local": "FC Utrecht",
@@ -6216,6 +6138,12 @@
       "visitante": "SV 07 Elversberg"
     },
     {
+      "liga": "POR",
+      "fecha": "2027-01-17T15:30:00Z",
+      "local": "Casa Pia AC",
+      "visitante": "CS Marítimo"
+    },
+    {
       "liga": "NED",
       "fecha": "2027-01-17T15:45:00Z",
       "local": "SC Cambuur-Leeuwarden",
@@ -6240,16 +6168,40 @@
       "visitante": "Leeds United FC"
     },
     {
+      "liga": "POR",
+      "fecha": "2027-01-17T18:00:00Z",
+      "local": "Académico de Viseu FC",
+      "visitante": "Sport Lisboa e Benfica"
+    },
+    {
       "liga": "FRA",
       "fecha": "2027-01-17T19:45:00Z",
       "local": "Olympique Lyonnais",
       "visitante": "FC Lorient"
     },
     {
+      "liga": "POR",
+      "fecha": "2027-01-17T20:30:00Z",
+      "local": "Rio Ave FC",
+      "visitante": "Gil Vicente FC"
+    },
+    {
+      "liga": "POR",
+      "fecha": "2027-01-18T18:45:00Z",
+      "local": "FC Famalicão",
+      "visitante": "GD Estoril Praia"
+    },
+    {
       "liga": "ENG",
       "fecha": "2027-01-18T20:00:00Z",
       "local": "Brentford FC",
       "visitante": "Brighton & Hove Albion FC"
+    },
+    {
+      "liga": "POR",
+      "fecha": "2027-01-18T20:45:00Z",
+      "local": "FC Arouca",
+      "visitante": "Vitória SC"
     },
     {
       "liga": "NED",
@@ -13066,15 +13018,15 @@
       },
       "Borussia Mönchengladbach": {
         "visitante": {
-          "pj": 5,
+          "pj": 6,
           "g": 1,
-          "e": 0,
+          "e": 1,
           "p": 4,
-          "gf": 5,
-          "gc": 15,
-          "puntos": 3,
-          "ppp": 0.6,
-          "victorias_pct": 20.0
+          "gf": 8,
+          "gc": 18,
+          "puntos": 4,
+          "ppp": 0.67,
+          "victorias_pct": 16.67
         },
         "local": {
           "pj": 5,
@@ -13365,15 +13317,15 @@
           "victorias_pct": 20.0
         },
         "local": {
-          "pj": 5,
+          "pj": 6,
           "g": 4,
-          "e": 1,
+          "e": 2,
           "p": 0,
-          "gf": 14,
-          "gc": 5,
-          "puntos": 13,
-          "ppp": 2.6,
-          "victorias_pct": 80.0
+          "gf": 17,
+          "gc": 8,
+          "puntos": 14,
+          "ppp": 2.33,
+          "victorias_pct": 66.67
         }
       },
       "FC Augsburg": {
@@ -14115,15 +14067,15 @@
           "victorias_pct": 57.14
         },
         "visitante": {
-          "pj": 6,
-          "g": 1,
+          "pj": 7,
+          "g": 2,
           "e": 0,
           "p": 5,
-          "gf": 6,
-          "gc": 19,
-          "puntos": 3,
-          "ppp": 0.5,
-          "victorias_pct": 16.67
+          "gf": 9,
+          "gc": 20,
+          "puntos": 6,
+          "ppp": 0.86,
+          "victorias_pct": 28.57
         }
       },
       "Villarreal CF": {
@@ -14187,15 +14139,15 @@
           "victorias_pct": 0.0
         },
         "local": {
-          "pj": 6,
+          "pj": 7,
           "g": 2,
           "e": 2,
-          "p": 2,
-          "gf": 14,
-          "gc": 13,
+          "p": 3,
+          "gf": 15,
+          "gc": 16,
           "puntos": 8,
-          "ppp": 1.33,
-          "victorias_pct": 33.33
+          "ppp": 1.14,
+          "victorias_pct": 28.57
         }
       },
       "RC Deportivo La Coruña": {
@@ -14621,15 +14573,15 @@
           "victorias_pct": 50.0
         },
         "local": {
-          "pj": 5,
-          "g": 2,
+          "pj": 6,
+          "g": 3,
           "e": 1,
           "p": 2,
-          "gf": 10,
+          "gf": 11,
           "gc": 6,
-          "puntos": 7,
-          "ppp": 1.4,
-          "victorias_pct": 40.0
+          "puntos": 10,
+          "ppp": 1.67,
+          "victorias_pct": 50.0
         }
       },
       "ES Troyes AC": {
@@ -14658,15 +14610,15 @@
       },
       "Paris FC": {
         "visitante": {
-          "pj": 5,
+          "pj": 6,
           "g": 2,
           "e": 1,
-          "p": 2,
+          "p": 3,
           "gf": 5,
-          "gc": 5,
+          "gc": 6,
           "puntos": 7,
-          "ppp": 1.4,
-          "victorias_pct": 40.0
+          "ppp": 1.17,
+          "victorias_pct": 33.33
         },
         "local": {
           "pj": 6,
@@ -15406,15 +15358,15 @@
       },
       "Nottingham Forest FC": {
         "local": {
-          "pj": 5,
-          "g": 1,
+          "pj": 6,
+          "g": 2,
           "e": 1,
           "p": 3,
-          "gf": 3,
-          "gc": 4,
-          "puntos": 4,
-          "ppp": 0.8,
-          "victorias_pct": 20.0
+          "gf": 6,
+          "gc": 6,
+          "puntos": 7,
+          "ppp": 1.17,
+          "victorias_pct": 33.33
         },
         "visitante": {
           "pj": 6,
@@ -15718,15 +15670,15 @@
       },
       "Chelsea FC": {
         "visitante": {
-          "pj": 5,
+          "pj": 6,
           "g": 2,
           "e": 0,
-          "p": 3,
-          "gf": 6,
-          "gc": 8,
+          "p": 4,
+          "gf": 8,
+          "gc": 11,
           "puntos": 6,
-          "ppp": 1.2,
-          "victorias_pct": 40.0
+          "ppp": 1.0,
+          "victorias_pct": 33.33
         },
         "local": {
           "pj": 6,
@@ -15984,15 +15936,15 @@
       },
       "Venezia FC": {
         "local": {
-          "pj": 6,
+          "pj": 7,
           "g": 2,
-          "e": 0,
+          "e": 1,
           "p": 4,
           "gf": 5,
           "gc": 11,
-          "puntos": 6,
+          "puntos": 7,
           "ppp": 1.0,
-          "victorias_pct": 33.33
+          "victorias_pct": 28.57
         },
         "visitante": {
           "pj": 6,
@@ -16139,15 +16091,15 @@
           "victorias_pct": 16.67
         },
         "visitante": {
-          "pj": 6,
+          "pj": 7,
           "g": 4,
-          "e": 0,
+          "e": 1,
           "p": 2,
           "gf": 10,
           "gc": 6,
-          "puntos": 12,
-          "ppp": 2.0,
-          "victorias_pct": 66.67
+          "puntos": 13,
+          "ppp": 1.86,
+          "victorias_pct": 57.14
         }
       },
       "SS Lazio": {
@@ -16732,14 +16684,14 @@
       },
       "Willem II Tilburg": {
         "visitante": {
-          "pj": 7,
+          "pj": 8,
           "g": 0,
-          "e": 1,
+          "e": 2,
           "p": 6,
-          "gf": 7,
-          "gc": 25,
-          "puntos": 1,
-          "ppp": 0.14,
+          "gf": 8,
+          "gc": 26,
+          "puntos": 2,
+          "ppp": 0.25,
           "victorias_pct": 0.0
         },
         "local": {
@@ -16900,15 +16852,15 @@
       },
       "FC Groningen": {
         "local": {
-          "pj": 7,
+          "pj": 8,
           "g": 2,
-          "e": 1,
+          "e": 2,
           "p": 4,
-          "gf": 14,
-          "gc": 17,
-          "puntos": 7,
+          "gf": 15,
+          "gc": 18,
+          "puntos": 8,
           "ppp": 1.0,
-          "victorias_pct": 28.57
+          "victorias_pct": 25.0
         },
         "visitante": {
           "pj": 6,
@@ -17094,15 +17046,15 @@
       },
       "CS Marítimo": {
         "local": {
-          "pj": 5,
+          "pj": 6,
           "g": 1,
           "e": 1,
-          "p": 3,
-          "gf": 4,
-          "gc": 9,
+          "p": 4,
+          "gf": 5,
+          "gc": 11,
           "puntos": 4,
-          "ppp": 0.8,
-          "victorias_pct": 20.0
+          "ppp": 0.67,
+          "victorias_pct": 16.67
         },
         "visitante": {
           "pj": 5,
@@ -17454,15 +17406,15 @@
       },
       "CD Nacional": {
         "visitante": {
-          "pj": 5,
-          "g": 0,
+          "pj": 6,
+          "g": 1,
           "e": 1,
           "p": 4,
-          "gf": 4,
-          "gc": 9,
-          "puntos": 1,
-          "ppp": 0.2,
-          "victorias_pct": 0.0
+          "gf": 6,
+          "gc": 10,
+          "puntos": 4,
+          "ppp": 0.67,
+          "victorias_pct": 16.67
         },
         "local": {
           "pj": 6,
@@ -18603,7 +18555,7 @@
       "estado": "Cuota MoviOdds; no verificada en bet365",
       "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
       "cuota": 1.6153846153846154,
-      "consultada_en": "2026-11-28T06:01:52.890717+00:00",
+      "consultada_en": "2026-11-28T06:12:00.365621+00:00",
       "ultimo_cambio": "2026-11-28T05:41:01.663731+00:00",
       "cuota_verificada": true,
       "casa_apuestas": "MoviOdds",
@@ -18625,7 +18577,7 @@
       "estado": "Cuota MoviOdds; no verificada en bet365",
       "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
       "cuota": 1.3333333333333333,
-      "consultada_en": "2026-11-28T06:01:27.919962+00:00",
+      "consultada_en": "2026-11-28T06:11:31.215861+00:00",
       "ultimo_cambio": "2026-11-28T05:08:41.833207+00:00",
       "cuota_verificada": true,
       "casa_apuestas": "MoviOdds",
@@ -18647,7 +18599,7 @@
       "estado": "Cuota MoviOdds; no verificada en bet365",
       "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
       "cuota": 1.2222222222222223,
-      "consultada_en": "2026-11-28T06:01:52.912097+00:00",
+      "consultada_en": "2026-11-28T06:12:00.219969+00:00",
       "ultimo_cambio": "2026-11-28T01:02:24.293400+00:00",
       "cuota_verificada": true,
       "casa_apuestas": "MoviOdds",
@@ -18684,7 +18636,7 @@
       "estado": "Cuota MoviOdds; no verificada en bet365",
       "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
       "cuota": 1.45,
-      "consultada_en": "2026-11-28T06:01:52.925393+00:00",
+      "consultada_en": "2026-11-28T06:12:00.394365+00:00",
       "ultimo_cambio": "2026-11-28T01:02:24.486822+00:00",
       "cuota_verificada": true,
       "casa_apuestas": "MoviOdds",
@@ -18706,7 +18658,7 @@
       "estado": "Cuota MoviOdds; no verificada en bet365",
       "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
       "cuota": 1.2222222222222223,
-      "consultada_en": "2026-11-28T06:01:27.851861+00:00",
+      "consultada_en": "2026-11-28T06:11:31.315401+00:00",
       "ultimo_cambio": "2026-11-28T05:35:26.158826+00:00",
       "cuota_verificada": true,
       "casa_apuestas": "MoviOdds",
@@ -18742,9 +18694,9 @@
       "valoracion": 1.29,
       "estado": "Cuota MoviOdds; no verificada en bet365",
       "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
-      "cuota": 1.3,
-      "consultada_en": "2026-11-28T06:01:24.241146+00:00",
-      "ultimo_cambio": "2026-11-28T01:02:21.200315+00:00",
+      "cuota": 1.27,
+      "consultada_en": "2026-11-28T06:11:31.327082+00:00",
+      "ultimo_cambio": "2026-11-28T06:03:24.876858+00:00",
       "cuota_verificada": true,
       "casa_apuestas": "MoviOdds",
       "mercado": "1X2",
@@ -18810,7 +18762,7 @@
       "estado": "Cuota MoviOdds; no verificada en bet365",
       "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
       "cuota": 1.2,
-      "consultada_en": "2026-11-28T06:01:52.898044+00:00",
+      "consultada_en": "2026-11-28T06:12:00.356745+00:00",
       "ultimo_cambio": "2026-11-28T01:02:28.851626+00:00",
       "cuota_verificada": true,
       "casa_apuestas": "MoviOdds",
@@ -18847,7 +18799,7 @@
       "estado": "Cuota MoviOdds; no verificada en bet365",
       "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
       "cuota": 1.7272727272727273,
-      "consultada_en": "2026-11-28T06:01:24.392469+00:00",
+      "consultada_en": "2026-11-28T06:11:31.369834+00:00",
       "ultimo_cambio": "2026-11-28T01:02:26.760938+00:00",
       "cuota_verificada": true,
       "casa_apuestas": "MoviOdds",
@@ -18869,7 +18821,7 @@
       "estado": "Cuota MoviOdds; no verificada en bet365",
       "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
       "cuota": 1.75,
-      "consultada_en": "2026-11-28T06:01:24.383566+00:00",
+      "consultada_en": "2026-11-28T06:11:31.363608+00:00",
       "ultimo_cambio": "2026-11-28T02:57:58.892557+00:00",
       "cuota_verificada": true,
       "casa_apuestas": "MoviOdds",
@@ -18906,7 +18858,7 @@
       "estado": "Cuota MoviOdds; no verificada en bet365",
       "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
       "cuota": 1.7,
-      "consultada_en": "2026-11-28T06:01:24.362528+00:00",
+      "consultada_en": "2026-11-28T06:11:31.305326+00:00",
       "ultimo_cambio": "2026-11-28T01:02:26.440943+00:00",
       "cuota_verificada": true,
       "casa_apuestas": "MoviOdds",
@@ -18973,7 +18925,7 @@
       "estado": "Cuota MoviOdds; no verificada en bet365",
       "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
       "cuota": 1.3,
-      "consultada_en": "2026-11-28T06:01:29.340310+00:00",
+      "consultada_en": "2026-11-28T06:11:36.722383+00:00",
       "ultimo_cambio": "2026-11-28T01:03:24.587297+00:00",
       "cuota_verificada": true,
       "casa_apuestas": "MoviOdds",
@@ -19010,6 +18962,66 @@
       "cuota": null,
       "estado": "Pendiente de cuota verificada",
       "motivo_cuota_moviodds": "Partido sin coincidencia inequívoca en MoviOdds"
+    },
+    {
+      "liga": "TUR",
+      "fecha": "2026-12-04T17:00:00+00:00",
+      "local": "Galatasaray",
+      "visitante": "Rizespor",
+      "favorito": "Galatasaray",
+      "equipo_proveedor": "Galatasaray",
+      "ppp": 2.58,
+      "ppp_rival": 1.54,
+      "bonus_local": 0.2,
+      "valoracion": 1.24,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada",
+      "motivo_cuota_moviodds": "Partido sin coincidencia inequívoca en MoviOdds"
+    },
+    {
+      "liga": "GER",
+      "fecha": "2026-12-04T19:30:00+00:00",
+      "local": "FC Bayern München",
+      "visitante": "SC Paderborn 07",
+      "favorito": "Bayern Munich",
+      "equipo_proveedor": "FC Bayern München",
+      "ppp": 2.2,
+      "ppp_rival": 1.0,
+      "bonus_local": 0.2,
+      "valoracion": 1.4,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada",
+      "motivo_cuota_moviodds": "Partido sin coincidencia inequívoca en MoviOdds"
+    },
+    {
+      "liga": "FRA",
+      "fecha": "2026-12-04T19:45:00Z",
+      "local": "Toulouse FC",
+      "visitante": "Paris Saint-Germain FC",
+      "favorito": "PSG",
+      "equipo_proveedor": "Paris Saint-Germain FC",
+      "ppp": 2.36,
+      "ppp_rival": 1.27,
+      "bonus_local": 0.0,
+      "valoracion": 1.09,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada",
+      "motivo_cuota_moviodds": "Partido sin coincidencia inequívoca en MoviOdds"
+    },
+    {
+      "liga": "POR",
+      "fecha": "2026-12-04T20:15:00Z",
+      "local": "Sporting Clube de Portugal",
+      "visitante": "CS Marítimo",
+      "favorito": "Sporting CP",
+      "equipo_proveedor": "Sporting Clube de Portugal",
+      "ppp": 2.18,
+      "ppp_rival": 0.73,
+      "bonus_local": 0.2,
+      "valoracion": 1.65,
+      "cuota": null,
+      "estado": "Pendiente de cuota verificada",
+      "motivo_cuota_moviodds": "Partido sin coincidencia inequívoca en MoviOdds"
     }
   ],
   "dobles": [
@@ -19029,7 +19041,7 @@
           "estado": "Cuota MoviOdds; no verificada en bet365",
           "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
           "cuota": 1.45,
-          "consultada_en": "2026-11-28T06:01:52.925393+00:00",
+          "consultada_en": "2026-11-28T06:12:00.394365+00:00",
           "ultimo_cambio": "2026-11-28T01:02:24.486822+00:00",
           "cuota_verificada": true,
           "casa_apuestas": "MoviOdds",
@@ -19051,7 +19063,7 @@
           "estado": "Cuota MoviOdds; no verificada en bet365",
           "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
           "cuota": 1.2,
-          "consultada_en": "2026-11-28T06:01:52.898044+00:00",
+          "consultada_en": "2026-11-28T06:12:00.356745+00:00",
           "ultimo_cambio": "2026-11-28T01:02:28.851626+00:00",
           "cuota_verificada": true,
           "casa_apuestas": "MoviOdds",
@@ -19078,7 +19090,7 @@
           "estado": "Cuota MoviOdds; no verificada en bet365",
           "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
           "cuota": 1.6153846153846154,
-          "consultada_en": "2026-11-28T06:01:52.890717+00:00",
+          "consultada_en": "2026-11-28T06:12:00.365621+00:00",
           "ultimo_cambio": "2026-11-28T05:41:01.663731+00:00",
           "cuota_verificada": true,
           "casa_apuestas": "MoviOdds",
@@ -19099,9 +19111,9 @@
           "valoracion": 1.29,
           "estado": "Cuota MoviOdds; no verificada en bet365",
           "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
-          "cuota": 1.3,
-          "consultada_en": "2026-11-28T06:01:24.241146+00:00",
-          "ultimo_cambio": "2026-11-28T01:02:21.200315+00:00",
+          "cuota": 1.27,
+          "consultada_en": "2026-11-28T06:11:31.327082+00:00",
+          "ultimo_cambio": "2026-11-28T06:03:24.876858+00:00",
           "cuota_verificada": true,
           "casa_apuestas": "MoviOdds",
           "mercado": "1X2",
@@ -19109,7 +19121,7 @@
           "url_fuente": "https://moviodds.com/odds?sport=soccer"
         }
       ],
-      "cuota_combinada": 2.1
+      "cuota_combinada": 2.052
     },
     {
       "partidos": [
@@ -19127,7 +19139,7 @@
           "estado": "Cuota MoviOdds; no verificada en bet365",
           "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
           "cuota": 1.2222222222222223,
-          "consultada_en": "2026-11-28T06:01:27.851861+00:00",
+          "consultada_en": "2026-11-28T06:11:31.315401+00:00",
           "ultimo_cambio": "2026-11-28T05:35:26.158826+00:00",
           "cuota_verificada": true,
           "casa_apuestas": "MoviOdds",
@@ -19149,7 +19161,7 @@
           "estado": "Cuota MoviOdds; no verificada en bet365",
           "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
           "cuota": 1.3,
-          "consultada_en": "2026-11-28T06:01:29.340310+00:00",
+          "consultada_en": "2026-11-28T06:11:36.722383+00:00",
           "ultimo_cambio": "2026-11-28T01:03:24.587297+00:00",
           "cuota_verificada": true,
           "casa_apuestas": "MoviOdds",
@@ -19176,7 +19188,7 @@
           "estado": "Cuota MoviOdds; no verificada en bet365",
           "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
           "cuota": 1.3333333333333333,
-          "consultada_en": "2026-11-28T06:01:27.919962+00:00",
+          "consultada_en": "2026-11-28T06:11:31.215861+00:00",
           "ultimo_cambio": "2026-11-28T05:08:41.833207+00:00",
           "cuota_verificada": true,
           "casa_apuestas": "MoviOdds",
@@ -19198,7 +19210,7 @@
           "estado": "Cuota MoviOdds; no verificada en bet365",
           "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
           "cuota": 1.7,
-          "consultada_en": "2026-11-28T06:01:24.362528+00:00",
+          "consultada_en": "2026-11-28T06:11:31.305326+00:00",
           "ultimo_cambio": "2026-11-28T01:02:26.440943+00:00",
           "cuota_verificada": true,
           "casa_apuestas": "MoviOdds",
@@ -19225,7 +19237,7 @@
           "estado": "Cuota MoviOdds; no verificada en bet365",
           "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
           "cuota": 1.2222222222222223,
-          "consultada_en": "2026-11-28T06:01:52.912097+00:00",
+          "consultada_en": "2026-11-28T06:12:00.219969+00:00",
           "ultimo_cambio": "2026-11-28T01:02:24.293400+00:00",
           "cuota_verificada": true,
           "casa_apuestas": "MoviOdds",
@@ -19247,7 +19259,7 @@
           "estado": "Cuota MoviOdds; no verificada en bet365",
           "motivo_cuota_moviodds": "Cuota MoviOdds disponible",
           "cuota": 1.75,
-          "consultada_en": "2026-11-28T06:01:24.383566+00:00",
+          "consultada_en": "2026-11-28T06:11:31.363608+00:00",
           "ultimo_cambio": "2026-11-28T02:57:58.892557+00:00",
           "cuota_verificada": true,
           "casa_apuestas": "MoviOdds",
@@ -19269,10 +19281,10 @@
     "TUR": "2026-11-24T18:14:09.367925+00:00"
   },
   "favoritos_validados": true,
-  "ultima_actualizacion_cuotas": "2026-11-28T06:02:06.804599+00:00",
+  "ultima_actualizacion_cuotas": "2026-11-28T06:12:08.118916+00:00",
   "diagnostico_cuotas": {
-    "partidos_proveedor": 1802,
-    "candidatos": 23,
+    "partidos_proveedor": 1803,
+    "candidatos": 27,
     "candidatos_sin_hora": 0,
     "emparejamientos_unicos": 18,
     "emparejados_con_mercado_1x2_vigente": 18,
@@ -19324,14 +19336,25 @@
             "Arsenal"
           ]
         ]
+      },
+      {
+        "local": "FC Bayern München",
+        "visitante": "SC Paderborn 07",
+        "posibles": [
+          [
+            0.816,
+            "Bayern Munich",
+            "Paderborn"
+          ]
+        ]
       }
     ],
     "partidos_con_polled_at": 18,
-    "antiguedad_comprobacion_minima_minutos": 0.2,
-    "antiguedad_comprobacion_maxima_minutos": 0.7,
-    "antiguedad_1x2_minima_minutos": 8.5,
-    "antiguedad_1x2_maxima_minutos": 299.8,
+    "antiguedad_comprobacion_minima_minutos": 0.1,
+    "antiguedad_comprobacion_maxima_minutos": 0.6,
+    "antiguedad_1x2_minima_minutos": 8.7,
+    "antiguedad_1x2_maxima_minutos": 309.8,
     "cotizaciones_1x2_futuras": 0,
-    "cotizaciones_1x2_mas_de_60_minutos": 46
+    "cotizaciones_1x2_mas_de_60_minutos": 47
   }
 }
